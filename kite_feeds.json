@@ -1,16 +1,15 @@
 {
   "UK": {
     "feeds": [
-      "https://www.standard.co.uk/rss",
-      "https://www.channel4.com/news/uk/feed",
-      "https://www.localgov.co.uk/rss", 
-      "https://www.independent.co.uk/rss",
-      "https://www.standard.co.uk/rss",
       "https://www.telegraph.co.uk/rss.xml",
       "https://www.theguardian.com/uk-news/rss",
       "https://feeds.bbci.co.uk/news/uk/rss.xml",
       "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
       "https://bills.parliament.uk/rss/allbills.rss",
+      "https://www.standard.co.uk/rss",
+      "https://www.channel4.com/news/uk/feed",
+      "https://www.localgov.co.uk/rss", 
+      "https://www.independent.co.uk/rss",
       "https://www.irvinetimes.com/news/rss/",
       "https://www.liverpoolecho.co.uk/rss.xml",
       "https://www.gbnews.com/feeds/feed.rss",
