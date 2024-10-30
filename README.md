@@ -36,8 +36,9 @@ To add a new category or modify existing ones, follow this structure:
 
 ## Guidelines
 
-- Use only RSS feeds
-- Choose sources that have high quality content
+- Use only RSS feeds!
+- Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
+- Adding relevant feeds from sub-reddits where people post articles and Google News can help with feed quality and diversity (see example UK category)
 
 **Important**
 
