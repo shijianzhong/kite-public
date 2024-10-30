@@ -34,13 +34,22 @@ To add a new category or modify existing ones, follow this structure:
 2. Add a "feeds" array containing the RSS feed URLs for that category
 3. Ensure proper JSON formatting (commas between objects, no trailing comma)
 
+All categories are created equal and will appear as top level categories in the Kite app.
+
+Ideas for categories:
+- Local news (city/state level)
+- Regional news (country/region)
+- Topical news (health, machine learning, aviation ...)
+
+**Important**
+
+We require at least **20 feeds** for a category in order to consider it for processing
+and showing inside the Kite app.
+
+
 ## Guidelines
 
 - Use only RSS feeds!
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
 - Adding relevant feeds from sub-reddits where people post articles and Google News can help with feed quality and diversity (see example UK category)
 
-**Important**
-
-We require at least **20 feeds** for a category in order to consider it for processing
-and showing inside the Kite app.
