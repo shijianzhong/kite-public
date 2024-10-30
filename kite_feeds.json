@@ -1,0 +1,35 @@
+{
+  "UK": {
+    "feeds": [
+      "https://www.standard.co.uk/rss",
+      "https://www.channel4.com/news/uk/feed",
+      "https://www.localgov.co.uk/rss", 
+      "https://www.independent.co.uk/rss",
+      "https://www.standard.co.uk/rss",
+      "https://www.telegraph.co.uk/rss.xml",
+      "https://www.theguardian.com/uk-news/rss",
+      "https://feeds.bbci.co.uk/news/uk/rss.xml",
+      "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
+      "https://bills.parliament.uk/rss/allbills.rss",
+      "https://www.irvinetimes.com/news/rss/",
+      "https://www.liverpoolecho.co.uk/rss.xml",
+      "https://www.gbnews.com/feeds/feed.rss",
+      "https://www.essexlive.news/rss.xml", 
+      "https://news.stv.tv/feed",
+      "https://bylinetimes.com/feed/",
+      "https://www.mylondon.news/rss.xml",
+      "https://inews.co.uk/feed",
+      "https://www.worcesternews.co.uk/news/rss/",
+      "https://www.thenorthernecho.co.uk/news/rss/",
+      "https://www.oxfordmail.co.uk/news/rss/",
+      "https://www.dailypost.co.uk/rss.xml",
+      "https://www.reddit.com/r/uknews/.rss",
+      "https://www.reddit.com/r/ukpolitics/.rss",
+      "https://www.reddit.com/r/unitedkingdom/.rss",
+      "https://news.google.com/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZpWTJ3U0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp4TVhJU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR28xWnprU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
+    ]
+  }
+}
