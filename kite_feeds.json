@@ -14,7 +14,7 @@
       "https://www.dailypost.co.uk/rss.xml",
       "https://www.dailyrecord.co.uk/?service=rss",
       "https://www.deadlinenews.co.uk/feed/",
-      "https://www.essexlive.news/rss.xml", 
+      "https://www.essexlive.news/rss.xml",
       "https://www.gbnews.com/feeds/feed.rss",
       "https://www.glasgowlive.co.uk/?service=rss",
       "https://www.glasgowtimes.co.uk/news/rss/",
@@ -24,7 +24,7 @@
       "https://www.irishtimes.com/arc/outboundfeeds/feed-irish-news/?from=0&size=20",
       "https://www.irvinetimes.com/news/rss/",
       "https://www.liverpoolecho.co.uk/rss.xml",
-      "https://www.localgov.co.uk/rss", 
+      "https://www.localgov.co.uk/rss",
       "https://www.manchestereveningnews.co.uk/?service=rss",
       "https://www.mylondon.news/rss.xml",
       "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
@@ -138,12 +138,9 @@
       "https://www.err.ee/rss",
       "https://www.postimees.ee/rss",
       "https://online.le.ee/feed/",
-      "https://gazeta.ee/feed/",
-      "https://narvaleht.ee/feed/",
       "https://sonumitooja.ee/feed/",
       "https://kesknadal.ee/feed/",
       "https://koiduaeg.ee/feed/",
-      "https://estonianworld.com/feed/",
       "https://digi.geenius.ee/feed/",
       "https://uueduudised.ee/feed/",
       "https://eestiuudised.ee/feed/",
@@ -152,9 +149,7 @@
       "https://www.aripaev.ee/rss",
       "https://www.ehitusuudised.ee/rss",
       "https://www.laanevirumaauudised.ee/rss",
-      "https://eestikirik.ee/feed",
       "https://www.telegram.ee/feed",
-      "https://kesknadal.ee/feed/",
       "https://www.tartu.ee/et/rss",
       "https://feeds.feedburner.com/aripaev-rss",
       "http://feeds2.feedburner.com/delfiuudised",
@@ -162,11 +157,8 @@
       "http://feeds2.feedburner.com/forteuudised",
       "https://www.reddit.com/r/Eesti.rss",
       "https://www.reddit.com/r/BalticStates.rss",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVjBLQUFQAQ?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
-      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FuSjFLQUFQAQ?hl=ru&gl=RU&ceid=RU%3Aru&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FuVnJLQUFQAQ?hl=uk&gl=UA&ceid=UA%3Auk&oc=11"
+      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11"
     ]
   }
 }
