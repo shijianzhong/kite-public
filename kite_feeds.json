@@ -1,15 +1,16 @@
 {
   "UK": {
     "feeds": [
+      "https://www.standard.co.uk/rss",
+      "https://www.channel4.com/news/uk/feed",
+      "https://www.localgov.co.uk/rss", 
+      "https://www.independent.co.uk/rss",
+      "https://www.standard.co.uk/rss",
       "https://www.telegraph.co.uk/rss.xml",
       "https://www.theguardian.com/uk-news/rss",
       "https://feeds.bbci.co.uk/news/uk/rss.xml",
       "https://www.ncsc.gov.uk/api/1/services/v1/news-rss-feed.xml",
       "https://bills.parliament.uk/rss/allbills.rss",
-      "https://www.standard.co.uk/rss",
-      "https://www.channel4.com/news/uk/feed",
-      "https://www.localgov.co.uk/rss", 
-      "https://www.independent.co.uk/rss",
       "https://www.irvinetimes.com/news/rss/",
       "https://www.liverpoolecho.co.uk/rss.xml",
       "https://www.gbnews.com/feeds/feed.rss",
@@ -26,9 +27,40 @@
       "https://www.reddit.com/r/ukpolitics/.rss",
       "https://www.reddit.com/r/unitedkingdom/.rss",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZpWTJ3U0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp4TVhJU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR28xWnprU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen&oc=11"
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZpWTJ3U0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp4TVhJU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR28xWnprU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
+    ]
+  },
+  "Brazil": {
+    "feeds": [
+      "https://g1.globo.com/dynamo/brasil/rss2.xml",
+      "https://ge.globo.com/Esportes/Rss/0,,AS0-9645,00.xml",
+      "https://feeds2.feedburner.com/canaltechbr",
+      "http://cinema.uol.com.br/ultnot/index.xml",
+      "https://www.nexojornal.com.br/rss.xml",
+      "https://agenciadenoticias.ibge.gov.br/agencia-rss",
+      "https://www.cartacapital.com.br/feed",
+      "http://www.bbc.co.uk/portuguese/topicos/brasil/index.xml",
+      "https://feeds.folha.uol.com.br/ciencia/rss091.xml",
+      "http://rss.uol.com.br/feed/noticias.xml",
+      "https://news.un.org/feed/subscribe/pt/news/region/americas/feed/rss.xml",
+      "http://agenciabrasil.ebc.com.br/rss/internacional/feed.xml",
+      "https://reporterbrasil.org.br/categorias/noticias/feed/",
+      "https://apiprevmet3.inmet.gov.br/avisos/rss",
+      "http://pox.globo.com/rss/valor",
+      "http://rss.esporte.uol.com.br/ultimas/index.xml",
+      "http://www.omelete.com.br/rss/rss.aspx",
+      "https://revistaforum.com.br/rss/feed.html?r=735",
+      "https://revistaforum.com.br/rss/feed.html?r=727",
+      "https://revistaforum.com.br/rss/feed.html?r=96",
+      "https://www.metropoles.com/feed",
+      "https://www.infomoney.com.br/feed/",
+      "https://reporterbrasil.org.br/feed/",
+      "https://www.reddit.com/r/brasil/.rss",
+      "https://news.google.com/rss/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNREUxWm5JU0JYQjBMVUpTS0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419&oc=11",
+      "https://news.google.com/rss/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JYQjBMVUpTR2dKQ1VpZ0FQAQ?hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "https://news.google.com/rss/topics/CAAqLAgKIiZDQkFTRmdvSkwyMHZNR1ptZHpWbUVnVndkQzFDVWhvQ1FsSW9BQVAB?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
     ]
   }
 }
