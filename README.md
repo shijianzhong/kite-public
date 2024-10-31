@@ -1,8 +1,6 @@
-# kite-public
+# Kite - Community curated categories
 
-This repository contains community curated categories for
-[Kite](https://kagi.com), Kagi's news
-app.
+This repository contains community curated categories for [Kite](https://kagi.com), Kagi's news app.
 
 To edit sources, submit a pull request editing `kite_feeds.json`. If you do not know how to do that, you can [open an issue](https://github.com/kagisearch/kite-public/issues/new/choose) and share the feeds there.
 
@@ -43,13 +41,12 @@ Ideas for categories:
 
 **Important**
 
-We require at least **20 feeds** for a category in order to consider it for processing
-and showing inside the Kite app.
+We require at least **25 feeds** for a category in order to consider it for Kite news. This is to make sure we maintain high level of quality of news shown in the app. The more high quality feeds exist for a categy, the better Kite coverage will be.
 
 
-## Guidelines
+## Guidelines for RSS feeds
 
-- Use only RSS feeds!
+- Check that feed is working and has recent (daily) content.
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
 - Adding relevant feeds from sub-reddits where people post articles and Google News can help with feed quality and diversity (see example UK category)
 
