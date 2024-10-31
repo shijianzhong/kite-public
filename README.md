@@ -41,7 +41,7 @@ Ideas for categories:
 
 **Important**
 
-We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be.
+We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be. The feeds should be using the same language.
 
 
 ## Guidelines for RSS feeds
@@ -52,5 +52,5 @@ When adding an RSS feed make sure to:
 
 - Check that feed is working and has recent (daily) content.
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
-- Adding relevant feeds from sub-reddits where people post articles and Google News can help with feed quality and diversity (see example UK category)
+- Feeds should be in the same language as the rest of the feeds in that category (do not mix languages)
 
