@@ -4,7 +4,7 @@ This repository contains community curated categories for
 [Kite](https://kagi.com), Kagi's news
 app.
 
-To edit sources, submit a pull request editing `kite_feeds.json`.
+To edit sources, submit a pull request editing `kite_feeds.json`. If you do not know how to do that, you can [open an issue](https://github.com/kagisearch/kite-public/issues/new/choose) and share the feeds there.
 
 This file contains RSS feeds for various categories.
 
