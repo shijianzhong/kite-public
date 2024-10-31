@@ -133,5 +133,41 @@
       "https://www.reddit.com/r/australia/.rss",
       "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR05vWjJoNUVnSnFZU2dBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
     ]
+  },
+  "Estonia": {
+    "feeds": [
+      "https://www.err.ee/rss",
+      "https://www.postimees.ee/rss",
+      "https://online.le.ee/feed/",
+      "https://gazeta.ee/feed/",
+      "https://narvaleht.ee/feed/",
+      "https://sonumitooja.ee/feed/",
+      "https://kesknadal.ee/feed/",
+      "https://koiduaeg.ee/feed/",
+      "https://estonianworld.com/feed/",
+      "https://digi.geenius.ee/feed/",
+      "https://uueduudised.ee/feed/",
+      "https://eestiuudised.ee/feed/",
+      "https://www.ohtuleht.ee/rss",
+      "https://www.ituudised.ee/rss",
+      "https://www.aripaev.ee/rss",
+      "https://www.ehitusuudised.ee/rss",
+      "https://www.laanevirumaauudised.ee/rss",
+      "https://eestikirik.ee/feed",
+      "https://www.telegram.ee/feed",
+      "https://kesknadal.ee/feed/",
+      "https://www.tartu.ee/et/rss",
+      "https://feeds.feedburner.com/aripaev-rss",
+      "http://feeds2.feedburner.com/delfiuudised",
+      "http://feeds2.feedburner.com/delfimaailm",
+      "http://feeds2.feedburner.com/forteuudised",
+      "https://www.reddit.com/r/Eesti.rss",
+      "https://www.reddit.com/r/BalticStates.rss",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVjBLQUFQAQ?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
+      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FuSjFLQUFQAQ?hl=ru&gl=RU&ceid=RU%3Aru&oc=11",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FuVnJLQUFQAQ?hl=uk&gl=UA&ceid=UA%3Auk&oc=11"
+    ]
   }
 }
