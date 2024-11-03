@@ -165,5 +165,35 @@
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVjBLQUFQAQ?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
       "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11"
     ]
+  },
+  "Europe": {
+    "feeds": [
+      "https://www.lemonde.fr/europe/rss_full.xml",
+      "https://www.spiegel.de/international/europe/index.rss",
+      "https://www.politico.eu/feed/",
+      "https://rss.nytimes.com/services/xml/rss/nyt/Europe.xml",
+      "http://feeds.bbci.co.uk/news/world/europe/rss.xml",
+      "https://www.euronews.com/rss?level=program&name=europe-news",
+      "https://www.ft.com/world/europe?format=rss",
+      "https://www.economist.com/europe/rss.xml",
+      "https://feeds.npr.org/1124/rss.xml",
+      "https://www.euronews.com/rss?level=vertical&name=my-europe",
+      "https://www.scmp.com/rss/322263/feed",
+      "https://officialblogofunio.com/feed/",
+      "https://ecipe.org/blog/feed/",
+      "https://www.express.co.uk/latest/european-union/rss",
+      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/organization/european-union/rss.xml",
+      "https://eulawanalysis.blogspot.com/feeds/posts/default",
+      "https://ecfr.eu/feed/",
+      "https://www.euractiv.com/feed/",
+      "https://www.reddit.com/r/europe/.rss",
+      "https://www.reddit.com/r/europes/.rss",
+      "https://www.reddit.com/r/esa/.rss",
+      "https://www.reddit.com/r/europeanparliament/.rss",
+      "https://www.reddit.com/r/europeanunion/.rss",
+      "https://www.reddit.com/r/EuropeanFederalists/.rss",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpxT1hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/rss/topics/CAAqJAgKIh5DQkFTRUFvS0wyMHZNRjgyZEY5Nk9CSUNaVzRvQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
+    ]
   }
 }
