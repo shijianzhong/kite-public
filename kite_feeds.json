@@ -243,5 +243,16 @@
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFowT0hZU0FtVnVLQUFQAQ?hl=sl&gl=SI&ceid=SI%3Asl&oc=11",
       "https://www.reddit.com/r/Slovenia.rss"
     ]
+  },
+  "Mexico": {
+    "feeds": [
+      "https://www.eleconomista.com.mx/rss/ultimas-noticias",
+      "https://www.elfinanciero.com.mx/rss",
+      "https://www.excelsior.com.mx/rss.xml",
+      "https://www.milenio.com/rss",
+      "https://expansion.mx/rss",
+      "https://mvsnoticias.com/rss/feed.html?r=751",
+      "https://www.proceso.com.mx/rss/feed.html?r=1"
+    ]
   }
 }
