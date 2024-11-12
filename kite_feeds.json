@@ -252,7 +252,15 @@
       "https://www.milenio.com/rss",
       "https://expansion.mx/rss",
       "https://mvsnoticias.com/rss/feed.html?r=751",
-      "https://www.proceso.com.mx/rss/feed.html?r=1"
+      "https://www.proceso.com.mx/rss/feed.html?r=1",
+      "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/mexico/portada",
+      "https://www.radioformula.com.mx/rss/feed.html?r=1",
+      "https://politico.mx/rss/latest-posts",
+      "https://www.24-horas.mx/feed/",
+      "https://www.adn40.mx/index.rss",
+      "https://www.elsoldemexico.com.mx/rss.xml",
+      "https://wradio.com.mx/arc/outboundfeeds/rss/category/nacional/?outputType=xml",
+      "https://editorial.aristeguinoticias.com/feed/"
     ]
   }
 }
