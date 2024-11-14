@@ -284,9 +284,9 @@
   },
   "Germany": {
     "feeds": [
-      "http://newsfeed.zeit.de/all",
+      "https://newsfeed.zeit.de/all",
       "https://correctiv.org/feed/",
-      "https://rss.focus.de/",
+      "https://rss.focus.de/fol/XML/rss_folnews.xml",
       "https://rss.sueddeutsche.de/rss/Alles",
       "https://taz.de/!p4608;rss/",
       "https://www.bundesregierung.de/service/rss/breg-de/1151242/feed.xml",
@@ -297,7 +297,19 @@
       "https://www.t-online.de/nachrichten/feed.rss",
       "https://www.tagesschau.de/infoservices/alle-meldungen-100~rss2.xml",
       "https://www.tagesspiegel.de/contentexport/feed",
-      "https://www.zdf.de/rss/zdf/nachrichten"
+      "https://www.zdf.de/rss/zdf/nachrichten",
+      "https://www.n-tv.de/politik/rss",
+      "https://www.augsburger-allgemeine.de/politik/rss",
+      "https://www.rnd.de/arc/outboundfeeds/rss/",
+      "https://www.deutschlandfunk.de/nachrichten-100.rss",
+      "https://www.fr.de/rssfeed.rdf",
+      "https://www.rbb24.de/aktuell/index.xml/feed=rss.xml",
+      "https://www.handelsblatt.com/contentexport/feed/schlagzeilen",
+      "https://www.handelsblatt.com/contentexport/feed/top-themen",
+      "https://rp-online.de/feed.rss",
+      "https://www.morgenpost.de/rss",
+      "https://news.google.com/rss?hl=de-DE&gl=DE&ceid=DE:de",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE:de"
     ]
   }
 }
