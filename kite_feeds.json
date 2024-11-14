@@ -311,5 +311,36 @@
       "https://news.google.com/rss?hl=de-DE&gl=DE&ceid=DE:de",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE:de"
     ]
+  },
+  "Cryptocurrency": {
+    "feeds": [
+      "https://cointelegraph.com/rss/tag/altcoin",
+      "https://cointelegraph.com/rss/tag/bitcoin",
+      "https://cointelegraph.com/rss/tag/blockchain",
+      "https://cointelegraph.com/rss/tag/ethereum",
+      "https://cointelegraph.com/rss/tag/regulation",
+      "https://cointelegraph.com/rss/category/analysis",
+      "https://cointelegraph.com/rss/category/follow-up",
+      "https://cointelegraph.com/rss/category/in-depth",
+      "https://cointelegraph.com/rss/category/market-analysis",
+      "https://cointelegraph.com/rss/category/top-10-cryptocurrencies",
+      "https://cointelegraph.com/rss/category/weekly-overview",
+      "https://www.reddit.com/r/CryptoCurrency.rss",
+      "https://www.reddit.com/r/Bitcoin.rss",
+      "https://www.reddit.com/r/Ethereum.rss",
+      "https://blog.kraken.com/feed",
+      "https://coinjournal.net/news/feed",
+      "https://hnrss.org/newest?q=Cryptocurrency",
+      "https://hnrss.org/newest?q=Blockchain",
+      "https://news.google.com/rss/search?q=cryptocurrency&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/rss/search?q=blockchain&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/search?q=bitcoin&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/search?q=ethereum&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/search?q=solana&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/search?q=doge&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/search?q=arweave&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://www.coindesk.com/arc/outboundfeeds/rss",
+      "https://feeds.bloomberg.com/crypto/news.rss"
+    ]
   }
 }
