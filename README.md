@@ -7,20 +7,21 @@ To edit sources, submit a pull request editing `kite_feeds.json`. If you do not 
 This file contains RSS feeds for various categories.
 
 To add a new category or modify existing ones, follow this structure:
-```
+
+```jsonc
 {
   "Category Name": {
     "feeds": [
       "https://example.com/rss-feed-1",
-      "https://example.com/rss-feed-2",
-      ...
+      "https://example.com/rss-feed-2"
+      // ...
     ]
   },
   "Another Category": {
     "feeds": [
       "https://another-example.com/rss-feed-1",
-      "https://another-example.com/rss-feed-2",
-      ...
+      "https://another-example.com/rss-feed-2"
+      // ...
     ]
   }
 }
@@ -35,24 +36,23 @@ To add a new category or modify existing ones, follow this structure:
 All categories are created equal and will appear as top level categories in the Kite app.
 
 Ideas for categories:
+
 - Local news (city/state level)
 - Regional news (country/region)
 - Topical news (health, machine learning, aviation ...)
 
-**Important**
+### Important
 
-We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of quality of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be. The feeds should be using the same language. 
+We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of quality of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be. The feeds should be using the same language.
 
-Kite does not scrape news websites, it only uses publicly avaialble information in RSS feeds.
-
+Kite does not scrape news websites, it only uses publicly available information in RSS feeds.
 
 ## Guidelines for RSS feeds
 
-Kite does not scrape websites, but only publicly avaialble RSS feeds.
+Kite does not scrape websites, but only publicly available RSS feeds.
 
 When adding an RSS feed make sure to:
 
 - Check that feed is working and has recent (daily) content.
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
 - Feeds should be in the same language as the rest of the feeds in that category (do not mix languages)
-
