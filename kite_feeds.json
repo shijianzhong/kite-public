@@ -1,5 +1,5 @@
 {
-    "Cryptocurrency": { 
+  "Cryptocurrency": {
     "feeds": [
       "https://cointelegraph.com/rss/tag/altcoin",
       "https://cointelegraph.com/rss/tag/bitcoin",
@@ -525,7 +525,7 @@
       "https://thematter.co/feed",
       "https://www.voathai.com/api/zykyol-vomx-tpetpup",
       "https://feeds.bbci.co.uk/thai/rss.xml",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11",   
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
     ]
   }
 }
