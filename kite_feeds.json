@@ -49,8 +49,6 @@
       "https://www.france24.com/en/europe/rss",
       "https://www.ft.com/world/europe?format=rss",
       "https://www.lemonde.fr/europe/rss_full.xml",
-      "https://rss.tiscali.it/feed/cronaca/",
-      "https://rss.tiscali.it/feed/politica/",
       "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/europe/rss.xml",
       "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/organization/european-union/rss.xml",
       "https://www.politico.eu/feed/",
@@ -473,7 +471,12 @@
       "https://www.theglobeandmail.com/arc/outboundfeeds/rss/category/canada/",
       "https://www.theifp.ca/search/?f=rss&t=article&c=news",
       "https://www.thestar.com/search/?f=rss&t=article&c=news/canada*&l=50&s=start_time&sd=desc",
-      "https://www.winnipegfreepress.com/canada/feed"
+      "https://www.winnipegfreepress.com/canada/feed",
+      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR1F3TmpCbkVnVmxiaTFEUVNnQVAB?hl=en-CA&gl=CA&ceid=CA%3Aen&oc=11",
+      "https://www.reddit.com/r/Canadian_News/.rss",
+      "https://www.reddit.com/r/canadian/.rss",
+      "https://www.reddit.com/r/canadanews/.rss",
+      "https://www.reddit.com/r/canada/.rss"
     ]
   }
 }
