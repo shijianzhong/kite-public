@@ -15,6 +15,30 @@
     <link rel="stylesheet" href="{{ static_path }}/kite.css?{{ timestamp }}">
     <script>
         const timestamp = Date.now();
+        let mediaData = null;
+        
+        // Load media data immediately
+        fetch('{{ static_path }}/media_data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Transform array into lookup object
+                const lookup = {};
+                data.forEach(item => {
+                    if (item.domains) {
+                        item.domains.forEach(domain => {
+                            lookup[domain.toLowerCase()] = item;
+                        });
+                    }
+                });
+                
+                mediaData = {
+                    raw: data,
+                    lookup: lookup
+                };
+            })
+            .catch(error => {
+                // Error handling for media data loading
+            });
     </script>
     <link rel="alternate" :href="currentCategory === 'OnThisDay' ? 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday' : currentCategory.toLowerCase() + '.xml'" type="application/rss+xml" :title="'Kagi News - ' + currentCategory">
     <script>
@@ -42,6 +66,61 @@
             },
         }
         document.addEventListener('alpine:init', () => {
+            Alpine.data('sourceOverlay', () => ({
+                showSourceOverlay: false,
+                currentSource: { name: '', favicon: '' },
+                sourceArticles: [],
+                currentStory: null,
+                mediaInfo: null,
+                showSourceInfo: false,
+                
+                async processSource($event) {
+                    if (!mediaData?.lookup) {
+                        console.log('Media data not yet loaded, fetching...');
+                        const response = await fetch('{{ static_path }}/media_data.json');
+                        const data = await response.json();
+                        const lookup = {};
+                        data.forEach(item => {
+                            if (item.domains) {
+                                item.domains.forEach(domain => {
+                                    lookup[domain.toLowerCase()] = item;
+                                });
+                            }
+                        });
+                        mediaData = {
+                            raw: data,
+                            lookup: lookup
+                        };
+                    }
+
+                    this.showSourceOverlay = true;
+                    this.currentSource = $event.detail.domain || { name: '', favicon: '' };
+                    this.currentStory = $event.detail.story || null;
+                    this.sourceArticles = (this.currentStory && this.currentSource?.name) ? 
+                        this.currentStory.articles.filter(a => a.domain === this.currentSource.name) : 
+                        [];
+
+                    this.mediaInfo = null;
+                    if (this.currentSource?.name) {
+                        const lookupKey = this.currentSource.name.toLowerCase();
+                        this.mediaInfo = mediaData?.lookup?.[lookupKey];
+                    }
+
+                    this.showSourceInfo = false;
+                }
+            }));
+            // Ensure media data is loaded
+            if (!mediaData) {
+                fetch('{{ static_path }}/media_data.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        mediaData = data;
+                    })
+                    .catch(error => {
+                        console.error('Error loading media data:', error);
+                    });
+            }
+
             Alpine.store('intro', {
                 shown: localStorage.getItem('introShown') === 'true',
                 set(value) {
@@ -832,7 +911,8 @@
 
 </head>
 
-<body class="min-h-screen bg-white dark:bg-dark-bg text-black dark:text-dark-text" x-data="kiteApp"
+<body class="min-h-screen bg-white dark:bg-dark-bg text-black dark:text-dark-text" 
+    x-data="Object.assign(kiteApp(), sourceOverlay())"
     x-bind:class="$store.fontSize.current === 'extra-small' ? 'text-xs' : $store.fontSize.current === 'small' ? 'text-sm' : $store.fontSize.current === 'large' ? 'text-lg' : 'text-base'">
     
     <!-- Wikipedia Popup -->
@@ -965,7 +1045,7 @@
                     </button>
                 </div>
             </header>
-            <div class="sticky top-0 z-10 bg-white dark:bg-dark-bg py-2" role="navigation">
+            <div class="sticky top-0 bg-white dark:bg-dark-bg py-2" role="navigation">
                 <div class="category-tabs" role="tablist" aria-label="News categories" @touchstart="isScrolling = true" @touchend="isScrolling = false">
                     <template x-for="category in availableCategories.filter(cat => $store.categories.isEnabled(cat.name))" :key="category.name">
                         <div role="tab"
@@ -1123,7 +1203,7 @@
                                 :aria-label="'News story: ' + story.title"
                                 class="py-4 relative"
                             :class="{'border-b border-gray-200 dark:border-gray-700': !story.expanded}">
-                            <header class="flex justify-between items-start mb-2">
+                            <header class="flex justify-between items-center mb-2">
                                 <span 
                                     class="category-label text-gray-700 dark:text-gray-300 text-sm py-1 rounded inline-flex items-center">
                                     <span :class="'topic-color-' + ((story.category.charCodeAt(0) + story.category.charCodeAt(1) + story.category.length) % 9 + 1)" x-text="story.category"></span>
@@ -1132,7 +1212,17 @@
                                     </svg>
                                     <span x-text="story.domains.length + ' Sources'"></span>
                                 </span>
-                                <div class="flex items-center space-x-2">
+                            </header>
+                            <div class="flex items-start">
+                                <div class="flex-grow">
+                                    <h2 class="text-xl text-gray-800 dark:text-dark-text mb-2 cursor-pointer"
+                                        :class="readStories[story.title] ? '' : 'font-semibold'"
+                                        x-text="story.title" 
+                                        @click="toggleStory(story, index)"
+                                        :id="'story-title-' + index">
+                                    </h2>
+                                </div>
+                                <div class="flex-shrink-0 ml-4 -mt-3">
                                     <button @click.stop="readStories[story.title] = !readStories[story.title]; localStorage.setItem('readStories', JSON.stringify(readStories))"
                                             class="focus:outline-none">
                                         <svg :class="readStories[story.title] ? 'text-gray-600 dark:text-gray-400' : 'text-gray-300 dark:text-gray-600'"
@@ -1145,12 +1235,7 @@
                                         </svg>
                                     </button>
                                 </div>
-                            </header>
-                            <h2 class="text-xl font-semibold text-gray-800 dark:text-dark-text mb-2 cursor-pointer" 
-                                x-text="story.title" 
-                                @click="toggleStory(story, index)"
-                                :id="'story-title-' + index">
-                            </h2>
+                            </div>
         
    
                 
@@ -1528,42 +1613,9 @@
         </div>
     </main>
 
-    <div x-data="{ 
-            showSourceOverlay: false, 
-            currentSource: { name: '', favicon: '' }, 
-            sourceArticles: [], 
-            currentStory: null,
-            mediaInfo: null,
-            showSourceInfo: false,
-            mediaData: [] // Initialize empty array
-        }"
-        x-init="
-            fetch('{{ static_path }}/media_data.json')
-                .then(response => response.json())
-                .then(data => {
-                    mediaData = data;
-                })
-                .catch(error => console.error('Error loading media data:', error));
-        "
-        x-show="showSourceOverlay" x-cloak @open-source.window="
-            showSourceOverlay = true; 
-            currentSource = $event.detail.domain || { name: '', favicon: '' };
-            currentStory = $event.detail.story || null;
-            sourceArticles = (currentStory && currentSource?.name) ? 
-                currentStory.articles.filter(a => a.domain === currentSource.name) : 
-                [];
-            
-            // Look up media info
-            mediaInfo = null;
-            if (mediaData) {
-                mediaInfo = mediaData.find(m =>
-                    m.domains.some(d => 
-                        currentSource?.name?.toLowerCase().includes(d.toLowerCase())
-                    )
-                );
-            }
-            showSourceInfo = false;
-         " @click.self="showSourceOverlay = false"
+    <div x-show="showSourceOverlay" x-cloak 
+        @open-source.window="processSource($event)"
+        @click.self="showSourceOverlay = false"
         class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center p-4">
         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
             <header class="flex justify-between items-center mb-4">
@@ -1682,7 +1734,7 @@
                     <!-- Show this when no media info exists -->
                     <template x-if="!mediaInfo">
                         <div class="text-center py-6">
-                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Help Improve Our Database</h4>
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Help improve our database</h4>
                             <p class="text-gray-600 dark:text-gray-400 mb-4">
                                 We don't have detailed information about this news source yet. Your contribution can help others stay informed about media ownership and bias.
                             </p>
