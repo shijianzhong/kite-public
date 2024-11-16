@@ -487,7 +487,7 @@
                     });
                 },
                 fetchCategories() {
-                    return fetch(`kite.json?${timestamp}`)
+                    return fetch(`{{ base_path }}kite.json?${timestamp}`)
                         .then(response => response.json())
                         .then(data => {
                             this.availableCategories = data.categories;
@@ -502,7 +502,7 @@
                     let loadedCategories = 0;
 
                     const fetchPromises = this.availableCategories.map(category =>
-                        fetch(`${category.file}?${timestamp}`)
+                        fetch(`{{ base_path }}${category.file}?${timestamp}`)
                         .then(response => response.json())
                         .then(data => {
                             if (category.name === 'OnThisDay') {
@@ -760,6 +760,13 @@
                     }
                 },
                 changeCategory() {
+                    // Close any expanded story
+                    if (this.expandedStory) {
+                        this.expandedStory.expanded = false;
+                        this.expandedStory = null;
+                        updateUrlWithArticleId('');
+                    }
+                    
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                     if (this.availableCategories.length > 0) {
                         let enabledCategories = Alpine.store('categories').enabled;
@@ -779,8 +786,15 @@
                         if (this.currentCategory === 'OnThisDay') {
                             this.stories = this.onThisDayEvents;
                         } else if (this.allStories[this.currentCategory]) {
-                            this.stories = this.allStories[this.currentCategory].clusters
-                                .slice(0, this.$store.storyCount.current);
+                            const allClusters = this.allStories[this.currentCategory].clusters;
+                            const unreadClusters = allClusters.filter(story => !this.readStories[story.title]);
+                            const readClusters = allClusters.filter(story => this.readStories[story.title]);
+                                
+                            // Take unread stories up to the limit
+                            const unreadToShow = unreadClusters.slice(0, this.$store.storyCount.current);
+                                
+                            // Combine unread and read stories
+                            this.stories = [...unreadToShow, ...readClusters];
                             this.readCount = this.allStories[this.currentCategory].readCount;
                         }
                     }
@@ -901,7 +915,7 @@
   
                     <section>
                         <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Customization</h2>
-                        <p>Use Kite settings to reorder and toggle categories. Missing a news category? Kite uses community-currated catogories which are open source, feel free to <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">contribute</a>.</p>
+                        <p>Use Kite settings to reorder and toggle categories. Have an idea for a feture or news category? Most of Kite is open source including th web app and community curated feeds. Feel free to <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">contribute</a>.</p>
                     </section>
 
 
@@ -1590,7 +1604,7 @@
             <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-4">
                 <button @click="showSourceInfo = !showSourceInfo"
                         class="w-full flex justify-between items-center text-left text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 p-2 rounded-lg">
-                    <span class="font-semibold">Media Analysis</span>
+                    <span class="font-semibold">Source information</span>
                     <svg class="w-5 h-5 transform transition-transform" 
                          :class="{'rotate-180': showSourceInfo}"
                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
