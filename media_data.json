@@ -2,7 +2,7 @@
     {
         "country": "China",
         "organization": "China Media Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "cctv.com"
         ],
@@ -12,7 +12,7 @@
     {
         "country": "China",
         "organization": "People's Daily",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "en.people.cn"
         ],
@@ -22,7 +22,7 @@
     {
         "country": "China",
         "organization": "China Daily Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "chinadaily.com.cn"
         ],
@@ -32,7 +32,7 @@
     {
         "country": "China",
         "organization": "China Youth Daily",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "cyol.com"
         ],
@@ -42,7 +42,7 @@
     {
         "country": "China",
         "organization": "People's Liberation Army Daily",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "eng.chinamil.com.cn"
         ],
@@ -52,13 +52,13 @@
     {
         "country": "China",
         "organization": "Economic Daily Newspaper Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "China",
         "organization": "Guangming Daily",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gmw.cn"
         ],
@@ -68,14 +68,14 @@
     {
         "country": "China",
         "organization": "Legal Daily",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Legal Daily is a People's Republic of China state-owned newspaper under the supervision of the CCP's Central Commission for Political and Legal Affairs that is published in the PRC and primarily covers legal developments, such as important court rulings. Before 2001, Legal Daily was an organ of the Ministry of Justice of the People's Republic of China."
     },
     {
         "country": "China",
         "organization": "Qiushi",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "qstheory.cn"
         ],
@@ -84,7 +84,7 @@
     {
         "country": "China",
         "organization": "China International Publishing Group (CIPG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "cicgcorp.com"
         ],
@@ -94,7 +94,7 @@
     {
         "country": "China",
         "organization": "Xinhua (New China News Agency)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "english.news.cn"
         ],
@@ -104,7 +104,7 @@
     {
         "country": "China",
         "organization": "China News Service",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ecns.cn"
         ],
@@ -114,7 +114,7 @@
     {
         "country": "China",
         "organization": "Phoenix TV",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "ifeng.com"
         ],
@@ -124,13 +124,13 @@
     {
         "country": "China",
         "organization": "Asian Culture and Media Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "China",
         "organization": "Shanghai United Media Group (SUMG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sumg.com.cn"
         ],
@@ -140,7 +140,7 @@
     {
         "country": "China",
         "organization": "Shanghai Media Group (SMG)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "smg.cn"
         ],
@@ -149,19 +149,19 @@
     {
         "country": "China",
         "organization": "Global CAMG Media Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "China",
         "organization": "Chinese New Zealand Herald",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Hong Kong",
         "organization": "Radio-TV Hong Kong (RTHK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rthk.hk"
         ],
@@ -171,7 +171,7 @@
     {
         "country": "Hong Kong",
         "organization": "Television Broadcasts Limited (TVB)",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "tvb.com"
         ],
@@ -181,13 +181,13 @@
     {
         "country": "Hong Kong",
         "organization": "Guangdong Xin Wenhua",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Japan",
         "organization": "Japan Broadcasting Corporation (NHK)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "nhk.or.jp"
         ],
@@ -197,7 +197,7 @@
     {
         "country": "Macao",
         "organization": "Teledifusão de Macau (TDM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tdm.com.mo"
         ],
@@ -206,7 +206,7 @@
     {
         "country": "Mongolia",
         "organization": "Mongolian National Broadcaster (MNB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "mnb.mn"
         ],
@@ -216,7 +216,7 @@
     {
         "country": "Mongolia",
         "organization": "Montsame",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "montsame.mn"
         ],
@@ -226,7 +226,7 @@
     {
         "country": "North Korea",
         "organization": "Korean Central Broadcasting Committee (KCBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gnu.rep.kp"
         ],
@@ -236,13 +236,13 @@
     {
         "country": "North Korea",
         "organization": "Mansudae TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "North Korea",
         "organization": "Rodong Sinmun",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rodong.rep.kp"
         ],
@@ -252,14 +252,14 @@
     {
         "country": "North Korea",
         "organization": "Joson Inmingun",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Joson Inmingun is the newspaper of Korean People's Army. It was first published on July 10, 1948."
     },
     {
         "country": "North Korea",
         "organization": "Chongnyon Jonwi",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "youth.rep.kp"
         ],
@@ -268,7 +268,7 @@
     {
         "country": "North Korea",
         "organization": "Minju Choson",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "minzu.rep.kp"
         ],
@@ -277,28 +277,28 @@
     {
         "country": "North Korea",
         "organization": "Rodongja Sinmun",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Rodongja Sinmun is the organ of the Central Committee of the General Federation of Trade Unions of Korea, the government-controlled federation of trade unions of North Korea."
     },
     {
         "country": "North Korea",
         "organization": "Pyongyang Sinmun",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Pyongyang Sinmun is a North Korean newspaper founded on 1 June 1957 by Kim Il Sung. It launched an online version on 1 January 2005. It is published by the Workers' Party of Korea Pyongyang Municipal Committee six times per week under the editorship of Song Rak-gyun. Although technically a local newspaper, it is distributed nationwide and stories cover news from other regions as well. The print is four pages. It has a circulation of 4,3 million. The Pyongyang Times is its foreign language edition."
     },
     {
         "country": "North Korea",
         "organization": "Chollima",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The qianlima is a mythical horse that originates from the Chinese classics and is commonly portrayed in East Asian mythology. The winged horse is said to be too swift and elegant to be mounted by any mortal man and is named after its ability to travel one thousand li in a single day."
     },
     {
         "country": "North Korea",
         "organization": "Choson Sinbo",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "chosonsinbo.com"
         ],
@@ -307,7 +307,7 @@
     {
         "country": "North Korea",
         "organization": "Naenara",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Naenara is the official web portal of the North Korean government. It was the first website in North Korea, and was created in 1996. The portal's categories include politics, tourism, music, foreign trade, arts, press, information technology, history, and \"Korea is One\".",
         "owner": "Korea Computer Center"
@@ -315,7 +315,7 @@
     {
         "country": "North Korea",
         "organization": "Korean Central News Agency (KCNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "kcna.kp"
         ],
@@ -325,7 +325,7 @@
     {
         "country": "North Korea",
         "organization": "DPRK Today",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "DPRK Today was a Chinese-based propaganda site sponsored by the government of North Korea. It has gained notoriety for threatening nuclear attacks on neighbouring South Korea and for having published an article endorsing US President Donald Trump during his election campaign in 2016.",
         "owner": "Pyongyang Moranbong Editorial Bureau"
@@ -333,13 +333,13 @@
     {
         "country": "North Korea",
         "organization": "Korea 615",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "South Korea",
         "organization": "Korean Broadcasting System (KBS)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "kbs.co.kr"
         ],
@@ -349,7 +349,7 @@
     {
         "country": "South Korea",
         "organization": "Munhwa Broadcasting Corporation (MBC)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "imbc.com"
         ],
@@ -359,7 +359,7 @@
     {
         "country": "South Korea",
         "organization": "Korea Educational Broadcasting System (EBS)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "ebs.co.kr"
         ],
@@ -369,7 +369,7 @@
     {
         "country": "South Korea",
         "organization": "Yonhap News Agency",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "en.yna.co.kr"
         ],
@@ -379,7 +379,7 @@
     {
         "country": "Taiwan",
         "organization": "Taiwan Broadcasting System (TBS)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "web.archive.org"
         ],
@@ -389,7 +389,7 @@
     {
         "country": "Taiwan",
         "organization": "Radio Taiwan International (RTI)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "en.rti.org.tw"
         ],
@@ -399,20 +399,20 @@
     {
         "country": "Taiwan",
         "organization": "Central News Agency (CNA)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [],
         "description": "Central News Agency may refer to:"
     },
     {
         "country": "Taiwan",
         "organization": "Ministry of Foreign Affairs Media",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Brunei",
         "organization": "Radio Television Brunei (RTB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtb.gov.bn"
         ],
@@ -422,19 +422,19 @@
     {
         "country": "Brunei",
         "organization": "Brunei Press Sdn. Bhd.",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Brunei",
         "organization": "Pelita Brunei",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "National Television of Cambodia (TVK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvk.gov.kh"
         ],
@@ -443,19 +443,19 @@
     {
         "country": "Cambodia",
         "organization": "National Radio of Cambodia (RNK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "Cambodian Broadcasting Service (CBS)",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "Bayon Television",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "bayontv.com.kh"
         ],
@@ -465,13 +465,13 @@
     {
         "country": "Cambodia",
         "organization": "Kampuchea Thmey Daily",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "Khmer Times",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "khmertimeskh.com"
         ],
@@ -481,25 +481,25 @@
     {
         "country": "Cambodia",
         "organization": "Post Media Co",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "Agence Kampuchea Presse (AKP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cambodia",
         "organization": "FN Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Indonesia",
         "organization": "Television of the Republic of Indonesia (TVRI)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvri.go.id"
         ],
@@ -508,7 +508,7 @@
     {
         "country": "Indonesia",
         "organization": "Radio Republik Indonesia (RRI)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rri.co.id"
         ],
@@ -517,14 +517,14 @@
     {
         "country": "Indonesia",
         "organization": "Antara",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Antara may refer to:"
     },
     {
         "country": "Laos",
         "organization": "Lao National TV (LNTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "lntv.gov.la"
         ],
@@ -534,7 +534,7 @@
     {
         "country": "Laos",
         "organization": "Lao National Radio (LNR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "lnr.org.la"
         ],
@@ -544,13 +544,13 @@
     {
         "country": "Laos",
         "organization": "Lao Press in Foreign Languages",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Laos",
         "organization": "Vientiane Mai",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vientianemai.net"
         ],
@@ -559,7 +559,7 @@
     {
         "country": "Laos",
         "organization": "Passasson",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pasaxon.org.la"
         ],
@@ -569,14 +569,14 @@
     {
         "country": "Laos",
         "organization": "KPL",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The term/acronym KPL may refer to:"
     },
     {
         "country": "Malaysia",
         "organization": "Radio Television Malaysia (RTM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtm.gov.my"
         ],
@@ -586,7 +586,7 @@
     {
         "country": "Malaysia",
         "organization": "BERNAMA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bernama.com"
         ],
@@ -596,7 +596,7 @@
     {
         "country": "Myanmar",
         "organization": "Myanmar Radio and Television (MRTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "mrtv.gov.mm"
         ],
@@ -606,19 +606,19 @@
     {
         "country": "Myanmar",
         "organization": "News and Periodicals Enterprise (NPE)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Myanmar",
         "organization": "Myawady Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Philippines",
         "organization": "People's Television Network (PTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ptvnews.ph"
         ],
@@ -628,7 +628,7 @@
     {
         "country": "Philippines",
         "organization": "Philippine Broadcasting Service (PBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pbs.gov.ph"
         ],
@@ -638,7 +638,7 @@
     {
         "country": "Philippines",
         "organization": "Intercontinental Broadcasting Corporation (IBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Intercontinental Broadcasting Corporation is a Philippine free-to-air television and radio network based in Quezon City. It is a state broadcaster owned by the Government Communications Group under the Presidential Communications Office . IBC was also commonly referred to as \"The Kaibigan Network\", the Filipino term for \"friend\", which was introduced between 2019 and 2023 until it was later dropped in 2023 in favor of using the government slogan \"Bagong Pilipinas\", which is shared with PTV.",
         "owner": "Presidential Communications Office (1986–present)"
@@ -646,7 +646,7 @@
     {
         "country": "Philippines",
         "organization": "Philippines News Agency (PNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pna.gov.ph"
         ],
@@ -656,13 +656,13 @@
     {
         "country": "Philippines",
         "organization": "Philippines Information Agency (PIA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Philippines",
         "organization": "Radio Television Malacañang (RTVM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pco.gov.ph"
         ],
@@ -671,13 +671,13 @@
     {
         "country": "Philippines",
         "organization": "Bureau of Communications Services",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Singapore",
         "organization": "Mediacorp",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "mediacorp.sg"
         ],
@@ -687,7 +687,7 @@
     {
         "country": "Singapore",
         "organization": "SPH Media Trust",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "sph.com.sg"
         ],
@@ -696,7 +696,7 @@
     {
         "country": "Thailand",
         "organization": "National Broadcasting Services of Thailand (NBT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "nbt2hd.prd.go.th"
         ],
@@ -706,7 +706,7 @@
     {
         "country": "Thailand",
         "organization": "MCOT",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "mcot.net"
         ],
@@ -716,13 +716,13 @@
     {
         "country": "Thailand",
         "organization": "National News Bureau of Thailand (NNT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Thailand",
         "organization": "Thai Public Broadcasting Service",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "The Thai Public Broadcasting Service, or Thai PBS, is a public broadcasting service in Thailand. It was established by the Thai Public Broadcasting Service Act, BE 2551 , which came into force on 15 January 2008. Under this act, Thai PBS but is not a government agency ",
         "owner": "NBC Word"
@@ -730,21 +730,21 @@
     {
         "country": "Thailand",
         "organization": "Channel 5",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Channel 5 most commonly refers to:"
     },
     {
         "country": "Thailand",
         "organization": "Radio Thailand Satun",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Radio Thailand Satun is a Thailand government radio station which is owned by the Public Relations Department. It broadcasts in Satun Province, parts of Trang Province, Songkhla Province and Phatthalung Province. It can be received in Malaysia in places such as Perlis, Langkawi, northern Kedah and Penang. Radio Thailand Satun broadcasts on two FM frequencies and one AM frequency with 1 kW and 10 kW transmitter power output respectively. It provides information, knowledge and entertainment to the listeners."
     },
     {
         "country": "Vietnam",
         "organization": "Vietnam Television (VTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vtv.gov.vn"
         ],
@@ -754,7 +754,7 @@
     {
         "country": "Vietnam",
         "organization": "Voice of Vietnam",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vov.gov.vn"
         ],
@@ -763,7 +763,7 @@
     {
         "country": "Vietnam",
         "organization": "VTC Digital Television",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vtc.gov.vn"
         ],
@@ -773,7 +773,7 @@
     {
         "country": "Vietnam",
         "organization": "Hanoi Radio Television",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "hanoionline.vn"
         ],
@@ -783,19 +783,19 @@
     {
         "country": "Vietnam",
         "organization": "Ho Chi Min Television (HTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Vietnam",
         "organization": "Voice of Ho Chi Minh City's People",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Vietnam",
         "organization": "Nhan Dan",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "nhandan.vn"
         ],
@@ -805,7 +805,7 @@
     {
         "country": "Vietnam",
         "organization": "Vietnam News Agency (VNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vnanet.vn"
         ],
@@ -815,7 +815,7 @@
     {
         "country": "Vietnam",
         "organization": "Tuoi Tre",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tuoitre.vn"
         ],
@@ -825,7 +825,7 @@
     {
         "country": "Vietnam",
         "organization": "Thanh Nien",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "thanhnien.vn"
         ],
@@ -834,7 +834,7 @@
     {
         "country": "Vietnam",
         "organization": "Sài Gòn Giải Phóng",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sggp.org.vn"
         ],
@@ -844,20 +844,20 @@
     {
         "country": "Vietnam",
         "organization": "Tien Phong",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Tiền Phong may refer to:"
     },
     {
         "country": "Vietnam",
         "organization": "Saigon Times Group",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Vietnam",
         "organization": "VietNamNet",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vietnamnet.vn"
         ],
@@ -867,7 +867,7 @@
     {
         "country": "Afghanistan",
         "organization": "Radio Television Afghanistan (RTA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rta.af"
         ],
@@ -877,13 +877,13 @@
     {
         "country": "Afghanistan",
         "organization": "Directorate of Government Newspapers",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Afghanistan",
         "organization": "Bakhtar News Agency",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bakhtarnews.af"
         ],
@@ -893,7 +893,7 @@
     {
         "country": "Bangladesh",
         "organization": "Bangladesh Television (BTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "btv.gov.bd"
         ],
@@ -903,7 +903,7 @@
     {
         "country": "Bangladesh",
         "organization": "Bangladesh Betar (BB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "betar.gov.bd"
         ],
@@ -913,7 +913,7 @@
     {
         "country": "Bangladesh",
         "organization": "Bangladesh Sangbad Sangstha (BSS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bssnews.net"
         ],
@@ -922,7 +922,7 @@
     {
         "country": "Bhutan",
         "organization": "Bhutan Broadcasting Service (BBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bbs.bt"
         ],
@@ -932,13 +932,13 @@
     {
         "country": "Bhutan",
         "organization": "Kuensel Corporation",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "India",
         "organization": "Prasar Bharati",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "prasarbharati.gov.in"
         ],
@@ -948,19 +948,19 @@
     {
         "country": "The Maldives",
         "organization": "Public Service Media (PSM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nepal",
         "organization": "Nepal Television Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nepal",
         "organization": "Radio Nepal",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "radionepal.gov.np"
         ],
@@ -970,7 +970,7 @@
     {
         "country": "Nepal",
         "organization": "Gorkhapatra Sansthan",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gorkhapatra.org.np"
         ],
@@ -980,7 +980,7 @@
     {
         "country": "Nepal",
         "organization": "Rastriya Samachar Samiti (RSS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rss.com.np"
         ],
@@ -989,7 +989,7 @@
     {
         "country": "Pakistan",
         "organization": "Pakistan Broadcasting Corporation (PBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "radio.gov.pk"
         ],
@@ -999,7 +999,7 @@
     {
         "country": "Pakistan",
         "organization": "Pakistan Television Corporation (PTV)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "ptv.com.pk"
         ],
@@ -1009,7 +1009,7 @@
     {
         "country": "Pakistan",
         "organization": "Associated Press of Pakistan (APP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "app.com.pk"
         ],
@@ -1019,7 +1019,7 @@
     {
         "country": "Sri Lanka",
         "organization": "Sri Lanka Rupavahini Corporation (SLRC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rupavahini.lk"
         ],
@@ -1029,7 +1029,7 @@
     {
         "country": "Sri Lanka",
         "organization": "Independent Television Network (ITN)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "itn.lk"
         ],
@@ -1039,7 +1039,7 @@
     {
         "country": "Sri Lanka",
         "organization": "Sri Lanka Broadcasting Corporation (SLBC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "slbc.lk"
         ],
@@ -1049,7 +1049,7 @@
     {
         "country": "Sri Lanka",
         "organization": "Associated Newspapers of Ceylon Limited",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "lakehouse.lk"
         ],
@@ -1059,13 +1059,13 @@
     {
         "country": "Sri Lanka",
         "organization": "LankaPuvath",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Armenia",
         "organization": "Public Television of Armenia",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "1tv.am"
         ],
@@ -1075,7 +1075,7 @@
     {
         "country": "Armenia",
         "organization": "Public Radio of Armenia",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "armradio.am"
         ],
@@ -1085,7 +1085,7 @@
     {
         "country": "Armenia",
         "organization": "Armenpress",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "armenpress.am"
         ],
@@ -1094,69 +1094,69 @@
     {
         "country": "Azerbaijan",
         "organization": "Azerbaijan Television and Radio Broadcasting",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Public Television and Radio Broadcasting Company",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Space Independent TV and Radio Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Azad Azerbaijan (ATV)",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "SOCAR Media",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "ARB Media Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Real TV",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [],
         "description": "Real TV is an American reality television program that ran in syndication from September 9, 1996, to September 7, 2001. It aired footage of extraordinary events that were not usually covered in mainstream news."
     },
     {
         "country": "Azerbaijan",
         "organization": "Azerbaijan state press",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Yeni Azerbaijan",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Azerbaijan",
         "organization": "Azertac",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Azerbaijan State News Agency is the official news agency of the Republic of Azerbaijan. From November 2022, Vugar Aliyev served as chairman of the board."
     },
     {
         "country": "Georgia",
         "organization": "Georgian Public Broadcaster (GPB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gpb.ge"
         ],
@@ -1166,13 +1166,13 @@
     {
         "country": "Georgia",
         "organization": "Adjara TV and Radio Company",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Russia",
         "organization": "All-Russia State Television and Radio Broadcasting Company (VGTRK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "vgtrk.ru"
         ],
@@ -1182,7 +1182,7 @@
     {
         "country": "Russia",
         "organization": "Channel One Russia",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "1tv.ru"
         ],
@@ -1192,7 +1192,7 @@
     {
         "country": "Russia",
         "organization": "Gazprom Media",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "gazprom-media.com"
         ],
@@ -1202,14 +1202,14 @@
     {
         "country": "Russia",
         "organization": "National Media Group (NMG)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Alina Maratovna Kabaeva or Kabayeva is a Russian politician, media manager and retired individual rhythmic gymnast, who has been designated Honoured Master of Sports by the Russian government."
     },
     {
         "country": "Russia",
         "organization": "Public Television of Russia (OTR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "otr-online.ru"
         ],
@@ -1219,7 +1219,7 @@
     {
         "country": "Russia",
         "organization": "TASS",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tass.com"
         ],
@@ -1229,14 +1229,14 @@
     {
         "country": "Russia",
         "organization": "RT",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "RT may refer to:"
     },
     {
         "country": "Russia",
         "organization": "Rossiya Segodnya",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rossiyasegodnya.com"
         ],
@@ -1246,7 +1246,7 @@
     {
         "country": "Russia",
         "organization": "Rambler Media Group",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Rambler is a Russian search engine and one of the biggest Russian web portals, owned by the Rambler Media Group. The site was launched in 1996 by Stack Ltd, went public in 2005, was acquired by Prof-Media in 2006, and has since been acquired by Russian bank Sberbank.",
         "owner": "Sberbank"
@@ -1254,21 +1254,21 @@
     {
         "country": "Russia",
         "organization": "Zvezda",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Zvezda means \"star\" in some Slavic languages, and may refer to:"
     },
     {
         "country": "Russia",
         "organization": "Mir",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Mir was a space station operated in low Earth orbit from 1986 to 2001, first by the Soviet Union and later by the Russian Federation. Mir was the first modular space station and was assembled in orbit from 1986 to 1996. It had a greater mass than any previous spacecraft. At the time it was the largest artificial satellite in orbit, succeeded by the International Space Station after Mir's orbit decayed. The station served as a microgravity research laboratory in which crews conducted experiments in biology, human biology, physics, astronomy, meteorology, and spacecraft systems with a goal of developing technologies required for permanent occupation of space."
     },
     {
         "country": "Russia",
         "organization": "Rossiyskaya Gazeta",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rg.ru"
         ],
@@ -1278,7 +1278,7 @@
     {
         "country": "Russia",
         "organization": "Argumenty i Fakty",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "aif.ru"
         ],
@@ -1288,40 +1288,40 @@
     {
         "country": "Russia",
         "organization": "Info Ros",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Russia",
         "organization": "Diario Octubre",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Russia",
         "organization": "Oriental Review",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Oriental Review is an online magazine that describes itself as \"an international e-journal focusing on current political issues in Eurasia and beyond\". It was founded in 2010. Despite its claims of editorial independence, the website has been described as under the control of Russia's Foreign Intelligence Service ."
     },
     {
         "country": "Russia",
         "organization": "New Eastern Outlook",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "New Eastern Outlook is an internet journal published by the Institute of Oriental Studies of the Russian Academy of Sciences. According to its website, this journal looks at world events \"as they relate to the Orient.\" According to a 2020 report from the US State Department, NEO is \"a pseudo-academic publication ... that promotes disinformation and propaganda focused primarily on the Middle East, Asia, and Africa.\" According to the United States Department of the Treasury, NEO is run by SVR, Russia's foreign intelligence agency. NEO is included in the EUvsDisinfo project, which tracks online disinformation."
     },
     {
         "country": "Russia",
         "organization": "Strategic Culture Foundation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Strategic Culture Foundation is a Russian think tank based in Moscow that primarily publishes an online current affairs magazine of the same name. SCF is regarded as an arm of Russian state interests by the United States government. SCF has been characterized as a conservative, pro-Russian propaganda website by U.S. media and others."
     },
     {
         "country": "Russia",
         "organization": "Tsargrad TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tsargrad.tv"
         ],
@@ -1331,7 +1331,7 @@
     {
         "country": "Kazakhstan",
         "organization": "Qazaqstan Radio and Television Corporation (RTRK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtrk.kz"
         ],
@@ -1341,7 +1341,7 @@
     {
         "country": "Kazakhstan",
         "organization": "Khabar Agency",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "khabar.kz"
         ],
@@ -1350,20 +1350,20 @@
     {
         "country": "Kazakhstan",
         "organization": "Eurasia",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Eurasia is the largest continental area on Earth, comprising all of Europe and Asia. According to some geographers, physiographically, Eurasia is a single supercontinent. The concepts of Europe and Asia as distinct continents date back to antiquity, but their borders have historically been subject to change. For example, to the ancient Greeks, Asia originally included Africa but they classified Europe as separate land. Eurasia is connected to Africa at the Suez Canal, and the two are sometimes combined to describe the largest contiguous landmass on Earth, Afro-Eurasia."
     },
     {
         "country": "Kazakhstan",
         "organization": "Government press unit",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kazakhstan",
         "organization": "Kazinform",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "inform.kz"
         ],
@@ -1372,25 +1372,25 @@
     {
         "country": "Kyrgyzstan",
         "organization": "National Television and Radio Broadcasting Company (NTRK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kyrgyzstan",
         "organization": "ELTR State Television and Radio",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kyrgyzstan",
         "organization": "Kyrgyz National News Agency Kabar",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tajikistan",
         "organization": "Televizioni Tojikiston",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvt.tj"
         ],
@@ -1400,38 +1400,38 @@
     {
         "country": "Tajikistan",
         "organization": "Tajik Radio",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tajikistan",
         "organization": "Government press unit",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tajikistan",
         "organization": "Khovar",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Khovar is the official state media news agency of Tajikistan."
     },
     {
         "country": "Turkmenistan",
         "organization": "Turkmen TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Turkmenistan",
         "organization": "State Publishing Office",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Turkmenistan",
         "organization": "Turkmenistan State News Agency (TDH)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tdh.gov.tm"
         ],
@@ -1441,7 +1441,7 @@
     {
         "country": "Uzbekistan",
         "organization": "National Television and Radio Company of Uzbekistan (MTRK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "mtrk.uz"
         ],
@@ -1451,20 +1451,20 @@
     {
         "country": "Uzbekistan",
         "organization": "Uzbekistan government press",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Uzbekistan",
         "organization": "Uzbekistan National News Agency (UzA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Uzbekistan National News Agency also known as UzA is a government-run news agency based in Tashkent, Uzbekistan publishing news in the Uzbek, Russian, English, French, German, Spanish, Arabic, Kazakh and Chinese languages."
     },
     {
         "country": "Belarus",
         "organization": "National State Television and Radio Company of Belarus",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvr.by"
         ],
@@ -1474,32 +1474,32 @@
     {
         "country": "Belarus",
         "organization": "Second National TV Channel (ONT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Belarus",
         "organization": "Stolichnoye Televideniye (STV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Belarus",
         "organization": "Belarus Segodnya Publishing House",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Belarus",
         "organization": "Zvyazda",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Zvyazda is a state-owned daily newspaper in Belarus."
     },
     {
         "country": "Belarus",
         "organization": "BelTA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "belta.by"
         ],
@@ -1509,7 +1509,7 @@
     {
         "country": "Moldova",
         "organization": "Teleradio-Moldova (TRM)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "trm.md"
         ],
@@ -1519,13 +1519,13 @@
     {
         "country": "Moldova",
         "organization": "Gagauzia Radio Televizionu (GRT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Moldova",
         "organization": "Moldpres",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "moldpres.md"
         ],
@@ -1534,7 +1534,7 @@
     {
         "country": "Ukraine",
         "organization": "Public Broadcasting Company of Ukraine (Suspilne)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "corp.suspilne.media"
         ],
@@ -1544,7 +1544,7 @@
     {
         "country": "Ukraine",
         "organization": "Ukrinform",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ukrinform.net"
         ],
@@ -1554,26 +1554,26 @@
     {
         "country": "Ukraine",
         "organization": "Government media",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "State media are typically understood as media outlets that are owned, operated, or significantly influenced by the government. They are distinguished from public service media, which are designed to serve the public interest, operate independently of government control, and are financed through a combination of public funding, licensing fees, and sometimes advertising. The crucial difference lies in the level of independence from government influence and the commitment to serving a broad public interest rather than the interests of a specific political party or government agenda."
     },
     {
         "country": "Argentina",
         "organization": "Radio y Televisión Argentina (RTA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Argentina",
         "organization": "Contenidos Públicos",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Bolivia",
         "organization": "Bolivia TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "boliviatv.bo"
         ],
@@ -1583,32 +1583,32 @@
     {
         "country": "Bolivia",
         "organization": "Red Patria Nueva-Radio Illimani",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Bolivia",
         "organization": "Ahora El Pueblo",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Bolivia",
         "organization": "Agencia Boliviana de Informacion (ABI)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Agencia Boliviana de Información is a government press agency based in Bolivia."
     },
     {
         "country": "Bolivia",
         "organization": "Sistema Nacional de Radios de los Pueblos Originarios",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Brazil",
         "organization": "Empresa Brasil de Comunicação (EBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ebc.com.br"
         ],
@@ -1617,7 +1617,7 @@
     {
         "country": "Chile",
         "organization": "Televisión Nacional de Chile (TVN)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "tvn.cl"
         ],
@@ -1626,85 +1626,85 @@
     {
         "country": "Colombia",
         "organization": "Radio y Televisión Nacional de Colombia (RTVC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Colombia",
         "organization": "Unidad de Medios de Comunicación (Unimedios)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Ecuador",
         "organization": "Empresa Pública de Comunicación del Ecuador (Comunica EP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Ecuador",
         "organization": "Sistema de Información Legislativa",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Paraguay",
         "organization": "Dirección General de Medios del Estado",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Peru",
         "organization": "Instituto Nacional de Radio y Televisión de Perú (IRTP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Peru",
         "organization": "Empresa Peruana de Servicios Editoriales (Editora Perú)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Uruguay",
         "organization": "Servicio de Comunicación Audiovisual Nacional (SECAN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Venezuela",
         "organization": "Sistema Bolivariano de Comunicación e Información (SiBCI)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Venezuela",
         "organization": "Fundación Audiovisual Nacional de Televisión ANTV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Venezuela",
         "organization": "El Circuito Radial PDVSA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Venezuela",
         "organization": "Misión Verdad",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Bahamas",
         "organization": "Broadcasting Corporation of The Bahamas (BCB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Barbados",
         "organization": "Caribbean Broadcasting Corporation (CBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "cbc.bb"
         ],
@@ -1714,27 +1714,27 @@
     {
         "country": "Cuba",
         "organization": "Institute of Information and Social Communication (ICS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cuba",
         "organization": "Granma",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Granma may refer to:"
     },
     {
         "country": "Cuba",
         "organization": "Cuban News Agency (ACN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Cuba, officially the Republic of Cuba, is an island country, comprising the island of Cuba , Isla de la Juventud, and 4,195 islands, islets and cays surrounding the main island. It is located where the northern Caribbean Sea, Gulf of Mexico, and Atlantic Ocean meet. Cuba is located east of the Yucatán Peninsula , south of both Florida and the Bahamas, west of Hispaniola , and north of Jamaica and the Cayman Islands. Havana is the largest city and capital. Cuba is the third-most populous country in the Caribbean after Haiti and the Dominican Republic, with about 10 million inhabitants. It is the largest country in the Caribbean by area."
     },
     {
         "country": "Cuba",
         "organization": "Prensa Latina",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "prensa-latina.cu"
         ],
@@ -1744,7 +1744,7 @@
     {
         "country": "Dominica",
         "organization": "Dominica Broadcasting Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "dbcradio.net"
         ],
@@ -1754,7 +1754,7 @@
     {
         "country": "Dominican Republic",
         "organization": "Corporación Estatal de Radio y Televisión (CERTV)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "new.certv.gob.do"
         ],
@@ -1763,7 +1763,7 @@
     {
         "country": "Haiti",
         "organization": "Radio Télévision Nationale d'Haïti (RTNH)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtnh.ht"
         ],
@@ -1773,13 +1773,13 @@
     {
         "country": "Jamaica",
         "organization": "PBC Jamaica",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Saint Kitts & Nevis",
         "organization": "ZIZ Broadcasting Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "zizonline.com"
         ],
@@ -1789,61 +1789,61 @@
     {
         "country": "Costa Rica",
         "organization": "Sistema Nacional de Radio y Television (SINART)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Costa Rica",
         "organization": "Sistema Universitario de Radio y Televisión (UCR)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "El Salvador",
         "organization": "Sistema Nacional de Medios Públicos (SINAMP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "El Salvador",
         "organization": "Diaro El Salvador",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "El Salvador",
         "organization": "Radio/TV Legislativas",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Radio Nacional TGW",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Canal 5 TV Maya",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Canal de Gobierno",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Canal 9 del Congreso",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Diario de Centro América",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "dca.gob.gt"
         ],
@@ -1853,19 +1853,19 @@
     {
         "country": "Guatemala",
         "organization": "Agencia Guatemalteca de Noticias (AGN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Guatemala",
         "organization": "Universidad de San Carlos de Guatemala Broadcasting",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Honduras",
         "organization": "Televisión Nacional de Honduras (TNH)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tnh.gob.hn"
         ],
@@ -1875,38 +1875,38 @@
     {
         "country": "Honduras",
         "organization": "Radio Nacional de Honduras",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Honduras",
         "organization": "Poder Popular",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Poder Popular may refer to:"
     },
     {
         "country": "Honduras",
         "organization": "Canal del Congreso Nacional",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Honduras",
         "organization": "Canal de la Universidad Autónoma de Honduras (UTV)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Honduras",
         "organization": "Fuerzas Armadas TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mexico",
         "organization": "Canal Once",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "canalonce.mx"
         ],
@@ -1916,7 +1916,7 @@
     {
         "country": "Mexico",
         "organization": "Instituto Mexicano de la Radio (IMER)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "imer.com.mx"
         ],
@@ -1926,7 +1926,7 @@
     {
         "country": "Mexico",
         "organization": "Sistema Público de Radiodifusión del Estado Mexicano (SPR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "spr.gob.mx"
         ],
@@ -1935,26 +1935,26 @@
     {
         "country": "Mexico",
         "organization": "Sistema de Radiodifusoras Culturales Indígenas (SRCI)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [],
         "description": "The Sistema de Radiodifusoras Culturales Indígenas is a state-owned network of radio stations in Mexico. The radio stations it operates are community radio stations that aim to serve different sectors of the country's indigenous peoples. Pursuant to Article 4 of the Constitution, their mission is to strengthen the multicultural nature of the nation by promoting the use of 31 indigenous languages."
     },
     {
         "country": "Mexico",
         "organization": "Television Metropolitana - Canal 22",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mexico",
         "organization": "TV Radio UNAM",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": []
     },
     {
         "country": "Mexico",
         "organization": "Canal del Congreso",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "canaldecongreso.gob.mx"
         ],
@@ -1964,7 +1964,7 @@
     {
         "country": "Mexico",
         "organization": "Radio Educación",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "radioeducacion.gob.mx"
         ],
@@ -1974,44 +1974,44 @@
     {
         "country": "Nicaragua",
         "organization": "Sistema Nacional de Televisión",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Sistema Nacional de Televisión may refer to:"
     },
     {
         "country": "Nicaragua",
         "organization": "Radio Nicaragua",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nicaragua",
         "organization": "CODISA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nicaragua",
         "organization": "La Nueva Radio Ya",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nicaragua",
         "organization": "La Voz del Sandinismo",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nicaragua",
         "organization": "El 19 Digital",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nicaragua",
         "organization": "Barricada",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "barricada.com.es"
         ],
@@ -2020,13 +2020,13 @@
     {
         "country": "Panama",
         "organization": "Sistema Estatal de Radio y Televisión (SERTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Bahrain",
         "organization": "Bahrain Radio and Television Corporation (BRTC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "mia.gov.bh"
         ],
@@ -2036,7 +2036,7 @@
     {
         "country": "Bahrain",
         "organization": "Bahrain News Agency",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bna.bh"
         ],
@@ -2046,7 +2046,7 @@
     {
         "country": "Iran",
         "organization": "Islamic Republic of Iran Broadcasting (IRIB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "irib.ir"
         ],
@@ -2056,13 +2056,13 @@
     {
         "country": "Iran",
         "organization": "The Islamic Ideology Dissemination Organization (IIDO)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Islamic Republic News Agency (IRNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "irna.ir"
         ],
@@ -2072,7 +2072,7 @@
     {
         "country": "Iran",
         "organization": "Iranian Students News Agency (ISNA)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "isna.ir"
         ],
@@ -2081,7 +2081,7 @@
     {
         "country": "Iran",
         "organization": "Fars News Agency",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "farsnews.com"
         ],
@@ -2091,43 +2091,43 @@
     {
         "country": "Iran",
         "organization": "Keyhan Institute",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Revolutionary Guards Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Revolutionary Guards Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Revolutionary Guards Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Revolutionary Guards Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Iran",
         "organization": "Revolutionary Guards Media",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Iraq",
         "organization": "Iraqi Media Network",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "imn.iq"
         ],
@@ -2137,7 +2137,7 @@
     {
         "country": "Israel",
         "organization": "Israeli Public Broadcasting Corporation (IPBC)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "kan.org.il"
         ],
@@ -2147,14 +2147,14 @@
     {
         "country": "Israel",
         "organization": "Galatz",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [],
         "description": "Galatz may refer to:"
     },
     {
         "country": "Jordan",
         "organization": "Jordan Radio and Television Corporation (JRTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "jrtv.jo"
         ],
@@ -2164,7 +2164,7 @@
     {
         "country": "Jordan",
         "organization": "Al-Mamlaka",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "almamlakatv.com"
         ],
@@ -2173,19 +2173,19 @@
     {
         "country": "Jordan",
         "organization": "Jordan Press & Publishing Company",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Jordan",
         "organization": "Jordan Press Foundation",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Jordan",
         "organization": "Jordan News Agency (PETRA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "petra.gov.jo"
         ],
@@ -2194,19 +2194,19 @@
     {
         "country": "Jordan",
         "organization": "Al Raya Media Group",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Jordan",
         "organization": "Amen FM",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Kuwait",
         "organization": "Kuwait Television",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "media.gov.kw"
         ],
@@ -2216,13 +2216,13 @@
     {
         "country": "Kuwait",
         "organization": "Kuwait Radio",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kuwait",
         "organization": "Kuwait News Agency (KUNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "kuna.net.kw"
         ],
@@ -2231,13 +2231,13 @@
     {
         "country": "Lebanon",
         "organization": "Télé-Liban",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Lebanon",
         "organization": "Radio Liban",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "radioliban.gov.lb"
         ],
@@ -2247,25 +2247,25 @@
     {
         "country": "Lebanon",
         "organization": "National News Agency (NNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Oman",
         "organization": "Public Authority for Radio and TV of Oman",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Oman",
         "organization": "Oman Establishment for Press, Publication and Advertising (OEPPA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Oman",
         "organization": "Oman News Agency (ONA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "omannews.gov.om"
         ],
@@ -2274,7 +2274,7 @@
     {
         "country": "Palestine territories",
         "organization": "Palestinian Broadcasting Corporation (PBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pbc.ps"
         ],
@@ -2283,13 +2283,13 @@
     {
         "country": "Palestine territories",
         "organization": "Al-Aqsa Media Network",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Palestine territories",
         "organization": "Al-Hayat Al-Jadida",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "alhayat-j.com"
         ],
@@ -2299,7 +2299,7 @@
     {
         "country": "Palestine territories",
         "organization": "Palestine News & Info Agency (WAFA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "english.wafa.ps"
         ],
@@ -2309,13 +2309,13 @@
     {
         "country": "Palestine territories",
         "organization": "Al Wasat Media and Publishing Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Qatar",
         "organization": "Al Jazeera Media Network (AJMN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "network.aljazeera.net"
         ],
@@ -2324,7 +2324,7 @@
     {
         "country": "Qatar",
         "organization": "Qatar Media Corporation (QMC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "qmc.qa"
         ],
@@ -2334,25 +2334,25 @@
     {
         "country": "Qatar",
         "organization": "Dar Al-Watan Printing, Publishing and Distribution Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Qatar",
         "organization": "Gulf Publishing and Printing Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Qatar",
         "organization": "Dar Al Sharq",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Qatar",
         "organization": "Qatar News Agency (QNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "qna.org.qa"
         ],
@@ -2362,7 +2362,7 @@
     {
         "country": "Saudi Arabia",
         "organization": "Saudi Broadcasting Authority (SBA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sba.sa"
         ],
@@ -2372,7 +2372,7 @@
     {
         "country": "Saudi Arabia",
         "organization": "Middle East Broadcasting Center (MBC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "mbc.net"
         ],
@@ -2382,7 +2382,7 @@
     {
         "country": "Saudi Arabia",
         "organization": "Saudi Research and Media Group (SRMG)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "srmg.com"
         ],
@@ -2392,7 +2392,7 @@
     {
         "country": "Saudi Arabia",
         "organization": "Saudi Press Agency (SPA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "spa.gov.sa"
         ],
@@ -2402,25 +2402,25 @@
     {
         "country": "Syria",
         "organization": "General Organization of Radio and TV - Syria (ORTAS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Syria",
         "organization": "Syrian Arab Publishing and Distributing Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Syria",
         "organization": "Al-Wahda Foundation for Press, Printing, Publishing and Distribution",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Syria",
         "organization": "Syrian Arab News Agency (SANA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sana.sy"
         ],
@@ -2429,7 +2429,7 @@
     {
         "country": "UAE",
         "organization": "Dubai Media Incorporated (DMI)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "dmi.gov.ae"
         ],
@@ -2439,7 +2439,7 @@
     {
         "country": "UAE",
         "organization": "Abu Dhabi Media (ADM)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "admn.ae"
         ],
@@ -2449,13 +2449,13 @@
     {
         "country": "UAE",
         "organization": "Sharjah Broadcasting Authority (SBA)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "UAE",
         "organization": "Arab Media Group (AMG)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Arab Media Group is a Dubai, United Arab Emirates based entertainment company and a strategic business vertical of Dubai Holding. AMG covers radio broadcasting, event management, and family entertainment. Some say AMG is an engaging premier integrated entertainment company. It manages Global Village, Arabian Radio Network and Done Events.",
         "owner": "Dubai Holding"
@@ -2463,7 +2463,7 @@
     {
         "country": "UAE",
         "organization": "Sky News Arabia",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "skynewsarabia.com"
         ],
@@ -2473,13 +2473,13 @@
     {
         "country": "UAE",
         "organization": "International Media Investments (IMI)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "UAE",
         "organization": "Emirates News Agency (WAM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "wam.ae"
         ],
@@ -2488,7 +2488,7 @@
     {
         "country": "Yemen",
         "organization": "Yemen TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "yementv.tv"
         ],
@@ -2497,7 +2497,7 @@
     {
         "country": "Yemen",
         "organization": "Yemen TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "yementv.tv"
         ],
@@ -2506,25 +2506,25 @@
     {
         "country": "Yemen",
         "organization": "Yemen General Corporation for Radio and TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Yemen",
         "organization": "Al-Thawra Press and Publishing",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Yemen",
         "organization": "Al Gomhuryah Establishment for Journalism and Publishing",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Yemen",
         "organization": "Yemen News Agency (SABA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "saba.ye"
         ],
@@ -2533,7 +2533,7 @@
     {
         "country": "Yemen",
         "organization": "Yemen News Agency (SABA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "saba.ye"
         ],
@@ -2542,7 +2542,7 @@
     {
         "country": "Algeria",
         "organization": "Établissement public de télévision (EPTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "entv.dz"
         ],
@@ -2552,13 +2552,13 @@
     {
         "country": "Algeria",
         "organization": "Établissement public de radiodiffusion sonore (EPRS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Algeria",
         "organization": "El Moudjahid",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "elmoudjahid.com"
         ],
@@ -2567,13 +2567,13 @@
     {
         "country": "Algeria",
         "organization": "Ech Chaab",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Algeria",
         "organization": "El Djoumhouria",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "eldjoumhouria.dz"
         ],
@@ -2582,14 +2582,14 @@
     {
         "country": "Algeria",
         "organization": "Horizons",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "The horizon is the line at which the sky and the Earth's surface appear to meet."
     },
     {
         "country": "Algeria",
         "organization": "Algérie Presse Service (APS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "aps.dz"
         ],
@@ -2599,7 +2599,7 @@
     {
         "country": "Egypt",
         "organization": "National Media Authority (NMA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "maspero.eg"
         ],
@@ -2609,31 +2609,31 @@
     {
         "country": "Egypt",
         "organization": "National Press Authority (NPA)*",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Egypt",
         "organization": "Egyptian Media Group (EMG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Libya",
         "organization": "Libyan News Agency (WAL)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Morocco",
         "organization": "Société nationale de radiodiffusion et de télévision (SNRT)**",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Morocco",
         "organization": "Agence Maghreb Arabe Presse (MAP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "map.ma"
         ],
@@ -2643,14 +2643,14 @@
     {
         "country": "Morocco",
         "organization": "Maroc Soir Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [],
         "description": "Maroc Soir Group is a pro-government publishing company based in Casablanca, Morocco."
     },
     {
         "country": "Morocco",
         "organization": "La Nouvelle Tribune",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "lnt.ma"
         ],
@@ -2660,25 +2660,25 @@
     {
         "country": "Tunisia",
         "organization": "Établissement de la télévision tunisienne",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tunisia",
         "organization": "Établissement de la radio tunisienne",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tunisia",
         "organization": "Société nouvelle d'impression, de presse et d'édition (SNIPE)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tunisia",
         "organization": "Tunis Afrique Presse (TAP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tap.info.tn"
         ],
@@ -2687,7 +2687,7 @@
     {
         "country": "Canada",
         "organization": "Canadian Broadcasting Corporation (CBC)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "cbc.radio-canada.ca"
         ],
@@ -2696,7 +2696,7 @@
     {
         "country": "United States of America",
         "organization": "U.S. Agency for Global Media (USAGM)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "usagm.gov"
         ],
@@ -2705,7 +2705,7 @@
     {
         "country": "United States of America",
         "organization": "Public Broadcasting Service (PBS)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "pbs.org"
         ],
@@ -2715,7 +2715,7 @@
     {
         "country": "United States of America",
         "organization": "National Public Radio (NPR)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "npr.org"
         ],
@@ -2724,7 +2724,7 @@
     {
         "country": "Australia",
         "organization": "Australian Broadcasting Corporation (ABC)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "abc.net.au"
         ],
@@ -2734,7 +2734,7 @@
     {
         "country": "Australia",
         "organization": "Special Broadcasting Service (SBS)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "sbs.com.au"
         ],
@@ -2744,7 +2744,7 @@
     {
         "country": "New Zealand",
         "organization": "Television New Zealand (TVNZ)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "tvnz.co.nz"
         ],
@@ -2754,7 +2754,7 @@
     {
         "country": "New Zealand",
         "organization": "Whakaata Māori",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "whakaatamaori.co.nz"
         ],
@@ -2764,7 +2764,7 @@
     {
         "country": "New Zealand",
         "organization": "Radio New Zealand (RNZ)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "rnz.co.nz"
         ],
@@ -2774,7 +2774,7 @@
     {
         "country": "New Zealand",
         "organization": "Pacific Media Network",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "pmn.co.nz"
         ],
@@ -2783,7 +2783,7 @@
     {
         "country": "Fiji",
         "organization": "Fiji Broadcasting Corporation (FBC)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "fbc.com.fj"
         ],
@@ -2793,7 +2793,7 @@
     {
         "country": "Solomon Islands",
         "organization": "Solomon Islands Broadcasting Corporation (SIBC)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "sibconline.com.sb"
         ],
@@ -2802,31 +2802,31 @@
     {
         "country": "Samoa",
         "organization": "Broadcasting Services Division",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Burundi",
         "organization": "Radio-Télévision Nationale du Burundi (RTNB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Burundi",
         "organization": "Burundi Press Agency (ABP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Burundi",
         "organization": "Publications de Presse Burundaise (PPB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Djibouti",
         "organization": "Radiodiffusion Télévision de Djibouti (RTD)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtd.dj"
         ],
@@ -2836,62 +2836,62 @@
     {
         "country": "Djibouti",
         "organization": "La Nation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "La Nation was a weekly review covering Canadian politics and literature. It was directed by Paul Bouchard and ran from 1936 to 1939. It had a right wing sovereigntist, Quebec nationalist stance, and took for its motto \"Pour un État libre français en Amérique\" ."
     },
     {
         "country": "Djibouti",
         "organization": "Al-Qarn",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Djibouti",
         "organization": "Agence Djiboutienne d'Information",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Eri TV",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Dimtsi Hafash Eritrea",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Radio Bana",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Eritrean Government Press",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Eritrean News Agency (ERINA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Eritrea",
         "organization": "Tesfa News",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Ethiopia",
         "organization": "Ethiopian Broadcasting Corporation (EBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ebc.et"
         ],
@@ -2901,7 +2901,7 @@
     {
         "country": "Ethiopia",
         "organization": "Oromia Broadcasting Network (OBN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "obn.et"
         ],
@@ -2911,7 +2911,7 @@
     {
         "country": "Ethiopia",
         "organization": "Ethiopian News Agency (ENA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ena.et"
         ],
@@ -2920,32 +2920,32 @@
     {
         "country": "Ethiopia",
         "organization": "Walta Media and Communication Corporate",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kenya",
         "organization": "Kenya Broadcasting Corporatoon (KBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Kenya",
         "organization": "Kenya News Agency (KNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Kenya News Agency is a government-run national news agency created in 1963. Its headquarter is in Nairobi and it is run by the Department of Information, Ministry of Information Communication and Technology. News reports are created by KNA reporters in 72 county and sub-county offices and disseminated from the National Editorial Desk in Nairobi to subscribers made up of news media companies in Kenya and around the world. Their services also include Electronic/TV News Unit, Mobile Cinema and Photographic Services."
     },
     {
         "country": "Madagascar",
         "organization": "Office de la radio et de la télévision de Malagasy (ORTM)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Malawi",
         "organization": "Malawi Broadcasting Corporation (MBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "mbc.mw"
         ],
@@ -2955,7 +2955,7 @@
     {
         "country": "Mozambique",
         "organization": "Televisão de Moçambique (TVM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvm.co.mz"
         ],
@@ -2965,25 +2965,25 @@
     {
         "country": "Mozambique",
         "organization": "Rádio Moçambique",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mozambique",
         "organization": "Sociedade de Notícias",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Rwanda",
         "organization": "Rwandan Broadcasting Agency (RBA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Somalia",
         "organization": "Somali National Television (SNTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sntv.so"
         ],
@@ -2993,7 +2993,7 @@
     {
         "country": "Somalia",
         "organization": "Radio Mogadishu",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "radiomuqdisho.net"
         ],
@@ -3003,25 +3003,25 @@
     {
         "country": "Somalia",
         "organization": "Dalka Journal",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Somalia",
         "organization": "Somali News Agency (SONNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Somalia",
         "organization": "Somaliland National Television (SLNTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Somalia",
         "organization": "Radio Hargeysa",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "warfaafintajsl.com"
         ],
@@ -3031,19 +3031,19 @@
     {
         "country": "Somalia",
         "organization": "Somaliland News Agency (SOLNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Somalia",
         "organization": "Dawan Media Group (DMG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "South Sudan",
         "organization": "South Sudan Broadcasting Corporation (SSBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The South Sudan Broadcasting Corporation is a national public service broadcaster in South Sudan. SSBC provides radio stations as well as television broadcasts through its VHF/UHF analogue transmitters in Juba. It broadcasts its radio and television services via satellite and can be viewed from many places in the world through the Badr 4, Intelsat 19 and Galaxy 19 satellites.",
         "owner": "South Sudan Government (Ministry of Information, Communication Technology and Postal Services)"
@@ -3051,7 +3051,7 @@
     {
         "country": "Sudan",
         "organization": "Sudan National Broadcasting Corporation (SNBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sudan-tv.net"
         ],
@@ -3061,13 +3061,13 @@
     {
         "country": "Sudan",
         "organization": "Sudan Radio",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Sudan",
         "organization": "Sudan News Agency (SUNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "sunanews.net"
         ],
@@ -3076,7 +3076,7 @@
     {
         "country": "Tanzania",
         "organization": "Tanzania Broadcasting Corporation (TBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tbc.go.tz"
         ],
@@ -3086,25 +3086,25 @@
     {
         "country": "Tanzania",
         "organization": "Tanzania Standard Newspapers",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Tanzania",
         "organization": "Zanzibar Broadcasting Corporation (ZBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Tanzania",
         "organization": "Zanzibar Newspaper Corporation (ZNC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Uganda",
         "organization": "Uganda Broadcasting Corporation (UBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ubc.go.ug"
         ],
@@ -3114,13 +3114,13 @@
     {
         "country": "Uganda",
         "organization": "The New Vision Printing & Publishing Company (New Vision Group)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Zambia",
         "organization": "Zambia National Broadcasting Corporation (ZNBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "znbc.co.zm"
         ],
@@ -3130,20 +3130,20 @@
     {
         "country": "Zambia",
         "organization": "Industrial Development Corporation (IDC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Castle Grande was a real estate development in Arkansas about 10 miles south of Little Rock. It came into National news as a result of the Whitewater investigations. The project was a 1,050-acre lot where Jim McDougal hoped to build a microbrewery, shopping center, a trailer park and other future projects in 1985. The land was scrub pine forest that had failed already as an industrial development. The sales price was $1.75 million. State regulations prohibited Jim McDougal from investing more than 6% of his Madison Guaranty S&L assets. So, he put in $600,000 of Madison money and then for the difference had Seth Ward put in the remaining $1.15 million. This money Ward borrowed from Madison Guaranty on non-recourse, no personal obligation to repay. If federal regulators found out, McDougal's S&L could be shut down, since it had already been operating under orders to correct its lending practices."
     },
     {
         "country": "Zambia",
         "organization": "Zambia News and Information Services (ZANIS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Zimbabwe",
         "organization": "Zimbabwe Broadcasting Corporation (ZBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "zbc.co.zw"
         ],
@@ -3153,7 +3153,7 @@
     {
         "country": "Zimbabwe",
         "organization": "Zimpapers",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "herald.co.zw"
         ],
@@ -3163,38 +3163,38 @@
     {
         "country": "Zimbabwe",
         "organization": "New Ziana",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Botswana",
         "organization": "Department of Broadcasting",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Botswana",
         "organization": "Department of Information",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The term Department of Information may refer to the following:"
     },
     {
         "country": "Lesotho",
         "organization": "Lesotho National Broadcasting Services (LNBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Lesotho",
         "organization": "Lesotho News Agency (LENA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Namibia",
         "organization": "Namibian Broadcasting Corporation (NBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "nbc.na"
         ],
@@ -3204,20 +3204,20 @@
     {
         "country": "Namibia",
         "organization": "New Era Publications Corporation (NEPC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Namibia",
         "organization": "Namibia Press Agency (NAMPA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Namibia Press Agency is the national news agency of the Republic of Namibia. It was founded in 1987 under the name Namibia Press Association as a SWAPO partisan press agency, and resuscitated after independence under its current name in 1991. Its operation is regulated by the Namibia Press Agency Act of 1992. The state owned agency is responsible for news distribution and picture services to local and international customers. Up until now, the agency offers text and picture services, but no audio or video material. About 20 journalists and 30 other staff members work for NAMPA. Aside from its Windhoek headquarters, the agency has offices in Swakopmund, Gobabis, Ongwediva/Oshakati, Opuwo and Rundu. Most media in Namibia rely on the services of NAMPA, especially for international news."
     },
     {
         "country": "South Africa",
         "organization": "South African Broadcasting Corporation (SABC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "sabc.co.za"
         ],
@@ -3227,7 +3227,7 @@
     {
         "country": "South Africa",
         "organization": "Government Communication and Information System (GCIS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gcis.gov.za"
         ],
@@ -3236,26 +3236,26 @@
     {
         "country": "South Africa",
         "organization": "Independent Media",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Independent media refers to any media, such as television, newspapers, or Internet-based publications, that is free of influence by government or corporate interests. The term has varied applications. "
     },
     {
         "country": "Benin",
         "organization": "Société de radio et de télévision du Bénin (SRTB)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Benin",
         "organization": "Office national d'imprimerie et de presse",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Burkina Faso",
         "organization": "Radio Télévision du Burkina",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtb.bf"
         ],
@@ -3265,14 +3265,14 @@
     {
         "country": "Burkina Faso",
         "organization": "Sidwaya",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [],
         "description": "Sidwaya is a French-language newspaper in Burkina Faso. It was founded in 1984 following the Thomas Sankara government's closure of the independent Observateur. Among the printed media of Burkina Faso its circulation is second to the reopened L'Observateur Paalga, and Sidwaya is still associated with the government view. Its editor-in-chief in 1984 was Béatrice Damiba who went on to serve as Burkinabé ambassador to Austria and Italy."
     },
     {
         "country": "Cape Verde",
         "organization": "Radiotelevisão Caboverdiana (RTC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rtc.cv"
         ],
@@ -3282,7 +3282,7 @@
     {
         "country": "Cape Verde",
         "organization": "Inforpress (Agência Cabo-verdiana de Notícias)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "inforpress.publ.cv"
         ],
@@ -3292,7 +3292,7 @@
     {
         "country": "Côte d'Ivoire",
         "organization": "Radiodiffusion Television Ivoirienne",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rti.ci"
         ],
@@ -3302,19 +3302,19 @@
     {
         "country": "Côte d'Ivoire",
         "organization": "SNPECI",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Côte d'Ivoire",
         "organization": "Agence Ivoirienne de Presse (AIP)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Ghana",
         "organization": "Ghana Broadcasting Corporation (GBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gbcghanaonline.com"
         ],
@@ -3324,19 +3324,19 @@
     {
         "country": "Ghana",
         "organization": "Graphic Communications Group Limited (GCGL)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Ghana",
         "organization": "News Times Corporation (NTC)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Ghana",
         "organization": "Ghana News Agency (GNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "gna.org.gh"
         ],
@@ -3345,7 +3345,7 @@
     {
         "country": "Liberia",
         "organization": "Liberia Broadcasting System (LBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "elbcradio.com"
         ],
@@ -3355,25 +3355,25 @@
     {
         "country": "Liberia",
         "organization": "Liberia News Agency (LINA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mali",
         "organization": "Office de la Radiodiffusion Television du Mali (ORTM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mali",
         "organization": "Agence Malienne de Presse (AMAP)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Mauritania",
         "organization": "TV de Mauritanie",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvm.mr"
         ],
@@ -3383,13 +3383,13 @@
     {
         "country": "Mauritania",
         "organization": "Radio Mauritanie",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Mauritania",
         "organization": "Mauritanian News Agency (AMI)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ami.mr"
         ],
@@ -3398,25 +3398,25 @@
     {
         "country": "Niger",
         "organization": "Radio-télévision du Niger (RTN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Niger",
         "organization": "Office national d'edition et de presse (ONEP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Niger",
         "organization": "Agence Nigerienne de Presse (ANP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Nigerian Television Authority (NTA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Nigerian Television Authority or NTA is a Nigerian government-owned and partly commercial broadcast station. Originally known as Nigerian Television , it was inaugurated in 1977 with a monopoly on national television broadcasting, after a takeover of regional television stations by military governmental authorities in 1976. After a declining interest from the public in government-influenced programming, it lost its monopoly over television broadcasting in Nigeria in the 1990s.",
         "owner": "Government of Nigeria"
@@ -3424,14 +3424,14 @@
     {
         "country": "Nigeria",
         "organization": "Federal Radio Corporation of Nigeria (FRCN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Federal Radio Corporation of Nigeria is Nigerian state radio broadcasting organization. Its flagship station is the syndicated radio network Radio Nigeria, with FM stations across the 36 states and Zonal station in the 6 geopolitical zones that broadcast in the SW . According to FRCN, it is the largest broadcasting organization in Africa."
     },
     {
         "country": "Nigeria",
         "organization": "Voice of Nigeria (VON)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "von.gov.ng"
         ],
@@ -3441,7 +3441,7 @@
     {
         "country": "Nigeria",
         "organization": "News Agency of Nigeria (NAN)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "nannews.ng"
         ],
@@ -3451,7 +3451,7 @@
     {
         "country": "Nigeria",
         "organization": "Broadcasting Corporation of Abia State",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bca.org.ng"
         ],
@@ -3461,31 +3461,31 @@
     {
         "country": "Nigeria",
         "organization": "Abuja Broadcasting Corporation (ABC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Akwa Ibom Broadcasting Corporation (AKBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Delta Broadcasting Service",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Ebonyi Broadcasting Corporation (EBBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Edo Broadcasting Service",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ebs.com.ng"
         ],
@@ -3495,31 +3495,31 @@
     {
         "country": "Nigeria",
         "organization": "Broadcasting Service of Ekiti State (BSES)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Enugu State Broadcasting Service (ESBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Kwara State Broadcasting Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Lagos State Broadcasting Corporation (LSBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Ogun State Broadcasting Corporation (OGBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ogunradio.ng"
         ],
@@ -3529,7 +3529,7 @@
     {
         "country": "Nigeria",
         "organization": "Ogun State Television (OGTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ogtv.com.ng"
         ],
@@ -3539,44 +3539,44 @@
     {
         "country": "Nigeria",
         "organization": "Ondo State Radiovision Corporation (OSRC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Osun State Broadcasting Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Broadcasting Corporation of Oyo State (BCOS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Plateau Radio Television Corporation (PRTVC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Nigeria",
         "organization": "Rivers State Broadcasting Corporation",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "The Rivers State Broadcasting Corporation is a government owned, controlled and funded public broadcaster in Rivers State, Nigeria. It was created by Edict No. 8 of 1973. The headquarters of the Corporation is at 2 Degema Street in Port Harcourt."
     },
     {
         "country": "Nigeria",
         "organization": "Taraba State Broadcasting Corporation (TSBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Senegal",
         "organization": "Radiodiffusion Télévision Sénégalaise (RTS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rts.sn"
         ],
@@ -3585,19 +3585,19 @@
     {
         "country": "Senegal",
         "organization": "Société Sénégalaise de Presse et de Publications (SSPP)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Senegal",
         "organization": "Agence de Presse Sénégalaise (APS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Sierra Leone",
         "organization": "Sierra Leone Broadcasting Corporation (SLBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "slbc.gov.sl"
         ],
@@ -3607,7 +3607,7 @@
     {
         "country": "The Gambia",
         "organization": "Gambia Radio & Television Service (GRTS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "grts.gm"
         ],
@@ -3617,7 +3617,7 @@
     {
         "country": "Togo",
         "organization": "Télévision Togolaise (TVT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvt.tg"
         ],
@@ -3627,31 +3627,31 @@
     {
         "country": "Togo",
         "organization": "Radiodiffusion de Lome",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Togo",
         "organization": "Radio Kara",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Togo",
         "organization": "Togo-Presse",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Togo",
         "organization": "Agence Togolaise de Presse (ATOP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Angola",
         "organization": "Televisão Pública de Angola (TPA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tpa.ao"
         ],
@@ -3661,7 +3661,7 @@
     {
         "country": "Angola",
         "organization": "Rádio Nacional de Angola",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rna.ao"
         ],
@@ -3671,13 +3671,13 @@
     {
         "country": "Angola",
         "organization": "Edições Novembro E.P.",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Angola",
         "organization": "Angola Press Agency (ANGOP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "angop.ao"
         ],
@@ -3687,14 +3687,14 @@
     {
         "country": "Angola",
         "organization": "Medianova",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [],
         "description": "Grupo Medianova is a privately owned media publisher in Angola. The group publishes printed newspapers and magazines, operates a TV station and a radio programme, with web presences of all published media. Medianova also owns its own distributing company to get their printed publications around."
     },
     {
         "country": "Cameroon",
         "organization": "Cameroon Radio Television (CRTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "crtv.cm"
         ],
@@ -3704,13 +3704,13 @@
     {
         "country": "Cameroon",
         "organization": "SOPECAM",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Central African Republic",
         "organization": "Télévision Centrafricaine",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "telecentrafricaine.cf"
         ],
@@ -3720,7 +3720,7 @@
     {
         "country": "Central African Republic",
         "organization": "Radio Centrafrique",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Radio Centrafrique is a public radio station in the Central African Republic that is funded by the Ministry of Communication and Media. It broadcasts in French and Sango.",
         "owner": "Minister of Communication & Media"
@@ -3728,43 +3728,43 @@
     {
         "country": "Central African Republic",
         "organization": "Agence Centrafricaine de Presse (ACAP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Chad",
         "organization": "National Office for Audiovisual Media (ONAMA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Chad",
         "organization": "Chad Press and Publishing Agency (ATPE)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Congo",
         "organization": "Radiodiffusion Nationale Congolaise",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "DR Congo",
         "organization": "Radio Télévision National Congolaise (RTNC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "DR Congo",
         "organization": "Agence congolaise de presse (ACP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Gabon",
         "organization": "Radio Television Gabonaise (RTG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "Radio Télévision Gabonaise is the national broadcaster of the Central African state of Gabon. Radio Télévision Gabonaise is headquartered in Gabon's capital city, Libreville.",
         "owner": "Government of Gabon"
@@ -3772,13 +3772,13 @@
     {
         "country": "Gabon",
         "organization": "Agence Gabonaise de Presse (AGP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Austria",
         "organization": "Österreichischer Rundfunk (ORF)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "orf.at"
         ],
@@ -3787,7 +3787,7 @@
     {
         "country": "Belgium",
         "organization": "Vlaamse Radio- en Televisieomroeporganisatie (VRT)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "vrt.be"
         ],
@@ -3797,7 +3797,7 @@
     {
         "country": "Belgium",
         "organization": "Radio-télévision belge de la Communauté française (RTBF)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "rtbf.be"
         ],
@@ -3807,7 +3807,7 @@
     {
         "country": "Belgium",
         "organization": "Belgischer Rundfunk (BRF)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "brf.be"
         ],
@@ -3817,7 +3817,7 @@
     {
         "country": "Denmark",
         "organization": "Danish Broadcasting Corporation (DR)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "dr.dk"
         ],
@@ -3826,14 +3826,14 @@
     {
         "country": "Denmark",
         "organization": "TV2",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [],
         "description": "Channel 2 or TV 2 may refer to:"
     },
     {
         "country": "Finland",
         "organization": "Yleisradio Oy (YLE)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "yle.fi"
         ],
@@ -3843,7 +3843,7 @@
     {
         "country": "France",
         "organization": "France Télévisions",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "francetelevisions.fr"
         ],
@@ -3853,7 +3853,7 @@
     {
         "country": "France",
         "organization": "Radio France",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "radiofrance.fr"
         ],
@@ -3863,14 +3863,14 @@
     {
         "country": "France",
         "organization": "ARTE",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [],
         "description": "Arte or ARTE can refer to:"
     },
     {
         "country": "France",
         "organization": "TV5 Monde",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "tv5monde.com"
         ],
@@ -3880,9 +3880,10 @@
     {
         "country": "France",
         "organization": "France Médias Monde",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
-            "francemediasmonde.com"
+            "francemediasmonde.com",
+            "france24.com"
         ],
         "description": "France Médias Monde is a French state-owned holding company which supervises and co-ordinates the activities of the major public media organizations broadcasting or publishing internationally from France.",
         "owner": "Government of France"
@@ -3890,14 +3891,14 @@
     {
         "country": "Germany",
         "organization": "ARD",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [],
         "description": "ARD or Ard may refer to:"
     },
     {
         "country": "Germany",
         "organization": "Deutsche Welle (DW)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "dw.com"
         ],
@@ -3907,7 +3908,7 @@
     {
         "country": "Germany",
         "organization": "Zweites Deutsches Fernsehen (ZDF)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "zdf.de"
         ],
@@ -3916,7 +3917,7 @@
     {
         "country": "Germany",
         "organization": "Deutschlandradio",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "deutschlandradio.de"
         ],
@@ -3925,13 +3926,13 @@
     {
         "country": "Iceland",
         "organization": "Icelandic National Broadcasting Service (RUV)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Ireland",
         "organization": "Raidió Teilifís Éireann (RTE)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "rte.ie"
         ],
@@ -3941,7 +3942,7 @@
     {
         "country": "Ireland",
         "organization": "Teilifís na Gaeilge",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "tg4.ie"
         ],
@@ -3951,27 +3952,27 @@
     {
         "country": "Liechtenstein",
         "organization": "Liechtensteinische Rundfunk (LRF)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Netherlands",
         "organization": "Nederlandse Publieke Omroep (NPO)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [],
         "description": "The Dutch public broadcasting system is a group of organizations that are responsible for public service television and radio broadcasting in the Netherlands. It is composed of the Nederlandse Publieke Omroep foundation, which acts as its governing body, and a number of public broadcasters. The Dutch Media Act 2008 regulates how air time is divided and puts the administration of the public broadcasting system in the hands of the NPO Board of Directors."
     },
     {
         "country": "Netherlands",
         "organization": "RNW Media",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [],
         "description": "RNW Media is an international non-governmental organisation based in Hilversum, the Netherlands. RNW Media focuses on engaging young people and supporting them to create positive change in their societies. Using digital media platforms – websites, WhatsApp, Facebook, Twitter, Instagram – RNW Media builds digital communities of young people in restrictive settings. Thematic areas are: Social Cohesion and Inclusive Governance ; Sexual and Reproductive Health and Rights ; Media Capacity Building."
     },
     {
         "country": "Norway",
         "organization": "Norwegian Broadcasting Corporation (NRK)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "nrk.no"
         ],
@@ -3981,7 +3982,7 @@
     {
         "country": "Sweden",
         "organization": "Sveriges Television (SVT)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "svt.se"
         ],
@@ -3991,7 +3992,7 @@
     {
         "country": "Sweden",
         "organization": "Sveriges Radio",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "sverigesradio.se"
         ],
@@ -4001,7 +4002,7 @@
     {
         "country": "Switzerland",
         "organization": "Swiss Broadcasting Corporation (SRG SSR)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "srgssr.ch"
         ],
@@ -4010,16 +4011,17 @@
     {
         "country": "United Kingdom",
         "organization": "British Broadcasting Corporation (BBC)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
-            "bbc.com", "bbc.co.uk"
+            "bbc.com",
+            "bbc.co.uk"
         ],
         "description": "The British Broadcasting Corporation is a British public service broadcaster headquartered at Broadcasting House in London, England. Originally established in 1922 as the British Broadcasting Company, it evolved into its current state with its current name on New Year's Day 1927. The oldest and largest local and global broadcaster by stature and by number of employees, the BBC employs over 21,000 staff in total, of whom approximately 17,200 are in public-sector broadcasting."
     },
     {
         "country": "United Kingdom",
         "organization": "Channel 4",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "channel4.com"
         ],
@@ -4029,7 +4031,7 @@
     {
         "country": "United Kingdom",
         "organization": "S4C",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "s4c.cymru"
         ],
@@ -4039,7 +4041,7 @@
     {
         "country": "Albania",
         "organization": "Albanian Radio and Television (RTSH)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rtsh.al"
         ],
@@ -4049,7 +4051,7 @@
     {
         "country": "Albania",
         "organization": "Albanian Telegraphic Agency (ATA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ata.gov.al"
         ],
@@ -4058,13 +4060,13 @@
     {
         "country": "Bosnia and Herzegovina",
         "organization": "PSB System of BiH",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Bosnia and Herzegovina",
         "organization": "FENA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "fena.news"
         ],
@@ -4074,7 +4076,7 @@
     {
         "country": "Bulgaria",
         "organization": "Bulgarian National Television (BNT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bnt.bg"
         ],
@@ -4084,7 +4086,7 @@
     {
         "country": "Bulgaria",
         "organization": "Bulgarian National Radio (BNR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "bnr.bg"
         ],
@@ -4093,7 +4095,7 @@
     {
         "country": "Bulgaria",
         "organization": "Bulgarian News Agency (BTA)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "bta.bg"
         ],
@@ -4102,13 +4104,13 @@
     {
         "country": "Croatia",
         "organization": "Croatian Radio Televsion (HRT)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Croatia",
         "organization": "HINA",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "hina.hr"
         ],
@@ -4118,7 +4120,7 @@
     {
         "country": "Czechia",
         "organization": "Czech Television",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "ceskatelevize.cz"
         ],
@@ -4128,7 +4130,7 @@
     {
         "country": "Czechia",
         "organization": "Czech Radio",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rozhlas.cz"
         ],
@@ -4137,7 +4139,7 @@
     {
         "country": "Czechia",
         "organization": "Czech News Agency (CTK)",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [
             "ctk.eu"
         ],
@@ -4146,7 +4148,7 @@
     {
         "country": "Estonia",
         "organization": "Estonian Public Broadcasting (ERR)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "err.ee"
         ],
@@ -4156,13 +4158,13 @@
     {
         "country": "Hungary",
         "organization": "Media Services and Support Trust Fund (MTVA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "Central European Press and Media Foundation (KESMA)",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "cepmf.hu"
         ],
@@ -4171,14 +4173,14 @@
     {
         "country": "Hungary",
         "organization": "TV2",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [],
         "description": "Channel 2 or TV 2 may refer to:"
     },
     {
         "country": "Hungary",
         "organization": "Magyar Hirlap",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "magyarhirlap.hu"
         ],
@@ -4188,43 +4190,43 @@
     {
         "country": "Hungary",
         "organization": "Magyar Democrat hetilap",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "Foundation for Hungarian Progress (MFA)",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "About Hungary",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "FWD Affairs",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "V4NA",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Hungary",
         "organization": "Friends of Hungary Foundation",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Latvia",
         "organization": "Latvian Television (LTV)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "ltv.lsm.lv"
         ],
@@ -4234,7 +4236,7 @@
     {
         "country": "Latvia",
         "organization": "Latvian Radio (LR)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "latvijasradio.lsm.lv"
         ],
@@ -4244,7 +4246,7 @@
     {
         "country": "Lithuania",
         "organization": "Lithuanian National Radio and Television (LRT)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "lrt.lt"
         ],
@@ -4254,7 +4256,7 @@
     {
         "country": "Montenegro",
         "organization": "Radio and Television of Montenegro (RTCG)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "rtcg.me"
         ],
@@ -4264,7 +4266,7 @@
     {
         "country": "North Macedonia",
         "organization": "Macedonian Radio Television (MRT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "play.mrt.com.mk"
         ],
@@ -4274,7 +4276,7 @@
     {
         "country": "Poland",
         "organization": "Polish Television (TVP)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvp.pl"
         ],
@@ -4284,7 +4286,7 @@
     {
         "country": "Poland",
         "organization": "Belsat",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [
             "belsat.eu"
         ],
@@ -4294,7 +4296,7 @@
     {
         "country": "Poland",
         "organization": "Polish Radio",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "polskieradio.pl"
         ],
@@ -4303,7 +4305,7 @@
     {
         "country": "Poland",
         "organization": "Polish Press Agency (PAP)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "pap.pl"
         ],
@@ -4313,13 +4315,13 @@
     {
         "country": "Poland",
         "organization": "Polska Press",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Romania",
         "organization": "Romanian Television (TVR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "tvr.ro"
         ],
@@ -4329,7 +4331,7 @@
     {
         "country": "Romania",
         "organization": "Romanian Radio Broadcasting Company (SRR)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "srr.ro"
         ],
@@ -4339,7 +4341,7 @@
     {
         "country": "Romania",
         "organization": "Agerpres",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "agerpres.ro"
         ],
@@ -4348,7 +4350,7 @@
     {
         "country": "Serbia",
         "organization": "Radio Television of Serbia (RTS)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rts.rs"
         ],
@@ -4358,7 +4360,7 @@
     {
         "country": "Serbia",
         "organization": "Radio Television of Vojvodina (RTV)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rtv.rs"
         ],
@@ -4368,19 +4370,19 @@
     {
         "country": "Serbia",
         "organization": "Tacno",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Serbia",
         "organization": "Politika Novine i Magazini",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Serbia",
         "organization": "Vecernje Novosti",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "novosti.rs"
         ],
@@ -4390,19 +4392,19 @@
     {
         "country": "Serbia",
         "organization": "Kopernikus Corporation",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Serbia",
         "organization": "Wireless Media Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Serbia",
         "organization": "Pink International Company",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "rtvpink.com"
         ],
@@ -4412,13 +4414,13 @@
     {
         "country": "Serbia",
         "organization": "Insajder Tim",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Slovakia",
         "organization": "Radio and Television of Slovakia (RTVS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtvs.sk"
         ],
@@ -4428,14 +4430,14 @@
     {
         "country": "Slovakia",
         "organization": "TASR",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": [],
         "description": "The News Agency of the Slovak Republic is a Slovak news agency founded on 30 January 1992. Its headquarters are located in Slovak capital Bratislava. Its main goal is to gather, store and provide news coverage of Slovak and international events in text, photo, audio and video form."
     },
     {
         "country": "Slovenia",
         "organization": "Radiotelevizija Slovenija (RTVSLO)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "rtvslo.si"
         ],
@@ -4445,25 +4447,25 @@
     {
         "country": "Slovenia",
         "organization": "Slovenian News Agency (STA)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Slovenia",
         "organization": "SiolNET",
-        "typology": "ISM",
+        "typology": "Independent State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Türkiye Radyo ve Televizyon Kurumu (TRT)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Demiroren Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "demiroren.com.tr"
         ],
@@ -4472,32 +4474,32 @@
     {
         "country": "Turkey",
         "organization": "Albayrak Medya",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Turkuvaz Media Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [],
         "description": "Turkuvaz Media Group is a Turkish media company. In 2008, the company was sold to Çalık Holding in Aşiyan, Yıldız, Beşiktaş, Istanbul. As of 2014, the company operates under Kalyon Group in Kemerburgaz, Eyüp, Göktürk, İstanbul. The company's CEO is Serhat Albayrak, son of Sadık Albayrak and brother of Berat Albayrak, former Minister of Treasury and Finance who is married to the daughter of Recep Tayyip Erdoğan. The company is also known as Sabah-ATV Group."
     },
     {
         "country": "Turkey",
         "organization": "Turk Medya",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Hayat Gorsel",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Ciner Media Group",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "cinermediagroup.com"
         ],
@@ -4506,13 +4508,13 @@
     {
         "country": "Turkey",
         "organization": "Ihlas Media Holding",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Turkey",
         "organization": "Dogus Holding",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": [
             "dogusgrubu.com.tr"
         ],
@@ -4521,7 +4523,7 @@
     {
         "country": "Turkey",
         "organization": "Anadolu Agency",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "aa.com.tr"
         ],
@@ -4530,19 +4532,19 @@
     {
         "country": "Turkey",
         "organization": "Refleks Medya Iletisim",
-        "typology": "CaPr",
+        "typology": "Captured Private Media",
         "domains": []
     },
     {
         "country": "Andorra",
         "organization": "Ràdio i Televisió d’Andorra (RTVA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cyprus",
         "organization": "Cyprus Broadcasting Corporation (CyBC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rik.cy"
         ],
@@ -4552,27 +4554,27 @@
     {
         "country": "Cyprus",
         "organization": "Bayrak Radio and Television Corporation (BRTK)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Cyprus",
         "organization": "Cyprus News Agency (CNA)",
-        "typology": "ISF",
+        "typology": "Independent State Funded Media",
         "domains": [],
         "description": "The Cyprus News Agency, or CNA is the major news agency in Cyprus."
     },
     {
         "country": "Cyprus",
         "organization": "TAK-Cyprus",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [],
         "description": "TAK, Türk Ajansı Kıbrıs is the news agency in the Turkish Republic of Northern Cyprus responsible for disseminating TRNC news internationally and disseminating foreign news in the TRNC."
     },
     {
         "country": "Greece",
         "organization": "Hellenic Broadcasting Corporation (ERT)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "ert.gr"
         ],
@@ -4582,7 +4584,7 @@
     {
         "country": "Greece",
         "organization": "Athens-Macedonian News Agency (AMNA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "amna.gr"
         ],
@@ -4592,7 +4594,7 @@
     {
         "country": "Italy",
         "organization": "Radiotelevisione italiana (RAI)",
-        "typology": "CaPu",
+        "typology": "Captured Public or State Managed/Owned Media",
         "domains": [
             "rai.it"
         ],
@@ -4602,7 +4604,7 @@
     {
         "country": "Malta",
         "organization": "Public Broadcasting Services (PBS)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "pbs.com.mt"
         ],
@@ -4612,7 +4614,7 @@
     {
         "country": "Portugal",
         "organization": "Rádio e Televisão de Portugal (RTP)",
-        "typology": "IP",
+        "typology": "Independent Public Media",
         "domains": [
             "rtp.pt"
         ],
@@ -4622,7 +4624,7 @@
     {
         "country": "Portugal",
         "organization": "Lusa News Agency",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "lusa.pt"
         ],
@@ -4631,7 +4633,7 @@
     {
         "country": "Spain",
         "organization": "Corporación de Radio y Televisión Española (RTVE)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtve.es"
         ],
@@ -4641,7 +4643,7 @@
     {
         "country": "Spain",
         "organization": "Euskal Irrati Telebista (EiTB)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "eitb.eus"
         ],
@@ -4651,7 +4653,7 @@
     {
         "country": "Spain",
         "organization": "Corporació Catalana de Mitjans Audiovisuals (CCMA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "ccma.cat"
         ],
@@ -4661,19 +4663,19 @@
     {
         "country": "Spain",
         "organization": "Corporación de Radio Televisión de Galicia (CRTVG)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Corporació Valenciana de Mitjans de Comunicació (CVMC)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Radio y Televisión de Andalucía (RTVA)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "canalsur.es"
         ],
@@ -4683,7 +4685,7 @@
     {
         "country": "Spain",
         "organization": "Radio Televisión Madrid (RTVM)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "telemadrid.es"
         ],
@@ -4693,7 +4695,7 @@
     {
         "country": "Spain",
         "organization": "Radio Televisión Canaria (RTVC)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtvc.es"
         ],
@@ -4702,7 +4704,7 @@
     {
         "country": "Spain",
         "organization": "Castilla-La Mancha Media (CMM)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [],
         "description": "The Ente Público de Radiotelevisión de Castilla-La Mancha, known under the brandname Castilla-La Mancha Media, is the regional public broadcasting service of Castilla–La Mancha, in Spain. The main headquarters is located in Toledo.",
         "owner": "Regional administration"
@@ -4710,19 +4712,19 @@
     {
         "country": "Spain",
         "organization": "Ens Públic de Radiotelevisió de les Illes Balears (EPRTVIB)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Corporación Aragonesa de Radio y Televisión (CARTV)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Radiotelevisión del Principado de Asturias (RTPA)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "rtpa.es"
         ],
@@ -4731,13 +4733,13 @@
     {
         "country": "Spain",
         "organization": "Radiotelevisión de la Región de Murcia (RTRM)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Radio Televisión Ceuta (RTVCE)",
-        "typology": "SC",
+        "typology": "State Controlled Media",
         "domains": [
             "rtvce.es"
         ],
@@ -4746,19 +4748,19 @@
     {
         "country": "Spain",
         "organization": "RTV Melilla",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "Corporación Extremeña de Medios Audiovisuales (CEXMA)",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": []
     },
     {
         "country": "Spain",
         "organization": "EFE",
-        "typology": "ISFM",
+        "typology": "Independent State Funded and State Managed/Owned Media",
         "domains": [
             "efe.com"
         ],
