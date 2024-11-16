@@ -47,7 +47,7 @@ We require at least **25 feeds** for a category in order to surface it in Kite n
 
 Kite does not scrape news websites, it only uses publicly available information in RSS feeds.
 
-## Guidelines for RSS feeds
+## Guidelines for adding RSS feeds
 
 Kite does not scrape websites, but only publicly available RSS feeds.
 
@@ -56,3 +56,10 @@ When adding an RSS feed make sure to:
 - Check that feed is working and has recent (daily) content.
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
 - Feeds should be in the same language as the rest of the feeds in that category (do not mix languages)
+
+
+## Guideline for editing media_data.json
+
+Kite uses contents of `media_data.jso`n to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology  is explained here https://statemediamonitor.com/methodology/
+
+Feel free to add additional information (by editing `media_data.json`) both for privatly owned and state funded media organization. Add your sources of information in the pull request.
