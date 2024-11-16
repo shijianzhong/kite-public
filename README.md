@@ -2,9 +2,25 @@
 
 This repository contains public files for [Kite](https://kite.kagi.com), Kagi's news app. [Kagi](https://kagi.com) is a premium web search engine.
 
-## Editing cateogries
+# Install & run Kite front-end
 
-To edit community curated categories, submit a pull request editing `kite_feeds.json`. If you do not know how to do that, you can [open an issue](https://github.com/kagisearch/kite-public/issues/new/choose) and share the feeds there.
+Kite front end is a statically served app and is fully open source.
+
+Here is how to run it locally.
+
+```
+pip install Jinja2
+python generate.py
+open index.html
+```
+
+This will load utilize the data of the Kite app that can be found at https://kite.kagi.com/kite.json. Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge with attribution and for non-commercial use.
+
+Our front ened is just one example front end that one can run on top of this data. We encourage others to contribute improvements to it as well as create their own front ends and add them to this Readme file.
+
+## Editing categories
+
+To edit community curated categories, submit a pull request editing `kite_feeds.json`. If you do not know how to do that, you can [open an issue](https://github.com/kagisearch/kite-public/issues/new/choose) and share the feeds you want to add there.
 
 This file contains RSS feeds for various categories.
 
