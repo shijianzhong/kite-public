@@ -107,7 +107,7 @@ We require at least **25 feeds** for a category in order to surface it in Kite n
 
 Kite does not scrape news websites, it only uses publicly available information in RSS feeds.
 
-## Guideline for editing Media information
+## Guidelines for editing Media information
 
 Kite uses contents of `media_data.json` to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology  is explained here https://statemediamonitor.com/methodology/
 
