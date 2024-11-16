@@ -39,7 +39,7 @@ python generate.py
 open index.html
 ```
 
-Kite front-end uses Kite application data that can be found starting at https://kite.kagi.com/kite.json. Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge with attribution and for non-commercial use. If you would like to license this data for commercial use let us know through support@kagi.com.
+Kite front-end uses Kite application data that can be found starting at [kite.kagi.com/kite.json](https://kite.kagi.com/kite.json), then explore from there. Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge (with attribution and for non-commercial use). If you would like to license this data for commercial use let us know through support@kagi.com.
 
 Kite web app is just one example front-end that one can run on top of the Kite data. We encourage others to contribute improvements to the Kite frontend.
 
