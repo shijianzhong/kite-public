@@ -1,6 +1,31 @@
 # Kite - News. Elevated.
 
-This repository contains public files for [Kite](https://kite.kagi.com), Kagi's news app. [Kagi](https://kagi.com) is a premium web search engine.
+This repository contains public files for [Kite](https://kite.kagi.com), news app by [Kagi](https://kagi.com).
+
+Kite is  designed for people who want to stay informed without getting overwhelmed. We provide thrice-daily updates of the most important news stories, from carefully curated sources and summarized by advanced language models to give you the essential information you need.
+
+Most of what powers Kite is open sourced and is found in this repository.
+
+This includes
+- Kite app
+- Community curated feeds
+- Media information
+  
+## Core Principles
+
+- Updated only three times per day - no endless scrolling
+- Facts and perspectives, opinion-free
+- Zero tracking, zero ads
+- Pure signal, no noise
+- Quality over quantity
+- Complete news diet in 5 minutes
+
+You can read more about core principles behind Kite 
+- [Avoid News: Towards a Healthy News Diet](https://www.gwern.net/docs/culture/2010-dobelli.pdf) ([HN discussion](https://news.ycombinator.com/item?id=21430337))
+- [News is bad for you](http://www.theguardian.com/media/2013/apr/12/news-is-bad-rolf-dobelli) ([HN discussion](https://news.ycombinator.com/item?id=6894244))
+- [Stop reading news](https://fs.blog/2013/12/stop-reading-news/) ([HN discussion](https://news.ycombinator.com/item?id=19084099))
+
+If you prefer to watch a short video, check this Ted talk:  [Four reasons you should stop watching the news | Rolf Dobelli](https://www.youtube.com/watch?v=-miTTiaqFlI).
 
 # Install & run Kite front-end
 
@@ -61,11 +86,6 @@ Ideas for categories:
 - Regional news (country/region)
 - Topical news (health, machine learning, aviation ...)
 
-#### Important
-
-We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of quality of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be. The feeds should be using the same language.
-
-Kite does not scrape news websites, it only uses publicly available information in RSS feeds.
 
 ### Guidelines for adding RSS feeds
 
@@ -77,9 +97,14 @@ When adding an RSS feed make sure to:
 - Choose sources that have high quality content. Do not use low quality/gossip/SEO content.
 - Feeds should be in the same language as the rest of the feeds in that category (do not mix languages)
 
+### Important
 
-## Guideline for editing media_data.json
+We require at least **25 feeds** for a category in order to surface it in Kite news. This is to make sure we maintain high level of quality of events covered in the app. The more high quality feeds exist for a category, the better Kite coverage will be. The feeds should be using the same language.
 
-Kite uses contents of `media_data.jso`n to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology  is explained here https://statemediamonitor.com/methodology/
+Kite does not scrape news websites, it only uses publicly available information in RSS feeds.
+
+## Guideline for editing Media information
+
+Kite uses contents of `media_data.json` to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology  is explained here https://statemediamonitor.com/methodology/
 
 Feel free to add additional information (by editing `media_data.json`) both for privatly owned and state funded media organization. Add your sources of information in the pull request.
