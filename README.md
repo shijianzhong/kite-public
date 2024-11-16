@@ -1,4 +1,8 @@
-# Kite - News. Elevated.
+
+# Kite - News. Elevated. 
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 This repository contains public files for [Kite](https://kite.kagi.com), news app for people who want a healthy news diet, developed by [Kagi](https://kagi.com).
 
