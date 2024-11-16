@@ -16,7 +16,9 @@ open index.html
 
 Kite front-end uses Kite application data that can be found starting at https://kite.kagi.com/kite.json. Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge with attribution and for non-commercial use. If you would like to license this data for commercial use let us know through support@kagi.com.
 
-Our front ened is just one example front end that one can run on top of this data. We encourage others to contribute improvements to it as well as create their own front ends and add them to this Readme file.
+Our front ened is just one example front end that one can run on top of this data. We encourage others to contribute improvements to Kite frontend.
+
+We would love to see what kind of custom front-ends you can create on top of Kite data. Feel free to share them with us and others by editing this Readme file.
 
 ## Editing categories
 
