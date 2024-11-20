@@ -181,31 +181,26 @@
                     },
                 });
 
-                Alpine.store("showImages", {
-                    enabled: localStorage.getItem("showImages") !== "false",
-                    toggle() {
-                        this.enabled = !this.enabled;
-                        localStorage.setItem("showImages", this.enabled);
+                Alpine.store("sections", {
+                    settings: {
+                        summary: localStorage.getItem("showSummary") !== "false",
+                        images: localStorage.getItem("showImages") !== "false",
+                        highlights: localStorage.getItem("showHighlights") !== "false",
+                        quotes: localStorage.getItem("showQuotes") !== "false",
+                        perspectives: localStorage.getItem("showPerspectives") !== "false",
+                        historicalBackground: localStorage.getItem("showHistoricalBackground") !== "false",
+                        humanitarianImpact: localStorage.getItem("showHumanitarianImpact") !== "false",
+                        technicalDetails: localStorage.getItem("showTechnicalDetails") !== "false",
+                        businessAngle: localStorage.getItem("showBusinessAngle") !== "false",
+                        internationalReactions: localStorage.getItem("showInternationalReactions") !== "false",
+                        timeline: localStorage.getItem("showTimeline") !== "false",
+                        didYouKnow: localStorage.getItem("showDidYouKnow") !== "false",
+                        actionItems: localStorage.getItem("showActionItems") !== "false"
                     },
-                    apply() {
-                        document.body.classList.remove("text-sm", "text-base", "text-lg");
-                        switch (this.current) {
-                            case "small":
-                                document.body.classList.add("text-sm");
-                                break;
-                            case "large":
-                                document.body.classList.add("text-lg");
-                                break;
-                            default:
-                                document.body.classList.add("text-base");
-                        }
-                    },
-                    init() {
-                        if (!localStorage.getItem("fontSize")) {
-                            this.set("normal");
-                        }
-                        this.apply();
-                    },
+                    toggle(section) {
+                        this.settings[section] = !this.settings[section];
+                        localStorage.setItem("show" + section.charAt(0).toUpperCase() + section.slice(1), this.settings[section]);
+                    }
                 });
 
                 Alpine.store("chaosIndex", {
@@ -1061,7 +1056,7 @@
                         </button>
                     </div>
                 </header>
-                <div class="sticky top-0 bg-white dark:bg-dark-bg py-2 z-50" role="navigation">
+                <div class="sticky top-0 bg-white dark:bg-dark-bg py-2 z-[60]" role="navigation">
                     <div class="category-tabs" role="tablist" aria-label="News categories" @touchstart="isScrolling = true" @touchend="isScrolling = false">
                         <template x-for="category in availableCategories.filter(cat => $store.categories.isEnabled(cat.name))" :key="category.name">
                             <div
@@ -1284,15 +1279,15 @@
                                 </div>
 
                                 <section x-show="story.expanded" class="py-4 bg-white dark:bg-dark-bg" @click.stop>
-                                    <p class="mb-6" x-text="story.short_summary"></p>
+                                    <p x-show="$store.sections.settings.summary" class="mb-6" x-text="story.short_summary"></p>
                                     <p x-show="story.location" class="flex items-center text-gray-600 dark:text-gray-300 mb-6 cursor-pointer" @click="openMaps(story.location)" title="Open location in maps">
                                         <img src="{{ static_path }}/svg/map.svg" alt="Map icon" class="w-5 h-5 mr-2" />
                                         <span x-text="story.location"></span>
                                     </p>
-                                    <figure x-show="story.articles.some(a => a.image) && $store.showImages.enabled" class="mb-6">
+                                    <figure x-show="story.articles.some(a => a.image) && $store.sections.settings.images" class="mb-6">
                                         <div class="relative">
-                                            <template x-if="story.articles.find(a => a.image) && $store.showImages.enabled">
-                                                <div class="relative w-full max-w-[800px] mx-auto">
+                                            <template x-if="story.articles.find(a => a.image) && $store.sections.settings.images">
+                                                <div class="relative w-[calc(100%-1rem)] max-w-[800px] mx-auto">
                                                     <a :href="story.articles.find(a => a.image).link" target="_blank" class="relative block">
                                                         <img :src="story.articles.find(a => a.image).image" :alt="story.articles.find(a => a.image).image_caption || 'Story image'" class="w-full h-auto rounded-lg shadow-md" loading="lazy" />
                                                         <div class="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white text-sm px-2 py-1 rounded hover:bg-opacity-75">
@@ -1307,7 +1302,7 @@
                                         </div>
                                     </figure>
 
-                                    <section>
+                                    <section x-show="$store.sections.settings.highlights">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Highlights</h3>
                                         <div class="border-t border-dashed border-gray-300 dark:border-gray-600">
                                             <template x-for="(point, index) in story.talking_points" :key="point">
@@ -1333,7 +1328,7 @@
                                         </div>
                                     </section>
 
-                                    <section x-show="story.quote" class="my-8 bg-[#F3F6FE] dark:bg-gray-700 rounded-lg p-4">
+                                    <section x-show="story.quote && $store.sections.settings.quotes" class="my-8 bg-[#F3F6FE] dark:bg-gray-700 rounded-lg p-4">
                                         <blockquote class="text-lg text-black dark:text-white">
                                             <span x-text="story.quote"></span>
                                         </blockquote>
@@ -1349,9 +1344,9 @@
                                         </p>
                                     </section>
 
-                                    <section x-show="story.articles.filter(a => a.image).length >= 2 && $store.showImages.enabled" class="mt-6">
-                                        <template x-if="story.articles.filter(a => a.image)[1] && $store.showImages.enabled">
-                                            <div class="relative w-full max-w-[800px] mx-auto">
+                                    <section x-show="story.articles.filter(a => a.image).length >= 2 && $store.sections.settings.images" class="mt-6">
+                                        <template x-if="story.articles.filter(a => a.image)[1] && $store.sections.settings.images">
+                                            <div class="relative w-[calc(100%-1rem)] max-w-[800px] mx-auto">
                                                 <a :href="story.articles.filter(a => a.image)[1].link" target="_blank" class="relative block">
                                                     <img
                                                         :src="story.expanded ? story.articles.filter(a => a.image)[1].image : ''"
@@ -1370,7 +1365,7 @@
                                         </template>
                                     </section>
 
-                                    <section x-show="story.perspectives && story.perspectives.length > 0" class="mt-6">
+                                    <section x-show="story.perspectives && story.perspectives.length > 0 && $store.sections.settings.perspectives" class="mt-6">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Perspectives</h3>
                                         <div class="flex flex-row overflow-x-auto gap-3 pb-4">
                                             <template x-for="(perspective, index) in story.perspectives" :key="index">
@@ -1394,26 +1389,19 @@
                                         </div>
                                     </section>
 
-                                    <section x-show="story.geopolitical_context">
-                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">
-                                            Geopolitical context
-                                        </h3>
-                                        <p class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.geopolitical_context"></p>
-                                    </section>
-
-                                    <section x-show="story.historical_background">
+                                    <section x-show="story.historical_background && $store.sections.settings.historicalBackground">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">Historical background</h3>
                                         <p class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.historical_background"></p>
                                     </section>
 
-                                    <section x-show="story.humanitarian_impact">
+                                    <section x-show="story.humanitarian_impact && $store.sections.settings.humanitarianImpact">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">
                                             Humanitarian impact
                                         </h3>
                                         <p class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.humanitarian_impact"></p>
                                     </section>
 
-                                    <section x-show="story.technical_details && story.technical_details.length > 0">
+                                    <section x-show="story.technical_details && story.technical_details.length > 0 && $store.sections.settings.technicalDetails">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">Technical details</h3>
                                         <ul class="list-disc list-inside mb-4 text-gray-700 dark:text-gray-300 space-y-2">
                                             <template x-for="detail in story.technical_details" :key="detail">
@@ -1422,7 +1410,7 @@
                                         </ul>
                                     </section>
 
-                                    <section x-show="story.business_angle_text || (story.business_angle_points && story.business_angle_points.length > 0)">
+                                    <section x-show="(story.business_angle_text || (story.business_angle_points && story.business_angle_points.length > 0)) && $store.sections.settings.businessAngle">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">Business angle</h3>
                                         <p x-show="story.business_angle_text" class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.business_angle_text"></p>
                                         <ul x-show="story.business_angle_points && story.business_angle_points.length > 0" class="list-disc list-inside mb-4 text-gray-700 dark:text-gray-300 space-y-2">
@@ -1432,7 +1420,7 @@
                                         </ul>
                                     </section>
 
-                                    <section x-show="story.international_reactions && story.international_reactions.length > 0">
+                                    <section x-show="story.international_reactions && story.international_reactions.length > 0 && $store.sections.settings.internationalReactions">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">
                                             International reactions
                                         </h3>
@@ -1525,8 +1513,8 @@
                                         <p class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.technical_specifications"></p>
                                     </section>
 
-                                    <section x-show="story.timeline && story.timeline.length > 0">
-                                        <h2 class="timeline-title text-xl mt-6 mb-4">Timeline of events</h2>
+                                    <section x-show="story.timeline && story.timeline.length > 0 && $store.sections.settings.timeline">
+                                        <h2 class="timeline-title text-xl font-semibold mt-6 mb-4">Timeline of events</h2>
                                         <div class="timeline">
                                             <template x-for="(event, index) in story.timeline" :key="index">
                                                 <div class="row">
@@ -1549,12 +1537,8 @@
                                         </div>
                                     </section>
 
-                                    <section x-show="story.future_outlook">
-                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mt-6 mb-2">Future outlook</h3>
-                                        <p class="mb-4 text-gray-700 dark:text-gray-300" x-text="story.future_outlook"></p>
-                                    </section>
-
-                                    <section x-data="{ showAllSources: false, visibleSources: 8 }">
+                                    <section x-data="{ showAllSources: false, visibleSources: window.innerWidth <= 768 ? 4 : 8 }" 
+                                             x-init="window.addEventListener('resize', () => { visibleSources = window.innerWidth <= 768 ? 4 : 8 })">
                                         <div class="flex items-center justify-between mt-6 mb-4">
                                             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Sources</h3>
                                             <button
@@ -1583,6 +1567,8 @@
                                                         @click.stop="$dispatch('open-source', { domain: domain, story: story })"
                                                         :aria-label="'Show articles from ' + (domain?.name || 'Unknown')"
                                                         :title="'Show articles from ' + (domain?.name || 'Unknown')"
+                                                        tabindex="-1"
+                                                        style="outline: none;"
                                                     >
                                                         <div class="flex items-center space-x-2">
                                                             <img
@@ -1601,7 +1587,7 @@
                                         </div>
                                     </section>
 
-                                    <section x-show="story.user_action_items && story.user_action_items.length > 0" class="bg-[#F1FAE8] dark:bg-[#2B411C] rounded-lg p-4 mt-6">
+                                    <section x-show="story.user_action_items && story.user_action_items.length > 0 && $store.sections.settings.actionItems" class="bg-[#F1FAE8] dark:bg-[#2B411C] rounded-lg p-4 mt-6">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Action items</h3>
                                         <ul class="list-disc ml-4 mb-2 text-gray-700 dark:text-gray-200 space-y-2">
                                             <template x-for="item in story.user_action_items" :key="item">
@@ -1610,7 +1596,7 @@
                                         </ul>
                                     </section>
 
-                                    <section x-show="story.did_you_know" class="bg-[#CED8FB] dark:bg-[#2A3B5E] rounded-lg p-4 mt-6">
+                                    <section x-show="story.did_you_know && $store.sections.settings.didYouKnow" class="bg-[#CED8FB] dark:bg-[#2A3B5E] rounded-lg p-4 mt-6">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Did you know?</h3>
                                         <p class="text-gray-700 dark:text-gray-200" x-text="story.did_you_know"></p>
                                     </section>
@@ -1638,7 +1624,7 @@
             </div>
         </main>
 
-        <div x-show="showSourceOverlay" x-cloak @open-source.window="processSource($event)" @click.self="showSourceOverlay = false" class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center p-4">
+        <div x-show="showSourceOverlay" x-cloak @open-source.window="processSource($event)" @click.self="showSourceOverlay = false" class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center p-4 z-[70]">
             <div class="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
                 <header class="flex justify-between items-center mb-4">
                     <div class="flex items-center space-x-2">
@@ -1776,32 +1762,50 @@
             x-cloak
             role="complementary"
             aria-label="Settings panel"
-            class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center z-50"
+            class="fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex items-center justify-center z-[80]"
             @click.self="$store.settings.close()"
             @keydown.escape.window="$store.settings.close()"
         >
-            <div class="bg-white dark:bg-gray-800 w-full h-full md:rounded-lg md:p-8 md:max-w-md md:h-auto md:max-h-[90vh] shadow-xl overflow-y-auto flex flex-col" @click.stop>
-                <header class="flex-shrink-0 bg-white dark:bg-gray-800 p-4 md:p-0 md:mb-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-200">Settings</h2>
+            <div class="bg-white dark:bg-gray-800 w-full h-full md:rounded-lg md:p-8 md:max-w-md md:h-auto md:max-h-[90vh] shadow-xl overflow-y-auto flex flex-col" @click.stop x-data="{ activeTab: 'general' }">
+                <header class="flex-shrink-0 bg-white dark:bg-gray-800 p-4 md:p-0">
+                    <div class="flex justify-end mb-4">
                         <button @click="$store.settings.close()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
                     </div>
-                    <button
-                        @click="$store.settings.close(); showIntro = true"
-                        class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-sm font-medium flex items-center justify-center space-x-2"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span>About Kite</span>
-                    </button>
+                    <!-- Tabs -->
+                    <div class="flex border-b border-gray-200 dark:border-gray-700">
+                        <button 
+                            @click="activeTab = 'general'"
+                            :class="{'border-blue-500 text-blue-600 dark:text-blue-400': activeTab === 'general',
+                                    'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'general'}"
+                            class="px-4 py-2 border-b-2 font-medium text-sm"
+                        >
+                            General
+                        </button>
+                        <button 
+                            @click="activeTab = 'categories'"
+                            :class="{'border-blue-500 text-blue-600 dark:text-blue-400': activeTab === 'categories',
+                                    'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'categories'}"
+                            class="px-4 py-2 border-b-2 font-medium text-sm"
+                        >
+                            Categories
+                        </button>
+                        <button 
+                            @click="activeTab = 'sections'"
+                            :class="{'border-blue-500 text-blue-600 dark:text-blue-400': activeTab === 'sections',
+                                    'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'sections'}"
+                            class="px-4 py-2 border-b-2 font-medium text-sm"
+                        >
+                            Sections
+                        </button>
+                    </div>
                 </header>
-                <div class="p-4 md:p-0">
-                    <div class="space-y-6">
+                <div class="p-4 md:p-0 mt-6">
+                    <!-- General Settings Tab -->
+                    <div x-show="activeTab === 'general'" class="space-y-6">
                         <div class="flex flex-col space-y-2">
                             <label for="theme-select" class="text-sm font-medium text-gray-700 dark:text-gray-300">Theme</label>
                             <div class="relative">
@@ -1841,15 +1845,6 @@
                             </div>
                         </div>
                         <div class="flex flex-col space-y-2">
-                            <div class="flex items-center justify-between">
-                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Show images</label>
-                                <button @click="$store.showImages.toggle()" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.showImages.enabled ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
-                                    <span class="sr-only">Toggle images</span>
-                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.showImages.enabled ? 'translate-x-6' : 'translate-x-1'"></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex flex-col space-y-2">
                             <label for="story-count-range" class="text-sm font-medium text-gray-700 dark:text-gray-300"> Number of stories shown: <span x-text="$store.storyCount.current"></span> </label>
                             <input
                                 id="story-count-range"
@@ -1870,7 +1865,18 @@
                             />
                         </div>
                         <div class="flex flex-col space-y-2">
-                            <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Categories</label>
+                            <button
+                                @click="$store.settings.close(); showIntro = true"
+                                class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-sm font-medium flex items-center justify-center space-x-2"
+                            >
+                                <img :src="$store.theme.current === 'dark' ? '{{ static_path }}/svg/kite_dark.svg' : '{{ static_path }}/svg/kite.svg'" alt="Kite icon" class="h-4 w-4" />
+                                <span>About Kite</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Categories Tab -->
+                    <div x-show="activeTab === 'categories'" class="space-y-6">
+                        <div class="flex flex-col space-y-2">
                             <p class="text-xs text-gray-500 dark:text-gray-400">Tap to toggle. Drag enabled categories to reorder.</p>
 
                             <!-- Enabled categories grid -->
@@ -1905,6 +1911,102 @@
                                 <a href="https://github.com/kagisearch/kite-public" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 text-sm">
                                     + Contribute categories
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sections Tab -->
+                    <div x-show="activeTab === 'sections'" class="space-y-6">
+                        <div class="flex flex-col space-y-4">
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Summary</label>
+                                <button @click="$store.sections.toggle('summary')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.summary ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle summary</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.summary ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Images</label>
+                                <button @click="$store.sections.toggle('images')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.images ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle images</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.images ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Highlights</label>
+                                <button @click="$store.sections.toggle('highlights')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.highlights ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle highlights</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.highlights ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Quotes</label>
+                                <button @click="$store.sections.toggle('quotes')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.quotes ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle quotes</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.quotes ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Perspectives</label>
+                                <button @click="$store.sections.toggle('perspectives')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.perspectives ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle perspectives</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.perspectives ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Historical background</label>
+                                <button @click="$store.sections.toggle('historicalBackground')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.historicalBackground ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle historical background</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.historicalBackground ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Humanitarian impact</label>
+                                <button @click="$store.sections.toggle('humanitarianImpact')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.humanitarianImpact ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle humanitarian impact</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.humanitarianImpact ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Technical details</label>
+                                <button @click="$store.sections.toggle('technicalDetails')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.technicalDetails ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle technical details</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.technicalDetails ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Business angle</label>
+                                <button @click="$store.sections.toggle('businessAngle')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.businessAngle ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle business angle</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.businessAngle ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">International reactions</label>
+                                <button @click="$store.sections.toggle('internationalReactions')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.internationalReactions ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle international reactions</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.internationalReactions ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Timeline</label>
+                                <button @click="$store.sections.toggle('timeline')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.timeline ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle timeline</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.timeline ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Did you know?</label>
+                                <button @click="$store.sections.toggle('didYouKnow')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.didYouKnow ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle did you know</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.didYouKnow ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <label class="text-sm font-medium text-gray-700 dark:text-gray-300">Action items</label>
+                                <button @click="$store.sections.toggle('actionItems')" class="relative inline-flex h-6 w-11 items-center rounded-full" :class="$store.sections.settings.actionItems ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                                    <span class="sr-only">Toggle action items</span>
+                                    <span class="inline-block h-4 w-4 transform rounded-full bg-white transition" :class="$store.sections.settings.actionItems ? 'translate-x-6' : 'translate-x-1'"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
