@@ -35,7 +35,7 @@
     "country": "Italy",
     "organization": "Adnkronos",
     "domains": ["adnkronos.com"],
-    "description": "Adnkronos is an Italian news agency founded in 1963 through the merger of Kronos (founded by Pietro Nenni in 1951) and ADN (founded by Amintore Fanfani in 1959). Based in Rome with offices in Milan, it provides real-time news coverage across multiple sectors including politics, economy, sports, health, and international affairs through its multimedia platform.",
+    "description": "Adnkronos is a news agency founded in 1963 through the merger of Kronos (founded by Pietro Nenni in 1951) and ADN (founded by Amintore Fanfani in 1959). Based in Rome with offices in Milan, it provides real-time news coverage across multiple sectors including politics, economy, sports, health, and international affairs through its multimedia platform.",
     "owner": "Giuseppe Marra Communications (GMC)",
     "typology": "Private Media"
   },
@@ -43,7 +43,7 @@
     "country": "Italy",
     "organization": "Affaritaliani",
     "domains": ["affaritaliani.it"],
-    "description": "Affaritaliani.it is an Italian online news outlet founded in 1996 and based in Milan. It operates as a digital-only daily newspaper covering politics, economics, sports, entertainment and current affairs. It was one of Italy's first online-only news publications.",
+    "description": "Affaritaliani.it is an online news outlet founded in 1996 and based in Milan. It operates as a digital-only daily newspaper covering politics, economics, sports, entertainment and current affairs. It was one of Italy's first online-only news publications.",
     "owner": "Uomini e Affari srl",
     "typology": "Private Media"
   },
@@ -59,7 +59,7 @@
     "country": "Italy",
     "organization": "BuoneNotizie",
     "domains": ["buonenotizie.it"],
-    "description": "BuoneNotizie.it is an Italian digital news platform founded in 2001 that focuses on constructive journalism and positive news coverage. The site operates without advertising and partners with the Italian Association of Constructive Journalism.",
+    "description": "BuoneNotizie.it is a digital news platform founded in 2001 that focuses on constructive journalism and positive news coverage. The site operates without advertising and partners with the Italian Association of Constructive Journalism.",
     "owner": "Unknown",
     "typology": "Private Media"
   },
@@ -67,7 +67,7 @@
     "country": "Italy",
     "organization": "Corriere della Sera",
     "domains": ["corriere.it", "rcsmediagroup.it"],
-    "description": "Corriere della Sera is an Italian daily newspaper founded in 1876 by Eugenio Torelli Viollier and based in Milan. It provides comprehensive coverage of national and international news, politics, sports, and current affairs, with a particular focus on Italy's economic and political developments.",
+    "description": "Corriere della Sera is a daily newspaper founded in 1876 by Eugenio Torelli Viollier and based in Milan. It provides comprehensive coverage of national and international news, politics, sports, and current affairs, with a particular focus on Italy's economic and political developments.",
     "owner": "Cairo Communication (59.69%)",
     "typology": "Private Media"
   },
@@ -75,7 +75,7 @@
     "country": "Italy",
     "organization": "Fanpage",
     "domains": ["fanpage.it"],
-    "description": "Fanpage is an Italian digital news outlet founded in 2010 that covers general news, politics, sports, entertainment, and technology. The website specializes in real-time news coverage and video journalism, with a significant presence on social media platforms. It is particularly popular among younger Italian readers and known for its investigative journalism, often presenting news from a progressive, left-leaning perspective.",
+    "description": "Fanpage is a digital news outlet founded in 2010 that covers general news, politics, sports, entertainment, and technology. The website specializes in real-time news coverage and video journalism, with a significant presence on social media platforms. It is particularly popular among younger Italian readers and known for its investigative journalism, often presenting news from a progressive, left-leaning perspective.",
     "owner": "Ciaopeople Media Group S.r.l.",
     "typology": "Private Media"
   },
@@ -99,7 +99,7 @@
     "country": "Italy",
     "organization": "Il Foglio",
     "domains": ["ilfoglio.it"],
-    "description": "Il Foglio is an Italian daily newspaper with a center-right editorial stance, founded by Giuliano Ferrara and currently directed by Claudio Cerasa, headquartered in Rome. The newspaper provides coverage of national and international news, politics, and current affairs, with a digital presence offering both free and subscription-based content.",
+    "description": "Il Foglio is a daily newspaper with a center-right editorial stance, founded by Giuliano Ferrara and currently directed by Claudio Cerasa, headquartered in Rome. The newspaper provides coverage of national and international news, politics, and current affairs, with a digital presence offering both free and subscription-based content.",
     "owner": "Musa Comunicazione (100%)",
     "typology": "Private Media"
   },
@@ -107,7 +107,7 @@
     "country": "Italy",
     "organization": "il manifesto",
     "domains": ["ilmanifesto.it"],
-    "description": "il manifesto is an Italian national daily newspaper established in 1969 as a monthly review before becoming a daily in 1971. It operates as a publishing cooperative of journalists and workers, known for its radical left-wing and communist editorial stance. The newspaper provides both print and digital news coverage, with recent efforts to expand its reach through an English-language edition.",
+    "description": "il manifesto is a national daily newspaper established in 1969 as a monthly review before becoming a daily in 1971. It operates as a publishing cooperative of journalists and workers, known for its radical left-wing and communist editorial stance. The newspaper provides both print and digital news coverage, with recent efforts to expand its reach through an English-language edition.",
     "owner": "Publishing cooperative of journalists and workers",
     "typology": "Private Media"
   },
@@ -115,7 +115,7 @@
     "country": "Italy",
     "organization": "il Post",
     "domains": ["ilpost.it"],
-    "description": "il Post is an Italian online daily newspaper founded in 2010 by Luca Sofri. It provides free access to news coverage, analysis, and content spanning world events, culture, and current affairs through articles, reviews, blogs, and photos, without requiring user registration.",
+    "description": "il Post is a online daily newspaper founded in 2010 by Luca Sofri. It provides free access to news coverage, analysis, and content spanning world events, culture, and current affairs through articles, reviews, blogs, and photos, without requiring user registration.",
     "owner": "Luca Sofri",
     "typology": "Private Media"
   },
@@ -131,7 +131,7 @@
     "country": "Italy",
     "organization": "Il Secolo XIX",
     "domains": ["ilsecoloxix.it"],
-    "description": "Il Secolo XIX is an Italian daily newspaper founded in 1886 and based in Genoa, serving the Liguria region with local, national, and international news coverage. The newspaper had a print circulation of 28,718 copies in 2021, down from 103,223 in 2008, and operates both print and digital platforms.",
+    "description": "Il Secolo XIX is a daily newspaper founded in 1886 and based in Genoa, serving the Liguria region with local, national, and international news coverage. The newspaper had a print circulation of 28,718 copies in 2021, down from 103,223 in 2008, and operates both print and digital platforms.",
     "owner": "Blue Media (MSC Group)",
     "typology": "Private Media"
   },
@@ -147,7 +147,7 @@
     "country": "Italy",
     "organization": "Il Tempo",
     "domains": ["iltempo.it"],
-    "description": "Il Tempo is an Italian daily newspaper based in Rome, founded in 1944. It is known for its conservative-leaning editorial stance and primarily covers news, politics, sports, and culture with a focus on Rome and the surrounding Lazio region. The newspaper maintains both print and digital operations through its website iltempo.it.",
+    "description": "Il Tempo is a daily newspaper based in Rome, founded in 1944. It is known for its conservative-leaning editorial stance and primarily covers news, politics, sports, and culture with a focus on Rome and the surrounding Lazio region. The newspaper maintains both print and digital operations through its website iltempo.it.",
     "owner": "Editrice Romana Srl",
     "typology": "Private Media"
   },
@@ -155,7 +155,7 @@
     "country": "Italy",
     "organization": "La Nazione",
     "domains": ["lanazione.it"],
-    "description": "La Nazione is an Italian daily newspaper founded in 1859, based in Florence and covering news from Tuscany and Umbria regions with 14 different local editions. The newspaper maintains a moderate-conservative editorial stance and publishes daily news covering politics, economy, sports, technology, and local chronicles across its print and digital platforms.",
+    "description": "La Nazione is a daily newspaper founded in 1859, based in Florence and covering news from Tuscany and Umbria regions with 14 different local editions. The newspaper maintains a moderate-conservative editorial stance and publishes daily news covering politics, economy, sports, technology, and local chronicles across its print and digital platforms.",
     "owner": "Monrif Group",
     "typology": "Private Media"
   },
@@ -179,7 +179,7 @@
     "country": "Italy",
     "organization": "News Mondo",
     "domains": ["newsmondo.it"],
-    "description": "News Mondo is an Italian digital news platform providing 24/7 real-time news coverage and analysis of current events from Italy and around the world. The platform features a team of young professionals and established journalists delivering news content across various categories including current affairs, editorials, and in-depth analysis.",
+    "description": "News Mondo is a digital news platform providing 24/7 real-time news coverage and analysis of current events from Italy and around the world. The platform features a team of young professionals and established journalists delivering news content across various categories including current affairs, editorials, and in-depth analysis.",
     "owner": "Unknown",
     "typology": "Private Media"
   },
@@ -187,7 +187,7 @@
     "country": "Italy",
     "organization": "Notizie Italia",
     "domains": ["notizie-italia.it"],
-    "description": "Notizie Italia is an Italian digital news platform established in 2023 that aggregates and publishes national news content primarily sourced from major news agencies. The platform provides coverage across various topics including politics, economics, sports, and current events.",
+    "description": "Notizie Italia is a digital news platform established in 2023 that aggregates and publishes national news content primarily sourced from major news agencies. The platform provides coverage across various topics including politics, economics, sports, and current events.",
     "owner": "Unknown",
     "typology": "Private Media"
   },
@@ -195,7 +195,7 @@
     "country": "Italy",
     "organization": "Open",
     "domains": ["open.online"],
-    "description": "Open is an Italian digital news outlet founded by journalist Enrico Mentana, operating as a social enterprise based in Milan. The organization focuses on providing real-time news coverage in a simplified format for online audiences.",
+    "description": "Open is a digital news outlet founded by journalist Enrico Mentana, operating as a social enterprise based in Milan. The organization focuses on providing real-time news coverage in a simplified format for online audiences.",
     "owner": "Enrico Mentana",
     "typology": "Private Media"
   },
@@ -203,7 +203,7 @@
     "country": "Italy",
     "organization": "OrizzonteScuola SRL",
     "domains": ["orizzontescuola.it"],
-    "description": "OrizzonteScuola is an Italian educational news portal and media service focused on providing news, resources, and consultation services for teachers, school administrators, and education staff. The platform covers education policy updates, job opportunities, regulatory changes, and professional development in the Italian education sector.",
+    "description": "OrizzonteScuola is a educational news portal and media service focused on providing news, resources, and consultation services for teachers, school administrators, and education staff. The platform covers education policy updates, job opportunities, regulatory changes, and professional development in the Italian education sector.",
     "owner": "OrizzonteScuola SRL",
     "typology": "Private Media"
   },
@@ -219,7 +219,7 @@
     "country": "Italy",
     "organization": "la Repubblica",
     "domains": ["repubblica.it"],
-    "description": "la Repubblica is an Italian daily newspaper and online news outlet based in Rome, founded in 1976. The publication maintains a center-left political editorial line and covers politics, economics, sports, international news, culture, and science. It is part of GEDI News Network, one of Italy's major media groups.",
+    "description": "la Repubblica is a daily newspaper and online news outlet based in Rome, founded in 1976. The publication maintains a center-left political editorial line and covers politics, economics, sports, international news, culture, and science. It is part of GEDI News Network, one of Italy's major media groups.",
     "owner": "GEDI Gruppo Editoriale (owned by Exor)",
     "typology": "Private Media"
   },
@@ -227,7 +227,7 @@
     "country": "Italy",
     "organization": "RTL 102.5",
     "domains": ["rtl.it"],
-    "description": "RTL 102.5 is an Italian radio broadcaster that operates as a multimedia platform combining radio, television, and web streaming services. The station offers news, music programming, and entertainment content through its 'Radiovisione' format, which allows simultaneous radio listening and video viewing across multiple platforms including digital terrestrial TV (channel 36), Sky (channel 736), and web streaming.",
+    "description": "RTL 102.5 is a radio broadcaster that operates as a multimedia platform combining radio, television, and web streaming services. The station offers news, music programming, and entertainment content through its 'Radiovisione' format, which allows simultaneous radio listening and video viewing across multiple platforms including digital terrestrial TV (channel 36), Sky (channel 736), and web streaming.",
     "owner": "Lorenzo Suraci",
     "typology": "Private Media"
   },
@@ -235,7 +235,7 @@
     "country": "Italy",
     "organization": "Sky TG24",
     "domains": ["skytg24.it"],
-    "description": "Sky TG24 is an Italian 24-hour all-news television channel and digital news platform operated by Sky Italia. It broadcasts news, current affairs, and live coverage on channel 50 of digital terrestrial television in Italy, offering free-to-air news coverage alongside premium content through its Insider subscription service.",
+    "description": "Sky TG24 is a 24-hour all-news television channel and digital news platform operated by Sky Italia. It broadcasts news, current affairs, and live coverage on channel 50 of digital terrestrial television in Italy, offering free-to-air news coverage alongside premium content through its Insider subscription service.",
     "owner": "Sky Italia (Comcast Corporation)",
     "typology": "Private Media"
   },
@@ -243,7 +243,7 @@
     "country": "Italy",
     "organization": "Today",
     "domains": ["today.it"],
-    "description": "Today.it is an Italian digital news platform operated by Citynews that provides real-time coverage of national and international news, including politics, economics, sports, entertainment, and local news through a network of city-specific editions. The platform focuses on delivering breaking news and in-depth analysis across multiple Italian cities.",
+    "description": "Today.it is a digital news platform operated by Citynews that provides real-time coverage of national and international news, including politics, economics, sports, entertainment, and local news through a network of city-specific editions. The platform focuses on delivering breaking news and in-depth analysis across multiple Italian cities.",
     "owner": "Citynews S.p.A.",
     "typology": "Private Media"
   },
@@ -251,7 +251,7 @@
     "country": "Italy",
     "organization": "l'Unità",
     "domains": ["unita.it"],
-    "description": "l'Unità is an Italian daily newspaper founded by Antonio Gramsci in 1924. It provides news coverage of politics, economics, current affairs, justice, and international news through its online platform. Currently directed by Piero Sansonetti, the newspaper has historical ties to the Italian left and continues to publish both daily news and in-depth stories.",
+    "description": "l'Unità is a daily newspaper founded by Antonio Gramsci in 1924. It provides news coverage of politics, economics, current affairs, justice, and international news through its online platform. Currently directed by Piero Sansonetti, the newspaper has historical ties to the Italian left and continues to publish both daily news and in-depth stories.",
     "owner": "Romeo editore srl",
     "typology": "Private Media"
   },
@@ -267,7 +267,7 @@
     "country": "Italy",
     "organization": "Il Fatto Quotidiano",
     "domains": ["ilfattoquotidiano.it"],
-    "description": "Il Fatto Quotidiano is an Italian daily newspaper and digital news outlet founded in 2009, known for its investigative journalism and coverage of politics, justice, economics, and corruption. The publication maintains an independent editorial stance with a strong focus on anti-corruption reporting and government accountability. While editorially independent, it has historically shown alignment with some positions of the Five Star Movement (M5S), particularly on anti-corruption and institutional reform.",
+    "description": "Il Fatto Quotidiano is a daily newspaper and digital news outlet founded in 2009, known for its investigative journalism and coverage of politics, justice, economics, and corruption. The publication maintains an independent editorial stance with a strong focus on anti-corruption reporting and government accountability. While editorially independent, it has historically shown alignment with some positions of the Five Star Movement (M5S), particularly on anti-corruption and institutional reform.",
     "owner": "Società Editoriale Il Fatto S.p.A.",
     "typology": "Private Media"
   },
@@ -275,8 +275,9 @@
     "country": "Italy",
     "organization": "Avvenire",
     "domains": ["avvenire.it"],
-    "description": "Avvenire is an Italian daily newspaper with a Catholic perspective, owned by the Italian Episcopal Conference. The publication covers news, editorials, and analysis on current affairs, culture, religion, politics, economics and world events from a Christian worldview.",
-    "owner": "Fondazione di Religione \"Santi Francesco d'Assisi e Caterina da Siena\" (75%)"
+    "description": "Avvenire is a daily newspaper with a Catholic perspective. The publication covers news, editorials, and analysis on current affairs, culture, religion, politics, economics and world events from a Christian worldview.",
+    "owner": "Italian Episcopal Conference - Fondazione di Religione \"Santi Francesco d'Assisi e Caterina da Siena\" (75%)",
+    "typology": "Private Media"
   },
   {
     "country": "India",
@@ -367,7 +368,7 @@
     "country": "United States",
     "organization": "Linux Journal",
     "domains": ["linuxjournal.com"],
-    "description": "Linux Journal is an American monthly technology magazine focused on Linux and open source software, publishing from 1994. It publishes technical articles, tutorials, and news coverage for Linux professionals and enthusiasts.",
+    "description": "Linux Journal is a monthly technology magazine focused on Linux and open source software, publishing from 1994. It publishes technical articles, tutorials, and news coverage for Linux professionals and enthusiasts.",
     "owner": "Linux Journal LCC (1994-2019), Slashdot Media (2019-)",
     "typology": "Private Media"
   },
@@ -399,7 +400,7 @@
     "country": "Germany",
     "organization": "SUSE",
     "domains": ["suse.com"],
-    "description": "SUSE is a German multinational open-source software company that develops and sells Linux-based enterprise solutions, including SUSE Linux Enterprise Server, cloud technologies, and software-defined storage. The company provides operating systems, infrastructure software, and development tools for business customers.",
+    "description": "SUSE is a multinational open-source software company that develops and sells Linux-based enterprise solutions, including SUSE Linux Enterprise Server, cloud technologies, and software-defined storage. The company provides operating systems, infrastructure software, and development tools for business customers.",
     "owner": "EQT AB (via Marcel LUX III SARL)",
     "typology": "Private Media"
   },
@@ -799,7 +800,7 @@
     "country": "Germany",
     "organization": "Die Zeit",
     "domains": ["zeit.de"],
-    "description": "Die Zeit is a German weekly newspaper known for its liberal/center-left editorial stance and in-depth analysis. It is considered one of Germany's leading quality media publications by journalists, with coverage of politics, economics, culture, and society.",
+    "description": "Die Zeit is a weekly newspaper known for its liberal/center-left editorial stance and in-depth analysis. It is considered one of Germany's leading quality media publications by journalists, with coverage of politics, economics, culture, and society.",
     "owner": "Dieter von Holtzbrinck Medien (50%), Verlagsgruppe Georg von Holtzbrinck (50%)",
     "typology": "Private Media"
   },
@@ -823,7 +824,7 @@
     "country": "Germany",
     "organization": "Süddeutsche Zeitung",
     "domains": ["sueddeutsche.de"],
-    "description": "Süddeutsche Zeitung is a German daily newspaper published in Munich since 1945. Known for its liberal-center-left editorial stance, investigative journalism, and extensive coverage of politics, culture, and economics. The paper has played a significant role in major investigative projects like the Panama Papers and Paradise Papers.",
+    "description": "Süddeutsche Zeitung is a daily newspaper published in Munich since 1945. Known for its liberal-center-left editorial stance, investigative journalism, and extensive coverage of politics, culture, and economics. The paper has played a significant role in major investigative projects like the Panama Papers and Paradise Papers.",
     "owner": "Südwestdeutsche Medien Holding (81.25%), SZ Mitarbeiter KG (18.75%)",
     "typology": "Private Media"
   },
@@ -831,7 +832,7 @@
     "country": "Germany",
     "organization": "Die Tageszeitung",
     "domains": ["taz.de"],
-    "description": "Die Tageszeitung (taz) is a German daily newspaper founded in 1978 and based in Berlin. It operates as a cooperative since 1992, known for its left-leaning critical journalism. The newspaper focuses on investigative reporting, analysis, and alternative perspectives.",
+    "description": "Die Tageszeitung (taz) is a daily newspaper founded in 1978 and based in Berlin. It operates as a cooperative since 1992, known for its left-leaning critical journalism. The newspaper focuses on investigative reporting, analysis, and alternative perspectives.",
     "owner": "taz Cooperative - Readers ownership",
     "typology": "Private Media"
   },
@@ -847,7 +848,7 @@
     "country": "Germany",
     "organization": "Frankfurter Allgemeine Zeitung",
     "domains": ["faz.net", "frankfurterallgemeine.de"],
-    "description": "The Frankfurter Allgemeine Zeitung (FAZ) is a German daily newspaper known for its conservative editorial stance. It covers business, politics, and culture.",
+    "description": "The Frankfurter Allgemeine Zeitung (FAZ) is a daily newspaper known for its conservative editorial stance. It covers business, politics, and culture.",
     "owner": "FAZIT-Stiftung",
     "typology": "Private Media"
   },
@@ -855,7 +856,7 @@
     "country": "Germany",
     "organization": "Der Spiegel",
     "domains": ["spiegel.de"],
-    "description": "Der Spiegel is a German weekly news magazine and digital news platform established in 1947, known for its investigative journalism and political coverage. The online website has a center left-leaning editorial stance and covers politics, culture, and society.",
+    "description": "Der Spiegel is a weekly news magazine and digital news platform established in 1947, known for its investigative journalism and political coverage. The online website has a center left-leaning editorial stance and covers politics, culture, and society.",
     "owner": "Spiegel Employees (50.5%), Mohn family (25.5%), Augstein family (24%)",
     "typology": "Private Media"
   },
@@ -863,7 +864,7 @@
     "country": "Germany",
     "organization": "Stern",
     "domains": ["stern.de"],
-    "description": "Stern is a German weekly news magazine published in Hamburg since 1948 that provides reporting on politics, economy, culture and current affairs. The online website mirrors the print magazine.",
+    "description": "Stern is a weekly news magazine published in Hamburg since 1948 that provides reporting on politics, economy, culture and current affairs. The online website mirrors the print magazine.",
     "owner": "Mohn family (74%)",
     "typology": "Private Media"
   },
@@ -871,7 +872,7 @@
     "country": "Germany",
     "organization": "t-online",
     "domains": ["t-online.de"],
-    "description": "t-online is a German digital news portal and email service provider offering comprehensive coverage of news, politics, sports, entertainment, and lifestyle content.",
+    "description": "t-online is a digital news portal and email service provider offering comprehensive coverage of news, politics, sports, entertainment, and lifestyle content.",
     "owner": "Udo Müller (24%), Dirk Ströer (20%), other shareholders (56%)",
     "typology": "Private Media"
   },
@@ -879,7 +880,7 @@
     "country": "Germany",
     "organization": "Tagesschau",
     "domains": ["tagesschau.de"],
-    "description": "Tagesschau is a german national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
+    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "Independent Public Media"
   },
@@ -887,7 +888,7 @@
     "country": "Germany",
     "organization": "Der Tagesspiegel",
     "domains": ["tagesspiegel.de", "tagesspiegel-gruppe.de"],
-    "description": "Der Tagesspiegel is a German daily newspaper founded in 1945 as Berlin's first free press publication. It operates as a newspaper with a liberal editorial stance, publishing both print and digital content under the motto 'Rerum cognoscere causas' (Getting to the root of things).",
+    "description": "Der Tagesspiegel is a daily newspaper founded in 1945 as Berlin's first free press publication. It operates as a newspaper with a liberal editorial stance, publishing both print and digital content under the motto 'Rerum cognoscere causas' (Getting to the root of things).",
     "owner": "DvH Medien GmbH (Dieter von Holtzbrinck)",
     "typology": "Private Media"
   },
@@ -895,7 +896,7 @@
     "country": "Germany",
     "organization": "Zweites Deutsches Fernsehen (ZDF)",
     "domains": ["zdf.de"],
-    "description": "ZDF is a German public-service television broadcaster based in Mainz that has been operating since 1963. ZDF, like ARD, is well-respected as a journalism powerhouse, financially stable, independent, and fully accountable to the public.",
+    "description": "ZDF is a public-service television broadcaster based in Mainz that has been operating since 1963. ZDF, like ARD, is well-respected as a journalism powerhouse, financially stable, independent, and fully accountable to the public.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "Private Media"
   },
@@ -903,7 +904,7 @@
     "country": "Germany",
     "organization": "n-tv",
     "domains": ["n-tv.de"],
-    "description": "n-tv is a German free-to-air television news channel and digital media outlet that focuses on news, business coverage, and documentaries.",
+    "description": "n-tv is a free-to-air television news channel and digital media outlet that focuses on news, business coverage, and documentaries.",
     "owner": "RTL Deutschland",
     "typology": "Private Media"
   },
@@ -927,7 +928,7 @@
     "country": "Germany",
     "organization": "Frankfurter Rundschau",
     "domains": ["fr.de"],
-    "description": "Frankfurter Rundschau is a German daily newspaper published in Frankfurt. It is known for its left-liberal editorial stance and focuses on political, economic, and cultural coverage with particular emphasis on the Frankfurt Rhine-Main region.",
+    "description": "Frankfurter Rundschau is a daily newspaper published in Frankfurt. It is known for its left-liberal editorial stance and focuses on political, economic, and cultural coverage with particular emphasis on the Frankfurt Rhine-Main region.",
     "owner": "Ippen family",
     "typology": "Private Media"
   },
@@ -943,7 +944,7 @@
     "country": "Germany",
     "organization": "Handelsblatt Media Group",
     "domains": ["handelsblatt.com", "handelsblattgroup.com"],
-    "description": "Handelsblatt Media Group is a German media company based in Düsseldorf that specializes in business and financial information, providing news coverage, analysis, and specialized communication solutions through various digital and print platforms.",
+    "description": "Handelsblatt Media Group is a media company based in Düsseldorf that specializes in business and financial information, providing news coverage, analysis, and specialized communication solutions through various digital and print platforms.",
     "owner": "Dieter von Holtzbrinck",
     "typology": "Private Media"
   },
@@ -959,7 +960,7 @@
     "country": "Germany",
     "organization": "Berliner Morgenpost",
     "domains": ["morgenpost.de"],
-    "description": "Berliner Morgenpost is a German daily newspaper founded in 1898 and based in Berlin. It is one of Berlin's most-read daily newspapers, known for its conservative editorial stance.",
+    "description": "Berliner Morgenpost is a daily newspaper founded in 1898 and based in Berlin. It is one of Berlin's most-read daily newspapers, known for its conservative editorial stance.",
     "owner": "Axel-Springer-Verlag Group",
     "typology": "Private Media"
   },
@@ -967,7 +968,7 @@
     "country": "Germany",
     "organization": "Augsburger Allgemeine",
     "domains": ["augsburger-allgemeine.de"],
-    "description": "The Augsburger Allgemeine is a German regional daily newspaper based in Augsburg, Bavaria, publishing since 1807. It provides comprehensive local and national news coverage for the Augsburg region and surrounding areas, with both print and digital formats.",
+    "description": "The Augsburger Allgemeine is a regional daily newspaper based in Augsburg, Bavaria, publishing since 1807. It provides comprehensive local and national news coverage for the Augsburg region and surrounding areas, with both print and digital formats.",
     "owner": "Mediengruppe Pressedruck (Presse-Druck- und Verlags-GmbH)",
     "typology": "Private Media"
   },
@@ -975,7 +976,7 @@
     "country": "United States",
     "organization": "GameSpot",
     "domains": ["gamespot.com"],
-    "description": "GameSpot is an American video gaming website providing comprehensive coverage of the video game industry through news, reviews, previews, downloads, and guides. The site focuses on multiple gaming platforms, offering detailed game reviews and industry analysis.",
+    "description": "GameSpot is a video gaming website providing comprehensive coverage of the video game industry through news, reviews, previews, downloads, and guides. The site focuses on multiple gaming platforms, offering detailed game reviews and industry analysis.",
     "owner": "Fandom, Inc.",
     "typology": "Private Media"
   },
@@ -983,7 +984,7 @@
     "country": "United States",
     "organization": "IGN",
     "domains": ["ign.com", "world.ign.com"],
-    "description": "IGN (Imagine Games Network) is an American video game and entertainment media website that covers games, films, anime, television, comics, and technology. ",
+    "description": "IGN (Imagine Games Network) is a video game and entertainment media website that covers games, films, anime, television, comics, and technology. ",
     "owner": "Ziff Davis, Inc.",
     "typology": "Private Media"
   },
@@ -991,7 +992,7 @@
     "country": "United Kingdom",
     "organization": "Eurogamer",
     "domains": ["eurogamer.net"],
-    "description": "Eurogamer is a British video game journalism website founded in 1999 that provides video game news, reviews, and guides.",
+    "description": "Eurogamer is a video game journalism website founded in 1999 that provides video game news, reviews, and guides.",
     "owner": "Ziff Davis (via IGN Entertainment)",
     "typology": "Private Media"
   },
@@ -1183,7 +1184,7 @@
     "country": "United States",
     "organization": "Polygon",
     "domains": ["polygon.com"],
-    "description": "Polygon is an American entertainment website founded in 2012 that covers video games, movies, television, and popular culture.",
+    "description": "Polygon is a entertainment website founded in 2012 that covers video games, movies, television, and popular culture.",
     "owner": "Vox Media",
     "typology": "Private Media"
   },
@@ -1199,7 +1200,7 @@
     "country": "United Kingdom",
     "organization": "Financial Times",
     "domains": ["ft.com"],
-    "description": "The Financial Times is a British daily newspaper and digital news outlet focused on business, economic and political coverage. The publication is known for its distinctive salmon-pink newsprint format.",
+    "description": "The Financial Times is a daily newspaper and digital news outlet focused on business, economic and political coverage. The publication is known for its distinctive salmon-pink newsprint format.",
     "owner": "Nikkei Inc. (employee-owned)",
     "typology": "Private Media"
   },
@@ -1207,7 +1208,7 @@
     "country": "United Kingdom",
     "organization": "The Guardian",
     "domains": ["theguardian.com"],
-    "description": "The Guardian is a British newspaper and digital news outlet that delivers investigative journalism with a mainstream left-wing editorial stance. It operates globally and is known for its liberal political perspective and commitment to independent journalism through its unique ownership structure.",
+    "description": "The Guardian is a newspaper and digital news outlet that delivers investigative journalism with a mainstream left-wing editorial stance. It operates globally and is known for its liberal political perspective and commitment to independent journalism through its unique ownership structure.",
     "owner": "Scott Trust Limited",
     "typology": "Private Media"
   },
@@ -1231,7 +1232,7 @@
     "country": "United States",
     "organization": "The New York Times",
     "domains": ["nytimes.com"],
-    "description": "The New York Times is an American daily newspaper founded in 1851 that provides news coverage, investigative journalism, and opinion content through print and digital platforms.",
+    "description": "The New York Times is a daily newspaper founded in 1851 that provides news coverage, investigative journalism, and opinion content through print and digital platforms.",
     "owner": "The Ochs-Sulzberger Family (through The New York Times Company)",
     "typology": "Private Media"
   },
@@ -1303,7 +1304,7 @@
     "country": "United States",
     "organization": "Newsweek",
     "domains": ["newsweek.com"],
-    "description": "Founded in 1933, Newsweek is an American weekly news magazine and digital media outlet providing in-depth analysis, news, and opinion about international issues, technology, business, culture, and politics.",
+    "description": "Founded in 1933, Newsweek is a weekly news magazine and digital media outlet providing in-depth analysis, news, and opinion about international issues, technology, business, culture, and politics.",
     "owner": "Dev Pragad (50%), Johnathan Davis (50%)",
     "typology": "Private Media"
   },
@@ -1343,7 +1344,7 @@
     "country": "United States",
     "organization": "Foreign Policy",
     "domains": ["foreignpolicy.com"],
-    "description": "Foreign Policy is an American news publication founded in 1970 that focuses on global affairs, current events, and international policy analysis.",
+    "description": "Foreign Policy is a news publication founded in 1970 that focuses on global affairs, current events, and international policy analysis.",
     "owner": "Graham Holdings Company",
     "typology": "Private Media"
   },
@@ -1375,7 +1376,7 @@
     "country": "United States",
     "organization": "The Daily Signal",
     "domains": ["dailysignal.com"],
-    "description": "The Daily Signal is a conservative American political news and commentary website established in 2014. Initially launched as a project of The Heritage Foundation think tank, it became an independent publication in June 2024. The outlet focuses on policy news, political coverage, and conservative analysis.",
+    "description": "The Daily Signal is a conservative political news and commentary website established in 2014. Initially launched as a project of The Heritage Foundation think tank, it became an independent publication in June 2024. The outlet focuses on policy news, political coverage, and conservative analysis.",
     "owner": "Heritage Foundation",
     "typology": "Private Media"
   },
@@ -1399,7 +1400,7 @@
     "country": "United States",
     "organization": "PJ Media",
     "domains": ["pjmedia.com"],
-    "description": "PJ Media is a conservative American news and opinion website founded in 2004 (originally as Pajamas Media). The site publishes content focused on politics, culture, faith, and current events from a right-wing perspective, featuring various columnists and contributors who provide commentary and analysis on US political and social issues.",
+    "description": "PJ Media is a conservative news and opinion website founded in 2004 (originally as Pajamas Media). The site publishes content focused on politics, culture, faith, and current events from a right-wing perspective, featuring various columnists and contributors who provide commentary and analysis on US political and social issues.",
     "owner": "Salem Media Group",
     "typology": "Private Media"
   },
@@ -1455,7 +1456,7 @@
     "country": "United States",
     "organization": "Rolling Stone",
     "domains": ["rollingstone.com"],
-    "description": "Rolling Stone is an American magazine and media brand founded in 1967 that covers music, politics, and popular culture through investigative reporting, interviews, and cultural commentary.",
+    "description": "Rolling Stone is a magazine and media brand founded in 1967 that covers music, politics, and popular culture through investigative reporting, interviews, and cultural commentary.",
     "owner": "Penske Media Corporation",
     "typology": "Private Media"
   },
@@ -1487,7 +1488,7 @@
     "country": "United States",
     "organization": "Quartz",
     "domains": ["qz.com"],
-    "description": "Quartz is an American digital news publication founded in 2012 focusing on international business news, economics, technology, and global economy coverage. Originally launched by Atlantic Media, it relies on native advertising and sponsored content for revenue.",
+    "description": "Quartz is a digital news publication founded in 2012 focusing on international business news, economics, technology, and global economy coverage. Originally launched by Atlantic Media, it relies on native advertising and sponsored content for revenue.",
     "owner": "G/O Media",
     "typology": "Private Media"
   },
@@ -1647,7 +1648,7 @@
     "country": "United States",
     "organization": "TechCrunch",
     "domains": ["techcrunch.com"],
-    "description": "TechCrunch is an American online technology news outlet founded in 2005 that focuses on reporting about startups, technology companies, venture capital funding, and Silicon Valley. It provides breaking news, analysis, and coverage of the global technology industry through articles, events, and databases tracking startup funding and acquisitions.",
+    "description": "TechCrunch is a online technology news outlet founded in 2005 that focuses on reporting about startups, technology companies, venture capital funding, and Silicon Valley. It provides breaking news, analysis, and coverage of the global technology industry through articles, events, and databases tracking startup funding and acquisitions.",
     "owner": "Yahoo! Inc. (Apollo Global Management)",
     "typology": "Private Media"
   },
@@ -1711,7 +1712,7 @@
     "country": "United Kingdom",
     "organization": "The Register",
     "domains": ["theregister.com"],
-    "description": "The Register is a British technology news website founded in 1994 that specializes in enterprise technology coverage and cybersecurity news. With offices across America, Singapore, UK, Europe, and Australia.",
+    "description": "The Register is a technology news website founded in 1994 that specializes in enterprise technology coverage and cybersecurity news. With offices across America, Singapore, UK, Europe, and Australia.",
     "owner": "Situation Publishing Ltd (Drew Cullen, Linus Birtles)",
     "typology": "Private Media"
   },
@@ -1719,7 +1720,7 @@
     "country": "United States",
     "organization": "Fast Company",
     "domains": ["fastcompany.com"],
-    "description": "Fast Company is a monthly American business magazine published in print and online, focusing on technology, business, innovation, and design coverage. The publication produces six print issues annually and maintains an active digital presence through its website, offering news, analysis, and features about business trends and developments.",
+    "description": "Fast Company is a monthly business magazine published in print and online, focusing on technology, business, innovation, and design coverage. The publication produces six print issues annually and maintains an active digital presence through its website, offering news, analysis, and features about business trends and developments.",
     "owner": "Joseph Daniel Mansueto (via Mansueto Ventures)",
     "typology": "Private Media"
   },
