@@ -1538,5 +1538,205 @@
     "description": "Seeking Alpha is a crowdsourced financial markets content and analysis platform where investors and market professionals share research, investment ideas, and discuss stocks.",
     "owner": "Seeking Alpha Ltd.",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "PC Magazine",
+    "domains": ["pcmag.com"],
+    "description": "PC Magazine is a technology publication established in 1982 that provides product reviews, tech news, and analysis. Originally a print magazine until 2009, it now operates as a digital-only publication offering lab-tested reviews of computers, consumer electronics, software, and tech services.",
+    "owner": "Ziff Davis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Engadget",
+    "domains": ["engadget.com"],
+    "description": "Engadget is a technology news and review website covering consumer electronics, gadgets, and digital technology. The site publishes detailed product reviews, technology industry news, and analysis of emerging tech trends, with a particular focus on consumer electronics, gaming, and artificial intelligence.",
+    "owner": "Yahoo Inc. (Owned by Apollo Global Management)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Mashable",
+    "domains": ["mashable.com"],
+    "description": "Mashable is a digital media platform and entertainment company founded in 2005 by Pete Cashmore, covering technology, digital culture, social media, and entertainment news. The site receives over 40 million monthly pageviews and serves as a significant source for web-related news, trends analysis, and digital culture coverage.",
+    "owner": "Ziff Davis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "MacRumors",
+    "domains": ["macrumors.com"],
+    "description": "MacRumors is a technology news website and blog focused exclusively on Apple products, software, and ecosystem. It publishes news, rumors, leaks, reviews, and guides about upcoming and existing Apple products.",
+    "owner": "Arnold Kim",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Australia",
+    "organization": "Ausdroid",
+    "domains": ["ausdroid.net"],
+    "description": "Ausdroid is an Australian technology news website focused on smartphones, mobile devices, accessories, and personal computing. Originally known as Android Australia, it provides reviews, news coverage, and analysis of mobile and personal technology, with a particular emphasis on the Australian market.",
+    "owner": "Chris Rowland",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "MobileSyrup",
+    "domains": ["mobilesyrup.com"],
+    "description": "MobileSyrup is a Canadian technology news website focused on mobile technology, smartphones, and general tech coverage. The platform specializes in providing news, reviews, and coverage of the Canadian mobile and tech industry, with particular emphasis on local market analysis, device reviews, and telecom plan comparisons.",
+    "owner": "Blue Ant Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Android Authority",
+    "domains": ["androidauthority.com"],
+    "description": "Android Authority is a technology news and media website focused on covering Android smartphones, tablets, apps, and the broader Android ecosystem. The site provides news coverage, device reviews, tutorials, and in-depth analysis of Android-related products and developments.",
+    "owner": "Darcy Lacouvée",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Liliputing",
+    "domains": ["liliputing.com"],
+    "description": "Liliputing is a technology news blog focused on covering mobile technology, with particular emphasis on smartphones, tablets, notebooks, and small form factor computers. The site provides news, reviews, tips, and how-to guides, with notable coverage of custom modifications for devices like Amazon Fire tablets.",
+    "owner": "Brad Linder",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "GeekWire",
+    "domains": ["geekwire.com"],
+    "description": "GeekWire is a technology news site and community focused on covering technology, business, and science news, with particular emphasis on the Pacific Northwest tech ecosystem. The site provides news coverage, analysis, and insights about startups, established tech companies, scientific discoveries, and the broader technology industry.",
+    "owner": "John Cook, Todd Bishop, Jonathan Sposato",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Macworld",
+    "domains": ["macworld.com"],
+    "description": "Macworld is a technology media outlet focused exclusively on Apple products and services, providing news coverage, product reviews, tutorials, and buying advice. Originally started as a print magazine in 1984, it transitioned to digital-only in 2014.",
+    "owner": "Foundry (formerly IDG Communications), a subsidiary of Blackstone",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Cult of Mac",
+    "domains": ["cultofmac.com"],
+    "description": "Cult of Mac is a technology news website founded in 2009 that focuses exclusively on Apple-related content, including news, reviews, how-to guides, and product analysis.",
+    "owner": "Leander Kahney",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Mac Observer",
+    "domains": ["macobserver.com"],
+    "description": "The Mac Observer is a technology news website and blog focused on covering Apple products, services, and ecosystem, including iPhone, Mac, iPad, and Watch.",
+    "owner": "RefactorMedia",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "PCWorld",
+    "domains": ["pcworld.com"],
+    "description": "PCWorld is a technology-focused digital publication that provides news, reviews, analysis, and advice about personal computers, software, hardware, and related technologies. Originally a print magazine, it transitioned to online-only format in 2013. The publication specializes in helping users navigate PC ecosystems with product recommendations and technical guidance.",
+    "owner": "IDG (International Data Group)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "TechCrunch",
+    "domains": ["techcrunch.com"],
+    "description": "TechCrunch is an American online technology news outlet founded in 2005 that focuses on reporting about startups, technology companies, venture capital funding, and Silicon Valley. It provides breaking news, analysis, and coverage of the global technology industry through articles, events, and databases tracking startup funding and acquisitions.",
+    "owner": "Yahoo! Inc. (Apollo Global Management)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Croatia",
+    "organization": "Fudzilla",
+    "domains": ["fudzilla.com", "fudzilla.net"],
+    "description": "Fudzilla is a technology news website focused on hardware reviews, semiconductor industry news, and general tech coverage, with particular emphasis on PC components, processors, and graphics cards. The site publishes daily news updates and detailed technical reviews targeting tech enthusiasts and industry professionals.",
+    "owner": "Fuad Abazovic",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Computer Weekly",
+    "domains": ["computerweekly.com"],
+    "description": "Computer Weekly is an international B2B technology publication focused on information technology news, analysis, and professional resources. The publication provides coverage of IT management, technology news, jobs, and industry developments through its website, with editorial teams based in the UK, Germany, Singapore, and Mexico.",
+    "owner": "TechTarget",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Ireland",
+    "organization": "Silicon Republic",
+    "domains": ["siliconrepublic.com"],
+    "description": "Silicon Republic is an Irish technology news website founded in 2001 that covers science, technology, innovation and start-up news, with focus areas including AI, quantum computing, cybersecurity, research, and tech careers. The publication specializes in coverage of Ireland's technology sector while also reporting on international tech developments.",
+    "owner": "Ann O'Dea, Darren McAuliffe",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Tech Xplore",
+    "domains": ["techxplore.com"],
+    "description": "Tech Xplore is a science and technology news website focused on engineering, electronics, and technology advances. The platform aggregates and publishes research news, technological developments, and innovations from academic institutions and industry.",
+    "owner": "Science X Network",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "9to5Mac",
+    "domains": ["9to5mac.com"],
+    "description": "9to5Mac is a technology news website focused on covering Apple products, services, and ecosystem. The site provides daily news, rumors, reviews, and analysis of Apple-related developments. It is part of a network of technology news sites including 9to5Google, Electrek, DroneDJ, and SpaceExplored.",
+    "owner": "Seth Weintraub (via 925, LLC)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ZDNET",
+    "domains": ["zdnet.com"],
+    "description": "ZDNET is a technology news and analysis website that provides coverage of business technology, software, hardware, innovations and enterprise IT through news articles, reviews, and blogs. The site operates a network of about 50 specialized technology blogs covering various verticals including companies, hardware, software, mobile, security and IT research.",
+    "owner": "Red Ventures",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Android Headlines",
+    "domains": ["androidheadlines.com"],
+    "description": "Android Headlines is a technology news website established in 2010 that specializes in covering Android-related news, providing reviews, guides, and updates about Android devices, with particular focus on smartphones, tablets and other Google ecosystem products. The site publishes independent news coverage and reviews focused on the Android platform and broader tech industry.",
+    "owner": "Chris Yackulic",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The Register",
+    "domains": ["theregister.com"],
+    "description": "The Register is a British technology news website founded in 1994 that specializes in enterprise technology coverage and cybersecurity news. With offices across America, Singapore, UK, Europe, and Australia.",
+    "owner": "Situation Publishing Ltd (Drew Cullen, Linus Birtles)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Fast Company",
+    "domains": ["fastcompany.com"],
+    "description": "Fast Company is a monthly American business magazine published in print and online, focusing on technology, business, innovation, and design coverage. The publication produces six print issues annually and maintains an active digital presence through its website, offering news, analysis, and features about business trends and developments.",
+    "owner": "Joseph Daniel Mansueto (via Mansueto Ventures)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Nature",
+    "domains": ["nature.com"],
+    "description": "Nature is a prestigious weekly peer-reviewed scientific journal established in 1869 that publishes original research across all fields of science and technology.",
+    "owner": "Springer Nature (Holtzbrinck Publishing Group, BC Partners)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "AppleInsider",
+    "domains": ["appleinsider.com"],
+    "description": "AppleInsider is a technology news website and blog focused on covering Apple Inc. products, services, and ecosystem. Founded in 1997, it provides news, rumors, reviews, buyer's guides, and price tracking for Apple products.",
+    "owner": "Jeff Valvano",
+    "typology": "Private Media"
   }
 ]
