@@ -1,5 +1,37 @@
 [
   {
+    "country": "Qatar",
+    "organization": "Al Jazeera Media Network",
+    "domains": ["aljazeera.com", "aljazeera.net"],
+    "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs. Despite internal rules aimed at establishing the network's independence, there is abundant evidence of state control over editorial content and decision-making. While the station is known for its intrepid reporting especially in its content targeting foreign audiences, criticism of Qatar's ruling elite is totally banned.",
+    "owner": "Qatar Media Corporation (QMC)",
+    "typology": "State Controlled Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "BBC News",
+    "domains": ["bbc.com", "bbc.co.uk"],
+    "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs. The BBC's Royal Charter includes a series of guarantees for editorial independence, and the government has no rules that would allow it to intervene in editorial decisions. So, although politicians constantly try to influence the station's editorial content, the BBC has successfully maintained its editorial independence.",
+    "owner": "British Broadcasting Corporation (BBC)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "France",
+    "organization": "France 24",
+    "domains": ["france24.com"],
+    "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs. The channel is owned by the French state through the French Ministry of Europe and Foreign Affairs, but there is no evidence of any government control over the editorial output.",
+    "owner": "French Ministry of Europe and Foreign Affairs",
+    "typology": "Independent State-Funded and State-Managed/Owned Media"
+  },
+  {
+    "country": "Russia",
+    "organization": "RT",
+    "domains": ["rt.com"],
+    "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs. RT is owned by the Russian state through the Russian Ministry of Foreign Affairs, which heavily influences its editorial content. There is a substantial body of documentation and research pertaining to RT's propagandistic activities. This includes academic papers, media articles, and studies conducted by non-governmental organizations (NGOs).",
+    "owner": "Russian Ministry of Foreign Affairs",
+    "typology": "State-Controlled Media"
+  },
+  {
     "country": "Italy",
     "organization": "Adnkronos",
     "domains": ["adnkronos.com"],
@@ -245,5 +277,379 @@
     "domains": ["avvenire.it"],
     "description": "Avvenire is an Italian daily newspaper with a Catholic perspective, owned by the Italian Episcopal Conference. The publication covers news, editorials, and analysis on current affairs, culture, religion, politics, economics and world events from a Christian worldview.",
     "owner": "Fondazione di Religione \"Santi Francesco d'Assisi e Caterina da Siena\" (75%)"
+  },
+  {
+    "country": "India",
+    "organization": "TecMint",
+    "domains": ["tecmint.com"],
+    "description": "TecMint is a technical blog and community website started by Ravi Saive focused on providing Linux tutorials, system administration guides, and open source software documentation.",
+    "owner": "Ravi Saive",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "nixCraft",
+    "domains": ["cyberciti.biz", "nixcraft.com"],
+    "description": "nixCraft is a technical blog focused on Linux, Unix, cybersecurity, and system administration tutorials. The site provides detailed guides, tips, and best practices for system administrators and Linux users, with a particular emphasis on command-line operations and server management.",
+    "owner": "Vivek Gite",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "It's FOSS",
+    "domains": ["itsfoss.com"],
+    "description": "It's FOSS is a web portal focused on Linux and open source software that provides news, tutorials, tips and educational resources about Linux and open source technologies.",
+    "owner": "Abhishek Prakash",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CloudLinux Blog",
+    "domains": ["cloudlinux.com"],
+    "description": "Official blog of CloudLinux, a commercial Linux operating system provider specializing in web hosting solutions. The blog provides technical updates, product releases, and documentation for CloudLinux OS, CloudLinux's own distro.",
+    "owner": "Cloud Linux Software, Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Linux.com",
+    "domains": ["linux.com"],
+    "description": "Linux.com is a web resource providing news, tutorials, certifications, and information focused on Linux and open source technology. The platform offers educational content, professional development resources, discussion forums, and job listings for the open source community.",
+    "owner": "The Linux Foundation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "OSTechNix",
+    "domains": ["ostechnix.com"],
+    "description": "OSTechNix is a technology blog funded by Senthilkumar Palani in 2012, focused on publishing tutorials, how-to articles, news, and tips about open-source software, Linux distributions, Unix systems, and programming.",
+    "owner": "Senthilkumar Palani",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Phoronix",
+    "domains": ["phoronix.com", "phoronix-test-suite.com"],
+    "description": "Phoronix is a leading technology website founded in 2004 that provides daily news coverage focused on Linux, open-source software developments, and hardware reviews. While known for its Phoronix Test Suite benchmarking software, the site's primary focus is delivering comprehensive reporting on Linux kernel updates and general Linux news, hardware compatibility, graphics drivers, and performance analysis across different Linux distributions and open-source technologies.",
+    "owner": "Michael Larabel",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Slashdot",
+    "domains": [
+      "slashdot.org",
+      "sourceforge.net",
+      "voipreview.org",
+      "wirefly.com"
+    ],
+    "description": "Slashdot is a technology-focused social news website founded in 1997 by by Rob 'CmdrTaco' Malda that allows users to submit and evaluate news stories about science, technology, and politics. Originally known for its 'News for Nerds' tagline, it pioneered user-submitted news and community moderation in tech media, and is notable for the 'Slashdot effect' phenomenon of overwhelming smaller websites through traffic spikes.",
+    "owner": "BIZX LLC/Slashdot Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "Linux Mint Blog",
+    "domains": ["linuxmint.com", "blog.linuxmint.com"],
+    "description": "The Linux Mint Blog is the official news and announcement platform for the Linux Mint operating system project, providing updates about development progress, new releases, and community news. It serves as the primary communication channel between the Linux Mint development team and its user community.",
+    "owner": "Linux Mint Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "Manjaro Linux Forum",
+    "domains": ["manjaro.org"],
+    "description": "Manjaro Linux Forum is the official community discussion platform and news distribution channel for Manjaro Linux, an Arch Linux-based operating system. The forum provides announcements, technical support, and community discussions for Manjaro users through various channels including RSS feeds for updates and announcements.",
+    "owner": "Manjaro GmbH & Co. KG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Linux Journal",
+    "domains": ["linuxjournal.com"],
+    "description": "Linux Journal is an American monthly technology magazine focused on Linux and open source software, publishing from 1994. It publishes technical articles, tutorials, and news coverage for Linux professionals and enthusiasts.",
+    "owner": "Linux Journal LCC (1994-2019), Slashdot Media (2019-)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "LWN.net",
+    "domains": ["lwn.net"],
+    "description": "LWN.net is a reader-supported computing webzine focused on Linux, free software, and open source development, providing comprehensive coverage of technical, legal, commercial and security issues in the free software ecosystem. Originally known as Linux Weekly News, it offers both daily and weekly content through a subscription model.",
+    "owner": "Eklektix, Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Linux Today",
+    "domains": ["linuxtoday.com"],
+    "description": "Linux Today is a contributor-driven news and information resource focused on Linux operating systems, providing tutorials, guides, and technical news coverage for Linux users and IT professionals",
+    "owner": "TechnologyAdvice",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "SparkyLinux",
+    "domains": ["sparkylinux.org"],
+    "description": "SparkyLinux is a Debian-based Linux distribution project that develops and maintains a fast, lightweight operating system. It offers multiple desktop environment options and two main versions: a stable release based on Debian stable and a rolling release based on Debian testing..",
+    "owner": "Sparky Linux Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "SUSE",
+    "domains": ["suse.com"],
+    "description": "SUSE is a German multinational open-source software company that develops and sells Linux-based enterprise solutions, including SUSE Linux Enterprise Server, cloud technologies, and software-defined storage. The company provides operating systems, infrastructure software, and development tools for business customers.",
+    "owner": "EQT AB (via Marcel LUX III SARL)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Netherlands/Morocco",
+    "organization": "Unixmen",
+    "domains": ["unixmen.com"],
+    "description": "Unixmen is a technology website focused on providing Linux tutorials, how-tos, tips & tricks, and open source news. The site covers popular Linux distributions like Ubuntu, Linux Mint, Fedora, and CentOS, offering technical guides and resources for Linux users and system administrators.",
+    "owner": "The Eighth Network",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "Kali Linux India Blog",
+    "domains": ["kalilinux.in"],
+    "description": "An unofficial blog and community resource focused on Kali Linux, providing tutorials, guides, and news related to penetration testing and cybersecurity tools for Indian users. This is not affiliated with the official Kali Linux project (kali.org) maintained by Offensive Security.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Linux Magazine",
+    "domains": ["linux-magazine.com"],
+    "description": "Linux Magazine is a technical publication focused on Linux and open source software, providing news, tutorials, and in-depth articles about Linux systems administration, security, and development. It offers both print and digital content through its website and RSS feeds, serving the global Linux and open source community.",
+    "owner": "Linux New Media AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "FOSS Linux",
+    "domains": ["fosslinux.com"],
+    "description": "FOSS Linux is a technology blog focused on providing news, tutorials, reviews and information about Linux distributions and Free and Open Source Software (FOSS). The website specializes in covering Linux-related topics, distribution reviews, and guides for both beginners and advanced users, with particular emphasis on open-source technologies and solutions.",
+    "owner": "Vibrant Leaf Media Company",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "LinuxGizmos",
+    "domains": ["linuxgizmos.com"],
+    "description": "LinuxGizmos is a technology news website launched in February 2013 that focuses on covering Linux and its derivatives in embedded systems, mobile devices, and IoT applications. The site publishes news, analysis, and technical content about hardware, software, protocols, and standards in the embedded Linux ecosystem.",
+    "owner": "KCK Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "blackMORE Ops",
+    "domains": ["blackmoreops.com"],
+    "description": "blackMORE Ops is a technical blog and educational resource focused on cybersecurity, Kali Linux, information security, and ethical hacking. The site provides tutorials, guides, and technical documentation for security professionals and enthusiasts, with particular emphasis on Kali Linux tools and penetration testing methodologies.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "GamingOnLinux",
+    "domains": ["gamingonlinux.com"],
+    "description": "GamingOnLinux is a specialized gaming news website focused on Linux gaming, Steam Deck, and SteamOS coverage. It provides news, reviews, and technical information about gaming on Linux platforms.",
+    "owner": "Liam Dawe",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Kali Linux Blog",
+    "domains": ["kali.org"],
+    "description": "Kali Linux is an open-source Debian-based Linux distribution maintained and funded by Offensive Security, specifically designed for digital forensics, penetration testing, and security auditing.",
+    "owner": "Offensive Security",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Czech Republic",
+    "organization": "Lisenet",
+    "domains": ["lisenet.com"],
+    "description": "Lisenet is a technical blog focused on Linux systems administration, security, networking, and IT infrastructure. The site provides study guides for professional certifications like RHCE and LPIC, along with practical tutorials and guides on Kubernetes, Docker, and system administration.",
+    "owner": "Tomas Nevar",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "LXer",
+    "domains": ["lxer.com"],
+    "description": "LXer is an independent Linux and open source news website established in 2004 by Dave Whitinger. The site publishes Linux-related news, opinions, reviews, and community discussions, focusing specifically on free and open source software developments and the Linux ecosystem.",
+    "owner": "Dave Whitinger",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "DebugPoint.com",
+    "domains": ["debugpoint.com"],
+    "description": "DebugPoint.com is a technology news portal and blog focused primarily on Linux, open source software, and development topics. The site provides tutorials, news coverage, and technical content with a particular emphasis on Linux distributions, software development, and programming tutorials, especially related to Python and system administration.",
+    "owner": "Arindam Giri",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Linux Stans",
+    "domains": ["linuxstans.com"],
+    "description": "Linux Stans is a technical blog/website focused on providing Linux tutorials, command-line guides, and system administration content.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Taiwan",
+    "organization": "DistroWatch",
+    "domains": ["distrowatch.com"],
+    "description": "DistroWatch is a website that provides comprehensive information, news, and statistics about Linux distributions and BSD operating systems. It maintains a database of various distributions, tracks their release cycles, features, and popularity through page hit rankings, serving as a key resource for the Linux/BSD community.",
+    "owner": "Ladislav Bodnar",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Taiwan/South Africa",
+    "organization": "DistroWatch",
+    "domains": ["distrowatch.com"],
+    "description": "DistroWatch is a website that provides comprehensive news, information, and comparison resources about Linux distributions and BSD operating systems. It maintains distribution rankings based on page hits, offers detailed distribution information pages, and serves as a central hub for tracking releases and updates across the open-source operating system landscape.",
+    "owner": "Ladislav Bodnar",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "OMG! Ubuntu/OMG! Linux",
+    "domains": ["omgubuntu.co.uk", "omglinux.com"],
+    "description": "OMG! Ubuntu is an independent blog focused on covering Ubuntu Linux distribution, its derivatives, and the broader Linux/open-source ecosystem. The site provides news, tutorials, and updates about Ubuntu and related open-source technologies. OMG! Linux is a similar blog focused on Linux and open-source software news.",
+    "owner": "Joey-Elijah Sneddon",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "Arch Linux Blog",
+    "domains": ["archlinux.org"],
+    "description": "Arch Linux is a lightweight and flexible Linux distribution that provides official news feeds and updates about system changes, package updates, and security advisories for its user base. The project is community-driven and follows a rolling release model, focusing on simplicity, minimalism, and user centrality.",
+    "owner": "Arch Linux Community",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Linuxiac",
+    "domains": ["linuxiac.com"],
+    "description": "Linuxiac is a media platform funded by Bobby Borisov in 2020 that publishes news, reviews, and how-to articles focused on Linux and Open Source software. The site provides coverage of Linux distributions, software releases, and community projects.",
+    "owner": "Bobby Borisov",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "9to5Linux",
+    "domains": ["9to5linux.com"],
+    "description": "9to5Linux is a specialized technology news website focused on Linux operating system news, providing coverage of kernel updates, distribution releases, software updates, and technical tutorials. The site regularly reports on major Linux developments including kernel releases, desktop environments, and open-source applications.",
+    "owner": "Marius Nestor",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "LinuxInsider",
+    "domains": ["linuxinsider.com"],
+    "description": "LinuxInsider is a specialized technology news website focused on providing news, analysis, and reviews of Linux and open-source technologies. The platform offers content targeted at developers, system administrators, business executives, and Linux enthusiasts, covering topics from kernel updates to industry trends and community developments.",
+    "owner": "ECT News Network",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "LinuxLinks",
+    "domains": ["linuxlinks.com"],
+    "description": "LinuxLinks is a Linux-focused web portal that provides curated collections of open source software reviews, tutorials, and resources. It offers comprehensive guides for Linux newcomers, maintains a directory of Linux distributions, and publishes detailed reviews of open source alternatives to proprietary software, with particular emphasis on remote desktop and system administration tools.",
+    "owner": "Steve Emms",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "EndeavourOS",
+    "domains": ["endeavouros.com"],
+    "description": "EndeavourOS is a community-driven Linux distribution based on Arch Linux, created in 2019 as a successor to Antergos. It offers a lightweight, rolling-release operating system with access to the Arch User Repository (AUR), featuring multiple desktop environment options and a terminal-centric approach while maintaining a supportive community focus.",
+    "owner": "EndavourOS Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "System76 Blog",
+    "domains": ["system76.com"],
+    "description": "System76 is a Linux-focused computer manufacturer based in Denver, Colorado that produces laptops, desktops, and servers with pre-installed Linux operating systems. Their blog provides company updates, product announcements, technical articles, and community engagement content.",
+    "owner": "System76",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Reddit",
+    "domains": ["reddit.com"],
+    "description": "Reddit is a social news and discussion platform where users submit content and participate in topic-specific communities called subreddits. The platform combines social networking, news aggregation, and forum features, allowing users to vote on content and engage in discussions.",
+    "owner": "Advance Publications (30%), Tencent (11%), Sam Altman (9%)",
+    "typology": "Private Media"
+  },
+
+  {
+    "country": "United States",
+    "organization": "Fedora Magazine",
+    "domains": ["fedoramagazine.org"],
+    "description": "Fedora Magazine is the official news and information website of the Fedora Project, publishing guides, tutorials, and news about the Fedora Linux operating system and its ecosystem. The content is contributed by community members and published under Creative Commons licensing.",
+    "owner": "Fedora Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Fedora Project Forum",
+    "domains": ["fedoraproject.org", "getfedora.org"],
+    "description": "The Fedora Project Forum is the official community platform for the Fedora Linux distribution, providing news, technical discussions, and community engagement for Fedora users and contributors.",
+    "owner": "Fedora Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "KDE News",
+    "domains": ["kde.org"],
+    "description": "KDE News is the official news portal of the KDE Community, providing updates about KDE software development, applications, releases, and community initiatives.",
+    "owner": "KDE e.V.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "International",
+    "organization": "KDE Community Blog",
+    "domains": ["kde.org"],
+    "description": "The KDE Community Blog is the official blogging platform of the KDE project, an international free software community that develops open-source software.",
+    "owner": "KDE e.V.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "GNOME Foundation",
+    "domains": ["gnome.org"],
+    "description": "The GNOME Foundation is a non-profit organization that oversees the development of GNOME, one of the most widely-used open-source desktop environments for Linux and Unix-like systems.",
+    "owner": "GNOME Foundation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Global",
+    "organization": "openSUSE News",
+    "domains": ["opensuse.org"],
+    "description": "openSUSE News is the official news platform for the openSUSE Project, publishing announcements and updates about the openSUSE Linux distribution, its development, community events, and technical changes.",
+    "owner": "openSUSE Project",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Ubuntu Blog",
+    "domains": ["ubuntu.com"],
+    "description": "Ubuntu Blog is the official blog of the Ubuntu operating system, providing news, updates, tutorials and insights about Ubuntu's open-source software ecosystem. The blog covers desktop, cloud computing, IoT developments, and technical content related to the Ubuntu distribution and its community.",
+    "owner": "Canonical Ltd.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Boiling Steam",
+    "domains": ["boilingsteam.com"],
+    "description": "Boiling Steam is a specialized gaming blog focused on Linux gaming and Steam Deck coverage with news, podcasts, and analysis.",
+    "owner": "Ekianjo",
+    "typology": "Private Media"
   }
 ]
