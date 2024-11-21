@@ -5,7 +5,7 @@
     "domains": ["aljazeera.com", "aljazeera.net"],
     "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs. Despite internal rules aimed at establishing the network's independence, there is abundant evidence of state control over editorial content and decision-making. While the station is known for its intrepid reporting especially in its content targeting foreign audiences, criticism of Qatar's ruling elite is totally banned.",
     "owner": "Qatar Media Corporation (QMC)",
-    "typology": "State Controlled Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "United Kingdom",
@@ -13,7 +13,7 @@
     "domains": ["bbc.com", "bbc.co.uk"],
     "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs. The BBC's Royal Charter includes a series of guarantees for editorial independence, and the government has no rules that would allow it to intervene in editorial decisions. So, although politicians constantly try to influence the station's editorial content, the BBC has successfully maintained its editorial independence.",
     "owner": "British Broadcasting Corporation (BBC)",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "France",
@@ -21,7 +21,7 @@
     "domains": ["france24.com"],
     "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs. The channel is owned by the French state through the French Ministry of Europe and Foreign Affairs, but there is no evidence of any government control over the editorial output.",
     "owner": "French Ministry of Europe and Foreign Affairs",
-    "typology": "Independent State-Funded and State-Managed/Owned Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Russia",
@@ -29,7 +29,7 @@
     "domains": ["rt.com"],
     "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs. RT is owned by the Russian state through the Russian Ministry of Foreign Affairs, which heavily influences its editorial content. There is a substantial body of documentation and research pertaining to RT's propagandistic activities. This includes academic papers, media articles, and studies conducted by non-governmental organizations (NGOs).",
     "owner": "Russian Ministry of Foreign Affairs",
-    "typology": "State Controlled Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Italy",
@@ -37,7 +37,7 @@
     "domains": ["rainews.it", "rai.it"],
     "description": "Rai News is the 24-hour news division and online news portal of RAI (Radiotelevisione Italiana), Italy's national public broadcaster. It provides continuous news coverage through its TV channel Rai News 24, digital platform, and website, offering real-time updates on politics, economy, sports, and current affairs in Italy and internationally.",
     "owner": "RAI - Radiotelevisione Italiana S.p.A.",
-    "typology": "Captured Public/State-Managed Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Germany",
@@ -45,7 +45,7 @@
     "domains": ["bundesregierung.de"],
     "description": "Die Bundesregierung is the official website and communication platform of the German Federal Government, providing official information, press releases, and updates about government policies, decisions, and activities.",
     "owner": "Federal Republic of Germany",
-    "typology": "State Controlled Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Germany",
@@ -53,7 +53,7 @@
     "domains": ["tagesschau.de"],
     "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
     "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Germany",
@@ -61,7 +61,7 @@
     "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
     "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
     "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Germany",
@@ -69,7 +69,7 @@
     "domains": ["rbb-online.de", "rbb24.de"],
     "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
     "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Russia",
@@ -77,7 +77,7 @@
     "domains": ["tass.com", "tass.ru"],
     "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
     "owner": "Government of Russia",
-    "typology": "State-Controlled Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Australia",
@@ -85,7 +85,7 @@
     "domains": ["abc.net.au"],
     "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
     "owner": "Australian Government",
-    "typology": "Independent State-Funded Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "United States",
@@ -93,7 +93,7 @@
     "domains": ["npr.org"],
     "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
     "owner": "Non-profit organization",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "United States",
@@ -101,7 +101,7 @@
     "domains": ["voanews.com"],
     "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
     "owner": "U.S. Agency for Global Media",
-    "typology": "Independent State-Funded and State-Managed Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "United States",
@@ -109,7 +109,7 @@
     "domains": ["pbs.org"],
     "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
     "owner": "Corporation for Public Broadcasting (non-profit)",
-    "typology": "Independent Public Media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Germany",
@@ -117,7 +117,7 @@
     "domains": ["dw.com"],
     "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
     "owner": "Federal Government of Germany",
-    "typology": "Independent State-Funded media"
+    "typology": "State Funded Media"
   },
   {
     "country": "Italy",
@@ -1933,7 +1933,7 @@
     "typology": "Private Media"
   },
   {
-    "country": "United States", 
+    "country": "United States",
     "organization": "Google News",
     "domains": ["news.google.com"],
     "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. The service uses artificial intelligence to sort articles by topic and presents them based on each user's interests and reading history.",
