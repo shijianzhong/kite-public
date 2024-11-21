@@ -1186,5 +1186,165 @@
     "description": "Polygon is an American entertainment website founded in 2012 that covers video games, movies, television, and popular culture.",
     "owner": "Vox Media",
     "typology": "Private Media"
+  },
+  {
+    "country": "Russia",
+    "organization": "TASS",
+    "domains": ["tass.com", "tass.ru"],
+    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
+    "owner": "Government of Russia",
+    "typology": "State-Controlled Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Financial Times",
+    "domains": ["ft.com"],
+    "description": "The Financial Times is a British daily newspaper and digital news outlet focused on business, economic and political coverage. The publication is known for its distinctive salmon-pink newsprint format.",
+    "owner": "Nikkei Inc. (employee-owned)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The Guardian",
+    "domains": ["theguardian.com"],
+    "description": "The Guardian is a British newspaper and digital news outlet that delivers investigative journalism with a mainstream left-wing editorial stance. It operates globally and is known for its liberal political perspective and commitment to independent journalism through its unique ownership structure.",
+    "owner": "Scott Trust Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Singapore",
+    "organization": "The Straits Times",
+    "domains": ["straitstimes.com"],
+    "description": "The Straits Times is a daily English-language newspaper in Singapore established in 1845. It provides comprehensive coverage of Singapore, Asian and international news across politics, business, sports, entertainment, and lifestyle sections, serving as Singapore's newspaper of record.",
+    "owner": "SPH Media Trust",
+    "typology": "Private Media"
+  },
+  {
+    "country": "France",
+    "organization": "Le Monde",
+    "domains": ["lemonde.fr"],
+    "description": "Le Monde is a French daily afternoon newspaper founded after WWII, known for its center-left editorial stance and comprehensive coverage of international, national, economic, and cultural news.",
+    "owner": "Le Nouveau Monde (Matthieu Pigasse and Daniel Kretinsky) (26.66%), NJJ Presse (Xavier Niel) (26.66%), Berlys Media (Madison Cox) (26.66%), Prisa (20%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The New York Times",
+    "domains": ["nytimes.com"],
+    "description": "The New York Times is an American daily newspaper founded in 1851 that provides news coverage, investigative journalism, and opinion content through print and digital platforms.",
+    "owner": "The Ochs-Sulzberger Family (through The New York Times Company)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ABC News",
+    "domains": ["abcnews.go.com"],
+    "description": "ABC News is a major American broadcast news division operated by the ABC broadcast network, providing 24/7 news coverage through television, digital platforms, and radio.",
+    "owner": "The Walt Disney Company",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Japan",
+    "organization": "Japan Today",
+    "domains": ["japantoday.com"],
+    "description": "Japan Today is a Tokyo-based English-language online newspaper launched in September 2000 that covers news about Japan and international affairs, including national, political, entertainment, business, technology, and sports news.",
+    "owner": "Fuji Media Holdings, Inc. (via GPlusMedia Co., Ltd.)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "The Hindu",
+    "domains": ["thehindu.com"],
+    "description": "The Hindu is an English-language daily newspaper headquartered in Chennai, Tamil Nadu, India. Founded in 1878, it is one of India's oldest continuously published newspapers, known for its coverage of national and international news, with particular emphasis on policy, politics, and economics.",
+    "owner": "Kasturi & Sons Limited. (52.04%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Australia",
+    "organization": "Australian Broadcasting Corporation",
+    "domains": ["abc.net.au"],
+    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
+    "owner": "Australian Government",
+    "typology": "Independent State-Funded Media"
+  },
+  {
+    "country": "United States",
+    "organization": "National Public Radio",
+    "domains": ["npr.org"],
+    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
+    "owner": "Non-profit organization",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "The Globe and Mail",
+    "domains": ["theglobeandmail.com"],
+    "description": "The Globe and Mail is Canada's national newspaper of record, providing comprehensive coverage of national, international, business, and political news since 1844. The publication offers both print and digital formats, featuring investigative journalism, analysis, and commentary across multiple beats including politics, business, arts and culture.",
+    "owner": "Thomson Family",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CBS News",
+    "domains": ["cbsnews.com"],
+    "description": "CBS News is a major American news division of CBS Broadcasting that provides 24/7 news coverage through television broadcasts, digital platforms, and streaming services.",
+    "owner": "Paramount Global",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Voice of America",
+    "domains": ["voanews.com"],
+    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
+    "owner": "U.S. Agency for Global Media",
+    "typology": "Independent State-Funded and State-Managed Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Newsweek",
+    "domains": ["newsweek.com"],
+    "description": "Founded in 1933, Newsweek is an American weekly news magazine and digital media outlet providing in-depth analysis, news, and opinion about international issues, technology, business, culture, and politics.",
+    "owner": "Dev Pragad (50%), Johnathan Davis (50%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Public Broadcasting Service",
+    "domains": ["pbs.org"],
+    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
+    "owner": "Corporation for Public Broadcasting (non-profit)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Reuters",
+    "domains": ["reuters.com", "reutersagency.com"],
+    "description": "Reuters is a global news agency founded in 1851 that provides multimedia news content, financial information, and intelligence services.",
+    "owner": "Thomson Reuters",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Semafor",
+    "domains": ["semafor.com"],
+    "description": "Semafor is a digital news platform founded in 2022 that provides global reporting on politics, business, technology, and climate. It operates with a free, ad-supported model and generates revenue through advertising and events.",
+    "owner": "Ben Smith, Justin B. Smith",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Hong Kong",
+    "organization": "South China Morning Post",
+    "domains": ["scmp.com"],
+    "description": "The South China Morning Post is Hong Kong's English-language newspaper of record, covering news, politics, business, and culture across Asia with a focus on China and Hong Kong. Since the change of ownership in 2016, concerns have been raised about the paper's editorial independence and self-censorship.",
+    "owner": "Alibaba Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Foreign Policy",
+    "domains": ["foreignpolicy.com"],
+    "description": "Foreign Policy is an American news publication founded in 1970 that focuses on global affairs, current events, and international policy analysis.",
+    "owner": "Graham Holdings Company",
+    "typology": "Private Media"
   }
 ]
