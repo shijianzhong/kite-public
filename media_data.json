@@ -33,6 +33,94 @@
   },
   {
     "country": "Italy",
+    "organization": "Rai News",
+    "domains": ["rainews.it", "rai.it"],
+    "description": "Rai News is the 24-hour news division and online news portal of RAI (Radiotelevisione Italiana), Italy's national public broadcaster. It provides continuous news coverage through its TV channel Rai News 24, digital platform, and website, offering real-time updates on politics, economy, sports, and current affairs in Italy and internationally.",
+    "owner": "RAI - Radiotelevisione Italiana S.p.A.",
+    "typology": "Captured Public/State-Managed Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Die Bundesregierung",
+    "domains": ["bundesregierung.de"],
+    "description": "Die Bundesregierung is the official website and communication platform of the German Federal Government, providing official information, press releases, and updates about government policies, decisions, and activities.",
+    "owner": "Federal Republic of Germany",
+    "typology": "State Controlled Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Tagesschau",
+    "domains": ["tagesschau.de"],
+    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Deutschlandfunk",
+    "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
+    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Rundfunk Berlin-Brandenburg",
+    "domains": ["rbb-online.de", "rbb24.de"],
+    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Russia",
+    "organization": "TASS",
+    "domains": ["tass.com", "tass.ru"],
+    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
+    "owner": "Government of Russia",
+    "typology": "State-Controlled Media"
+  },
+  {
+    "country": "Australia",
+    "organization": "Australian Broadcasting Corporation",
+    "domains": ["abc.net.au"],
+    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
+    "owner": "Australian Government",
+    "typology": "Independent State-Funded Media"
+  },
+  {
+    "country": "United States",
+    "organization": "National Public Radio",
+    "domains": ["npr.org"],
+    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
+    "owner": "Non-profit organization",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Voice of America",
+    "domains": ["voanews.com"],
+    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
+    "owner": "U.S. Agency for Global Media",
+    "typology": "Independent State-Funded and State-Managed Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Public Broadcasting Service",
+    "domains": ["pbs.org"],
+    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
+    "owner": "Corporation for Public Broadcasting (non-profit)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Deutsche Welle",
+    "domains": ["dw.com"],
+    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
+    "owner": "Federal Government of Germany",
+    "typology": "Independent State-Funded media"
+  },
+  {
+    "country": "Italy",
     "organization": "Adnkronos",
     "domains": ["adnkronos.com"],
     "description": "Adnkronos is a news agency founded in 1963 through the merger of Kronos (founded by Pietro Nenni in 1951) and ADN (founded by Amintore Fanfani in 1959). Based in Rome with offices in Milan, it provides real-time news coverage across multiple sectors including politics, economy, sports, health, and international affairs through its multimedia platform.",
@@ -206,14 +294,6 @@
     "description": "OrizzonteScuola is a educational news portal and media service focused on providing news, resources, and consultation services for teachers, school administrators, and education staff. The platform covers education policy updates, job opportunities, regulatory changes, and professional development in the Italian education sector.",
     "owner": "OrizzonteScuola SRL",
     "typology": "Private Media"
-  },
-  {
-    "country": "Italy",
-    "organization": "Rai News",
-    "domains": ["rainews.it", "rai.it"],
-    "description": "Rai News is the 24-hour news division and online news portal of RAI (Radiotelevisione Italiana), Italy's national public broadcaster. It provides continuous news coverage through its TV channel Rai News 24, digital platform, and website, offering real-time updates on politics, economy, sports, and current affairs in Italy and internationally.",
-    "owner": "RAI - Radiotelevisione Italiana S.p.A.",
-    "typology": "Captured Public/State-Managed Media"
   },
   {
     "country": "Italy",
@@ -838,14 +918,6 @@
   },
   {
     "country": "Germany",
-    "organization": "Die Bundesregierung",
-    "domains": ["bundesregierung.de"],
-    "description": "Die Bundesregierung is the official website and communication platform of the German Federal Government, providing official information, press releases, and updates about government policies, decisions, and activities.",
-    "owner": "Federal Republic of Germany",
-    "typology": "State Controlled Media"
-  },
-  {
-    "country": "Germany",
     "organization": "Frankfurter Allgemeine Zeitung",
     "domains": ["faz.net", "frankfurterallgemeine.de"],
     "description": "The Frankfurter Allgemeine Zeitung (FAZ) is a daily newspaper known for its conservative editorial stance. It covers business, politics, and culture.",
@@ -875,14 +947,6 @@
     "description": "t-online is a digital news portal and email service provider offering comprehensive coverage of news, politics, sports, entertainment, and lifestyle content.",
     "owner": "Udo Müller (24%), Dirk Ströer (20%), other shareholders (56%)",
     "typology": "Private Media"
-  },
-  {
-    "country": "Germany",
-    "organization": "Tagesschau",
-    "domains": ["tagesschau.de"],
-    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
-    "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
   },
   {
     "country": "Germany",
@@ -918,27 +982,11 @@
   },
   {
     "country": "Germany",
-    "organization": "Deutschlandfunk",
-    "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
-    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
-    "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
-  },
-  {
-    "country": "Germany",
     "organization": "Frankfurter Rundschau",
     "domains": ["fr.de"],
     "description": "Frankfurter Rundschau is a daily newspaper published in Frankfurt. It is known for its left-liberal editorial stance and focuses on political, economic, and cultural coverage with particular emphasis on the Frankfurt Rhine-Main region.",
     "owner": "Ippen family",
     "typology": "Private Media"
-  },
-  {
-    "country": "Germany",
-    "organization": "Rundfunk Berlin-Brandenburg",
-    "domains": ["rbb-online.de", "rbb24.de"],
-    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
-    "owner": "Public broadcaster (German public institutions)",
-    "typology": "Independent Public Media"
   },
   {
     "country": "Germany",
@@ -1189,14 +1237,6 @@
     "typology": "Private Media"
   },
   {
-    "country": "Russia",
-    "organization": "TASS",
-    "domains": ["tass.com", "tass.ru"],
-    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
-    "owner": "Government of Russia",
-    "typology": "State-Controlled Media"
-  },
-  {
     "country": "United Kingdom",
     "organization": "Financial Times",
     "domains": ["ft.com"],
@@ -1261,22 +1301,6 @@
     "typology": "Private Media"
   },
   {
-    "country": "Australia",
-    "organization": "Australian Broadcasting Corporation",
-    "domains": ["abc.net.au"],
-    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
-    "owner": "Australian Government",
-    "typology": "Independent State-Funded Media"
-  },
-  {
-    "country": "United States",
-    "organization": "National Public Radio",
-    "domains": ["npr.org"],
-    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
-    "owner": "Non-profit organization",
-    "typology": "Independent Public Media"
-  },
-  {
     "country": "Canada",
     "organization": "The Globe and Mail",
     "domains": ["theglobeandmail.com"],
@@ -1294,27 +1318,11 @@
   },
   {
     "country": "United States",
-    "organization": "Voice of America",
-    "domains": ["voanews.com"],
-    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
-    "owner": "U.S. Agency for Global Media",
-    "typology": "Independent State-Funded and State-Managed Media"
-  },
-  {
-    "country": "United States",
     "organization": "Newsweek",
     "domains": ["newsweek.com"],
     "description": "Founded in 1933, Newsweek is a weekly news magazine and digital media outlet providing in-depth analysis, news, and opinion about international issues, technology, business, culture, and politics.",
     "owner": "Dev Pragad (50%), Johnathan Davis (50%)",
     "typology": "Private Media"
-  },
-  {
-    "country": "United States",
-    "organization": "Public Broadcasting Service",
-    "domains": ["pbs.org"],
-    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
-    "owner": "Corporation for Public Broadcasting (non-profit)",
-    "typology": "Independent Public Media"
   },
   {
     "country": "United Kingdom",
@@ -1499,14 +1507,6 @@
     "description": "MarketWatch is a financial news website and subsidiary of Dow Jones & Company that provides real-time stock market quotes, business news, financial analysis, and investment tools. It offers market commentary, stock research, and personal finance coverage through its website, targeting both retail and institutional investors.",
     "owner": "News Corp (via Dow Jones & Company)",
     "typology": "Private Media"
-  },
-  {
-    "country": "Germany",
-    "organization": "Deutsche Welle",
-    "domains": ["dw.com"],
-    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
-    "owner": "Federal Government of Germany",
-    "typology": "Independent State-Funded media"
   },
   {
     "country": "India",
