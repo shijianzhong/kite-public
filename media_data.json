@@ -970,5 +970,221 @@
     "description": "The Augsburger Allgemeine is a German regional daily newspaper based in Augsburg, Bavaria, publishing since 1807. It provides comprehensive local and national news coverage for the Augsburg region and surrounding areas, with both print and digital formats.",
     "owner": "Mediengruppe Pressedruck (Presse-Druck- und Verlags-GmbH)",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "GameSpot",
+    "domains": ["gamespot.com"],
+    "description": "GameSpot is an American video gaming website providing comprehensive coverage of the video game industry through news, reviews, previews, downloads, and guides. The site focuses on multiple gaming platforms, offering detailed game reviews and industry analysis.",
+    "owner": "Fandom, Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "IGN",
+    "domains": ["ign.com", "world.ign.com"],
+    "description": "IGN (Imagine Games Network) is an American video game and entertainment media website that covers games, films, anime, television, comics, and technology. ",
+    "owner": "Ziff Davis, Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Eurogamer",
+    "domains": ["eurogamer.net"],
+    "description": "Eurogamer is a British video game journalism website founded in 1999 that provides video game news, reviews, and guides.",
+    "owner": "Ziff Davis (via IGN Entertainment)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Siliconera",
+    "domains": ["siliconera.com"],
+    "description": "Siliconera is a specialized video game news website focused on international gaming coverage, particularly Japanese games and releases, providing news, translations, reviews, and exclusive interviews.",
+    "owner": "GAMURS Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Gematsu",
+    "domains": ["gematsu.com"],
+    "description": "Gematsu is a specialized video game news website focused on Japanese gaming industry coverage while also reporting on global gaming news.",
+    "owner": "Sal Romano",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Niche Gamer",
+    "domains": ["nichegamer.com"],
+    "description": "Niche Gamer is a gaming news website and community platform focused on covering niche and unique video games globally.",
+    "owner": "Brandon Orselli",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "GamesRadar+",
+    "domains": ["gamesradar.com"],
+    "description": "GamesRadar+ is a video game and entertainment media website owned by Future plc that provides news, reviews, features, and guides focused on video games, movies, and TV shows.",
+    "owner": "Future plc",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Wccftech",
+    "domains": ["wccftech.com"],
+    "description": "Wccftech is a technology news and media website focused on PC hardware, gaming, and mobile technology coverage through news articles, reviews, and guides.",
+    "owner": "Abdullah Saad",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "PCGamesN",
+    "domains": ["pcgamesn.com"],
+    "description": "PCGamesN is a digital media outlet focused on PC gaming news, reviews, guides, and hardware coverage.",
+    "owner": "James Binns (via Network N Media)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Ars Technica",
+    "domains": ["arstechnica.com"],
+    "description": "Ars Technica is a technology news and information website that provides in-depth coverage of IT, scientific advancements, gadgets, and gaming. Founded in 1998, it caters to technology enthusiasts and professionals, offering news, reviews, and analysis on topics ranging from artificial intelligence to space exploration and cybersecurity.",
+    "owner": "Condé Nast",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Dot Esports",
+    "domains": ["dotesports.com"],
+    "description": "Dot Esports is a digital media outlet founded in 2013 that specializes in esports and gaming coverage, providing news, tournament results, guides, features, and interviews. It serves as a dedicated platform for competitive gaming journalism.",
+    "owner": "GAMURS Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Xbox",
+    "domains": ["xbox.com"],
+    "description": "Xbox is Microsoft's gaming and entertainment brand that provides video game consoles, cloud gaming services, and digital content distribution. Their blog and website feature gaming news, product announcements, game previews and reviews, developer interviews, community highlights, and technical support resources. The platform offers gaming hardware, software, streaming services through Xbox Cloud Gaming, and online services via Xbox Live, connecting players across console, PC, and mobile devices.",
+    "owner": "Microsoft Corporation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Gameranx",
+    "domains": ["gameranx.com"],
+    "description": "Gameranx is a global video game media publication based in New York that provides daily gaming news, reviews, criticism, and feature articles. It operates a popular YouTube channel created in 2012, offering video content on game news and rankings. The publication aims to celebrate video games and their cultural impact, with a focus on breaking news in the gaming industry.",
+    "owner": "Jake Baldino (Co-owner)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Tom's Hardware",
+    "domains": ["tomshardware.com", "tomshw.it"],
+    "description": "Tom's Hardware is a technology news and review website founded in 1996 by Dr. Thomas Pabst, specializing in PC hardware, components, and tech industry coverage. The site provides detailed product reviews, buying guides, and technical analysis for PC enthusiasts, builders, and technology professionals.",
+    "owner": "Purch (Future plc)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Rock Paper Shotgun",
+    "domains": ["rockpapershotgun.com"],
+    "description": "Rock Paper Shotgun is a specialized gaming news website focused exclusively on PC gaming, providing news, reviews, previews, and analysis of both major releases and indie games.",
+    "owner": "Ziff Davis (via IGN Entertainment)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Push Square",
+    "domains": ["pushsquare.com"],
+    "description": "Push Square is a specialized gaming news website focused exclusively on PlayStation platforms, providing news coverage, reviews, features, and community content related to PS5, PSVR2, and PlayStation's gaming ecosystem.",
+    "owner": "Hookshot Media Ltd",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Japan",
+    "organization": "PlayStation",
+    "domains": ["playstation.com"],
+    "description": "PlayStation is Sony's gaming and digital entertainment brand that develops and operates gaming consoles (PS1 through PS5), an online gaming network (PlayStation Network), digital game distribution platform (PlayStation Store), and gaming hardware accessories. Their blog features PlayStation game announcements, release dates, gameplay trailers, developer interviews, hardware updates, PlayStation Plus membership news, and community highlights. The blog provides official news and updates about everything in the PlayStation ecosystem.",
+    "owner": "Sony Group Corporation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Kotaku",
+    "domains": ["kotaku.com"],
+    "description": "Kotaku is a video game news and culture website founded in 2004, providing gaming news, reviews, and opinion pieces. It operates as a specialized gaming journalism outlet that covers video game industry news, gaming culture, and related topics.",
+    "owner": "G/O Media Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Insider Gaming",
+    "domains": ["insider-gaming.com"],
+    "description": "Insider Gaming is an independent gaming news and media website focused on providing gaming industry coverage, reviews, and exclusive reporting.",
+    "owner": "Yannis Ziakas",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "MMORPG.com",
+    "domains": ["mmorpg.com"],
+    "description": "MMORPG.com is a specialized gaming news and review website focused on massively multiplayer online role-playing games (MMORPGs) and related genres. The site provides game reviews, industry news, game lists, and community features for MMO gaming enthusiasts.",
+    "owner": "MOBA Network AB",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Destructoid",
+    "domains": ["destructoid.com"],
+    "description": "Destructoid is a video game journalism website founded in 2006 that provides news, reviews, previews, and community features focused on the gaming industry. The site is known for its mascot Mr. Destructoid and its mix of professional and community-driven content.",
+    "owner": "Enthusiast Gaming",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Techaeris",
+    "domains": ["techaeris.com"],
+    "description": "Techaeris is a technology news and review website that covers tech products, gaming, audio technology, business tech news, and entertainment content including movies, comics, and books.",
+    "owner": "Alex Hernandez",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "GamesIndustry.biz",
+    "domains": ["gamesindustry.biz"],
+    "description": "GamesIndustry.biz is a business-focused video game industry news website providing coverage of industry trends, market analysis, business developments, and interviews with gaming professionals.",
+    "owner": "Ziff Davis (via IGN Entertainment)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Nintendo Life",
+    "domains": ["nintendolife.com"],
+    "description": "Nintendo Life is a specialized gaming news website focused on Nintendo platforms, providing news coverage, reviews, and features about Nintendo games and hardware. The site originated as a GameCube-focused platform and expanded to cover all Nintendo-related content, serving as a dedicated source for Nintendo gaming information and community engagement.",
+    "owner": "Hookshot Media Ltd",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Geek Native",
+    "domains": ["geeknative.com"],
+    "description": "Geek Native is a blog-style website focused on tabletop role-playing games (TTRPGs), geek culture, anime, and gaming news. The site provides regular coverage of RPG industry updates, reviews, and weekly news summaries, with particular emphasis on Dungeons & Dragons and indie RPG content.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "VG247",
+    "domains": ["vg247.com"],
+    "description": "VG247 is a video game news and journalism website focusing on providing coverage of the gaming industry, including news, reviews, and features about video games across multiple platforms.",
+    "owner": "Ziff Davis (via IGN Entertainment and Gamer Network Limited)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Polygon",
+    "domains": ["polygon.com"],
+    "description": "Polygon is an American entertainment website founded in 2012 that covers video games, movies, television, and popular culture.",
+    "owner": "Vox Media",
+    "typology": "Private Media"
   }
 ]
