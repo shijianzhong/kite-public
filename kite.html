@@ -463,6 +463,7 @@
                     mediaData: [],
                     isScrolling: false,
                     readStories: JSON.parse(localStorage.getItem("readStories") || "{}"),
+                    totalStoriesRead: parseInt(localStorage.getItem("totalStoriesRead") || "0"),
                     availableCategories: [],
                     currentCategory: "",
                     timestamp: 0,
@@ -737,8 +738,12 @@
                                 this.expandedStory.showSources = false;
                             }
                             // Expand the story
-                            this.readStories[story.title] = true;
-                            localStorage.setItem("readStories", JSON.stringify(this.readStories));
+                            if (!this.readStories[story.title]) {
+                                this.readStories[story.title] = true;
+                                localStorage.setItem("readStories", JSON.stringify(this.readStories));
+                                this.totalStoriesRead++;
+                                localStorage.setItem("totalStoriesRead", this.totalStoriesRead);
+                            }
                             story.expanded = true;
                             this.expandedStory = story;
                             const articleId = generateArticleId(this.currentCategory, story.cluster_number);
@@ -958,7 +963,7 @@
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What is Kite?</h2>
                             <p class="mb-4">
-                                Kite is a news app designed for people who want to stay informed without getting overwhelmed. We provide thrice-daily updates of the most important news stories, from carefully curated sources and summarized
+                                Kite is a news app designed for people who want to stay informed without getting overwhelmed. We provide a daily update of the most important news stories, from carefully curated sources and summarized
                                 by advanced language models to give you the essential information you need.
                             </p>
                         </section>
@@ -979,7 +984,7 @@
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core Principles</h2>
                             <ul class="space-y-2">
-                                <li>• Updated only three times per day - no endless scrolling</li>
+                                <li>• Updated only once per day - no endless scrolling</li>
                                 <li>• Facts and perspectives, opinion-free</li>
                                 <li>• Zero tracking, zero ads</li>
                                 <li>• Pure signal, no noise</li>
@@ -990,7 +995,7 @@
 
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Updates</h2>
-                            <p>Stories are updated three times per day. This helps maintain a balanced news diet without constant interruptions. Click the date on top of the page to check when was the last update.</p>
+                            <p>Stories are updated once per day, at noon UTC. This helps maintain a balanced news diet without constant interruptions. Click the date on top of the page to check when was the last update.</p>
                         </section>
 
                         <section>
@@ -1045,10 +1050,12 @@
                     <div
                         class="text-gray-600 dark:text-gray-400 cursor-pointer"
                         x-data="{ dateClickCount: 0 }"
-                        @click="dateClickCount = (dateClickCount + 1) % 3"
+                        @click="dateClickCount = (dateClickCount + 1) % 5"
                         x-text="dateClickCount === 0 ? new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date())                                                                                                                                                                        
                              : dateClickCount === 1 ? getLastUpdated()                                                                                                                                                                                                                                                                                           
-                             : `${totalReadCount} stories read`"
+                             : dateClickCount === 2 ? `${totalReadCount} news today`
+                             : dateClickCount === 3 ? `You've read ${totalStoriesRead} stories`
+                             : `Week ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24 * 7))}, Day ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24))}`"
                     ></div>
                     <div class="flex items-center">
                         <button @click="$store.settings.open()" title="Settings" class="ml-2">
@@ -1240,15 +1247,7 @@
                                 <header class="flex justify-between items-center mb-2">
                                     <span class="category-label text-gray-700 dark:text-gray-300 text-sm py-1 rounded inline-flex items-center">
                                         <span :class="'topic-color-' + ((story.category.charCodeAt(0) + story.category.charCodeAt(1) + story.category.length) % 9 + 1)" x-text="story.category"></span>
-                                        <svg class="ml-4 mr-1" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M5.71989 3.1291C5.56044 3.04938 5.37276 3.04938 5.2133 3.1291L2.60163 4.43494L5.21331 5.74078C5.37276 5.82051 5.56044 5.82051 5.71989 5.74078L8.33157 4.43494L5.71989 3.1291ZM4.90935 2.5212C5.26015 2.3458 5.67305 2.3458 6.02385 2.5212L9.0408 4.02967C9.37476 4.19665 9.37476 4.67323 9.0408 4.84021L6.02385 6.34869C5.67305 6.52409 5.26015 6.52409 4.90935 6.34869L1.8924 4.84021C1.55844 4.67323 1.55844 4.19665 1.8924 4.02967L4.90935 2.5212ZM1.53779 6.09539C1.62172 5.92753 1.82585 5.85948 1.99372 5.94342L5.21331 7.55321C5.37276 7.63294 5.56044 7.63294 5.71989 7.55321L8.93948 5.94342C9.10735 5.85948 9.31147 5.92753 9.39541 6.09539C9.47934 6.26326 9.4113 6.46739 9.24343 6.55132L6.02385 8.16112C5.67305 8.33651 5.26015 8.33651 4.90935 8.16112L1.68977 6.55132C1.5219 6.46739 1.45386 6.26326 1.53779 6.09539ZM1.53779 7.90782C1.62172 7.73995 1.82585 7.67191 1.99372 7.75585L5.21331 9.36564C5.37276 9.44536 5.56044 9.44536 5.71989 9.36564L8.93948 7.75585C9.10735 7.67191 9.31147 7.73995 9.39541 7.90782C9.47934 8.07569 9.4113 8.27982 9.24343 8.36375L6.02385 9.97354C5.67305 10.1489 5.26015 10.1489 4.90935 9.97354L1.68977 8.36375C1.5219 8.27982 1.45386 8.07569 1.53779 7.90782Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                        <span x-text="story.domains.length + ' Sources'"></span>
+                                        
                                     </span>
                                 </header>
                                 <div class="flex items-start">
@@ -1768,7 +1767,7 @@
         >
             <div class="bg-white dark:bg-gray-800 w-full h-full md:rounded-lg md:p-8 md:max-w-md md:h-auto md:max-h-[90vh] shadow-xl overflow-y-auto flex flex-col" @click.stop x-data="{ activeTab: 'general' }">
                 <header class="flex-shrink-0 bg-white dark:bg-gray-800 p-4 md:p-0">
-                    <div class="flex justify-end mb-4">
+                    <div class="flex justify-end mb-1">
                         <button @click="$store.settings.close()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -1866,7 +1865,7 @@
                         </div>
                         <div class="flex flex-col space-y-2">
                             <button
-                                @click="$store.settings.close(); showIntro = true"
+                                @click="$store.settings.close(); showIntro = true; updateUrlWithArticleId('')"
                                 class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200 text-sm font-medium flex items-center justify-center space-x-2"
                             >
                                 <img :src="$store.theme.current === 'dark' ? '{{ static_path }}/svg/kite_dark.svg' : '{{ static_path }}/svg/kite.svg'" alt="Kite icon" class="h-4 w-4" />
