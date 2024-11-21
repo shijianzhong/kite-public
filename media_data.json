@@ -587,7 +587,6 @@
     "owner": "Advance Publications (30%), Tencent (11%), Sam Altman (9%)",
     "typology": "Private Media"
   },
-
   {
     "country": "United States",
     "organization": "Fedora Magazine",
@@ -651,5 +650,148 @@
     "description": "Boiling Steam is a specialized gaming blog focused on Linux gaming and Steam Deck coverage with news, podcasts, and analysis.",
     "owner": "Ekianjo",
     "typology": "Private Media"
+  },
+  {
+    "country": "USA",
+    "organization": "Hacker News",
+    "domains": ["news.ycombinator.com"],
+    "description": "Hacker News is a social news website focused on computer science, technology, entrepreneurship and startups. It features user-submitted content that can be voted up or down by the community, including tech news, scientific discoveries, and in-depth articles about programming, business, and technology culture.",
+    "owner": "Y Combinator",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Cointelegraph",
+    "domains": ["cointelegraph.com"],
+    "description": "Established in 2013, Cointelegraph is a digital media platform focused on blockchain technology, cryptocurrency, and fintech news coverage.",
+    "owner": "Jay Cassano",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Kraken Blog",
+    "domains": ["kraken.com"],
+    "description": "Kraken Blog is the official blog of Kraken, a large cryptocurrency exchange. It provides news, updates, and educational content about Kraken's products, cryptocurrency trading, and blockchain technology.",
+    "owner": "Kraken Global Trading Solutions LLC",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "CoinJournal",
+    "domains": ["coinjournal.net"],
+    "description": "CoinJournal is a cryptocurrency and blockchain news publication that provides news coverage, analysis, and educational content about the crypto economy.",
+    "owner": "Oliver Carding, Ian DeMartino",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CoinDesk",
+    "domains": ["coindesk.com"],
+    "description": "CoinDesk is a cryptocurrency and digital assets-focused media outlet established in 2013 that provides news coverage, analysis, and data about Bitcoin, blockchain, and the crypto economy.",
+    "owner": "Bullish Global",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Bloomberg Media",
+    "domains": ["bloomberg.com", "bloombergmedia.com"],
+    "description": "Bloomberg Media is a global business and financial news organization. It maintains major editorial hubs in New York, London, Hong Kong, Washington D.C., and Sydney.",
+    "owner": "Bloomberg L.P.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CryptoSlate",
+    "domains": ["cryptoslate.com"],
+    "description": "CryptoSlate is a cryptocurrency news and data platform established in 2017 that provides news coverage, market analysis, and insights about digital assets, blockchain technology, and the cryptocurrency industry.",
+    "owner": "Nate Whitehill, Matthew Blancarte",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "CryptoCurrencyNews",
+    "domains": ["cryptocurrencynews.com"],
+    "description": "CryptoCurrencyNews is a digital media outlet focused on cryptocurrency news, market analysis, and trends. The platform provides coverage of Bitcoin, Ethereum, blockchain technology, and other digital assets, offering market updates, price analysis, and industry developments for cryptocurrency investors and enthusiasts.",
+    "owner": "Market Jar Media Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Hungary",
+    "organization": "Bitcoinist",
+    "domains": ["bitcoinist.com"],
+    "description": "Bitcoinist is a cryptocurrency news portal focused on Bitcoin and blockchain technology, providing 24/7 coverage including price analysis, market updates, technical analysis, and industry news.",
+    "owner": "Norbert Radoki",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Block",
+    "domains": ["theblock.co"],
+    "description": "The Block is a New York-based digital media company focused on cryptocurrency and digital assets news, research, and analysis.",
+    "owner": "Foresight Ventures",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Decrypt",
+    "domains": ["decrypt.co"],
+    "description": "Decrypt is a digital media platform focused on covering cryptocurrency, blockchain technology, Web3, and the decentralized internet. The publication provides news coverage, educational content, and analysis of the cryptocurrency industry and emerging blockchain technologies.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Cyprus",
+    "organization": "The Currency Analytics",
+    "domains": ["thecurrencyanalytics.com"],
+    "description": "The Currency Analytics is a cryptocurrency news and analysis website that provides coverage of crypto markets, blockchain technology, and altcoins.",
+    "owner": "Sydney Ifergan",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Argentina",
+    "organization": "BeInCrypto",
+    "domains": ["beincrypto.com"],
+    "description": "BeInCrypto is a cryptocurrency and blockchain industry news website that provides unbiased news coverage, market analysis, and educational content about Bitcoin, altcoins, and blockchain technology.",
+    "owner": "Alena Afanaseva",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "organization": "Bitcoin.com",
+    "domains": ["bitcoin.com"],
+    "description": "Bitcoin.com is a cryptocurrency news portal and digital wallet developer established in 2015 that provides services for buying, selling, and trading cryptocurrencies like Bitcoin (BTC), Bitcoin Cash (BCH), and other digital assets. The platform combines news coverage, educational resources, and cryptocurrency trading tools.",
+    "owner": "Saint Bitts LLC",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Bulgaria",
+    "organization": "CryptoPotato",
+    "domains": ["cryptopotato.com"],
+    "description": "CryptoPotato is a cryptocurrency news and analysis website that provides daily coverage of Bitcoin and other digital currencies, including price analysis, trading guides, market updates, and educational content for both beginners and experienced crypto traders.",
+    "owner": "George Georgiev",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "CoinGape",
+    "domains": ["coingape.com"],
+    "description": "CoinGape is a cryptocurrency and blockchain technology news website that provides market analysis, price tracking, and coverage of crypto events.",
+    "owner": "Sunil Sharma",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Daily Hodl",
+    "domains": ["dailyhodl.com"],
+    "description": "The Daily Hodl is a cryptocurrency and digital assets news website focused on covering Bitcoin, Ethereum, and blockchain technology developments. .",
+    "owner": "Blake Buford, Laurene Williams",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Arab Emirates",
+    "organization": "crypto.news",
+    "domains": ["crypto.news"],
+    "description": "A cryptocurrency news website that covers Bitcoin, Ethereum, Ripple and other blockchain ecosystems, providing news updates, market analysis and industry developments.",
+    "owner": ""
   }
 ]
