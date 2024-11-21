@@ -1319,7 +1319,7 @@
     "country": "United Kingdom",
     "organization": "Reuters",
     "domains": ["reuters.com", "reutersagency.com"],
-    "description": "Reuters is a global news agency founded in 1851 that provides multimedia news content, financial information, and intelligence services.",
+    "description": "Reuters is a global news agency founded in 1851 that provides multimedia news content, financial information, and intelligence services. It is one of the three most influential news agencies globally alongside AP and AFP.",
     "owner": "Thomson Reuters",
     "typology": "Private Media"
   },
@@ -1345,6 +1345,134 @@
     "domains": ["foreignpolicy.com"],
     "description": "Foreign Policy is an American news publication founded in 1970 that focuses on global affairs, current events, and international policy analysis.",
     "owner": "Graham Holdings Company",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Philadelphia Inquirer",
+    "domains": ["inquirer.com"],
+    "description": "The Philadelphia Inquirer is a daily newspaper founded in 1829 serving the Philadelphia metropolitan area. It's known for its investigative journalism and local news coverage.",
+    "owner": "The Philadelphia Foundation (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "MSNBC",
+    "domains": ["msnbc.com"],
+    "description": "MSNBC is a 24-hour cable news channel and digital news platform providing breaking news coverage, political commentary, and in-depth analysis. The network is known for its generally liberal-leaning perspective in its commentary and programming.",
+    "owner": "Comcast Corporation (NBCUniversal News Group)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "AlterNet",
+    "domains": ["alternet.org"],
+    "description": "AlterNet is a progressive news website and blog that publishes original journalism, opinion pieces, and investigative reporting focused on political and social issues. The site is known for its left-leaning perspective and coverage of topics including politics, human rights, environment, and economic inequality.",
+    "owner": "Alternet Media, Inc. (John K. Byrne, Michael Rogers)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Daily Signal",
+    "domains": ["dailysignal.com"],
+    "description": "The Daily Signal is a conservative American political news and commentary website established in 2014. Initially launched as a project of The Heritage Foundation think tank, it became an independent publication in June 2024. The outlet focuses on policy news, political coverage, and conservative analysis.",
+    "owner": "Heritage Foundation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Spain",
+    "organization": "El País",
+    "domains": ["elpais.com"],
+    "description": "El País is a Spanish daily newspaper based in Madrid that covers national and international news, economy, politics, sports, culture, society and technology. It has a center-left editorial stance following social democratic ideology, with significant presence in Spain and Latin America through regional and international editions.",
+    "owner": "PRISA",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Salon",
+    "domains": ["salon.com"],
+    "description": "Founded in 1995, Salon is an independent digital news and opinion website providing progressive coverage of politics, news, culture, science, and entertainment. The publication has progressive/liberal editorial stance.",
+    "owner": "Find.co",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "PJ Media",
+    "domains": ["pjmedia.com"],
+    "description": "PJ Media is a conservative American news and opinion website founded in 2004 (originally as Pajamas Media). The site publishes content focused on politics, culture, faith, and current events from a right-wing perspective, featuring various columnists and contributors who provide commentary and analysis on US political and social issues.",
+    "owner": "Salem Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Hill",
+    "domains": ["thehill.com"],
+    "description": "The Hill is a Washington D.C.-based political newspaper and digital media company founded in 1994, focusing on Congress, politics, policy, and business coverage. ",
+    "owner": "Nexstar Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "TIME",
+    "domains": ["time.com"],
+    "description": "TIME is a weekly news magazine and digital media platform founded in 1923, covering politics, business, health, science, and entertainment.",
+    "owner": "Marc Benioff",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Yahoo",
+    "domains": ["yahoo.com"],
+    "description": "Yahoo is a web services provider offering email, search engine, and a comprehensive web portal. Its Yahoo News service aggregates content from major media organizations and wire services while also producing original reporting through its news team.",
+    "owner": "Apollo Global Management",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Chicago Tribune",
+    "domains": ["chicagotribune.com"],
+    "description": "Founded in 1847, the Chicago Tribune is the largest news organization in the Midwest United States, serving as the primary source of news and information for the Chicago area. The newspaper has historically maintained a Republican and conservative editorial perspective.",
+    "owner": "Alden Global Capital",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Los Angeles Times",
+    "domains": ["latimes.com"],
+    "description": "The Los Angeles Times is a daily newspaper founded in 1881 and based in Los Angeles, California. It is the largest metropolitan daily newspaper in the United States.",
+    "owner": "Patrick Soon-Shiong",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Just the News",
+    "domains": ["justthenews.com"],
+    "description": "Just the News is a Washington D.C.-based digital news outlet founded by journalist John Solomon that provides news coverage through web articles, videos, podcasts and e-books. The platform focuses on political and policy news, particularly coverage of events in the U.S. capital.",
+    "owner": "John Solomon",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Rolling Stone",
+    "domains": ["rollingstone.com"],
+    "description": "Rolling Stone is an American magazine and media brand founded in 1967 that covers music, politics, and popular culture through investigative reporting, interviews, and cultural commentary.",
+    "owner": "Penske Media Corporation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Associated Press",
+    "domains": ["ap.org", "apnews.com"],
+    "description": "The Associated Press is a global not-for-profit news cooperative founded in 1846 that provides independent journalism through text, photos, video and data to media organizations worldwide. Known for its fact-based reporting and accuracy in election coverage since 1848, it is one of the three most influential news agencies globally alongside Reuters and AFP.",
+    "owner": "U.S. newspaper and broadcast members (cooperative ownership)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "New York Post",
+    "domains": ["nypost.com"],
+    "description": "The New York Post is a daily tabloid newspaper based in New York City, established in 1801 by Alexander Hamilton. Known for its conservative editorial stance and sensationalist headlines, it covers local news, politics, sports, entertainment, and business.",
+    "owner": "News Corp (Rupert Murdoch)",
     "typology": "Private Media"
   }
 ]
