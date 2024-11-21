@@ -1474,5 +1474,69 @@
     "description": "The New York Post is a daily tabloid newspaper based in New York City, established in 1801 by Alexander Hamilton. Known for its conservative editorial stance and sensationalist headlines, it covers local news, politics, sports, entertainment, and business.",
     "owner": "News Corp (Rupert Murdoch)",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "WIRED",
+    "domains": ["wired.com"],
+    "description": "WIRED is a monthly technology magazine and digital publication founded in 1993 in San Francisco, focusing on how emerging technologies affect culture, economy, politics, and society. The publication covers technology, science, business, and cultural news, with particular emphasis on digital culture and innovation.",
+    "owner": "Condè Nast",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Quartz",
+    "domains": ["qz.com"],
+    "description": "Quartz is an American digital news publication founded in 2012 focusing on international business news, economics, technology, and global economy coverage. Originally launched by Atlantic Media, it relies on native advertising and sponsored content for revenue.",
+    "owner": "G/O Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "MarketWatch",
+    "domains": ["marketwatch.com"],
+    "description": "MarketWatch is a financial news website and subsidiary of Dow Jones & Company that provides real-time stock market quotes, business news, financial analysis, and investment tools. It offers market commentary, stock research, and personal finance coverage through its website, targeting both retail and institutional investors.",
+    "owner": "News Corp (via Dow Jones & Company)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Deutsche Welle",
+    "domains": ["dw.com"],
+    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
+    "owner": "Federal Government of Germany",
+    "typology": "Independent State-Funded media"
+  },
+  {
+    "country": "India",
+    "organization": "Firstpost",
+    "domains": ["firstpost.com"],
+    "description": "Firstpost is an Indian digital news platform providing coverage of politics, economy, technology, entertainment, and international news with an Indian perspective. The platform features both written content and video programming, including the notable 'Vantage' show with Palki Sharma focusing on global news analysis.",
+    "owner": "Network18 Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Investor's Business Daily",
+    "domains": ["investors.com"],
+    "description": "Investor's Business Daily (IBD) is a financial news and research website focused on the stock market, providing market analysis, stock screening tools, and investment education. The publication offers coverage of business, technology, and economic news with emphasis on market trends with a conservative political stance.",
+    "owner": "News Corp",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Wall Street Journal",
+    "domains": ["wsj.com"],
+    "description": "The Wall Street Journal is a daily business and financial news publication that provides comprehensive coverage of U.S. and international news, business, markets, and economics. The newspaper maintains center-right editorial positions.",
+    "owner": "News Corp",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Seeking Alpha",
+    "domains": ["seekingalpha.com"],
+    "description": "Seeking Alpha is a crowdsourced financial markets content and analysis platform where investors and market professionals share research, investment ideas, and discuss stocks.",
+    "owner": "Seeking Alpha Ltd.",
+    "typology": "Private Media"
   }
 ]
