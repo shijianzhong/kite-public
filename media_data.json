@@ -1858,5 +1858,77 @@
     "description": "Football365 is a football news website established in 1997 that provides football coverage including news, transfers, match analysis, statistics, and opinion pieces. The site is known for its forthright, sometimes irreverent editorial style and focuses primarily on Premier League and European football coverage.",
     "owner": "Planet Sport Ltd",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "SFist",
+    "domains": ["sfist.com"],
+    "description": "SFist is a digital-first news website focused on San Francisco Bay Area news, covering local politics, restaurants, events, sports, and culture. The site reaches millions of readers and provides both serious news coverage and lighter content about the San Francisco metropolitan area.",
+    "owner": "Impress3 Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "KRON4",
+    "domains": ["kron4.com"],
+    "description": "KRON4 is a San Francisco Bay Area news station providing local news, weather, and traffic coverage through television broadcasts and digital platforms. The station broadcasts 15.5 hours of news on weekdays and 9 hours on weekends, covering San Francisco, San Jose, Oakland and surrounding areas with a focus on local reporting and breaking news.",
+    "owner": "Nexstar Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ABC7 News Bay Area",
+    "domains": ["abc7news.com"],
+    "description": "ABC7 News Bay Area (KGO-TV) is a local television news station serving the San Francisco Bay Area, providing breaking news coverage, weather forecasts, traffic updates, and live video streaming for San Francisco, Oakland, San Jose and Northern California regions. It operates as an ABC owned-and-operated station.",
+    "owner": "Walt Disney Television",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "KTVU FOX 2",
+    "domains": ["ktvu.com"],
+    "description": "KTVU FOX 2 is a television station serving the San Francisco Bay Area. It provides local and breaking news coverage, weather updates, sports reporting, and live streaming services for the region. The station covers major cities including San Francisco, Oakland, and San Jose, offering comprehensive news and information to Bay Area residents.",
+    "owner": "Fox Corporation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Mercury News",
+    "domains": ["mercurynews.com"],
+    "description": "The Mercury News is a daily newspaper based in San Jose, California, serving Silicon Valley and the San Francisco Bay Area with coverage of local news, sports, business, and entertainment. The paper has a daily circulation of about 93,000 and Sunday circulation of around 151,000 as of 2022, making it one of the major metropolitan newspapers in Northern California.",
+    "owner": "Alden Global Capital",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "San Mateo Daily Journal",
+    "domains": ["smdailyjournal.com"],
+    "description": "The San Mateo Daily Journal is a local newspaper serving the San Francisco Peninsula region, specifically focused on San Mateo County, California. The publication provides local news coverage, business updates, and community information through both print and digital formats. ã1ãã2ã",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "SFGATE",
+    "domains": ["sfgate.com"],
+    "description": "SFGATE is a digital news outlet based in San Francisco, California, providing coverage of Bay Area news, sports, culture, weather, politics, and technology. Originally launched as the San Francisco Chronicle's digital presence, it now operates as a separate digital publication covering both local and state-wide California news.",
+    "owner": "Hearst Communications",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Hoodline",
+    "domains": ["hoodline.com"],
+    "description": "Hoodline is a hyperlocal news platform providing neighborhood-level coverage across multiple U.S. cities including San Francisco, Oakland, Dallas, and Phoenix, focusing on local politics, business, dining, real estate, and crime news. The platform notably uses AI technology to generate some of its news content.",
+    "owner": "Impress3 Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The San Francisco Standard",
+    "domains": ["sfstandard.com"],
+    "description": "The San Francisco Standard is an online news organization launched in 2021 that covers daily news, politics, business, food, tech and culture in the San Francisco Bay Area. The publication is funded in part by venture capital and aims to provide local journalism for San Francisco and the surrounding region.",
+    "owner": "Michael Moritz (Sequoia Capital)",
+    "typology": "Private Media"
   }
 ]
