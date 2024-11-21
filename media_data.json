@@ -1904,7 +1904,7 @@
     "country": "United States",
     "organization": "San Mateo Daily Journal",
     "domains": ["smdailyjournal.com"],
-    "description": "The San Mateo Daily Journal is a local newspaper serving the San Francisco Peninsula region, specifically focused on San Mateo County, California. The publication provides local news coverage, business updates, and community information through both print and digital formats. ã1ãã2ã",
+    "description": "The San Mateo Daily Journal is a local newspaper serving the San Francisco Peninsula region, specifically focused on San Mateo County, California. The publication provides local news coverage, business updates, and community information through both print and digital formats.",
     "owner": "",
     "typology": "Private Media"
   },
@@ -1934,10 +1934,26 @@
   },
   {
     "country": "United States",
-    "organization": "Google News",
-    "domains": ["news.google.com"],
-    "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. The service uses artificial intelligence to sort articles by topic and presents them based on each user's interests and reading history.",
+    "organization": "Google",
+    "domains": ["google.com", "youtube.com"],
+    "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. Youtube is Google's video sharing platform where users can upload, view, and share videos.",
     "owner": "Alphabet Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "TechNews City",
+    "domains": ["technews.city"],
+    "description": "A technology news website that covers AI developments, big tech companies, and health technology.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CNET",
+    "domains": ["cnet.com"],
+    "description": "CNET is a technology-focused media website established in 1994 that publishes product reviews, tech news, how-to guides, and multimedia content. It specializes in consumer electronics and digital technology coverage through articles, videos, and podcasts.",
+    "owner": "Ziff Davis",
     "typology": "Private Media"
   }
 ]
