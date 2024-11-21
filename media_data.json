@@ -1931,5 +1931,13 @@
     "description": "The San Francisco Standard is an online news organization launched in 2021 that covers daily news, politics, business, food, tech and culture in the San Francisco Bay Area. The publication is funded in part by venture capital and aims to provide local journalism for San Francisco and the surrounding region.",
     "owner": "Michael Moritz (Sequoia Capital)",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States", 
+    "organization": "Google News",
+    "domains": ["news.google.com"],
+    "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. The service uses artificial intelligence to sort articles by topic and presents them based on each user's interests and reading history.",
+    "owner": "Alphabet Inc.",
+    "typology": "Private Media"
   }
 ]
