@@ -1738,5 +1738,85 @@
     "description": "AppleInsider is a technology news website and blog focused on covering Apple Inc. products, services, and ecosystem. Founded in 1997, it provides news, rumors, reviews, buyer's guides, and price tracking for Apple products.",
     "owner": "Jeff Valvano",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Live Science",
+    "domains": ["livescience.com"],
+    "description": "Live Science is a science news website that covers scientific discoveries, technological breakthroughs, and research developments across fields including space, health, environment, and technology. The site has received a perfect credibility score from NewsGuard for its journalistic standards and fact-based reporting.",
+    "owner": "Future plc",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The Economist",
+    "domains": ["economist.com"],
+    "description": "The Economist is a British weekly newspaper focused on international news, politics, business, finance, science and technology. Its editorial stance is economic liberalism, supporting free markets, free trade and globalization.",
+    "owner": "Exor N.V. (43.4%), Rothschild (26.7%), Cadbury Schroder Layton",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "New Scientist",
+    "domains": ["newscientist.com"],
+    "description": "New Scientist is a weekly science and technology magazine that covers developments across scientific fields including physics, biology, technology, health, and environmental topics through articles, features, and analysis.",
+    "owner": "Daily Mail and General Trust",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Phys.org",
+    "domains": ["phys.org"],
+    "description": "Phys.org is a science news aggregation and distribution website that covers research developments, technological breakthroughs, and scientific innovations across physics, earth science, medicine, nanotechnology, electronics, space, biology, chemistry, computer sciences, engineering, and mathematics. The site primarily republishes press releases and news articles from universities and research institutions.",
+    "owner": "Science X Network",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Sci-News",
+    "domains": ["sci.news"],
+    "description": "Sci-News is a online science news platform that covers breaking developments across multiple scientific fields including physics, astronomy, biology, archaeology, and technology.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Australia",
+    "organization": "Cosmos Magazine",
+    "domains": ["cosmosmagazine.com"],
+    "description": "Cosmos Magazine is an Australian quarterly science publication that delivers comprehensive coverage of scientific discoveries, research, and analysis across various fields including space, technology, and core sciences.",
+    "owner": "CSIRO",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Australia",
+    "organization": "Science Media Exchange (Scimex)",
+    "domains": ["scimex.org"],
+    "description": "Scimex is an online science news portal and resource platform providing breaking science news, expert connections, multimedia resources, and event listings specifically designed to help journalists cover scientific stories.",
+    "owner": "Australian Science Media Centre (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ScienceBlog.com",
+    "domains": ["scienceblog.com"],
+    "description": "ScienceBlog.com is a science news and research aggregation website that publishes articles covering diverse scientific topics from astronomy to zoology.",
+    "owner": "Science 2.0 Corp (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Charming Science",
+    "domains": ["charmingscience.com"],
+    "description": "Charming Science is a science news website established in 2019 that publishes daily content focused on physics, astronomy, and technology.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ScienceDaily",
+    "domains": ["sciencedaily.com"],
+    "description": "ScienceDaily is a science news aggregation website founded in 1995 that publishes edited press releases about scientific research and discoveries from universities, scientific journals, and research organizations.",
+    "owner": "Dan Hogan and Michele Hogan",
+    "typology": "Private Media"
   }
 ]
