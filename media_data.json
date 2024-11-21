@@ -29,7 +29,7 @@
     "domains": ["rt.com"],
     "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs. RT is owned by the Russian state through the Russian Ministry of Foreign Affairs, which heavily influences its editorial content. There is a substantial body of documentation and research pertaining to RT's propagandistic activities. This includes academic papers, media articles, and studies conducted by non-governmental organizations (NGOs).",
     "owner": "Russian Ministry of Foreign Affairs",
-    "typology": "State-Controlled Media"
+    "typology": "State Controlled Media"
   },
   {
     "country": "Italy",
@@ -115,7 +115,7 @@
     "country": "Italy",
     "organization": "il Post",
     "domains": ["ilpost.it"],
-    "description": "il Post is an Italian online daily newspaper founded in 2010 by Luca Sofri. It provides free access to news coverage, analysis, and content spanning world events, culture, and current affairs through articles, reviews, blogs, and photos, without requiring user registration. ã1ãã2ã",
+    "description": "il Post is an Italian online daily newspaper founded in 2010 by Luca Sofri. It provides free access to news coverage, analysis, and content spanning world events, culture, and current affairs through articles, reviews, blogs, and photos, without requiring user registration.",
     "owner": "Luca Sofri",
     "typology": "Private Media"
   },
@@ -652,7 +652,7 @@
     "typology": "Private Media"
   },
   {
-    "country": "USA",
+    "country": "United States",
     "organization": "Hacker News",
     "domains": ["news.ycombinator.com"],
     "description": "Hacker News is a social news website focused on computer science, technology, entrepreneurship and startups. It features user-submitted content that can be voted up or down by the community, including tech news, scientific discoveries, and in-depth articles about programming, business, and technology culture.",
@@ -792,6 +792,183 @@
     "organization": "crypto.news",
     "domains": ["crypto.news"],
     "description": "A cryptocurrency news website that covers Bitcoin, Ethereum, Ripple and other blockchain ecosystems, providing news updates, market analysis and industry developments.",
-    "owner": ""
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Die Zeit",
+    "domains": ["zeit.de"],
+    "description": "Die Zeit is a German weekly newspaper known for its liberal/center-left editorial stance and in-depth analysis. It is considered one of Germany's leading quality media publications by journalists, with coverage of politics, economics, culture, and society.",
+    "owner": "Dieter von Holtzbrinck Medien (50%), Verlagsgruppe Georg von Holtzbrinck (50%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "CORRECTIV",
+    "domains": ["correctiv.org"],
+    "description": "CORRECTIV is a non-profit investigative newsroom, focusing on investigative journalism, fact-checking, and cross-border investigations.",
+    "owner": "David Schraven",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Focus",
+    "domains": ["focus.de", "burda.com"],
+    "description": "Focus is a German-language news magazine and digital media outlet established in 1993 as an alternative to Der Spiegel. Published by Hubert Burda Media, it operates both as a weekly print magazine headquartered in Berlin and a online news portal through Focus Online, covering politics, business, science, and culture.",
+    "owner": "Burda family",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Süddeutsche Zeitung",
+    "domains": ["sueddeutsche.de"],
+    "description": "Süddeutsche Zeitung is a German daily newspaper published in Munich since 1945. Known for its liberal-center-left editorial stance, investigative journalism, and extensive coverage of politics, culture, and economics. The paper has played a significant role in major investigative projects like the Panama Papers and Paradise Papers.",
+    "owner": "Südwestdeutsche Medien Holding (81.25%), SZ Mitarbeiter KG (18.75%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Die Tageszeitung",
+    "domains": ["taz.de"],
+    "description": "Die Tageszeitung (taz) is a German daily newspaper founded in 1978 and based in Berlin. It operates as a cooperative since 1992, known for its left-leaning critical journalism. The newspaper focuses on investigative reporting, analysis, and alternative perspectives.",
+    "owner": "taz Cooperative - Readers ownership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Die Bundesregierung",
+    "domains": ["bundesregierung.de"],
+    "description": "Die Bundesregierung is the official website and communication platform of the German Federal Government, providing official information, press releases, and updates about government policies, decisions, and activities.",
+    "owner": "Federal Republic of Germany",
+    "typology": "State Controlled Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Frankfurter Allgemeine Zeitung",
+    "domains": ["faz.net", "frankfurterallgemeine.de"],
+    "description": "The Frankfurter Allgemeine Zeitung (FAZ) is a German daily newspaper known for its conservative editorial stance. It covers business, politics, and culture.",
+    "owner": "FAZIT-Stiftung",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Der Spiegel",
+    "domains": ["spiegel.de"],
+    "description": "Der Spiegel is a German weekly news magazine and digital news platform established in 1947, known for its investigative journalism and political coverage. The online website has a center left-leaning editorial stance and covers politics, culture, and society.",
+    "owner": "Spiegel Employees (50.5%), Mohn family (25.5%), Augstein family (24%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Stern",
+    "domains": ["stern.de"],
+    "description": "Stern is a German weekly news magazine published in Hamburg since 1948 that provides reporting on politics, economy, culture and current affairs. The online website mirrors the print magazine.",
+    "owner": "Mohn family (74%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "t-online",
+    "domains": ["t-online.de"],
+    "description": "t-online is a German digital news portal and email service provider offering comprehensive coverage of news, politics, sports, entertainment, and lifestyle content.",
+    "owner": "Udo Müller (24%), Dirk Ströer (20%), other shareholders (56%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Tagesschau",
+    "domains": ["tagesschau.de"],
+    "description": "Tagesschau is a german national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Der Tagesspiegel",
+    "domains": ["tagesspiegel.de", "tagesspiegel-gruppe.de"],
+    "description": "Der Tagesspiegel is a German daily newspaper founded in 1945 as Berlin's first free press publication. It operates as a newspaper with a liberal editorial stance, publishing both print and digital content under the motto 'Rerum cognoscere causas' (Getting to the root of things).",
+    "owner": "DvH Medien GmbH (Dieter von Holtzbrinck)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Zweites Deutsches Fernsehen (ZDF)",
+    "domains": ["zdf.de"],
+    "description": "ZDF is a German public-service television broadcaster based in Mainz that has been operating since 1963. ZDF, like ARD, is well-respected as a journalism powerhouse, financially stable, independent, and fully accountable to the public.",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "n-tv",
+    "domains": ["n-tv.de"],
+    "description": "n-tv is a German free-to-air television news channel and digital media outlet that focuses on news, business coverage, and documentaries.",
+    "owner": "RTL Deutschland",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "RedaktionsNetzwerk Deutschland",
+    "domains": ["rnd.de"],
+    "description": "RedaktionsNetzwerk Deutschland (RND) is a Hanover-based joint corporate newsroom that provides news content and services across Germany.",
+    "owner": "Social Democratic Party of Germany (25%), Sylvia Madsack (19.99%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Deutschlandfunk",
+    "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
+    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Frankfurter Rundschau",
+    "domains": ["fr.de"],
+    "description": "Frankfurter Rundschau is a German daily newspaper published in Frankfurt. It is known for its left-liberal editorial stance and focuses on political, economic, and cultural coverage with particular emphasis on the Frankfurt Rhine-Main region.",
+    "owner": "Ippen family",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Rundfunk Berlin-Brandenburg",
+    "domains": ["rbb-online.de", "rbb24.de"],
+    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
+    "owner": "Public broadcaster (German public institutions)",
+    "typology": "Independent Public Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Handelsblatt Media Group",
+    "domains": ["handelsblatt.com", "handelsblattgroup.com"],
+    "description": "Handelsblatt Media Group is a German media company based in Düsseldorf that specializes in business and financial information, providing news coverage, analysis, and specialized communication solutions through various digital and print platforms.",
+    "owner": "Dieter von Holtzbrinck",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Rheinische Post",
+    "domains": ["rp-online.de"],
+    "description": "Rheinische Post is a major regional daily newspaper based in Düsseldorf, covering news from North Rhine-Westphalia with a focus on the Rhine region. The newspaper provides comprehensive local, regional, and national coverage.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Berliner Morgenpost",
+    "domains": ["morgenpost.de"],
+    "description": "Berliner Morgenpost is a German daily newspaper founded in 1898 and based in Berlin. It is one of Berlin's most-read daily newspapers, known for its conservative editorial stance.",
+    "owner": "Axel-Springer-Verlag Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Germany",
+    "organization": "Augsburger Allgemeine",
+    "domains": ["augsburger-allgemeine.de"],
+    "description": "The Augsburger Allgemeine is a German regional daily newspaper based in Augsburg, Bavaria, publishing since 1807. It provides comprehensive local and national news coverage for the Augsburg region and surrounding areas, with both print and digital formats.",
+    "owner": "Mediengruppe Pressedruck (Presse-Druck- und Verlags-GmbH)",
+    "typology": "Private Media"
   }
 ]
