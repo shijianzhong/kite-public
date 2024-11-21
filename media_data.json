@@ -1286,7 +1286,7 @@
   {
     "country": "United States",
     "organization": "CBS News",
-    "domains": ["cbsnews.com"],
+    "domains": ["cbsnews.com", "cbssports.com"],
     "description": "CBS News is a major American news division of CBS Broadcasting that provides 24/7 news coverage through television broadcasts, digital platforms, and streaming services.",
     "owner": "Paramount Global",
     "typology": "Private Media"
@@ -1751,7 +1751,7 @@
     "country": "United Kingdom",
     "organization": "The Economist",
     "domains": ["economist.com"],
-    "description": "The Economist is a British weekly newspaper focused on international news, politics, business, finance, science and technology. Its editorial stance is economic liberalism, supporting free markets, free trade and globalization.",
+    "description": "The Economist is a weekly newspaper focused on international news, politics, business, finance, science and technology. Its editorial stance is economic liberalism, supporting free markets, free trade and globalization.",
     "owner": "Exor N.V. (43.4%), Rothschild (26.7%), Cadbury Schroder Layton",
     "typology": "Private Media"
   },
@@ -1783,7 +1783,7 @@
     "country": "Australia",
     "organization": "Cosmos Magazine",
     "domains": ["cosmosmagazine.com"],
-    "description": "Cosmos Magazine is an Australian quarterly science publication that delivers comprehensive coverage of scientific discoveries, research, and analysis across various fields including space, technology, and core sciences.",
+    "description": "Cosmos Magazine is a quarterly science publication that delivers comprehensive coverage of scientific discoveries, research, and analysis across various fields including space, technology, and core sciences.",
     "owner": "CSIRO",
     "typology": "Private Media"
   },
@@ -1817,6 +1817,46 @@
     "domains": ["sciencedaily.com"],
     "description": "ScienceDaily is a science news aggregation website founded in 1995 that publishes edited press releases about scientific research and discoveries from universities, scientific journals, and research organizations.",
     "owner": "Dan Hogan and Michele Hogan",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "ESPN",
+    "domains": ["espn.com"],
+    "description": "ESPN (Entertainment and Sports Programming Network) is a multinational sports media company that operates multiple television channels, streaming services, websites, and mobile platforms dedicated to sports coverage, news, analysis, and entertainment programming. The company was founded in 1979 and has grown into a comprehensive sports media network with global reach.",
+    "owner": "The Walt Disney Company (80% through ABC), Hearst Communications (20%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Sky",
+    "domains": ["sky.com", "skysports.com"],
+    "description": "Sky is a media and telecommunications company operating across six European countries (UK, Ireland, Germany, Austria, Switzerland and Italy), providing television, broadband internet, and mobile services. With 23 million subscribers as of 2019, it is a major player in European broadcasting and digital media services.",
+    "owner": "Comcast Corporation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The Independent",
+    "domains": ["independent.co.uk"],
+    "description": "The Independent is a online newspaper founded in 1986 as a print publication before transitioning to digital-only format. Originally established as a broadsheet newspaper, it switched to tabloid format in 2003 before becoming fully digital. The publication provides news coverage across politics, culture, and international affairs.",
+    "owner": "Evgeny Lebedev (41%), Sultan Muhammad Abuljadayel (30%), Justin Byam Shaw (26%), Minor shareholders (3%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "TEAMtalk",
+    "domains": ["teamtalk.com"],
+    "description": "TEAMtalk is a sports media website focused on football (soccer) news, specializing in transfer news, rumors, and commentary. It provides coverage of Premier League and international football transfers, fixtures, and related content.",
+    "owner": "Planet Sport Ltd",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "Football365",
+    "domains": ["football365.com"],
+    "description": "Football365 is a football news website established in 1997 that provides football coverage including news, transfers, match analysis, statistics, and opinion pieces. The site is known for its forthright, sometimes irreverent editorial style and focuses primarily on Premier League and European football coverage.",
+    "owner": "Planet Sport Ltd",
     "typology": "Private Media"
   }
 ]
