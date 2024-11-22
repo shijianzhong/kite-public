@@ -2083,5 +2083,93 @@
     "description": "Business Insider is a New York City-based multinational financial and business news website founded in 2007 that covers technology, finance, markets, economy, business news, lifestyle, and science.",
     "owner": "Axel Springer SE (via Insider Inc.)",
     "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Droid Life",
+    "domains": ["droid-life.com"],
+    "description": "Droid Life is a technology blog and news website focused on Android smartphones, devices, and ecosystem. The site provides news coverage, product reviews, tips and tricks, app features, and community discussions centered around Android mobile technology, with particular emphasis on detailed device reviews and Android platform developments.",
+    "owner": "Kellen Barranger",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "TechRadar",
+    "domains": ["techradar.com"],
+    "description": "TechRadar is a technology news and reviews website owned by Future plc, providing consumer-focused coverage of gadgets, computing, mobile devices, and other consumer electronics.",
+    "owner": "Future plc",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Verge",
+    "domains": ["theverge.com"],
+    "description": "The Verge is a technology news and media website founded in 2011 that covers the intersection of technology, science, art, and culture. It produces news coverage, feature stories, investigative reporting, product reviews, and multimedia content through articles, videos, and podcasts, with headquarters in New York City.",
+    "owner": "Vox Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Redmond Pie",
+    "domains": ["redmondpie.com"],
+    "description": "Redmond Pie is a technology web publication focused on covering news, updates, and developments related to Apple, Microsoft, Google, and Tesla. The site particularly specializes in iOS device coverage, including jailbreaking tutorials and mobile technology news.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "AndroidPCTV",
+    "domains": ["androidpctv.com"],
+    "description": "A technology website focused on reviewing and providing news about Android TV devices, TV boxes, mini PCs, and tablets. The site offers firmware updates, device reviews, and technical information about various Android-based TV boxes and streaming devices.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Digital Trends",
+    "domains": ["digitaltrends.com", "dtmg.co"],
+    "description": "Digital Trends is a Portland-based tech news and reviews website founded in 2006 that publishes news, product reviews, guides, how-to articles, videos and podcasts focused on technology and consumer electronics. The site is part of Digital Trends Media Group, which operates multiple millennial-focused media brands covering technology, lifestyle, and consumer products.",
+    "owner": "Ian Bell",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "KnowTechie",
+    "domains": ["knowtechie.com"],
+    "description": "KnowTechie is a technology news blog and website that provides tech news, reviews, how-to guides, and gaming coverage aimed at general tech enthusiasts.",
+    "owner": "Kevin Raposo",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "9to5Google",
+    "domains": ["9to5google.com"],
+    "description": "9to5Google is a technology news website focused on providing daily coverage of Google-related news, including Android devices, Pixel phones, Chrome OS, Google services, and product launches. The site is part of the 9to5 network of technology news websites that includes 9to5Mac and 9to5Toys.",
+    "owner": "Seth Weintraub",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "VentureBeat",
+    "domains": ["venturebeat.com"],
+    "description": "VentureBeat is a technology news website founded in 2006, based in San Francisco, that publishes news, analysis, interviews, and features focusing on transformative technology, particularly AI and gaming.",
+    "owner": "Matt Marshall",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Markup",
+    "domains": ["themarkup.org"],
+    "description": "The Markup is an investigative journalism organization focused on examining technology's impact on society through data-driven reporting and investigations.",
+    "owner": "CalMatters",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Taiwan",
+    "organization": "DIGITIMES Asia",
+    "domains": ["digitimes.com"],
+    "description": "DIGITIMES Asia is a Taiwan-based technology media outlet established in 1998 that specializes in coverage of the global semiconductor and tech supply chain ecosystem, with particular focus on Asia. The organization provides news, analysis, and research services focused on technology industry trends, manufacturing, and supply chain developments.",
+    "owner": "DIGITIMES Inc.",
+    "typology": "Private Media"
   }
 ]
