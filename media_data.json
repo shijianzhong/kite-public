@@ -3,7 +3,7 @@
     "country": "Qatar",
     "organization": "Al Jazeera Media Network",
     "domains": ["aljazeera.com", "aljazeera.net"],
-    "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs. Despite internal rules aimed at establishing the network's independence, there is abundant evidence of state control over editorial content and decision-making. While the station is known for its intrepid reporting especially in its content targeting foreign audiences, criticism of Qatar's ruling elite is totally banned.",
+    "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs.",
     "owner": "Qatar Media Corporation (QMC)",
     "typology": "State Funded Media"
   },
@@ -11,7 +11,7 @@
     "country": "United Kingdom",
     "organization": "BBC News",
     "domains": ["bbc.com", "bbc.co.uk"],
-    "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs. The BBC's Royal Charter includes a series of guarantees for editorial independence, and the government has no rules that would allow it to intervene in editorial decisions. So, although politicians constantly try to influence the station's editorial content, the BBC has successfully maintained its editorial independence.",
+    "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "British Broadcasting Corporation (BBC)",
     "typology": "State Funded Media"
   },
@@ -19,7 +19,7 @@
     "country": "France",
     "organization": "France 24",
     "domains": ["france24.com"],
-    "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs. The channel is owned by the French state through the French Ministry of Europe and Foreign Affairs, but there is no evidence of any government control over the editorial output.",
+    "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "French Ministry of Europe and Foreign Affairs",
     "typology": "State Funded Media"
   },
@@ -27,7 +27,7 @@
     "country": "Russia",
     "organization": "RT",
     "domains": ["rt.com"],
-    "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs. RT is owned by the Russian state through the Russian Ministry of Foreign Affairs, which heavily influences its editorial content. There is a substantial body of documentation and research pertaining to RT's propagandistic activities. This includes academic papers, media articles, and studies conducted by non-governmental organizations (NGOs).",
+    "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "Russian Ministry of Foreign Affairs",
     "typology": "State Funded Media"
   },
@@ -51,7 +51,7 @@
     "country": "Germany",
     "organization": "Tagesschau",
     "domains": ["tagesschau.de"],
-    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
+    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -59,7 +59,7 @@
     "country": "Germany",
     "organization": "Deutschlandfunk",
     "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
-    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
+    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -67,7 +67,7 @@
     "country": "Germany",
     "organization": "Rundfunk Berlin-Brandenburg",
     "domains": ["rbb-online.de", "rbb24.de"],
-    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
+    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -75,7 +75,7 @@
     "country": "Russia",
     "organization": "TASS",
     "domains": ["tass.com", "tass.ru"],
-    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
+    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English.",
     "owner": "Government of Russia",
     "typology": "State Funded Media"
   },
@@ -83,7 +83,7 @@
     "country": "Australia",
     "organization": "Australian Broadcasting Corporation",
     "domains": ["abc.net.au"],
-    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
+    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms.",
     "owner": "Australian Government",
     "typology": "State Funded Media"
   },
@@ -91,7 +91,7 @@
     "country": "United States",
     "organization": "National Public Radio",
     "domains": ["npr.org"],
-    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
+    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education.",
     "owner": "Non-profit organization",
     "typology": "State Funded Media"
   },
@@ -99,7 +99,7 @@
     "country": "United States",
     "organization": "Voice of America",
     "domains": ["voanews.com"],
-    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
+    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming.",
     "owner": "U.S. Agency for Global Media",
     "typology": "State Funded Media"
   },
@@ -107,7 +107,7 @@
     "country": "United States",
     "organization": "Public Broadcasting Service",
     "domains": ["pbs.org"],
-    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
+    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms.",
     "owner": "Corporation for Public Broadcasting (non-profit)",
     "typology": "State Funded Media"
   },
@@ -115,7 +115,7 @@
     "country": "Germany",
     "organization": "Deutsche Welle",
     "domains": ["dw.com"],
-    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
+    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms.",
     "owner": "Federal Government of Germany",
     "typology": "State Funded Media"
   },
