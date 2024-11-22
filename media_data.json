@@ -1955,5 +1955,53 @@
     "description": "CNET is a technology-focused media website established in 1994 that publishes product reviews, tech news, how-to guides, and multimedia content. It specializes in consumer electronics and digital technology coverage through articles, videos, and podcasts.",
     "owner": "Ziff Davis",
     "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "TheGamer",
+    "domains": ["thegamer.com"],
+    "description": "TheGamer is a digital gaming publication founded in 2017 that provides video game news, reviews, guides, and opinion pieces. The website produces content covering gaming industry news, in-depth game guides, reviews, and analysis across multiple gaming platforms.",
+    "owner": "Valnet Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "New Delhi Television (NDTV)",
+    "domains": ["ndtv.com"],
+    "description": "NDTV is a news media company providing news coverage and programming across television and digital platforms, with a significant presence in both domestic and international markets, particularly serving Indian expatriates.",
+    "owner": "Adani Enterprises (64.71%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Israel",
+    "organization": "The Times of Israel",
+    "domains": ["timesofisrael.com"],
+    "description": "The Times of Israel is an Israeli multi-language online newspaper launched in 2012 that provides news coverage focused on Israel, the Middle East, and the Jewish world. It publishes in English, French, Arabic, and Hebrew, offering breaking news, analysis, and opinion pieces about regional and international affairs.",
+    "owner": "David Horovitz",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Euronews",
+    "domains": ["euronews.com"],
+    "description": "Euronews is a European multilingual news channel headquartered in Brussels that broadcasts in 17 languages across Europe and beyond. It provides international news coverage, focusing on European affairs, politics, economy, and culture. The owner has notable ties to Hungarian leader Viktor Orbán.",
+    "owner": "Alpac Capital (97.6%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Al-Monitor",
+    "domains": ["al-monitor.com"],
+    "description": "Al-Monitor is a news organization providing analysis and coverage focused on the Middle East region. The outlet produces original reporting and analysis in multiple languages, targeting decision-makers, policy experts, and academics. It specializes in providing in-depth coverage of regional politics, security issues, and socio-economic developments across Middle Eastern countries.",
+    "owner": "Jamal Daniel",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The New Arab",
+    "domains": ["newarab.com"],
+    "description": "The New Arab is a London-based pan-Arab news outlet providing English and Arabic language coverage of Middle East, North Africa, and international news through its website and daily newspaper.",
+    "owner": "Fadaat Media",
+    "typology": "Private Media"
   }
 ]
