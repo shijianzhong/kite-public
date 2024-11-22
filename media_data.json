@@ -2003,5 +2003,85 @@
     "description": "The New Arab is a London-based pan-Arab news outlet providing English and Arabic language coverage of Middle East, North Africa, and international news through its website and daily newspaper.",
     "owner": "Fadaat Media",
     "typology": "Private Media"
+   },
+   {
+    "country": "Pakistan",
+    "organization": "Dawn",
+    "domains": ["dawn.com"],
+    "description": "Dawn is Pakistan's largest English-language newspaper and widely considered the country's newspaper of record. The newspaper provides comprehensive coverage of national, regional and international news, with particular focus on Pakistani politics, business, and current affairs.",
+    "owner": "Haroon-Saigol family",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "Winnipeg Free Press",
+    "domains": ["winnipegfreepress.com"],
+    "description": "The Winnipeg Free Press is a daily broadsheet newspaper based in Winnipeg, Manitoba, that publishes every day except Sunday. It provides local, national and international coverage through print and digital platforms for the Winnipeg metropolitan area.",
+    "owner": "FP Canadian Newspapers Limited Partnership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The New Yorker",
+    "domains": ["newyorker.com"],
+    "description": "The New Yorker is a magazine established in 1925 that publishes journalism, commentary, criticism, essays, fiction, satire, cartoons, and poetry.",
+    "owner": "Condé Nast (Advance Publications)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Slate",
+    "domains": ["slate.com"],
+    "description": "Slate is a daily online magazine and podcast network founded in 1996, focusing on politics, news, business, technology, and culture. It operates with a metered paywall model and is known for its contrarian views ('Slate Pitches') and generally liberal editorial stance. The publication combines analysis, commentary, and cultural coverage with a mix of serious journalism and humor.",
+    "owner": "Graham Holdings Company (Washington Post Company)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Christian Science Monitor",
+    "domains": ["csmonitor.com"],
+    "description": "The Christian Science Monitor is a nonprofit international news organization founded in 1908 that publishes daily articles online and a weekly magazine, known for its thoughtful global coverage and focus on constructive journalism.",
+    "owner": "The First Church of Christ, Scientist",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Reason",
+    "domains": ["reason.com"],
+    "description": "Reason is a monthly magazine and media outlet that covers news, politics, culture, and public policy from a libertarian perspective.",
+    "owner": "Reason Foundation (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The American Prospect",
+    "domains": ["prospect.org"],
+    "description": "The American Prospect is a daily online and bimonthly print magazine focused on American politics and public policy, with a progressive and liberal perspective. It provides analysis of public policy issues and political developments through both digital and print formats.",
+    "owner": "The American Prospect, Inc. (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Intercept",
+    "domains": ["theintercept.com"],
+    "description": "The Intercept is an American left-wing nonprofit news organization founded in 2014 that publishes investigative journalism, articles, and podcasts focusing on national security, civil liberties, foreign policy, and criminal justice. It gained prominence for being one of the first outlets to report on Edward Snowden's leaked NSA documents.",
+    "owner": "First Look Media (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CNBC",
+    "domains": ["cnbc.com"],
+    "description": "CNBC is a business and financial news network headquartered in Englewood Cliffs, New Jersey, providing real-time market coverage, business news, and financial information through television and digital platforms. Their audience includes business leaders, investors, financial advisors, and professionals across multiple sectors.",
+    "owner": "NBCUniversal",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Business Insider",
+    "domains": ["businessinsider.com"],
+    "description": "Business Insider is a New York City-based multinational financial and business news website founded in 2007 that covers technology, finance, markets, economy, business news, lifestyle, and science.",
+    "owner": "Axel Springer SE (via Insider Inc.)",
+    "typology": "Private Media"
   }
 ]
