@@ -398,6 +398,55 @@
                         document.body.classList.remove("overflow-hidden");
                     },
                 });
+
+                Alpine.store("audio", {
+                    isPlaying: false,
+                    currentTune: null,
+                    audioElement: null,
+                    tuneNumber: 1,
+                    showIcon: localStorage.getItem("showMusicIcon") !== "false",
+                    init() {
+                        this.audioElement = new Audio();
+                        this.audioElement.addEventListener('ended', () => {
+                            this.isPlaying = false;
+                        });
+                        this.tuneNumber = Math.floor(Math.random() * 6) + 1;
+                        if (localStorage.getItem("showMusicIcon") === null) {
+                            localStorage.setItem("showMusicIcon", "true");
+                        }
+                    },
+                    toggleIcon() {
+                        this.showIcon = !this.showIcon;
+                        localStorage.setItem("showMusicIcon", this.showIcon);
+                    },
+                    toggle() {
+                        if (this.isPlaying) {
+                            this.pause();
+                        } else {
+                            this.play();
+                        }
+                    },
+                    changeTune() {
+                        this.tuneNumber = this.tuneNumber % 6 + 1;
+                        this.currentTune = `{{ static_path }}/tune${this.tuneNumber}.mp3`;
+                        if (this.isPlaying) {
+                            this.audioElement.src = this.currentTune;
+                            this.audioElement.play();
+                        }
+                    },
+                    play() {
+                        if (!this.currentTune) {
+                            this.currentTune = `{{ static_path }}/tune${this.tuneNumber}.mp3`;
+                            this.audioElement.src = this.currentTune;
+                        }
+                        this.audioElement.play();
+                        this.isPlaying = true;
+                    },
+                    pause() {
+                        this.audioElement.pause();
+                        this.isPlaying = false;
+                    }
+                });
             });
             function lockScroll() {
                 document.body.style.overflow = "hidden";
@@ -1144,7 +1193,36 @@
                              : dateClickCount === 3 ? `You've read ${totalStoriesRead} stories`
                              : `Week ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24 * 7))}, Day ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24))}`"
                     ></div>
-                    <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="relative" x-show="$store.audio.showIcon">
+                            <button 
+                                @click="$store.audio.toggle()" 
+                                title="Play/Pause Music" 
+                                class="flex items-center justify-center w-8 h-8"
+                                x-init="$store.audio.init()"
+                            >
+                                <template x-if="!$store.audio.isPlaying">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </template>
+                                <template x-if="$store.audio.isPlaying">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10h1v4H9zm5 0h1v4h-1z" />
+                                    </svg>
+                                </template>
+                            </button>
+                            <div 
+                                x-show="$store.audio.isPlaying"
+                                @click.stop="$store.audio.changeTune()"
+                                class="absolute -bottom-1 text-xs text-gray-600 dark:text-gray-400 cursor-pointer"
+                                style="right: -0.05rem;"
+                                x-text="$store.audio.tuneNumber"
+                            ></div>
+                        </div>
+                        </button>
                         <button @click="$store.settings.open()" title="Settings" class="ml-2">
                             <img src="{{ static_path }}/svg/gear.svg" alt="" class="h-6 w-6 text-gray-600 dark:text-gray-400 dark:invert" aria-hidden="true" />
                         </button>
@@ -1954,6 +2032,20 @@
                                 :aria-valuenow="$store.storyCount.current"
                                 class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                             />
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Show play music icon</span>
+                            <button
+                                @click="$store.audio.toggleIcon()"
+                                class="relative inline-flex h-6 w-11 items-center rounded-full"
+                                :class="$store.audio.showIcon ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
+                            >
+                                <span class="sr-only">Toggle music icon visibility</span>
+                                <span
+                                    class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                                    :class="$store.audio.showIcon ? 'translate-x-6' : 'translate-x-1'"
+                                ></span>
+                            </button>
                         </div>
                         <div class="flex flex-col space-y-2">
                             <button
