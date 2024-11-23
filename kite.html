@@ -1732,7 +1732,7 @@
                                                 <template x-for="(domain, index) in story.domains" :key="index">
                                                     <button
                                                         x-show="index < visibleSources || showAllSources"
-                                                        class="flex flex-col items-start space-y-1 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-lg transition-colors"
+                                                        class="flex flex-col items-start space-y-1 w-full text-left hover:bg-gray-100 dark:hover:bg-gray-700 py-2 pl-2 rounded-lg transition-colors"
                                                         @click.stop="$dispatch('open-source', { domain: domain, story: story })"
                                                         :aria-label="'Show articles from ' + (domain?.name || 'Unknown')"
                                                         :title="'Show articles from ' + (domain?.name || 'Unknown')"
