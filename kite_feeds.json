@@ -319,6 +319,13 @@
     "feeds": [
       "https://www.err.ee/rss",
       "https://www.postimees.ee/rss",
+      "https://jarvateataja.postimees.ee/rss",
+      "https://saartehaal.postimees.ee/rss",
+      "https://pohjarannik.postimees.ee/rss",
+      "https://virumaateataja.postimees.ee/rss",
+      "https://tartu.postimees.ee/rss",
+      "https://parnu.postimees.ee/rss",
+      "https://sakala.postimees.ee/rss",
       "https://online.le.ee/feed/",
       "https://sonumitooja.ee/feed/",
       "https://kesknadal.ee/feed/",
