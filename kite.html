@@ -1663,9 +1663,9 @@
                     <div x-show="showSourceInfo" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform -translate-y-2" x-transition:enter-end="opacity-100 transform translate-y-0" class="mt-4">
                         <!-- Show this when media info exists -->
                         <template x-if="mediaInfo">
-                            <div class="grid md:grid-cols-2 gap-6">
+                            <div class="grid md:grid-cols-3 gap-6">
                                 <!-- Left Column -->
-                                <div class="space-y-4">
+                                <div class="space-y-4 col-span-1">
                                     <!-- Country -->
                                     <div class="flex items-center gap-2">
                                         <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1722,7 +1722,7 @@
                                 </div>
 
                                 <!-- Right Column -->
-                                <div class="space-y-4">
+                                <div class="space-y-4 col-span-2">
                                     <!-- Description -->
                                     <div x-show="mediaInfo.description" class="text-gray-700 dark:text-gray-300">
                                         <h4 class="font-medium mb-2">Description</h4>
