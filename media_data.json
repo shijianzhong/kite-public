@@ -3,7 +3,7 @@
     "country": "Qatar",
     "organization": "Al Jazeera Media Network",
     "domains": ["aljazeera.com", "aljazeera.net"],
-    "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs. Despite internal rules aimed at establishing the network's independence, there is abundant evidence of state control over editorial content and decision-making. While the station is known for its intrepid reporting especially in its content targeting foreign audiences, criticism of Qatar's ruling elite is totally banned.",
+    "description": "Al Jazeera is an international news network headquartered in Doha, Qatar. It provides news coverage across various categories including politics, business, sports, and international affairs, with a particular focus on Middle Eastern and North African affairs.",
     "owner": "Qatar Media Corporation (QMC)",
     "typology": "State Funded Media"
   },
@@ -11,7 +11,7 @@
     "country": "United Kingdom",
     "organization": "BBC News",
     "domains": ["bbc.com", "bbc.co.uk"],
-    "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs. The BBC's Royal Charter includes a series of guarantees for editorial independence, and the government has no rules that would allow it to intervene in editorial decisions. So, although politicians constantly try to influence the station's editorial content, the BBC has successfully maintained its editorial independence.",
+    "description": "BBC News is the news division of the British Broadcasting Corporation (BBC), providing news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "British Broadcasting Corporation (BBC)",
     "typology": "State Funded Media"
   },
@@ -19,7 +19,7 @@
     "country": "France",
     "organization": "France 24",
     "domains": ["france24.com"],
-    "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs. The channel is owned by the French state through the French Ministry of Europe and Foreign Affairs, but there is no evidence of any government control over the editorial output.",
+    "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "French Ministry of Europe and Foreign Affairs",
     "typology": "State Funded Media"
   },
@@ -27,7 +27,7 @@
     "country": "Russia",
     "organization": "RT",
     "domains": ["rt.com"],
-    "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs. RT is owned by the Russian state through the Russian Ministry of Foreign Affairs, which heavily influences its editorial content. There is a substantial body of documentation and research pertaining to RT's propagandistic activities. This includes academic papers, media articles, and studies conducted by non-governmental organizations (NGOs).",
+    "description": "RT is a Russian international news channel that broadcasts in English. It provides news coverage across various categories including politics, business, sports, and international affairs.",
     "owner": "Russian Ministry of Foreign Affairs",
     "typology": "State Funded Media"
   },
@@ -51,7 +51,7 @@
     "country": "Germany",
     "organization": "Tagesschau",
     "domains": ["tagesschau.de"],
-    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD. The broadcaster is known for its strong reputation as a journalism powerhouse, financial stability and independence, and full accountability to the public.",
+    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -59,7 +59,7 @@
     "country": "Germany",
     "organization": "Deutschlandfunk",
     "domains": ["deutschlandfunk.de", "deutschlandradio.de"],
-    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming. The government does not impose any content-related restrictions on the broadcaster",
+    "description": "Deutschlandfunk is a German public radio broadcaster and part of Deutschlandradio, providing national news, in-depth reporting, analysis and cultural programming.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -67,7 +67,7 @@
     "country": "Germany",
     "organization": "Rundfunk Berlin-Brandenburg",
     "domains": ["rbb-online.de", "rbb24.de"],
-    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states. The government does not impose any content-related restrictions on the broadcaster.",
+    "description": "Rundfunk Berlin-Brandenburg (RBB) is a public broadcaster serving the German federal states of Berlin and Brandenburg, established in 2003. Its focused on regional news, current affairs, and cultural programming for these two states.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -75,7 +75,7 @@
     "country": "Russia",
     "organization": "TASS",
     "domains": ["tass.com", "tass.ru"],
-    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English. According to Russian experts and various academic sources, TASS operates under the editorial control of the Russian government, in accordance with its editorial requests and guidelines.",
+    "description": "TASS is Russia's state-owned news agency established in 1904, providing news coverage, analysis, and multimedia content in Russian and English.",
     "owner": "Government of Russia",
     "typology": "State Funded Media"
   },
@@ -83,7 +83,7 @@
     "country": "Australia",
     "organization": "Australian Broadcasting Corporation",
     "domains": ["abc.net.au"],
-    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms. ABC is governed by rules and legal provisions that expressly forbid authorities and politicians from interfering with the broadcaster's editorial agenda and the ABC is recognized for its leading role in journalistic independence.",
+    "description": "The Australian Broadcasting Corporation (ABC) is Australia's national public broadcaster, providing news, entertainment, and educational content across television, radio, digital and online platforms.",
     "owner": "Australian Government",
     "typology": "State Funded Media"
   },
@@ -91,7 +91,7 @@
     "country": "United States",
     "organization": "National Public Radio",
     "domains": ["npr.org"],
-    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education. The American government does not impose rules on NPR. In spite of some controversies, including accusations of liberal bias, there is no evidence of government control of NPR's editorial coverage.",
+    "description": "NPR is a non-profit media organization providing public radio broadcasting and digital content across the United States through a network of member stations. It produces and distributes news, cultural programming, and podcasts with a focus on journalism, arts, and education.",
     "owner": "Non-profit organization",
     "typology": "State Funded Media"
   },
@@ -99,7 +99,7 @@
     "country": "United States",
     "organization": "Voice of America",
     "domains": ["voanews.com"],
-    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming. VOA has been effectively protected by a “firewall” enshrined in the 1994 US International Broadcasting Act, which bans interference by US government officials in the broadcaster's editorial coverage.",
+    "description": "Voice of America is an international multimedia broadcaster funded by the U.S. government, providing news, information, and cultural programming.",
     "owner": "U.S. Agency for Global Media",
     "typology": "State Funded Media"
   },
@@ -107,7 +107,7 @@
     "country": "United States",
     "organization": "Public Broadcasting Service",
     "domains": ["pbs.org"],
-    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms. No rules are imposed by the American government on PBS. The station has not been accused of political interference in its programming, and no evidence has been found to date.",
+    "description": "PBS is America's public broadcaster operating through a network of over 350 local stations, offering educational and cultural programming across television and digital platforms.",
     "owner": "Corporation for Public Broadcasting (non-profit)",
     "typology": "State Funded Media"
   },
@@ -115,7 +115,7 @@
     "country": "Germany",
     "organization": "Deutsche Welle",
     "domains": ["dw.com"],
-    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms. The Deutsche Welle Act regulates DW's work and is designed to ensure the broadcaster's editorial independence and the ARD (the regional network of which DW is part) is known for its strong reputation as a journalism powerhouse, financial stability and independence.",
+    "description": "Deutsche Welle (DW) is Germany's international public broadcaster providing news, cultural content, and analysis in multiple languages through digital, TV, and radio platforms.",
     "owner": "Federal Government of Germany",
     "typology": "State Funded Media"
   },
@@ -1904,7 +1904,7 @@
     "country": "United States",
     "organization": "San Mateo Daily Journal",
     "domains": ["smdailyjournal.com"],
-    "description": "The San Mateo Daily Journal is a local newspaper serving the San Francisco Peninsula region, specifically focused on San Mateo County, California. The publication provides local news coverage, business updates, and community information through both print and digital formats. ã1ãã2ã",
+    "description": "The San Mateo Daily Journal is a local newspaper serving the San Francisco Peninsula region, specifically focused on San Mateo County, California. The publication provides local news coverage, business updates, and community information through both print and digital formats.",
     "owner": "",
     "typology": "Private Media"
   },
@@ -1934,10 +1934,242 @@
   },
   {
     "country": "United States",
-    "organization": "Google News",
-    "domains": ["news.google.com"],
-    "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. The service uses artificial intelligence to sort articles by topic and presents them based on each user's interests and reading history.",
+    "organization": "Google",
+    "domains": ["google.com", "youtube.com"],
+    "description": "Google News is a news aggregation service developed and operated by Google and launched in 2002. It presents a continuous flow of articles organized from thousands of publishers and magazines worldwide. Youtube is Google's video sharing platform where users can upload, view, and share videos.",
     "owner": "Alphabet Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "TechNews City",
+    "domains": ["technews.city"],
+    "description": "A technology news website that covers AI developments, big tech companies, and health technology.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CNET",
+    "domains": ["cnet.com"],
+    "description": "CNET is a technology-focused media website established in 1994 that publishes product reviews, tech news, how-to guides, and multimedia content. It specializes in consumer electronics and digital technology coverage through articles, videos, and podcasts.",
+    "owner": "Ziff Davis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "TheGamer",
+    "domains": ["thegamer.com"],
+    "description": "TheGamer is a digital gaming publication founded in 2017 that provides video game news, reviews, guides, and opinion pieces. The website produces content covering gaming industry news, in-depth game guides, reviews, and analysis across multiple gaming platforms.",
+    "owner": "Valnet Inc.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "India",
+    "organization": "New Delhi Television (NDTV)",
+    "domains": ["ndtv.com"],
+    "description": "NDTV is a news media company providing news coverage and programming across television and digital platforms, with a significant presence in both domestic and international markets, particularly serving Indian expatriates.",
+    "owner": "Adani Enterprises (64.71%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Israel",
+    "organization": "The Times of Israel",
+    "domains": ["timesofisrael.com"],
+    "description": "The Times of Israel is an Israeli multi-language online newspaper launched in 2012 that provides news coverage focused on Israel, the Middle East, and the Jewish world. It publishes in English, French, Arabic, and Hebrew, offering breaking news, analysis, and opinion pieces about regional and international affairs.",
+    "owner": "David Horovitz",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Euronews",
+    "domains": ["euronews.com"],
+    "description": "Euronews is a European multilingual news channel headquartered in Brussels that broadcasts in 17 languages across Europe and beyond. It provides international news coverage, focusing on European affairs, politics, economy, and culture.",
+    "owner": "Alpac Capital (97.6%)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Al-Monitor",
+    "domains": ["al-monitor.com"],
+    "description": "Al-Monitor is a news organization providing analysis and coverage focused on the Middle East region. The outlet produces original reporting and analysis in multiple languages, targeting decision-makers, policy experts, and academics. It specializes in providing in-depth coverage of regional politics, security issues, and socio-economic developments across Middle Eastern countries.",
+    "owner": "Jamal Daniel",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "The New Arab",
+    "domains": ["newarab.com"],
+    "description": "The New Arab is a London-based pan-Arab news outlet providing English and Arabic language coverage of Middle East, North Africa, and international news through its website and daily newspaper.",
+    "owner": "Fadaat Media",
+    "typology": "Private Media"
+   },
+   {
+    "country": "Pakistan",
+    "organization": "Dawn",
+    "domains": ["dawn.com"],
+    "description": "Dawn is Pakistan's largest English-language newspaper and widely considered the country's newspaper of record. The newspaper provides comprehensive coverage of national, regional and international news, with particular focus on Pakistani politics, business, and current affairs.",
+    "owner": "Haroon-Saigol family",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Canada",
+    "organization": "Winnipeg Free Press",
+    "domains": ["winnipegfreepress.com"],
+    "description": "The Winnipeg Free Press is a daily broadsheet newspaper based in Winnipeg, Manitoba, that publishes every day except Sunday. It provides local, national and international coverage through print and digital platforms for the Winnipeg metropolitan area.",
+    "owner": "FP Canadian Newspapers Limited Partnership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The New Yorker",
+    "domains": ["newyorker.com"],
+    "description": "The New Yorker is a magazine established in 1925 that publishes journalism, commentary, criticism, essays, fiction, satire, cartoons, and poetry.",
+    "owner": "Condé Nast (Advance Publications)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Slate",
+    "domains": ["slate.com"],
+    "description": "Slate is a daily online magazine and podcast network founded in 1996, focusing on politics, news, business, technology, and culture. It operates with a metered paywall model and is known for its contrarian views ('Slate Pitches') and generally liberal editorial stance. The publication combines analysis, commentary, and cultural coverage with a mix of serious journalism and humor.",
+    "owner": "Graham Holdings Company (Washington Post Company)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Christian Science Monitor",
+    "domains": ["csmonitor.com"],
+    "description": "The Christian Science Monitor is a nonprofit international news organization founded in 1908 that publishes daily articles online and a weekly magazine, known for its thoughtful global coverage and focus on constructive journalism.",
+    "owner": "The First Church of Christ, Scientist",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Reason",
+    "domains": ["reason.com"],
+    "description": "Reason is a monthly magazine and media outlet that covers news, politics, culture, and public policy from a libertarian perspective.",
+    "owner": "Reason Foundation (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The American Prospect",
+    "domains": ["prospect.org"],
+    "description": "The American Prospect is a daily online and bimonthly print magazine focused on American politics and public policy, with a progressive and liberal perspective. It provides analysis of public policy issues and political developments through both digital and print formats.",
+    "owner": "The American Prospect, Inc. (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Intercept",
+    "domains": ["theintercept.com"],
+    "description": "The Intercept is an American left-wing nonprofit news organization founded in 2014 that publishes investigative journalism, articles, and podcasts focusing on national security, civil liberties, foreign policy, and criminal justice. It gained prominence for being one of the first outlets to report on Edward Snowden's leaked NSA documents.",
+    "owner": "First Look Media (non-profit)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "CNBC",
+    "domains": ["cnbc.com"],
+    "description": "CNBC is a business and financial news network headquartered in Englewood Cliffs, New Jersey, providing real-time market coverage, business news, and financial information through television and digital platforms. Their audience includes business leaders, investors, financial advisors, and professionals across multiple sectors.",
+    "owner": "NBCUniversal",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Business Insider",
+    "domains": ["businessinsider.com"],
+    "description": "Business Insider is a New York City-based multinational financial and business news website founded in 2007 that covers technology, finance, markets, economy, business news, lifestyle, and science.",
+    "owner": "Axel Springer SE (via Insider Inc.)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Droid Life",
+    "domains": ["droid-life.com"],
+    "description": "Droid Life is a technology blog and news website focused on Android smartphones, devices, and ecosystem. The site provides news coverage, product reviews, tips and tricks, app features, and community discussions centered around Android mobile technology, with particular emphasis on detailed device reviews and Android platform developments.",
+    "owner": "Kellen Barranger",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "TechRadar",
+    "domains": ["techradar.com"],
+    "description": "TechRadar is a technology news and reviews website owned by Future plc, providing consumer-focused coverage of gadgets, computing, mobile devices, and other consumer electronics.",
+    "owner": "Future plc",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Verge",
+    "domains": ["theverge.com"],
+    "description": "The Verge is a technology news and media website founded in 2011 that covers the intersection of technology, science, art, and culture. It produces news coverage, feature stories, investigative reporting, product reviews, and multimedia content through articles, videos, and podcasts, with headquarters in New York City.",
+    "owner": "Vox Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "Redmond Pie",
+    "domains": ["redmondpie.com"],
+    "description": "Redmond Pie is a technology web publication focused on covering news, updates, and developments related to Apple, Microsoft, Google, and Tesla. The site particularly specializes in iOS device coverage, including jailbreaking tutorials and mobile technology news.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "",
+    "organization": "AndroidPCTV",
+    "domains": ["androidpctv.com"],
+    "description": "A technology website focused on reviewing and providing news about Android TV devices, TV boxes, mini PCs, and tablets. The site offers firmware updates, device reviews, and technical information about various Android-based TV boxes and streaming devices.",
+    "owner": "",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "Digital Trends",
+    "domains": ["digitaltrends.com", "dtmg.co"],
+    "description": "Digital Trends is a Portland-based tech news and reviews website founded in 2006 that publishes news, product reviews, guides, how-to articles, videos and podcasts focused on technology and consumer electronics. The site is part of Digital Trends Media Group, which operates multiple millennial-focused media brands covering technology, lifestyle, and consumer products.",
+    "owner": "Ian Bell",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "KnowTechie",
+    "domains": ["knowtechie.com"],
+    "description": "KnowTechie is a technology news blog and website that provides tech news, reviews, how-to guides, and gaming coverage aimed at general tech enthusiasts.",
+    "owner": "Kevin Raposo",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "9to5Google",
+    "domains": ["9to5google.com"],
+    "description": "9to5Google is a technology news website focused on providing daily coverage of Google-related news, including Android devices, Pixel phones, Chrome OS, Google services, and product launches. The site is part of the 9to5 network of technology news websites that includes 9to5Mac and 9to5Toys.",
+    "owner": "Seth Weintraub",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "VentureBeat",
+    "domains": ["venturebeat.com"],
+    "description": "VentureBeat is a technology news website founded in 2006, based in San Francisco, that publishes news, analysis, interviews, and features focusing on transformative technology, particularly AI and gaming.",
+    "owner": "Matt Marshall",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United States",
+    "organization": "The Markup",
+    "domains": ["themarkup.org"],
+    "description": "The Markup is an investigative journalism organization focused on examining technology's impact on society through data-driven reporting and investigations.",
+    "owner": "CalMatters",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Taiwan",
+    "organization": "DIGITIMES Asia",
+    "domains": ["digitimes.com"],
+    "description": "DIGITIMES Asia is a Taiwan-based technology media outlet established in 1998 that specializes in coverage of the global semiconductor and tech supply chain ecosystem, with particular focus on Asia. The organization provides news, analysis, and research services focused on technology industry trends, manufacturing, and supply chain developments.",
+    "owner": "DIGITIMES Inc.",
     "typology": "Private Media"
   }
 ]
