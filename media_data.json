@@ -2171,5 +2171,37 @@
     "description": "DIGITIMES Asia is a Taiwan-based technology media outlet established in 1998 that specializes in coverage of the global semiconductor and tech supply chain ecosystem, with particular focus on Asia. The organization provides news, analysis, and research services focused on technology industry trends, manufacturing, and supply chain developments.",
     "owner": "DIGITIMES Inc.",
     "typology": "Private Media"
+  },
+  {
+    "country": "Estonia",
+    "organization": "ERR News",
+    "domains": ["err.ee"],
+    "description": "ERR News is the Estonian, English and Russian language news service of Estonian Public Broadcasting, providing daily coverage of Estonian and Baltic regional news, politics, culture and current affairs.",
+    "owner": "Estonian Public Broadcasting",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Estonia",
+    "organization": "Postimees",
+    "domains": ["postimees.ee"],
+    "description": "Postimees is Estonia's oldest and largest daily newspaper, founded in 1857. It provides comprehensive coverage of national and international news, politics, business, and culture through Estonian, English and Russian language editions.",
+    "owner": "MM Grupp",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Estonia", 
+    "organization": "Delfi",
+    "domains": ["delfi.ee"],
+    "description": "Delfi is one of Estonia's largest news portals providing news coverage in Estonian, English, Lithuanian, Latvian, Polish and Russian languages. The platform offers real-time news updates, opinion pieces, and multimedia content covering local and international affairs.",
+    "owner": "Ekspress Grupp",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Estonia",
+    "organization": "Äripäev",
+    "domains": ["aripaev.ee"],
+    "description": "Äripäev is Estonia's leading business newspaper and news portal focused on business, financial and economic news coverage. Founded in 1989, it provides in-depth reporting and analysis of Estonian and international business developments.",
+    "owner": "Bonnier Group",
+    "typology": "Private Media"
   }
 ]
