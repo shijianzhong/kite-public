@@ -1727,7 +1727,7 @@
                                                 </svg>
                                             </button>
                                         </div>
-                                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
                                             <template x-if="story.domains">
                                                 <template x-for="(domain, index) in story.domains" :key="index">
                                                     <button
@@ -1739,7 +1739,7 @@
                                                         tabindex="-1"
                                                         style="outline: none;"
                                                     >
-                                                        <div class="flex items-center space-x-2">
+                                                        <div class="flex items-center space-x-2 w-full min-w-0">
                                                             <img
                                                                 :src="domain?.favicon || '{{ static_path }}/svg/placeholder.svg'"
                                                                 :alt="domain?.name ? domain.name + ' Favicon' : 'Default Favicon'"
