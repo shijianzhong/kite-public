@@ -2173,6 +2173,38 @@
     "typology": "Private Media"
   },
   {
+    "country": "Belgium",
+    "organization": "EU Observer",
+    "domains": ["euobserver.com"],
+    "description": "EUobserver is an independent online newspaper established in 2000 that provides daily news coverage focused on the European Union and European affairs. It specializes in EU policy and politics reporting for a professional audience.",
+    "owner": "EUobserver ASBL",
+    "typology": "Private Media"
+  },
+  {
+    "country": "United Kingdom",
+    "organization": "London School of Economics Blog",
+    "domains": ["blogs.lse.ac.uk"],
+    "description": "The LSE's European Politics and Policy blog is an academic blog covering European politics, economics, society and public policy. It provides analysis and insights from researchers and experts in European studies.",
+    "owner": "London School of Economics and Political Science",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Brussels Morning",
+    "domains": ["brusselsmorning.com"],
+    "description": "Brussels Morning is an online newspaper focused on EU politics and policy, providing daily coverage of European affairs, international relations, and Brussels-based EU institutions.",
+    "owner": "Brussels Morning Newspaper LTD",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Hungary",
+    "organization": "Daily News Hungary",
+    "domains": ["dailynewshungary.com"],
+    "description": "Daily News Hungary is an English-language news website covering Hungarian politics, business, culture and current affairs for an international audience.",
+    "owner": "DNH Media Group Kft.",
+    "typology": "Private Media"
+  },
+  {
     "country": "Estonia",
     "organization": "ERR News",
     "domains": ["err.ee"],
