@@ -2215,7 +2215,7 @@
   {
     "country": "Estonia",
     "organization": "Postimees",
-    "domains": ["postimees.ee"],
+    "domains": ["postimees.ee", "pmo.ee"],
     "description": "Postimees is Estonia's oldest and largest daily newspaper, founded in 1857. It provides comprehensive coverage of national and international news, politics, business, and culture through Estonian, English and Russian language editions.",
     "owner": "MM Grupp",
     "typology": "Private Media"
