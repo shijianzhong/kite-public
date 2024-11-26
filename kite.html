@@ -323,21 +323,24 @@
                 Alpine.store("categories", {
                     order: [],
                     enabled: [],
+                    isValidCategory(category){
+                        return category != null && category !== undefined && category !== "";
+                    },
                     init() {
                         const savedOrder = JSON.parse(localStorage.getItem("categoryOrder"));
                         const savedEnabled = JSON.parse(localStorage.getItem("enabledCategories"));
                         if (savedOrder) {
-                            this.order = savedOrder.filter((cat) => cat != null && cat !== undefined && cat !== "");
+                            this.order = savedOrder.filter((cat) => this.isValidCategory(cat));
                         }
                         if (savedEnabled) {
                             // Reorder enabled categories to match the order in categoryOrder and filter out null values
-                            this.enabled = this.order.filter((cat) => cat != null && cat !== undefined && cat !== "" && savedEnabled.includes(cat));
+                            this.enabled = this.order.filter((cat) => this.isValidCategory(cat) && savedEnabled.includes(cat));
                         }
                         // Save the cleaned up enabled categories
                         localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
                     },
-                    updateOrder(newOrder) {
-                        this.order = newOrder.filter((cat) => cat !== null && cat !== undefined && cat !== "");
+                    saveNewOrder(newOrder) {
+                        this.order = newOrder.filter((cat) => this.isValidCategory(cat));
                         // Don't modify enabled categories here - let the Sortable handler manage that
                         localStorage.setItem("categoryOrder", JSON.stringify(this.order));
                         localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
@@ -819,8 +822,7 @@
                         categoriesStore.order = newFullOrder;
 
                         // Update localStorage
-                        localStorage.setItem("enabledCategories", JSON.stringify(newEnabledOrder));
-                        localStorage.setItem("categoryOrder", JSON.stringify(newFullOrder));
+                        categoriesStore.saveNewOrder(newFullOrder);
 
                         // Update available categories
                         this.availableCategories = newFullOrder
@@ -829,12 +831,19 @@
                     },
                     handleCategoryClick(category) {
                         const categoriesStore = Alpine.store("categories");
-                        if (categoriesStore.enabled.length > 1 && !categoriesStore.enabled.includes(category)) {
+                        if (!categoriesStore.enabled.includes(category)) {
                             categoriesStore.enableCategory(category);
                         }
-                        else if(categoriesStore.enabled.includes(category)){
+                        else if(categoriesStore.enabled.length > 1 && categoriesStore.enabled.includes(category)){
                             categoriesStore.enabled = categoriesStore.enabled.filter(cat => cat !== category);
+                            if (category === this.currentCategory) { // If user disables current category, set to first enabled category
+                                this.currentCategory = categoriesStore.enabled[0];
+                                this.changeCategory();
+                            }
                         }
+
+                        localStorage.setItem("enabledCategories", JSON.stringify(categoriesStore.enabled));
+                        
                         this.updateCategoryDropdown();
                         this.renderCategoryUI();
                     },
@@ -859,13 +868,6 @@
                                 select.appendChild(option);
                             }
                         });
-
-                        // Ensure current category is the first enabled one
-                        const firstEnabledCategory = enabledCategories[0];
-                        if (firstEnabledCategory && firstEnabledCategory !== this.currentCategory) {
-                            this.currentCategory = firstEnabledCategory;
-                            this.changeCategory();
-                        }
                     },
                     closeIntro() {
                         this.showIntro = false;
