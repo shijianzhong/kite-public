@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" href="{{ static_path }}/apple-touch-icon.png" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.4/Sortable.min.js"></script>
         <link rel="stylesheet" href="{{ static_path }}/kite.css?{{ timestamp }}" />
         <script>
             const timestamp = Date.now();
@@ -696,8 +696,8 @@
                                 }
 
                                 this.updateCategoryDropdown();
-                                this.renderCategoryUI();
-
+                                this.renderCategories();
+                                this.initCategorySortable();
                                 const articleId = getArticleIdFromUrl();
                                 if (articleId) {
                                     this.openSharedArticle(articleId);
@@ -754,50 +754,26 @@
                                 this.initialLoading = false;
                             });
                     },
-                    renderCategoryUI() {
-                        const enabledContainer = document.querySelector('#enabled-categories');
-                        const disabledContainer = document.querySelector('#disabled-categories');
-                        
-                        if (!enabledContainer || !disabledContainer) return;
-                        
-                        // Clear existing content
-                        enabledContainer.innerHTML = '';
-                        disabledContainer.innerHTML = '';
-                        
-                        const categoriesStore = Alpine.store('categories');
-                        
-                        // Helper function to create category element
-                        const createCategoryElement = (categoryName, isEnabled) => {
-                            const div = document.createElement('div');
-                            div.className = `px-4 py-3 rounded-md text-sm font-medium cursor-pointer flex items-center justify-center min-h-[48px] ${
-                                isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600'
-                            }`;
-                            div.dataset.category = categoryName;
-                            div.onclick = () => {
-                                this.handleCategoryClick(categoryName);
-                            };
-                            
-                            const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
-                            div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
-                            return div;
+                    createCategoryElement(categoryName, isEnabled) {
+                        const div = document.createElement('div');
+                        div.className = `px-4 py-3 rounded-md text-sm cursor-pointer font-medium flex items-center justify-center min-h-[48px] ${
+                            isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
+                        }`;
+                        div.dataset.category = categoryName;
+                        div.onclick = () => {
+                            this.handleCategoryClick(categoryName);
                         };
-
-                        // Render enabled categories
-                        categoriesStore.enabled.forEach(categoryName => {
-                            enabledContainer.appendChild(createCategoryElement(categoryName, true));
-                        });
-
-                        // Render disabled categories
-                        this.availableCategories
-                            .map((cat) => cat.name)
-                            .filter(cat => !categoriesStore.enabled.includes(cat))
-                            .forEach(categoryName => {
-                                disabledContainer.appendChild(createCategoryElement(categoryName, false));
-                            });
-
-                        // Initialize Sortable only for enabled categories
+                            
+                        const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
+                        div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
+                        return div;
+                    },
+                    initCategorySortable() {
+                        const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
                         new Sortable(enabledContainer, {
                             animation: 150,
+                            ghostClass: "bg-blue-600",
+                            swapThreshold: 0.5,
                             onEnd: (evt) => {
                                 const newEnabledOrder = Array.from(evt.to.children)
                                     .map(el => el.dataset.category)
@@ -806,6 +782,31 @@
                                 this.updateCategoryOrders(newEnabledOrder);
                             }
                         });
+                    },
+                    renderCategories() {
+                        const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
+                        const disabledContainer = document.querySelector('[x-ref="disabledCategories"]');
+                        const categoriesStore = Alpine.store('categories');
+                        
+                        // Clear existing content
+                        enabledContainer.innerHTML = '';
+                        disabledContainer.innerHTML = '';
+                        
+                        
+                        // Render enabled categories
+                        categoriesStore.enabled.forEach(categoryName => {
+                            enabledContainer.appendChild(this.createCategoryElement(categoryName, true));
+                        });
+                        
+                        // Render disabled categories
+                        this.availableCategories
+                            .map((cat) => cat.name)
+                            .filter(cat => !categoriesStore.enabled.includes(cat))
+                            .forEach(categoryName => {
+                                disabledContainer.appendChild(this.createCategoryElement(categoryName, false));
+                            });
+                                                
+                        console.log("Categories rendered");
                     },
                     updateCategoryOrders(newEnabledOrder) {
                         const categoriesStore = Alpine.store("categories");
@@ -845,7 +846,8 @@
                         localStorage.setItem("enabledCategories", JSON.stringify(categoriesStore.enabled));
                         
                         this.updateCategoryDropdown();
-                        this.renderCategoryUI();
+                        this.renderCategories();
+
                     },
                     updateCategoryDropdown() {
                         const select = document.getElementById("category-select");
@@ -2073,18 +2075,19 @@
                         </div>
                     </div>
                     <!-- Categories Tab -->
-                    <div x-show="activeTab === 'categories'" class="space-y-6" x-init="renderCategoryUI()">
+                    <div x-show="activeTab === 'categories'" class="space-y-6">
                         <div class="flex flex-col space-y-2">
                             <p class="text-xs text-gray-500 dark:text-gray-400">Tap to toggle. Drag enabled categories to reorder.</p>
 
                             <!-- Enabled categories grid -->
-                            <div id="enabled-categories" class="grid grid-cols-3 gap-3 mb-4" x-ref="enabledCategories"></div>
+                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4""></div>
 
                             <!-- Separator -->
                             <div class="border-t border-gray-200 dark:border-gray-700 my-4"></div>
 
                             <!-- Disabled categories grid -->
-                            <div id="disabled-categories" class="grid grid-cols-3 gap-3"></div>
+                            <div x-ref="disabledCategories" class="grid grid-cols-3 gap-3"></div>
+
                             <!-- Contribute link -->
                             <div class="flex justify-center mt-4">
                                 <a href="https://github.com/kagisearch/kite-public" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 text-sm">
