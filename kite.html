@@ -785,9 +785,22 @@
                             isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
                             }`;
                             div.dataset.category = categoryName;
-                            div.onclick = () => {
+
+
+                            // Use pointer workaround instead of click to avoid mobile browser issues
+                            let startTime = 0;
+                            div.addEventListener('pointerdown', (e) => {
+                                startTime = Date.now();
+                            });
+
+                            div.addEventListener('pointerup', (e) => {
+                                console.log("Pointer up", categoryName);
+                                // Only trigger click if the pointer was down for less than 200ms (distinguishes from drag)
+                                if (Date.now() - startTime < 200) {
                                 self.handleCategoryClick(categoryName);
-                            };
+                                }
+                            });
+
                                 
                             const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
                             div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
@@ -806,8 +819,6 @@
                             .forEach(categoryName => {
                                 disabledContainer.appendChild(createCategoryElement(categoryName, false));
                             });
-                                                
-                        console.log("Categories rendered");
                     },
                     updateCategoryOrders(newEnabledOrder) {
                         const categoriesStore = Alpine.store("categories");
