@@ -754,20 +754,6 @@
                                 this.initialLoading = false;
                             });
                     },
-                    createCategoryElement(categoryName, isEnabled) {
-                        const div = document.createElement('div');
-                        div.className = `px-4 py-3 rounded-md text-sm cursor-pointer font-medium flex items-center justify-center min-h-[48px] ${
-                            isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
-                        }`;
-                        div.dataset.category = categoryName;
-                        div.onclick = () => {
-                            this.handleCategoryClick(categoryName);
-                        };
-                            
-                        const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
-                        div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
-                        return div;
-                    },
                     initCategorySortable() {
                         const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
                         new Sortable(enabledContainer, {
@@ -787,15 +773,30 @@
                         const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
                         const disabledContainer = document.querySelector('[x-ref="disabledCategories"]');
                         const categoriesStore = Alpine.store('categories');
+                        const self = this;
                         
                         // Clear existing content
                         enabledContainer.innerHTML = '';
                         disabledContainer.innerHTML = '';
                         
-                        
+                        function createCategoryElement(categoryName, isEnabled) {
+                            const div = document.createElement('div');
+                            div.className = `px-4 py-3 rounded-md text-sm cursor-pointer font-medium flex items-center justify-center min-h-[48px] ${
+                            isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
+                            }`;
+                            div.dataset.category = categoryName;
+                            div.onclick = () => {
+                                self.handleCategoryClick(categoryName);
+                            };
+                                
+                            const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
+                            div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
+                            return div;
+                        }
+
                         // Render enabled categories
                         categoriesStore.enabled.forEach(categoryName => {
-                            enabledContainer.appendChild(this.createCategoryElement(categoryName, true));
+                            enabledContainer.appendChild(createCategoryElement(categoryName, true));
                         });
                         
                         // Render disabled categories
@@ -803,7 +804,7 @@
                             .map((cat) => cat.name)
                             .filter(cat => !categoriesStore.enabled.includes(cat))
                             .forEach(categoryName => {
-                                disabledContainer.appendChild(this.createCategoryElement(categoryName, false));
+                                disabledContainer.appendChild(createCategoryElement(categoryName, false));
                             });
                                                 
                         console.log("Categories rendered");
