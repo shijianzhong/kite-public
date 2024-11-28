@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" href="{{ static_path }}/apple-touch-icon.png" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.4/Sortable.min.js"></script>
         <link rel="stylesheet" href="{{ static_path }}/kite.css?{{ timestamp }}" />
         <script>
             const timestamp = Date.now();
@@ -323,26 +323,29 @@
                 Alpine.store("categories", {
                     order: [],
                     enabled: [],
+                    isValidCategory(category){
+                        return category != null && category !== undefined && category !== "";
+                    },
                     init() {
                         const savedOrder = JSON.parse(localStorage.getItem("categoryOrder"));
                         const savedEnabled = JSON.parse(localStorage.getItem("enabledCategories"));
                         if (savedOrder) {
-                            this.order = savedOrder.filter((cat) => cat != null && cat !== undefined && cat !== "");
+                            this.order = savedOrder.filter((cat) => this.isValidCategory(cat));
                         }
                         if (savedEnabled) {
                             // Reorder enabled categories to match the order in categoryOrder and filter out null values
-                            this.enabled = this.order.filter((cat) => cat != null && cat !== undefined && cat !== "" && savedEnabled.includes(cat));
+                            this.enabled = this.order.filter((cat) => this.isValidCategory(cat) && savedEnabled.includes(cat));
                         }
                         // Save the cleaned up enabled categories
                         localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
                     },
-                    updateOrder(newOrder) {
-                        this.order = newOrder.filter((cat) => cat !== null && cat !== undefined && cat !== "");
+                    saveNewOrder(newOrder) {
+                        this.order = newOrder.filter((cat) => this.isValidCategory(cat));
                         // Don't modify enabled categories here - let the Sortable handler manage that
                         localStorage.setItem("categoryOrder", JSON.stringify(this.order));
                         localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
                     },
-                    toggle(category) {
+                    enableCategory(category) {
                         const index = this.enabled.indexOf(category);
                         if (index > -1) {
                             if (this.enabled.length > 1) {
@@ -358,7 +361,6 @@
                                 this.enabled.splice(insertIndex, 0, category);
                             }
                         }
-                        localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
                     },
                     isEnabled(category) {
                         return this.enabled.includes(category);
@@ -694,7 +696,8 @@
                                 }
 
                                 this.updateCategoryDropdown();
-
+                                this.renderCategories();
+                                this.initCategorySortable();
                                 const articleId = getArticleIdFromUrl();
                                 if (articleId) {
                                     this.openSharedArticle(articleId);
@@ -707,10 +710,6 @@
                         Alpine.store("sections").init();
 
                         fetchChaosIndex();
-
-                        this.$nextTick(() => {
-                            this.initSortable();
-                        });
                     },
                     fetchCategories() {
                         return fetch(`{{ base_path }}kite.json?${timestamp}`)
@@ -755,75 +754,112 @@
                                 this.initialLoading = false;
                             });
                     },
-                    initSortable() {
-                        const el = document.getElementById("enabled-categories");
-                        if (el) {
-                            this.sortableInstance = new Sortable(el, {
-                                animation: 150,
-                                ghostClass: "bg-blue-600",
-                                forceFallback: false,
-                                fallbackClass: "sortable-fallback",
-                                setData: function () {
-                                    return false;
-                                },
-                                onStart: (evt) => {
-                                    evt.from.setAttribute("x-skip", "");
-                                },
-                                onEnd: (evt) => {
-                                    evt.from.removeAttribute("x-skip");
+                    initCategorySortable() {
+                        const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
+                        new Sortable(enabledContainer, {
+                            animation: 150,
+                            ghostClass: "bg-blue-600",
+                            swapThreshold: 0.5,
+                            onEnd: (evt) => {
+                                const newEnabledOrder = Array.from(evt.to.children)
+                                    .map(el => el.dataset.category)
+                                    .filter(Boolean);
+                                
+                                this.updateCategoryOrders(newEnabledOrder);
+                            }
+                        });
+                    },
+                    renderCategories() {
+                        const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
+                        const disabledContainer = document.querySelector('[x-ref="disabledCategories"]');
+                        const categoriesStore = Alpine.store('categories');
+                        const self = this;
+                        
+                        // Clear existing content
+                        enabledContainer.innerHTML = '';
+                        disabledContainer.innerHTML = '';
+                        
+                        function createCategoryElement(categoryName, isEnabled) {
+                            const div = document.createElement('div');
+                            div.className = `px-4 py-3 rounded-md text-sm cursor-pointer font-medium flex items-center justify-center min-h-[48px] ${
+                            isEnabled ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600'
+                            }`;
+                            div.dataset.category = categoryName;
 
-                                    const newEnabledOrder = Array.from(el.children)
-                                        .map((item) => item.dataset.category)
-                                        .filter(Boolean);
 
-                                    const categoriesStore = Alpine.store("categories");
-
-                                    categoriesStore.enabled = [...newEnabledOrder];
-
-                                    const currentOrder = categoriesStore.order;
-                                    const newFullOrder = [...newEnabledOrder, ...currentOrder.filter((cat) => !newEnabledOrder.includes(cat))];
-                                    categoriesStore.order = [...newFullOrder];
-
-                                    localStorage.setItem("enabledCategories", JSON.stringify(newEnabledOrder));
-                                    localStorage.setItem("categoryOrder", JSON.stringify(newFullOrder));
-
-                                    this.availableCategories = newFullOrder.map((catName) => this.availableCategories.find((cat) => cat.name === catName)).filter(Boolean);
-
-                                    this.$nextTick(() => {
-                                        const sortableGrid = document.getElementById("enabled-categories");
-                                        if (sortableGrid) {
-                                            const newHTML = newEnabledOrder
-                                                .map(
-                                                    (catName) => `
-                                            <div data-category="${catName}" 
-                                                 class="bg-blue-500 text-white px-4 py-3 rounded-md text-sm font-medium cursor-pointer flex items-center justify-center min-h-[48px]">
-                                                <span>${catName}</span>
-                                            </div>
-                                        `
-                                                )
-                                                .join("");
-                                            sortableGrid.innerHTML = newHTML;
-                                        }
-
-                                        const categoryTabs = document.querySelector(".category-tabs");
-                                        if (categoryTabs) {
-                                            Alpine.morph(categoryTabs, categoryTabs.outerHTML);
-                                        }
-
-                                        this.sortableInstance.destroy();
-                                        this.initSortable();
-                                    });
-                                },
+                            // Use pointer workaround instead of click to avoid mobile browser issues
+                            let startTime = 0;
+                            div.addEventListener('pointerdown', (e) => {
+                                startTime = Date.now();
                             });
+
+                            div.addEventListener('pointerup', (e) => {
+                                console.log("Pointer up", categoryName);
+                                // Only trigger click if the pointer was down for less than 200ms (distinguishes from drag)
+                                if (Date.now() - startTime < 200) {
+                                self.handleCategoryClick(categoryName);
+                                }
+                            });
+
+                                
+                            const displayName = categoryName === 'OnThisDay' ? 'Today in History' : categoryName;
+                            div.innerHTML = `<span class='text-sm font-medium'>${displayName}</span>`;
+                            return div;
                         }
+
+                        // Render enabled categories
+                        categoriesStore.enabled.forEach(categoryName => {
+                            enabledContainer.appendChild(createCategoryElement(categoryName, true));
+                        });
+                        
+                        // Render disabled categories
+                        this.availableCategories
+                            .map((cat) => cat.name)
+                            .filter(cat => !categoriesStore.enabled.includes(cat))
+                            .forEach(categoryName => {
+                                disabledContainer.appendChild(createCategoryElement(categoryName, false));
+                            });
+                    },
+                    updateCategoryOrders(newEnabledOrder) {
+                        const categoriesStore = Alpine.store("categories");
+                        const currentOrder = categoriesStore.order;
+
+                        // Update enabled categories
+                        categoriesStore.enabled = [...newEnabledOrder];
+
+                        // Create new full order maintaining positions
+                        const newFullOrder = [
+                            ...newEnabledOrder,
+                            ...currentOrder.filter(cat => !newEnabledOrder.includes(cat))
+                        ];
+                        categoriesStore.order = newFullOrder;
+
+                        // Update localStorage
+                        categoriesStore.saveNewOrder(newFullOrder);
+
+                        // Update available categories
+                        this.availableCategories = newFullOrder
+                            .map(catName => this.availableCategories.find(cat => cat.name === catName))
+                            .filter(Boolean);
                     },
                     handleCategoryClick(category) {
                         const categoriesStore = Alpine.store("categories");
-                        if (categoriesStore.enabled.length > 1) {
-                            categoriesStore.toggle(category.name);
-                            this.updateCategoryDropdown();
-                            this.changeCategory();
+                        if (!categoriesStore.enabled.includes(category)) {
+                            categoriesStore.enableCategory(category);
                         }
+                        else if(categoriesStore.enabled.length > 1 && categoriesStore.enabled.includes(category)){
+                            categoriesStore.enabled = categoriesStore.enabled.filter(cat => cat !== category);
+                            if (category === this.currentCategory) { // If user disables current category, set to first enabled category
+                                this.currentCategory = categoriesStore.enabled[0];
+                                this.changeCategory();
+                            }
+                        }
+
+                        localStorage.setItem("enabledCategories", JSON.stringify(categoriesStore.enabled));
+                        
+                        this.updateCategoryDropdown();
+                        this.renderCategories();
+
                     },
                     updateCategoryDropdown() {
                         const select = document.getElementById("category-select");
@@ -846,13 +882,6 @@
                                 select.appendChild(option);
                             }
                         });
-
-                        // Ensure current category is the first enabled one
-                        const firstEnabledCategory = enabledCategories[0];
-                        if (firstEnabledCategory && firstEnabledCategory !== this.currentCategory) {
-                            this.currentCategory = firstEnabledCategory;
-                            this.changeCategory();
-                        }
                     },
                     closeIntro() {
                         this.showIntro = false;
@@ -2063,32 +2092,14 @@
                             <p class="text-xs text-gray-500 dark:text-gray-400">Tap to toggle. Drag enabled categories to reorder.</p>
 
                             <!-- Enabled categories grid -->
-                            <div id="enabled-categories" class="grid grid-cols-3 gap-3 mb-4" x-ref="enabledCategories">
-                                <template x-for="category in availableCategories.filter(c => $store.categories.isEnabled(c.name))" :key="category.name">
-                                    <div
-                                        :data-category="category.name"
-                                        class="bg-blue-500 text-white px-4 py-3 rounded-md text-sm font-medium cursor-pointer flex items-center justify-center min-h-[48px]"
-                                        @click="handleCategoryClick(category)"
-                                    >
-                                        <span x-text="category.name"></span>
-                                    </div>
-                                </template>
-                            </div>
+                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4""></div>
 
                             <!-- Separator -->
                             <div class="border-t border-gray-200 dark:border-gray-700 my-4"></div>
 
                             <!-- Disabled categories grid -->
-                            <div class="grid grid-cols-3 gap-3">
-                                <template x-for="category in availableCategories.filter(c => !$store.categories.isEnabled(c.name))" :key="category.name">
-                                    <div
-                                        :data-category="category.name"
-                                        class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-4 py-3 rounded-md text-sm font-medium cursor-pointer min-h-[48px] flex items-center justify-center"
-                                        @click="$store.categories.toggle(category.name); updateCategoryDropdown(); changeCategory();"
-                                        x-text="category.name"
-                                    ></div>
-                                </template>
-                            </div>
+                            <div x-ref="disabledCategories" class="grid grid-cols-3 gap-3"></div>
+
                             <!-- Contribute link -->
                             <div class="flex justify-center mt-4">
                                 <a href="https://github.com/kagisearch/kite-public" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 text-sm">
