@@ -361,6 +361,8 @@
                                 this.enabled.splice(insertIndex, 0, category);
                             }
                         }
+
+                        localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
                     },
                     isEnabled(category) {
                         return this.enabled.includes(category);
@@ -794,7 +796,6 @@
                             });
 
                             div.addEventListener('pointerup', (e) => {
-                                console.log("Pointer up", categoryName);
                                 // Only trigger click if the pointer was down for less than 200ms (distinguishes from drag)
                                 if (Date.now() - startTime < 200) {
                                 self.handleCategoryClick(categoryName);
@@ -956,7 +957,7 @@
 
                                 // Make sure the category is enabled
                                 if (!Alpine.store("categories").enabled.includes(targetCategory)) {
-                                    Alpine.store("categories").toggle(targetCategory);
+                                    Alpine.store("categories").enableCategory(targetCategory);
                                 }
 
                                 // Update category dropdown and UI
@@ -1027,7 +1028,7 @@
                             let enabledCategories = Alpine.store("categories").enabled;
 
                             if (enabledCategories.length === 0) {
-                                this.availableCategories.forEach((cat) => Alpine.store("categories").toggle(cat.name));
+                                this.availableCategories.forEach((cat) => Alpine.store("categories").enableCategory(cat.name));
                                 enabledCategories = Alpine.store("categories").enabled;
                             }
 
