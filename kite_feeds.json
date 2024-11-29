@@ -428,6 +428,37 @@
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE:de"
     ]
   },
+  "Germany | Hesse": {
+    "feeds": [
+      "https://www.hessenschau.de/index.rss",
+      "https://www.fr.de/hessen/rssfeed.rdf",
+      "https://www.faz.net/rss/aktuell/rhein-main/",
+      "https://www.op-online.de/hessen/rssfeed.rdf",
+      "https://www.giessener-allgemeine.de/hessen/rssfeed.rdf",
+      "https://www.t-online.de/region/hessen/feed.rss",
+      "https://osthessen-news.de/rss_feed.xml",
+      "https://www.main-echo.de/storage/rss/rss/rhein_main_hessen.xml",
+      "https://www.gnz.de/arc/outboundfeeds/rss/",
+      "https://vorsprung-online.de/?format=feed&type=rss",
+      "https://www.op-marburg.de/arc/outboundfeeds/rss/",
+      "https://www.wiesbadener-kurier.de/rss/lokales/hessen/",
+      "https://www.journal-frankfurt.de/rss/news_alle.xml",
+      "https://www.presseportal.de/rss/polizei/laender/6.rss2",
+      "https://www.allgemeine-zeitung.de/rss/lokales/hessen/",
+      "https://www.spiegel.de/thema/hessen/index.rss",
+      "https://newsfeed.zeit.de/thema/hessen",
+      "https://www.n-tv.de/regionales/hessen/rss",
+      "https://nh24.de/feed/",
+      "https://www.echo-online.de/rss/lokales/hessen/",
+      "https://www.hessennews.tv/feed/",
+      "https://www.hersfelder-zeitung.de/hessen/rssfeed.rdf",
+      "https://byc-news.de/feed/",
+      "https://www.oberlahn.de/Nachrichten/?rss=rss20",
+      "https://suedhessen.news/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGxyY25BU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE%3Ade&oc=11"
+      "https://www.werra-rundschau.de/hessen/rssfeed.rdf"
+    ]
+  },
   "Italy": {
     "feeds": [
       "https://www.ilpost.it/italia/feed/",
