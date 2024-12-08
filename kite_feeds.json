@@ -665,6 +665,29 @@
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
     ]
   },
+  "Belgium": {
+    "feeds": [
+      "https://www.vrt.be/vrtnieuws/nl.rss.articles.xml",
+      "https://www.rtbf.be/article/le-flux-rss-mode-d-emploi-3266",
+      "https://sporza.be/nl.rss.xml",
+      "https://www.hln.be/home/rss.xml",
+      "https://www.demorgen.be/in-het-nieuws/rss.xml",
+      "https://www.lesoir.be/services/rss",
+      "https://www.standaard.be/rssfeeds",
+      "https://www.nieuwsblad.be/rss",
+      "https://www.lalibre.be/rss/about/",
+      "https://www.tijd.be/rss/nieuws.xml",
+      "https://www.knack.be/feed/",
+      "http://www.sudinfo.be/feed/10127",
+      "https://www.gva.be/rss",
+      "https://www.hbvl.be/rss",
+      "https://www.bruzz.be/rss.xml",
+      "https://focus-wtv.be/feed/home.xml",
+      "https://www.apache.be/feed/artikels",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=nl&gl=BE&ceid=BE:nl",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=fr&gl=BE&ceid=BE:fr"
+    ]
+  },
   "Vermont": {
     "feeds": [
       "https://www.addisonindependent.com/feed/",
