@@ -1267,7 +1267,7 @@
                                 :aria-controls="'category-' + category.name"
                                 class="category-tab"
                                 :class="{ 'active': currentCategory === category.name }"
-                                @click="if (!isScrolling) { currentCategory = category.name; changeCategory(); updateUrlWithArticleId(''); }"
+                                @click="if (!isScrolling) { currentCategory = category.name; changeCategory(); updateUrlWithArticleId(''); window.scrollTo({ top: 0, behavior: 'smooth' }); }"
                                 x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
                             ></div>
                         </template>
@@ -1728,7 +1728,7 @@
                                                     <div class="body">
                                                         <span
                                                             x-text="typeof event === 'object' ? event.description :
-                                                        (typeof event === 'string' && event.includes('::')) ? event.split('::')[1] : event"
+                                                        (typeof event === 'string' && event.includes('::')) ? event.split('::').slice(1).join(':') : event"
                                                         ></span>
                                                     </div>
                                                 </div>
@@ -2093,7 +2093,7 @@
                             <p class="text-xs text-gray-500 dark:text-gray-400">Tap to toggle. Drag enabled categories to reorder.</p>
 
                             <!-- Enabled categories grid -->
-                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4""></div>
+                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4"></div>
 
                             <!-- Separator -->
                             <div class="border-t border-gray-200 dark:border-gray-700 my-4"></div>
