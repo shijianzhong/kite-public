@@ -641,8 +641,26 @@
                             }, 500);
                         }
                     },
+                    allStoriesRead: false,
+                    markAllAsRead() {
+                        // Mark all stories in current category as read
+                        this.stories.forEach(story => {
+                            if (!this.readStories[story.title]) {
+                                this.readStories[story.title] = true;
+                                this.totalStoriesRead++;
+                            }
+                        });
+                        // Update localStorage
+                        localStorage.setItem("readStories", JSON.stringify(this.readStories));
+                        localStorage.setItem("totalStoriesRead", this.totalStoriesRead);
+                        // Hide the button
+                        this.allStoriesRead = true;
+                    },
                     async init() {
                         Alpine.store("categories").init();
+
+                        // Check if all stories are read
+                        this.allStoriesRead = this.stories.every(story => this.readStories[story.title]);
 
                         // Load media data
                         try {
@@ -1267,7 +1285,7 @@
                                 :aria-controls="'category-' + category.name"
                                 class="category-tab"
                                 :class="{ 'active': currentCategory === category.name }"
-                                @click="if (!isScrolling) { currentCategory = category.name; changeCategory(); updateUrlWithArticleId(''); }"
+                                @click="if (!isScrolling) { currentCategory = category.name; changeCategory(); updateUrlWithArticleId(''); window.scrollTo({ top: 0, behavior: 'smooth' }); }"
                                 x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
                             ></div>
                         </template>
@@ -1728,7 +1746,7 @@
                                                     <div class="body">
                                                         <span
                                                             x-text="typeof event === 'object' ? event.description :
-                                                        (typeof event === 'string' && event.includes('::')) ? event.split('::')[1] : event"
+                                                        (typeof event === 'string' && event.includes('::')) ? event.split('::').slice(1).join(':') : event"
                                                         ></span>
                                                     </div>
                                                 </div>
@@ -1819,6 +1837,14 @@
                             </article>
                         </template>
                     </template>
+                    <div x-show="stories.length > 0 && currentCategory !== 'OnThisDay' && !stories.every(story => readStories[story.title])" class="mt-6 w-full text-center">
+                        <button
+                            @click="markAllAsRead(); window.scrollTo({ top: 0, behavior: 'smooth' })"
+                            class="w-full md:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200"
+                        >
+                            Mark all as read
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -2093,7 +2119,7 @@
                             <p class="text-xs text-gray-500 dark:text-gray-400">Tap to toggle. Drag enabled categories to reorder.</p>
 
                             <!-- Enabled categories grid -->
-                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4""></div>
+                            <div x-ref="enabledCategories" class="grid grid-cols-3 gap-3 mb-4"></div>
 
                             <!-- Separator -->
                             <div class="border-t border-gray-200 dark:border-gray-700 my-4"></div>
