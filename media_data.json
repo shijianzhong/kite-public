@@ -2235,5 +2235,140 @@
     "description": "Äripäev is Estonia's leading business newspaper and news portal focused on business, financial and economic news coverage. Founded in 1989, it provides in-depth reporting and analysis of Estonian and international business developments.",
     "owner": "Bonnier Group",
     "typology": "Private Media"
+  },{
+    "country": "Belgium",
+    "organization": "VRT",
+    "domains": ["vrt.be"],
+    "description": "VRT is the Flemish public broadcaster, providing news and cultural content across television, radio, and digital platforms.",
+    "owner": "Flemish Government",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "RTBF",
+    "domains": ["rtbf.be"],
+    "description": "RTBF is the public broadcaster for the French-speaking community in Belgium, offering a wide range of news and entertainment content.",
+    "owner": "French Community of Belgium",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Sporza",
+    "domains": ["sporza.be"],
+    "description": "Sporza is a sports-focused brand of VRT, providing comprehensive sports coverage and live broadcasts.",
+    "owner": "VRT",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Het Laatste Nieuws",
+    "domains": ["hln.be"],
+    "description": "Het Laatste Nieuws is a popular Flemish daily newspaper known for its comprehensive news coverage and entertainment content.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "De Morgen",
+    "domains": ["demorgen.be"],
+    "description": "De Morgen is a Flemish daily newspaper offering in-depth news analysis and cultural reporting.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Le Soir",
+    "domains": ["lesoir.be"],
+    "description": "Le Soir is a leading French-language daily newspaper in Belgium, providing comprehensive news coverage and analysis.",
+    "owner": "Rossel Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "De Standaard",
+    "domains": ["standaard.be"],
+    "description": "De Standaard is a Flemish daily newspaper known for its quality journalism and in-depth news coverage.",
+    "owner": "Mediahuis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Het Nieuwsblad",
+    "domains": ["nieuwsblad.be"],
+    "description": "Nieuwsblad is a Flemish daily newspaper offering a mix of news, sports, and entertainment content.",
+    "owner": "Mediahuis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "La Libre Belgique",
+    "domains": ["lalibre.be"],
+    "description": "La Libre Belgique is a French-language daily newspaper in Belgium, known for its independent news coverage and analysis.",
+    "owner": "IPM Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "De Tijd",
+    "domains": ["tijd.be"],
+    "description": "De Tijd is a Flemish business newspaper providing in-depth financial and economic news.",
+    "owner": "Mediafin",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Knack",
+    "domains": ["knack.be"],
+    "description": "Knack is a Flemish weekly news magazine offering investigative journalism and in-depth analysis.",
+    "owner": "Roularta Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Sudinfo",
+    "domains": ["sudinfo.be"],
+    "description": "Sudinfo is a French-language news platform providing local and national news coverage in Belgium.",
+    "owner": "Rossel Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Gazet van Antwerpen",
+    "domains": ["gva.be"],
+    "description": "Gazet van Antwerpen is a regional newspaper in Belgium, focusing on news from the Antwerp region.",
+    "owner": "Mediahuis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Het Belang van Limburg",
+    "domains": ["hbvl.be"],
+    "description": "Het Belang van Limburg is a regional newspaper in Belgium, providing news coverage for the Limburg region.",
+    "owner": "Mediahuis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "BRUZZ",
+    "domains": ["bruzz.be"],
+    "description": "BRUZZ is a media platform providing news and cultural content for the Brussels region.",
+    "owner": "Vlaams-Brusselse Media",
+    "typology": "Public Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Focus-WTV",
+    "domains": ["focus-wtv.be"],
+    "description": "Focus-WTV is a regional television station in West Flanders, Belgium, offering local news and entertainment.",
+    "owner": "Roularta Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Belgium",
+    "organization": "Apache",
+    "domains": ["De Werktitel"],
+    "description": "Apache is a small independent investigative journalism platform in Belgium, focusing on in-depth reporting and analysis.",
+    "owner": "Coöperatieve vennootschap",
+    "typology": "Private Media"
   }
 ]
