@@ -1454,10 +1454,10 @@
                                 role="article"
                                 :aria-expanded="story.expanded"
                                 :aria-label="'News story: ' + story.title"
-                                class="py-4 relative"
+                                class="py-2 relative"
                                 :class="{'border-b border-gray-200 dark:border-gray-700': !story.expanded}"
                             >
-                                <header class="flex justify-between items-center mb-2">
+                                <header class="flex justify-between items-center mb-1">
                                     <span class="category-label text-gray-700 dark:text-gray-300 text-sm py-1 rounded inline-flex items-center">
                                         <span :class="'topic-color-' + ((story.category.charCodeAt(0) + story.category.charCodeAt(1) + story.category.length) % 9 + 1)" x-text="story.category"></span>
                                         
