@@ -641,8 +641,26 @@
                             }, 500);
                         }
                     },
+                    allStoriesRead: false,
+                    markAllAsRead() {
+                        // Mark all stories in current category as read
+                        this.stories.forEach(story => {
+                            if (!this.readStories[story.title]) {
+                                this.readStories[story.title] = true;
+                                this.totalStoriesRead++;
+                            }
+                        });
+                        // Update localStorage
+                        localStorage.setItem("readStories", JSON.stringify(this.readStories));
+                        localStorage.setItem("totalStoriesRead", this.totalStoriesRead);
+                        // Hide the button
+                        this.allStoriesRead = true;
+                    },
                     async init() {
                         Alpine.store("categories").init();
+
+                        // Check if all stories are read
+                        this.allStoriesRead = this.stories.every(story => this.readStories[story.title]);
 
                         // Load media data
                         try {
@@ -1159,14 +1177,14 @@
 
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Updates</h2>
-                            <p>Stories are updated once per day, at noon UTC. This helps maintain a balanced news diet without constant interruptions. Click the date on top of the page to check when was the last update.</p>
+                            <p>Stories are updated once per day, at noon UTC. This helps maintain a balanced news diet without constant interruptions. Click the date at the top of the page to see when the last update occurred.</p>
                         </section>
 
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Customization</h2>
                             <p>
-                                Use Kite settings to reorder and toggle categories. Have an idea for a feture or news category? Most of Kite is open source including
-                                the web app and community curated feeds.
+                                Use Kite settings to reorder and toggle categories. Have an idea for a feature or news category? Most of Kite is open source, including
+                                the web app and community-curated feeds.
                                 Please feel free to
                                 <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">contribute</a>.
                             </p>
@@ -1174,7 +1192,7 @@
 
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Privacy</h2>
-                            <p>Kite is committed to user privacy. We don't track you, we don't show ads, and we don't collect any personal information. Your news reading habits are your business.</p>
+                            <p>Kite is committed to user privacy: we don't track you, show ads, or collect any personal information. Your news reading habits are yours alone.</p>
                         </section>
 
                         <section>
@@ -1436,10 +1454,10 @@
                                 role="article"
                                 :aria-expanded="story.expanded"
                                 :aria-label="'News story: ' + story.title"
-                                class="py-4 relative"
+                                class="py-2 relative"
                                 :class="{'border-b border-gray-200 dark:border-gray-700': !story.expanded}"
                             >
-                                <header class="flex justify-between items-center mb-2">
+                                <header class="flex justify-between items-center mb-1">
                                     <span class="category-label text-gray-700 dark:text-gray-300 text-sm py-1 rounded inline-flex items-center">
                                         <span :class="'topic-color-' + ((story.category.charCodeAt(0) + story.category.charCodeAt(1) + story.category.length) % 9 + 1)" x-text="story.category"></span>
                                         
@@ -1819,6 +1837,14 @@
                             </article>
                         </template>
                     </template>
+                    <div x-show="stories.length > 0 && currentCategory !== 'OnThisDay' && !stories.every(story => readStories[story.title])" class="mt-6 w-full text-center">
+                        <button
+                            @click="markAllAsRead(); window.scrollTo({ top: 0, behavior: 'smooth' })"
+                            class="w-full md:w-auto px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200"
+                        >
+                            Mark all as read
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
