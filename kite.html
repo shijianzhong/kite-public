@@ -1144,65 +1144,40 @@
                 <div class="bg-white dark:bg-gray-800 rounded-lg p-8">
                     <div class="flex justify-between items-start mb-8">
                         <div class="w-full">
-                            <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">About Kite</h1>
-                            <p class="text-gray-600 dark:text-gray-300">A news app by Kagi</p>
+                            <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">Kite</h1>
+                            <p class="text-gray-600 dark:text-gray-300">News app by Kagi</p>
                         </div>
                     </div>
 
                     <div class="space-y-6 text-gray-700 dark:text-gray-300">
                         <section>
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">What is Kite?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Why Kite?</h2>
                             <p class="mb-4">
-                                Kite is a news app designed for people who want to stay informed without getting overwhelmed. We provide a daily update of the most important news stories, from carefully curated sources and summarized
-                                by advanced language models to give you the essential information you need.
+                                Driven by relentless ad monetization, news has <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://gwern.net/doc/culture/2010-dobelli.pdf">become</a> mental junk food - easy to consume but toxic to our minds, triggering stress responses and interrupting deep thought. We can do better, by going back to the essence of journalism - to inform and educate citizens.
                             </p>
                         </section>
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Understanding our approach</h2>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">Kite aggregates information from thousands of global sources, acknowledging that every news outlet has its own perspective and potential biases.</p>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">While individual sources may have their own agendas, Kite itself maintains neutrality by:</p>
-                            <ul class="list-disc pl-5 mb-4 text-gray-700 dark:text-gray-300">
-                                <li>Cross-referencing facts across multiple sources worldwide</li>
-                                <li>Presenting verified information that appears consistently across sources</li>
-                                <li>Acknowledging different perspectives when significant discrepancies exist</li>
-                                <li>Letting readers form their own informed opinions</li>
-                            </ul>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">Our goal is to provide a comprehensive global view of events, considering all relevant viewpoints while remaining factual and opinion-free in our summaries.</p>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">Think of Kite as having access to every newspaper in the world, distilled into essential, verified information.</p>
+                            <p class="mb-4 text-gray-700 dark:text-gray-300">In order to really understand anything about the world, we have to look at multiple perspectives and we have to have different viewpoints pushing against each other.</p>
+                            <p class="mb-4 text-gray-700 dark:text-gray-300">Kite reads thousands of community-curated publications around the world and delivers one essential daily news update, including different perspectives and timeline of events, using latest AI technology.</p>
                         </section>
 
                         <section>
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core Principles</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core principles</h2>
                             <ul class="space-y-2">
-                                <li>• Updated only once per day - no endless scrolling</li>
-                                <li>• Facts and perspectives, opinion-free</li>
-                                <li>• Zero tracking, zero ads</li>
-                                <li>• Pure signal, no noise</li>
-                                <li>• Quality over quantity</li>
+                                <li>• One daily update (noon UTC), no endless scrolling</li>
+                                <li>• Facts and perspectives over opinions</li>
+                                <li>• Zero tracking, zero ads - your reading habits are yours alone</li>
+                                <li>• Quality and depth over quantity</li>
                                 <li>• Complete news diet in 5 minutes</li>
                             </ul>
                         </section>
-
-                        <section>
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Updates</h2>
-                            <p>Stories are updated once per day, at noon UTC. This helps maintain a balanced news diet without constant interruptions. Click the date at the top of the page to see when the last update occurred.</p>
-                        </section>
-
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Customization</h2>
                             <p>
-                                Use Kite settings to reorder and toggle categories. Have an idea for a feature or news category? Most of Kite is open source, including
-                                the web app and community-curated feeds.
-                                Please feel free to
-                                <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">contribute</a>.
+                                Personalize your feed by reordering and toggling categories in settings. Want to contribute? Most of Kite is <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">open source</a>, including our web app and community-curated feeds.
                             </p>
                         </section>
-
-                        <section>
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Privacy</h2>
-                            <p>Kite is committed to user privacy: we don't track you, show ads, or collect any personal information. Your news reading habits are yours alone.</p>
-                        </section>
-
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Contact</h2>
                             <p>
@@ -1293,7 +1268,19 @@
                                 :aria-controls="'category-' + category.name"
                                 class="category-tab"
                                 :class="{ 'active': currentCategory === category.name }"
-                                @click="if (!isScrolling) { currentCategory = category.name; changeCategory(); updateUrlWithArticleId(''); window.scrollTo({ top: 0, behavior: 'smooth' }); }"
+                                @click="if (!isScrolling) { 
+                                    currentCategory = category.name; 
+                                    changeCategory(); 
+                                    updateUrlWithArticleId('');
+                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    
+                                    // Scroll the category into view
+                                    $el.scrollIntoView({ 
+                                        behavior: 'smooth', 
+                                        block: 'nearest',
+                                        inline: 'center'
+                                    });
+                                }"
                                 x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
                             ></div>
                         </template>
@@ -1827,6 +1814,8 @@
                                     </section>
 
                                     <div class="flex justify-center items-center space-x-4 mt-6 w-full md:px-0 order-last">
+                                        
+<!--
                                         <button
                                             @click.stop="shareArticle(story)"
                                             :data-share-url="window.location.origin + window.location.pathname + '?article=' + currentCategory.toLowerCase() + '-' + story.cluster_number"
@@ -1834,6 +1823,7 @@
                                         >
                                             Share this
                                         </button>
+                                        -->
                                         <button
                                             @click.stop="closeStory(story, index)"
                                             class="w-full md:w-auto px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors duration-200 ease-in-out"

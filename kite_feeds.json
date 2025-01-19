@@ -1,4 +1,5 @@
 {
+
   "Linux & OSS": {
     "feeds": [
       "https://www.tecmint.com/feed/",
@@ -616,7 +617,7 @@
       "https://www.reddit.com/r/canada/.rss"
     ]
   },
-  "Thai": {
+  "Thailand": {
     "feeds": [
       "https://news.thaipbs.or.th/rss/news/home",
       "https://thestandard.co/feed/",
@@ -686,6 +687,52 @@
       "https://www.apache.be/feed/artikels",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=nl&gl=BE&ceid=BE:nl",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=fr&gl=BE&ceid=BE:fr"
+    ]
+  },
+  "Serbia": {
+    "feeds": [
+      "https://www.danas.rs/rubrika/vesti/politika/feed/",
+      "https://www.danas.rs/rubrika/vesti/drustvo/feed/",
+      "https://www.danas.rs/rubrika/vesti/drustvo/vladavina-prava/feed/",
+      "https://www.danas.rs/rubrika/vesti/ekonomija/feed/",
+      "https://www.danas.rs/kolumna/feed/",
+      "https://www.danas.rs/rubrika/dijalog/licni-stavovi/feed/",
+      "https://www.danas.rs/rubrika/dijalog/reakcije/feed/",
+      "https://www.danas.rs/rubrika/dijalog/redakcijski-komentar/feed/",
+      "https://www.danas.rs/rubrika/vesti/beograd/feed/",
+      "https://www.danas.rs/mesto/novi-sad/feed/",
+      "https://www.danas.rs/mesto/kragujevac/feed/",
+      "https://www.danas.rs/mesto/nis/feed/",
+      "https://radar.nova.rs/feed/",
+      "https://www.politika.rs/rss",
+      "https://www.blic.rs/rss/?categoryUuid=669c62da-05ee-535a-8e08-27d5977ac2e2",
+      "https://www.blic.rs/rss/?categoryUuid=3773916d-93ac-5e41-ae25-10382d58ddd4",
+      "https://www.blic.rs/rss/?categoryUuid=f9d287a8-6be0-5529-a632-280fd148cb08",
+      "https://www.blic.rs/rss/?categoryUuid=23bf4f02-399f-5ae3-a8d7-cfd81e4fc32d",
+      "https://www.blic.rs/rss/?categoryUuid=d9035db7-cf2d-5561-a9c2-89c4b3312754",
+      "https://www.nin.rs/rss/politika",
+      "https://www.nin.rs/rss/drustvo",
+      "https://www.nin.rs/rss/ekonomija",
+      "https://www.nin.rs/rss/kultura",
+      "https://www.nin.rs/rss/biznis-klub",
+      "https://naslovi.net/rss/regioni/",
+      "https://naslovi.net/rss/vojvodina/",
+      "https://www.reddit.com/r/srbija/.rss",
+      "https://www.reddit.com/r/serbia/.rss",
+      "https://www.b92.net/rss/lokal",
+      "https://www.novosti.rs/rss/danasnje-vesti",
+      "https://www.novosti.rs/rss/drustvo/vesti",
+      "https://www.novosti.rs/rss/srbija",
+      "https://www.vesti-online.com/feed/",
+      "https://www.glasamerike.net/api/",
+      "https://n1info.rs/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGMzY1c0U0FuTnlLQUFQAQ?hl=sr&gl=RS&ceid=RS%3Asr&oc=11",
+      "https://www.nedeljnik.rs/category/vesti/politika/feed/",
+      "https://www.nedeljnik.rs/category/vesti/drustvo/feed/",
+      "https://www.nedeljnik.rs/category/vesti/sport/feed/",
+      "https://www.nedeljnik.rs/category/vesti/kultura/feed/",
+      "https://www.nedeljnik.rs/category/biz-news/feed/",
+      "https://rts.rs/vesti/rss.html"
     ]
   },
   "Vermont": {
