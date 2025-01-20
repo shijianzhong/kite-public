@@ -1,5 +1,4 @@
 {
-
   "Linux & OSS": {
     "feeds": [
       "https://www.tecmint.com/feed/",
@@ -847,6 +846,7 @@
       "https://www.reddit.com/r/japan.rss",
       "https://www.reddit.com/r/japannews.rss"
    ]
+  },
   "Israel": {
     "feeds": [
       "https://www.jpost.com/Rss",
