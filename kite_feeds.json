@@ -817,6 +817,36 @@
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/region_state",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston"
     ]
+  },
+  "Israel": {
+    "feeds": [
+      "https://www.jpost.com/Rss",
+      "https://www.israelnationalnews.com/rss",
+      "https://www.haaretz.com/srv/israel-news-rss",
+      "https://www.timesofisrael.com/feed/",
+      "https://www.jewishpress.com/feed/",
+      "https://www.algemeiner.com/feed/",
+      "https://www.israelhayom.com/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtUmxLQUFQAQ",
+      "https://feeds.bbci.co.uk/news/topics/c302m85q5ljt/rss.xml",
+      "https://www.nytimes.com/svc/collections/v1/publish/https:/www.nytimes.com/topic/destination/israel/rss.xml",
+      "https://www.reddit.com/r/Israel.rss",
+      "https://www.jta.org/feed",
+      "https://www.jta.org/category/israel/feed",
+      "https://www.globes.co.il/WebService/Rss/RssFeeder.asmx/FeederNode?iID=942",
+      "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=1725",
+      "https://www.globes.co.il/WebService/Rss/RssFeeder.asmx/FeederKeyword?iID=1404",
+      "https://www.tv7israelnews.com/feed/",
+      "https://english.elpais.com/arc/outboundfeeds/rss/tags_slug/israel-a/?outputType=xml",
+      "https://en.davar1.co.il/feed",
+      "https://www.bicom.org.uk/feed/",
+      "https://honestreporting.com/feed/",
+      "https://www.israel365news.com/feed/",
+      "https://www.jns.org/feed/",
+      "https://www.thejc.com/rss",
+      "https://www.thejc.com/rss/news/israel",
+      "https://israelpolicyforum.org/feed/",
+      "https://www.israel21c.org/feed/"
+    ]
   }
-
 }
