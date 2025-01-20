@@ -684,7 +684,7 @@
 
                                 // For new users (no stored order or enabled categories), set defaults
                                 if (!storedOrder || storedOrder.length === 0 || !storedEnabled || storedEnabled.length === 0) {
-                                    const defaultCategories = ["World", "USA", "Business", "Technology", "Science", "Sports", "Gaming", "Bay Area"];
+                                    const defaultCategories = ["World", "Business", "Technology", "Science", "Sports", "OnThisDay"];
                                     Alpine.store("categories").order = allCategoryNames;
                                     Alpine.store("categories").enabled = defaultCategories.filter((name) => allCategoryNames.includes(name));
                                     this.currentCategory = "World";
@@ -1394,50 +1394,110 @@
                     <template x-if="viewMode === 'list' && currentCategory === 'OnThisDay'">
                         <div class="py-4" x-data="{ hoveredLink: null, popupContent: null, popupVisible: false, popupPosition: { x: 0, y: 0 } }">
                             <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200" x-text="new Date().toLocaleString('en-US', { month: 'long', day: 'numeric' })"></h2>
-                            <div class="relative">
-                                <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-700"></div>
-                                <ul class="list-none space-y-6 mb-4 relative">
-                                    <template x-for="(event, index) in stories" :key="index">
-                                        <li class="ml-6">
-                                            <div class="absolute -left-3 mt-1.5">
-                                                <div class="w-8 h-8 rounded-full bg-blue-500 border-4 border-white dark:border-gray-800 flex items-center justify-center">
-                                                    <span class="text-white text-xs font-bold" x-text="index + 1"></span>
-                                                </div>
-                                            </div>
-                                            <div class="p-2 bg-white dark:bg-gray-700 rounded-lg">
-                                                <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-1" x-text="event.year"></p>
-                                                <p
-                                                    class="text-gray-700 dark:text-gray-300"
-                                                    x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
-                                                    @mouseover.capture="(e) => handleLinkHover(e, $el)"
-                                                    @mouseleave="hoveredLink = null; popupVisible = false;"
-                                                ></p>
-                                            </div>
-                                        </li>
-                                    </template>
-                                </ul>
+                            <div class="timeline">
+                                <template x-for="(event, index) in stories" :key="index">
+                                    <div class="row">
+                                        <div class="head">
+                                            <span class="step"></span>
+                                            <span class="item-title" x-text="event.year"></span>
+                                        </div>
+                                        <div class="body">
+                                            <span 
+                                                class="text-gray-700 dark:text-gray-300"
+                                                x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                                @mouseover.capture="(e) => handleLinkHover(e, $el)"
+                                                @mouseleave="hoveredLink = null; popupVisible = false;"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </template>
                             </div>
 
                             <!-- Wikipedia Popup -->
                             <div
                                 x-show="popupVisible"
                                 x-transition:enter="transition ease-out duration-200"
-                                x-transition:enter-start="opacity-0 scale-95"
-                                x-transition:enter-end="opacity-100 scale-100"
+                                x-transition:enter-start="opacity-0 translate-y-4"
+                                x-transition:enter-end="opacity-100 translate-y-0"
                                 x-transition:leave="transition ease-in duration-150"
-                                x-transition:leave-start="opacity-100 scale-100"
-                                x-transition:leave-end="opacity-0 scale-95"
-                                class="fixed z-50 bg-white dark:bg-gray-800 rounded-lg shadow-xl p-4 max-w-md"
-                                :style="`left: ${popupPosition.x}px; top: ${popupPosition.y}px;`"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-4"
+                                class="fixed inset-0 z-50 bg-white dark:bg-gray-800 md:rounded-lg md:shadow-xl md:max-w-sm md:w-[90vw] md:max-h-[80vh] md:overflow-hidden flex flex-col"
+                                :class="{
+                                    'md:absolute': window.innerWidth > 768,
+                                    'md:left-[${popupPosition.x}px] md:top-[${popupPosition.y}px]': window.innerWidth > 768
+                                }"
                             >
-                                <div class="flex">
-                                    <div class="flex-1 pr-4">
-                                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2" x-text="popupContent?.description"></p>
-                                        <p class="text-sm" x-html="popupContent?.extract_html"></p>
+                                <!-- Mobile Header -->
+                                <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700 md:hidden">
+                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200" x-text="popupContent?.title"></h3>
+                                    <button 
+                                        @click="popupVisible = false"
+                                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                                    >
+                                        <svg class="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- Image Section -->
+                                <div x-show="popupContent?.thumbnail" class="relative h-48 w-full">
+                                    <img 
+                                        :src="popupContent?.thumbnail?.source" 
+                                        :alt="popupContent?.title" 
+                                        class="w-full h-full object-cover"
+                                        loading="lazy"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white hidden md:block" x-text="popupContent?.title"></h3>
+                                </div>
+
+                                <!-- Content Section -->
+                                <div class="flex-1 p-4 md:p-6 overflow-y-auto">
+                                    <!-- Description -->
+                                    <p x-show="popupContent?.description" 
+                                       class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed"
+                                       x-text="popupContent?.description"></p>
+
+                                    <!-- Main Content -->
+                                    <div class="prose prose-sm dark:prose-invert max-w-none">
+                                        <p x-html="popupContent?.extract_html"></p>
                                     </div>
-                                    <div class="flex-shrink-0 w-1/3">
-                                        <img x-show="popupContent?.thumbnail" :src="popupContent?.thumbnail?.source" :alt="popupContent?.title" class="w-full h-auto rounded" />
+
+                                    <!-- Read More Link -->
+                                    <div class="mt-4">
+                                        <a 
+                                            :href="'https://en.wikipedia.org/wiki/' + encodeURIComponent(popupContent?.title)"
+                                            target="_blank"
+                                            class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
+                                        >
+                                            <span>Read more on Wikipedia</span>
+                                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                            </svg>
+                                        </a>
                                     </div>
+                                </div>
+
+                                <!-- Close Button (Desktop) -->
+                                <button 
+                                    @click="popupVisible = false"
+                                    class="absolute top-2 right-2 p-2 rounded-full bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors hidden md:block"
+                                >
+                                    <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+
+                                <!-- Mobile Footer -->
+                                <div class="p-4 border-t border-gray-200 dark:border-gray-700 md:hidden">
+                                    <button 
+                                        @click="popupVisible = false"
+                                        class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+                                    >
+                                        Close
+                                    </button>
                                 </div>
                             </div>
                         </div>
