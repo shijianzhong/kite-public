@@ -388,6 +388,14 @@
       "https://www.reddit.com/r/Slovenia.rss"
     ]
   },
+  "Spain": {
+    "feeds": [
+      "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "https://www.abc.es/rss/2.0/portada/",
+      "https://www.lasexta.com/rss/351410.xml"
+    ]
+  },
   "Mexico": {
     "feeds": [
       "https://www.eleconomista.com.mx/rss/ultimas-noticias",
