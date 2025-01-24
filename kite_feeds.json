@@ -885,5 +885,21 @@
       "https://israelpolicyforum.org/feed/",
       "https://www.israel21c.org/feed/"
     ]
+  },
+  "Poland": {
+    "feeds": [
+      "https://pap-mediaroom.pl/rss.xml",
+      "https://pap-mediaroom.pl/kategoria/polityka-i-spo%C5%82eczenstwo/rss.xml",
+      "https://pap-mediaroom.pl/kategoria/ludzie-i-kultura/rss.xml",
+      "https://www.polsatnews.pl/rss/polska.xml",
+      "https://www.bankier.pl/rss/wiadomosci.xml",
+      "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.xml",
+      "https://www.rp.pl/rss_main?unknown-old-rss",
+      "https://www.pb.pl/rss/najnowsze.xml",
+      "https://wiadomosci.onet.pl/.feed",
+      "https://wiadomosci.wp.pl/rss.xml",
+      "https://tvn24.pl/najwazniejsze.xml",
+      "http://rss.dziennik.pl/Dziennik-Wiadomosci"
+    ]
   }
 }
