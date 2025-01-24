@@ -393,7 +393,23 @@
       "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
       "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
       "https://www.abc.es/rss/2.0/portada/",
-      "https://www.lasexta.com/rss/351410.xml"
+      "https://www.lasexta.com/rss/351410.xml",
+      "https://www.elperiodico.com/es/rss/politica/rss.xml",
+      "https://www.eldiario.es/rss",
+      "https://feeds.thelocal.com/rss/es",
+      "https://www.lavanguardia.com/rss/home.xml",
+      "https://www.elcorreo.com/rss/2.0/portada"
+    ]
+  },
+  "Ireland": {
+    "feeds": [
+      "https://www.independent.ie/rss",
+      "https://www.irishcentral.com/feeds/section-articles.atom",
+      "https://www.irishmirror.ie/?service=rss",
+      "https://www.irishnews.com/arc/outboundfeeds/rss/",
+      "https://www.thejournal.ie/feed/",
+      "https://www.irishexaminer.com/feed/35-top_news.xml",
+      "https://www.thesun.ie/feed/"
     ]
   },
   "Mexico": {
