@@ -399,7 +399,10 @@
       "https://feeds.thelocal.com/rss/es",
       "https://www.lavanguardia.com/rss/home.xml",
       "https://www.elcorreo.com/rss/2.0/portada",
-      "https://www.reddit.com/r/spain/.rss"
+      "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/fortunas",
+      "https://www.xataka.com/index.xml",
+      "https://www.reddit.com/r/spain/.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp0YTJvU0FtVnVLQUFQAQ?hl=es-419&gl=US&ceid=US%3Aes-419&oc=11",
     ]
   },
   "Ireland": {
@@ -412,6 +415,7 @@
       "https://www.irishexaminer.com/feed/35-top_news.xml",
       "https://www.thesun.ie/feed/",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-IE&gl=IE&ceid=IE%3Aen&oc=11",
       "https://www.reddit.com/r/ireland/.rss"
     ]
   },
