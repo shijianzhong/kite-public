@@ -1,5 +1,4 @@
 {
-
   "Linux & OSS": {
     "feeds": [
       "https://www.tecmint.com/feed/",
@@ -389,6 +388,37 @@
       "https://www.reddit.com/r/Slovenia.rss"
     ]
   },
+  "Spain": {
+    "feeds": [
+      "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "https://www.abc.es/rss/2.0/portada/",
+      "https://www.lasexta.com/rss/351410.xml",
+      "https://www.elperiodico.com/es/rss/politica/rss.xml",
+      "https://www.eldiario.es/rss",
+      "https://feeds.thelocal.com/rss/es",
+      "https://www.lavanguardia.com/rss/home.xml",
+      "https://www.elcorreo.com/rss/2.0/portada",
+      "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/fortunas",
+      "https://www.xataka.com/index.xml",
+      "https://www.reddit.com/r/spain/.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp0YTJvU0FtVnVLQUFQAQ?hl=es-419&gl=US&ceid=US%3Aes-419&oc=11"
+    ]
+  },
+  "Ireland": {
+    "feeds": [
+      "https://www.independent.ie/rss",
+      "https://www.irishcentral.com/feeds/section-articles.atom",
+      "https://www.irishmirror.ie/?service=rss",
+      "https://www.irishnews.com/arc/outboundfeeds/rss/",
+      "https://www.thejournal.ie/feed/",
+      "https://www.irishexaminer.com/feed/35-top_news.xml",
+      "https://www.thesun.ie/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-IE&gl=IE&ceid=IE%3Aen&oc=11",
+      "https://www.reddit.com/r/ireland/.rss"
+    ]
+  },
   "Mexico": {
     "feeds": [
       "https://www.eleconomista.com.mx/rss/ultimas-noticias",
@@ -732,10 +762,11 @@
       "https://www.nedeljnik.rs/category/vesti/sport/feed/",
       "https://www.nedeljnik.rs/category/vesti/kultura/feed/",
       "https://www.nedeljnik.rs/category/biz-news/feed/",
-      "https://rts.rs/vesti/rss.html"
+      "https://rts.rs/vesti/rss.html",
+      "https://novimagazin.rs/api/1.0/feed"
     ]
   },
-  "Vermont": {
+  "USA | Vermont": {
     "feeds": [
       "https://www.addisonindependent.com/feed/",
       "https://bartonchronicle.com/feed/",
@@ -817,6 +848,123 @@
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/region_state",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston"
     ]
-  }
+  },
+  "Japan": {
+    "feeds": [
+      "https://www.japantimes.co.jp/feed/",
+      "https://japantoday.com/feed",
+      "https://asia.nikkei.com/rss/feed/",
+      "https://soranews24.com/feed/",
+      "https://english.kyodonews.net/rss/kyodonews-fzone.xml",
+      "https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/destination/japan/rss.xml",
+      "https://www.nippon.com/en/rss-all/",
+      "https://newsonjapan.com/rss/top.xml",
+      "https://newsonjapan.com/html/newsdesk/Society_News/rss/index.xml",
+      "https://newsonjapan.com/html/newsdesk/Business_News/rss/index.xml",
+      "https://newsonjapan.com/html/newsdesk/Politics_News/rss/index.xml",
+      "https://newsonjapan.com/html/newsdesk/Education_News/rss/index.xml",
+      "https://newsonjapan.com/html/newsdesk/Education_News/rss/index.xml",
+      "https://newsonjapan.com/html/newsdesk/Technology_News/rss/index.xml",
+      "https://mainichi.jp/rss/etc/english_latest.rss",
+      "https://blog.gaijinpot.com/feed/",
+      "https://livejapan.com/rss/article_latest_en.xml",
+      "https://unseenjapan.com/feed/",
+      "https://japanglimpsed.blogspot.com/",
+      "https://sakeindustrynews.substack.com/feed",
+      "https://japan-forward.com/feed/",
+      "https://moderntokyotimes.com/feed/",
+      "https://www.japannakama.co.uk/feed/",
+      "https://www.tofugu.com/feed.xml",
+      "https://www.reddit.com/r/japan.rss",
+      "https://www.reddit.com/r/japannews.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=ja&gl=JP&ceid=JP%3Aja&oc=11"
+   ]
+  },
+  "Israel": {
+    "feeds": [
+      "https://www.jpost.com/Rss",
+      "https://www.israelnationalnews.com/rss",
+      "https://www.haaretz.com/srv/israel-news-rss",
+      "https://www.timesofisrael.com/feed/",
+      "https://www.jewishpress.com/feed/",
+      "https://www.algemeiner.com/feed/",
+      "https://www.israelhayom.com/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtUmxLQUFQAQ",
+      "https://feeds.bbci.co.uk/news/topics/c302m85q5ljt/rss.xml",
+      "https://www.nytimes.com/svc/collections/v1/publish/https:/www.nytimes.com/topic/destination/israel/rss.xml",
+      "https://www.reddit.com/r/Israel.rss",
+      "https://www.jta.org/feed",
+      "https://www.jta.org/category/israel/feed",
+      "https://www.globes.co.il/WebService/Rss/RssFeeder.asmx/FeederNode?iID=942",
+      "https://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=1725",
+      "https://www.globes.co.il/WebService/Rss/RssFeeder.asmx/FeederKeyword?iID=1404",
+      "https://www.tv7israelnews.com/feed/",
+      "https://english.elpais.com/arc/outboundfeeds/rss/tags_slug/israel-a/?outputType=xml",
+      "https://en.davar1.co.il/feed",
+      "https://www.bicom.org.uk/feed/",
+      "https://honestreporting.com/feed/",
+      "https://www.israel365news.com/feed/",
+      "https://www.jns.org/feed/",
+      "https://www.thejc.com/rss",
+      "https://www.thejc.com/rss/news/israel",
+      "https://israelpolicyforum.org/feed/",
+      "https://www.israel21c.org/feed/",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=he&gl=IL&ceid=IL%3Ahe&oc=11"
+    ]
+  },
+  "Poland": {
+    "feeds": [
+      "https://pap-mediaroom.pl/rss.xml",
+      "https://pap-mediaroom.pl/kategoria/polityka-i-spo%C5%82eczenstwo/rss.xml",
+      "https://pap-mediaroom.pl/kategoria/ludzie-i-kultura/rss.xml",
+      "https://www.polsatnews.pl/rss/polska.xml",
+      "https://www.bankier.pl/rss/wiadomosci.xml",
+      "https://wiadomosci.gazeta.pl/pub/rss/wiadomosci.xml",
+      "https://www.rp.pl/rss_main?unknown-old-rss",
+      "https://www.pb.pl/rss/najnowsze.xml",
+      "https://wiadomosci.onet.pl/.feed",
+      "https://wiadomosci.wp.pl/rss.xml",
+      "https://tvn24.pl/najwazniejsze.xml",
+      "http://rss.dziennik.pl/Dziennik-Wiadomosci",
+      "https://www.reddit.com/r/poland/.rss",
+      "https://www.reddit.com/r/Polska/.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZ4YUhjU0FtVnVLQUFQAQ?hl=pl&gl=PL&ceid=PL%3Apl&oc=11"
+    ]
+  },
+  "New Zealand": {
+    "feeds": [
+      "https://www.rnz.co.nz/rss/business.xml",
+      "https://www.rnz.co.nz/rss/country.xml",
+      "https://www.rnz.co.nz/rss/environment.xml",
+      "https://www.rnz.co.nz/rss/identity.xml",
+      "https://www.rnz.co.nz/rss/indonz.xml",
+      "https://www.rnz.co.nz/rss/ldr.xml",
+      "https://www.rnz.co.nz/rss/media-technology.xml",
+      "https://www.rnz.co.nz/rss/national.xml",
+      "https://www.rnz.co.nz/rss/pacific.xml",
+      "https://www.rnz.co.nz/rss/political.xml",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/curated/78/?outputType=xml&_website=nzh",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=nzh",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/business/?outputType=xml&_website=nzh",
+      "https://www.stuff.co.nz/rss",
+      "https://www.theguardian.com/world/newzealand/rss",
+      "https://www.newstalkzb.co.nz/news/rssfeed",
+      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR04wZDE5aUVnVmxiaTFIUWlnQVAB",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=BU",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=SC",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=PA",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=PO",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=AK",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=CU",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=ED",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=GE",
+      "https://newsroom.co.nz/feed/",
+      "https://www.odt.co.nz/news/feed",
+      "https://theconversation.com/nz/articles.atom",
+      "https://www.interest.co.nz/rss"
 
+    ]
+  }
 }
