@@ -932,5 +932,40 @@
       "https://www.reddit.com/r/Polska/.rss",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZ4YUhjU0FtVnVLQUFQAQ?hl=pl&gl=PL&ceid=PL%3Apl&oc=11",
     ]
+  },
+  "New Zealand": {
+    "feeds": [
+      "https://www.rnz.co.nz/rss/business.xml",
+      "https://www.rnz.co.nz/rss/country.xml",
+      "https://www.rnz.co.nz/rss/environment.xml",
+      "https://www.rnz.co.nz/rss/identity.xml",
+      "https://www.rnz.co.nz/rss/indonz.xml",
+      "https://www.rnz.co.nz/rss/ldr.xml",
+      "https://www.rnz.co.nz/rss/media-technology.xml",
+      "https://www.rnz.co.nz/rss/national.xml",
+      "https://www.rnz.co.nz/rss/pacific.xml",
+      "https://www.rnz.co.nz/rss/political.xml",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/curated/78/?outputType=xml&_website=nzh",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=nzh",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/business/?outputType=xml&_website=nzh",
+      "https://www.reddit.com/r/newzealand/.rss",
+      "https://www.stuff.co.nz/rss",
+      "https://www.theguardian.com/world/newzealand/rss",
+      "https://www.newstalkzb.co.nz/news/rssfeed",
+      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR04wZDE5aUVnVmxiaTFIUWlnQVAB",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=BU",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=SC",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=PA",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=PO",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=AK",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=CU",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=ED",
+      "https://www.scoop.co.nz/storyindex/index.rss?s.c=GE",
+      "https://newsroom.co.nz/feed/",
+      "https://www.odt.co.nz/news/feed",
+      "https://theconversation.com/nz/articles.atom",
+      "https://www.interest.co.nz/rss"
+
+    ]
   }
 }
