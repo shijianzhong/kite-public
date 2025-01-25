@@ -69,7 +69,24 @@
                     },
                 },
             };
-            document.addEventListener("alpine:init", () => {
+            document.addEventListener("alpine:init", () => {                                                                                                                                                              
+                Alpine.store("language", {
+                    current: localStorage.getItem("language") || "en",
+                    set(lang) {
+                        this.current = lang;
+                        localStorage.setItem("language", lang);
+                        this.apply();
+                    },
+                    apply() {
+                        // Force reload categories and stories
+                        window.dispatchEvent(new CustomEvent('language-changed', { detail: this.current }));
+                    },
+                    init() {
+                        if (!localStorage.getItem("language")) {
+                            this.set("en");
+                        }
+                    }
+                });
                 Alpine.data("sourceOverlay", () => ({
                     showSourceOverlay: false,
                     currentSource: { name: "", favicon: "" },
@@ -327,6 +344,13 @@
                         return category != null && category !== undefined && category !== "";
                     },
                     init() {
+                        window.addEventListener('language-changed', () => {
+                            this.order = [];
+                            this.enabled = [];
+                            localStorage.removeItem("categoryOrder");
+                            localStorage.removeItem("enabledCategories");
+                        });
+
                         const savedOrder = JSON.parse(localStorage.getItem("categoryOrder"));
                         const savedEnabled = JSON.parse(localStorage.getItem("enabledCategories"));
                         if (savedOrder) {
@@ -338,6 +362,9 @@
                         }
                         // Save the cleaned up enabled categories
                         localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
+
+                        // Dispatch event when categories are loaded
+                        window.dispatchEvent(new CustomEvent('categories-loaded'));
                     },
                     saveNewOrder(newOrder) {
                         this.order = newOrder.filter((cat) => this.isValidCategory(cat));
@@ -512,7 +539,45 @@
                     fetch(apiUrl)
                         .then((response) => response.json())
                         .then((data) => {
-                            showPopup(data, link);
+                            const isMobile = window.innerWidth <= 768;
+                            console.log('isMobile', isMobile);
+                            if (isMobile) {
+                                // For mobile, show a full-screen modal
+                                const popup = document.createElement('div');
+                                popup.className = 'fixed inset-0 z-50 bg-white dark:bg-gray-800 overflow-y-auto';
+                                popup.innerHTML = `
+                                    <div class="p-4">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">${data.title}</h3>
+                                            <button class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick="this.parentElement.parentElement.parentElement.remove()">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        ${data.thumbnail ? `
+                                            <div class="relative h-48 w-full mb-4">
+                                                <img src="${data.thumbnail.source}" alt="${data.title}" class="w-full h-full object-cover rounded-lg"/>
+                                            </div>
+                                        ` : ''}
+                                        <div class="prose prose-sm dark:prose-invert max-w-none">
+                                            <p>${data.extract}</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <a href="${link.href}" target="_blank" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                                                <span>Read more on Wikipedia</span>
+                                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                `;
+                                document.body.appendChild(popup);
+                            } else {
+                                // For desktop, keep the hover popup
+                                showPopup(data, link);
+                            }
                         })
                         .catch((error) => {
                             console.error("Error fetching Wikipedia summary:", error);
@@ -657,6 +722,17 @@
                         this.allStoriesRead = true;
                     },
                     async init() {
+                        // Add language change event listener
+                        window.addEventListener('language-changed', () => {
+                            this.initialLoading = true;
+                            this.fetchCategories()
+                                .then(() => this.fetchAllStories())
+                                .finally(() => {
+                                    this.initialLoading = false;
+                                });
+                        });
+
+                        Alpine.store("language").init();
                         Alpine.store("categories").init();
 
                         // Check if all stories are read
@@ -684,7 +760,7 @@
 
                                 // For new users (no stored order or enabled categories), set defaults
                                 if (!storedOrder || storedOrder.length === 0 || !storedEnabled || storedEnabled.length === 0) {
-                                    const defaultCategories = ["World", "Business", "Technology", "Science", "Sports", "OnThisDay"];
+                                    const defaultCategories = ["World", "OnThisDay", "Business", "Technology", "Science", "Sports"];
                                     Alpine.store("categories").order = allCategoryNames;
                                     Alpine.store("categories").enabled = defaultCategories.filter((name) => allCategoryNames.includes(name));
                                     this.currentCategory = "World";
@@ -717,6 +793,9 @@
 
                                 this.updateCategoryDropdown();
                                 this.renderCategories();
+
+                                window.dispatchEvent(new CustomEvent('categories-loaded'));
+
                                 this.initCategorySortable();
                                 const articleId = getArticleIdFromUrl();
                                 if (articleId) {
@@ -732,7 +811,14 @@
                         fetchChaosIndex();
                     },
                     fetchCategories() {
-                        return fetch(`{{ base_path }}kite.json?${timestamp}`)
+                        const lang = Alpine.store("language").current;
+                        const filename = lang === 'en' ? 'kite.json' : `kite_${lang}.json`;
+                        
+                        // Reset categories before fetching
+                        this.availableCategories = [];
+                        this.currentCategory = "";
+                        
+                        return fetch(`{{ base_path }}${filename}?${Date.now()}`)
                             .then((response) => response.json())
                             .then((data) => {
                                 this.availableCategories = data.categories;
@@ -742,12 +828,13 @@
                     fetchAllStories() {
                         this.initialLoading = true;
                         this.allStories = {};
+                        this.currentCategory = "";
                         this.totalReadCount = 0;
                         const totalCategories = this.availableCategories.length;
                         let loadedCategories = 0;
 
                         const fetchPromises = this.availableCategories.map((category) =>
-                            fetch(`{{ base_path }}${category.file}?${timestamp}`)
+                            fetch(`{{ base_path }}${category.file}?${Date.now()}`)
                                 .then((response) => response.json())
                                 .then((data) => {
                                     if (category.name === "OnThisDay") {
@@ -797,6 +884,11 @@
                     renderCategories() {
                         const enabledContainer = document.querySelector('[x-ref="enabledCategories"]');
                         const disabledContainer = document.querySelector('[x-ref="disabledCategories"]');
+                        
+                        // Clear existing content more aggressively
+                        if (enabledContainer) enabledContainer.innerHTML = '';
+                        if (disabledContainer) disabledContainer.innerHTML = '';
+                        
                         const categoriesStore = Alpine.store('categories');
                         const self = this;
                         
@@ -1053,7 +1145,7 @@
                         if (this.availableCategories.length > 0) {
                             let enabledCategories = Alpine.store("categories").enabled;
 
-                            if (enabledCategories.length === 0) {
+                            if (enabledCategories.length === 0 || !enabledCategories.includes(this.currentCategory)) {
                                 this.availableCategories.forEach((cat) => Alpine.store("categories").enableCategory(cat.name));
                                 enabledCategories = Alpine.store("categories").enabled;
                             }
@@ -1084,10 +1176,8 @@
 
             document.addEventListener("pointerover", (event) => {
                 const link = event.target.closest('a[href^="https://en.wikipedia.org/wiki/"]');
-                if (link) {
-                    if (event.pointerType === "touch" || window.innerWidth <= 768) {
-                        event.preventDefault();
-                    }
+                if (link && window.innerWidth > 768) { // Only show hover popup on desktop
+                    event.preventDefault();
                     const title = decodeURIComponent(link.getAttribute("href").split("/").pop());
                     const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
                     fetch(apiUrl)
@@ -1102,8 +1192,54 @@
             });
 
             document.addEventListener("pointerout", (event) => {
-                if (!event.target.closest('a[href^="https://en.wikipedia.org/wiki/"]') && !event.target.closest("#wikipedia-popup")) {
+                if (!event.target.closest('a[href^="https://en.wikipedia.org/wiki/"]') && !event.target.closest("#wikipedia-popup") && window.innerWidth > 768) {
                     document.getElementById("wikipedia-popup").style.display = "none";
+                }
+            });
+
+            // Handle Wikipedia links for mobile
+            document.addEventListener("click", (event) => {
+                const link = event.target.closest('a[href^="https://en.wikipedia.org/wiki/"]');
+                if (link && window.innerWidth <= 768) {
+                    event.preventDefault();
+                    const title = decodeURIComponent(link.getAttribute("href").split("/").pop());
+                    const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+                    
+                    fetch(apiUrl)
+                        .then((response) => response.json())
+                        .then((data) => {
+                            const popup = document.createElement('div');
+                            popup.className = 'fixed inset-0 z-[100] bg-white dark:bg-gray-800 overflow-y-auto';
+                            popup.innerHTML = `
+                                <div class="p-4 relative z-[101]">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">${data.title}</h3>
+                                        <button class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick="this.parentElement.parentElement.parentElement.remove()">
+                                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    ${data.thumbnail ? `
+                                        <div class="relative h-48 w-full mb-4">
+                                            <img src="${data.thumbnail.source}" alt="${data.title}" class="w-full h-full object-cover rounded-lg"/>
+                                        </div>
+                                    ` : ''}
+                                    <div class="prose prose-sm dark:prose-invert max-w-none">
+                                        <p>${data.extract}</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <a href="${link.href}" target="_blank" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                                            <span>Read more on Wikipedia</span>
+                                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            `;
+                            document.body.appendChild(popup);
+                        });
                 }
             });
         </script>
@@ -1259,31 +1395,103 @@
                         </button>
                     </div>
                 </header>
-                <div class="sticky top-0 bg-white dark:bg-dark-bg py-2 z-[60]" role="navigation">
-                    <div class="category-tabs" role="tablist" aria-label="News categories" @touchstart="isScrolling = true" @touchend="isScrolling = false">
-                        <template x-for="category in availableCategories.filter(cat => $store.categories.isEnabled(cat.name))" :key="category.name">
-                            <div
-                                role="tab"
-                                :aria-selected="currentCategory === category.name"
-                                :aria-controls="'category-' + category.name"
-                                class="category-tab"
-                                :class="{ 'active': currentCategory === category.name }"
-                                @click="if (!isScrolling) { 
-                                    currentCategory = category.name; 
-                                    changeCategory(); 
-                                    updateUrlWithArticleId('');
-                                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                                    
-                                    // Scroll the category into view
-                                    $el.scrollIntoView({ 
-                                        behavior: 'smooth', 
-                                        block: 'nearest',
-                                        inline: 'center'
-                                    });
-                                }"
-                                x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
-                            ></div>
-                        </template>
+                <div class="sticky top-0 bg-white dark:bg-dark-bg py-2 z-[60]" role="navigation" 
+                    x-data="{ 
+                        hasOverflow: false,
+                        checkOverflow() {
+                            const tabs = document.querySelector('.category-tabs');
+                            if (tabs) {
+                                const newValue = tabs.scrollWidth > tabs.clientWidth;
+                                if (newValue !== this.hasOverflow) {
+                                    this.hasOverflow = newValue;
+                                }
+                            }
+                        }
+                    }"
+                    x-init="
+                        $nextTick(() => {
+                            checkOverflow();
+                            // Set up mutation observer to watch for changes in category-tabs
+                            const observer = new MutationObserver((mutations) => {
+                                $nextTick(() => {
+                                    checkOverflow();
+                                    // Double check after a small delay
+                                    setTimeout(() => {
+                                        checkOverflow();
+                                        $nextTick(() => checkOverflow());
+                                    }, 100);
+                                });
+                            });
+                            
+                            const tabs = document.querySelector('.category-tabs');
+                            if (tabs) {
+                                observer.observe(tabs, {
+                                    childList: true,
+                                    subtree: true,
+                                    attributes: true
+                                });
+                            }
+                        });
+                        window.addEventListener('resize', () => {
+                            checkOverflow();
+                            $nextTick(() => checkOverflow());
+                        });
+                    "
+                >
+                    <div class="relative flex items-center">
+                        <div class="relative flex items-center w-full">
+                            <button 
+                                @click="document.querySelector('.category-tabs').scrollBy({left: -200, behavior: 'smooth'})"
+                                class="relative focus:outline-none md:block hidden -ml-1 pr-4 py-3"
+                                :class="{ 'md:hidden': !hasOverflow }"
+                                x-cloak
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <div class="category-tabs overflow-x-auto scrollbar-hide flex-1" 
+                                role="tablist" 
+                                aria-label="News categories" 
+                                @touchstart="isScrolling = true" 
+                                @touchend="isScrolling = false"
+                                @scroll="checkOverflow()"
+                            >
+                                <template x-for="category in availableCategories.filter(cat => $store.categories.isEnabled(cat.name))" :key="category.name">
+                                    <div
+                                        role="tab"
+                                        :aria-selected="currentCategory === category.name"
+                                        :aria-controls="'category-' + category.name"
+                                        class="category-tab whitespace-nowrap"
+                                        :class="{ 'active': currentCategory === category.name }"
+                                        @click="if (!isScrolling) { 
+                                            currentCategory = category.name; 
+                                            changeCategory(); 
+                                            updateUrlWithArticleId('');
+                                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            
+                                            // Scroll the category into view
+                                            $el.scrollIntoView({ 
+                                                behavior: 'smooth', 
+                                                block: 'nearest',
+                                                inline: 'center'
+                                            });
+                                        }"
+                                        x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
+                                    ></div>
+                                </template>
+                            </div>
+                            <button 
+                                @click="document.querySelector('.category-tabs').scrollBy({left: 200, behavior: 'smooth'})"
+                                class="relative focus:outline-none md:block hidden -mr-1 pl-4 py-3"
+                                :class="{ 'md:hidden': !hasOverflow }"
+                                x-cloak
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div x-show="currentCategory === 'World' && $store.chaosIndex.score > 0" class="mb-4 flex justify-between items-center">
@@ -1310,7 +1518,7 @@
                             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 w-full max-w-md relative">
                                 <button @click="showChaosPopup = false" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
                                 <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">World turbulence meter</h3>
@@ -1405,8 +1613,6 @@
                                             <span 
                                                 class="text-gray-700 dark:text-gray-300"
                                                 x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
-                                                @mouseover.capture="(e) => handleLinkHover(e, $el)"
-                                                @mouseleave="hoveredLink = null; popupVisible = false;"
                                             ></span>
                                         </div>
                                     </div>
@@ -1534,7 +1740,7 @@
                                                 :class="readStories[story.title] ? 'text-gray-600 dark:text-gray-400' : 'text-gray-300 dark:text-gray-600'"
                                                 class="w-6 h-6"
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20"
+                                                viewBox="0 0 19 19"
                                                 :fill="readStories[story.title] ? '#7BA3FF' : 'currentColor'"
                                                 :stroke="readStories[story.title] ? '#427AFC' : 'none'"
                                                 title="Click to toggle read status"
@@ -2109,6 +2315,32 @@
                             </div>
                         </div>
                         <div class="flex flex-col space-y-2">
+                            <label for="language-select" class="text-sm font-medium text-gray-700 dark:text-gray-300">Language</label>
+                            <div class="relative">
+                                <select
+                                    id="language-select"
+                                    x-model="$store.language.current"
+                                    @change="$store.language.set($event.target.value)"
+                                    aria-label="Select language"
+                                    class="block appearance-none w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                >
+                                    <option value="en">Default</option>
+                                    <option value="pt">Português (Portuguese)</option>
+                                    <option value="it">Italiano (Italian)</option>
+                                    <option value="fr">Français (French)</option>
+                                    <option value="es">Español (Spanish)</option>                                    
+<!--                                     <option value="de">Deutsch (German)</option>
+                                    <option value="zh">中文 (Chinese)</option>
+                                    <option value="ja">日本語 (Japanese)</option>
+                                    <option value="hi">हिन्दी (Hindi)</option>
+ -->                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col space-y-2">
                             <label for="font-size-select" class="text-sm font-medium text-gray-700 dark:text-gray-300">Font size</label>
                             <div class="relative">
                                 <select
@@ -2212,7 +2444,9 @@
         <footer class="py-4 mt-8">
             <div class="container mx-auto px-4 max-w-[732px] flex justify-center items-center">
                 <a
-                    :href="currentCategory === 'OnThisDay' ? 'https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday' : currentCategory.toLowerCase() + '.xml'"
+                    :href="currentCategory === 'OnThisDay' ? 
+                        `https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&lang=${$store.language.current}` : 
+                        `${currentCategory.toLowerCase()}_${$store.language.current}.xml`"
                     target="_blank"
                     class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 flex items-center space-x-2"
                     title="RSS feed"
