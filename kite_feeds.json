@@ -398,7 +398,8 @@
       "https://www.eldiario.es/rss",
       "https://feeds.thelocal.com/rss/es",
       "https://www.lavanguardia.com/rss/home.xml",
-      "https://www.elcorreo.com/rss/2.0/portada"
+      "https://www.elcorreo.com/rss/2.0/portada",
+      "https://www.reddit.com/r/spain/.rss"
     ]
   },
   "Ireland": {
@@ -409,7 +410,9 @@
       "https://www.irishnews.com/arc/outboundfeeds/rss/",
       "https://www.thejournal.ie/feed/",
       "https://www.irishexaminer.com/feed/35-top_news.xml",
-      "https://www.thesun.ie/feed/"
+      "https://www.thesun.ie/feed/",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://www.reddit.com/r/ireland/.rss"
     ]
   },
   "Mexico": {
@@ -755,10 +758,11 @@
       "https://www.nedeljnik.rs/category/vesti/sport/feed/",
       "https://www.nedeljnik.rs/category/vesti/kultura/feed/",
       "https://www.nedeljnik.rs/category/biz-news/feed/",
-      "https://rts.rs/vesti/rss.html"
+      "https://rts.rs/vesti/rss.html",
+      "https://novimagazin.rs/api/1.0/feed"
     ]
   },
-  "Vermont": {
+  "USA | Vermont": {
     "feeds": [
       "https://www.addisonindependent.com/feed/",
       "https://bartonchronicle.com/feed/",
@@ -841,7 +845,7 @@
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston"
     ]
   },
-  "Japan (English)": {
+  "Japan": {
     "feeds": [
       "https://www.japantimes.co.jp/feed/",
       "https://japantoday.com/feed",
@@ -868,7 +872,9 @@
       "https://www.japannakama.co.uk/feed/",
       "https://www.tofugu.com/feed.xml",
       "https://www.reddit.com/r/japan.rss",
-      "https://www.reddit.com/r/japannews.rss"
+      "https://www.reddit.com/r/japannews.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=ja&gl=JP&ceid=JP%3Aja&oc=11"
    ]
   },
   "Israel": {
@@ -899,7 +905,9 @@
       "https://www.thejc.com/rss",
       "https://www.thejc.com/rss/news/israel",
       "https://israelpolicyforum.org/feed/",
-      "https://www.israel21c.org/feed/"
+      "https://www.israel21c.org/feed/",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=he&gl=IL&ceid=IL%3Ahe&oc=11"
     ]
   },
   "Poland": {
@@ -915,7 +923,10 @@
       "https://wiadomosci.onet.pl/.feed",
       "https://wiadomosci.wp.pl/rss.xml",
       "https://tvn24.pl/najwazniejsze.xml",
-      "http://rss.dziennik.pl/Dziennik-Wiadomosci"
+      "http://rss.dziennik.pl/Dziennik-Wiadomosci",
+      "https://www.reddit.com/r/poland/.rss",
+      "https://www.reddit.com/r/Polska/.rss",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZ4YUhjU0FtVnVLQUFQAQ?hl=pl&gl=PL&ceid=PL%3Apl&oc=11",
     ]
   }
 }
