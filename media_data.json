@@ -2370,5 +2370,13 @@
     "description": "Apache is a small independent investigative journalism platform in Belgium, focusing on in-depth reporting and analysis.",
     "owner": "Coöperatieve vennootschap",
     "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Radio New Zealand",
+    "domains": ["rnz.co.nz"],
+    "description": "Radio New Zealand (RNZ) is New Zealand's independent public radio service. RNZ broadcasts three nationwide channels, RNZ National, RNZ Concert and the AM network (focused on parliamentary proceedings). RNZ Pacific (which used to operate as Radio New Zealand International or RNZI) is the group's international news broadcaster.",
+    "owner": "New Zealand Government",
+    "typology": "State Funded Media"
   }
 ]
