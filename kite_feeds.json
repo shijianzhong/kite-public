@@ -251,6 +251,35 @@
       "https://news.google.com/rss/search?q=site%3Ahttps%3A%2F%2Fwww.intercept.com.br%2F&hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
     ]
   },
+  "Ukraine": {
+    "feeds": [
+      "https://www.pravda.com.ua/rss/",
+      "https://www.pravda.com.ua/rss/view_news/",
+      "https://www.pravda.com.ua/rss/view_mainnews/",
+      "https://www.pravda.com.ua/rss/view_pubs/",
+      "https://grnt.media/feed/",
+      "https://www.rbc.ua/static/rss/all.ukr.rss.xml",
+      "https://itc.ua/ua/feed/",
+      "https://dou.ua/feed/",
+      "https://epravda.com.ua/rss/",
+      "https://epravda.com.ua/rss/news/",
+      "https://epravda.com.ua/rss/view_pubs/",
+      "https://epravda.com.ua/rss/column/",
+      "https://novynarnia.com/feed",
+      "https://ua.tribuna.com/rss/topnews.xml",
+      "https://www.unian.ua/feed",
+      "https://babel.ua/rss.xml",
+      "https://espreso.tv/rss",
+      "https://www.istpravda.com.ua/rss/",
+      "https://www.istpravda.com.ua/rss/id_434/",
+      "https://www.istpravda.com.ua/rss/id_447/",
+      "https://suspilne.media/rss/all.rss",
+      "https://suspilne.media/sport/rss/latest.rss",
+      "https://www.radiosvoboda.org/api/zrqitl-vomx-tpeoumq",
+      "https://www.radiosvoboda.org/api/zpyp_l-vomx-tpe_rym",
+      "https://www.radiosvoboda.org/api/zijqpql-vomx-tpem_ppo"
+    ]
+  },
   "Brazil": {
     "feeds": [
       "http://agenciabrasil.ebc.com.br/rss/internacional/feed.xml",
