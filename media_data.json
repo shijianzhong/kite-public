@@ -2390,7 +2390,7 @@
   {
     "country": "New Zealand",
     "organization": "Stuff",
-    "domains": ["stuff.co.nz/"],
+    "domains": ["stuff.co.nz"],
     "description": "Stuff is New Zealand's most popular news website, providing coverage of breaking news, weather, sport, politics, and entertainment through both its digital platform and associated newspapers.",
     "owner": "Stuff Limited",
     "typology": "Private Media"
