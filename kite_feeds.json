@@ -461,7 +461,11 @@
       "https://www.reddit.com/r/ireland/.rss",
       "https://www.rte.ie/feeds/rss/?index=%2Fnews%2F",
       "https://www.dublinlive.ie/news/?service=rss",
-      "https://www.dublinlive.ie/news/dublin-news/?service=rss"
+      "https://www.dublinlive.ie/news/dublin-news/?service=rss",
+      "https://www.techcentral.ie/feed/",
+      "http://www.irisheconomy.ie/index.php/feed/",
+      "https://techbuzzireland.com/feed/",
+      "https://www.irishstar.com/?service=rss"
     ]
   },
   "Mexico": {
