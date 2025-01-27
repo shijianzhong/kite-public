@@ -996,7 +996,30 @@
       "https://www.odt.co.nz/news/feed",
       "https://theconversation.com/nz/articles.atom",
       "https://www.interest.co.nz/rss"
-
     ]
+  },
+  "Portugal": {
+    "feeds": [
+      "http://feeds.feedburner.com/publicoRSS",
+      "https://www.reddit.com/r/portugal/.rss",
+      "https://rss.impresa.pt/feed/latest/expresso.rss",
+      "https://www.cmjornal.pt/rss",
+      "https://jornaleconomico.sapo.pt/feed/",
+      "https://rr.sapo.pt/rss/rssfeed.aspx?section=section_noticias",
+      "https://observador.pt/feed/",
+      "https://feeds.feedburner.com/maisfutebol",
+      "http://feeds.dinheirovivo.pt/DV-ultimas",
+      "https://www.jornaldenegocios.pt/rss",
+      "https://feeds.feedburner.com/asbeiras",
+      "https://www.sapo.pt/rss",
+      "https://www.iol.pt/rss",
+      "https://www.record.pt/rss",
+      "http://feeds.dn.pt/DN-Ultimas",
+      "http://feeds.ojogo.pt/OJ-Futebol",
+      "https://www.rtp.pt/noticias/rss",
+      "https://rss.impresa.pt/feed/latest/sicnot.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",
+      "https://feeds.feedburner.com/sol-ultimas",
+      "https://www.sabado.pt/rss"
+  ]
   }
 }
