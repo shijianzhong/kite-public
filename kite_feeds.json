@@ -76,20 +76,20 @@
       "https://blog.torproject.org/feed.xml",
       "https://www.debian.org/News/news",
       "https://www.linux.org/articles/index.rss",
-      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRE40TlhGdEVnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1p3ZW5wd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREk1T1RZU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
+      "https://news.google.com/atom/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRE40TlhGdEVnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1p3ZW5wd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREk1T1RZU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
     ]
   },
   "Cryptocurrency": {
     "feeds": [
-      "https://news.google.com/rss/search?q=cryptocurrency&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=blockchain&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=bitcoin&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=ethereum&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=solana&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=doge&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=arweave&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=cryptocurrency&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=blockchain&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=bitcoin&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=ethereum&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=solana&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=doge&hl=en-US&gl=US&ceid=US%3Aen",
+      "https://news.google.com/atom/search?q=arweave&hl=en-US&gl=US&ceid=US%3Aen",
       "https://www.reddit.com/r/CryptoCurrency.rss",
       "https://www.reddit.com/r/Bitcoin.rss",
       "https://www.reddit.com/r/Ethereum.rss",
@@ -145,15 +145,15 @@
       "https://europrospects.eu/feed/",
       "https://feeds.npr.org/1124/rss.xml",
       "https://feeds.thelocal.com/rss/es",
-      "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=eu",
-      "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=france",
-      "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=germany",
-      "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=italy",
-      "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=spain",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpxT1hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqJAgKIh5DQkFTRUFvS0wyMHZNRjgyZEY5Nk9CSUNaVzRvQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=eu",
+      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=france",
+      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=germany",
+      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=italy",
+      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=spain",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpxT1hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqJAgKIh5DQkFTRUFvS0wyMHZNRjgyZEY5Nk9CSUNaVzRvQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://officialblogofunio.com/feed/",
       "https://rss.dw.com/rdf/rss-en-eu",
       "https://www.theguardian.com/world/europe-news/rss",
@@ -241,14 +241,14 @@
       "https://www.reddit.com/r/uknews/.rss",
       "https://www.reddit.com/r/ukpolitics/.rss",
       "https://www.reddit.com/r/unitedkingdom/.rss",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZpWTJ3U0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp4TVhJU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR28xWnprU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/search?q=site%3Ahttps%3A%2F%2Fojoioeotrigo.com.br&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
-      "https://news.google.com/rss/search?q=site%3Ahttps%3A%2F%2Fdeolhonosruralistas.com.br&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
-      "https://news.google.com/rss/search?q=site%3Ahttps%3A%2F%2Fapublica.org&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
-      "https://news.google.com/rss/search?q=site%3Ahttps%3A%2F%2Fwww.intercept.com.br%2F&hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGR6YzJNU0FtVnVLQUFQAQ?hl=en-GB&gl=GB&ceid=GB%3Aen",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZpWTJ3U0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp4TVhJU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR28xWnprU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/search?q=site%3Ahttps%3A%2F%2Fojoioeotrigo.com.br&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "https://news.google.com/atom/search?q=site%3Ahttps%3A%2F%2Fdeolhonosruralistas.com.br&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "https://news.google.com/atom/search?q=site%3Ahttps%3A%2F%2Fapublica.org&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "https://news.google.com/atom/search?q=site%3Ahttps%3A%2F%2Fwww.intercept.com.br%2F&hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
     ]
   },
   "Ukraine": {
@@ -277,7 +277,10 @@
       "https://suspilne.media/sport/rss/latest.rss",
       "https://www.radiosvoboda.org/api/zrqitl-vomx-tpeoumq",
       "https://www.radiosvoboda.org/api/zpyp_l-vomx-tpe_rym",
-      "https://www.radiosvoboda.org/api/zijqpql-vomx-tpem_ppo"
+      "https://www.radiosvoboda.org/api/zijqpql-vomx-tpem_ppo",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGQwTWpFU0FuVnJLQUFQAQ?hl=uk&gl=UA&ceid=UA%3Auk&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGQwTWpFU0FtWnlLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://www.reddit.com/r/ukraine/.rss",
     ]
   },
   "Brazil": {
@@ -312,9 +315,9 @@
       "https://www.metropoles.com/feed",
       "https://www.nexojornal.com.br/rss.xml",
       "https://www.reddit.com/r/brasil/.rss",
-      "https://news.google.com/rss/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNREUxWm5JU0JYQjBMVUpTS0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419&oc=11",
-      "https://news.google.com/rss/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JYQjBMVUpTR2dKQ1VpZ0FQAQ?hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
-      "https://news.google.com/rss/topics/CAAqLAgKIiZDQkFTRmdvSkwyMHZNR1ptZHpWbUVnVndkQzFDVWhvQ1FsSW9BQVAB?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
+      "https://news.google.com/atom/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNREUxWm5JU0JYQjBMVUpTS0FBUAE?hl=pt-BR&gl=BR&ceid=BR%3Apt-419&oc=11",
+      "https://news.google.com/atom/topics/CAAqKggKIiRDQkFTRlFvSUwyMHZNRGx1YlY4U0JYQjBMVUpTR2dKQ1VpZ0FQAQ?hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "https://news.google.com/atom/topics/CAAqLAgKIiZDQkFTRmdvSkwyMHZNR1ptZHpWbUVnVndkQzFDVWhvQ1FsSW9BQVAB?hl=pt-BR&gl=BR&ceid=BR%3Apt-419"
     ]
   },
   "Australia": {
@@ -356,7 +359,7 @@
       "https://www.theguardian.com/australia-news/rss",
       "https://www.werribeenews.com.au/feed/",
       "https://www.reddit.com/r/australia/.rss",
-      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR05vWjJoNUVnSnFZU2dBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
+      "https://news.google.com/atom/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR05vWjJoNUVnSnFZU2dBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
     ]
   },
   "Estonia": {
@@ -401,8 +404,8 @@
       "https://www.reddit.com/r/Eesti.rss",
       "https://www.reddit.com/r/BalticStates.rss",
       "https://foorum.hinnavaatlus.ee/smartfeed.php?feed_type=ATOM1.0&limit=LF&sort_by=standard&forum=23&max_word_size=All",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVjBLQUFQAQ?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
-      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREpyYlcwU0FtVjBLQUFQAQ?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11",
+      "https://news.google.com/atom/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVjBHZ0pGUlNnQVAB?hl=et-EE&gl=EE&ceid=EE%3Aet&oc=11"
     ]
   },
   "Slovenia": {
@@ -413,7 +416,7 @@
       "https://n1info.si/feed/",
       "https://sta.si/rss-0",
       "https://ljnovice.si/feed/",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFowT0hZU0FtVnVLQUFQAQ?hl=sl&gl=SI&ceid=SI%3Asl&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFowT0hZU0FtVnVLQUFQAQ?hl=sl&gl=SI&ceid=SI%3Asl&oc=11",
       "https://www.reddit.com/r/Slovenia.rss"
     ]
   },
@@ -443,7 +446,7 @@
       "https://www.thejournal.ie/feed/",
       "https://www.irishexaminer.com/feed/35-top_news.xml",
       "https://www.thesun.ie/feed/",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-IE&gl=IE&ceid=IE%3Aen&oc=11",
       "https://www.reddit.com/r/ireland/.rss"
     ]
@@ -481,7 +484,7 @@
       "https://www.marca.com/mx/rss/googlenews/actualidad.xml",
       "https://www.reddit.com/r/Mexico_News/.rss",
       "https://www.reddit.com/r/mexico/new/.rss",
-      "https://news.google.com/rss/topics/CAAqKAgKIiJDQkFTRXdvSkwyMHZNR0k1TUY5eUVnWmxjeTAwTVRrb0FBUAE?hl=es-419&gl=MX&ceid=MX%3Aes-419&oc=11"
+      "https://news.google.com/atom/topics/CAAqKAgKIiJDQkFTRXdvSkwyMHZNR0k1TUY5eUVnWmxjeTAwTVRrb0FBUAE?hl=es-419&gl=MX&ceid=MX%3Aes-419&oc=11"
     ]
   },
   "Germany": {
@@ -510,8 +513,8 @@
       "https://www.handelsblatt.com/contentexport/feed/top-themen",
       "https://rp-online.de/feed.rss",
       "https://www.morgenpost.de/rss",
-      "https://news.google.com/rss?hl=de-DE&gl=DE&ceid=DE:de",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE:de"
+      "https://news.google.com/atom?hl=de-DE&gl=DE&ceid=DE:de",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE0wTldnU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE:de"
     ]
   },
   "Germany | Hesse": {
@@ -541,7 +544,7 @@
       "https://byc-news.de/feed/",
       "https://www.oberlahn.de/Nachrichten/?rss=rss20",
       "https://suedhessen.news/feed/",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGxyY25BU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE%3Ade&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGxyY25BU0FtUmxLQUFQAQ?hl=de&gl=DE&ceid=DE%3Ade&oc=11",
       "https://www.werra-rundschau.de/hessen/rssfeed.rdf"
     ]
   },
@@ -610,8 +613,8 @@
       "https://www.reddit.com/r/Italia/.rss",
       "https://www.reddit.com/r/oknotizie/.rss",
       "https://fetchrss.com/rss/6736cbf627f3f93f450b28c36736cbe54fcaddddfd00cdc2.xml",
-      "https://news.google.com/rss?hl=it-IT&gl=IT&ceid=IT:it",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55YW1vU0FtbDBLQUFQAQ?hl=it&gl=IT&ceid=IT%3Ait"
+      "https://news.google.com/atom?hl=it-IT&gl=IT&ceid=IT:it",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55YW1vU0FtbDBLQUFQAQ?hl=it&gl=IT&ceid=IT%3Ait"
     ]
   },
   "Canada": {
@@ -669,7 +672,7 @@
       "https://www.theifp.ca/search/?f=rss&t=article&c=news",
       "https://www.thestar.com/search/?f=rss&t=article&c=news/canada*&l=50&s=start_time&sd=desc",
       "https://www.winnipegfreepress.com/canada/feed",
-      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR1F3TmpCbkVnVmxiaTFEUVNnQVAB?hl=en-CA&gl=CA&ceid=CA%3Aen&oc=11",
+      "https://news.google.com/atom/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR1F3TmpCbkVnVmxiaTFEUVNnQVAB?hl=en-CA&gl=CA&ceid=CA%3Aen&oc=11",
       "https://www.reddit.com/r/Canadian_News/.rss",
       "https://www.reddit.com/r/canadian/.rss",
       "https://www.reddit.com/r/canadanews/.rss",
@@ -697,7 +700,7 @@
       "https://www.brighttv.co.th/feed",
       "https://www.blognone.com/atom.xml",
       "https://www.beartai.com/feed",
-      "https://news.google.com/rss?hl=th&gl=TH&ceid=TH:th",
+      "https://news.google.com/atom?hl=th&gl=TH&ceid=TH:th",
       "https://www.thairath.co.th/rss/news",
       "https://workpointnews.com/rss.crime.xml",
       "https://workpointnews.com/rss.politics.xml",
@@ -722,7 +725,7 @@
       "https://thematter.co/feed",
       "https://www.voathai.com/api/zykyol-vomx-tpetpup",
       "https://feeds.bbci.co.uk/thai/rss.xml",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
     ]
   },
   "Belgium": {
@@ -744,8 +747,8 @@
       "https://www.bruzz.be/rss.xml",
       "https://focus-wtv.be/feed/home.xml",
       "https://www.apache.be/feed/artikels",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=nl&gl=BE&ceid=BE:nl",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=fr&gl=BE&ceid=BE:fr"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=nl&gl=BE&ceid=BE:nl",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREUxTkdvU0FtVnVLQUFQAQ?hl=fr&gl=BE&ceid=BE:fr"
     ]
   },
   "Serbia": {
@@ -785,7 +788,7 @@
       "https://www.vesti-online.com/feed/",
       "https://www.glasamerike.net/api/",
       "https://n1info.rs/feed/",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGMzY1c0U0FuTnlLQUFQAQ?hl=sr&gl=RS&ceid=RS%3Asr&oc=11",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGMzY1c0U0FuTnlLQUFQAQ?hl=sr&gl=RS&ceid=RS%3Asr&oc=11",
       "https://www.nedeljnik.rs/category/vesti/politika/feed/",
       "https://www.nedeljnik.rs/category/vesti/drustvo/feed/",
       "https://www.nedeljnik.rs/category/vesti/sport/feed/",
@@ -919,7 +922,7 @@
       "https://www.jewishpress.com/feed/",
       "https://www.algemeiner.com/feed/",
       "https://www.israelhayom.com/feed/",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtUmxLQUFQAQ",
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtUmxLQUFQAQ",
       "https://feeds.bbci.co.uk/news/topics/c302m85q5ljt/rss.xml",
       "https://www.nytimes.com/svc/collections/v1/publish/https:/www.nytimes.com/topic/destination/israel/rss.xml",
       "https://www.reddit.com/r/Israel.rss",
@@ -980,7 +983,7 @@
       "https://www.stuff.co.nz/rss",
       "https://www.theguardian.com/world/newzealand/rss",
       "https://www.newstalkzb.co.nz/news/rssfeed",
-      "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR04wZDE5aUVnVmxiaTFIUWlnQVAB",
+      "https://news.google.com/atom/topics/CAAqJggKIiBDQkFTRWdvSkwyMHZNR04wZDE5aUVnVmxiaTFIUWlnQVAB",
       "https://www.scoop.co.nz/storyindex/index.rss?s.c=BU",
       "https://www.scoop.co.nz/storyindex/index.rss?s.c=SC",
       "https://www.scoop.co.nz/storyindex/index.rss?s.c=PA",
