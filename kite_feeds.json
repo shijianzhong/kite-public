@@ -434,7 +434,17 @@
       "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/fortunas",
       "https://www.xataka.com/index.xml",
       "https://www.reddit.com/r/spain/.rss",
-      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp0YTJvU0FtVnVLQUFQAQ?hl=es-419&gl=US&ceid=US%3Aes-419&oc=11"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFp0YTJvU0FtVnVLQUFQAQ?hl=es-419&gl=US&ceid=US%3Aes-419&oc=11",
+      "https://estaticos.elmundo.es/elmundo/rss/portada.xml",
+      "https://www.20minutos.es/rss/minuteca/20minutoses/",
+      "https://www.elconfidencial.com/rss/noticias.xml",
+      "http://rss.libertaddigital.com/libertaddigital/portada",
+      "https://www.europapress.es/rss/rss.aspx",
+      "https://www.lavozdegalicia.es/galicia/index.xml",
+      "https://www.lagacetadesalamanca.es/rss/2.0/portada/",
+      "https://www.diariodecastillayleon.es/rss/home.xml",
+      "https://www.diariodecastillayleon.es/rss/castilla-y-leon.xml",
+      "https://www.elnortedecastilla.es/rss/2.0/portada/"
     ]
   },
   "Ireland": {
@@ -448,7 +458,10 @@
       "https://www.thesun.ie/feed/",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55ZERrU0FtVnVLQUFQAQ?hl=en-IE&gl=IE&ceid=IE%3Aen&oc=11",
-      "https://www.reddit.com/r/ireland/.rss"
+      "https://www.reddit.com/r/ireland/.rss",
+      "https://www.rte.ie/feeds/rss/?index=%2Fnews%2F",
+      "https://www.dublinlive.ie/news/?service=rss",
+      "https://www.dublinlive.ie/news/dublin-news/?service=rss"
     ]
   },
   "Mexico": {
