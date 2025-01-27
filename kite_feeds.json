@@ -979,7 +979,14 @@
       "http://rss.dziennik.pl/Dziennik-Wiadomosci",
       "https://www.reddit.com/r/poland/.rss",
       "https://www.reddit.com/r/Polska/.rss",
-      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZ4YUhjU0FtVnVLQUFQAQ?hl=pl&gl=PL&ceid=PL%3Apl&oc=11"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFZ4YUhjU0FtVnVLQUFQAQ?hl=pl&gl=PL&ceid=PL%3Apl&oc=11",
+      "https://www.rmf24.pl/podcast/fakty/feed",
+      "https://www.benchmark.pl/rss/aktualnosci-pliki.xml",
+      "https://niebezpiecznik.pl/category/niebezpiecznik/feed/",
+      "https://www.dobreprogramy.pl/rss/aktualnosci",
+      "https://wykop.pl/api/v3/dmz/rss/tags/polska",
+      "https://spidersweb.pl/api/post/feed/feed-gn",
+      "https://zaufanatrzeciastrona.pl/feed/"
     ]
   },
   "New Zealand": {
