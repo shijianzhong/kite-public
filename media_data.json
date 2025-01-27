@@ -2378,5 +2378,69 @@
     "description": "Radio New Zealand (RNZ) is New Zealand's independent public radio service. RNZ broadcasts three nationwide channels, RNZ National, RNZ Concert and the AM network (focused on parliamentary proceedings). RNZ Pacific (which used to operate as Radio New Zealand International or RNZI) is the group's international news broadcaster.",
     "owner": "New Zealand Government",
     "typology": "State Funded Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "The New Zealand Herald",
+    "domains": ["nzherald.co.nz"],
+    "description": "The New Zealand Herald is the largest daily newspaper in New Zealand, providing coverage of local and international news, sports, entertainment, and opinion from Auckland and beyond through both print and digital platforms.",
+    "owner": "New Zealand Media and Entertainment",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Stuff",
+    "domains": ["stuff.co.nz"],
+    "description": "Stuff is New Zealand's most popular news website, providing coverage of breaking news, weather, sport, politics, and entertainment through both its digital platform and associated newspapers.",
+    "owner": "Stuff Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Newstalk ZB",
+    "domains": ["newstalkzb.co.nz"],
+    "description": "Newstalk ZB is a nationwide talk-radio network, operating since 1926, providing news, talkback, interviews, sports coverage, and current affairs programming through both AM and FM frequencies across the country.",
+    "owner": "New Zealand Media and Entertainment",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Scoop",
+    "domains": ["scoop.co.nz"],
+    "description": "Scoop is a New Zealand internet news website, operating since 1999, that publishes press releases and news content with a permissive publishing policy focused on public-interest journalism.",
+    "owner": "Scoop Foundation for Public lnterest Journalism",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Newsroom",
+    "domains": ["newsroom.co.nz"],
+    "description": "Newsroom is a New Zealand online news publication launched in 2017 that focuses on politics, current affairs, and social issues through its digital platform.",
+    "owner": "Newsroom NZ Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Otago Daily Times",
+    "domains": ["odt.co.nz"],
+    "description": "Otago Daily Times is New Zealand's oldest surviving daily newspaper, serving the southern South Island with coverage of local, national and international news through both print and digital platforms.",
+    "owner": "Allied Press Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "The Conversation",
+    "domains": ["theconversation.com"],
+    "description": "The Conversation is a digital news and analysis platform that publishes articles written by academics and researchers, combining scholarly expertise with journalistic editing to provide in-depth coverage of current affairs, science, health, politics, and culture.",
+    "owner": "The Conversation Media Group Ltd",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Interest.co.nz",
+    "domains": ["interest.co.nz"],
+    "description": "Interest.co.nz is a New Zealand financial news and information website that provides coverage of business, economic news, and financial data, along with tools for comparing banking products, mortgages, and investment options.",
+    "owner": "JDJL Limited",
+    "typology": "Private Media"
   }
 ]
