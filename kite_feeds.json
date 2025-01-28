@@ -1019,8 +1019,22 @@
       "https://newsroom.co.nz/feed/",
       "https://www.odt.co.nz/news/feed",
       "https://theconversation.com/nz/articles.atom",
-      "https://www.interest.co.nz/rss"
-
+      "https://www.interest.co.nz/rss",
+      "https://www.teaonews.co.nz/arc/outboundfeeds/rss/",
+      "https://www.thepost.co.nz/rss",
+      "https://www.gisborneherald.co.nz/feed/rss",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=rotorua-daily-post",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=bay-of-plenty-times",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=northland-age",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=northern-advocate",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=waikato-news",
+      "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=whanganui-chronicle",
+      "https://www.thepress.co.nz/rss",
+      "https://www.waikatotimes.co.nz/rss",
+      "https://www.reddit.com/r/newzealand/.rss",
+      "https://www.reddit.com/r/auckland/.rss",
+      "https://www.reddit.com/r/wellington/.rss",
+      "https://www.reddit.com/r/nzpolitics/.rss"
     ]
   }
 }
