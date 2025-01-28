@@ -1270,7 +1270,10 @@
         <div x-show="initialLoading" x-transition class="fixed inset-0 flex items-center justify-center bg-white dark:bg-dark-bg z-50">
             <div class="text-center">
                 <img :src="$store.theme.current === 'dark' ? '{{ static_path }}/svg/kite_dark.svg' : '{{ static_path }}/svg/kite.svg'" alt="Kite Logo" class="w-24 h-24 mx-auto mb-4 animate-bounce" />
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-dark-text mb-2">Kite</h1>
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-dark-text mb-2 flex items-center">
+                    Kite
+                    <span class="bg-yellow-200 font-medium mt-0.5 ml-2 rounded-lg px-2 py-0.5 text-xs text-black">BETA</span>
+                </h1>
                 <p class="text-xl text-gray-600 dark:text-gray-400">News. Elevated.</p>
                 <p x-text="loadingProgress > 20 ? loadingProgress + '%' : ''" class="mt-4 text-sm text-gray-500 dark:text-gray-400 min-h-[1.5rem]"></p>
             </div>
@@ -1329,7 +1332,7 @@
                                 @click="closeIntro()"
                                 class="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors duration-200 ease-in-out"
                             >
-                                Close
+                                Start
                             </button>
                         </div>
                     </div>
@@ -1604,8 +1607,30 @@
                     <template x-if="viewMode === 'list' && currentCategory === 'OnThisDay'">
                         <div class="py-4" x-data="{ hoveredLink: null, popupContent: null, popupVisible: false, popupPosition: { x: 0, y: 0 } }">
                             <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200" x-text="new Date().toLocaleString('en-US', { month: 'long', day: 'numeric' })"></h2>
+                            
+                            <!-- Events Section -->
+                            <h3 class="text-xl font-bold mb-4 text-gray-700 dark:text-gray-300">Events</h3>
+                            <div class="timeline mb-8">
+                                <template x-for="(event, index) in stories.filter(e => !e.content.toLowerCase().includes('born on this day') && !e.content.toLowerCase().includes('died on this day'))" :key="index">
+                                    <div class="row">
+                                        <div class="head">
+                                            <span class="step"></span>
+                                            <span class="item-title" x-text="event.year"></span>
+                                        </div>
+                                        <div class="body">
+                                            <span 
+                                                class="text-gray-700 dark:text-gray-300"
+                                                x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+
+                            <!-- People Section -->
+                            <h3 class="text-xl font-bold mb-4 text-gray-700 dark:text-gray-300">People</h3>
                             <div class="timeline">
-                                <template x-for="(event, index) in stories" :key="index">
+                                <template x-for="(event, index) in stories.filter(e => e.content.toLowerCase().includes('born on this day') || e.content.toLowerCase().includes('died on this day'))" :key="index">
                                     <div class="row">
                                         <div class="head">
                                             <span class="step"></span>
@@ -2331,8 +2356,8 @@
                                     <option value="it">Italiano (Italian)</option>
                                     <option value="fr">Français (French)</option>
                                     <option value="es">Español (Spanish)</option>                                    
-<!--                                     <option value="de">Deutsch (German)</option>
-                                    <option value="zh">中文 (Chinese)</option>
+                                    <option value="de">Deutsch (German)</option>
+<!--                                    <option value="zh">中文 (Chinese)</option>
                                     <option value="ja">日本語 (Japanese)</option>
                                     <option value="hi">हिन्दी (Hindi)</option>
  -->                                </select>
