@@ -1006,7 +1006,11 @@
       "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=waikato-news",
       "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=whanganui-chronicle",
       "https://www.thepress.co.nz/rss",
-      "https://www.waikatotimes.co.nz/rss"
+      "https://www.waikatotimes.co.nz/rss",
+      "https://www.reddit.com/r/newzealand/.rss",
+      "https://www.reddit.com/r/auckland/.rss",
+      "https://www.reddit.com/r/wellington/.rss",
+      "https://www.reddit.com/r/nzpolitics/.rss"
     ]
   }
 }
