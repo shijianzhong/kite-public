@@ -1036,5 +1036,33 @@
       "https://www.reddit.com/r/wellington/.rss",
       "https://www.reddit.com/r/nzpolitics/.rss"
     ]
+  },
+  "France": {
+    "feeds": [
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/checknews/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/culture/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/idees-et-debats/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/societe/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/environnement/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/economie/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/lifestyle/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/portraits/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/sports/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/sciences/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/forums/?outputType=xml",
+      "https://www.liberation.fr/arc/outboundfeeds/rss-all/collection/accueil-une/?outputType=xml",
+      "https://feeds.leparisien.fr/leparisien/rss",
+      "https://feeds.leparisien.fr/leparisien/rss/faits-divers",
+      "https://feeds.leparisien.fr/leparisien/rss/politique",
+      "https://feeds.leparisien.fr/leparisien/rss/economie",
+      "https://feeds.leparisien.fr/leparisien/rss/sports",
+      "https://feeds.leparisien.fr/leparisien/rss/jo-paris-2024",
+      "https://feeds.leparisien.fr/leparisien/rss/culture-loisirs",
+      "https://feeds.leparisien.fr/leparisien/rss/immobilier",
+      "https://feeds.leparisien.fr/leparisien/rss/environnement",
+      "https://feeds.leparisien.fr/leparisien/rss/societe",
+      "https://feeds.leparisien.fr/leparisien/rss/futurs"
+    ]
   }
 }
