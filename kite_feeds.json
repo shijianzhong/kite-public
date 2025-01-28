@@ -1002,6 +1002,8 @@
     "feeds": [
       "http://feeds.feedburner.com/publicoRSS",
       "https://www.reddit.com/r/portugal/.rss",
+      "https://news.google.com/atom?hl=pt-PT&ceid=PT:pt-150&gl=PT",
+      "https://news.google.com/atom/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFZ5TkhjU0JYQjBMVkJVS0FBUAE?hl=en-US&gl=US&ceid=US:en",
       "https://rss.impresa.pt/feed/latest/expresso.rss",
       "https://www.cmjornal.pt/rss",
       "https://jornaleconomico.sapo.pt/feed/",
