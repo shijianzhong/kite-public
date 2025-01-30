@@ -2442,5 +2442,45 @@
     "description": "Interest.co.nz is a New Zealand financial news and information website that provides coverage of business, economic news, and financial data, along with tools for comparing banking products, mortgages, and investment options.",
     "owner": "JDJL Limited",
     "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Te Ao Māori News",
+    "domains": ["teaonews.co.nz"],
+    "description": "Te Ao Māori News is a dedicated news platform that delivers investigative journalism focused on Māori perspectives, covering national, regional, political, and indigenous stories across Aotearoa New Zealand, with content available in both English and Te Reo Māori.",
+    "owner": "Māori Television Service",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "The Post",
+    "domains": ["thepost.co.nz"],
+    "description": "The Post is a metropolitan daily newspaper published in Wellington, New Zealand",
+    "owner": "Stuff Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Gisborne Herald",
+    "domains": ["gisborneherald.co.nz"],
+    "description": "The Gisborne Herald is a daily newspaper serving the Tairāwhiti region of New Zealand, providing local news, sports, business, lifestyle, and rural coverage through both print and digital platforms.",
+    "owner": "New Zealand Media and Entertainment",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "The Press",
+    "domains": ["thepress.co.nz"],
+    "description": "The Press is a daily metropolitan newspaper serving Christchurch and the Canterbury region of New Zealand, providing local, national, and international news coverage through both print and digital platforms.",
+    "owner": "Stuff Limited",
+    "typology": "Private Media"
+  },
+  {
+    "country": "New Zealand",
+    "organization": "Waikato Times",
+    "domains": ["waikatotimes.co.nz"],
+    "description": "The Waikato Times is a daily newspaper serving Hamilton and the wider Waikato region of New Zealand, providing comprehensive coverage of local news, sports, business, opinion, and lifestyle content through both print and digital platforms.",
+    "owner": "Stuff Limited",
+    "typology": "Private Media"
   }
 ]
