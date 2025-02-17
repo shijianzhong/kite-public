@@ -1211,6 +1211,9 @@
   },
   "The Netherlands": {
     "feeds": [
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFU1YWpJU0FtNXNLQUFQAQ?hl=nl&gl=NL&ceid=NL%3Anl&oc=11",
+      "https://www.reddit.com/r/thenetherlands/.rss",
+      "https://www.reddit.com/r/nederlands/",
       "https://cdn.knmi.nl/knmi/xml/rss/rss_KNMIklimaatberichten.xml",
       "https://cdn.knmi.nl/knmi/xml/rss/rss_KNMInieuwsberichten.xml",
       "https://fd.nl/?rss",
