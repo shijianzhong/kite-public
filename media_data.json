@@ -2482,5 +2482,229 @@
     "description": "The Waikato Times is a daily newspaper serving Hamilton and the wider Waikato region of New Zealand, providing comprehensive coverage of local news, sports, business, opinion, and lifestyle content through both print and digital platforms.",
     "owner": "Stuff Limited",
     "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Koninklijk Nederlands Meteorologisch Instituut",
+    "domains": ["knmi.nl"],
+    "description": "The Royal Netherlands Meteorological Institute (Dutch: Koninklijk Nederlands Meteorologisch Instituut, KNMI) is the national institute for weather, climate, and seismology. It provides weather information for safety, the economy, and a sustainable environment to the general public, the government, aviation, and shipping.",
+    "owner": "Koninklijk Nederlands Meteorologisch Instituut",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Het Financieele Dagblad",
+    "domains": ["fd.nl"],
+    "description": "Het Financieele Dagblad (FD) is a daily Dutch newspaper focused on economics and business.",
+    "owner": "FD Mediagroep",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Nederlandse Omroep Stichting",
+    "domains": ["nos.nl"],
+    "description": "The Dutch Broadcasting Foundation (Dutch: Nederlandse Omroep Stichting, NOS) is a public broadcaster established in the Media Act, tasked with providing media content for the national public media service in the areas of news, sports, and events, which are particularly suited for joint coverage.",
+    "owner": "Nederlandse Omroep Stichting",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "De Rijksoverheid",
+    "domains": ["rijksoverheid.nl"],
+    "description": "De Rijksoverheid is the official website and communication platform of the Dutch goverment, providing official information about government policies and other activities.",
+    "owner": "Rijksoverheid",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Follow the Money",
+    "domains": ["ftm.nl"],
+    "description": "Follow the Money (FTM) is a Dutch independent news website for financial-economic investigative journalism.",
+    "owner": "FTM Media B.V.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Politie",
+    "domains": ["politie.nl"],
+    "description": "The official website and communication platform of the Dutch police, providing actual news about police activities and crimes.",
+    "owner": "Rijksoverheid",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Tweakers",
+    "domains": ["tweakers.net"],
+    "description": "Tweakers is a Dutch website focused on news and information about technology, including hardware, software, games, and the internet.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Algemeen Dagblad",
+    "domains": ["ad.nl"],
+    "description": "The Algemeen Dagblad (AD) is the second-largest paid national daily newspaper in the Netherlands.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Brabants Dagblad",
+    "domains": ["bd.nl"],
+    "description": "The Brabants Dagblad is a Dutch daily newspaper that is published in part of the provinces of North Brabant and the Gelderland region of Bommelerwaard.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "BNNVARA",
+    "domains": ["bnnvara.nl"],
+    "description": "BNNVARA is a Dutch independent, non-profit media organization committed to an open, equal, and just society.",
+    "owner": "Omroepvereniging BNNVARA",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "De Stentor",
+    "domains": ["destentor.nl"],
+    "description": "De Stentor is a Dutch regional newspaper, appearing throughout the eastern part of the Netherlands.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "De Gelderlander",
+    "domains": ["gelderlander.nl"],
+    "description": "De Gelderlander is a Dutch regional newspaper, appearing throughout the province of Gelderland as well as parts of Noord-Brabant, Utrecht and Limburg.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "NRC",
+    "domains": ["nrc.nl"],
+    "description": "Het NRC is a Dutch daily newspaper that has been published since 1970",
+    "owner": "Mediahuis",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Trouw",
+    "domains": ["trouw.nl"],
+    "description": "Trouw is a Dutch daily newspaper that originated as a resistance paper in 1943 and focuses on news, politics, and philosophy of life.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Tubantia",
+    "domains": ["tubantia.nl"],
+    "description": "Tubantia is a regional daily newspaper that provides news from Twente and parts of the Achterhoek.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "De Volkskrant",
+    "domains": ["volkskrant.nl"],
+    "description": "De Volkskrant is a Dutch national daily newspaper that has been published since 1919 and focuses on news, politics, and culture.",
+    "owner": "DPG Media",
+    "typology": "Private Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "RTV Noord",
+    "domains": ["rtvnoord.nl"],
+    "description": "RTV Noord is the regional public broadcaster of the province of Groningen that provides radio, television, and online news.",
+    "owner": "Stichting RTV Noord",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omrop Fryslân",
+    "domains": ["omropfryslan.nl"],
+    "description": "Omrop Fryslân is the regional public broadcaster of the province of Friesland that provides radio, television, and online news in both Frisian and Dutch.",
+    "owner": "Stichting Omrop Fryslân",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "NH Nieuws",
+    "domains": ["nhnieuws.nl"],
+    "description": "NH Nieuws is the regional public broadcaster of the province of North Holland that provides radio, television, and online news.",
+    "owner": "Stichting RTV NH",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "RTV Drenthe",
+    "domains": ["rtvdrenthe.nl"],
+    "description": "RTV Drenthe is the regional public broadcaster of the province of Drenthe that provides radio, television, and online news.",
+    "owner": "Stichting RTV Drenthe",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "RTV Oost",
+    "domains": ["rtvoost.nl"],
+    "description": "RTV Oost is the regional public broadcaster of the province of Overijssel that provides radio, television, and online news.",
+    "owner": "Stichting RTV Oost",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omroep Flevoland",
+    "domains": ["omroepflevoland.nl"],
+    "description": "Omroep Flevoland is the regional public broadcaster of the province of Flevoland that provides radio, television, and online news.",
+    "owner": "Omroep Flevoland",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "RTV Utrecht",
+    "domains": ["rtvutrecht.nl"],
+    "description": "RTV Utrecht is the regional public broadcaster of the province of Utrecht that provides radio, television, and online news.",
+    "owner": "SSPOMN",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omroep West",
+    "domains": ["omroepwest.nl"],
+    "description": "Omroep West is the regional public broadcaster of the province of South Holland that provides radio, television, and online news. The coverage area of Omroep West specifically includes the Haaglanden region and the northern part of South Holland, as RTV Rijnmond serves the southern part of the province.",
+    "owner": "Stichting Regionale Omroep West",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omroep Zeeland",
+    "domains": ["omroepzeeland.nl"],
+    "description": "Omroep West is the regional public broadcaster of the province of South Holland that provides radio, television, and online news. The coverage area of Omroep West specifically includes the Haaglanden region and the northern part of South Holland, as RTV Rijnmond serves the southern part of the province.",
+    "owner": "Stichting Omroep Zeeland",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "L1",
+    "domains": ["l1.nl", "l1nieuws.nl"],
+    "description": "L1 is the regional public broadcaster of the province of Limburg that provides radio, television, and online news. The broadcaster operates from Maastricht and delivers news and programs about all of Limburg, often also with attention to the Limburgish dialect and regional culture.",
+    "owner": "Omroep Limburg",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omroep Gelderland",
+    "domains": ["gld.nl"],
+    "description": "Omroep Gelderland is the regional public broadcaster and emergency broadcaster of the Dutch province of Gelderland.",
+    "owner": "Omroep Gelderland Organisatie",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "The Netherlands",
+    "organization": "Omroep Brabant",
+    "domains": ["omroepbrabant.nl"],
+    "description": "Omroep Brabant is the regional public broadcaster of the province of North Brabant that provides radio, television, and online news.",
+    "owner": "Omroep Brabant Organisatie",
+    "typology": "State Funded Media"
   }
 ]
