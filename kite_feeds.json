@@ -1275,5 +1275,37 @@
       "https://www.omroepzeeland.nl/rss/index.xml",
       "https://www.l1nieuws.nl/rss/index.xml"
     ]
+  },
+  "Romania": {
+    "feeds": [
+      "https://recorder.ro/feed/",
+      "https://www.biziday.ro/feed/",
+      "https://republica.ro/rss",
+      "https://www.contributors.ro/feed/",
+      "https://snoop.ro/feed/",
+      "https://www.factual.ro/feed/",
+      "https://www.hotnews.ro/rss",
+      "https://www.g4media.ro/feed",
+      "https://www.digi24.ro/rss",
+      "https://adevarul.ro/rss/",
+      "https://www.gandul.ro/feed",
+      "https://rss.stirileprotv.ro/",
+      "https://www.g4media.ro/feed",
+      "https://www.libertatea.ro/feed",
+      "https://ziare.com/rss/",
+      "https://www.gsp.ro/rss",
+      "https://www.digisport.ro/rss",
+      "https://evz.ro/rss.xml",
+      "https://www.mediafax.ro/rss",
+      "https://www.antena3.ro/rss",
+      "https://www.edupedu.ro/feed/",
+      "https://www.zf.ro/rss",
+      "https://www.capital.ro/rss",
+      "https://www.bursa.ro/rss",
+      "https://www.romaniajournal.ro/feed/",
+      "https://playtech.ro/feed",
+      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFpqTVhrU0FuSnZLQUFQAQ?hl=ro&gl=RO&ceid=RO%3Aro&oc=11",
+      "https://www.reddit.com/r/Romania/.rss"
+    ]
   }
 }
