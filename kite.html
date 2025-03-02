@@ -349,6 +349,11 @@
                             this.enabled = [];
                             localStorage.removeItem("categoryOrder");
                             localStorage.removeItem("enabledCategories");
+
+                            console.log("[init] Language changed, reloading");
+
+                            // TODO: Remove this once we make it work without refreshing
+                            window.location.reload();
                         });
 
                         const savedOrder = JSON.parse(localStorage.getItem("categoryOrder"));
@@ -432,54 +437,14 @@
                     },
                 });
 
-                Alpine.store("audio", {
-                    isPlaying: false,
-                    currentTune: null,
-                    audioElement: null,
-                    tuneNumber: 1,
-                    showIcon: localStorage.getItem("showMusicIcon") !== "false",
-                    init() {
-                        this.audioElement = new Audio();
-                        this.audioElement.addEventListener('ended', () => {
-                            this.isPlaying = false;
-                        });
-                        this.tuneNumber = Math.floor(Math.random() * 6) + 1;
-                        if (localStorage.getItem("showMusicIcon") === null) {
-                            localStorage.setItem("showMusicIcon", "true");
-                        }
-                    },
-                    toggleIcon() {
-                        this.showIcon = !this.showIcon;
-                        localStorage.setItem("showMusicIcon", this.showIcon);
-                    },
-                    toggle() {
-                        if (this.isPlaying) {
-                            this.pause();
-                        } else {
-                            this.play();
-                        }
-                    },
-                    changeTune() {
-                        this.tuneNumber = this.tuneNumber % 6 + 1;
-                        this.currentTune = `{{ static_path }}/tune${this.tuneNumber}.mp3`;
-                        if (this.isPlaying) {
-                            this.audioElement.src = this.currentTune;
-                            this.audioElement.play();
-                        }
-                    },
-                    play() {
-                        if (!this.currentTune) {
-                            this.currentTune = `{{ static_path }}/tune${this.tuneNumber}.mp3`;
-                            this.audioElement.src = this.currentTune;
-                        }
-                        this.audioElement.play();
-                        this.isPlaying = true;
-                    },
-                    pause() {
-                        this.audioElement.pause();
-                        this.isPlaying = false;
+                Alpine.store("mobileUI", {
+                    categoryHeaderPosition: localStorage.getItem("categoryHeaderPosition") || "bottom",
+                    setCategoryHeaderPosition(position) {
+                        this.categoryHeaderPosition = position;
+                        localStorage.setItem("categoryHeaderPosition", position);
                     }
                 });
+
             });
             function lockScroll() {
                 document.body.style.overflow = "hidden";
@@ -487,6 +452,35 @@
 
             function unlockScroll() {
                 document.body.style.overflow = "";
+            }
+
+            function findScrollableParent(element) {
+                if (!element) return null;
+                
+                // Check if the element itself is scrollable
+                if (isElementScrollable(element)) {
+                    return element;
+                }
+                
+                // Check parent elements
+                let parent = element.parentElement;
+                while (parent) {
+                    if (isElementScrollable(parent)) {
+                        return parent;
+                    }
+                    parent = parent.parentElement;
+                }
+                
+                return null;
+            }
+            
+            function isElementScrollable(element) {
+                const style = window.getComputedStyle(element);
+                const overflowX = style.getPropertyValue('overflow-x');
+                
+                // Check if element has horizontal scroll
+                return (overflowX === 'auto' || overflowX === 'scroll') && 
+                       element.scrollWidth > element.clientWidth;
             }
 
             function fetchChaosIndex() {
@@ -723,6 +717,11 @@
                         // Hide the button
                         this.allStoriesRead = true;
                     },
+                    touchStartX: 0,
+                    touchEndX: 0,
+                    touchStartY: 0,
+                    touchEndY: 0,
+                    touchStartedOnScrollable: false,
                     async init() {
                         // Add language change event listener
                         window.addEventListener('language-changed', () => {
@@ -1011,6 +1010,7 @@
                     },
                     toggleStory(story, index) {
                         if (this.expandedStory === story) {
+                            console.log("Collapsing story", story);
                             // Collapse the story
                             story.expanded = false;
                             this.expandedStory = null;
@@ -1018,6 +1018,7 @@
                             story.showSources = false;
                             // Do not call scrollToStory when collapsing
                         } else {
+                            console.log("Expanding story", story);
                             if (this.expandedStory && this.expandedStory !== story) {
                                 this.expandedStory.expanded = false;
                                 this.expandedStory.showSources = false;
@@ -1055,7 +1056,8 @@
                         setTimeout(() => {
                             const storyElement = document.getElementById("story-" + index);
                             if (storyElement) {
-                                const navHeight = document.querySelector(".sticky").offsetHeight;
+                                const stickyElement = document.querySelector(".sticky");
+                                const navHeight = stickyElement ? stickyElement.offsetHeight : 0;
                                 const yOffset = -navHeight;
                                 const y = storyElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
                                 window.scrollTo({ top: y, behavior: "smooth" });
@@ -1176,6 +1178,105 @@
                 }));
             });
 
+
+            // Example story: Proxy(Object) {year: '1849', content: '<b><a href="https://en.wikipedia.org/wiki/Joseph_F…Favre">Joseph Favre</a></b> was born on this day.', sort_year: 1849.1}
+            function fetchWikiImage(story) {
+                // Extract the Wikipedia URL from the link
+                const linkMatch = story.content.match(/<a href="([^"]+)"[^>]*>[^<]+<\/a>/);
+                if (!linkMatch) {
+                    console.log("No Wikipedia link found for", story);
+                    return;
+                }
+
+                const wikipediaUrl = linkMatch[1];
+                const title = decodeURIComponent(wikipediaUrl.split("/wiki/")[1]);
+                console.log("Fetching image for", title);
+
+                // Fetch Wikipedia summary for the image
+                const apiUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+                
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data && data.thumbnail) {
+                            story.image = data.thumbnail.source;
+                            console.log("Image found for", title, data.thumbnail.source);
+                        } else {
+                            console.log("No image found for", title, "Data:", data);
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error fetching Wikipedia image:", error);
+                    });
+            }
+
+            function peopleCarousel(allStories) {
+                return {
+                peopleStories: [],   // all filtered stories (for mobile)
+                chunkedStories: [],  // grouped into slides of 3 (for desktop)
+                currentSlide: 0,     // which slide is active?
+                lastScrollTime: 0,   // last time the user scrolled
+
+                init() {
+                    // 1) Filter only stories with "was born" or "died"
+                    const filtered = allStories.filter(e => 
+                    e.content.toLowerCase().includes('was born') ||
+                    e.content.toLowerCase().includes(' died')
+                    );
+
+                    // Fetch Wikipedia image for each story
+                    filtered.forEach(story => {
+                    fetchWikiImage(story);
+                    });
+
+                    this.peopleStories = filtered;
+
+                    // 2) Chunk them in groups of 3 for the desktop carousel
+                    for (let i = 0; i < filtered.length; i += 3) {
+                    this.chunkedStories.push(filtered.slice(i, i + 3));
+                    }
+                },
+
+                // Move to the next slide
+                nextSlide() {
+                    if (this.currentSlide < this.chunkedStories.length - 1) {
+                    this.currentSlide++;
+                    }
+                },
+
+                // Move to the previous slide
+                prevSlide() {
+                    if (this.currentSlide > 0) {
+                    this.currentSlide--;
+                    }
+                },
+
+                // Jump to a particular slide
+                goToSlide(index) {
+                    this.currentSlide = index;
+                },
+
+                // Handle scroll on desktop
+                onWheel(e) {
+                    // Prevent default so the page doesn't scroll vertically
+                    e.preventDefault();
+                    if(Date.now() - this.lastScrollTime < 150) {
+                        return;
+                    }
+                    
+                    // If user scrolls "down" (deltaY > 0), go next. If "up" (deltaY < 0), go prev.
+                    if (e.deltaY > 0 || e.deltaX > 0) {
+                        this.nextSlide();
+                        this.lastScrollTime = Date.now();
+                    } else if (e.deltaY < 0 || e.deltaX < 0) {
+                        this.prevSlide();
+                        this.lastScrollTime = Date.now();
+                    }
+                    
+                }
+                }
+            }
+
             document.addEventListener("pointerover", (event) => {
                 const link = event.target.closest('a[href^="https://en.wikipedia.org/wiki/"]');
                 if (link && window.innerWidth > 768) { // Only show hover popup on desktop
@@ -1250,10 +1351,66 @@
     <body
         class="min-h-screen bg-white dark:bg-dark-bg text-black dark:text-dark-text"
         x-data="Object.assign(kiteApp(), sourceOverlay())"
-        x-bind:class="$store.fontSize.current === 'extra-small' ? 'text-xs' : $store.fontSize.current === 'small' ? 'text-sm' : $store.fontSize.current === 'large' ? 'text-lg' : 'text-base'"
+        x-bind:class="[
+            $store.fontSize.current === 'extra-small' ? 'text-xs' : 
+            $store.fontSize.current === 'small' ? 'text-sm' : 
+            $store.fontSize.current === 'large' ? 'text-lg' : 'text-base',
+            $store.mobileUI.categoryHeaderPosition === 'top' ? 'pt-14 md:pt-0' : ''
+        ]"
+        @touchstart="
+            touchStartX = $event.changedTouches[0].screenX; 
+            touchStartY = $event.changedTouches[0].screenY;
+            
+            // Check if touch started on a scrollable element
+            const target = $event.target;
+            const scrollableParent = findScrollableParent(target);
+            touchStartedOnScrollable = scrollableParent && 
+                                      (scrollableParent.scrollWidth > scrollableParent.clientWidth);
+        "
+        @touchend="
+            if (touchStartedOnScrollable) {
+                // Don't change category if touch started on a scrollable element
+                return;
+            }
+            
+            // Check if the touch started on or within the category tabs
+            const categoryTabs = document.querySelector('.category-tabs');
+            if (categoryTabs && (categoryTabs.contains($event.target) || categoryTabs === $event.target)) {
+                return;
+            }
+            
+            touchEndX = $event.changedTouches[0].screenX;
+            touchEndY = $event.changedTouches[0].screenY;
+            const deltaX = touchStartX - touchEndX;
+            const deltaY = touchStartY - touchEndY;
+
+            if(Math.abs(deltaY) > Math.abs(deltaX)) {
+                return;
+            }
+
+            if (Math.abs(deltaX) > 50) {
+                const categories = Array.from($store.categories.enabled);
+                const currentIndex = categories.indexOf(currentCategory);
+                if (deltaX > 0 && currentIndex < categories.length - 1) {
+                    currentCategory = categories[currentIndex + 1];
+                    changeCategory();
+                } else if (deltaX < 0 && currentIndex > 0) {
+                    currentCategory = categories[currentIndex - 1];
+                    changeCategory();
+                }
+
+                // Scroll the selected category into view
+                $nextTick(() => {
+                    const selectedTab = document.querySelector('.category-tab.active');
+                    if (selectedTab) {
+                        selectedTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                });
+            }
+        "
     >
         <!-- Wikipedia Popup -->
-        <div id="wikipedia-popup" class="fixed z-50 bg-white dark:bg-gray-800 shadow-xl p-4 hidden overflow-y-auto" style="max-width: 600px; max-height: 80vh;">
+        <div id="wikipedia-popup" class="fixed z-[200] bg-white dark:bg-gray-800 shadow-xl p-4 hidden overflow-y-auto" style="max-width: 600px; max-height: 80vh;">
             <button id="wikipedia-popup-close" onclick="document.getElementById('wikipedia-popup').style.display='none'" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -1292,25 +1449,27 @@
 
                     <div class="space-y-6 text-gray-700 dark:text-gray-300">
                         <section>
-                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Why Kite?</h2>
+                            <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Why Kite? Because news is broken.</h2>
                             <p class="mb-4">
-                                Driven by relentless ad monetization, news has <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://gwern.net/doc/culture/2010-dobelli.pdf">become</a> mental junk food - easy to consume but toxic to our minds, triggering stress responses and interrupting deep thought. We can do better, by going back to the essence of journalism - to inform and educate citizens.
+                                Driven by relentless ad monetization, news has <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://gwern.net/doc/culture/2010-dobelli.pdf">become</a> mental junk food - an endless stream of clickbait that destroys our ability to think deeply and clearly. We can do better, and create what news should have been all along - pure, essential information that respects your intelligence and time.
                             </p>
                         </section>
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Understanding our approach</h2>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">In order to really understand anything about the world, we have to look at multiple perspectives and we have to have different viewpoints pushing against each other.</p>
-                            <p class="mb-4 text-gray-700 dark:text-gray-300">Kite reads thousands of community-curated publications around the world and delivers one essential daily news update, including different perspectives and timeline of events, using latest AI technology.</p>
+                            <p class="mb-4 text-gray-700 dark:text-gray-300">World doesn't live in echo chambers. The reality emerges from the collision of different viewpoints and perspectives - that's how we separate signal from noise.</p>
+                            <p class="mb-4 text-gray-700 dark:text-gray-300">We strive for diversity and transparency of resources and welcome your <a class="text-blue-600 dark:text-blue-400 hover:underline" href="https://github.com/kagisearch/kite-public">contributions</a> to widen perspectives. This multi-source approach helps reveal the full picture beyond any single viewpoint.</p>
+                            <p class="mb-4 text-gray-700 dark:text-gray-300">Kite reads thousands of community-curated global publications and distills them into one perfect daily briefing. You get every critical perspective and timeline in just 5 minutes. That's it. No endless scrolling. No attention hijacking. Because we deserve better.</p>
                         </section>
 
                         <section>
                             <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core principles</h2>
                             <ul class="space-y-2">
-                                <li>• One daily update (noon UTC), no endless scrolling</li>
-                                <li>• Facts and perspectives over opinions</li>
-                                <li>• Zero tracking, zero ads - your reading habits are yours alone</li>
+                                <li>• One daily update (noon UTC), creating a natural endpoint to your news consumption</li>
+                                <li>• Focus on facts and perspectives over opinions</li>
+                                <li>• Zero compromise on privacy - your reading habits are yours alone</li>
                                 <li>• Quality and depth over quantity</li>
                                 <li>• Complete news diet in 5 minutes</li>
+                                <li>• Liberation from the attention economy - exist in the moment, not in an endless scroll</li>
                             </ul>
                         </section>
                         <section>
@@ -1332,7 +1491,7 @@
                                 @click="closeIntro()"
                                 class="px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors duration-200 ease-in-out"
                             >
-                                Start
+                                I understand
                             </button>
                         </div>
                     </div>
@@ -1341,7 +1500,7 @@
         </div>
 
         <!-- Main Content -->
-        <main x-show="!initialLoading && !showIntro" x-cloak>
+        <main x-show="!initialLoading && !showIntro" x-cloak class="pb-[60px] md:pb-0">
             <div class="container mx-auto px-4 py-8 max-w-[732px]">
                 <header class="flex justify-between items-center mb-1">
                     <div class="flex items-center">
@@ -1366,41 +1525,21 @@
                              : `Week ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24 * 7))}, Day ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24))}`"
                     ></div>
                     <div class="flex items-center space-x-2">
-                        <div class="relative" x-show="$store.audio.showIcon">
-                            <button 
-                                @click="$store.audio.toggle()" 
-                                title="Play/Pause Music" 
-                                class="flex items-center justify-center w-8 h-8"
-                                x-init="$store.audio.init()"
-                            >
-                                <template x-if="!$store.audio.isPlaying">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </template>
-                                <template x-if="$store.audio.isPlaying">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10h1v4H9zm5 0h1v4h-1z" />
-                                    </svg>
-                                </template>
-                            </button>
-                            <div 
-                                x-show="$store.audio.isPlaying"
-                                @click.stop="$store.audio.changeTune()"
-                                class="absolute -bottom-1 text-xs text-gray-600 dark:text-gray-400 cursor-pointer"
-                                style="right: -0.05rem;"
-                                x-text="$store.audio.tuneNumber"
-                            ></div>
-                        </div>
                         </button>
                         <button @click="$store.settings.open()" title="Settings" class="ml-2">
                             <img src="{{ static_path }}/svg/gear.svg" alt="" class="h-6 w-6 text-gray-600 dark:text-gray-400 dark:invert" aria-hidden="true" />
                         </button>
                     </div>
                 </header>
-                <div class="sticky top-0 bg-white dark:bg-dark-bg py-2 z-[60]" role="navigation" 
+                <div class="category-slider-container px-6 md:px-0 md:sticky md:top-0 fixed md:relative bg-white dark:bg-dark-bg pb-12 md:py-2 z-[60] shadow-[0_-4px_8px_rgba(0,0,0,0.1)] md:shadow-none" 
+                    :class="{ 
+                        'bottom-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'bottom',
+                        'top-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'top'
+                    }"
+                    @touchstart="isScrolling = false" 
+                    @touchmove="isScrolling = true"
+                    @touchend="setTimeout(() => isScrolling = false, 50)"
+                    role="navigation"
                     x-data="{ 
                         hasOverflow: false,
                         checkOverflow() {
@@ -1447,19 +1586,21 @@
                         <div class="relative flex items-center w-full">
                             <button 
                                 @click="document.querySelector('.category-tabs').scrollBy({left: -200, behavior: 'smooth'})"
-                                class="relative focus:outline-none md:block hidden -ml-1 pr-4 py-3"
+                                class="relative focus:outline-none md:block hidden -ml-1 pr-4 py-3
+                                text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
                                 :class="{ 'md:hidden': !hasOverflow }"
                                 x-cloak
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                                 </svg>
                             </button>
                             <div class="category-tabs overflow-x-auto scrollbar-hide flex-1" 
                                 role="tablist" 
                                 aria-label="News categories" 
-                                @touchstart="isScrolling = true" 
-                                @touchend="isScrolling = false"
+                                @touchstart="isScrolling = false" 
+                                @touchmove="isScrolling = true"
+                                @touchend="setTimeout(() => isScrolling = false, 50)"
                                 @scroll="checkOverflow()"
                             >
                                 <template x-for="category in availableCategories.filter(cat => $store.categories.isEnabled(cat.name))" :key="category.name">
@@ -1473,7 +1614,7 @@
                                             currentCategory = category.name; 
                                             changeCategory(); 
                                             updateUrlWithArticleId('');
-                                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                                            
                                             
                                             // Scroll the category into view
                                             $el.scrollIntoView({ 
@@ -1488,11 +1629,12 @@
                             </div>
                             <button 
                                 @click="document.querySelector('.category-tabs').scrollBy({left: 200, behavior: 'smooth'})"
-                                class="relative focus:outline-none md:block hidden -mr-1 pl-4 py-3"
+                                class="relative focus:outline-none md:block hidden -mr-1 pl-4 py-3
+                                text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
                                 :class="{ 'md:hidden': !hasOverflow }"
                                 x-cloak
                             >
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                                 </svg>
                             </button>
@@ -1606,44 +1748,191 @@
                     </template>
                     <template x-if="viewMode === 'list' && currentCategory === 'OnThisDay'">
                         <div class="py-4" x-data="{ hoveredLink: null, popupContent: null, popupVisible: false, popupPosition: { x: 0, y: 0 } }">
-                            <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200" x-text="new Date().toLocaleString('en-US', { month: 'long', day: 'numeric' })"></h2>
-                            
-                            <!-- Events Section -->
-                            <h3 class="text-xl font-bold mb-4 text-gray-700 dark:text-gray-300">Events</h3>
-                            <div class="timeline mb-8">
-                                <template x-for="(event, index) in stories.filter(e => !e.content.toLowerCase().includes('born on this day') && !e.content.toLowerCase().includes('died on this day'))" :key="index">
-                                    <div class="row">
-                                        <div class="head">
-                                            <span class="step"></span>
-                                            <span class="item-title" x-text="event.year"></span>
-                                        </div>
-                                        <div class="body">
-                                            <span 
-                                                class="text-gray-700 dark:text-gray-300"
-                                                x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
-                                            ></span>
-                                        </div>
+                           <!-- Events Section -->
+                            <div class="mb-8">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-300">Events</h3>
+                                
+                                <template 
+                                x-for="(event, index) in stories.filter(e => !e.content.toLowerCase().includes('was born') && !e.content.toLowerCase().includes('died'))" 
+                                :key="index"
+                                >
+                                <div 
+                                    class="
+                                    relative pb-6 last:pb-0
+                                    flex flex-col
+                                    
+                                    /* Switch to 2-column grid on md+, left-align items */
+                                    md:grid md:grid-cols-[auto_1fr] md:gap-4 
+                                    md:justify-items-start md:items-start
+                                    
+                                    /* Vertical line connecting dots */
+                                    before:content-[''] before:absolute 
+                                    before:top-[14px] before:bottom-[-16px]
+                                    before:left-[3px] before:w-[2px] before:bg-[var(--color-header)]
+                                    last:before:content-none
+                                    "
+                                >
+                                    <!-- Dot + Year -->
+                                    <div class="flex items-center">
+                                    <!-- Dot -->
+                                    <span 
+                                        class="relative z-10 w-2 h-2 bg-[var(--color-header)] rounded-full"
+                                    ></span>
+                                    
+                                    <!-- Year -->
+                                    <span 
+                                        class="ml-2 text-2xl pl-2 font-bold text-[var(--color-header)]"
+                                        x-text="event.year"
+                                    ></span>
                                     </div>
+                            
+                                    <!-- Text -->
+                                    <!-- On mobile, it's below the dot+year; on md+ it's in the second column -->
+                                    <div class="mt-2 md:mt-0 pl-6 md:pl-0">
+                                    <span
+                                        class="text-sm text-gray-700 dark:text-gray-300"
+                                        x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                    ></span>
+                                    </div>
+                                </div>
                                 </template>
                             </div>
-
-                            <!-- People Section -->
-                            <h3 class="text-xl font-bold mb-4 text-gray-700 dark:text-gray-300">People</h3>
-                            <div class="timeline">
-                                <template x-for="(event, index) in stories.filter(e => e.content.toLowerCase().includes('born on this day') || e.content.toLowerCase().includes('died on this day'))" :key="index">
-                                    <div class="row">
-                                        <div class="head">
-                                            <span class="step"></span>
-                                            <span class="item-title" x-text="event.year"></span>
-                                        </div>
-                                        <div class="body">
+                            
+                            <!-- People Section Carousel -->
+                            <div x-data="peopleCarousel(stories)">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-700 dark:text-gray-300">People</h3>
+                                
+                                <!-- ============ DESKTOP CAROUSEL (md and up) ============ -->
+                                <div class="relative hidden md:block">
+                                <!-- Left Arrow -->
+                                <button 
+                                    class="absolute left-[-2rem] top-1/2 -translate-y-1/2 px-2 py-1
+                                        rounded cursor-pointer disabled:opacity-50
+                                        text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
+                                    @click="prevSlide" 
+                                    :disabled="currentSlide === 0"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                            
+                                <!-- Slides Wrapper (overflow hidden) -->
+                                <div class="overflow-hidden" @wheel="onWheel($event)">
+                                    <!-- Inner track that slides back & forth -->
+                                    <div 
+                                    class="flex transition-transform duration-300 ease-out"
+                                    :style="`transform: translateX(-${currentSlide * 100}%)`"
+                                    >
+                                    <!-- Each "slide" is a group of up to 3 stories -->
+                                    <template x-for="(slide, sIndex) in chunkedStories" :key="sIndex">
+                                        <div class="flex w-full shrink-0 justify-around">
+                                        
+                                        <!-- Each story card within the slide -->
+                                        <template x-for="(event, index) in slide" :key="index">
+                                            <div class="relative flex flex-col items-center text-center px-4 w-1/3">
+                                            
+                                            <!-- Vertical separator between cards (except last card in the slide) -->
+                                            <div 
+                                                x-show="index < slide.length - 1" 
+                                                class="absolute right-0 top-0 h-full w-[1px] bg-[var(--color-header)]"
+                                            ></div>
+                                            
+                                            <!-- YEAR -->
                                             <span 
-                                                class="text-gray-700 dark:text-gray-300"
-                                                x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                                class="text-2xl font-bold mb-2 mr-auto text-[var(--color-header)]" 
+                                                x-text="event.year"
                                             ></span>
+                            
+                                            <!-- IMAGE + TEXT -->
+                                            <div class="flex items-start gap-4">                     
+                                                <!-- IMAGE -->
+                                                <img 
+                                                class="w-10 h-10 object-cover rounded-full flex-shrink-0" 
+                                                :src="event.image || '{{ static_path }}/svg/placeholder.svg'" 
+                                                alt="placeholder"
+                                                />
+                                                
+                                                <!-- TEXT -->
+                                                <span 
+                                                class="text-sm text-gray-700 dark:text-gray-300 text-left"
+                                                x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                                ></span>
+                                            </div>
+                                            </div>
+                                        </template>
                                         </div>
+                                    </template>
+                                    </div>
+                                </div>
+                            
+                                <!-- Right Arrow -->
+                                <button 
+                                    class="absolute right-[-2rem] top-1/2 -translate-y-1/2 px-2 py-1
+                                        rounded cursor-pointer disabled:opacity-50
+                                        text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
+                                    @click="nextSlide"
+                                    :disabled="currentSlide >= chunkedStories.length - 1"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                                
+                                <!-- Pagination Dots (Desktop) -->
+                                <div class="flex justify-center space-x-2 mt-8">
+                                    <template x-for="(slide, i) in chunkedStories" :key="i">
+                                    <span 
+                                        class="block w-2 h-2 rounded-full cursor-pointer transition-colors"
+                                        :class="currentSlide === i 
+                                                ? 'bg-[var(--color-header)]' 
+                                                : 'bg-gray-300 dark:bg-gray-600'"
+                                        @click="goToSlide(i)"
+                                    ></span>
+                                    </template>
+                                </div>
+                                </div>
+                            
+                                <!-- ============ MOBILE HORIZONTAL SCROLL (below md) ============ -->
+                                <div class="md:hidden overflow-x-auto flex space-x-4 horizontal-scroll-container"
+                                    @touchstart="isScrolling = true" 
+                                    @touchend="setTimeout(() => isScrolling = false, 50)"
+                                >
+                                <!-- Show *all* filtered stories in one row; user can scroll -->
+                                <template x-for="(event, index) in peopleStories" :key="index">
+                                    <div class="relative flex flex-col items-center text-center min-w-[200px] px-2">
+                                    
+                                    <!-- Vertical line between items (except the last one) -->
+                                    <div 
+                                        x-show="index < peopleStories.length - 1" 
+                                        class="absolute right-0 top-0 h-full w-[1px] bg-[var(--color-header)]"
+                                    ></div>
+                                    
+                                    <!-- YEAR -->
+                                    <span 
+                                        class="text-lg font-bold mb-2 text-[var(--color-header)]"
+                                        x-text="event.year"
+                                    ></span>
+                                    
+                                    <!-- IMAGE -->
+                                    <img 
+                                        class="mb-2 w-20 h-20 object-cover rounded-full" 
+                                        :src="event.image || '{{ static_path }}/svg/placeholder.svg'" 
+                                        alt="placeholder"
+                                    />
+                                    
+                                    <!-- TEXT -->
+                                    <span 
+                                        class="text-gray-700 dark:text-gray-300"
+                                        x-html="event.content.replace(/href=/g, 'class=\'underline\' href=')"
+                                    ></span>
                                     </div>
                                 </template>
+                                </div>
                             </div>
 
                             <!-- Wikipedia Popup -->
@@ -1872,7 +2161,10 @@
 
                                     <section x-show="story.perspectives && story.perspectives.length > 0 && $store.sections.settings.perspectives" class="mt-6" :class="'order-[' + $store.sections.order.indexOf('perspectives') + ']'">
                                         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Perspectives</h3>
-                                        <div class="flex flex-row overflow-x-auto gap-3 pb-4">
+                                        <div class="flex flex-row overflow-x-auto gap-3 pb-4 horizontal-scroll-container"
+                                            @touchstart="isScrolling = true" 
+                                            @touchend="setTimeout(() => isScrolling = false, 50)"
+                                        >
                                             <template x-for="(perspective, index) in story.perspectives" :key="index">
                                                 <div class="flex-shrink-0 w-56 bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
                                                     <p class="text-gray-800 dark:text-gray-200 font-bold mb-2" x-text="perspective.text.includes(':') ? perspective.text.split(':')[0] : ''"></p>
@@ -2282,7 +2574,7 @@
             @click.self="$store.settings.close()"
             @keydown.escape.window="$store.settings.close()"
         >
-            <div class="bg-white dark:bg-gray-800 w-full h-full md:rounded-lg md:p-8 md:max-w-md md:h-auto md:max-h-[90vh] shadow-xl overflow-y-auto flex flex-col" @click.stop x-data="{ activeTab: 'general' }">
+            <div class="bg-white dark:bg-gray-800 w-full h-full md:rounded-lg md:p-8 md:max-w-[42rem] md:h-auto md:max-h-[90vh] shadow-xl overflow-y-auto flex flex-col" @click.stop x-data="{ activeTab: 'general' }">
                 <header class="flex-shrink-0 bg-white dark:bg-gray-800 p-4 md:p-0">
                     <div class="flex justify-end mb-1">
                         <button @click="$store.settings.close()" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200">
@@ -2352,6 +2644,7 @@
                                     class="block appearance-none w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                                 >
                                     <option value="en">Default</option>
+                                    <option value="en">English (English)</option>
                                     <option value="pt">Português (Portuguese)</option>
                                     <option value="it">Italiano (Italian)</option>
                                     <option value="fr">Français (French)</option>
@@ -2366,6 +2659,28 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Mobile-only category header position setting -->
+                        <div class="flex flex-col space-y-2 md:hidden">
+                            <label for="category-header-position" class="text-sm font-medium text-gray-700 dark:text-gray-300">Category Header Position</label>
+                            <div class="relative">
+                                <select
+                                    id="category-header-position"
+                                    x-model="$store.mobileUI.categoryHeaderPosition"
+                                    @change="$store.mobileUI.setCategoryHeaderPosition($event.target.value)"
+                                    aria-label="Select category header position"
+                                    class="block appearance-none w-full bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                >
+                                    <option value="bottom">Bottom</option>
+                                    <option value="top">Top</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Choose where to display the category navigation bar on mobile devices.</p>
+                        </div>
+                        
 
                         <div class="flex flex-col space-y-2">
                             <label for="font-size-select" class="text-sm font-medium text-gray-700 dark:text-gray-300">Font size</label>
@@ -2406,20 +2721,7 @@
                                 class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
                             />
                         </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Show play music icon</span>
-                            <button
-                                @click="$store.audio.toggleIcon()"
-                                class="relative inline-flex h-6 w-11 items-center rounded-full"
-                                :class="$store.audio.showIcon ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
-                            >
-                                <span class="sr-only">Toggle music icon visibility</span>
-                                <span
-                                    class="inline-block h-4 w-4 transform rounded-full bg-white transition"
-                                    :class="$store.audio.showIcon ? 'translate-x-6' : 'translate-x-1'"
-                                ></span>
-                            </button>
-                        </div>
+                        
                         <div class="flex flex-col space-y-2">
                             <button
                                 @click="$store.settings.close(); showIntro = true; updateUrlWithArticleId('')"
@@ -2429,6 +2731,7 @@
                                 <span>About Kite</span>
                             </button>
                         </div>
+
                     </div>
                     <!-- Categories Tab -->
                     <div x-show="activeTab === 'categories'" class="space-y-6">
@@ -2469,7 +2772,18 @@
 
         <!-- Footer -->
         <footer class="py-4 mt-8">
-            <div class="container mx-auto px-4 max-w-[732px] flex justify-center items-center">
+            <div class="container mx-auto px-4 max-w-[732px] flex justify-center items-center space-x-6">
+                <a
+                    href="https://github.com/kagisearch/kite-public" 
+                    target="_blank" 
+                    title="Contribute to Kagi News" 
+                    class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 flex items-center space-x-2"
+                >
+                    <svg class="h-5 w-5 text-gray-600 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="text-sm">Contribute</span>
+                </a>
                 <a
                     :href="currentCategory === 'OnThisDay' ? 
                         `https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&lang=${$store.language.current}` : 
@@ -2483,5 +2797,6 @@
                 </a>
             </div>
         </footer>
+        
     </body>
 </html>
