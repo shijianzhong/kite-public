@@ -1,20 +1,20 @@
-
-# Kite - News. Elevated. 
+# Kite - News. Elevated.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 This repository contains public files for [Kite](https://kite.kagi.com), news app for people who want a healthy news diet, developed by [Kagi](https://kagi.com).
 
-Kite is  designed for people who want to stay informed without getting overwhelmed. We provide thrice-daily updates of the most important news stories, from carefully curated sources and summarized by advanced language models to give you the essential information you need. We strive for diversity and transparency of resources and welcome your contributions to widen perspectives. This multi-source approach helps reveal the full picture beyond any single viewpoint.
+Kite is designed for people who want to stay informed without getting overwhelmed. We provide thrice-daily updates of the most important news stories, from carefully curated sources and summarized by advanced language models to give you the essential information you need. We strive for diversity and transparency of resources and welcome your contributions to widen perspectives. This multi-source approach helps reveal the full picture beyond any single viewpoint.
 
 Most of what powers Kite is open sourced and is found in this repository.
 
 This includes
+
 - Kite web app
 - Community curated feeds
 - Media information
-  
+
 ## Core Principles
 
 - Updated only three times per day - no endless scrolling
@@ -24,24 +24,36 @@ This includes
 - Quality over quantity
 - Complete news diet in 5 minutes
 
-You can read more about core principles behind Kite 
+You can read more about core principles behind Kite
+
 - [Avoid News: Towards a Healthy News Diet](https://www.gwern.net/docs/culture/2010-dobelli.pdf) ([HN discussion](https://news.ycombinator.com/item?id=21430337))
 - [News is bad for you](http://www.theguardian.com/media/2013/apr/12/news-is-bad-rolf-dobelli) ([HN discussion](https://news.ycombinator.com/item?id=6894244))
 - [Stop reading news](https://fs.blog/2013/12/stop-reading-news/) ([HN discussion](https://news.ycombinator.com/item?id=19084099))
 
-If you prefer to watch a short video, check this Ted talk:  [Four reasons you should stop watching the news | Rolf Dobelli](https://www.youtube.com/watch?v=-miTTiaqFlI).
+If you prefer to watch a short video, check this Ted talk: [Four reasons you should stop watching the news | Rolf Dobelli](https://www.youtube.com/watch?v=-miTTiaqFlI).
 
 # Install & run Kite front-end
 
 Kite front end is a statically served app and is fully open source.
 
-Here is how to run it locally.
+Here is how to run it locally:
 
+```bash
+# Clone the repository
+git clone https://github.com/kagisearch/kite-public.git
+cd kite-public
+
+# Make sure you have the Node.js LTS version installed.
+node -v
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
-pip install Jinja2
-python generate.py
-open index.html
-```
+
+Check out the Vite documentation on how a production build works: https://vite.dev/guide/static-deploy.html
 
 Kite front-end uses Kite application data that can be found at [kite.kagi.com/kite.json](https://kite.kagi.com/kite.json) (explore other files from there). Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge (with attribution and for non-commercial use). If you would like to license this data for commercial use let us know through support@kagi.com.
 
@@ -62,17 +74,17 @@ To add a new category or modify existing ones, follow this structure:
   "Category Name": {
     "feeds": [
       "https://example.com/rss-feed-1",
-      "https://example.com/rss-feed-2"
+      "https://example.com/rss-feed-2",
       // ...
-    ]
+    ],
   },
   "Another Category": {
     "feeds": [
       "https://another-example.com/rss-feed-1",
-      "https://another-example.com/rss-feed-2"
+      "https://another-example.com/rss-feed-2",
       // ...
-    ]
-  }
+    ],
+  },
 }
 ```
 
@@ -89,7 +101,6 @@ Ideas for categories:
 - Local news (city/state level)
 - Regional news (country/region)
 - Topical news (health, machine learning, aviation ...)
-
 
 ### Guidelines for adding RSS feeds
 
@@ -109,6 +120,6 @@ Kite does not scrape news websites, it only uses publicly available information 
 
 ## Guidelines for editing Media information
 
-Kite uses contents of `media_data.json` to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology  is explained here https://statemediamonitor.com/methodology/
+Kite uses contents of `media_data.json` to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology is explained here https://statemediamonitor.com/methodology/
 
-Feel free to add additional information (by editing `media_data.json`) both for privatly owned and state funded media organization. Add your sources of information in the pull request.
+Feel free to add additional information (by editing `media_data.json`) both for privately owned and state funded media organization. Add your sources of information in the pull request.

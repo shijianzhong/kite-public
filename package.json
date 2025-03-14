@@ -1,0 +1,36 @@
+{
+  "name": "kite-public",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kite - News Elevated",
+  "homepage": "https://github.com/kagisearch/kite-public#readme",
+  "bugs": {
+    "url": "https://github.com/kagisearch/kite-public/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagisearch/kite-public.git"
+  },
+  "license": "MIT",
+  "author": "Kagi Search",
+  "type": "module",
+  "main": "vite.config.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "prettier --write './src/**/*.{html,js,ts,css}'",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.14",
+    "alpinejs": "^3.14.9",
+    "sortablejs": "^1.15.6",
+    "tailwindcss": "^4.0.14"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "vite": "^6.2.2"
+  }
+}
