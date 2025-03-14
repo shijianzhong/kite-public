@@ -53,26 +53,6 @@ npm install
 npm run dev
 ```
 
-You might get a CORS error when running the app locally. To fix this, you can use a CORS proxy using npm: https://github.com/garmeeh/local-cors-proxy
-And update the `.env` file to point to the proxy.
-
-```bash
-# To run the local-cors-proxy without installing it globally, you can use npx:
-npx local-cors-proxy --proxyUrl https://kite.kagi.com
-
-### Output:
-
-# Proxy Active
-#
-# Proxy Url: https://kite.kagi.com
-# Proxy Partial: proxy
-# PORT: 8010
-# Credentials: false
-# Origin: *
-#
-# To start using the proxy simply replace the proxied part of your url with: http://localhost:8010/proxy
-```
-
 Check out the Vite documentation on how a production build works: https://vite.dev/guide/static-deploy.html
 
 Kite front-end uses Kite application data that can be found at [kite.kagi.com/kite.json](https://kite.kagi.com/kite.json) (explore other files from there). Note that kite.json and files referenced by it are licensed under [CC BY-NC license](https://creativecommons.org/licenses/by-nc/4.0/). This means that this data can be used free of charge (with attribution and for non-commercial use). If you would like to license this data for commercial use let us know through support@kagi.com.
