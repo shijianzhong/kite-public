@@ -29,19 +29,19 @@
     class="dark:bg-dark-bg dark:text-dark-text min-h-screen bg-white text-black"
     x-data="Object.assign(kiteApp(), sourceOverlay())"
     x-bind:class="[
-            $store.fontSize.current === 'extra-small' ? 'text-xs' :
-            $store.fontSize.current === 'small' ? 'text-sm' :
+            $store.fontSize.current === 'extra-small' ? 'text-xs' : 
+            $store.fontSize.current === 'small' ? 'text-sm' : 
             $store.fontSize.current === 'large' ? 'text-lg' : 'text-base',
             $store.mobileUI.categoryHeaderPosition === 'top' ? 'pt-14 md:pt-0' : ''
         ]"
     @touchstart="
-            touchStartX = $event.changedTouches[0].screenX;
+            touchStartX = $event.changedTouches[0].screenX; 
             touchStartY = $event.changedTouches[0].screenY;
-
+            
             // Check if touch started on a scrollable element
             const target = $event.target;
             const scrollableParent = findScrollableParent(target);
-            touchStartedOnScrollable = scrollableParent &&
+            touchStartedOnScrollable = scrollableParent && 
                                       (scrollableParent.scrollWidth > scrollableParent.clientWidth);
         "
     @touchend="
@@ -49,19 +49,26 @@
                 // Don't change category if touch started on a scrollable element
                 return;
             }
-
+            
             // Check if the touch started on or within the category tabs
             const categoryTabs = document.querySelector('.category-tabs');
             if (categoryTabs && (categoryTabs.contains($event.target) || categoryTabs === $event.target)) {
                 return;
             }
-
+            
+            // Check if category swiping is disabled in experimental settings
+            if ($store.experimental.disableCategorySwipe) {
+                return;
+            }
+            
             touchEndX = $event.changedTouches[0].screenX;
             touchEndY = $event.changedTouches[0].screenY;
             const deltaX = touchStartX - touchEndX;
             const deltaY = touchStartY - touchEndY;
 
-            if(Math.abs(deltaY) > Math.abs(deltaX)) {
+            // Require horizontal movement to be at least twice the vertical movement
+            // This makes accidental swipes less likely
+            if (Math.abs(deltaX) < Math.abs(deltaY) * 2) {
                 return;
             }
 
@@ -144,13 +151,16 @@
         <h1
           class="dark:text-dark-text mb-2 flex items-center text-2xl font-bold text-gray-800"
         >
-          Kite
+          <span x-text="$t('app.title')"></span>
           <span
             class="mt-0.5 ml-2 rounded-lg bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black"
-            >BETA</span
-          >
+            x-text="$t('app.beta')"
+          ></span>
         </h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400">News. Elevated.</p>
+        <p
+          class="text-xl text-gray-600 dark:text-gray-400"
+          x-text="$t('app.motto')"
+        ></p>
         <p
           x-text="loadingProgress > 20 ? loadingProgress + '%' : ''"
           class="mt-4 min-h-[1.5rem] text-sm text-gray-500 dark:text-gray-400"
@@ -171,7 +181,10 @@
               <h1 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
                 Kite
               </h1>
-              <p class="text-gray-600 dark:text-gray-300">News app by Kagi</p>
+              <p
+                class="text-gray-600 dark:text-gray-300"
+                x-text="$t('about.subtitle')"
+              ></p>
             </div>
           </div>
 
@@ -180,111 +193,60 @@
               <h2
                 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white"
               >
-                Why Kite? Because news is broken.
+                <span x-html="$t('about.why.title')"></span>
               </h2>
-              <p class="mb-4">
-                Driven by relentless ad monetization, news has
-                <a
-                  class="text-blue-600 hover:underline dark:text-blue-400"
-                  href="https://gwern.net/doc/culture/2010-dobelli.pdf"
-                  >become</a
-                >
-                mental junk food - an endless stream of clickbait that destroys
-                our ability to think deeply and clearly. We can do better, and
-                create what news should have been all along - pure, essential
-                information that respects your intelligence and time.
-              </p>
+              <p class="mb-4" x-html="$t('about.why.description')"></p>
             </section>
             <section>
               <h2
                 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white"
               >
-                Understanding our approach
+                <span x-html="$t('about.approach.title')"></span>
               </h2>
-              <p class="mb-4 text-gray-700 dark:text-gray-300">
-                World doesn't live in echo chambers. The reality emerges from
-                the collision of different viewpoints and perspectives - that's
-                how we separate signal from noise.
-              </p>
-              <p class="mb-4 text-gray-700 dark:text-gray-300">
-                We strive for diversity and transparency of resources and
-                welcome your
-                <a
-                  class="text-blue-600 hover:underline dark:text-blue-400"
-                  href="https://github.com/kagisearch/kite-public"
-                  >contributions</a
-                >
-                to widen perspectives. This multi-source approach helps reveal
-                the full picture beyond any single viewpoint.
-              </p>
-              <p class="mb-4 text-gray-700 dark:text-gray-300">
-                Kite reads thousands of community-curated global publications
-                and distills them into one perfect daily briefing. You get every
-                critical perspective and timeline in just 5 minutes. That's it.
-                No endless scrolling. No attention hijacking. Because we deserve
-                better.
-              </p>
+              <p
+                class="mb-4 text-gray-700 dark:text-gray-300"
+                x-html="$t('about.approach.description1')"
+              ></p>
+              <p
+                class="mb-4 text-gray-700 dark:text-gray-300"
+                x-html="$t('about.approach.description2')"
+              ></p>
+              <p
+                class="mb-4 text-gray-700 dark:text-gray-300"
+                x-html="$t('about.approach.description3')"
+              ></p>
             </section>
 
             <section>
               <h2
                 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white"
               >
-                Core principles
+                <span x-html="$t('about.principles.title')"></span>
               </h2>
               <ul class="space-y-2">
-                <li>
-                  • One daily update (noon UTC), creating a natural endpoint to
-                  your news consumption
-                </li>
-                <li>• Focus on facts and perspectives over opinions</li>
-                <li>
-                  • Zero compromise on privacy - your reading habits are yours
-                  alone
-                </li>
-                <li>• Quality and depth over quantity</li>
-                <li>• Complete news diet in 5 minutes</li>
-                <li>
-                  • Liberation from the attention economy - exist in the moment,
-                  not in an endless scroll
-                </li>
+                <template
+                  x-for="(principle, index) in $t('about.principles.list')"
+                  :key="index"
+                >
+                  <li>• <span x-text="principle"></span></li>
+                </template>
               </ul>
             </section>
             <section>
               <h2
                 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white"
               >
-                Customization
+                <span x-html="$t('about.customization.title')"></span>
               </h2>
-              <p>
-                Personalize your feed by reordering and toggling categories in
-                settings. Want to contribute? Most of Kite is
-                <a
-                  class="text-blue-600 hover:underline dark:text-blue-400"
-                  href="https://github.com/kagisearch/kite-public"
-                  >open source</a
-                >, including our web app and community-curated feeds.
-              </p>
+              <p x-html="$t('about.customization.description')"></p>
             </section>
             <section>
               <h2
                 class="mb-3 text-xl font-semibold text-gray-900 dark:text-white"
               >
-                Contact
+                <span x-html="$t('about.contact.title')"></span>
               </h2>
-              <p>
-                For feedback, please use
-                <a
-                  class="text-blue-600 hover:underline dark:text-blue-400"
-                  href="https://kagifeedback.org"
-                  >Kagi Feedback</a
-                >. For support,
-                <a
-                  href="mailto:support@kagi.com"
-                  class="text-blue-600 hover:underline dark:text-blue-400"
-                  >support@kagi.com</a
-                >.
-              </p>
+              <p x-html="$t('about.contact.description')"></p>
             </section>
 
             <div class="mt-8 flex justify-center">
@@ -292,7 +254,7 @@
                 @click="closeIntro()"
                 class="focus:ring-opacity-75 rounded-lg bg-black px-6 py-3 font-semibold text-white transition-colors duration-200 ease-in-out hover:bg-gray-800 focus:ring-2 focus:ring-gray-400 focus:outline-none"
               >
-                I understand
+                <span x-html="$t('about.understand.button')"></span>
               </button>
             </div>
           </div>
@@ -329,16 +291,16 @@
             class="cursor-pointer text-gray-600 dark:text-gray-400"
             x-data="{ dateClickCount: 0 }"
             @click="dateClickCount = (dateClickCount + 1) % 5"
-            x-text="dateClickCount === 0 ? new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date())
-                             : dateClickCount === 1 ? getLastUpdated()
-                             : dateClickCount === 2 ? `${totalReadCount} news today`
-                             : dateClickCount === 3 ? `You've read ${totalStoriesRead} stories`
-                             : `Week ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24 * 7))}, Day ${Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24))}`"
+            x-text="dateClickCount === 0 ? new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date())                                                                                                                                                                        
+                             : dateClickCount === 1 ? getLastUpdated()                                                                                                                                                                                                                                                                                           
+                             : dateClickCount === 2 ? $t('stats.newsToday').replace('{count}', totalReadCount)
+                             : dateClickCount === 3 ? $t('stats.storiesRead').replace('{count}', totalStoriesRead)
+                             : $t('stats.weekDay').replace('{week}', Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24 * 7))).replace('{day}', Math.ceil((new Date() - new Date(new Date().getFullYear(), 0, 1)) / (1000 * 60 * 60 * 24)))"
           ></div>
           <div class="flex items-center space-x-2">
             <button
               @click="$store.settings.open()"
-              title="Settings"
+              :title="$t('header.settings')"
               class="ml-2"
             >
               <img
@@ -352,55 +314,55 @@
         </header>
         <div
           class="category-slider-container dark:bg-dark-bg fixed z-[60] bg-white px-6 pb-12 shadow-[0_-4px_8px_rgba(0,0,0,0.1)] md:sticky md:top-0 md:px-0 md:py-2 md:shadow-none"
-          :class="{
-                    'bottom-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'bottom',
-                    'top-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'top'
-                  }"
+          :class="{ 
+                        'bottom-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'bottom',
+                        'top-0 left-0 right-0': $store.mobileUI.categoryHeaderPosition === 'top'
+                    }"
           @touchstart="isScrolling = false"
           @touchmove="isScrolling = true"
           @touchend="setTimeout(() => isScrolling = false, 50)"
           role="navigation"
-          x-data="{
-                      hasOverflow: false,
-                      checkOverflow() {
-                          const tabs = document.querySelector('.category-tabs');
-                          if (tabs) {
-                              const newValue = tabs.scrollWidth > tabs.clientWidth;
-                              if (newValue !== this.hasOverflow) {
-                                  this.hasOverflow = newValue;
-                              }
-                          }
-                      }
-                  }"
+          x-data="{ 
+                        hasOverflow: false,
+                        checkOverflow() {
+                            const tabs = document.querySelector('.category-tabs');
+                            if (tabs) {
+                                const newValue = tabs.scrollWidth > tabs.clientWidth;
+                                if (newValue !== this.hasOverflow) {
+                                    this.hasOverflow = newValue;
+                                }
+                            }
+                        }
+                    }"
           x-init="
-                $nextTick(() => {
-                    checkOverflow();
-                    // Set up mutation observer to watch for changes in category-tabs
-                    const observer = new MutationObserver((mutations) => {
                         $nextTick(() => {
                             checkOverflow();
-                            // Double check after a small delay
-                            setTimeout(() => {
-                                checkOverflow();
-                                $nextTick(() => checkOverflow());
-                            }, 100);
+                            // Set up mutation observer to watch for changes in category-tabs
+                            const observer = new MutationObserver((mutations) => {
+                                $nextTick(() => {
+                                    checkOverflow();
+                                    // Double check after a small delay
+                                    setTimeout(() => {
+                                        checkOverflow();
+                                        $nextTick(() => checkOverflow());
+                                    }, 100);
+                                });
+                            });
+                            
+                            const tabs = document.querySelector('.category-tabs');
+                            if (tabs) {
+                                observer.observe(tabs, {
+                                    childList: true,
+                                    subtree: true,
+                                    attributes: true
+                                });
+                            }
                         });
-                    });
-
-                    const tabs = document.querySelector('.category-tabs');
-                    if (tabs) {
-                        observer.observe(tabs, {
-                            childList: true,
-                            subtree: true,
-                            attributes: true
+                        window.addEventListener('resize', () => {
+                            checkOverflow();
+                            $nextTick(() => checkOverflow());
                         });
-                    }
-                });
-                window.addEventListener('resize', () => {
-                    checkOverflow();
-                    $nextTick(() => checkOverflow());
-                });
-            "
+                    "
         >
           <div class="relative flex items-center">
             <div class="relative flex w-full items-center">
@@ -444,20 +406,20 @@
                     :aria-controls="'category-' + category.name"
                     class="category-tab whitespace-nowrap"
                     :class="{ 'active': currentCategory === category.name }"
-                    @click="if (!isScrolling) {
-                                currentCategory = category.name;
-                                changeCategory();
-                                updateUrlWithArticleId('');
-
-
-                                // Scroll the category into view
-                                $el.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'nearest',
-                                    inline: 'center'
-                                });
-                            }"
-                    x-text="category.name === 'OnThisDay' ? 'Today in History' : category.name"
+                    @click="if (!isScrolling) { 
+                                            currentCategory = category.name; 
+                                            changeCategory(); 
+                                            updateUrlWithArticleId('');
+                                            
+                                            
+                                            // Scroll the category into view
+                                            $el.scrollIntoView({ 
+                                                behavior: 'smooth', 
+                                                block: 'nearest',
+                                                inline: 'center'
+                                            });
+                                        }"
+                    x-text="category.name === 'OnThisDay' ? $t('category.todayInHistory') : category.name"
                   ></div>
                 </template>
               </div>
@@ -493,7 +455,7 @@
             <div
               @click="setTimeout(() => showChaosPopup = true, 100)"
               class="flex cursor-pointer items-center justify-center rounded-md bg-gray-100 px-3 py-1.5 transition-colors duration-200 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600"
-              title="Turbulence meter"
+              :title="$t('turbulence.tooltip')"
             >
               <span
                 x-text="$store.chaosIndex.score"
@@ -537,7 +499,7 @@
                 <h3
                   class="text-xl font-semibold text-gray-800 dark:text-gray-200"
                 >
-                  World turbulence meter
+                  <span x-text="$t('turbulence.title')"></span>
                 </h3>
                 <p
                   class="mb-8 text-sm text-gray-600 dark:text-gray-400"
@@ -668,8 +630,8 @@
             <button
               @click="viewMode = 'list'"
               :class="{'text-blue-500': viewMode === 'list', 'text-gray-500': viewMode !== 'list'}"
-              aria-label="Switch to list view"
-              title="List view"
+              :aria-label="$t('view.list')"
+              :title="$t('view.list')"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -690,8 +652,8 @@
             <button
               @click="viewMode = 'map'"
               :class="{'text-blue-500': viewMode === 'map', 'text-gray-500': viewMode !== 'map'}"
-              aria-label="Switch to map view"
-              title="Map view"
+              :aria-label="$t('view.map')"
+              :title="$t('view.map')"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -732,16 +694,16 @@
                 <h3
                   class="mb-4 text-2xl font-bold text-gray-700 dark:text-gray-300"
                 >
-                  Events
+                  <span x-text="$t('onthisday.events')"></span>
                 </h3>
 
                 <template
-                  x-for="(event, index) in stories.filter(e => !e.content.toLowerCase().includes('was born') && !e.content.toLowerCase().includes('died'))"
+                  x-for="(event, index) in stories.filter(e => e.type === 'event')"
                   :key="index"
                 >
                   <!--Switch to 2-column grid on md+, left-align items -->
                   <div
-                    class="/* Vertical line connecting dots */ relative flex flex-col pb-6 before:absolute before:top-[14px] before:bottom-[-16px] before:left-[3px] before:w-[2px] before:bg-[var(--color-header)] before:content-[''] last:pb-0 last:before:content-none md:grid md:grid-cols-[auto_1fr] md:items-start md:justify-items-start md:gap-4"
+                    class="relative flex flex-col pb-6 before:absolute before:top-[14px] before:bottom-[-16px] before:left-[3px] before:w-[2px] before:bg-[var(--color-header)] before:content-[''] last:pb-0 last:before:content-none md:grid md:grid-cols-[auto_1fr] md:items-start md:justify-items-start md:gap-4"
                   >
                     <!-- Dot + Year -->
                     <div class="flex items-center">
@@ -774,7 +736,7 @@
                 <h3
                   class="mb-4 text-2xl font-bold text-gray-700 dark:text-gray-300"
                 >
-                  People
+                  <span x-text="$t('onthisday.people')"></span>
                 </h3>
 
                 <!-- ============ DESKTOP CAROUSEL (md and up) ============ -->
@@ -883,8 +845,8 @@
                     <template x-for="(slide, i) in chunkedStories" :key="i">
                       <span
                         class="block h-2 w-2 cursor-pointer rounded-full transition-colors"
-                        :class="currentSlide === i
-                                                ? 'bg-[var(--color-header)]'
+                        :class="currentSlide === i 
+                                                ? 'bg-[var(--color-header)]' 
                                                 : 'bg-gray-300 dark:bg-gray-600'"
                         @click="goToSlide(i)"
                       ></span>
@@ -946,9 +908,9 @@
                 x-transition:leave-end="opacity-0 translate-y-4"
                 class="fixed inset-0 z-50 flex flex-col bg-white md:max-h-[80vh] md:w-[90vw] md:max-w-sm md:overflow-hidden md:rounded-lg md:shadow-xl dark:bg-gray-800"
                 :class="{
-                            'md:absolute': window.innerWidth > 768,
-                            'md:left-[${popupPosition.x}px] md:top-[${popupPosition.y}px]': window.innerWidth > 768
-                        }"
+                                    'md:absolute': window.innerWidth > 768,
+                                    'md:left-[${popupPosition.x}px] md:top-[${popupPosition.y}px]': window.innerWidth > 768
+                                }"
               >
                 <!-- Mobile Header -->
                 <div
@@ -1019,7 +981,7 @@
                       target="_blank"
                       class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-400"
                     >
-                      <span>Read more on Wikipedia</span>
+                      <span x-text="$t('wikipedia.readMore')"></span>
                       <svg
                         class="ml-1 h-4 w-4"
                         fill="none"
@@ -1065,7 +1027,7 @@
                     @click="popupVisible = false"
                     class="w-full rounded-lg bg-gray-100 px-4 py-2 text-gray-800 transition-colors hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
                   >
-                    Close
+                    <span x-text="$t('ui.close')"></span>
                   </button>
                 </div>
               </div>
@@ -1092,17 +1054,29 @@
                       :class="'topic-color-' + ((story.category.charCodeAt(0) + story.category.charCodeAt(1) + story.category.length) % 9 + 1)"
                       x-text="story.category"
                     ></span>
+
+                    <span
+                      x-show="$store.experimental.showCategoryIcons && story.emoji"
+                      class="ml-2 text-xl"
+                      x-text="story.emoji"
+                    ></span>
                   </span>
                 </header>
                 <div class="flex items-start">
                   <div class="flex-grow">
                     <h2
-                      class="dark:text-dark-text mb-2 cursor-pointer text-xl text-gray-800"
+                      class="dark:text-dark-text mb-2 flex cursor-pointer items-center text-xl text-gray-800"
                       :class="readStories[story.title] ? '' : 'font-semibold'"
-                      x-text="story.title"
                       @click="toggleStory(story, index)"
                       :id="'story-title-' + index"
-                    ></h2>
+                    >
+                      <span
+                        x-show="$store.experimental.showArticleIcons && story.emoji"
+                        class="mr-2 text-xl"
+                        x-text="story.emoji"
+                      ></span>
+                      <span x-text="story.title"></span>
+                    </h2>
                   </div>
                   <div class="-mt-3 ml-4 flex-shrink-0">
                     <button
@@ -1116,7 +1090,7 @@
                         viewBox="0 0 19 19"
                         :fill="readStories[story.title] ? '#7BA3FF' : 'currentColor'"
                         :stroke="readStories[story.title] ? '#427AFC' : 'none'"
-                        title="Click to toggle read status"
+                        :title="$t('article.readStatus')"
                       >
                         <path
                           fill-rule="evenodd"
@@ -1148,7 +1122,7 @@
                       x-show="story.location"
                       class="flex cursor-pointer items-center text-gray-600 dark:text-gray-300"
                       @click="openMaps(story.location)"
-                      title="Open location in maps"
+                      :title="$t('article.location')"
                     >
                       <img
                         src="%VITE_STATIC_PATH%/svg/map.svg"
@@ -1213,7 +1187,7 @@
                     <h3
                       class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Highlights
+                      <span x-text="$t('section.highlights')"></span>
                     </h3>
                     <div
                       class="border-t border-dashed border-gray-300 dark:border-gray-600"
@@ -1340,7 +1314,7 @@
                     <h3
                       class="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Perspectives
+                      <span x-text="$t('section.perspectives')"></span>
                     </h3>
                     <div
                       class="horizontal-scroll-container flex flex-row gap-3 overflow-x-auto pb-4"
@@ -1401,7 +1375,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Historical background
+                      <span x-text="$t('section.historicalBackground')"></span>
                     </h3>
                     <p
                       class="mb-4 text-gray-700 dark:text-gray-300"
@@ -1416,7 +1390,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Humanitarian impact
+                      <span x-text="$t('section.humanitarianImpact')"></span>
                     </h3>
                     <p
                       class="mb-4 text-gray-700 dark:text-gray-300"
@@ -1432,7 +1406,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Technical details
+                      <span x-text="$t('section.technicalDetails')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300"
@@ -1453,7 +1427,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Business angle
+                      <span x-text="$t('section.businessAngle')"></span>
                     </h3>
                     <p
                       x-show="story.business_angle_text"
@@ -1480,7 +1454,9 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      International reactions
+                      <span
+                        x-text="$t('section.internationalReactions')"
+                      ></span>
                     </h3>
                     <div class="space-y-2">
                       <template
@@ -1529,7 +1505,9 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Scientific significance
+                      <span
+                        x-text="$t('section.scientificSignificance')"
+                      ></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300"
@@ -1550,7 +1528,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Travel advisory
+                      <span x-text="$t('section.travelAdvisory')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300"
@@ -1571,7 +1549,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Performance statistics
+                      <span x-text="$t('section.performanceStatistics')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc space-y-2 text-gray-700 dark:text-gray-300"
@@ -1592,7 +1570,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      League standings
+                      <span x-text="$t('section.leagueStandings')"></span>
                     </h3>
                     <p
                       class="mb-4 text-gray-700 dark:text-gray-300"
@@ -1607,7 +1585,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Design principles
+                      <span x-text="$t('section.designPrinciples')"></span>
                     </h3>
                     <p
                       class="mb-4 text-gray-700 dark:text-gray-300"
@@ -1622,7 +1600,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      User experience impact
+                      <span x-text="$t('section.userExperienceImpact')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc text-gray-700 dark:text-gray-300"
@@ -1643,7 +1621,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Gameplay mechanics
+                      <span x-text="$t('section.gameplayMechanics')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc text-gray-700 dark:text-gray-300"
@@ -1664,7 +1642,7 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Industry impact
+                      <span x-text="$t('section.industryImpact')"></span>
                     </h3>
                     <ul
                       class="mb-4 list-inside list-disc text-gray-700 dark:text-gray-300"
@@ -1685,7 +1663,9 @@
                     <h3
                       class="mt-6 mb-2 text-xl font-semibold text-gray-800 dark:text-gray-200"
                     >
-                      Technical specifications
+                      <span
+                        x-text="$t('section.technicalSpecifications')"
+                      ></span>
                     </h3>
                     <p
                       class="mb-4 text-gray-700 dark:text-gray-300"
@@ -1698,7 +1678,7 @@
                     :class="'order-[' + $store.sections.order.indexOf('timeline') + ']'"
                   >
                     <h2 class="timeline-title mt-6 mb-4 text-xl font-semibold">
-                      Timeline of events
+                      <span x-text="$t('section.timeline')"></span>
                     </h2>
                     <div class="timeline">
                       <template
@@ -1710,7 +1690,7 @@
                             <span class="step"></span>
                             <span
                               class="item-title"
-                              x-text="typeof event === 'object' ? event.date :
+                              x-text="typeof event === 'object' ? event.date : 
                                                         (typeof event === 'string' && event.includes('::')) ? event.split('::')[0] : ''"
                             ></span>
                           </div>
@@ -1735,7 +1715,7 @@
                       <h3
                         class="text-xl font-semibold text-gray-800 dark:text-gray-200"
                       >
-                        Sources
+                        <span x-text="$t('section.sources')"></span>
                       </h3>
                       <button
                         x-show="story.domains && story.domains.length > visibleSources"
@@ -1771,8 +1751,8 @@
                             x-show="index < visibleSources || showAllSources"
                             class="flex w-full flex-col items-start space-y-1 rounded-lg py-2 pl-2 text-left transition-colors hover:bg-gray-100 dark:hover:bg-gray-700"
                             @click.stop="$dispatch('open-source', { domain: domain, story: story })"
-                            :aria-label="'Show articles from ' + (domain?.name || 'Unknown')"
-                            :title="'Show articles from ' + (domain?.name || 'Unknown')"
+                            :aria-label="$t('sources.showArticlesFrom').replace('{source}', domain?.name || 'Unknown')"
+                            :title="$t('sources.showArticlesFrom').replace('{source}', domain?.name || 'Unknown')"
                             tabindex="-1"
                             style="outline: none"
                           >
@@ -1792,7 +1772,7 @@
                             </div>
                             <span
                               class="ml-7 text-xs text-gray-500 dark:text-gray-400"
-                              x-text="story?.articles ? (story.articles.filter(a => a.domain === domain?.name).length + ' articles') : '0 articles'"
+                              x-text="story?.articles ? $t('sources.articles').replace('{count}', story.articles.filter(a => a.domain === domain?.name).length) : $t('sources.articles').replace('{count}', 0)"
                             >
                             </span>
                           </button>
@@ -1809,7 +1789,7 @@
                     <h3
                       class="mb-2 text-xl font-semibold text-gray-800 dark:text-gray-100"
                     >
-                      Action items
+                      <span x-text="$t('section.actionItems')"></span>
                     </h3>
                     <ul
                       class="mb-2 ml-4 list-disc space-y-2 text-gray-700 dark:text-gray-200"
@@ -1831,7 +1811,7 @@
                     <h3
                       class="mb-2 text-xl font-semibold text-gray-800 dark:text-gray-100"
                     >
-                      Did you know?
+                      <span x-text="$t('article.didYouKnow')"></span>
                     </h3>
                     <p
                       class="text-gray-700 dark:text-gray-200"
@@ -1843,19 +1823,19 @@
                     class="order-last mt-6 flex w-full items-center justify-center space-x-4 md:px-0"
                   >
                     <!--
-                    <button
-                        @click.stop="shareArticle(story)"
-                        :data-share-url="window.location.origin + window.location.pathname + '?article=' + currentCategory.toLowerCase() + '-' + story.cluster_number"
-                        class="w-full md:w-auto px-6 py-3 bg-white text-black border border-black font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors duration-200 ease-in-out"
-                    >
-                        Share this
-                    </button>
-                    -->
+                                        <button
+                                            @click.stop="shareArticle(story)"
+                                            :data-share-url="window.location.origin + window.location.pathname + '?article=' + currentCategory.toLowerCase() + '-' + story.cluster_number"
+                                            class="w-full md:w-auto px-6 py-3 bg-white text-black border border-black font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors duration-200 ease-in-out"
+                                        >
+                                            Share this
+                                        </button>
+                                        -->
                     <button
                       @click.stop="closeStory(story, index)"
                       class="focus:ring-opacity-75 w-full rounded-lg bg-black px-6 py-3 font-semibold text-white transition-colors duration-200 ease-in-out hover:bg-gray-800 focus:ring-2 focus:ring-gray-400 focus:outline-none md:w-auto"
                     >
-                      Close story
+                      <span x-text="$t('article.closeStory')"></span>
                     </button>
                   </div>
                 </section>
@@ -1870,7 +1850,7 @@
               @click="markAllAsRead(); window.scrollTo({ top: 0, behavior: 'smooth' })"
               class="w-full rounded-lg bg-gray-100 px-6 py-3 text-gray-800 transition-colors duration-200 hover:bg-gray-200 md:w-auto dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
             >
-              Mark all as read
+              <span x-text="$t('article.markAllAsRead')"></span>
             </button>
           </div>
         </div>
@@ -1921,7 +1901,7 @@
         </header>
         <p
           class="mb-4 text-gray-600 dark:text-gray-400"
-          x-text="(sourceArticles || []).length + ' articles'"
+          x-text="$t('sources.articles').replace('{count}', (sourceArticles || []).length)"
         ></p>
         <div class="space-y-4">
           <template x-for="article in sourceArticles" :key="article.link">
@@ -1959,7 +1939,9 @@
             @click="showSourceInfo = !showSourceInfo"
             class="flex w-full items-center justify-between rounded-lg p-2 text-left text-gray-800 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-700"
           >
-            <span class="font-semibold">Source information</span>
+            <span class="font-semibold"
+              ><span x-text="$t('source.info.title')"></span
+            ></span>
             <svg
               class="h-5 w-5 transform transition-transform"
               :class="{'rotate-180': showSourceInfo}"
@@ -2005,7 +1987,7 @@
                     </svg>
                     <div>
                       <div class="font-medium text-gray-700 dark:text-gray-300">
-                        Country
+                        <span x-text="$t('source.info.country')"></span>
                       </div>
                       <div
                         class="text-gray-600 dark:text-gray-400"
@@ -2032,11 +2014,11 @@
                     </svg>
                     <div>
                       <div class="font-medium text-gray-700 dark:text-gray-300">
-                        Owner
+                        <span x-text="$t('source.info.owner')"></span>
                       </div>
                       <div
                         class="text-gray-600 dark:text-gray-400"
-                        x-text="mediaInfo.owner || 'Not specified'"
+                        x-text="mediaInfo.owner || $t('source.info.notSpecified')"
                       ></div>
                     </div>
                   </div>
@@ -2059,7 +2041,7 @@
                     </svg>
                     <div>
                       <div class="font-medium text-gray-700 dark:text-gray-300">
-                        Organization
+                        <span x-text="$t('source.info.organization')"></span>
                       </div>
                       <div
                         class="text-gray-600 dark:text-gray-400"
@@ -2086,7 +2068,9 @@
                     </svg>
                     <div>
                       <div class="font-medium text-gray-700 dark:text-gray-300">
-                        Media Classification
+                        <span
+                          x-text="$t('source.info.mediaClassification')"
+                        ></span>
                       </div>
                       <div
                         class="text-gray-600 dark:text-gray-400"
@@ -2103,7 +2087,9 @@
                     x-show="mediaInfo.description"
                     class="text-gray-700 dark:text-gray-300"
                   >
-                    <h4 class="mb-2 font-medium">Description</h4>
+                    <h4 class="mb-2 font-medium">
+                      <span x-text="$t('source.info.description')"></span>
+                    </h4>
                     <p x-text="mediaInfo.description"></p>
                   </div>
                 </div>
@@ -2116,12 +2102,10 @@
                 <h4
                   class="mb-2 text-lg font-semibold text-gray-800 dark:text-gray-200"
                 >
-                  Help improve our database
+                  <span x-text="$t('source.contribute.title')"></span>
                 </h4>
                 <p class="mb-4 text-gray-600 dark:text-gray-400">
-                  We don't have detailed information about this news source yet.
-                  Your contribution can help others stay informed about media
-                  ownership and bias.
+                  <span x-text="$t('source.contribute.description')"></span>
                 </p>
                 <a
                   href="https://github.com/kagisearch/kite-public"
@@ -2137,7 +2121,7 @@
                       d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
                     />
                   </svg>
-                  Contribute Information
+                  <span x-text="$t('source.contribute.button')"></span>
                 </a>
               </div>
             </template>
@@ -2153,7 +2137,7 @@
       x-cloak
       role="complementary"
       aria-label="Settings panel"
-      class="bg-opacity-50 dark:bg-opacity-70 fixed inset-0 z-[80] flex items-center justify-center bg-black"
+      class="fixed inset-0 z-[80] flex items-center justify-center bg-black/60 dark:bg-black/80"
       @click.self="$store.settings.close()"
       @keydown.escape.window="$store.settings.close()"
     >
@@ -2192,7 +2176,7 @@
                                     'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'general'}"
               class="border-b-2 px-4 py-2 text-sm font-medium"
             >
-              General
+              <span x-text="$t('settings.tabs.general')"></span>
             </button>
             <button
               @click="activeTab = 'categories'"
@@ -2200,7 +2184,7 @@
                                     'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'categories'}"
               class="border-b-2 px-4 py-2 text-sm font-medium"
             >
-              Categories
+              <span x-text="$t('settings.tabs.categories')"></span>
             </button>
             <button
               @click="activeTab = 'sections'"
@@ -2208,19 +2192,27 @@
                                     'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'sections'}"
               class="border-b-2 px-4 py-2 text-sm font-medium"
             >
-              Sections
+              <span x-text="$t('settings.tabs.sections')"></span>
+            </button>
+            <button
+              @click="activeTab = 'experimental'"
+              :class="{'border-blue-500 text-blue-600 dark:text-blue-400': activeTab === 'experimental',
+                                    'border-transparent text-gray-500 dark:text-gray-400': activeTab !== 'experimental'}"
+              class="border-b-2 px-4 py-2 text-sm font-medium"
+            >
+              <span x-text="$t('settings.tabs.experimental')"></span>
             </button>
           </div>
         </header>
-        <div class="mt-6 p-4 md:p-0">
+        <div class="mt-6 min-h-[400px] p-4 md:p-0">
           <!-- General Settings Tab -->
           <div x-show="activeTab === 'general'" class="space-y-6">
             <div class="flex flex-col space-y-2">
               <label
                 for="theme-select"
                 class="text-sm font-medium text-gray-700 dark:text-gray-300"
-                >Theme</label
-              >
+                ><span x-text="$t('settings.theme.label')"></span
+              ></label>
               <div class="relative">
                 <select
                   id="theme-select"
@@ -2229,9 +2221,15 @@
                   aria-label="Select theme preference"
                   class="block w-full appearance-none rounded-lg border border-gray-300 bg-white px-4 py-3 pr-8 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300"
                 >
-                  <option value="system">System</option>
-                  <option value="light">Light</option>
-                  <option value="dark">Dark</option>
+                  <option value="system">
+                    <span x-text="$t('settings.theme.system')"></span>
+                  </option>
+                  <option value="light">
+                    <span x-text="$t('settings.theme.light')"></span>
+                  </option>
+                  <option value="dark">
+                    <span x-text="$t('settings.theme.dark')"></span>
+                  </option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300"
@@ -2252,8 +2250,8 @@
               <label
                 for="language-select"
                 class="text-sm font-medium text-gray-700 dark:text-gray-300"
-                >Language</label
-              >
+                ><span x-text="$t('settings.language.label')"></span
+              ></label>
               <div class="relative">
                 <select
                   id="language-select"
@@ -2262,7 +2260,9 @@
                   aria-label="Select language"
                   class="block w-full appearance-none rounded-lg border border-gray-300 bg-white px-4 py-3 pr-8 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300"
                 >
-                  <option value="en">Default</option>
+                  <option value="default">
+                    <span x-text="$t('settings.language.default')"></span>
+                  </option>
                   <option value="en">English (English)</option>
                   <option value="pt">Português (Portuguese)</option>
                   <option value="it">Italiano (Italian)</option>
@@ -2294,8 +2294,10 @@
               <label
                 for="category-header-position"
                 class="text-sm font-medium text-gray-700 dark:text-gray-300"
-                >Category Header Position</label
-              >
+                ><span
+                  x-text="$t('settings.categoryHeaderPosition.label')"
+                ></span
+              ></label>
               <div class="relative">
                 <select
                   id="category-header-position"
@@ -2304,8 +2306,16 @@
                   aria-label="Select category header position"
                   class="block w-full appearance-none rounded-lg border border-gray-300 bg-white px-4 py-3 pr-8 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300"
                 >
-                  <option value="bottom">Bottom</option>
-                  <option value="top">Top</option>
+                  <option value="bottom">
+                    <span
+                      x-text="$t('settings.categoryHeaderPosition.bottom')"
+                    ></span>
+                  </option>
+                  <option value="top">
+                    <span
+                      x-text="$t('settings.categoryHeaderPosition.top')"
+                    ></span>
+                  </option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300"
@@ -2322,8 +2332,9 @@
                 </div>
               </div>
               <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                Choose where to display the category navigation bar on mobile
-                devices.
+                <span
+                  x-text="$t('settings.categoryHeaderPosition.description')"
+                ></span>
               </p>
             </div>
 
@@ -2331,8 +2342,8 @@
               <label
                 for="font-size-select"
                 class="text-sm font-medium text-gray-700 dark:text-gray-300"
-                >Font size</label
-              >
+                ><span x-text="$t('settings.fontSize.label')"></span
+              ></label>
               <div class="relative">
                 <select
                   id="font-size-select"
@@ -2341,9 +2352,15 @@
                   aria-label="Select text size"
                   class="block w-full appearance-none rounded-lg border border-gray-300 bg-white px-4 py-3 pr-8 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300"
                 >
-                  <option value="small">Small</option>
-                  <option value="normal">Normal</option>
-                  <option value="large">Large</option>
+                  <option value="small">
+                    <span x-text="$t('settings.fontSize.small')"></span>
+                  </option>
+                  <option value="normal">
+                    <span x-text="$t('settings.fontSize.normal')"></span>
+                  </option>
+                  <option value="large">
+                    <span x-text="$t('settings.fontSize.large')"></span>
+                  </option>
                 </select>
                 <div
                   class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300"
@@ -2365,7 +2382,7 @@
                 for="story-count-range"
                 class="text-sm font-medium text-gray-700 dark:text-gray-300"
               >
-                Number of stories shown:
+                <span x-text="$t('settings.storyCount.label')"></span>
                 <span x-text="$store.storyCount.current"></span>
               </label>
               <input
@@ -2397,7 +2414,7 @@
                   alt="Kite icon"
                   class="h-4 w-4"
                 />
-                <span>About Kite</span>
+                <span x-text="$t('settings.aboutKite.button')"></span>
               </button>
             </div>
           </div>
@@ -2405,7 +2422,7 @@
           <div x-show="activeTab === 'categories'" class="space-y-6">
             <div class="flex flex-col space-y-2">
               <p class="text-xs text-gray-500 dark:text-gray-400">
-                Tap to toggle. Drag enabled categories to reorder.
+                <span x-text="$t('settings.categories.instructions')"></span>
               </p>
 
               <!-- Enabled categories container -->
@@ -2431,7 +2448,7 @@
                   href="https://github.com/kagisearch/kite-public"
                   class="text-sm text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
                 >
-                  + Contribute categories
+                  <span x-text="$t('settings.categories.contribute')"></span>
                 </a>
               </div>
             </div>
@@ -2449,8 +2466,136 @@
                 @click="$store.sections.reset()"
                 class="text-sm text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
               >
-                Reset order
+                <span x-text="$t('settings.sections.resetOrder')"></span>
               </button>
+            </div>
+          </div>
+
+          <!-- Experimental Tab -->
+          <div x-show="activeTab === 'experimental'" class="space-y-6">
+            <p class="mb-6 text-sm text-gray-600 dark:text-gray-400">
+              ⚠️
+              <span
+                class="ml-1"
+                x-text="$t('settings.experimental.warning')"
+              ></span>
+            </p>
+
+            <div
+              class="rounded-lg border border-gray-200 p-4 dark:border-gray-700"
+            >
+              <div class="mb-2 flex items-center justify-between">
+                <label
+                  for="show-article-icons"
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
+                  <span
+                    x-text="$t('settings.experimental.articleIcons.label')"
+                  ></span>
+                </label>
+                <button
+                  id="show-article-icons"
+                  @click="$store.experimental.toggleArticleIcons(!$store.experimental.showArticleIcons)"
+                  type="button"
+                  class="relative inline-flex h-6 w-11 items-center rounded-full"
+                  :class="$store.experimental.showArticleIcons ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
+                  role="switch"
+                  :aria-checked="$store.experimental.showArticleIcons"
+                >
+                  <span class="sr-only"
+                    ><span
+                      x-text="$t('settings.experimental.articleIcons.label')"
+                    ></span
+                  ></span>
+                  <span
+                    class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                    :class="$store.experimental.showArticleIcons ? 'translate-x-6' : 'translate-x-1'"
+                  ></span>
+                </button>
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                <span
+                  x-text="$t('settings.experimental.articleIcons.description')"
+                ></span>
+              </p>
+            </div>
+
+            <div
+              class="rounded-lg border border-gray-200 p-4 dark:border-gray-700"
+            >
+              <div class="mb-2 flex items-center justify-between">
+                <label
+                  for="show-category-icons"
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
+                  <span
+                    x-text="$t('settings.experimental.categoryIcons.label')"
+                  ></span>
+                </label>
+                <button
+                  id="show-category-icons"
+                  @click="$store.experimental.toggleCategoryIcons(!$store.experimental.showCategoryIcons)"
+                  type="button"
+                  class="relative inline-flex h-6 w-11 items-center rounded-full"
+                  :class="$store.experimental.showCategoryIcons ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
+                  role="switch"
+                  :aria-checked="$store.experimental.showCategoryIcons"
+                >
+                  <span class="sr-only"
+                    ><span
+                      x-text="$t('settings.experimental.categoryIcons.label')"
+                    ></span
+                  ></span>
+                  <span
+                    class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                    :class="$store.experimental.showCategoryIcons ? 'translate-x-6' : 'translate-x-1'"
+                  ></span>
+                </button>
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                <span
+                  x-text="$t('settings.experimental.categoryIcons.description')"
+                ></span>
+              </p>
+            </div>
+
+            <div
+              class="rounded-lg border border-gray-200 p-4 md:hidden dark:border-gray-700"
+            >
+              <div class="mb-2 flex items-center justify-between">
+                <label
+                  for="disable-category-swipe"
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
+                  <span
+                    x-text="$t('settings.experimental.disableCategorySwipe.label')"
+                  ></span>
+                </label>
+                <button
+                  id="disable-category-swipe"
+                  @click="$store.experimental.toggleCategorySwipe(!$store.experimental.disableCategorySwipe)"
+                  type="button"
+                  class="relative inline-flex h-6 w-11 items-center rounded-full"
+                  :class="$store.experimental.disableCategorySwipe ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
+                  role="switch"
+                  :aria-checked="$store.experimental.disableCategorySwipe"
+                >
+                  <span class="sr-only"
+                    ><span
+                      x-text="$t('settings.experimental.disableCategorySwipe.label')"
+                    ></span
+                  ></span>
+                  <span
+                    class="inline-block h-4 w-4 transform rounded-full bg-white transition"
+                    :class="$store.experimental.disableCategorySwipe ? 'translate-x-6' : 'translate-x-1'"
+                  ></span>
+                </button>
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                <span
+                  x-text="$t('settings.experimental.disableCategorySwipe.description')"
+                ></span>
+              </p>
             </div>
           </div>
         </div>
@@ -2478,11 +2623,13 @@
               d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
             />
           </svg>
-          <span class="text-sm">Contribute</span>
+          <span class="text-sm"
+            ><span x-text="$t('footer.contribute')"></span
+          ></span>
         </a>
         <a
-          :href="currentCategory === 'OnThisDay' ?
-                        `https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&lang=${$store.language.current}` :
+          :href="currentCategory === 'OnThisDay' ? 
+                        `https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=onthisday&lang=${$store.language.current}` : 
                         `${currentCategory.toLowerCase()}.xml`"
           target="_blank"
           class="flex items-center space-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
@@ -2494,7 +2641,9 @@
             class="h-5 w-5 dark:invert"
             aria-hidden="true"
           />
-          <span class="text-sm">RSS Feed</span>
+          <span class="text-sm"
+            ><span x-text="$t('footer.rssFeed')"></span
+          ></span>
         </a>
       </div>
     </footer>

@@ -27,7 +27,6 @@ fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`)
   .catch(() => {
     // Error handling for media data loading
   });
-
 document.addEventListener("alpine:init", () => {
   Alpine.store("language", {
     current: localStorage.getItem("language") || "default",
@@ -48,6 +47,79 @@ document.addEventListener("alpine:init", () => {
       }
     },
   });
+
+  // Add translations store for UI localization
+  Alpine.store("translations", {
+    data: {},
+
+    // Load translations from JSON file
+    async loadTranslations(lang) {
+      // If language is 'default', use English
+      const langCode = lang === "default" ? "en" : lang;
+
+      try {
+        const response = await fetch(
+          `${import.meta.env.VITE_STATIC_PATH}/locales/${langCode}.json`,
+        );
+        if (response.ok) {
+          const translations = await response.json();
+          // Transform the object structure into a flat key-value mapping
+          this.data = Object.entries(translations).reduce(
+            (acc, [key, value]) => {
+              acc[key] = value.text;
+              return acc;
+            },
+            {},
+          );
+          console.log(
+            `Loaded ${Object.keys(this.data).length} translations for ${langCode}`,
+          );
+        } else {
+          console.error(
+            `Failed to load translations for ${langCode}, falling back to English`,
+          );
+          // Fall back to English if the requested language file doesn't exist
+          if (langCode !== "en") {
+            await this.loadTranslations("en");
+          }
+        }
+      } catch (error) {
+        console.error(`Error loading translations:`, error);
+        // Fall back to English on error
+        if (langCode !== "en") {
+          await this.loadTranslations("en");
+        }
+      }
+    },
+
+    // Get a translated string
+    get(key) {
+      // If the translation exists, return it
+      if (this.data[key]) {
+        return this.data[key];
+      }
+
+      // Return the key itself as a last resort
+      return key;
+    },
+
+    // Initialize translations
+    async init() {
+      const lang = Alpine.store("language").current;
+      await this.loadTranslations(lang);
+
+      // Listen for language changes
+      window.addEventListener("language-changed", async (event) => {
+        await this.loadTranslations(event.detail);
+      });
+    },
+  });
+
+  // Add a global helper function for translations
+  Alpine.magic("t", () => {
+    return (key) => Alpine.store("translations").get(key);
+  });
+
   Alpine.data("sourceOverlay", () => ({
     showSourceOverlay: false,
     currentSource: { name: "", favicon: "" },
@@ -59,9 +131,7 @@ document.addEventListener("alpine:init", () => {
     async processSource($event) {
       if (!mediaData?.lookup) {
         console.log("Media data not yet loaded, fetching...");
-        const response = await fetch(
-          `${import.meta.env.VITE_STATIC_PATH}/media_data.json`,
-        );
+        const response = await fetch("{{ static_path }}/media_data.json");
         const data = await response.json();
         const lookup = {};
         data.forEach((item) => {
@@ -83,8 +153,8 @@ document.addEventListener("alpine:init", () => {
       this.sourceArticles =
         this.currentStory && this.currentSource?.name
           ? this.currentStory.articles.filter(
-            (a) => a.domain === this.currentSource.name,
-          )
+              (a) => a.domain === this.currentSource.name,
+            )
           : [];
 
       this.mediaInfo = null;
@@ -96,7 +166,6 @@ document.addEventListener("alpine:init", () => {
       this.showSourceInfo = false;
     },
   }));
-
   // Ensure media data is loaded
   if (!mediaData) {
     fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`)
@@ -250,39 +319,23 @@ document.addEventListener("alpine:init", () => {
         div.className = "flex items-center justify-between";
         div.dataset.section = sectionName;
         div.innerHTML = `
-          <div class="flex items-center">
-            <svg
-              class="w-6 h-6 text-gray-400 mr-3 cursor-move drag-handle"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-            <label class="text-sm font-medium text-gray-700 dark:text-gray-300">
-              ${sectionName
-            .replace(/([A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUpperCase())}
-            </label>
-          </div>
-          <button
-            x-data
-            @click="$store.sections.toggle('${sectionName}')"
-            class="relative inline-flex h-6 w-11 items-center rounded-full"
-            :class="$store.sections.settings['${sectionName}'] ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'"
-          >
-            <span class="sr-only">Toggle ${sectionName}</span>
-            <span
-              class="inline-block h-4 w-4 transform rounded-full bg-white transition"
-              :class="$store.sections.settings['${sectionName}'] ? 'translate-x-6' : 'translate-x-1'"
-            ></span>
-          </button>
-        `;
+                    <div class='flex items-center'>
+                        <svg class='w-6 h-6 text-gray-400 mr-3 cursor-move drag-handle' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                            <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
+                        </svg>
+                        <label class='text-sm font-medium text-gray-700 dark:text-gray-300'>
+                            ${sectionName.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}
+                        </label>
+                    </div>
+                    <button x-data 
+                            @click="$store.sections.toggle('${sectionName}')" 
+                            class="relative inline-flex h-6 w-11 items-center rounded-full"
+                            :class="$store.sections.settings['${sectionName}'] ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'">
+                        <span class='sr-only'>Toggle ${sectionName}</span>
+                        <span class='inline-block h-4 w-4 transform rounded-full bg-white transition'
+                            :class="$store.sections.settings['${sectionName}'] ? 'translate-x-6' : 'translate-x-1'"></span>
+                    </button>
+                `;
         container.appendChild(div);
       });
 
@@ -457,6 +510,8 @@ document.addEventListener("alpine:init", () => {
       localStorage.getItem("showArticleIcons") === "true" || false,
     showCategoryIcons:
       localStorage.getItem("showCategoryIcons") === "true" || false,
+    disableCategorySwipe:
+      localStorage.getItem("disableCategorySwipe") === "true" || false,
     toggleArticleIcons(value) {
       this.showArticleIcons = value;
       localStorage.setItem("showArticleIcons", value);
@@ -465,9 +520,12 @@ document.addEventListener("alpine:init", () => {
       this.showCategoryIcons = value;
       localStorage.setItem("showCategoryIcons", value);
     },
+    toggleCategorySwipe(value) {
+      this.disableCategorySwipe = value;
+      localStorage.setItem("disableCategorySwipe", value);
+    },
   });
 });
-
 function lockScroll() {
   document.body.style.overflow = "hidden";
 }
@@ -581,69 +639,37 @@ function handleWikiLink(event) {
           popup.className =
             "fixed inset-0 z-50 bg-white dark:bg-gray-800 overflow-y-auto";
           popup.innerHTML = `
-            <div class="p-4">
-              <div class="mb-4 flex items-center justify-between">
-                <h3
-                  class="text-lg font-semibold text-gray-800 dark:text-gray-200"
-                >
-                  ${data.title}
-                </h3>
-                <button
-                  class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-                  onclick="this.parentElement.parentElement.parentElement.remove()"
-                >
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-              ${data.thumbnail
-              ? `<div class="relative mb-4 h-48 w-full">
-                  <img
-                    src="${data.thumbnail.source}"
-                    alt="${data.title}"
-                    class="h-full w-full rounded-lg object-cover"
-                  />
-                </div>`
-              : ""
-            }
-              <div class="prose prose-sm dark:prose-invert max-w-none">
-                <p>${data.extract}</p>
-              </div>
-              <div class="mt-4">
-                <a
-                  href="${link.href}"
-                  target="_blank"
-                  class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-400"
-                >
-                  <span>Read more on Wikipedia</span>
-                  <svg
-                    class="ml-1 h-4 w-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          `;
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">${data.title}</h3>
+                                <button class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick="this.parentElement.parentElement.parentElement.remove()">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            ${
+                              data.thumbnail
+                                ? `
+                                <div class="relative h-48 w-full mb-4">
+                                    <img src="${data.thumbnail.source}" alt="${data.title}" class="w-full h-full object-cover rounded-lg"/>
+                                </div>
+                            `
+                                : ""
+                            }
+                            <div class="prose prose-sm dark:prose-invert max-w-none">
+                                <p>${data.extract}</p>
+                            </div>
+                            <div class="mt-4">
+                                <a href="${link.href}" target="_blank" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                                    <span>Read more on Wikipedia</span>
+                                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    `;
           document.body.appendChild(popup);
         } else {
           // For desktop, keep the hover popup
@@ -731,7 +757,6 @@ function showPopup(data, link) {
 function openImageGallery(images) {
   Alpine.store("imageGallery").open(images);
 }
-
 document.addEventListener("alpine:init", () => {
   Alpine.data("kiteApp", () => ({
     stories: [],
@@ -814,6 +839,8 @@ document.addEventListener("alpine:init", () => {
       });
 
       Alpine.store("language").init();
+      // Initialize translations
+      await Alpine.store("translations").init();
 
       // Check if all stories are read
       this.allStoriesRead = this.stories.every(
@@ -1027,10 +1054,11 @@ document.addEventListener("alpine:init", () => {
 
       function createCategoryElement(categoryName, isEnabled) {
         const div = document.createElement("div");
-        div.className = `px-6 py-3 rounded-lg text-sm cursor-pointer font-medium inline-flex items-center whitespace-nowrap ${isEnabled
+        div.className = `px-6 py-3 rounded-lg text-sm cursor-pointer font-medium inline-flex items-center whitespace-nowrap ${
+          isEnabled
             ? "bg-blue-500 text-white shadow-sm [.is-dragging_&]:bg-blue-500 [&.sortable-chosen]:!bg-blue-600 hover:bg-blue-600"
             : "bg-gray-100 dark:bg-gray-200 text-gray-700 dark:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-300"
-          }`;
+        }`;
         div.dataset.category = categoryName;
 
         // Create inner span for text
@@ -1613,67 +1641,38 @@ document.addEventListener("click", (event) => {
         const popup = document.createElement("div");
         popup.className =
           "fixed inset-0 z-[100] bg-white dark:bg-gray-800 overflow-y-auto";
-        popup.innerHTML = ` <div class="relative z-[101] p-4">
-          <div class="mb-4 flex items-center justify-between">
-            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">
-              ${data.title}
-            </h3>
-            <button
-              class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-              onclick="this.parentElement.parentElement.parentElement.remove()"
-            >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          ${data.thumbnail
-            ? `
-              <div class="relative mb-4 h-48 w-full">
-                <img
-                  src="${data.thumbnail.source}"
-                  alt="${data.title}"
-                  class="h-full w-full rounded-lg object-cover"
-                />
-              </div>`
-            : ""
-          }
-          <div class="prose prose-sm dark:prose-invert max-w-none">
-            <p>${data.extract}</p>
-          </div>
-          <div class="mt-4">
-            <a
-              href="${link.href}"
-              target="_blank"
-              class="inline-flex items-center text-blue-600 hover:underline dark:text-blue-400"
-            >
-              <span>Read more on Wikipedia</span>
-              <svg
-                class="ml-1 h-4 w-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>`;
+        popup.innerHTML = `
+                    <div class="p-4 relative z-[101]">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200">${data.title}</h3>
+                            <button class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" onclick="this.parentElement.parentElement.parentElement.remove()">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        ${
+                          data.thumbnail
+                            ? `
+                            <div class="relative h-48 w-full mb-4">
+                                <img src="${data.thumbnail.source}" alt="${data.title}" class="w-full h-full object-cover rounded-lg"/>
+                            </div>
+                        `
+                            : ""
+                        }
+                        <div class="prose prose-sm dark:prose-invert max-w-none">
+                            <p>${data.extract}</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="${link.href}" target="_blank" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                                <span>Read more on Wikipedia</span>
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                `;
         document.body.appendChild(popup);
       });
   }
