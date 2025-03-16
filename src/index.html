@@ -143,11 +143,16 @@
       class="dark:bg-dark-bg fixed inset-0 z-50 flex items-center justify-center bg-white"
     >
       <div class="text-center">
-        <img
-          :src="$store.theme.current === 'dark' ? '%VITE_STATIC_PATH%/svg/kite_dark.svg' : '%VITE_STATIC_PATH%/svg/kite.svg'"
-          alt="Kite Logo"
-          class="mx-auto mb-4 h-24 w-24 animate-bounce"
-        />
+        <div x-data="{ imageLoaded: false }" class="mx-auto mb-4 h-24 w-24">
+          <img
+            :src="$store.theme.current === 'dark' ? '%VITE_STATIC_PATH%/svg/kite_dark.svg' : '%VITE_STATIC_PATH%/svg/kite.svg'"
+            alt="Kite Logo"
+            class="h-full w-full animate-bounce"
+            x-show="imageLoaded"
+            @load="imageLoaded = true"
+            style="display: none"
+          />
+        </div>
         <h1
           class="dark:text-dark-text mb-2 flex items-center text-2xl font-bold text-gray-800"
         >
@@ -291,7 +296,7 @@
             class="cursor-pointer text-gray-600 dark:text-gray-400"
             x-data="{ dateClickCount: 0 }"
             @click="dateClickCount = (dateClickCount + 1) % 5"
-            x-text="dateClickCount === 0 ? new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date())                                                                                                                                                                        
+            x-text="dateClickCount === 0 ? new Intl.DateTimeFormat($store.language.current === 'default' ? navigator.language : $store.language.current, { weekday: 'long', month: 'long', day: 'numeric' }).format(new Date())                                                                                                                                                                        
                              : dateClickCount === 1 ? getLastUpdated()                                                                                                                                                                                                                                                                                           
                              : dateClickCount === 2 ? $t('stats.newsToday').replace('{count}', totalReadCount)
                              : dateClickCount === 3 ? $t('stats.storiesRead').replace('{count}', totalStoriesRead)
@@ -419,7 +424,9 @@
                                                 inline: 'center'
                                             });
                                         }"
-                    x-text="category.name === 'OnThisDay' ? $t('category.todayInHistory') : category.name"
+                    x-text="category.name === 'OnThisDay' ? 
+                            $t('category.todayInHistory') : 
+                            $t(`category.${category.name.toLowerCase()}`) || category.name"
                   ></div>
                 </template>
               </div>
@@ -1862,7 +1869,7 @@
       x-cloak
       @open-source.window="processSource($event)"
       @click.self="showSourceOverlay = false"
-      class="bg-opacity-50 dark:bg-opacity-70 fixed inset-0 z-[70] flex items-center justify-center bg-black p-4"
+      class="fixed inset-0 z-[70] flex items-center justify-center bg-black/50 p-4 dark:bg-black/70"
     >
       <div
         class="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-lg bg-white p-6 dark:bg-gray-800"
@@ -2458,7 +2465,7 @@
             <div
               class="flex flex-col space-y-4"
               x-ref="sectionsList"
-              x-init="$store.sections.render()"
+              x-init="$nextTick(() => $store.sections.render())"
             ></div>
             <!-- Reset button -->
             <div class="mt-4 flex justify-center">

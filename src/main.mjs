@@ -1,38 +1,189 @@
 import Alpine from "alpinejs";
+import AlpineI18n from "alpinejs-i18n";
 import Sortable from "sortablejs";
 
 window.Alpine = Alpine;
 window.Sortable = Sortable;
 
-let mediaData = null;
-// Load media data immediately
-fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`)
-  .then((response) => response.json())
-  .then((data) => {
-    // Transform array into lookup object
-    const lookup = {};
-    data.forEach((item) => {
-      if (item.domains) {
-        item.domains.forEach((domain) => {
-          lookup[domain.toLowerCase()] = item;
-        });
-      }
-    });
+// Global variable to store preloaded translations
+let preloadedTranslations = {};
+// Global variable to get user locale
+let userLocale =
+  (localStorage.getItem("language") 
+  //|| window.navigator.language Enable this to also use the browser language
+  || "default")
 
-    mediaData = {
-      raw: data,
-      lookup: lookup,
-    };
-  })
-  .catch(() => {
-    // Error handling for media data loading
-  });
+// Function to load translations for a specific language
+async function loadTranslationsForLanguage(lang) {
+  if (lang.length !== 2)
+    throw new Error("Language code must be 2 characters long");
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_STATIC_PATH}/locales/${lang}.json`,
+    );
+    if (response.ok) {
+      const translations = await response.json();
+      // Transform the object structure into a flat key-value mapping
+      const flatTranslations = {};
+      Object.entries(translations).forEach(([key, value]) => {
+        flatTranslations[key] = value.text;
+      });
+
+      // Transform flat structure (app.title) into nested structure (app: {title: "..."})
+      const nestedTranslations = {};
+
+      Object.entries(flatTranslations).forEach(([key, value]) => {
+        const parts = key.split(".");
+        let current = nestedTranslations;
+
+        // Navigate through the parts to build the nested structure
+        for (let i = 0; i < parts.length - 1; i++) {
+          const part = parts[i];
+          // Create the nested object if it doesn't exist
+          if (!current[part]) {
+            current[part] = {};
+          }
+          // Move to the next level
+          current = current[part];
+        }
+
+        // Set the value at the final level
+        const lastPart = parts[parts.length - 1];
+        current[lastPart] = value;
+      });
+
+      return nestedTranslations;
+    } else {
+      console.error(`Failed to load translations for ${lang}`);
+    }
+  } catch (error) {
+    console.error(`Error loading translations:`, error);
+  }
+  return {};
+}
+
+// Function to preload translations for a specific language
+async function preloadTranslationsForLanguage(lang) {
+  console.log(`Starting preload for ${lang}...`);
+
+  try {
+    preloadedTranslations[lang] = await loadTranslationsForLanguage(lang);
+    console.log(
+      `Successfully preloaded ${Object.keys(preloadedTranslations[lang]).length} translations for ${lang}`,
+    );
+    return;
+  } catch (error) {
+    console.error(`Error preloading translations for ${lang}:`, error);
+    return null;
+  }
+}
+
+// Initialize translations
+async function initializeTranslations() {
+  const actualUserLocale = userLocale.replace("default", "en");
+  // Initialize AlpineI18n
+  window.AlpineI18n.create(actualUserLocale, preloadedTranslations);
+
+  console.log(`Loaded ${Object.keys(preloadedTranslations).length} languages`);
+  console.log(`Set user locale to ${actualUserLocale}`);
+  console.debug(JSON.stringify(preloadedTranslations, null, 2));
+
+  // Start Alpine after translations are loaded
+  window.Alpine.start();
+}
+
+// Initialize translations before Alpine starts
+document.addEventListener("alpine-i18n:ready", async function () {
+  window.AlpineI18n.fallbackLocale = "en";
+  console.log("Alpine I18n ready");
+
+  initializeTranslations();
+});
+
+window.Alpine.magic("t", (el, { Alpine }) => {
+  // If AlpineI18n is not initialized yet, return the key itself
+  if (!window.AlpineI18n || !window.AlpineI18n.t) {
+    return (key) => key;
+  }
+  return (key) => window.AlpineI18n.t(key) || key;
+});
+
+// Preload translations for en and user locale
+(async function () {
+  const languages = ["en"];
+
+  // If user locale is not en, add it to the list
+  if (userLocale !== "en" && userLocale !== "default") {
+    languages.push(userLocale);
+  }
+
+  for (const lang of languages) {
+    await preloadTranslationsForLanguage(lang);
+  }
+  // Register Alpine.js plugin
+  window.Alpine.plugin(AlpineI18n);
+})();
+
+let mediaData = null;
+// Load media data with language support
+function loadMediaData() {
+  // Get current language
+  const lang =
+    Alpine?.store?.("language")?.current ||
+    localStorage.getItem("language") ||
+    "default";
+  const langCode = lang === "default" ? "en" : lang;
+
+  // Try to load language-specific media data first
+  const mediaDataUrl =
+    langCode === "en"
+      ? `${import.meta.env.VITE_STATIC_PATH}/media_data.json`
+      : `${import.meta.env.VITE_STATIC_PATH}/media_data_${langCode}.json`;
+
+  fetch(mediaDataUrl)
+    .then((response) => {
+      // If language-specific file doesn't exist, fall back to English
+      if (!response.ok && langCode !== "en") {
+        console.log(
+          `Media data for ${langCode} not found, falling back to English`,
+        );
+        return fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`);
+      }
+      return response;
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      // Transform array into lookup object
+      const lookup = {};
+      data.forEach((item) => {
+        if (item.domains) {
+          item.domains.forEach((domain) => {
+            lookup[domain.toLowerCase()] = item;
+          });
+        }
+      });
+
+      mediaData = {
+        raw: data,
+        lookup: lookup,
+      };
+    })
+    .catch((error) => {
+      console.error("Error loading media data:", error);
+    });
+}
+
+// Initial load
+loadMediaData();
+
 document.addEventListener("alpine:init", () => {
   Alpine.store("language", {
-    current: localStorage.getItem("language") || "default",
+    current: userLocale,
     set(lang) {
       this.current = lang;
       localStorage.setItem("language", lang);
+
       this.apply();
     },
     apply() {
@@ -40,84 +191,15 @@ document.addEventListener("alpine:init", () => {
       window.dispatchEvent(
         new CustomEvent("language-changed", { detail: this.current }),
       );
+
+      // Reload media data with the new language
+      loadMediaData();
     },
     init() {
       if (!localStorage.getItem("language")) {
         this.set("default");
       }
     },
-  });
-
-  // Add translations store for UI localization
-  Alpine.store("translations", {
-    data: {},
-
-    // Load translations from JSON file
-    async loadTranslations(lang) {
-      // If language is 'default', use English
-      const langCode = lang === "default" ? "en" : lang;
-
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_STATIC_PATH}/locales/${langCode}.json`,
-        );
-        if (response.ok) {
-          const translations = await response.json();
-          // Transform the object structure into a flat key-value mapping
-          this.data = Object.entries(translations).reduce(
-            (acc, [key, value]) => {
-              acc[key] = value.text;
-              return acc;
-            },
-            {},
-          );
-          console.log(
-            `Loaded ${Object.keys(this.data).length} translations for ${langCode}`,
-          );
-        } else {
-          console.error(
-            `Failed to load translations for ${langCode}, falling back to English`,
-          );
-          // Fall back to English if the requested language file doesn't exist
-          if (langCode !== "en") {
-            await this.loadTranslations("en");
-          }
-        }
-      } catch (error) {
-        console.error(`Error loading translations:`, error);
-        // Fall back to English on error
-        if (langCode !== "en") {
-          await this.loadTranslations("en");
-        }
-      }
-    },
-
-    // Get a translated string
-    get(key) {
-      // If the translation exists, return it
-      if (this.data[key]) {
-        return this.data[key];
-      }
-
-      // Return the key itself as a last resort
-      return key;
-    },
-
-    // Initialize translations
-    async init() {
-      const lang = Alpine.store("language").current;
-      await this.loadTranslations(lang);
-
-      // Listen for language changes
-      window.addEventListener("language-changed", async (event) => {
-        await this.loadTranslations(event.detail);
-      });
-    },
-  });
-
-  // Add a global helper function for translations
-  Alpine.magic("t", () => {
-    return (key) => Alpine.store("translations").get(key);
   });
 
   Alpine.data("sourceOverlay", () => ({
@@ -131,20 +213,33 @@ document.addEventListener("alpine:init", () => {
     async processSource($event) {
       if (!mediaData?.lookup) {
         console.log("Media data not yet loaded, fetching...");
-        const response = await fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`);
-        const data = await response.json();
-        const lookup = {};
-        data.forEach((item) => {
-          if (item.domains) {
-            item.domains.forEach((domain) => {
-              lookup[domain.toLowerCase()] = item;
-            });
-          }
+        // Use the loadMediaData function to get language-specific data
+        await new Promise((resolve) => {
+          loadMediaData();
+          // Wait a bit for the data to load
+          setTimeout(resolve, 500);
         });
-        mediaData = {
-          raw: data,
-          lookup: lookup,
-        };
+
+        // If still not loaded, fall back to English
+        if (!mediaData?.lookup) {
+          console.log("Falling back to English media data...");
+          const response = await fetch(
+            `${import.meta.env.VITE_STATIC_PATH}/media_data.json`,
+          );
+          const data = await response.json();
+          const lookup = {};
+          data.forEach((item) => {
+            if (item.domains) {
+              item.domains.forEach((domain) => {
+                lookup[domain.toLowerCase()] = item;
+              });
+            }
+          });
+          mediaData = {
+            raw: data,
+            lookup: lookup,
+          };
+        }
       }
 
       this.showSourceOverlay = true;
@@ -168,14 +263,7 @@ document.addEventListener("alpine:init", () => {
   }));
   // Ensure media data is loaded
   if (!mediaData) {
-    fetch(`${import.meta.env.VITE_STATIC_PATH}/media_data.json`)
-      .then((response) => response.json())
-      .then((data) => {
-        mediaData = data;
-      })
-      .catch((error) => {
-        console.error("Error loading media data:", error);
-      });
+    loadMediaData();
   }
 
   Alpine.store("intro", {
@@ -309,6 +397,7 @@ document.addEventListener("alpine:init", () => {
     },
     render() {
       const container = document.querySelector('[x-ref="sectionsList"]');
+      if (!container) return;
 
       // Clear existing content
       container.innerHTML = "";
@@ -318,13 +407,20 @@ document.addEventListener("alpine:init", () => {
         const div = document.createElement("div");
         div.className = "flex items-center justify-between";
         div.dataset.section = sectionName;
+
+        // Get the translation key for the section
+        const translationKey = `section.${sectionName.charAt(0).toLowerCase() + sectionName.slice(1)}`;
+
+        // Get the translated text
+        const translatedText = window.AlpineI18n.t(translationKey);
+
         div.innerHTML = `
                     <div class='flex items-center'>
                         <svg class='w-6 h-6 text-gray-400 mr-3 cursor-move drag-handle' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                             <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path>
                         </svg>
                         <label class='text-sm font-medium text-gray-700 dark:text-gray-300'>
-                            ${sectionName.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}
+                            ${translatedText || sectionName.replace(/([A-Z])/g, " $1").replace(/^./, (str) => str.toUpperCase())}
                         </label>
                     </div>
                     <button x-data 
@@ -402,8 +498,6 @@ document.addEventListener("alpine:init", () => {
     },
     init() {
       window.addEventListener("language-changed", () => {
-        console.log("[init] Language changed, reloading");
-
         // TODO: Remove this once we make it work without refreshing
         window.location.reload();
       });
@@ -434,13 +528,6 @@ document.addEventListener("alpine:init", () => {
       localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
     },
     enableCategory(category) {
-      // const index = this.enabled.indexOf(category);
-      // if (index > -1) {
-      //     console.log("[enableCategory] Category already enabled, removing");
-      //     if (this.enabled.length > 1) {
-      //         this.enabled.splice(index, 1);
-      //     }
-      // } else {
       // When enabling a category, insert it in the correct position according to order
       const orderIndex = this.order.indexOf(category);
       const insertIndex = this.enabled.findIndex(
@@ -451,10 +538,8 @@ document.addEventListener("alpine:init", () => {
       } else {
         this.enabled.splice(insertIndex, 0, category);
       }
-      // }
 
       localStorage.setItem("enabledCategories", JSON.stringify(this.enabled));
-      console.log("[enableCategory] Saving enabled categories:", this.enabled);
     },
     isEnabled(category) {
       return this.enabled.includes(category);
@@ -488,6 +573,13 @@ document.addEventListener("alpine:init", () => {
     open() {
       this.isOpen = true;
       document.body.classList.add("overflow-hidden");
+
+      // Re-render sections when settings panel is opened
+      Alpine.nextTick(() => {
+        if (Alpine.store("sections")) {
+          Alpine.store("sections").render();
+        }
+      });
     },
     close() {
       this.isOpen = false;
@@ -526,6 +618,7 @@ document.addEventListener("alpine:init", () => {
     },
   });
 });
+
 function lockScroll() {
   document.body.style.overflow = "hidden";
 }
@@ -606,14 +699,37 @@ window.getArticleIdFromUrl = getArticleIdFromUrl;
 
 function formatTimeSince(timestamp) {
   const diff = Math.floor(Date.now() / 1000 - timestamp);
-  if (diff < 60) {
-    return `Updated ${diff} sec ago`;
+  if (diff < 10) {
+    return window.AlpineI18n.t("time.updated.justNow");
+  } else if (diff < 60) {
+    return window.AlpineI18n.t("time.updated.seconds").replace("{count}", diff);
   } else if (diff < 3600) {
     const mins = Math.floor(diff / 60);
-    return `Updated ${mins} ${mins === 1 ? "min" : "mins"} ago`;
-  } else {
+    if (mins === 1) {
+      return window.AlpineI18n.t("time.updated.oneMinute");
+    } else {
+      return window.AlpineI18n.t("time.updated.minutes").replace(
+        "{count}",
+        mins,
+      );
+    }
+  } else if (diff < 86400) {
     const hours = Math.floor(diff / 3600);
-    return `Updated ${hours} ${hours === 1 ? "hour" : "hours"} ago`;
+    if (hours === 1) {
+      return window.AlpineI18n.t("time.updated.oneHour");
+    } else {
+      return window.AlpineI18n.t("time.updated.hours").replace(
+        "{count}",
+        hours,
+      );
+    }
+  } else {
+    const days = Math.floor(diff / 86400);
+    if (days === 1) {
+      return window.AlpineI18n.t("time.updated.oneDay");
+    } else {
+      return window.AlpineI18n.t("time.updated.days").replace("{count}", days);
+    }
   }
 }
 
@@ -839,9 +955,6 @@ document.addEventListener("alpine:init", () => {
       });
 
       Alpine.store("language").init();
-      // Initialize translations
-      await Alpine.store("translations").init();
-
       // Check if all stories are read
       this.allStoriesRead = this.stories.every(
         (story) => this.readStories[story.title],
@@ -1063,8 +1176,18 @@ document.addEventListener("alpine:init", () => {
 
         // Create inner span for text
         const span = document.createElement("span");
-        span.textContent =
-          categoryName === "OnThisDay" ? "Today in History" : categoryName;
+
+        // Get translated category name
+        let translationKey;
+        if (categoryName === "OnThisDay") {
+          translationKey = "category.todayInHistory";
+        } else {
+          translationKey = `category.${categoryName.toLowerCase()}`;
+        }
+
+        // Use translation if available, otherwise fallback to the original name
+        span.textContent = window.AlpineI18n.t(translationKey) || categoryName;
+
         div.appendChild(span);
 
         // Use pointer workaround instead of click to avoid mobile browser issues
@@ -1165,8 +1288,18 @@ document.addEventListener("alpine:init", () => {
         if (catName) {
           const option = document.createElement("option");
           option.value = catName;
-          option.textContent =
-            catName === "OnThisDay" ? "Today in History" : catName;
+
+          // Get translated category name
+          let translationKey;
+          if (catName === "OnThisDay") {
+            translationKey = "category.todayInHistory";
+          } else {
+            translationKey = `category.${catName.toLowerCase()}`;
+          }
+
+          // Use translation if available, otherwise fallback to the original name
+          option.textContent = window.AlpineI18n.t(translationKey) || catName;
+
           select.appendChild(option);
         }
       });
@@ -1677,5 +1810,3 @@ document.addEventListener("click", (event) => {
       });
   }
 });
-
-Alpine.start();
