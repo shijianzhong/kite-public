@@ -1,8 +1,10 @@
 {
   "Linux & OSS": {
     "feeds": [
-      "https://www.tecmint.com/feed/",
       "https://www.ubuntupit.com/feed/",
+      "https://www.tomshardware.com/feeds/tag/linux",
+      "https://thelibre.news/latest/rss/",
+      "https://www.tecmint.com/feed/",
       "https://www.cyberciti.biz/feed/",
       "https://itsfoss.com/feed/",
       "https://blog.cloudlinux.com/rss.xml",
@@ -55,7 +57,6 @@
       "https://www.omgubuntu.co.uk/feed",
       "https://linuxinsider.com/feed/",
       "https://www.omglinux.com/feed/",
-      "https://www.tomshardware.com/feeds/tag/linux",
       "https://linuxiac.com/feed/",
       "https://www.linuxtoday.com/feed/",
       "https://news.itsfoss.com/latest/rss/",
@@ -78,7 +79,6 @@
       "https://blog.torproject.org/feed.xml",
       "https://www.debian.org/News/news",
       "https://www.linux.org/articles/index.rss",
-      "https://thelibre.news/latest/rss/",
       "https://news.google.com/atom/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRE40TlhGdEVnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/atom/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1p3ZW5wd0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNREk1T1RZU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11"
@@ -708,6 +708,7 @@
       "https://www.danas.rs/mesto/nis/feed/",
       "https://radar.nova.rs/feed/",
       "https://www.politika.rs/rss",
+      "https://serbiantimes.info/category/srbija/feed/",
       "https://www.blic.rs/rss/?categoryUuid=669c62da-05ee-535a-8e08-27d5977ac2e2",
       "https://www.blic.rs/rss/?categoryUuid=3773916d-93ac-5e41-ae25-10382d58ddd4",
       "https://www.blic.rs/rss/?categoryUuid=f9d287a8-6be0-5529-a632-280fd148cb08",
@@ -721,6 +722,8 @@
       "https://naslovi.net/rss/regioni/",
       "https://naslovi.net/rss/vojvodina/",
       "https://biznis.rs/feed/",
+      "https://www.k-013.com/srbija?format=feed&type=rss",
+      "https://srbin.info/feed/",
       "https://srbijavesti.rs/feed/",
       "https://naslovi.net/rss/politika/",
       "https://naslovi.net/rss/ekonomija/",
@@ -1112,6 +1115,8 @@
   },
   "Spain": {
     "feeds": [
+      "https://www.elnortedecastilla.es/rss/2.0/portada/",
+      "https://www.elsaltodiario.com/general/feed",
       "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
       "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
       "https://www.abc.es/rss/2.0/portada/",
@@ -1151,8 +1156,7 @@
       "https://www.lagacetadesalamanca.es/rss/2.0/portada/",
       "https://www.diariodecastillayleon.es/rss/home.xml",
       "https://www.diariodecastillayleon.es/rss/castilla-y-leon.xml",
-      "https://www.elnortedecastilla.es/rss/2.0/portada/",
-      "https://www.elsaltodiario.com/general/feed"
+      "https://www.elnortedecastilla.es/rss/2.0/portada/"
     ]
   },
   "Ireland": {
