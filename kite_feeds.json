@@ -2,6 +2,7 @@
   "Linux & OSS": {
     "feeds": [
       "https://www.tecmint.com/feed/",
+      "https://www.ubuntupit.com/feed/",
       "https://www.cyberciti.biz/feed/",
       "https://itsfoss.com/feed/",
       "https://blog.cloudlinux.com/rss.xml",
@@ -54,6 +55,7 @@
       "https://www.omgubuntu.co.uk/feed",
       "https://linuxinsider.com/feed/",
       "https://www.omglinux.com/feed/",
+      "https://www.tomshardware.com/feeds/tag/linux",
       "https://linuxiac.com/feed/",
       "https://www.linuxtoday.com/feed/",
       "https://news.itsfoss.com/latest/rss/",
@@ -691,6 +693,7 @@
   
   "Serbia": {
     "feeds": [
+      "https://stanjestvari.com/feed/",
       "https://www.danas.rs/rubrika/vesti/politika/feed/",
       "https://www.danas.rs/rubrika/vesti/drustvo/feed/",
       "https://www.danas.rs/rubrika/vesti/drustvo/vladavina-prava/feed/",
