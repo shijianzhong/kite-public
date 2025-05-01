@@ -2221,7 +2221,7 @@
     "typology": "Private Media"
   },
   {
-    "country": "Estonia", 
+    "country": "Estonia",
     "organization": "Delfi",
     "domains": ["delfi.ee"],
     "description": "Delfi is one of Estonia's largest news portals providing news coverage in Estonian, English, Lithuanian, Latvian, Polish and Russian languages. The platform offers real-time news updates, opinion pieces, and multimedia content covering local and international affairs.",
@@ -2713,6 +2713,158 @@
     "domains": ["elsaltodiario.com"],
     "description": "El Salto is an independent, subscription funded newspaper founded in 2017. Its online version works as daily newspaper covering in Spanish local and international events, investigation and debates.",
     "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Yonhap News Agency (연합뉴스)",
+    "domains": ["yna.co.kr"],
+    "description": "South Korea's key public news agency providing comprehensive domestic/international news.",
+    "owner": "News Agency Promotion Foundation (Public Corp.)",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Korea Economic Daily (한국경제)",
+    "domains": ["hankyung.com"],
+    "description": "Major South Korean business newspaper covering economy, finance, and industry.",
+    "owner": "Hankyung Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Yonhap News TV (연합뉴스TV)",
+    "domains": ["yonhapnewstv.co.kr"],
+    "description": "24-hour news channel by Yonhap News Agency covering diverse topics.",
+    "owner": "Yonhap News Agency",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "SBS (Seoul Broadcasting System)",
+    "domains": ["sbs.co.kr"],
+    "description": "Major South Korean national TV/radio network with news, entertainment, drama.",
+    "owner": "SBS Media Holdings (Taeyoung Group)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Chosun Ilbo (조선일보)",
+    "domains": ["chosun.com"],
+    "description": "Major South Korean daily newspaper covering politics, economy, society, culture.",
+    "owner": "Chosun Ilbo Co., Ltd.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Policy Briefing Korea (대한민국 정책브리핑)",
+    "domains": ["korea.kr"],
+    "description": "Official South Korean government portal for policy news and announcements.",
+    "owner": "Ministry of Culture, Sports and Tourism (Gov't)",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Newsis (뉴시스)",
+    "domains": ["newsis.com"],
+    "description": "Major South Korean private news agency providing news content across various fields.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Maeil Business Newspaper (매일경제)",
+    "domains": ["mk.co.kr"],
+    "description": "Leading South Korean daily business newspaper (economy, finance, market).",
+    "owner": "Maekyung Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "EToday (이투데이)",
+    "domains": ["etoday.co.kr"],
+    "description": "South Korean economic newspaper focusing on finance, industry, investment.",
+    "owner": "Private Ownership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Kukmin Ilbo (국민일보)",
+    "domains": ["kmib.co.kr"],
+    "description": "South Korean daily newspaper covering general news, founded by Yoido Full Gospel Church.",
+    "owner": "Kukmin Cultural Foundation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Consumer Times (컨슈머타임스)",
+    "domains": ["cstimes.com"],
+    "description": "Online news outlet focusing on consumer rights, products, and market trends.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "News Post (뉴스포스트)",
+    "domains": ["newspost.kr"],
+    "description": "Internet newspaper covering general news topics (politics, economy, society).",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Seoul Shinmun (서울신문)",
+    "domains": ["seoul.co.kr"],
+    "description": "Major South Korean daily newspaper covering general news.",
+    "owner": "Hoban Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Segye Ilbo (세계일보)",
+    "domains": ["segye.com"],
+    "description": "South Korean daily newspaper covering general news, founded by Unification Church.",
+    "owner": "Tongil Group (Unification Church affiliated)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "OhmyNews (오마이뉴스)",
+    "domains": ["ohmynews.com"],
+    "description": "Online news site known for citizen journalism alongside professional reporting.",
+    "owner": "OhmyNews Co., Ltd.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Tongil News (통일뉴스)",
+    "domains": ["tongilnews.com"],
+    "description": "Online news specializing in North Korea, inter-Korean relations, unification.",
+    "owner": "Private Ownership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Kyunghyang Shinmun (경향신문)",
+    "domains": ["khan.co.kr"],
+    "description": "Major South Korean daily newspaper known for independent stance; employee-owned.",
+    "owner": "independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Donga Ilbo (동아일보)",
+    "domains": ["donga.com"],
+    "description": "Major South Korean daily newspaper covering broad news topics.",
+    "owner": "Dong-A Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "MBN (Maeil Broadcasting Network)",
+    "domains": ["mbn.co.kr"],
+    "description": "Nationwide cable TV channel for news and general programming.",
+    "owner": "Maekyung Media Group",
     "typology": "Private Media"
   }
 ]

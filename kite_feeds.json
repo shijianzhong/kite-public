@@ -690,7 +690,7 @@
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
     ]
   },
-  
+
   "Serbia": {
     "feeds": [
       "https://stanjestvari.com/feed/",
@@ -1187,7 +1187,7 @@
       "https://techbuzzireland.com/feed/",
       "https://www.irishstar.com/?service=rss"
     ]
-  },  
+  },
   "Belgium": {
     "feeds": [
       "https://www.vrt.be/vrtnieuws/nl.rss.articles.xml",
@@ -1317,6 +1317,53 @@
       "https://playtech.ro/feed",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFpqTVhrU0FuSnZLQUFQAQ?hl=ro&gl=RO&ceid=RO%3Aro&oc=11",
       "https://www.reddit.com/r/Romania/.rss"
+    ]
+  },
+  "South Korea": {
+      "feeds": [
+      "https://www.yna.co.kr/rss/news.xml",
+      "https://www.yna.co.kr/rss/politics.xml",
+      "https://www.yna.co.kr/rss/northkorea.xml",
+      "https://www.yna.co.kr/rss/economy.xml",
+      "https://www.yna.co.kr/rss/market.xml",
+      "https://www.yna.co.kr/rss/industry.xml",
+      "https://www.yna.co.kr/rss/society.xml",
+      "https://www.yna.co.kr/rss/local.xml",
+      "https://www.yna.co.kr/rss/culture.xml",
+      "https://www.yna.co.kr/rss/entertainment.xml",
+      "https://www.yna.co.kr/rss/sports.xml",
+      "https://www.hankyung.com/feed/all-news",
+      "https://www.yonhapnewstv.co.kr/category/news/politics/feed/",
+      "https://www.yonhapnewstv.co.kr/category/news/economy/feed/",
+      "https://www.yonhapnewstv.co.kr/category/news/society/feed/",
+      "https://www.yonhapnewstv.co.kr/category/news/local/feed/",
+      "https://www.yonhapnewstv.co.kr/category/news/culture/feed/",
+      "https://www.yonhapnewstv.co.kr/category/news/sports/feed/",
+      "https://news.sbs.co.kr/news/headlineRssFeed.do?plink=RSSREADER",
+      "https://news.sbs.co.kr/news/newsflashRssFeed.do?plink=RSSREADER",
+      "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+      "https://www.korea.kr/rss/policy.xml",
+      "https://www.newsis.com/RSS/sokbo.xml",
+      "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko",
+      "http://news.google.co.kr/news?pz=1&hdlOnly=1&cf=all&ned=kr&hl=ko&topic=p&output=rss",
+      "http://news.google.co.kr/news?pz=1&hdlOnly=1&cf=all&ned=kr&hl=ko&topic=b&output=rss",
+      "https://www.mk.co.kr/rss/40300001/",
+      "https://rss.etoday.co.kr/eto/etoday_news_all.xml",
+      "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",
+      "http://www.cstimes.com/rss/allArticle.xml",
+      "http://www.newspost.kr/rss/allArticle.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_economy.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_international.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_society.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_politics.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_entertainment.xml",
+      "http://www.segye.com/Articles/RSSList/segye_recent.xml",
+      "http://rss.ohmynews.com/rss/ohmynews.xml",
+      "https://www.tongilnews.com/rss/allArticle.xml",
+      "https://www.khan.co.kr/rss/rssdata/total_news.xml",
+      "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",
+      "https://rss.donga.com/total.xml",
+      "https://www.mbn.co.kr/rss/"
     ]
   }
 }
