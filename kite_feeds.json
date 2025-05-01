@@ -1351,7 +1351,19 @@
       "https://rss.etoday.co.kr/eto/etoday_news_all.xml",
       "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",
       "http://www.cstimes.com/rss/allArticle.xml",
-      "http://www.newspost.kr/rss/allArticle.xml"
-      ]
+      "http://www.newspost.kr/rss/allArticle.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_economy.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_international.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_society.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_politics.xml",
+      "https://www.seoul.co.kr/xml/rss/rss_entertainment.xml",
+      "http://www.segye.com/Articles/RSSList/segye_recent.xml",
+      "http://rss.ohmynews.com/rss/ohmynews.xml",
+      "https://www.tongilnews.com/rss/allArticle.xml",
+      "https://www.khan.co.kr/rss/rssdata/total_news.xml",
+      "https://www.kmib.co.kr/rss/data/kmibRssAll.xml",
+      "https://rss.donga.com/total.xml",
+      "https://www.mbn.co.kr/rss/",
+    ]
     }
 }
