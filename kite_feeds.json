@@ -508,6 +508,40 @@
       "https://www.werra-rundschau.de/hessen/rssfeed.rdf"
     ]
   },
+  "India": {
+    "feeds": [
+      "https://www.thehindu.com/news/national/feeder/default.rss",
+      "https://www.thehindu.com/feeder/default.rss",
+      "https://www.thehindu.com/sci-tech/science/feeder/default.rss",
+      "https://www.thehindu.com/sport/feeder/default.rss",
+      "https://indianexpress.com/feed/",
+      "https://www.dnaindia.com/feeds/india.xml",
+      "https://www.business-standard.com/rss/latest.rss",
+      "https://www.amarujala.com/rss/breaking-news.xml",
+      "https://feeds.feedburner.com/ScrollinArticles.rss",
+      "https://www.thehindu.com/business/feeder/default.rss",
+      "https://www.thehindu.com/business/Economy/feeder/default.rss",
+      "https://www.indiatoday.in/rss/1206578",
+      "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "https://feeds.feedburner.com/NDTV-LatestNews",
+      "https://news.abplive.com/home/feed",
+      "https://frontline.thehindu.com/cover-story/feeder/default.rss",
+      "https://prod-qt-images.s3.amazonaws.com/production/nationalherald/feed.xml",
+      "https://prod-qt-images.s3.amazonaws.com/production/freepressjournal/feed.xml",
+      "https://www.thehindubusinessline.com/?service=rss",
+      "https://indianexpress.com/section/india/feed/",
+      "https://www.newslaundry.com/stories.rss?time-period=last-7-days&exclude-section-ids=15848,15817",
+      "https://aninews.in/rss/feed/category/national.xml",
+      "https://aninews.in/rss/feed/category/business.xml",
+      "https://www.livemint.com/rss/news",
+      "https://publish.tribuneindia.com/newscategory/top-headlines/feed/",
+      "https://publish.tribuneindia.com/newscategory/nation/feed/",
+      "https://publish.tribuneindia.com/newscategory/india/feed/",
+      "https://publish.tribuneindia.com/newscategory/business/feed/",
+      "https://publish.tribuneindia.com/newscategory/impact-feature/feed/",
+      "https://publish.tribuneindia.com/newscategory/features/feed/1"
+   ]
+  },
   "Italy": {
     "feeds": [
       "https://www.ilpost.it/italia/feed/",
