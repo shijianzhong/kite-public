@@ -2957,6 +2957,38 @@
   },
   {
     "country": "Switzerland",
+    "organization": "Aargauer Zeitung",
+    "domains": ["aargauerzeitung.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Luzerner Zeitung",
+    "domains": ["luzernerzeitung.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "St. Galler Tagblatt",
+    "domains": ["tagblatt.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Neue Zürcher Zeitung",
+    "domains": ["nzz.ch"],
+    "description": "A Swiss German-language daily newspaper published in Zurich",
+    "owner": "Neue Zürcher Zeitung AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
     "organization": "Watson",
     "domains": ["watson.ch"],
     "description": "Swiss German- and French-language online newspaper published by CH Media that targets mobile users",
