@@ -1,5 +1,19 @@
 {
   "Linux & OSS": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Linux & OSS",
+      "de": "Linux & OSS",
+      "fr": "Linux & OSS",
+      "es": "Linux & OSS",
+      "pt": "Linux & OSS",
+      "it": "Linux & OSS",
+      "nl": "Linux & OSS",
+      "zh": "Linux与开源",
+      "ja": "Linux & OSS",
+      "hi": "Linux & OSS",
+      "uk": "Linux & OSS"
+    },
     "feeds": [
       "https://www.ubuntupit.com/feed/",
       "https://www.tomshardware.com/feeds/tag/linux",
@@ -85,6 +99,20 @@
     ]
   },
   "Cryptocurrency": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Cryptocurrency",
+      "de": "Kryptowährung",
+      "fr": "Cryptomonnaie",
+      "es": "Criptomoneda",
+      "pt": "Criptomoeda",
+      "it": "Criptovaluta",
+      "nl": "Cryptocurrency",
+      "zh": "加密货币",
+      "ja": "暗号通貨",
+      "hi": "क्रिप्टोकरेंसी",
+      "uk": "Криптовалюта"
+    },
     "feeds": [
       "https://news.google.com/atom/search?q=cryptocurrency&hl=en-US&gl=US&ceid=US%3Aen",
       "https://news.google.com/atom/search?q=blockchain&hl=en-US&gl=US&ceid=US%3Aen",
@@ -131,6 +159,20 @@
     ]
   },
   "Europe": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Europe",
+      "de": "Europa",
+      "fr": "Europe",
+      "es": "Europa",
+      "pt": "Europa",
+      "it": "Europa",
+      "nl": "Europa",
+      "zh": "欧洲",
+      "ja": "ヨーロッパ",
+      "hi": "यूरोप",
+      "uk": "Європа"
+    },
     "feeds": [
       "http://feeds.bbci.co.uk/news/world/europe/rss.xml",
       "https://blogs.lse.ac.uk/europpblog/feed/",
@@ -196,6 +238,20 @@
     ]
   },
   "UK": {
+    "source_language": "en",
+    "display_names": {
+      "en": "UK",
+      "de": "Vereinigtes Königreich",
+      "fr": "Royaume-Uni",
+      "es": "Reino Unido",
+      "pt": "Reino Unido",
+      "it": "Regno Unito",
+      "nl": "VK",
+      "zh": "英国",
+      "ja": "イギリス",
+      "hi": "यूके",
+      "uk": "Великобританія"
+    },
     "feeds": [
       "https://bills.parliament.uk/rss/allbills.rss",
       "https://bylinetimes.com/feed/",
@@ -255,6 +311,20 @@
     ]
   },
   "Ukraine": {
+    "source_language": "uk",
+    "display_names": {
+      "en": "Ukraine",
+      "de": "Ukraine",
+      "fr": "Ukraine",
+      "es": "Ucrania",
+      "pt": "Ucrânia",
+      "it": "Ucraina",
+      "nl": "Oekraïne",
+      "zh": "乌克兰",
+      "ja": "ウクライナ",
+      "hi": "यूक्रेन",
+      "uk": "Україна"
+    },
     "feeds": [
       "https://www.pravda.com.ua/rss/",
       "https://www.pravda.com.ua/rss/view_news/",
@@ -287,6 +357,20 @@
     ]
   },
   "Brazil": {
+    "source_language": "pt",
+    "display_names": {
+      "en": "Brazil",
+      "de": "Brasilien",
+      "fr": "Brésil",
+      "es": "Brasil",
+      "pt": "Brasil",
+      "it": "Brasile",
+      "nl": "Brazilië",
+      "zh": "巴西",
+      "ja": "ブラジル",
+      "hi": "ब्राज़ील",
+      "uk": "Бразилія"
+    },
     "feeds": [
       "http://agenciabrasil.ebc.com.br/rss/internacional/feed.xml",
       "http://cinema.uol.com.br/ultnot/index.xml",
@@ -323,6 +407,20 @@
     ]
   },
   "Australia": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Australia",
+      "de": "Australien",
+      "fr": "Australie",
+      "es": "Australia",
+      "pt": "Austrália",
+      "it": "Australia",
+      "nl": "Australië",
+      "zh": "澳大利亚",
+      "ja": "オーストラリア",
+      "hi": "ऑस्ट्रेलिया",
+      "uk": "Австралія"
+    },
     "feeds": [
       "http://feeds.perthherald.com/rss/12878be9fc2ca79c",
       "http://feeds.sydneysun.com/rss/ae0def0d9b645403",
@@ -365,6 +463,20 @@
     ]
   },
   "Estonia": {
+    "source_language": "et",
+    "display_names": {
+      "en": "Estonia",
+      "de": "Estland",
+      "fr": "Estonie",
+      "es": "Estonia",
+      "pt": "Estônia",
+      "it": "Estonia",
+      "nl": "Estland",
+      "zh": "爱沙尼亚",
+      "ja": "エストニア",
+      "hi": "एस्टोनिया",
+      "uk": "Естонія"
+    },
     "feeds": [
       "https://www.err.ee/rss",
       "https://www.postimees.ee/rss",
@@ -411,6 +523,20 @@
     ]
   },
   "Mexico": {
+    "source_language": "es",
+    "display_names": {
+      "en": "Mexico",
+      "de": "Mexiko",
+      "fr": "Mexique",
+      "es": "México",
+      "pt": "México",
+      "it": "Messico",
+      "nl": "Mexico",
+      "zh": "墨西哥",
+      "ja": "メキシコ",
+      "hi": "मेक्सिको",
+      "uk": "Мексика"
+    },
     "feeds": [
       "https://www.eleconomista.com.mx/rss/ultimas-noticias",
       "https://www.elfinanciero.com.mx/rss",
@@ -447,6 +573,20 @@
     ]
   },
   "Germany": {
+    "source_language": "de",
+    "display_names": {
+      "en": "Germany",
+      "de": "Deutschland",
+      "fr": "Allemagne",
+      "es": "Alemania",
+      "pt": "Alemanha",
+      "it": "Germania",
+      "nl": "Duitsland",
+      "zh": "德国",
+      "ja": "ドイツ",
+      "hi": "जर्मनी",
+      "uk": "Німеччина"
+    },
     "feeds": [
       "https://newsfeed.zeit.de/all",
       "https://correctiv.org/feed/",
@@ -477,6 +617,20 @@
     ]
   },
   "Germany | Hesse": {
+    "source_language": "de",
+    "display_names": {
+      "en": "Germany | Hesse",
+      "de": "Deutschland | Hessen",
+      "fr": "Allemagne | Hesse",
+      "es": "Alemania | Hesse",
+      "pt": "Alemanha | Hesse",
+      "it": "Germania | Assia",
+      "nl": "Duitsland | Hessen",
+      "zh": "德国 | 黑森州",
+      "ja": "ドイツ | ヘッセン州",
+      "hi": "जर्मनी | हेस्से",
+      "uk": "Німеччина | Гессен"
+    },
     "feeds": [
       "https://www.hessenschau.de/index.rss",
       "https://www.fr.de/hessen/rssfeed.rdf",
@@ -508,6 +662,20 @@
     ]
   },
   "India": {
+    "source_language": "en",
+    "display_names": {
+      "en": "India",
+      "de": "Indien",
+      "fr": "Inde",
+      "es": "India",
+      "pt": "Índia",
+      "it": "India",
+      "nl": "India",
+      "zh": "印度",
+      "ja": "インド",
+      "hi": "भारत",
+      "uk": "Індія"
+    },
     "feeds": [
       "https://www.thehindu.com/news/national/feeder/default.rss",
       "https://www.thehindu.com/feeder/default.rss",
@@ -543,9 +711,23 @@
       "https://www.reddit.com/r/inIndiannews/.rss",
       "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55YXpBU0FtVnVLQUFQAQ"
-   ]
+    ]
   },
   "Italy": {
+    "source_language": "it",
+    "display_names": {
+      "en": "Italy",
+      "de": "Italien",
+      "fr": "Italie",
+      "es": "Italia",
+      "pt": "Itália",
+      "it": "Italia",
+      "nl": "Italië",
+      "zh": "意大利",
+      "ja": "イタリア",
+      "hi": "इटली",
+      "uk": "Італія"
+    },
     "feeds": [
       "https://www.ilpost.it/italia/feed/",
       "https://www.ilpost.it/politica/feed/",
@@ -615,6 +797,20 @@
     ]
   },
   "Canada": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Canada",
+      "de": "Kanada",
+      "fr": "Canada",
+      "es": "Canadá",
+      "pt": "Canadá",
+      "it": "Canada",
+      "nl": "Canada",
+      "zh": "加拿大",
+      "ja": "カナダ",
+      "hi": "कनाडा",
+      "uk": "Канада"
+    },
     "feeds": [
       "https://albertaviews.ca/feed/",
       "https://angusreid.org/feed/",
@@ -679,6 +875,20 @@
     ]
   },
   "Thailand": {
+    "source_language": "th",
+    "display_names": {
+      "en": "Thailand",
+      "de": "Thailand",
+      "fr": "Thaïlande",
+      "es": "Tailandia",
+      "pt": "Tailândia",
+      "it": "Thailandia",
+      "nl": "Thailand",
+      "zh": "泰国",
+      "ja": "タイ",
+      "hi": "थाईलैंड",
+      "uk": "Таїланд"
+    },
     "feeds": [
       "https://news.thaipbs.or.th/rss/news/home",
       "https://thestandard.co/feed/",
@@ -727,8 +937,21 @@
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGRtTVhnU0FuUm9LQUFQAQ?hl=th&gl=TH&ceid=TH%3Ath&oc=11"
     ]
   },
-
   "Serbia": {
+    "source_language": "sr",
+    "display_names": {
+      "en": "Serbia",
+      "de": "Serbien",
+      "fr": "Serbie",
+      "es": "Serbia",
+      "pt": "Sérvia",
+      "it": "Serbia",
+      "nl": "Servië",
+      "zh": "塞尔维亚",
+      "ja": "セルビア",
+      "hi": "सर्बिया",
+      "uk": "Сербія"
+    },
     "feeds": [
       "https://stanjestvari.com/feed/",
       "https://www.danas.rs/rubrika/vesti/politika/feed/",
@@ -794,6 +1017,20 @@
     ]
   },
   "USA | Vermont": {
+    "source_language": "en",
+    "display_names": {
+      "en": "USA | Vermont",
+      "de": "USA | Vermont",
+      "fr": "États-Unis | Vermont",
+      "es": "EE.UU. | Vermont",
+      "pt": "EUA | Vermont",
+      "it": "USA | Vermont",
+      "nl": "VS | Vermont",
+      "zh": "美国 | 佛蒙特州",
+      "ja": "アメリカ | バーモント州",
+      "hi": "यूएसए | वर्मोंट",
+      "uk": "США | Вермонт"
+    },
     "feeds": [
       "https://www.addisonindependent.com/feed/",
       "https://bartonchronicle.com/feed/",
@@ -877,6 +1114,20 @@
     ]
   },
   "Japan": {
+    "source_language": "ja",
+    "display_names": {
+      "en": "Japan",
+      "de": "Japan",
+      "fr": "Japon",
+      "es": "Japón",
+      "pt": "Japão",
+      "it": "Giappone",
+      "nl": "Japan",
+      "zh": "日本",
+      "ja": "日本",
+      "hi": "जापान",
+      "uk": "Японія"
+    },
     "feeds": [
       "https://www.japantimes.co.jp/feed/",
       "https://japantoday.com/feed",
@@ -906,9 +1157,23 @@
       "https://www.reddit.com/r/japannews.rss",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE5mTTJRU0FtcGhLQUFQAQ?hl=ja&gl=JP&ceid=JP%3Aja&oc=11"
-   ]
+    ]
   },
   "Israel": {
+    "source_language": "he",
+    "display_names": {
+      "en": "Israel",
+      "de": "Israel",
+      "fr": "Israël",
+      "es": "Israel",
+      "pt": "Israel",
+      "it": "Israele",
+      "nl": "Israël",
+      "zh": "以色列",
+      "ja": "イスラエル",
+      "hi": "इज़राइल",
+      "uk": "Ізраїль"
+    },
     "feeds": [
       "https://www.jpost.com/Rss",
       "https://www.israelnationalnews.com/rss",
@@ -942,6 +1207,20 @@
     ]
   },
   "New Zealand": {
+    "source_language": "en",
+    "display_names": {
+      "en": "New Zealand",
+      "de": "Neuseeland",
+      "fr": "Nouvelle-Zélande",
+      "es": "Nueva Zelanda",
+      "pt": "Nova Zelândia",
+      "it": "Nuova Zelanda",
+      "nl": "Nieuw-Zeeland",
+      "zh": "新西兰",
+      "ja": "ニュージーランド",
+      "hi": "न्यूजीलैंड",
+      "uk": "Нова Зеландія"
+    },
     "feeds": [
       "https://www.rnz.co.nz/rss/business.xml",
       "https://www.rnz.co.nz/rss/country.xml",
@@ -990,6 +1269,20 @@
     ]
   },
   "Portugal": {
+    "source_language": "pt",
+    "display_names": {
+      "en": "Portugal",
+      "de": "Portugal",
+      "fr": "Portugal",
+      "es": "Portugal",
+      "pt": "Portugal",
+      "it": "Portogallo",
+      "nl": "Portugal",
+      "zh": "葡萄牙",
+      "ja": "ポルトガル",
+      "hi": "पुर्तगाल",
+      "uk": "Португалія"
+    },
     "feeds": [
       "http://feeds.feedburner.com/publicoRSS",
       "https://www.reddit.com/r/portugal/.rss",
@@ -1021,6 +1314,20 @@
     ]
   },
   "France": {
+    "source_language": "fr",
+    "display_names": {
+      "en": "France",
+      "de": "Frankreich",
+      "fr": "France",
+      "es": "Francia",
+      "pt": "França",
+      "it": "Francia",
+      "nl": "Frankrijk",
+      "zh": "法国",
+      "ja": "フランス",
+      "hi": "फ्रांस",
+      "uk": "Франція"
+    },
     "feeds": [
       "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml",
       "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/checknews/?outputType=xml",
@@ -1082,6 +1389,20 @@
     ]
   },
   "Poland": {
+    "source_language": "pl",
+    "display_names": {
+      "en": "Poland",
+      "de": "Polen",
+      "fr": "Pologne",
+      "es": "Polonia",
+      "pt": "Polônia",
+      "it": "Polonia",
+      "nl": "Polen",
+      "zh": "波兰",
+      "ja": "ポーランド",
+      "hi": "पोलैंड",
+      "uk": "Польща"
+    },
     "feeds": [
       "https://pap-mediaroom.pl/rss.xml",
       "https://pap-mediaroom.pl/kategoria/polityka-i-spo%C5%82eczenstwo/rss.xml",
@@ -1121,6 +1442,20 @@
     ]
   },
   "Slovenia": {
+    "source_language": "sl",
+    "display_names": {
+      "en": "Slovenia",
+      "de": "Slowenien",
+      "fr": "Slovénie",
+      "es": "Eslovenia",
+      "pt": "Eslovênia",
+      "it": "Slovenia",
+      "nl": "Slovenië",
+      "zh": "斯洛文尼亚",
+      "ja": "スロベニア",
+      "hi": "स्लोवेनिया",
+      "uk": "Словенія"
+    },
     "feeds": [
       "https://www.rtvslo.si/feeds/00.xml",
       "https://www.24ur.com/rss",
@@ -1151,6 +1486,20 @@
     ]
   },
   "Spain": {
+    "source_language": "es",
+    "display_names": {
+      "en": "Spain",
+      "de": "Spanien",
+      "fr": "Espagne",
+      "es": "España",
+      "pt": "Espanha",
+      "it": "Spagna",
+      "nl": "Spanje",
+      "zh": "西班牙",
+      "ja": "スペイン",
+      "hi": "स्पेन",
+      "uk": "Іспанія"
+    },
     "feeds": [
       "https://www.elnortedecastilla.es/rss/2.0/portada/",
       "https://www.elsaltodiario.com/general/feed",
@@ -1197,6 +1546,20 @@
     ]
   },
   "Ireland": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Ireland",
+      "de": "Irland",
+      "fr": "Irlande",
+      "es": "Irlanda",
+      "pt": "Irlanda",
+      "it": "Irlanda",
+      "nl": "Ierland",
+      "zh": "爱尔兰",
+      "ja": "アイルランド",
+      "hi": "आयरलैंड",
+      "uk": "Ірландія"
+    },
     "feeds": [
       "https://www.independent.ie/rss",
       "https://www.irishcentral.com/feeds/section-articles.atom",
@@ -1226,6 +1589,20 @@
     ]
   },
   "Belgium": {
+    "source_language": "nl",
+    "display_names": {
+      "en": "Belgium",
+      "de": "Belgien",
+      "fr": "Belgique",
+      "es": "Bélgica",
+      "pt": "Bélgica",
+      "it": "Belgio",
+      "nl": "België",
+      "zh": "比利时",
+      "ja": "ベルギー",
+      "hi": "बेल्जियम",
+      "uk": "Бельгія"
+    },
     "feeds": [
       "https://www.vrt.be/vrtnieuws/nl.rss.articles.xml",
       "https://www.rtbf.be/article/le-flux-rss-mode-d-emploi-3266",
@@ -1258,6 +1635,20 @@
     ]
   },
   "The Netherlands": {
+    "source_language": "nl",
+    "display_names": {
+      "en": "The Netherlands",
+      "de": "Niederlande",
+      "fr": "Pays-Bas",
+      "es": "Países Bajos",
+      "pt": "Países Baixos",
+      "it": "Paesi Bassi",
+      "nl": "Nederland",
+      "zh": "荷兰",
+      "ja": "オランダ",
+      "hi": "नीदरलैंड",
+      "uk": "Нідерланди"
+    },
     "feeds": [
       "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRFU1YWpJU0FtNXNLQUFQAQ?hl=nl&gl=NL&ceid=NL%3Anl&oc=11",
       "https://www.reddit.com/r/thenetherlands/.rss",
@@ -1325,6 +1716,20 @@
     ]
   },
   "Romania": {
+    "source_language": "ro",
+    "display_names": {
+      "en": "Romania",
+      "de": "Rumänien",
+      "fr": "Roumanie",
+      "es": "Rumania",
+      "pt": "Romênia",
+      "it": "Romania",
+      "nl": "Roemenië",
+      "zh": "罗马尼亚",
+      "ja": "ルーマニア",
+      "hi": "रोमानिया",
+      "uk": "Румунія"
+    },
     "feeds": [
       "https://recorder.ro/feed/",
       "https://www.biziday.ro/feed/",
@@ -1357,7 +1762,21 @@
     ]
   },
   "South Korea": {
-      "feeds": [
+    "source_language": "ko",
+    "display_names": {
+      "en": "South Korea",
+      "de": "Südkorea",
+      "fr": "Corée du Sud",
+      "es": "Corea del Sur",
+      "pt": "Coreia do Sul",
+      "it": "Corea del Sud",
+      "nl": "Zuid-Korea",
+      "zh": "韩国",
+      "ja": "韓国",
+      "hi": "दक्षिण कोरिया",
+      "uk": "Південна Корея"
+    },
+    "feeds": [
       "https://www.yna.co.kr/rss/news.xml",
       "https://www.yna.co.kr/rss/politics.xml",
       "https://www.yna.co.kr/rss/northkorea.xml",
@@ -1404,49 +1823,77 @@
     ]
   },
   "Switzerland (DE)": {
-      "feeds": [
-        "https://aargauerzeitung.ch/schweiz.rss",
-        "https://api.news.apps.be.ch/api/atom/news?domain=https%3A%2F%2Fwww.be.ch%2Fde%2Fstart%2Fdienstleistungen%2Fmedien%2Fmedienmitteilungen.html&lang=de&ouTagId=be-oe%3Abe&amount=30&maxAgeInDays=124",
-        "https://bluewin.ch/de/feed.xml",
-        "https://cash.ch/feeds/latest/news",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=201",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=301",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=401",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=501",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=601",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=701",
-        "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=801",
-        "https://gmx.ch/feeds/rss/magazine/schweiz/index.rss",
-        "https://luzernerzeitung.ch/schweiz.rss",
-        "https://luzernerzeitung.ch/zentralschweiz.rss",
-        "https://nzz.ch/feuilleton.rss",
-        "https://nzz.ch/finanzen.rss",
-        "https://nzz.ch/schweiz.rss",
-        "https://nzz.ch/wirtschaft.rss",
-        "https://onlinereports.ch/api/rss-feed",
-        "https://partner-feeds.beta.20min.ch/rss/20minuten/ostschweiz",
-        "https://partner-feeds.beta.20min.ch/rss/20minuten/schweiz",
-        "https://partner-feeds.beta.20min.ch/rss/20minuten/wirtschaft",
-        "https://partner-feeds.beta.20min.ch/rss/20minuten/zentralschweiz",
-        "https://partner-feeds.publishing.tamedia.ch/rss/derbund/schweiz",
-        "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/kultur",
-        "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/schweiz",
-        "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/wahlen",
-        "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/wirtschaft",
-        "https://polizeiticker.ch/rss",
-        "https://presseportal-schweiz.ch/rss.xml",
-        "https://sg.ch/_jcr_content/NewsPar.RssFeed.qualident__item0.rdf",
-        "https://srf.ch/kultur/bnf/rss/454",
-        "https://srf.ch/news/bnf/rss/1890",
-        "https://srf.ch/news/bnf/rss/1926",
-        "https://srf.ch/sport/bnf/rss/718",
-        "https://tagblatt.ch/ostschweiz.rss",
-        "https://tagblatt.ch/schweiz.rss",
-        "https://tagblatt.ch/wirtschaft.rss",
-        "https://watson.ch/api/2.0/rss/index.xml?tag=Schweiz"
-      ]
+    "source_language": "de",
+    "display_names": {
+      "en": "Switzerland (DE)",
+      "de": "Schweiz (DE)",
+      "fr": "Suisse (DE)",
+      "es": "Suiza (DE)",
+      "pt": "Suíça (DE)",
+      "it": "Svizzera (DE)",
+      "nl": "Zwitserland (DE)",
+      "zh": "瑞士（德语）",
+      "ja": "スイス（ドイツ語圏）",
+      "hi": "स्विट्जरलैंड (DE)",
+      "uk": "Швейцарія (DE)"
+    },
+    "feeds": [
+      "https://aargauerzeitung.ch/schweiz.rss",
+      "https://api.news.apps.be.ch/api/atom/news?domain=https%3A%2F%2Fwww.be.ch%2Fde%2Fstart%2Fdienstleistungen%2Fmedien%2Fmedienmitteilungen.html&lang=de&ouTagId=be-oe%3Abe&amount=30&maxAgeInDays=124",
+      "https://bluewin.ch/de/feed.xml",
+      "https://cash.ch/feeds/latest/news",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=201",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=301",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=401",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=501",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=601",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=701",
+      "https://d-nsbc-p.admin.ch/NSBSubscriber/feeds/rss?lang=de&org-nr=801",
+      "https://gmx.ch/feeds/rss/magazine/schweiz/index.rss",
+      "https://luzernerzeitung.ch/schweiz.rss",
+      "https://luzernerzeitung.ch/zentralschweiz.rss",
+      "https://nzz.ch/feuilleton.rss",
+      "https://nzz.ch/finanzen.rss",
+      "https://nzz.ch/schweiz.rss",
+      "https://nzz.ch/wirtschaft.rss",
+      "https://onlinereports.ch/api/rss-feed",
+      "https://partner-feeds.beta.20min.ch/rss/20minuten/ostschweiz",
+      "https://partner-feeds.beta.20min.ch/rss/20minuten/schweiz",
+      "https://partner-feeds.beta.20min.ch/rss/20minuten/wirtschaft",
+      "https://partner-feeds.beta.20min.ch/rss/20minuten/zentralschweiz",
+      "https://partner-feeds.publishing.tamedia.ch/rss/derbund/schweiz",
+      "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/kultur",
+      "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/schweiz",
+      "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/wahlen",
+      "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/wirtschaft",
+      "https://polizeiticker.ch/rss",
+      "https://presseportal-schweiz.ch/rss.xml",
+      "https://sg.ch/_jcr_content/NewsPar.RssFeed.qualident__item0.rdf",
+      "https://srf.ch/kultur/bnf/rss/454",
+      "https://srf.ch/news/bnf/rss/1890",
+      "https://srf.ch/news/bnf/rss/1926",
+      "https://srf.ch/sport/bnf/rss/718",
+      "https://tagblatt.ch/ostschweiz.rss",
+      "https://tagblatt.ch/schweiz.rss",
+      "https://tagblatt.ch/wirtschaft.rss",
+      "https://watson.ch/api/2.0/rss/index.xml?tag=Schweiz"
+    ]
   },
-  "Economics": {
+  "Economy": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Economy",
+      "de": "Wirtschaft",
+      "fr": "Économie",
+      "es": "Economía",
+      "pt": "Economia",
+      "it": "Economia",
+      "nl": "Economie",
+      "zh": "经济",
+      "ja": "経済",
+      "hi": "अर्थव्यवस्था",
+      "uk": "Економіка"
+    },
     "feeds": [
       "https://www.economist.com/finance-and-economics/rss.xml",
       "https://www.economist.com/business/rss.xml",
