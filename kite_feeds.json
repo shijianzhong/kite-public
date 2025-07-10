@@ -1963,6 +1963,7 @@
     "feeds": [
       "https://krebsonsecurity.com/feed/",
       "https://feeds.feedburner.com/TheHackersNews",
+      "https://thehackernews.com/feeds/posts/default",
       "https://www.bleepingcomputer.com/feed/",
       "https://isc.sans.edu/rssfeed_full.xml",
       "https://www.microsoft.com/security/blog/feed/",
@@ -1975,7 +1976,13 @@
       "https://news.risky.biz/feed/",
       "https://www.malwarebytes.com/blog/feed/index.xml",
       "https://www.darkreading.com/rss.xml",
-      "https://therecord.media/feed/"
+      "https://therecord.media/feed/",
+      "https://citizenlab.ca/feed/",
+      "https://www.welivesecurity.com/en/rss/feed/",
+      "https://cybersecuritynews.com/feed/",
+      "https://www.helpnetsecurity.com/feed/",
+      "https://www.cybersecuritydive.com/feeds/news/",
+      "https://cyberscoop.com/feed/"
     ]
   }
 }
