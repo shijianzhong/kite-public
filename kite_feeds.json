@@ -1991,7 +1991,11 @@
       "https://www.dagen.se/rss-allt?lab_viewport=rss",
       "https://nyheteridag.se/feed/",
       "https://blogg.tt.se/feed/",
-      "https://www.swedishtechnews.com/rss/"
+      "https://www.swedishtechnews.com/rss/",
+      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR1F3ZG5GdUVnSnpkaWdBUAE?hl=sv&gl=SE&ceid=SE%3Asv&oc=11",
+      "https://www.reddit.com/r/sweden/.rss",
+      "https://www.reddit.com/r/svenskpolitik/.rss",
+      "https://www.reddit.com/r/stockholm/.rss"
     ]
   }
 }
