@@ -1944,5 +1944,33 @@
       "https://www.focus-economics.com/news-search/feed/",
       "https://developingeconomics.org/feed/"
     ]
+  },
+  "AI": {
+    "source_language": "en",
+    "display_names": {
+      "en": "AI",
+      "de": "KI",
+      "fr": "IA",
+      "es": "IA",
+      "pt": "IA",
+      "it": "IA",
+      "nl": "AI",
+      "zh": "人工智能",
+      "ja": "AI（人工知能）",
+      "hi": "कृत्रिम बुद्धिमत्ता",
+      "uk": "ШІ"
+    },
+    "feeds": [
+      "https://openai.com/news/rss.xml",
+      "https://deepmind.google/blog/rss,xml",
+      "https://bair.berkeley.edu/blog/rss.xml",
+      "https://www.technologyreview.com/feed/",
+      "https://www.latent.space/feed.xml",
+      "https://huggingface.co/blog/rss.xml",
+      "https://karpathy.github.io/rss.xml",
+      "https://simonwillison.net/atom/everything/",
+      "https://www.safe.ai/blog/rss.xml",
+      "https://www.lesswrong.com/feed.xml"
+    ]
   }
 }
