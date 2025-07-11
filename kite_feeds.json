@@ -1982,7 +1982,12 @@
       "https://cybersecuritynews.com/feed/",
       "https://www.helpnetsecurity.com/feed/",
       "https://www.cybersecuritydive.com/feeds/news/",
-      "https://cyberscoop.com/feed/"
+      "https://cyberscoop.com/feed/",
+      "https://www.reddit.com/r/netsec/.rss",
+      "https://www.reddit.com/r/blueteamsec/.rss",
+      "https://news.google.com/rss/search?q=cybersecurity&hl=en-US&gl=US&ceid=US:en",
+      "https://news.google.com/rss/search?q=data+breach&hl=en-US&gl=US&ceid=US:en",
+      "https://www.reddit.com/r/cybersecurity/.rss"
     ]
   }
 }
