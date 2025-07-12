@@ -1987,7 +1987,9 @@
       "https://www.reddit.com/r/blueteamsec/.rss",
       "https://news.google.com/rss/search?q=cybersecurity&hl=en-US&gl=US&ceid=US:en",
       "https://news.google.com/rss/search?q=data+breach&hl=en-US&gl=US&ceid=US:en",
-      "https://www.reddit.com/r/cybersecurity/.rss"
+      "https://www.reddit.com/r/cybersecurity/.rss",
+      "https://www.fbi.gov/investigate/cyber/RSS",
+      "https://www.cisa.gov/cybersecurity-advisories/all.xml"
     ]
   }
 }
