@@ -2136,5 +2136,49 @@
       "https://www.reddit.com/r/svenskpolitik/.rss",
       "https://www.reddit.com/r/stockholm/.rss"
     ]
+  },
+  "Apple World": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Apple World",
+      "sv": "Apple-världen",
+      "de": "Apple Welt",
+      "fr": "Monde Apple",
+      "es": "Mundo Apple",
+      "pt": "Mundo Apple",
+      "it": "Mondo Apple",
+      "nl": "Apple Wereld",
+      "zh": "苹果世界",
+      "ja": "アップルワールド",
+      "hi": "एप्पल वर्ल्ड",
+      "uk": "Світ Apple"
+    },
+    "feeds": [
+      "https://feeds.macrumors.com/MacRumors-All",
+      "https://www.macworld.com/en-us/feed",
+      "https://rsshub.app/appleinsider",
+      "https://daringfireball.net/feeds/main",
+      "https://www.macstories.net/category/stories/feed",
+      "https://www.xlr8yourmac.com/news.xml",
+      "https://9to5mac.com/feed/",
+      "https://www.cultofmac.com/feed/",
+      "https://tidbits.com/feed/",
+      "https://osxdaily.com/feed/atom",
+      "https://www.macobserver.com/feed/",
+      "https://www.idownloadblog.com/feed/",
+      "https://mjtsai.com/blog/feed/",
+      "https://mrmacintosh.com/feed/",
+      "http://feedpress.me/sixcolors",
+      "https://www.iphoneincanada.ca/feed/",
+      "https://appadvice.com/feed",
+      "https://www.patentlyapple.com/rss.xml",
+      "https://www.bloomberg.com/authors/AS7Hj1mBMGM/mark-gurman.rss",
+      "https://developer.apple.com/news/rss/news.rss",
+      "https://512pixels.net/feed/",
+      "https://eclecticlight.co/feed/",
+      "https://macdailynews.com/feed/",
+      "https://arstechnica.com/apple/feed/",
+      "https://pxlnv.com/feed"
+    ]
   }
 }
