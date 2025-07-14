@@ -234,8 +234,7 @@
       "https://www.reddit.com/r/europes/.rss",
       "https://www.rferl.org/api/",
       "https://www.scmp.com/rss/322263/feed",
-      "https://www.spiegel.de/international/europe/index.rss",
-      "https://www.allsides.com/rss/news"
+      "https://www.spiegel.de/international/europe/index.rss"
     ]
   },
   "UK": {
@@ -1112,7 +1111,8 @@
       "https://www.waterburyroundabout.org/news-archive?format=rss",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/region_state",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston",
-      "https://www.allsides.com/rss/news"
+      "https://www.allsides.com/rss/news",
+      "https://www.allsides.com/blog"
     ]
   },
   "Japan": {
@@ -1944,7 +1944,9 @@
       "https://www.thestreet.com/economonitor/.rss/full/",
       "https://aier.org/feed/",
       "https://www.focus-economics.com/news-search/feed/",
-      "https://developingeconomics.org/feed/"
+      "https://developingeconomics.org/feed/",
+      "https://www.allsides.com/rss/news",
+      "https://www.allsides.com/blog"
     ]
   },
   "USA | Virginia": {
@@ -1993,7 +1995,8 @@
       "https://www.richmonder.org/feed",
       "https://wydaily.com/feed",
       "https://www.pilotonline.com/feed/",
-      "https://www.allsides.com/rss/news"
+      "https://www.allsides.com/rss/news",
+      "https://www.allsides.com/blog"
     ]
   },
   "AI": {
