@@ -1,0 +1,91 @@
+name: Sort and Deduplicate Feeds
+
+on:
+  push:
+    paths:
+      - 'kite_feeds.json'
+    branches:
+      - main
+      - 'feature/**'
+  pull_request:
+    paths:
+      - 'kite_feeds.json'
+
+jobs:
+  sort-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Sort and deduplicate feeds
+      run: node scripts/sort-feeds.js
+
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit changes
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'push'
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add kite_feeds.json
+        git commit -m "$(cat <<'EOF'
+        chore: auto-sort and deduplicate feeds
+
+        - Sort categories by type order (country → region → city → topic)
+        - Sort feeds alphabetically within categories by URL
+        - Remove duplicate feed URLs
+
+        🤖 Generated with GitHub Actions
+        EOF
+        )"
+        git push
+
+    - name: Commit changes to PR
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request'
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add kite_feeds.json
+        git commit -m "$(cat <<'EOF'
+        chore: auto-sort and deduplicate feeds
+
+        - Sort categories by type order (country → region → city → topic)
+        - Sort feeds alphabetically within categories by URL
+        - Remove duplicate feed URLs
+
+        🤖 Generated with GitHub Actions
+        EOF
+        )"
+        git push
+
+    - name: Comment on PR about auto-sorting
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '🤖 **Feeds automatically sorted**\n\nI detected that `kite_feeds.json` was modified but not properly sorted, so I automatically applied the correct sorting and pushed a new commit to this PR.\n\n**Changes made:**\n- ✅ Sort categories by type order (country → region → city → topic)\n- ✅ Sort feeds alphabetically within categories by URL\n- ✅ Remove duplicate feed URLs'
+          })
