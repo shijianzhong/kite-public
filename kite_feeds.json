@@ -342,6 +342,7 @@
       "https://novynarnia.com/feed",
       "https://ua.tribuna.com/rss/topnews.xml",
       "https://www.unian.ua/feed",
+      "https://kyivindependent.com/news-archive/rss/",
       "https://babel.ua/rss.xml",
       "https://espreso.tv/rss",
       "https://www.istpravda.com.ua/rss/",
@@ -710,11 +711,6 @@
       "https://publish.tribuneindia.com/newscategory/india/feed/",
       "https://publish.tribuneindia.com/newscategory/business/feed/",
       "https://publish.tribuneindia.com/newscategory/impact-feature/feed/",
-      "https://publish.tribuneindia.com/newscategory/features/feed/1",
-      "https://www.reddit.com/r/india/.rss",
-      "https://www.reddit.com/r/inIndiannews/.rss",
-      "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
-      "https://news.google.com/rss/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE55YXpBU0FtVnVLQUFQAQ",
       "https://publish.tribuneindia.com/newscategory/features/feed/",
       "https://www.reddit.com/r/india/.rss",
       "https://www.reddit.com/r/inIndiannews/.rss",
@@ -1146,7 +1142,9 @@
       "https://www.vt-world.com/feed",
       "https://www.waterburyroundabout.org/news-archive?format=rss",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/region_state",
-      "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston"
+      "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston",
+      "https://www.allsides.com/rss/news",
+      "https://www.allsides.com/blog/feed"
     ]
   },
   "Japan": {
@@ -2034,7 +2032,9 @@
       "https://richmond.com/search/?f=rss&t=article",
       "https://www.richmonder.org/feed",
       "https://wydaily.com/feed",
-      "https://www.pilotonline.com/feed/"
+      "https://www.pilotonline.com/feed/",
+      "https://www.allsides.com/rss/news",
+      "https://www.allsides.com/blog/feed"
     ]
   },
   "AI": {
@@ -2061,31 +2061,15 @@
       "https://news.google.com/atom/search?q=AGI&hl=en-US&gl=US&ceid=US:en",
       "https://news.google.com/atom/search?q=neural+networks&hl=en-US&gl=US&ceid=US:en",
       "https://news.google.com/atom/search?q=transformers+AI&hl=en-US&gl=US&ceid=US:en",
-      "https://news.google.com/atom/search?hl=en-US&gl=US&ceid=US%3Aen&oc=11&q=large%20language%20models",
-      "https://news.google.com/atom/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZpZUdNMk5UWjJOaElDWlc0b0FBUAE?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/rss/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNRzFyZWhJQ1pXNG9BQVAB?hl=en-US&gl=US&ceid=US%3Aen",
       "https://www.reddit.com/r/MachineLearning/.rss",
       "https://www.reddit.com/r/ArtificialInteligence/.rss",
       "https://www.reddit.com/r/LanguageTechnology/.rss",
       "https://www.reddit.com/r/LLM/.rss",
-      "https://www.reddit.com/r/LocalLLaMA/.rss",
-      "https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml",
-      "https://www.skynettoday.com/feed.xml",
-      "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
-      "https://blog.samaltman.com/posts.atom",
-      "https://www.pcmag.com/feeds/rss/latest",
-      "https://www.wired.com/feed/tag/ai/latest/rss",
       "https://hnrss.org/newest?q=AI",
       "https://hnrss.org/newest?q=machine+learning",
       "https://hnrss.org/newest?q=transformers",
       "https://hnrss.org/newest?q=LLM",
       "https://openai.com/news/rss.xml",
-      "https://gizmodo.com/tech/artificial-intelligence/feed",
-      "https://futurism.com/categories/ai-artificial-intelligence/feed",
-      "https://futurism.com/tags/ai/feed",
-      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/spotlight/artificial-intelligence/rss.xml",
-      "https://www.artificialintelligence-news.com/categories/artificial-intelligence/feed/",
-      "https://techcrunch.com/category/artificial-intelligence/feed/",
       "https://deepmind.google/blog/rss,xml",
       "https://bair.berkeley.edu/blog/rss.xml",
       "https://www.technologyreview.com/feed/",
@@ -2199,21 +2183,21 @@
       "https://www.reddit.com/r/stockholm/.rss"
     ]
   },
-  "Apple": {
+  "Apple World": {
     "source_language": "en",
     "display_names": {
-      "en": "Apple",
-      "sv": "Apple",
-      "de": "Apple",
-      "fr": "Apple",
-      "es": "Apple",
-      "pt": "Apple",
-      "it": "Apple",
-      "nl": "Apple",
+      "en": "Apple World",
+      "sv": "Apple-världen",
+      "de": "Apple Welt",
+      "fr": "Monde Apple",
+      "es": "Mundo Apple",
+      "pt": "Mundo Apple",
+      "it": "Mondo Apple",
+      "nl": "Apple Wereld",
       "zh": "苹果世界",
       "ja": "アップルワールド",
       "hi": "एप्पल वर्ल्ड",
-      "uk": "Apple"
+      "uk": "Світ Apple"
     },
     "feeds": [
       "https://feeds.macrumors.com/MacRumors-All",
@@ -2241,15 +2225,7 @@
       "https://macdailynews.com/feed/",
       "https://arstechnica.com/apple/feed/",
       "https://pxlnv.com/feed",
-      "https://www.ifun.de/feed/",
-      "https://news.google.com/rss/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNR3M0ZWhJQ1pXNG9BQVAB?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/topics/CAAqJAgKIh5DQkFTRUFvS0wyMHZNREkzYkc1NmN4SUNaVzRvQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGwwZW1ad0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEY0YURKaWQyTnhjUklDWlc0b0FBUAE?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/topics/CAAqJQgKIh9DQkFTRVFvTEwyMHZNREV4YzIxaU5ESVNBbVZ1S0FBUAE?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNR2Q2TUdwa0VnSmxiaWdBUAE?hl=en-US&gl=US&ceid=US%3Aen",
-      "https://news.google.com/rss/search?q=apple&hl=en-US&gl=US&ceid=US%3Aen",
-      "https://www.reddit.com/r/apple/.rss"
+      "https://www.ifun.de/feed/"
     ]
   }
 }
