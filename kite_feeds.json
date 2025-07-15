@@ -2183,6 +2183,50 @@
       "https://www.reddit.com/r/stockholm/.rss"
     ]
   },
+  "Pakistan": {
+    "source_language": "en",
+    "display_names": {
+      "en": "Pakistan",
+      "de": "Pakistan",
+      "fr": "Pakistan",
+      "es": "Pakistán",
+      "pt": "Paquistão",
+      "it": "Pakistan",
+      "nl": "Pakistan",
+      "zh": "巴基斯坦",
+      "ja": "パキスタン",
+      "hi": "पाकिस्तान",
+      "uk": "Пакистан"
+    },
+    "feeds": [
+      "https://www.dawn.com/feeds/home",
+      "https://www.dawn.com/feeds/pakistan",
+      "https://www.dawn.com/feeds/world",
+      "https://www.dawn.com/feeds/business",
+      "https://www.dawn.com/feeds/sport",
+      "https://tribune.com.pk/feed/home",
+      "https://tribune.com.pk/feed/pakistan",
+      "https://tribune.com.pk/feed/world",
+      "https://tribune.com.pk/feed/business",
+      "https://tribune.com.pk/feed/sports",
+      "https://www.thenews.com.pk/rss/1/1",
+      "https://www.thenews.com.pk/rss/1/2",
+      "https://www.thenews.com.pk/rss/1/3",
+      "https://www.nation.com.pk/rss/business",
+      "https://www.nation.com.pk/rss/headlines",
+      "https://profit.pakistantoday.com.pk/feed/",
+      "https://www.pakistantoday.com.pk/feed/",
+      "https://dailytimes.com.pk/feed/",
+      "https://www.reddit.com/r/pakistan/.rss",
+      "https://news.google.com/rss?hl=en-PK&gl=PK&ceid=PK:en",
+      "https://arynews.tv/feed/",
+      "https://feeds.feedburner.com/geo/GiKR",
+      "https://bolnews.com/feed/",
+      "https://thefinancialdaily.com/feed",
+      "https://news.google.com/rss/search?q=Pakistan+site:reuters.com&hl=en-US&gl=US&ceid=US:en",
+      "https://news.google.com/rss/search?q=Pakistan+site:apnews.com&hl=en&gl=PK&ceid=PK:en"
+    ]
+  },
   "Apple World": {
     "source_language": "en",
     "display_names": {
