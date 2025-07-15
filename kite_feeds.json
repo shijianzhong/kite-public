@@ -684,6 +684,7 @@
       "https://indianexpress.com/feed/",
       "https://www.dnaindia.com/feeds/india.xml",
       "https://www.business-standard.com/rss/latest.rss",
+      "https://www.amarujala.com/rss/breaking-news.xml",
       "https://feeds.feedburner.com/ScrollinArticles.rss",
       "https://www.thehindu.com/business/feeder/default.rss",
       "https://www.thehindu.com/business/Economy/feeder/default.rss",
@@ -736,7 +737,8 @@
       "https://www.thehindubusinessline.com/feeder/default.rss",
       "http://feeds.feedburner.com/techgenyz",
       "https://feeds.feedburner.com/opindia",
-      "https://prod-qt-images.s3.amazonaws.com/production/swarajya/feed.xml"
+      "https://prod-qt-images.s3.amazonaws.com/production/swarajya/feed.xml",
+      "https://www.bhaskar.com/rss-feed/1061/"
     ]
   },
   "Italy": {
