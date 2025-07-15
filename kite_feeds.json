@@ -353,7 +353,8 @@
       "https://www.radiosvoboda.org/api/zijqpql-vomx-tpem_ppo",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGQwTWpFU0FuVnJLQUFQAQ?hl=uk&gl=UA&ceid=UA%3Auk&oc=11",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRGQwTWpFU0FtWnlLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://www.reddit.com/r/ukraine/.rss"
+      "https://www.reddit.com/r/ukraine/.rss",
+      "https://www.allsides.com/taxonomy/term/37391/feed"
     ]
   },
   "Brazil": {
@@ -1112,7 +1113,7 @@
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/region_state",
       "https://www.willistonobserver.com/search/?f=rss&t=article&c=news/williston",
       "https://www.allsides.com/rss/news",
-      "https://www.allsides.com/blog"
+      "https://www.allsides.com/blog/feed"
     ]
   },
   "Japan": {
@@ -1205,7 +1206,8 @@
       "https://israelpolicyforum.org/feed/",
       "https://www.israel21c.org/feed/",
       "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=en-US&gl=US&ceid=US%3Aen&oc=11",
-      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=he&gl=IL&ceid=IL%3Ahe&oc=11"
+      "https://news.google.com/atom/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNRE56Y0hvU0FtVnVLQUFQAQ?hl=he&gl=IL&ceid=IL%3Ahe&oc=11",
+      "https://www.allsides.com/taxonomy/term/312/feed"
     ]
   },
   "New Zealand": {
@@ -1945,8 +1947,7 @@
       "https://aier.org/feed/",
       "https://www.focus-economics.com/news-search/feed/",
       "https://developingeconomics.org/feed/",
-      "https://www.allsides.com/rss/news",
-      "https://www.allsides.com/blog"
+      "https://www.allsides.com/taxonomy/term/302/feed",
     ]
   },
   "USA | Virginia": {
@@ -1957,7 +1958,7 @@
       "fr": "USA | Virginie",
       "es": "EE. UU. | Virginia",
       "pt": "EUA | Virgínia",
-      "it": "USA | Virginia",
+      "it": "USA | Virginia",https://www.allsides.com/taxonomy/term/37391/feed
       "nl": "VS | Virginia",
       "zh": "美国 | 弗吉尼亚州",
       "ja": "アメリカ | バージニア州",
@@ -1995,8 +1996,7 @@
       "https://www.richmonder.org/feed",
       "https://wydaily.com/feed",
       "https://www.pilotonline.com/feed/",
-      "https://www.allsides.com/rss/news",
-      "https://www.allsides.com/blog"
+      "https://www.allsides.com/taxonomy/term/302/feed"
     ]
   },
   "AI": {
