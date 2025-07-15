@@ -17,7 +17,7 @@ This includes
 
 ## Core Principles
 
-- Updated only three times per day - no endless scrolling
+- Updated only once per day - no endless scrolling (12PM UTC)
 - Facts and perspectives, opinion-free
 - Zero tracking, zero ads
 - Pure signal, no noise

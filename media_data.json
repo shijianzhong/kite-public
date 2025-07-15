@@ -51,7 +51,7 @@
     "country": "Germany",
     "organization": "Tagesschau",
     "domains": ["tagesschau.de"],
-    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster AFD.",
+    "description": "Tagesschau is a national television news service and digital news platform operated by ARD-aktuell on behalf of the german public-service broadcaster ARD.",
     "owner": "Public broadcaster (German public institutions)",
     "typology": "State Funded Media"
   },
@@ -889,7 +889,7 @@
     "organization": "CORRECTIV",
     "domains": ["correctiv.org"],
     "description": "CORRECTIV is a non-profit investigative newsroom, focusing on investigative journalism, fact-checking, and cross-border investigations.",
-    "owner": "David Schraven",
+    "owner": "Non-Profit GmbH (David Schraven and Jeannette Gusko as management)",
     "typology": "Private Media"
   },
   {
@@ -897,7 +897,7 @@
     "organization": "Focus",
     "domains": ["focus.de", "burda.com"],
     "description": "Focus is a German-language news magazine and digital media outlet established in 1993 as an alternative to Der Spiegel. Published by Hubert Burda Media, it operates both as a weekly print magazine headquartered in Berlin and a online news portal through Focus Online, covering politics, business, science, and culture.",
-    "owner": "Burda family",
+    "owner": "Hubert Burda Media",
     "typology": "Private Media"
   },
   {
@@ -921,12 +921,12 @@
     "organization": "Frankfurter Allgemeine Zeitung",
     "domains": ["faz.net", "frankfurterallgemeine.de"],
     "description": "The Frankfurter Allgemeine Zeitung (FAZ) is a daily newspaper known for its conservative editorial stance. It covers business, politics, and culture.",
-    "owner": "FAZIT-Stiftung",
+    "owner": "Fazit-Stiftung Non-Profit GmbH (93.7%)",
     "typology": "Private Media"
   },
   {
     "country": "Germany",
-    "organization": "Der Spiegel",
+    "organization": "Der Spiegel Online",
     "domains": ["spiegel.de"],
     "description": "Der Spiegel is a weekly news magazine and digital news platform established in 1947, known for its investigative journalism and political coverage. The online website has a center left-leaning editorial stance and covers politics, culture, and society.",
     "owner": "Spiegel Employees (50.5%), Mohn family (25.5%), Augstein family (24%)",
@@ -969,7 +969,7 @@
     "organization": "n-tv",
     "domains": ["n-tv.de"],
     "description": "n-tv is a free-to-air television news channel and digital media outlet that focuses on news, business coverage, and documentaries.",
-    "owner": "RTL Deutschland",
+    "owner": "RTL Deutschland (75% Mohn family)",
     "typology": "Private Media"
   },
   {
@@ -977,7 +977,7 @@
     "organization": "RedaktionsNetzwerk Deutschland",
     "domains": ["rnd.de"],
     "description": "RedaktionsNetzwerk Deutschland (RND) is a Hanover-based joint corporate newsroom that provides news content and services across Germany.",
-    "owner": "Social Democratic Party of Germany (25%), Sylvia Madsack (19.99%)",
+    "owner": "Deutsche Druck- und Verlagsgesellschaft (23.1%, Social Democratic Party of Germany), Sylvia Madsack (21.9%)",
     "typology": "Private Media"
   },
   {
@@ -985,7 +985,7 @@
     "organization": "Frankfurter Rundschau",
     "domains": ["fr.de"],
     "description": "Frankfurter Rundschau is a daily newspaper published in Frankfurt. It is known for its left-liberal editorial stance and focuses on political, economic, and cultural coverage with particular emphasis on the Frankfurt Rhine-Main region.",
-    "owner": "Ippen family",
+    "owner": "Zeitungsholding Hessen (90%, Dirk Ippen), Karl-Gerold-Stiftung (10%)",
     "typology": "Private Media"
   },
   {
@@ -993,7 +993,7 @@
     "organization": "Handelsblatt Media Group",
     "domains": ["handelsblatt.com", "handelsblattgroup.com"],
     "description": "Handelsblatt Media Group is a media company based in Düsseldorf that specializes in business and financial information, providing news coverage, analysis, and specialized communication solutions through various digital and print platforms.",
-    "owner": "Dieter von Holtzbrinck",
+    "owner": "DvH Medien GmbH (Dieter von Holtzbrinck)",
     "typology": "Private Media"
   },
   {
@@ -1001,15 +1001,15 @@
     "organization": "Rheinische Post",
     "domains": ["rp-online.de"],
     "description": "Rheinische Post is a major regional daily newspaper based in Düsseldorf, covering news from North Rhine-Westphalia with a focus on the Rhine region. The newspaper provides comprehensive local, regional, and national coverage.",
-    "owner": "",
+    "owner": "Rheinische Post Verlagsgesellschaft mbH",
     "typology": "Private Media"
   },
   {
     "country": "Germany",
     "organization": "Berliner Morgenpost",
     "domains": ["morgenpost.de"],
-    "description": "Berliner Morgenpost is a daily newspaper founded in 1898 and based in Berlin. It is one of Berlin's most-read daily newspapers, known for its conservative editorial stance.",
-    "owner": "Axel-Springer-Verlag Group",
+    "description": "Berliner Morgenpost is a daily newspaper founded in 1898 and based in Berlin. It is one of Berlin's most-read daily newspapers.",
+    "owner": "Funke Mediengruppe",
     "typology": "Private Media"
   },
   {
@@ -2221,7 +2221,7 @@
     "typology": "Private Media"
   },
   {
-    "country": "Estonia", 
+    "country": "Estonia",
     "organization": "Delfi",
     "domains": ["delfi.ee"],
     "description": "Delfi is one of Estonia's largest news portals providing news coverage in Estonian, English, Lithuanian, Latvian, Polish and Russian languages. The platform offers real-time news updates, opinion pieces, and multimedia content covering local and international affairs.",
@@ -2713,6 +2713,286 @@
     "domains": ["elsaltodiario.com"],
     "description": "El Salto is an independent, subscription funded newspaper founded in 2017. Its online version works as daily newspaper covering in Spanish local and international events, investigation and debates.",
     "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Yonhap News Agency (연합뉴스)",
+    "domains": ["yna.co.kr"],
+    "description": "South Korea's key public news agency providing comprehensive domestic/international news.",
+    "owner": "News Agency Promotion Foundation (Public Corp.)",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Korea Economic Daily (한국경제)",
+    "domains": ["hankyung.com"],
+    "description": "Major South Korean business newspaper covering economy, finance, and industry.",
+    "owner": "Hankyung Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Yonhap News TV (연합뉴스TV)",
+    "domains": ["yonhapnewstv.co.kr"],
+    "description": "24-hour news channel by Yonhap News Agency covering diverse topics.",
+    "owner": "Yonhap News Agency",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "SBS (Seoul Broadcasting System)",
+    "domains": ["sbs.co.kr"],
+    "description": "Major South Korean national TV/radio network with news, entertainment, drama.",
+    "owner": "SBS Media Holdings (Taeyoung Group)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Chosun Ilbo (조선일보)",
+    "domains": ["chosun.com"],
+    "description": "Major South Korean daily newspaper covering politics, economy, society, culture.",
+    "owner": "Chosun Ilbo Co., Ltd.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Policy Briefing Korea (대한민국 정책브리핑)",
+    "domains": ["korea.kr"],
+    "description": "Official South Korean government portal for policy news and announcements.",
+    "owner": "Ministry of Culture, Sports and Tourism (Gov't)",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Newsis (뉴시스)",
+    "domains": ["newsis.com"],
+    "description": "Major South Korean private news agency providing news content across various fields.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Maeil Business Newspaper (매일경제)",
+    "domains": ["mk.co.kr"],
+    "description": "Leading South Korean daily business newspaper (economy, finance, market).",
+    "owner": "Maekyung Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "EToday (이투데이)",
+    "domains": ["etoday.co.kr"],
+    "description": "South Korean economic newspaper focusing on finance, industry, investment.",
+    "owner": "Private Ownership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Kukmin Ilbo (국민일보)",
+    "domains": ["kmib.co.kr"],
+    "description": "South Korean daily newspaper covering general news, founded by Yoido Full Gospel Church.",
+    "owner": "Kukmin Cultural Foundation",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Consumer Times (컨슈머타임스)",
+    "domains": ["cstimes.com"],
+    "description": "Online news outlet focusing on consumer rights, products, and market trends.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "News Post (뉴스포스트)",
+    "domains": ["newspost.kr"],
+    "description": "Internet newspaper covering general news topics (politics, economy, society).",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Seoul Shinmun (서울신문)",
+    "domains": ["seoul.co.kr"],
+    "description": "Major South Korean daily newspaper covering general news.",
+    "owner": "Hoban Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Segye Ilbo (세계일보)",
+    "domains": ["segye.com"],
+    "description": "South Korean daily newspaper covering general news, founded by Unification Church.",
+    "owner": "Tongil Group (Unification Church affiliated)",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "OhmyNews (오마이뉴스)",
+    "domains": ["ohmynews.com"],
+    "description": "Online news site known for citizen journalism alongside professional reporting.",
+    "owner": "OhmyNews Co., Ltd.",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Tongil News (통일뉴스)",
+    "domains": ["tongilnews.com"],
+    "description": "Online news specializing in North Korea, inter-Korean relations, unification.",
+    "owner": "Private Ownership",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Kyunghyang Shinmun (경향신문)",
+    "domains": ["khan.co.kr"],
+    "description": "Major South Korean daily newspaper known for independent stance; employee-owned.",
+    "owner": "independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "Donga Ilbo (동아일보)",
+    "domains": ["donga.com"],
+    "description": "Major South Korean daily newspaper covering broad news topics.",
+    "owner": "Dong-A Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "South Korea",
+    "organization": "MBN (Maeil Broadcasting Network)",
+    "domains": ["mbn.co.kr"],
+    "description": "Nationwide cable TV channel for news and general programming.",
+    "owner": "Maekyung Media Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "SRG SSR",
+    "domains": ["srgssr.ch", "srf.ch", "rsi.ch", "rts.ch", "rtr.ch"],
+    "description": "SRG SSR is a public service broadcaster in Switzerland. It is built upon a federalist model specific to the country’s political organization.",
+    "owner": "Swiss Confederation",
+    "typology": "Public Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Federal administration of Switzerland",
+    "domains": ["admin.ch"],
+    "description": "Website of the Federal Administration of the Swiss Confederation (including Federal Council and Departments)",
+    "owner": "Swiss Confederation",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "GMX",
+    "domains": ["gmx.ch"],
+    "description": "GMX is a German web portal founded in 1997 that now primarily operates as a news portal and an email service provider.  ",
+    "owner": "1&1 Mail & Media GmbH",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "OnlineReports GmbH",
+    "domains": ["onlinereports.ch"],
+    "description": "OnlineReports.ch is an Internet news portal from Basel, which mainly publishes regional research, news and comments.",
+    "owner": "Jan Amsler, Alessandra Paone",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "20 Minuten",
+    "domains": ["20min.ch"],
+    "description": "Free daily newspaper in Switzerland",
+    "owner": "Express-Zeitung AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Der Bund",
+    "domains": ["derbund.ch"],
+    "description": "German-language daily newspaper published in Bern",
+    "owner": "TX Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Tages-Anzeiger",
+    "domains": ["tagesanzeiger.ch"],
+    "description": "German-language national daily newspaper published in Zurich",
+    "owner": "TX Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Canton of Bern",
+    "domains": ["be.ch"],
+    "description": "Press releases and news from the Canton of Bern",
+    "owner": "Canton of Bern",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Canton of St.Gallen",
+    "domains": ["sg.ch"],
+    "description": "Press releases and news from the Canton of St.Gallen",
+    "owner": "Canton of St.Gallen",
+    "typology": "State Funded Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "blue News",
+    "domains": ["bluewin.ch"],
+    "description": "Bluewin is a Swiss internet service provider that offers email and a news platform",
+    "owner": "Entertainment Programm AG",
+    "typology": "Public Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Cash",
+    "domains": ["cash.ch"],
+    "description": "cash is a Swiss financial portal providing comprehensive economic and financial information with real-time market data from the Swiss stock exchange.",
+    "owner": "Ringier AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Aargauer Zeitung",
+    "domains": ["aargauerzeitung.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Luzerner Zeitung",
+    "domains": ["luzernerzeitung.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "St. Galler Tagblatt",
+    "domains": ["tagblatt.ch"],
+    "description": "A regional Swiss German-language daily newspaper",
+    "owner": "CH Regionalmedien AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Neue Zürcher Zeitung",
+    "domains": ["nzz.ch"],
+    "description": "A Swiss German-language daily newspaper published in Zurich",
+    "owner": "Neue Zürcher Zeitung AG",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Switzerland",
+    "organization": "Watson",
+    "domains": ["watson.ch"],
+    "description": "Swiss German- and French-language online newspaper published by CH Media that targets mobile users",
+    "owner": "CH Regionalmedien AG",
     "typology": "Private Media"
   }
 ]
