@@ -1,5 +1,6 @@
 {
   "Australia": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "Australia",
@@ -56,6 +57,7 @@
     ]
   },
   "Belgium": {
+    "category_type": "country",
     "source_language": "nl",
     "display_names": {
       "en": "Belgium",
@@ -110,6 +112,7 @@
     ]
   },
   "Brazil": {
+    "category_type": "country",
     "source_language": "pt",
     "display_names": {
       "en": "Brazil",
@@ -159,6 +162,7 @@
     ]
   },
   "Canada": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "Canada",
@@ -236,6 +240,7 @@
     ]
   },
   "Estonia": {
+    "category_type": "country",
     "source_language": "et",
     "display_names": {
       "en": "Estonia",
@@ -296,6 +301,7 @@
     ]
   },
   "Europe": {
+    "category_type": "region",
     "source_language": "en",
     "display_names": {
       "en": "Europe",
@@ -375,6 +381,7 @@
     ]
   },
   "France": {
+    "category_type": "country",
     "source_language": "fr",
     "display_names": {
       "en": "France",
@@ -450,6 +457,7 @@
     ]
   },
   "Germany": {
+    "category_type": "country",
     "source_language": "de",
     "display_names": {
       "en": "Germany",
@@ -493,6 +501,7 @@
     ]
   },
   "Germany | Hesse": {
+    "category_type": "city",
     "source_language": "de",
     "display_names": {
       "en": "Germany | Hesse",
@@ -538,6 +547,7 @@
     ]
   },
   "India": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "India",
@@ -618,6 +628,7 @@
     ]
   },
   "Ireland": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "Ireland",
@@ -659,6 +670,7 @@
     ]
   },
   "Israel": {
+    "category_type": "country",
     "source_language": "he",
     "display_names": {
       "en": "Israel",
@@ -708,6 +720,7 @@
     ]
   },
   "Italy": {
+    "category_type": "country",
     "source_language": "it",
     "display_names": {
       "en": "Italy",
@@ -788,6 +801,7 @@
     ]
   },
   "Japan": {
+    "category_type": "country",
     "source_language": "ja",
     "display_names": {
       "en": "Japan",
@@ -833,6 +847,7 @@
     ]
   },
   "Mexico": {
+    "category_type": "country",
     "source_language": "es",
     "display_names": {
       "en": "Mexico",
@@ -881,6 +896,7 @@
     ]
   },
   "New Zealand": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "New Zealand",
@@ -942,6 +958,7 @@
     ]
   },
   "Poland": {
+    "category_type": "country",
     "source_language": "pl",
     "display_names": {
       "en": "Poland",
@@ -992,6 +1009,7 @@
     ]
   },
   "Portugal": {
+    "category_type": "country",
     "source_language": "pt",
     "display_names": {
       "en": "Portugal",
@@ -1036,6 +1054,7 @@
     ]
   },
   "Romania": {
+    "category_type": "country",
     "source_language": "ro",
     "display_names": {
       "en": "Romania",
@@ -1081,6 +1100,7 @@
     ]
   },
   "Serbia": {
+    "category_type": "country",
     "source_language": "sr",
     "display_names": {
       "en": "Serbia",
@@ -1160,6 +1180,7 @@
     ]
   },
   "Slovenia": {
+    "category_type": "country",
     "source_language": "sl",
     "display_names": {
       "en": "Slovenia",
@@ -1204,6 +1225,7 @@
     ]
   },
   "South Korea": {
+    "category_type": "country",
     "source_language": "ko",
     "display_names": {
       "en": "South Korea",
@@ -1264,6 +1286,7 @@
     ]
   },
   "Spain": {
+    "category_type": "country",
     "source_language": "es",
     "display_names": {
       "en": "Spain",
@@ -1321,6 +1344,7 @@
     ]
   },
   "Sweden": {
+    "category_type": "country",
     "source_language": "sv",
     "display_names": {
       "en": "Sweden",
@@ -1373,6 +1397,7 @@
     ]
   },
   "Switzerland (DE)": {
+    "category_type": "country",
     "source_language": "de",
     "display_names": {
       "en": "Switzerland (DE)",
@@ -1430,6 +1455,7 @@
     ]
   },
   "Thailand": {
+    "category_type": "country",
     "source_language": "th",
     "display_names": {
       "en": "Thailand",
@@ -1493,6 +1519,7 @@
     ]
   },
   "The Netherlands": {
+    "category_type": "country",
     "source_language": "nl",
     "display_names": {
       "en": "The Netherlands",
@@ -1571,6 +1598,7 @@
     ]
   },
   "UK": {
+    "category_type": "country",
     "source_language": "en",
     "display_names": {
       "en": "UK",
@@ -1644,6 +1672,7 @@
     ]
   },
   "USA | Vermont": {
+    "category_type": "city",
     "source_language": "en",
     "display_names": {
       "en": "USA | Vermont",
@@ -1741,6 +1770,7 @@
     ]
   },
   "USA | Virginia": {
+    "category_type": "city",
     "source_language": "en",
     "display_names": {
       "en": "USA | Virginia",
@@ -1788,6 +1818,7 @@
     ]
   },
   "Ukraine": {
+    "category_type": "country",
     "source_language": "uk",
     "display_names": {
       "en": "Ukraine",
@@ -1834,6 +1865,7 @@
     ]
   },
   "AI": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "AI",
@@ -1895,6 +1927,7 @@
     ]
   },
   "Apple": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "Apple",
@@ -1948,6 +1981,7 @@
     ]
   },
   "Cryptocurrency": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "Cryptocurrency",
@@ -2008,6 +2042,7 @@
     ]
   },
   "Cybersecurity": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "Cybersecurity",
@@ -2056,6 +2091,7 @@
     ]
   },
   "Economy": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "Economy",
@@ -2128,6 +2164,7 @@
     ]
   },
   "Linux & OSS": {
+    "category_type": "topic",
     "source_language": "en",
     "display_names": {
       "en": "Linux & OSS",
