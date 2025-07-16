@@ -1673,7 +1673,7 @@
     ]
   },
   "Germany | Hesse": {
-    "category_type": "city",
+    "category_type": "region",
     "source_language": "de",
     "display_names": {
       "en": "Germany | Hesse",
@@ -1719,7 +1719,7 @@
     ]
   },
   "USA | Vermont": {
-    "category_type": "city",
+    "category_type": "region",
     "source_language": "en",
     "display_names": {
       "en": "USA | Vermont",
@@ -1817,7 +1817,7 @@
     ]
   },
   "USA | Virginia": {
-    "category_type": "city",
+    "category_type": "region",
     "source_language": "en",
     "display_names": {
       "en": "USA | Virginia",
