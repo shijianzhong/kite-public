@@ -29,8 +29,8 @@
       "https://www.sanjosecostarica.org/feed/",
       "https://ncrnoticias.com/feed/",
       "https://velero.cr/feed/",
-      "https://herediahoy.com/feed/",
-    ],
+      "https://herediahoy.com/feed/"
+    ]
   },
   "Australia": {
     "category_type": "country",
