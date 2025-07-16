@@ -12,19 +12,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-          cache: "npm"
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install prettier and plugins
+        run: bun add -g prettier prettier-plugin-tailwindcss @trivago/prettier-plugin-sort-imports
 
       - name: Check formatting
-        run: npx prettier --check './src/**/*.{html,js,jsx,ts,tsx,css}'
+        run: prettier --check './src/**/*.{html,js,ts,svelte,css}'
 
       - name: Comment on PR if formatting issues found
         if: failure()
         run: |
-          echo "::warning ::Formatting issues found. Please run 'npm run format' locally to fix them."
+          echo "::warning ::Formatting issues found. Please run 'bun run format' locally to fix them."
