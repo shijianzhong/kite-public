@@ -1,5 +1,20 @@
 {
    "Costa Rica": {
+    "category_type": "country",
+    "source_language": "es",
+    "display_names": {
+      "en": "Costa Rica",
+      "de": "Costa Rica",
+      "fr": "Costa Rica",
+      "es": "Costa Rica",
+      "pt": "Costa Rica",
+      "it": "Costa Rica",
+      "nl": "Costa Rica",
+      "zh": "哥斯达黎加",
+      "ja": "コスタリカ",
+      "hi": "कोस्टा रिका",
+      "uk": "Коста-Ріка"
+    },
     "feeds": [
       "https://semanariouniversidad.com/feed/",
       "https://delfino.cr/feed",
