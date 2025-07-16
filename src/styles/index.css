@@ -3,16 +3,43 @@
 /* Use CSS selector instead of the prefers-color-scheme media query: https://tailwindcss.com/docs/dark-mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* OverlayScrollbars theming - Light theme (default) */
+.os-scrollbar {
+  --os-handle-bg: rgba(0, 0, 0, 0.2);
+  --os-handle-bg-hover: rgba(0, 0, 0, 0.3);
+  --os-handle-bg-active: rgba(0, 0, 0, 0.4);
+  --os-track-bg: transparent;
+  --os-track-bg-hover: rgba(0, 0, 0, 0.05);
+  --os-track-bg-active: rgba(0, 0, 0, 0.1);
+}
+
+/* OverlayScrollbars theming - Dark theme */
+.dark .os-scrollbar {
+  --os-handle-bg: rgba(255, 255, 255, 0.2);
+  --os-handle-bg-hover: rgba(255, 255, 255, 0.3);
+  --os-handle-bg-active: rgba(255, 255, 255, 0.4);
+  --os-track-bg: transparent;
+  --os-track-bg-hover: rgba(255, 255, 255, 0.05);
+  --os-track-bg-active: rgba(255, 255, 255, 0.1);
+}
+
 /* Extend default theme */
 @theme {
-  --text-xl: 1.35rem;
-  --text-3xl: 1.8rem;
-  --text-4xl: 2rem;
+  /* Dynamic font size variables (can be overridden by JavaScript) */
+  --text-xs: var(--text-xs, 0.75rem);
+  --text-sm: var(--text-sm, 0.875rem);
+  --text-base: var(--text-base, 1rem);
+  --text-lg: var(--text-lg, 1.125rem);
+  --text-xl: var(--text-xl, 1.25rem);
+  --text-2xl: var(--text-2xl, 1.5rem);
+  --text-3xl: var(--text-3xl, 1.875rem);
+  --text-4xl: var(--text-4xl, 2.25rem);
 
   /* TODO: Use proper way to adjust dark mode for background and text */
   --color-dark-bg: #1a202c;
   --color-dark-text: #e2e8f0;
 }
+
 
 /* Custom overrides  */
 @layer base {
@@ -102,6 +129,8 @@
 
 :root {
   --color-header: #6285f0;
+  --color-focus: #3b82f6;
+  --color-focus-offset: #ffffff;
   --timeline-bullet-size: 24px;
 }
 
@@ -239,4 +268,15 @@
 
 .sticky.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus-visible utilities for consistent accessibility */
+@layer utilities {
+  .focus-visible-ring {
+    @apply focus-visible:ring-2 focus-visible:ring-[var(--color-focus)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-focus-offset)] focus-visible:outline-none;
+  }
+
+  .dark .focus-visible-ring {
+    --color-focus-offset: #1a202c;
+  }
 }
