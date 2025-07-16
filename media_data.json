@@ -2013,6 +2013,78 @@
     "typology": "Private Media"
   },
   {
+    "country": "Pakistan",
+    "organization": "The Express Tribune",
+    "domains": ["tribune.com.pk"],
+    "description": "The Express Tribune is an English-language daily newspaper published in Pakistan. It is part of the International Herald Tribune network and provides coverage of national and international news, business, sports, and entertainment with a focus on contemporary Pakistani affairs.",
+    "owner": "Lakson Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "The News International",
+    "domains": ["thenews.com.pk"],
+    "description": "The News International is one of Pakistan's leading English-language daily newspapers, providing comprehensive coverage of national and international news, politics, business, sports, and entertainment. It is part of the Jang Group of newspapers.",
+    "owner": "Jang Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "The Nation",
+    "domains": ["nation.com.pk"],
+    "description": "The Nation is an English-language daily newspaper published in Pakistan, providing news coverage of national politics, business, sports, and current affairs. It is known for its focus on Pakistani domestic issues and regional developments.",
+    "owner": "Nawaiwaqt Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "Pakistan Today",
+    "domains": ["pakistantoday.com.pk"],
+    "description": "Pakistan Today is an English-language daily newspaper and digital media outlet providing news coverage of Pakistani politics, business, culture, and international affairs. It operates both print and digital platforms with sections covering various aspects of Pakistani society.",
+    "owner": "Arif Nizami",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "Daily Times",
+    "domains": ["dailytimes.com.pk"],
+    "description": "Daily Times is an English-language daily newspaper published in Pakistan, providing news coverage of national and international affairs, politics, business, and culture. The publication focuses on progressive journalism and liberal perspectives on Pakistani issues.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "ARY News",
+    "domains": ["arynews.tv"],
+    "description": "ARY News is a 24-hour Urdu-language news television channel based in Karachi, Pakistan. It is part of the ARY Digital Network and provides breaking news, current affairs, and analysis covering Pakistani politics, business, sports, and international news.",
+    "owner": "ARY Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "Geo News",
+    "domains": ["geo.tv"],
+    "description": "Geo News is a Pakistani Urdu-language news television channel owned by the Jang Group. It provides 24-hour news coverage including breaking news, current affairs, politics, business, sports, and entertainment, serving as one of Pakistan's most watched news channels.",
+    "owner": "Jang Group",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "BOL News",
+    "domains": ["bolnews.com"],
+    "description": "BOL News is a Pakistani news television channel and digital platform providing news coverage in Urdu and English. It covers national and international news, politics, business, sports, and entertainment with a focus on contemporary Pakistani affairs.",
+    "owner": "Shoaib Ahmed Shaikh",
+    "typology": "Private Media"
+  },
+  {
+    "country": "Pakistan",
+    "organization": "The Financial Daily",
+    "domains": ["thefinancialdaily.com"],
+    "description": "The Financial Daily is a Pakistani business and financial news publication providing coverage of economic developments, market analysis, business news, and financial information relevant to Pakistan's economy and international markets.",
+    "owner": "Independent",
+    "typology": "Private Media"
+  },
+  {
     "country": "Canada",
     "organization": "Winnipeg Free Press",
     "domains": ["winnipegfreepress.com"],
