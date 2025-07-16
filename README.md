@@ -123,3 +123,14 @@ Kite does not scrape news websites, it only uses publicly available information 
 Kite uses contents of `media_data.json` to show additional information about sources of information. Initial information has been sources from https://statemediamonitor.com/ and the classification methodology is explained here https://statemediamonitor.com/methodology/
 
 Feel free to add additional information (by editing `media_data.json`) both for privately owned and state funded media organization. Add your sources of information in the pull request.
+
+## Content Filters
+
+Kite's content filters are also open source and community editable. These filters allow users to blur or hide articles containing topics they prefer not to see. The filters are defined in `contentFilters.json` and include keyword-based categories like politics, conflicts, celebrity news, and more.
+
+Community members are welcome to:
+- Improve existing filters by adding relevant keywords in multiple languages
+- Add new filter categories for topics users might want to avoid
+- Suggest modifications to make filters more accurate
+
+To contribute, simply submit a pull request editing `contentFilters.json`. This collaborative approach helps users customize their news experience to match their preferences.
