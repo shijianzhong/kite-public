@@ -60,8 +60,15 @@ jobs:
         )"
         git push
 
-    - name: Commit changes to PR
-      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request'
+    - name: Skip sorting for external PRs
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+      run: |
+        echo "🔄 External PR detected - skipping auto-sort"
+        echo "📝 Feeds will be automatically sorted when merged to main"
+        echo "✅ Check completed successfully"
+
+    - name: Commit changes to same-repo PR
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
@@ -76,10 +83,10 @@ jobs:
         🤖 Generated with GitHub Actions
         EOF
         )"
-        git push
+        git push origin HEAD:${{ github.event.pull_request.head.ref }}
 
-    - name: Comment on PR about auto-sorting
-      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request'
+    - name: Comment on same-repo PR about auto-sorting
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
       uses: actions/github-script@v7
       with:
         script: |
@@ -87,5 +94,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '🤖 **Feeds automatically sorted**\n\nI detected that `kite_feeds.json` was modified but not properly sorted, so I automatically applied the correct sorting and pushed a new commit to this PR.\n\n**Changes made:**\n- ✅ Sort categories by type order (country → region → city → topic)\n- ✅ Sort feeds alphabetically within categories by URL\n- ✅ Remove duplicate feed URLs'
-          })
+            body: '🤖 **Feeds automatically sorted**\n\nI detected that `kite_feeds.json` was modified but not properly sorted, so I automatically applied the correct sorting and pushed a new commit to this PR.\n\n**Changes made:**\n- ✅ Sort categories by type order (country → region → city → topic)\n- ✅ Sort feeds alphabetically within categories by URL\n- ✅ Remove duplicate feed URLs\n\nThe PR is now ready for review! 🚀'
+          });
