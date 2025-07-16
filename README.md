@@ -124,13 +124,29 @@ Kite uses contents of `media_data.json` to show additional information about sou
 
 Feel free to add additional information (by editing `media_data.json`) both for privately owned and state funded media organization. Add your sources of information in the pull request.
 
-## Content Filters
+## Guidelines for editing Content Filters
 
-Kite's content filters are also open source and community editable. These filters allow users to blur or hide articles containing topics they prefer not to see. The filters are defined in `contentFilters.json` and include keyword-based categories like politics, conflicts, celebrity news, and more.
+Kite allows users to blur or hide articles on topics they prefer not to see. These personal content filters are defined in `contentFilters.json` and are open source and community editable.
 
-Community members are welcome to:
-- Improve existing filters by adding relevant keywords in multiple languages
-- Add new filter categories for topics users might want to avoid
-- Suggest modifications to make filters more accurate
+To edit content filters, submit a pull request editing `contentFilters.json`. Each filter follows this structure:
 
-To contribute, simply submit a pull request editing `contentFilters.json`. This collaborative approach helps users customize their news experience to match their preferences.
+```json
+{
+  "id": "filter_id",
+  "label": "Display Name",
+  "keywords": {
+    "default": ["keyword1", "keyword2"],
+    "en": ["keyword1", "keyword2"],
+    "pt": ["palavra1", "palavra2"],
+    // ... other languages
+  }
+}
+```
+
+When adding or modifying filters:
+- Use lowercase for all keywords
+- Include translations for all supported languages
+- Choose descriptive, clear labels for filter categories
+- Test that keywords accurately match the intended topic
+
+Feel free to add new filter categories or improve existing ones by adding relevant keywords in multiple languages.
