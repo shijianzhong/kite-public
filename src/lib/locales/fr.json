@@ -684,7 +684,7 @@
         "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{{{{weekday}}}}}, {{{{{month}}}}} {{{{{day}}}}}",
+        "text": "{{weekday}}, {{month}} {{day}}",
         "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
