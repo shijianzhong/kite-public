@@ -104,7 +104,7 @@
         "translationContext": "Notice about temporary language limitation during Svelte 5 migration"
     },
     "app.motto": {
-        "text": "Nachrichten. Erhaben.",
+        "text": "Gehobene Nachrichten",
         "translationContext": "Motto of the app, should be translated in a natural way"
     },
     "app.temporaryCategoryNotice": {
@@ -168,7 +168,7 @@
         "translationContext": "Display name for the Brazil news category"
     },
     "category.business": {
-        "text": "Geschäft",
+        "text": "Business",
         "translationContext": "Display name for the Business news category"
     },
     "category.canada": {
@@ -252,7 +252,7 @@
         "translationContext": "Display name for the Mexico news category"
     },
     "category.netherlands": {
-        "text": "die Niederlande",
+        "text": "Niederlande",
         "translationContext": "Display name for the Netherlands news category"
     },
     "category.newZealand": {
