@@ -784,7 +784,7 @@
         "translationContext": "Label for filter mode selection"
     },
     "settings.contentFilter.preset.ai": {
-        "text": "KI",
+        "text": "KI & Tech Hype",
         "translationContext": "Name of AI preset filter"
     },
     "settings.contentFilter.preset.ai.tooltip": {

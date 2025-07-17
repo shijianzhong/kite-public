@@ -1,5 +1,5 @@
 import { browser } from '$app/environment';
-import communityFilters from '$lib/data/contentFilters.json';
+import communityFilters from '../../../contentFilters.json';
 
 interface ContentFilterConfig {
 	keywords: string[];
