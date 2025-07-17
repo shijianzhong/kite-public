@@ -249,15 +249,15 @@
     },
     "stats.newsToday": {
         "text": "{{count}} nieuws vandaag",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "Je hebt {{count}} verhalen gelezen",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "Week {{week}}, Dag {{day}}",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "Week {{{week}}}, Dag {{{day}}}",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "Wereldwijde turbulentiemeter",
@@ -380,12 +380,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count} artikelen",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}} artikelen",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "Toon artikelen van {source}",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "Toon artikelen van {{source}}",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "Algemeen",
@@ -465,7 +465,7 @@
     },
     "settings.shareLanguage.message": {
         "text": "Bekijk Kite News in het Nederlands - de intro wordt overgeslagen en het wordt direct in jouw taal geladen!",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "Link gekopieerd!",
@@ -629,15 +629,15 @@
     },
     "time.updated.seconds": {
         "text": "Bijgewerkt {{count}} seconden geleden",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "1 minuut geleden bijgewerkt",
         "translationContext": "Shown when content was updated exactly 1 minute ago"
     },
     "time.updated.minutes": {
-        "text": "{count} minuten geleden bijgewerkt",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "text": "{{count}} minuten geleden bijgewerkt",
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "1 uur geleden bijgewerkt",
@@ -645,7 +645,7 @@
     },
     "time.updated.hours": {
         "text": "Bijgewerkt {{count}} uur geleden",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "1 dag geleden bijgewerkt",
@@ -653,11 +653,11 @@
     },
     "time.updated.days": {
         "text": "Laatste update: {{count}} dagen geleden",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{weekday}} {{day}} {{month}}",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{weekday}}}}} {{{{{day}}}}} {{{{{month}}}}}",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "Samenvatting",

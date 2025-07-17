@@ -243,21 +243,49 @@
         "text": "Italia",
         "translationContext": "Display name for the Italy news category"
     },
+    "category.costaRica": {
+        "text": "Costa Rica",
+        "translationContext": "Display name for the Costa Rica news category"
+    },
+    "category.india": {
+        "text": "India",
+        "translationContext": "Display name for the India news category"
+    },
+    "category.southKorea": {
+        "text": "Corea del Sur",
+        "translationContext": "Display name for the South Korea news category"
+    },
+    "category.sweden": {
+        "text": "Suecia",
+        "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerlandDe": {
+        "text": "Suiza (DE)",
+        "translationContext": "Display name for the Switzerland (DE) news category"
+    },
+    "category.usaVermont": {
+        "text": "EE.UU. | Vermont",
+        "translationContext": "Display name for the USA Vermont regional news category"
+    },
+    "category.usaVirginia": {
+        "text": "EE. UU. | Virginia",
+        "translationContext": "Display name for the USA Virginia regional news category"
+    },
     "header.settings": {
         "text": "Configuración",
         "translationContext": "Title attribute for the settings button"
     },
     "stats.newsToday": {
         "text": "{{count}} noticias hoy",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "Has leído {{count}} historias",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "Semana {{week}}, día {{day}}",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "Semana {{{week}}}, día {{{day}}}",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "Medidor de turbulencias globales",
@@ -380,12 +408,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count} artículos",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}} artículos",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "Mostrar artículos de {source}",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "Mostrar artículos de {{source}}",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "General",
@@ -464,8 +492,8 @@
         "translationContext": "Text for the About Kite button"
     },
     "settings.shareLanguage.message": {
-        "text": "¡Mira Kite News en {language} - omitirá la introducción y cargará directamente en tu idioma!",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "text": "¡Mira Kite News en {{language}} - omitirá la introducción y cargará directamente en tu idioma!",
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "¡Enlace copiado al portapapeles!",
@@ -629,7 +657,7 @@
     },
     "time.updated.seconds": {
         "text": "Actualizado hace {{count}} segundos",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "Actualizado hace 1 minuto",
@@ -637,7 +665,7 @@
     },
     "time.updated.minutes": {
         "text": "Actualizado hace {{count}} minutos",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "Actualizado hace 1 hora",
@@ -645,7 +673,7 @@
     },
     "time.updated.hours": {
         "text": "Actualizado hace {{count}} horas",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "Actualizado hace 1 día",
@@ -653,11 +681,11 @@
     },
     "time.updated.days": {
         "text": "Actualizado hace {{count}} días",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{weekday}}, {{month}} {{day}}",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{weekday}}}}}, {{{{{month}}}}} {{{{{day}}}}}",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "Resumen",

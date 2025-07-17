@@ -248,16 +248,16 @@
         "translationContext": "Title attribute for the settings button"
     },
     "stats.newsToday": {
-        "text": "Новин сьогодні: {count}",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "text": "Новин сьогодні: {{count}}",
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "Ви прочитали {{count}} історій",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "Тиждень {{week}}, День {{day}}",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "Тиждень {{{week}}}, День {{{day}}}",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "Світовий вимірювач турбулентності",
@@ -380,12 +380,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count} статей",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}} статей",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "Показати статті з {source}",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "Показати статті з {{source}}",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "Загальні",
@@ -465,7 +465,7 @@
     },
     "settings.shareLanguage.message": {
         "text": "Перегляньте Kite News українською – воно пропустить вступ і завантажиться безпосередньо вашою мовою!",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "Посилання скопійовано!",
@@ -629,7 +629,7 @@
     },
     "time.updated.seconds": {
         "text": "Оновлено {{count}} секунд тому",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "Оновлено 1 хвилину тому",
@@ -637,7 +637,7 @@
     },
     "time.updated.minutes": {
         "text": "Оновлено {{count}} хвилин тому",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "Оновлено 1 годину тому",
@@ -645,7 +645,7 @@
     },
     "time.updated.hours": {
         "text": "Оновлено {{count}} год. тому",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "Оновлено 1 день тому",
@@ -653,11 +653,11 @@
     },
     "time.updated.days": {
         "text": "Оновлено {{count}} днів тому",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{weekday}}, {{month}} {{day}}",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{weekday}}}}}, {{{{{month}}}}} {{{{{day}}}}}",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "Підсумок",

@@ -249,15 +249,15 @@
     },
     "stats.newsToday": {
         "text": "今日のニュース{{count}}件",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "{{count}}話を読みました",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "第{{week}}週・{{day}}日目",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "第{{{week}}}週・{{{day}}}日目",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "世界乱気流メーター",
@@ -380,12 +380,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count}件の記事",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}}件の記事",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "{source}の記事を表示する",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "{{source}}の記事を表示する",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "一般",
@@ -464,8 +464,8 @@
         "translationContext": "Text for the About Kite button"
     },
     "settings.shareLanguage.message": {
-        "text": "{language}でKite Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "text": "{{language}}でKite Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "リンクをクリップボードにコピーしました！",
@@ -629,7 +629,7 @@
     },
     "time.updated.seconds": {
         "text": "{{count}} 秒前に更新されました",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "1分前に更新されました",
@@ -637,7 +637,7 @@
     },
     "time.updated.minutes": {
         "text": "{{count}}分前に更新",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "1時間前に更新",
@@ -645,7 +645,7 @@
     },
     "time.updated.hours": {
         "text": "{{count}}時間前に更新されました",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "1日前に更新",
@@ -653,11 +653,11 @@
     },
     "time.updated.days": {
         "text": "{{count}}日前に更新されました",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{month}}{{day}}日（{{weekday}}）",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{month}}}}}{{{{{day}}}}}日（{{{{{weekday}}}}}）",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "概要",

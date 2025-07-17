@@ -256,6 +256,34 @@
     "text": "Italy",
     "translationContext": "Display name for the Italy news category"
   },
+  "category.costaRica": {
+    "text": "Costa Rica",
+    "translationContext": "Display name for the Costa Rica news category"
+  },
+  "category.india": {
+    "text": "India",
+    "translationContext": "Display name for the India news category"
+  },
+  "category.southKorea": {
+    "text": "South Korea",
+    "translationContext": "Display name for the South Korea news category"
+  },
+  "category.sweden": {
+    "text": "Sweden",
+    "translationContext": "Display name for the Sweden news category"
+  },
+  "category.switzerlandDe": {
+    "text": "Switzerland (DE)",
+    "translationContext": "Display name for the Switzerland (DE) news category"
+  },
+  "category.usaVermont": {
+    "text": "USA | Vermont",
+    "translationContext": "Display name for the USA Vermont regional news category"
+  },
+  "category.usaVirginia": {
+    "text": "USA | Virginia",
+    "translationContext": "Display name for the USA Virginia regional news category"
+  },
   "header.settings": {
     "text": "Settings",
     "translationContext": "Title attribute for the settings button"

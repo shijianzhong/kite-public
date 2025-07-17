@@ -248,16 +248,16 @@
         "translationContext": "Title attribute for the settings button"
     },
     "stats.newsToday": {
-        "text": "आज की {count} खबरें",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "text": "आज की {{count}} खबरें",
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "आपने {{count}} कहानियाँ पढ़ी हैं",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "सप्ताह {{week}}, दिन {{day}}",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "सप्ताह {{{week}}}, दिन {{{day}}}",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "विश्व अशांति मीटर",
@@ -380,12 +380,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count} लेख",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}} लेख",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "{source} से लेख दिखाएँ",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "{{source}} से लेख दिखाएँ",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "सामान्य",
@@ -464,8 +464,8 @@
         "translationContext": "Text for the About Kite button"
     },
     "settings.shareLanguage.message": {
-        "text": "{language} में काइट न्यूज़ देखें - यह परिचय को छोड़ देगा और सीधे आपकी भाषा में लोड होगा!",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "text": "{{language}} में काइट न्यूज़ देखें - यह परिचय को छोड़ देगा और सीधे आपकी भाषा में लोड होगा!",
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "लिंक क्लिपबोर्ड पर कॉपी हो गया!",
@@ -629,7 +629,7 @@
     },
     "time.updated.seconds": {
         "text": "{{count}} सेकंड पहले अपडेट किया गया",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "1 मिनट पहले अपडेट किया गया",
@@ -637,7 +637,7 @@
     },
     "time.updated.minutes": {
         "text": "{{count}} मिनट पहले अपडेट किया गया",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "1 घंटे पहले अपडेट किया गया",
@@ -645,7 +645,7 @@
     },
     "time.updated.hours": {
         "text": "{{count}} घंटे पहले अपडेट किया गया",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "1 दिन पहले अपडेट किया गया",
@@ -653,11 +653,11 @@
     },
     "time.updated.days": {
         "text": "{{count}} दिन पहले अपडेट किया गया",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{weekday}}, {{month}} {{day}}",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{weekday}}}}}, {{{{{month}}}}} {{{{{day}}}}}",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "सारांश",

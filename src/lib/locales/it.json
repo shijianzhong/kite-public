@@ -243,21 +243,49 @@
         "text": "Italia",
         "translationContext": "Display name for the Italy news category"
     },
+    "category.costaRica": {
+        "text": "Costa Rica",
+        "translationContext": "Display name for the Costa Rica news category"
+    },
+    "category.india": {
+        "text": "India",
+        "translationContext": "Display name for the India news category"
+    },
+    "category.southKorea": {
+        "text": "Corea del Sud",
+        "translationContext": "Display name for the South Korea news category"
+    },
+    "category.sweden": {
+        "text": "Svezia",
+        "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerlandDe": {
+        "text": "Svizzera (DE)",
+        "translationContext": "Display name for the Switzerland (DE) news category"
+    },
+    "category.usaVermont": {
+        "text": "USA | Vermont",
+        "translationContext": "Display name for the USA Vermont regional news category"
+    },
+    "category.usaVirginia": {
+        "text": "USA | Virginia",
+        "translationContext": "Display name for the USA Virginia regional news category"
+    },
     "header.settings": {
         "text": "Impostazioni",
         "translationContext": "Title attribute for the settings button"
     },
     "stats.newsToday": {
         "text": "{{count}} notizie oggi",
-        "translationContext": "Shows the count of news items today, {count} will be replaced with a number"
+        "translationContext": "Shows the count of news items today, {{count}} will be replaced with a number"
     },
     "stats.storiesRead": {
         "text": "Hai letto {{count}} storie",
-        "translationContext": "Shows how many stories the user has read, {count} will be replaced with a number"
+        "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
     "stats.weekDay": {
-        "text": "Settimana {{week}}, Giorno {{day}}",
-        "translationContext": "Shows the current week and day of the year, {week} and {day} will be replaced with numbers"
+        "text": "Settimana {{{week}}}, Giorno {{{day}}}",
+        "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
     },
     "turbulence.title": {
         "text": "Misuratore di turbolenza mondiale",
@@ -380,12 +408,12 @@
         "translationContext": "Title for the action items section"
     },
     "sources.articles": {
-        "text": "{count} articoli",
-        "translationContext": "Shows the count of articles from a source, {count} will be replaced with a number"
+        "text": "{{count}} articoli",
+        "translationContext": "Shows the count of articles from a source, {{count}} will be replaced with a number"
     },
     "sources.showArticlesFrom": {
-        "text": "Mostra articoli da {source}",
-        "translationContext": "Title/aria-label for the source button, {source} will be replaced with the source name"
+        "text": "Mostra articoli da {{source}}",
+        "translationContext": "Title/aria-label for the source button, {{source}} will be replaced with the source name"
     },
     "settings.tabs.general": {
         "text": "Generali",
@@ -465,7 +493,7 @@
     },
     "settings.shareLanguage.message": {
         "text": "Dai un'occhiata a Kite News in italiano: salterà l'introduzione e si caricherà direttamente nella tua lingua!",
-        "translationContext": "Message to share with others, {language} will be replaced with the language name"
+        "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
         "text": "Link copiato!",
@@ -629,7 +657,7 @@
     },
     "time.updated.seconds": {
         "text": "Aggiornato {{count}} secondi fa",
-        "translationContext": "Shown when content was updated seconds ago, {count} will be replaced with the number of seconds"
+        "translationContext": "Shown when content was updated seconds ago, {{count}} will be replaced with the number of seconds"
     },
     "time.updated.oneMinute": {
         "text": "Aggiornato 1 minuto fa",
@@ -637,7 +665,7 @@
     },
     "time.updated.minutes": {
         "text": "Aggiornato {{count}} minuti fa",
-        "translationContext": "Shown when content was updated multiple minutes ago, {count} will be replaced with the number of minutes"
+        "translationContext": "Shown when content was updated multiple minutes ago, {{count}} will be replaced with the number of minutes"
     },
     "time.updated.oneHour": {
         "text": "Aggiornato 1 ora fa",
@@ -645,7 +673,7 @@
     },
     "time.updated.hours": {
         "text": "Aggiornato {{count}} ore fa",
-        "translationContext": "Shown when content was updated multiple hours ago, {count} will be replaced with the number of hours"
+        "translationContext": "Shown when content was updated multiple hours ago, {{count}} will be replaced with the number of hours"
     },
     "time.updated.oneDay": {
         "text": "Aggiornato 1 giorno fa",
@@ -653,11 +681,11 @@
     },
     "time.updated.days": {
         "text": "Aggiornato {{count}} giorni fa",
-        "translationContext": "Shown when content was updated multiple days ago, {count} will be replaced with the number of days"
+        "translationContext": "Shown when content was updated multiple days ago, {{count}} will be replaced with the number of days"
     },
     "date.format": {
-        "text": "{{weekday}}, {{month}} {{day}}",
-        "translationContext": "Format for displaying dates. {weekday} will be replaced with the day of the week, {month} with the month name, and {day} with the day number."
+        "text": "{{{{{weekday}}}}}, {{{{{month}}}}} {{{{{day}}}}}",
+        "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "section.summary": {
         "text": "Riepilogo",
