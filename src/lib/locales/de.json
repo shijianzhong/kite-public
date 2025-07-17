@@ -156,7 +156,7 @@
         "translationContext": "Display name for the Australia news category"
     },
     "category.bayArea": {
-        "text": "Bay Area",
+        "text": "USA | SF",
         "translationContext": "Display name for the Bay Area news category"
     },
     "category.belgium": {
@@ -816,7 +816,7 @@
         "translationContext": "Tooltip description for conflicts preset"
     },
     "settings.contentFilter.preset.crypto": {
-        "text": "Kryptowährung",
+        "text": "Kryptowährungen",
         "translationContext": "Name of cryptocurrency preset filter"
     },
     "settings.contentFilter.preset.crypto.tooltip": {
@@ -1020,7 +1020,7 @@
         "translationContext": "Title for the article sections settings"
     },
     "settings.shareLanguage.message": {
-        "text": "Schau dir Kite News auf {{language}} an - es wird die Einleitung überspringen und direkt in deiner Sprache laden!",
+        "text": "Schauen Sie sich Kite News auf {{language}} an - es wird die Einleitung überspringen und direkt in Ihrer Sprache laden!",
         "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
