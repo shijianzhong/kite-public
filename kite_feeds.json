@@ -342,6 +342,52 @@
       "https://www.teletica.com/rss/feed/noticias/nacional"
     ]
   },
+  "Czech Republic": {
+    "category_type": "country",
+    "source_language": "cs",
+    "display_names": {
+      "en": "Czech Republic",
+      "de": "Tschechien",
+      "fr": "République tchèque",
+      "es": "República Checa",
+      "pt": "República Checa",
+      "it": "Repubblica Ceca",
+      "nl": "Tsjechië",
+      "zh-Hans": "捷克共和国",
+      "zh-Hant": "捷克共和國",
+      "ja": "チェコ",
+      "hi": "चेक गणराज्य",
+      "uk": "Чеська Республіка"
+    },
+    "feeds": [
+      "https://cc.cz/feed/",
+      "https://ct24.ceskatelevize.cz/rss",
+      "https://denikn.cz/feed",
+      "https://denikreferendum.cz/rss.xml",
+      "https://feeds.feedburner.com/penize?format=xml",
+      "https://forbes.cz/rss/",
+      "https://hlidacipes.org/feed/",
+      "https://hn.cz/?m=rss",
+      "https://neovlivni.cz/feed/",
+      "https://reportermagazin.cz/feed",
+      "https://servis.idnes.cz/rss.aspx?c=zpravodaj",
+      "https://servis.lidovky.cz/rss.aspx",
+      "https://www.aktualne.cz/mrss/",
+      "https://www.ceskenoviny.cz/sluzby/rss/zpravy.php",
+      "https://www.denik.cz/rss/zpravy.html",
+      "https://www.e15.cz/rss",
+      "https://www.echo24.cz/rss/s/homepage",
+      "https://www.forum24.cz/feed/",
+      "https://www.info.cz/rss",
+      "https://www.investigace.cz/feed/",
+      "https://www.irozhlas.cz/rss/irozhlas",
+      "https://www.lupa.cz/rss/clanky/",
+      "https://www.novinky.cz/rss",
+      "https://www.respekt.cz/api/rss",
+      "https://www.seznamzpravy.cz/rss",
+      "https://zdopravy.cz/rss/"
+    ]
+  },
   "Estonia": {
     "category_type": "country",
     "source_language": "et",
