@@ -247,6 +247,53 @@
       "https://www.winnipegfreepress.com/canada/feed"
     ]
   },
+  "Colombia": {
+   "category_type": "country",
+   "source_language": "es",
+   "display_names": {
+     "en": "Colombia",
+     "de": "Kolumbien",
+     "fr": "Colombie",
+     "es": "Colombia",
+     "pt": "Colômbia",
+     "it": "Colombia",
+     "nl": "Colombia",
+     "zh-Hans": "哥伦比亚",
+     "zh-Hant": "哥倫比亞",
+     "ja": "コロンビア",
+     "hi": "कोलंबिया",
+     "uk": "Колумбія"
+   },
+   "feeds": [
+     "https://www.eltiempo.com/rss.xml",
+     "https://www.elespectador.com/rss/",
+     "https://www.semana.com/rss/",
+     "https://www.caracol.com.co/rss.xml",
+     "https://noticias.caracoltv.com/rss.xml",
+     "https://www.rcnradio.com/rss.xml",
+     "https://www.bluradio.com/rss",
+     "https://www.portafolio.co/rss",
+     "https://www.larepublica.co/rss",
+     "https://www.lasillavacia.com/rss",
+     "https://www.elcolombiano.com/rss/",
+     "https://opinioncolombia.com/rss-feeds",
+     "https://www.lafm.com.co/rss-index",
+     "https://caracol.com.co/arc/outboundfeeds/rss/category/tendencias/?outputType=xml",
+     "https://colombia.as.com/rss/",
+     "https://www.elheraldo.co/rss.xml",
+     "https://www.vanguardia.com/rss/",
+     "https://www.eluniversal.com.co/rss/",
+     "https://www.vozdeamerica.com/rssfeeds",
+     "https://world.einnews.com/country/colombia",
+     "https://latinvex.com/feeds/colombia/",
+     "https://globalvoices.org/feeds/countries/colombia/",
+     "https://colombiareports.com/feed/",
+     "https://www.financecolombia.com/feed/",
+     "https://news.google.com/rss?hl=es-CO&gl=CO&ceid=CO:es",
+     "https://news.google.com/rss/search?q=Colombia+site:apnews.com&hl=es&gl=CO&ceid=CO:es",
+     "https://news.google.com/rss/search?q=Colombia+site:reuters.com&hl=es&gl=CO&ceid=CO:es"
+    ]
+  },
   "Costa Rica": {
     "category_type": "country",
     "source_language": "es",
