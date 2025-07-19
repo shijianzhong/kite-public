@@ -2233,6 +2233,51 @@
       "https://www.xlr8yourmac.com/news.xml"
     ]
   },
+  "Bitcoin": {
+    "category_type": "topic",
+    "source_language": "en",   
+    "display_names": {
+      "en": "Bitcoin",
+      "de": "Bitcoin",
+      "fr": "Bitcoin",
+      "es": "Bitcoin",
+      "pt": "Bitcoin",
+      "it": "Bitcoin",
+      "nl": "Bitcoin",
+      "zh-Hans": "比特币",
+      "zh-Hant": "比特幣",
+      "ja": "ビットコイン",
+      "hi": "बिटकॉइन",
+      "uk": "Біткоїн"
+    },
+    "feeds": [
+      "https://www.nobsbitcoin.com/rss/",
+      "https://bitcoinops.org/feed.xml",
+      "https://bitcoin.stackexchange.com/feeds",
+      "https://stacker.news/~bitcoin/rss",
+      "https://bitbo.io/news/feed.xml",
+      "https://bitcoinmagazine.com/news/feed",
+      "https://bitcoin.org/en/rss/blog.xml",
+      "https://bitcoin.org/en/rss/alerts.rss",
+      "https://bitcoin.org/en/rss/events.rss",
+      "https://bitcoincore.org/en/announcements.xml",
+      "https://bitcoincore.org/en/rss.xml",
+      "https://bitcoincore.org/en/meetingrss.xml",
+      "https://bitcoincore.org/en/releasesrss.xml",
+      "https://blog.lopp.net/rss/",
+      "https://bitcoinaudible.com/feed",
+      "https://bitcoinechochamber.com/feed",
+      "https://bitcoinandmarkets.com/feed",
+      "https://bitcoinnews.com/feed/",
+      "https://thebitcoinmanual.com/feed/",
+      "https://blog.liquid.net/rss/",
+      "https://blog.river.com/rss/",
+      "https://enegnei.github.io/This-Month-In-Bitcoin-Privacy/feed",
+      "https://econoalchemist.com/feed.xml",
+      "https://dergigi.com/feed.xml",
+      "https://blog.blockstream.com/rss/"
+    ]
+  },
   "Cryptocurrency": {
     "category_type": "topic",
     "source_language": "en",
