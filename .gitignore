@@ -27,3 +27,4 @@ coverage
 *.sw?
 
 .vite
+.svelte-kit

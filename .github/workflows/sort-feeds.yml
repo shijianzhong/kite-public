@@ -1,0 +1,93 @@
+name: Sort and Deduplicate Feeds
+
+on:
+  push:
+    paths:
+      - 'kite_feeds.json'
+    branches:
+      - main
+      - 'feature/**'
+  pull_request:
+    paths:
+      - 'kite_feeds.json'
+
+jobs:
+  sort-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Setup Bun
+      uses: oven-sh/setup-bun@v2
+
+    - name: Sort and deduplicate feeds
+      run: bun scripts/sort-feeds.js
+
+    - name: Check for changes
+      id: verify-changed-files
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit changes
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'push'
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add kite_feeds.json
+        git commit -m "$(cat <<'EOF'
+        chore: auto-sort and deduplicate feeds
+
+        - Sort categories by type order (country → region → city → topic)
+        - Sort feeds alphabetically within categories by URL
+        - Remove duplicate feed URLs
+
+        🤖 Generated with GitHub Actions
+        EOF
+        )"
+        git push
+
+    - name: Skip sorting for external PRs
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+      run: |
+        echo "🔄 External PR detected - skipping auto-sort"
+        echo "📝 Feeds will be automatically sorted when merged to main"
+        echo "✅ Check completed successfully"
+
+    - name: Commit changes to same-repo PR
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add kite_feeds.json
+        git commit -m "$(cat <<'EOF'
+        chore: auto-sort and deduplicate feeds
+
+        - Sort categories by type order (country → region → city → topic)
+        - Sort feeds alphabetically within categories by URL
+        - Remove duplicate feed URLs
+
+        🤖 Generated with GitHub Actions
+        EOF
+        )"
+        git push origin HEAD:${{ github.event.pull_request.head.ref }}
+
+    - name: Comment on same-repo PR about auto-sorting
+      if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '🤖 **Feeds automatically sorted**\n\nI detected that `kite_feeds.json` was modified but not properly sorted, so I automatically applied the correct sorting and pushed a new commit to this PR.\n\n**Changes made:**\n- ✅ Sort categories by type order (country → region → city → topic)\n- ✅ Sort feeds alphabetically within categories by URL\n- ✅ Remove duplicate feed URLs\n\nThe PR is now ready for review! 🚀'
+          });
