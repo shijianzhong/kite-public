@@ -1740,6 +1740,7 @@
       "https://workpointnews.com/rss.society.xml",
       "https://workpointnews.com/rss.technology.xml",
       "https://workpointtoday.com/feed/",
+      "https://www.bangkokpost.com/rss/data/most-recent.xml",
       "https://www.beartai.com/feed",
       "https://www.blognone.com/atom.xml",
       "https://www.brighttv.co.th/feed",
@@ -1748,18 +1749,17 @@
       "https://www.ft.com/thailand?format=rss",
       "https://www.infoquest.co.th/feed",
       "https://www.innnews.co.th/feed/",
+      "https://www.kaohoon.com/feed",
+      "https://www.khaophuket.com/rss-xml/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7-%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7.xml",
       "https://www.khaosod.co.th/feed",
+      "https://www.khaosodenglish.com/feed/",
+      "https://www.lannernews.com/",
       "https://www.matichon.co.th/feed",
       "https://www.naewna.com/rss.php",
       "https://www.prachachat.net/feed",
       "https://www.thaipost.net/feed/",
       "https://www.thairath.co.th/rss/news",
-      "https://www.voathai.com/api/zykyol-vomx-tpetpup",
-      "https://www.khaophuket.com/rss-xml/%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7-%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A7.xml",
-      "https://www.kaohoon.com/feed",
-      "https://www.lannernews.com/",
-      "https://www.bangkokpost.com/rss/data/most-recent.xml",
-      "https://www.khaosodenglish.com/feed/"
+      "https://www.voathai.com/api/zykyol-vomx-tpetpup"
     ]
   },
   "The Netherlands": {
