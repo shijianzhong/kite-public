@@ -19,6 +19,7 @@ interface Props {
 	sourceArticles?: any[];
 	currentMediaInfo?: any;
 	isLoadingMediaInfo?: boolean;
+	storyCountOverride?: number | null;
 }
 
 let { 
@@ -32,7 +33,8 @@ let {
 	currentSource = $bindable(null),
 	sourceArticles = $bindable([]),
 	currentMediaInfo = $bindable(null),
-	isLoadingMediaInfo = $bindable(false)
+	isLoadingMediaInfo = $bindable(false),
+	storyCountOverride = null
 }: Props = $props();
 
 // Handle story toggle
@@ -58,7 +60,9 @@ function markAllAsRead() {
 // Apply content filtering and story count limit
 const { displayedStories, filteredCount, hiddenStories } = $derived.by(() => {
 	// First apply story count limit
-	const limitedStories = stories.slice(0, storyCount.current);
+	// Use override if provided (e.g., from URL navigation), otherwise use user setting
+	const effectiveLimit = storyCountOverride ?? storyCount.current;
+	const limitedStories = stories.slice(0, effectiveLimit);
 	
 	// Then apply content filtering if active (has keywords)
 	if (contentFilter.isActive) {

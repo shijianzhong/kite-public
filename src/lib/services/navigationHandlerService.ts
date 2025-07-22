@@ -11,6 +11,7 @@ export interface NavigationState {
 	allCategoryStories: Record<string, Story[]>;
 	expandedStories: Record<string, boolean>;
 	isLatestBatch: boolean;
+	storyCountOverride?: number | null;
 }
 
 export interface NavigationCallbacks {
@@ -133,6 +134,14 @@ export class NavigationHandlerService {
 						const story = categoryStories[params.storyIndex];
 						const storyId = story.cluster_number?.toString() || story.title;
 						updates.expandedStories = { [storyId]: true };
+						
+						// Check if we need to override story count limit
+						// We need this when the story index exceeds the default limit
+						const { storyCount } = await import('$lib/stores/storyCount.svelte.js');
+						if (params.storyIndex >= storyCount.current) {
+							// Set override to show at least up to the requested story
+							updates.storyCountOverride = params.storyIndex + 1;
+						}
 					}
 				}
 			}

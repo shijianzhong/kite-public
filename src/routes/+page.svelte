@@ -5,6 +5,7 @@ import { page } from '$app/state';
 import { dataLanguage } from '$lib/stores/dataLanguage.svelte.js';
 import { settings } from '$lib/stores/settings.svelte.js';
 import { categories as categoriesStore } from '$lib/stores/categories.svelte.js';
+import { storyCount } from '$lib/stores/storyCount.svelte.js';
 import type { SupportedLanguage } from '$lib/stores/language.svelte';
 import { dataService, dataReloadService } from '$lib/services/dataService';
 import { clearImageCache, getImageCacheStats, extractStoryImages } from '$lib/utils/imagePreloader';
@@ -39,6 +40,7 @@ let temporaryCategory = $state<string | null>(null);
 let showTemporaryCategoryTooltip = $state(false);
 let temporaryCategoryElement = $state<HTMLElement | null>(null);
 let desktopCategoryNavigation = $state<CategoryNavigation>();
+let storyCountOverride = $state<number | null>(null);
 
 // Reactive category header position
 const categoryHeaderPosition = $derived(settings.categoryHeaderPosition);
@@ -194,6 +196,11 @@ function handleDataLoaded(data: {
 			const story = stories[urlParams.storyIndex];
 			const storyId = story.cluster_number?.toString() || story.title;
 			expandedStories[storyId] = true;
+			
+			// Check if we need to override story count limit
+			if (urlParams.storyIndex >= storyCount.current) {
+				storyCountOverride = urlParams.storyIndex + 1;
+			}
 		}
 	}
 }
@@ -336,6 +343,11 @@ function handleCategoryChange(category: string, updateUrl: boolean = true) {
 		temporaryCategory = null;
 		showTemporaryCategoryTooltip = false;
 	}
+	
+	// Reset story count override when changing categories
+	if (updateUrl && storyCountOverride !== null) {
+		storyCountOverride = null;
+	}
 
 	// Load stories for the new category (will be instant for preloaded categories)
 	loadStoriesForCategory(category);
@@ -430,7 +442,8 @@ const handleUrlNavigation = async (params: NavigationParams) => {
 		stories,
 		allCategoryStories,
 		expandedStories,
-		isLatestBatch
+		isLatestBatch,
+		storyCountOverride
 	}, {
 		setDataLanguage: (lang: SupportedLanguage) => dataLanguage.set(lang),
 		getCurrentDataLanguage: () => dataLanguage.current,
@@ -442,6 +455,9 @@ const handleUrlNavigation = async (params: NavigationParams) => {
 	if (updates.expandedStories !== undefined) {
 		// Directly set the expanded stories from navigation
 		expandedStories = updates.expandedStories;
+	}
+	if (updates.storyCountOverride !== undefined) {
+		storyCountOverride = updates.storyCountOverride;
 	}
 };
 
@@ -572,6 +588,7 @@ if (browser && typeof window !== 'undefined') {
 	<main 
 		class="pb-[56px] md:pb-0 {categoryHeaderPosition === 'top' ? 'pt-12 md:pt-0' : ''}"
 		ontouchstart={categorySwipeHandler.handleTouchStart}
+		ontouchmove={categorySwipeHandler.handleTouchMove}
 		ontouchend={categorySwipeHandler.handleTouchEnd}
 	>
 		<div class="container mx-auto max-w-[732px] px-4 py-8">
@@ -616,6 +633,7 @@ if (browser && typeof window !== 'undefined') {
 						bind:sourceArticles
 						bind:currentMediaInfo
 						bind:isLoadingMediaInfo
+						{storyCountOverride}
 					/>
 				{/if}
 			</div>

@@ -9,7 +9,6 @@ export type SupportedLanguage =
   | "es"
   | "de"
   | "nl"
-  | "zh"
   | "ja"
   | "hi"
   | "uk"
@@ -22,6 +21,7 @@ export type SupportedLanguage =
   | "pl"
   | "ru"
   | "zh-Hans"
+  | "zh-Hant"
   | "sv"
   | "th"
   | "tr";

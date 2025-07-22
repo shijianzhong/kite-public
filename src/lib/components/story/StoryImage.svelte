@@ -6,9 +6,10 @@ import { onMount } from 'svelte';
 interface Props {
 	article: any;
 	imagesPreloaded?: boolean;
+	showCaption?: boolean;
 }
 
-let { article, imagesPreloaded = false }: Props = $props();
+let { article, imagesPreloaded = false, showCaption = false }: Props = $props();
 
 // State for image loading
 let imageLoaded = $state(false);
@@ -76,7 +77,12 @@ onMount(() => {
 	<figure>
 		<div class="relative">
 			<div class="relative mx-auto w-[calc(100%-1rem)] max-w-[800px]">
-				<a href={article.link} target="_blank" class="relative block">
+				<a 
+					href={article.link || '#'} 
+					target="_blank" 
+					class="relative block"
+					class:pointer-events-none={!article.link}
+				>
 					<img
 						src={currentImageSrc || getProxiedImageUrl(article.image)}
 						alt={article.image_caption || 'Story image'}
@@ -107,15 +113,17 @@ onMount(() => {
 						</div>
 					{/if}
 					
-					<!-- <div class="bg-opacity-50 hover:bg-opacity-75 absolute right-2 bottom-2 rounded bg-black px-2 py-1 text-sm text-white">
-						{article.domain}
-					</div> -->
+					{#if showCaption && article.domain}
+						<div class="bg-opacity-50 hover:bg-opacity-75 absolute right-2 bottom-2 rounded bg-black px-2 py-1 text-sm text-white">
+							{article.domain}
+						</div>
+					{/if}
 				</a>
-				<!-- {#if article.image_caption}
+				{#if showCaption && article.image_caption}
 					<p class="mt-2 text-sm text-gray-600 italic dark:text-gray-400">
 						{article.image_caption}
 					</p>
-				{/if} -->
+				{/if}
 			</div>
 		</div>
 	</figure>

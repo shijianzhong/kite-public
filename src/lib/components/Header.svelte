@@ -2,6 +2,7 @@
 import { theme } from '$lib/stores/theme.svelte.js';
 import { settings } from '$lib/stores/settings.svelte.js';
 import { timeTravel } from '$lib/stores/timeTravel.svelte.js';
+import { fontSize } from '$lib/stores/fontSize.svelte.js';
 import { dataService, dataReloadService } from '$lib/services/dataService';
 import { s } from '$lib/client/localization.svelte';
 import { language } from '$lib/stores/language.svelte.js';
@@ -60,6 +61,14 @@ function handleDateKeydown(event: KeyboardEvent) {
 		event.preventDefault();
 		handleDateClick();
 	}
+}
+
+// Handle font size toggle
+function toggleFontSize() {
+	const fontSizes: Array<import('$lib/stores/fontSize.svelte.js').FontSize> = ["xs", "small", "normal", "large", "xl"];
+	const currentIndex = fontSizes.indexOf(fontSize.current);
+	const nextIndex = (currentIndex + 1) % fontSizes.length;
+	fontSize.set(fontSizes[nextIndex]);
 }
 
 // Helper to capitalize first letter
@@ -223,6 +232,21 @@ const dateDisplay = $derived.by(() => {
 				<IconClock 
 					size={24}
 					class="text-gray-600 dark:text-gray-400"
+				/>
+			</button>
+			
+			<button
+				onclick={toggleFontSize}
+				title={s('header.fontSize') || 'Font Size'}
+				aria-label={s('header.fontSize') || 'Font Size'}
+				class="ml-2"
+				type="button"
+			>
+				<img
+					src="/svg/font-size.svg"
+					alt=""
+					class="h-6 w-6 text-gray-600 dark:text-gray-400 dark:invert"
+					aria-hidden="true"
 				/>
 			</button>
 			

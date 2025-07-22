@@ -1,14 +1,14 @@
 <script lang="ts">
+	import { dndzone, TRIGGERS } from 'svelte-dnd-action';
 	import { flip } from 'svelte/animate';
-	import { untrack } from 'svelte';
-	import { dndzone } from 'svelte-dnd-action';
 	import { s } from '$lib/client/localization.svelte';
 	import { categories } from '$lib/stores/categories.svelte.js';
 	import type { Category } from '$lib/types';
 	import { getCategoryDisplayName } from '$lib/utils/category';
 	import { categoryMetadataService, type CategoryMetadata } from '$lib/services/categoryMetadataService';
 	import Select from '$lib/components/Select.svelte';
-	import { IconNews, IconWorld, IconMapPin, IconBuilding, IconBulb, IconDots } from '@tabler/icons-svelte';
+	import { IconNews, IconWorld, IconMapPin, IconBuilding, IconBulb, IconDots, IconX, IconPlus } from '@tabler/icons-svelte';
+  import { untrack } from 'svelte';
 	
 	// Props
 	interface Props {
@@ -16,11 +16,13 @@
 	}
 
 	let { categories: allCategories = [] }: Props = $props();
-
-	const flipDurationMs = 200;
 	
 	// Track dragging state
 	let isDragging = $state(false);
+	let draggedItemId = $state<string | null>(null);
+	
+	// Animation duration
+	const flipDurationMs = 200;
 	
 	// Local state for drag and drop - only updated when not dragging
 	let enabledItems = $state<Array<{id: string, name: string}>>([]);
@@ -85,33 +87,27 @@
 				id: categoryId,
 				name: category?.name || categoryId
 			};
-		});
+		}).sort((a, b) => getCategoryDisplayName(a).localeCompare(getCategoryDisplayName(b)));
 	}
 
 	// Get category type for filtering
 	function getCategoryType(categoryId: string): string {
+		// Skip shadow placeholder items created by the drag library
+		if (categoryId.startsWith('id:dnd-shadow-placeholder')) {
+			return 'other';
+		}
+		
 		const metadata = categoryMetadata.find(meta => meta.categoryId === categoryId.toLowerCase());
 		if (!metadata) {
-			console.warn(`No metadata found for category: ${categoryId}`);
+			// Don't spam warnings for common categories that might not be in metadata
+			if (categoryMetadata.length > 0) {
+				console.warn(`No metadata found for category: ${categoryId}`);
+			}
 			return 'other';
 		}
 		return metadata.categoryType;
 	}
 
-	// Filter disabled items based on selected filter
-	function getFilteredDisabledItems() {
-		if (categoryFilter === 'all') {
-			return disabledItems;
-		}
-		
-		return disabledItems.filter(item => {
-			const categoryType = getCategoryType(item.id);
-			return categoryType === categoryFilter;
-		});
-	}
-
-	// Get filtered items for display (derived state)
-	const filteredDisabledItems = $derived(getFilteredDisabledItems());
 
 	// Count categories by type for filter labels
 	function getCategoryCounts() {
@@ -148,12 +144,21 @@
 
 	// Drag handlers for enabled zone
 	function handleEnabledConsider(e: CustomEvent) {
-		isDragging = true;
+		const { trigger, id } = e.detail.info;
+		if (trigger === TRIGGERS.DRAG_STARTED) {
+			isDragging = true;
+			draggedItemId = id;
+		}
 		enabledItems = e.detail.items;
 	}
 
 	function handleEnabledFinalize(e: CustomEvent) {
-		isDragging = false;
+		const { trigger } = e.detail.info;
+		if (trigger === TRIGGERS.DROPPED_INTO_ZONE || trigger === TRIGGERS.DROPPED_INTO_ANOTHER) {
+			isDragging = false;
+			draggedItemId = null;
+		}
+		
 		const newItems = e.detail.items;
 		
 		// Extract the new enabled categories in their drag order
@@ -175,13 +180,29 @@
 
 	// Drag handlers for disabled zone
 	function handleDisabledConsider(e: CustomEvent) {
-		isDragging = true;
-		// Update the filtered items during drag
-		// Note: we need to be careful here since we're showing filtered items
+		const { trigger, id } = e.detail.info;
+		if (trigger === TRIGGERS.DRAG_STARTED) {
+			isDragging = true;
+			draggedItemId = id;
+		}
+		// Only update if we have valid items to avoid undefined errors
+		if (e.detail?.items) {
+			disabledItems = e.detail.items;
+		}
 	}
 
 	function handleDisabledFinalize(e: CustomEvent) {
-		isDragging = false;
+		const { trigger } = e.detail.info;
+		if (trigger === TRIGGERS.DROPPED_INTO_ZONE || trigger === TRIGGERS.DROPPED_INTO_ANOTHER) {
+			isDragging = false;
+			draggedItemId = null;
+		}
+		
+		// Check if we have valid items to avoid undefined errors
+		if (!e.detail?.items) {
+			return;
+		}
+		
 		const newItems = e.detail.items;
 		
 		// Extract the new disabled categories in their drag order
@@ -227,7 +248,7 @@
 <div class="space-y-4">
 	<div class="mb-4">
 		<p class="text-sm text-gray-600 dark:text-gray-400">
-			{s('settings.categories.instructions') || 'Drag to reorder, or click to enable/disable. Drag between sections to move categories.'}
+			{s('settings.categories.instructions') || 'Drag to reorder categories or click to enable/disable them.'}
 		</p>
 	</div>
 
@@ -249,28 +270,45 @@
 					outlineOffset: '-2px',
 					borderRadius: '0.5rem'
 				},
+				morphDisabled: true,
 				dragDisabled: enabledItems.length === 1
 			}}
 			onconsider={handleEnabledConsider}
 			onfinalize={handleEnabledFinalize}
 		>
-			{#each enabledItems as category (category.id)}
+			{#each enabledItems as category, index (`enabled-${category.id}-${index}`)}
 				<div
 					animate:flip={{ duration: flipDurationMs }}
-					class="inline-flex items-center rounded-md bg-blue-100 px-3 py-2 text-sm font-medium text-blue-800 hover:shadow-sm transition-colors dark:bg-blue-800 dark:text-blue-200
-						{enabledItems.length > 1 ? 'cursor-grab active:cursor-grabbing hover:bg-blue-200 dark:hover:bg-blue-700' : 'cursor-not-allowed opacity-75'}"
-					onclick={() => handleEnabledClick(category.id)}
-					onkeydown={(e) => {
-						if (e.key === 'Enter' || e.key === ' ') {
-							e.preventDefault();
+					class="group inline-flex items-center rounded-md bg-blue-100 px-3 py-2 text-sm font-medium text-blue-800 dark:bg-blue-800 dark:text-blue-200
+						{draggedItemId === category.id ? 'opacity-50' : ''} 
+						{enabledItems.length === 1 ? 'cursor-not-allowed opacity-75' : 'cursor-grab active:cursor-grabbing hover:bg-blue-200 dark:hover:bg-blue-700'} 
+						transition-colors"
+					title={enabledItems.length === 1 ? s('settings.categories.lastCategory') || 'Cannot disable the last category' : s('settings.categories.disable') || 'Click to disable, drag to reorder'}
+					role="button"
+					tabindex={enabledItems.length === 1 ? -1 : 0}
+					onclick={(e) => {
+						e.stopPropagation();
+						e.preventDefault();
+						if (enabledItems.length > 1) {
 							handleEnabledClick(category.id);
 						}
 					}}
-					role="button"
-					tabindex="0"
-					title={enabledItems.length === 1 ? s('settings.categories.lastCategory') || 'Cannot disable the last category' : ''}
+					onkeydown={(e) => {
+						if (e.key === 'Enter' || e.key === ' ') {
+							e.preventDefault();
+							e.stopPropagation();
+							if (enabledItems.length > 1) {
+								handleEnabledClick(category.id);
+							}
+						}
+					}}
+					onmousedown={(e) => {
+						if (enabledItems.length === 1) {
+							e.stopPropagation();
+						}
+					}}
 				>
-					<span>
+					<span class="select-none">
 						{getCategoryDisplayName(category)}
 					</span>
 				</div>
@@ -301,48 +339,62 @@
 				/>
 			</div>
 		</div>
+		
+		<!-- Always use dndzone, but hide filtered items with CSS -->
 		<div
 			class="min-h-[40px] rounded-lg p-3 flex flex-wrap gap-2 border-2 border-dashed"
 			class:border-gray-300={!isDragging}
 			class:dark:border-gray-600={!isDragging}
 			class:border-transparent={isDragging}
 			use:dndzone={{
-				items: filteredDisabledItems,
+				items: disabledItems,
 				flipDurationMs,
 				type: 'category',
 				dropTargetStyle: { 
 					outline: 'rgba(156, 163, 175, 0.5) solid 2px',
 					outlineOffset: '-2px',
 					borderRadius: '0.5rem'
-				}
+				},
+				morphDisabled: true
 			}}
 			onconsider={handleDisabledConsider}
 			onfinalize={handleDisabledFinalize}
 		>
-			{#each filteredDisabledItems as category (category.id)}
+			{#each disabledItems as category, index (`disabled-${category.id}-${index}`)}
+				{@const isFiltered = categoryFilter !== 'all' && getCategoryType(category.id) !== categoryFilter}
+				{@const isBeingDragged = draggedItemId === category.id}
 				<div
 					animate:flip={{ duration: flipDurationMs }}
-					class="inline-flex items-center rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 cursor-grab active:cursor-grabbing hover:bg-gray-200 hover:shadow-sm transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-					onclick={() => handleDisabledClick(category.id)}
+					class="group inline-flex items-center rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 dark:bg-gray-700 dark:text-gray-300
+						{isBeingDragged ? 'opacity-50' : ''} cursor-grab active:cursor-grabbing hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+					style={isFiltered && !isBeingDragged ? 'position: absolute; left: -9999px; opacity: 0; pointer-events: none;' : ''}
+					title={s('settings.categories.enable') || 'Click to enable, drag to reorder'}
+					role="button"
+					tabindex={isFiltered ? -1 : 0}
+					onclick={(e) => {
+						e.stopPropagation();
+						e.preventDefault();
+						handleDisabledClick(category.id);
+					}}
 					onkeydown={(e) => {
 						if (e.key === 'Enter' || e.key === ' ') {
 							e.preventDefault();
+							e.stopPropagation();
 							handleDisabledClick(category.id);
 						}
 					}}
-					role="button"
-					tabindex="0"
+					onmousedown={(e) => e.stopPropagation()}
 				>
-					<span>
+					<span class="select-none">
 						{getCategoryDisplayName(category)}
 					</span>
 				</div>
 			{/each}
-			{#if filteredDisabledItems.length === 0 && categoryFilter === 'all'}
+			{#if disabledItems.length === 0}
 				<div class="text-sm text-gray-500 dark:text-gray-400 pointer-events-none select-none">
 					{s('settings.categories.noDisabled') || 'All categories enabled'}
 				</div>
-			{:else if filteredDisabledItems.length === 0}
+			{:else if categoryFilter !== 'all' && disabledItems.every(item => getCategoryType(item.id) !== categoryFilter)}
 				<div class="text-sm text-gray-500 dark:text-gray-400 pointer-events-none select-none">
 					{s('settings.categories.noFiltered') || 'No categories of this type are disabled'}
 				</div>

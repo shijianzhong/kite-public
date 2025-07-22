@@ -53,13 +53,15 @@
 			case 'summary':
 				return !!story.short_summary;
 			case 'primaryImage':
-				return !!story.articles?.find((a: any) => a.image);
+				// Use new primary_image field if available, fallback to first article with image
+				return !!story.primary_image || !!story.articles?.find((a: any) => a.image);
 			case 'highlights':
 				return !!story.talking_points?.length;
 			case 'quotes':
 				return !!story.quote;
 			case 'secondaryImage':
-				return (story.articles?.filter((a: any) => a.image)?.length ?? 0) >= 2;
+				// Use new secondary_image field if available, fallback to checking if we have 2+ articles with images
+				return !!story.secondary_image || (story.articles?.filter((a: any) => a.image)?.length ?? 0) >= 2;
 			case 'perspectives':
 				return !!story.perspectives?.length;
 			case 'historicalBackground':
@@ -138,9 +140,25 @@
 	{#if section.id === 'summary'}
 		<StorySummary {story} {citationMapping} />
 	{:else if section.id === 'primaryImage'}
-		{@const imageArticle = story.articles?.find((a: any) => a.image)}
-		{#if imageArticle}
-			<StoryImage article={imageArticle} imagesPreloaded={imagesPreloaded} />
+		{#if story.primary_image}
+			<!-- New data with primary_image field -->
+			{@const sourceArticle = story.articles?.find((a: any) => a.image === story.primary_image.url)}
+			<StoryImage 
+				article={{
+					image: story.primary_image.url,
+					image_caption: story.primary_image.caption,
+					link: sourceArticle?.link,
+					domain: story.primary_image.credit || sourceArticle?.domain || ''
+				}} 
+				imagesPreloaded={imagesPreloaded}
+				showCaption={true}
+			/>
+		{:else}
+			<!-- Fallback for old data -->
+			{@const imageArticle = story.articles?.find((a: any) => a.image)}
+			{#if imageArticle}
+				<StoryImage article={imageArticle} imagesPreloaded={imagesPreloaded} />
+			{/if}
 		{/if}
 	{:else if section.id === 'highlights'}
 		<StoryHighlights points={story.talking_points} articles={story.articles} {citationMapping} />
@@ -155,9 +173,25 @@
 			{citationMapping}
 		/>
 	{:else if section.id === 'secondaryImage'}
-		{@const secondaryImage = story.articles?.filter((a: any) => a.image)[1]}
-		{#if secondaryImage}
-			<StoryImage article={secondaryImage} imagesPreloaded={imagesPreloaded} />
+		{#if story.secondary_image}
+			<!-- New data with secondary_image field -->
+			{@const sourceArticle = story.articles?.find((a: any) => a.image === story.secondary_image.url)}
+			<StoryImage 
+				article={{
+					image: story.secondary_image.url,
+					image_caption: story.secondary_image.caption,
+					link: sourceArticle?.link,
+					domain: story.secondary_image.credit || sourceArticle?.domain || ''
+				}} 
+				imagesPreloaded={imagesPreloaded}
+				showCaption={true}
+			/>
+		{:else}
+			<!-- Fallback for old data -->
+			{@const secondaryImage = story.articles?.filter((a: any) => a.image)[1]}
+			{#if secondaryImage}
+				<StoryImage article={secondaryImage} imagesPreloaded={imagesPreloaded} />
+			{/if}
 		{/if}
 	{:else if section.id === 'perspectives'}
 		<StoryPerspectives perspectives={story.perspectives} articles={story.articles} {citationMapping} />

@@ -192,6 +192,7 @@ const citedArticles = $derived.by(() => {
 						</span>
 					{:else}
 						<!-- Show as clean numbered citation -->
+						<!-- svelte-ignore a11y_mouse_events_have_key_events -->
 						<span 
 							class="citation-number text-blue-600 dark:text-blue-400 text-xs align-super cursor-help font-medium hover:bg-blue-100 dark:hover:bg-blue-900 rounded px-0.5 transition-colors" 
 							title="{segment.citation?.domain === 'common' ? 'Common knowledge' : `Source ${segment.citation?.number}: ${segment.citation?.domain}`}"
@@ -200,10 +201,17 @@ const citedArticles = $derived.by(() => {
 							aria-label="{segment.citation?.domain === 'common' ? 'Common knowledge citation' : `Citation ${segment.citation?.number}: ${segment.citation?.domain}`}"
 							onmouseover={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
 							onmouseleave={(e) => tooltipReference?.handleCitationLeave(e)}
-							onfocus={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
-							onblur={(e) => tooltipReference?.handleCitationLeave(e)}
+							onfocus={() => {}} 
+							onblur={() => {}}
 							onclick={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
 							onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
+							ontouchstart={(e) => {
+								e.stopPropagation();
+								// Record touch time to ignore subsequent mouseover
+								if (tooltipReference && 'recordTouch' in tooltipReference) {
+									(tooltipReference as any).recordTouch();
+								}
+							}}
 						>
 							{segment.content}
 						</span>
@@ -223,6 +231,7 @@ const citedArticles = $derived.by(() => {
 							</span>
 						{:else}
 							<!-- Show as clean numbered citation -->
+							<!-- svelte-ignore a11y_mouse_events_have_key_events -->
 							<span 
 								class="citation-number text-blue-600 dark:text-blue-400 text-xs align-super cursor-help font-medium hover:bg-blue-100 dark:hover:bg-blue-900 rounded px-0.5 transition-colors" 
 								title="{segment.citation?.domain === 'common' ? 'Common knowledge' : `Source ${segment.citation?.number}: ${segment.citation?.domain}`}"
@@ -231,10 +240,15 @@ const citedArticles = $derived.by(() => {
 								aria-label="{segment.citation?.domain === 'common' ? 'Common knowledge citation' : `Citation ${segment.citation?.number}: ${segment.citation?.domain}`}"
 								onmouseover={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
 								onmouseleave={(e) => tooltipReference?.handleCitationLeave(e)}
-								onfocus={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
-								onblur={(e) => tooltipReference?.handleCitationLeave(e)}
 								onclick={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
 								onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && tooltipReference?.handleCitationInteraction(e, uniqueDomains, segment.citation?.number)}
+								ontouchstart={(e) => {
+								e.stopPropagation();
+								// Record touch time to ignore subsequent mouseover
+								if (tooltipReference && 'recordTouch' in tooltipReference) {
+									(tooltipReference as any).recordTouch();
+								}
+							}}
 							>
 								{segment.content}
 							</span>
@@ -247,13 +261,21 @@ const citedArticles = $derived.by(() => {
 
 	<!-- Citation sources with favicons (appears on next line for both inline and block) -->
 	{#if showFavicons && uniqueDomains.length > 0}
+		<!-- svelte-ignore a11y_mouse_events_have_key_events -->
 		<div class="citation-sources flex items-center cursor-pointer"
 		onmouseover={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains)}
 		onmouseleave={(e) => tooltipReference?.handleCitationLeave(e)}
-		onfocus={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains)}
-		onblur={(e) => tooltipReference?.handleCitationLeave(e)}
+		onfocus={() => {}}
+		onblur={() => {}}
 		onclick={(e) => tooltipReference?.handleCitationInteraction(e, uniqueDomains)}
 		onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && tooltipReference?.handleCitationInteraction(e, uniqueDomains)}
+		ontouchstart={(e) => {
+			e.stopPropagation();
+			// Record touch time to ignore subsequent mouseover
+			if (tooltipReference && 'recordTouch' in tooltipReference) {
+				(tooltipReference as any).recordTouch();
+			}
+		}}
 		role="button"
 		tabindex="0"
 		aria-label="View sources: {uniqueDomains.join(', ')}"
@@ -328,6 +350,10 @@ const citedArticles = $derived.by(() => {
 <style>
 	.citation-wrapper {
 		display: block;
+	}
+	
+	.citation-wrapper:has(.citation-content.inline) {
+		display: inline;
 	}
 	
 	.citation-content {

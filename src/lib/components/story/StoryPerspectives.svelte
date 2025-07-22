@@ -39,6 +39,14 @@ const allCitedArticles = $derived.by(() => {
 	return aggregateCitationsFromPerspectives(displayPerspectives, citationMapping, articles);
 });
 
+// Helper function to detect if text contains citations
+function hasCitations(text: string): boolean {
+	if (!text) return false;
+	// Match citations like [domain#position], [common], [1], [2], etc.
+	const citationPattern = /\[([^\]]+)\]/g;
+	return citationPattern.test(text);
+}
+
 // Touch handling for mobile
 let isScrolling = $state(false);
 
@@ -62,7 +70,7 @@ function handleTouchEnd() {
 		ontouchstart={handleTouchStart}
 		ontouchend={handleTouchEnd}
 	>
-		{#each displayPerspectives as perspective, index}
+		{#each displayPerspectives as perspective}
 			{@const parsed = parseStructuredText(perspective.text)}
 			<div class="w-56 flex-shrink-0 rounded-lg bg-gray-100 p-4 dark:bg-gray-700">
 				{#if parsed.hasTitle}
@@ -102,7 +110,7 @@ function handleTouchEnd() {
 					</p>
 				{/if}
 				
-				{#if perspective.sources && perspective.sources.length > 0}
+				{#if perspective.sources && perspective.sources.length > 0 && !hasCitations(perspective.text)}
 					<div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
 						{#each perspective.sources as source, idx}
 							<a

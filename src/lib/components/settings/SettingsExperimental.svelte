@@ -86,8 +86,8 @@ function toggleChaosIndex() {
 		</p>
 	</div>
 
-	<!-- Disable Category Swipe (Mobile Only) -->
-	<div class="rounded-lg border border-gray-200 p-4 dark:border-gray-700 md:hidden">
+	<!-- Disable Category Swipe -->
+	<div class="rounded-lg border border-gray-200 p-4 dark:border-gray-700">
 		<div class="mb-2 flex items-center justify-between">
 			<label for="disable-category-swipe" class="text-sm font-medium text-gray-700 dark:text-gray-300">
 				{s('settings.experimental.disableCategorySwipe.label') || 'Disable horizontal category swiping'}

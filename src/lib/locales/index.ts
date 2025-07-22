@@ -8,7 +8,8 @@ import ja from "./ja.json";
 import nl from "./nl.json";
 import pt from "./pt.json";
 import uk from "./uk.json";
-import zh from "./zh.json";
+import zhHans from "./zh-Hans.json";
+import zhHant from "./zh-Hant.json";
 
 export default {
   de,
@@ -21,5 +22,6 @@ export default {
   nl,
   pt,
   uk,
-  zh,
+  "zh-Hans": zhHans,
+  "zh-Hant": zhHant,
 } as const;

@@ -5,14 +5,26 @@ import { experimental } from "$lib/stores/experimental.svelte";
 interface TouchState {
   startX: number;
   startY: number;
+  startTime: number;
   startedOnScrollable: boolean;
+  isTracking: boolean;
+  lastX: number;
+  lastY: number;
+  consistentDirectionTime: number;
+  initialDirection: 'left' | 'right' | 'none';
 }
 
 export class CategorySwipeHandler {
   private touchState: TouchState = {
     startX: 0,
     startY: 0,
+    startTime: 0,
     startedOnScrollable: false,
+    isTracking: false,
+    lastX: 0,
+    lastY: 0,
+    consistentDirectionTime: 0,
+    initialDirection: 'none',
   };
 
   private categories: Category[] = [];
@@ -22,6 +34,7 @@ export class CategorySwipeHandler {
   constructor() {
     // Bind methods to preserve 'this' context
     this.handleTouchStart = this.handleTouchStart.bind(this);
+    this.handleTouchMove = this.handleTouchMove.bind(this);
     this.handleTouchEnd = this.handleTouchEnd.bind(this);
   }
 
@@ -51,10 +64,6 @@ export class CategorySwipeHandler {
     return isScrollable ? parent : this.findScrollableParent(parent);
   }
 
-  private isMobileDevice(): boolean {
-    return browser && window.innerWidth <= 768;
-  }
-
   private hasTextSelection(): boolean {
     const selection = window.getSelection();
     return (
@@ -70,6 +79,30 @@ export class CategorySwipeHandler {
       categoryTabs !== null &&
       (categoryTabs.contains(target) || categoryTabs === target)
     );
+  }
+
+  private isTouchOnInteractiveElement(target: Element): boolean {
+    // Check if the touch is on or within interactive elements that should not trigger swipe
+    const interactiveSelectors = [
+      '.citation-number',  // Citation numbers
+      '.citation-sources', // Citation source favicons
+      'button',           // Any button
+      'a',               // Any link
+      'input',           // Any input
+      'textarea',        // Any textarea
+      'select',          // Any select
+      '[role="button"]', // Elements with button role
+      '[tabindex="0"]'   // Elements that are keyboard focusable (like citations)
+    ];
+    
+    // Check if target matches any interactive selector
+    for (const selector of interactiveSelectors) {
+      if (target.matches(selector) || target.closest(selector)) {
+        return true;
+      }
+    }
+    
+    return false;
   }
 
   private changeToCategory(direction: "next" | "previous"): void {
@@ -109,25 +142,98 @@ export class CategorySwipeHandler {
   }
 
   public handleTouchStart(event: TouchEvent): void {
-    if (!this.isMobileDevice()) return;
     
     // Check if swipe is disabled in experimental settings
     if (experimental.disableCategorySwipe) return;
 
-    this.touchState.startX = event.changedTouches[0].screenX;
-    this.touchState.startY = event.changedTouches[0].screenY;
+    const target = event.target as Element;
+    
+    // Don't track if touch started on an interactive element
+    if (this.isTouchOnInteractiveElement(target)) {
+      return;
+    }
+
+    const touch = event.changedTouches[0];
+    this.touchState.startX = touch.screenX;
+    this.touchState.startY = touch.screenY;
+    this.touchState.startTime = Date.now();
+    this.touchState.lastX = touch.screenX;
+    this.touchState.lastY = touch.screenY;
+    this.touchState.isTracking = true;
+    this.touchState.consistentDirectionTime = 0;
+    this.touchState.initialDirection = 'none';
 
     // Check if touch started on a scrollable element
-    const target = event.target as Element;
     const scrollableParent = this.findScrollableParent(target);
     this.touchState.startedOnScrollable = scrollableParent !== null;
+
+  }
+
+  public handleTouchMove(event: TouchEvent): void {
+    // Check if swipe is disabled in experimental settings
+    if (experimental.disableCategorySwipe) return;
+    
+    if (!this.touchState.isTracking) return;
+
+    const touch = event.changedTouches[0];
+    const currentX = touch.screenX;
+    const currentY = touch.screenY;
+    
+    // Calculate movement from start
+    const deltaXFromStart = this.touchState.startX - currentX;
+    const deltaYFromStart = this.touchState.startY - currentY;
+    
+    // Calculate movement from last position
+    const deltaXFromLast = this.touchState.lastX - currentX;
+    
+    // Require very horizontal movement (angle must be within 20 degrees of horizontal)
+    const angle = Math.abs(Math.atan2(deltaYFromStart, deltaXFromStart) * 180 / Math.PI);
+    const isHorizontalEnough = angle < 20 || angle > 160;
+    
+    if (!isHorizontalEnough) {
+      // Not horizontal enough, stop tracking
+      this.touchState.isTracking = false;
+      return;
+    }
+    
+    // Determine current direction
+    let currentDirection: 'left' | 'right' | 'none' = 'none';
+    if (Math.abs(deltaXFromLast) > 2) { // Only count significant movement
+      currentDirection = deltaXFromLast > 0 ? 'right' : 'left';
+    }
+    
+    // Set initial direction on first significant movement
+    if (this.touchState.initialDirection === 'none' && currentDirection !== 'none') {
+      this.touchState.initialDirection = currentDirection;
+      this.touchState.consistentDirectionTime = Date.now();
+    }
+    
+    // Check if direction is consistent with initial direction
+    if (currentDirection !== 'none' && currentDirection === this.touchState.initialDirection) {
+      // Direction is consistent, continue tracking
+    } else if (currentDirection !== 'none' && currentDirection !== this.touchState.initialDirection) {
+      // Direction changed, stop tracking
+      this.touchState.isTracking = false;
+      return;
+    }
+    
+    this.touchState.lastX = currentX;
+    this.touchState.lastY = currentY;
   }
 
   public handleTouchEnd(event: TouchEvent): void {
-    if (!this.isMobileDevice()) return;
     
     // Check if swipe is disabled in experimental settings
     if (experimental.disableCategorySwipe) return;
+
+    // Reset tracking state
+    const wasTracking = this.touchState.isTracking;
+    this.touchState.isTracking = false;
+
+    // Don't proceed if we weren't tracking a valid swipe
+    if (!wasTracking) {
+      return;
+    }
 
     // Check if there's text selection
     if (this.hasTextSelection()) {
@@ -145,26 +251,35 @@ export class CategorySwipeHandler {
       return;
     }
 
-    const touchEndX = event.changedTouches[0].screenX;
-    const touchEndY = event.changedTouches[0].screenY;
-    const deltaX = this.touchState.startX - touchEndX;
-    const deltaY = this.touchState.startY - touchEndY;
+    const currentTime = Date.now();
+    const swipeDuration = currentTime - this.touchState.startTime;
+    const directionConsistentDuration = currentTime - this.touchState.consistentDirectionTime;
 
-    // Require horizontal movement to be at least twice the vertical movement
-    // This makes accidental swipes less likely
-    if (Math.abs(deltaX) < Math.abs(deltaY) * 2) {
+    // Require minimum time in consistent direction (800ms)
+    if (directionConsistentDuration < 800) {
       return;
     }
 
-    // Only proceed if swipe distance is significant enough
-    if (Math.abs(deltaX) > 50) {
-      if (deltaX > 0) {
-        // Swiped left, go to next category
-        this.changeToCategory("next");
-      } else {
-        // Swiped right, go to previous category
-        this.changeToCategory("previous");
-      }
+    // Require total swipe to not be too fast (prevent accidental quick taps)
+    if (swipeDuration < 300) {
+      return;
+    }
+
+    const touchEndX = event.changedTouches[0].screenX;
+    const deltaX = this.touchState.startX - touchEndX;
+
+    // Require significant horizontal distance (100px minimum)
+    if (Math.abs(deltaX) < 100) {
+      return;
+    }
+
+    // Trigger category change based on initial direction
+    if (this.touchState.initialDirection === 'right') {
+      // Swiped left, go to next category
+      this.changeToCategory("next");
+    } else if (this.touchState.initialDirection === 'left') {
+      // Swiped right, go to previous category
+      this.changeToCategory("previous");
     }
   }
 }
