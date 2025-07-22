@@ -1136,6 +1136,51 @@
       "https://www.waikatotimes.co.nz/rss"
     ]
   },
+  "Palestine": {
+    "category_type": "country",
+    "source_language": "en",
+    "display_names": {
+      "en": "Palestine",
+      "de": "Palästina",
+      "fr": "Palestine",
+      "es": "Palestina",
+      "pt": "Palestina",
+      "it": "Palestina",
+      "nl": "Palestina",
+      "sv": "Palestina",
+      "zh": "巴勒斯坦",
+      "ja": "パレスチナ",
+      "hi": "फिलिस्तीन",
+      "uk": "Палестина"
+    },
+    "feeds": [
+      "https://english.palinfo.com/feed/",
+      "https://english.pnn.ps/feed",
+      "https://feeds.alwatanvoice.com/ar/palestine.xml",
+      "https://israelpalestinenews.org/feed/",
+      "https://mondoweiss.net/feed/",
+      "https://qudsnen.co/feed/",
+      "https://shehabnews.com/rss/category/all",
+      "https://theintercept.com/feed/",
+      "https://ultrapal.ultrasawt.com/rss.xml",
+      "https://wearenotnumbers.org/feed/",
+      "https://www.972mag.com/topic/gaza/feed/",
+      "https://www.aljazeera.com/xml/rss/all.xml",
+      "https://www.alquds.com/en/rss",
+      "https://www.france24.com/en/tag/israel-hamas-war/rss",
+      "https://www.middleeasteye.net/rss",
+      "https://www.newarab.com/rss",
+      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/news-event/israel-hamas-gaza/rss.xml",
+      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/organization/the-palestinian-authority/rss.xml",
+      "https://www.palestine-studies.org/en/rss.xml",
+      "https://www.palestinechronicle.com/feed/",
+      "https://www.reddit.com/r/Gaza.rss",
+      "https://www.reddit.com/r/Palestine.rss",
+      "https://www.theguardian.com/world/gaza/rss",
+      "https://www.unrwa.org/rss.xml",
+      "https://www.watanserb.com/en/tag/gaza/feed/"
+    ]
+  },
   "Poland": {
     "category_type": "country",
     "source_language": "pl",
@@ -2791,51 +2836,6 @@
       "https://www.thenews.com.pk/rss/1/1",
       "https://www.thenews.com.pk/rss/1/2",
       "https://www.thenews.com.pk/rss/1/3"
-    ]
-  },
-  "Palestine": {
-    "category_type": "country",
-    "source_language": "en",
-    "display_names": {
-      "en": "Palestine",
-      "de": "Palästina",
-      "fr": "Palestine",
-      "es": "Palestina",
-      "pt": "Palestina",
-      "it": "Palestina",
-      "nl": "Palestina",
-      "sv": "Palestina",
-      "zh": "巴勒斯坦",
-      "ja": "パレスチナ",
-      "hi": "फिलिस्तीन",
-      "uk": "Палестина"
-    },
-    "feeds": [
-      "https://www.aljazeera.com/xml/rss/all.xml",
-      "https://qudsnen.co/feed/",
-      "https://www.theguardian.com/world/gaza/rss",
-      "https://www.palestinechronicle.com/feed/",
-      "https://israelpalestinenews.org/feed/",
-      "https://english.palinfo.com/feed/",
-      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/news-event/israel-hamas-gaza/rss.xml",
-      "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/topic/organization/the-palestinian-authority/rss.xml",
-      "https://www.middleeasteye.net/rss",
-      "https://www.reddit.com/r/Palestine.rss",
-      "https://www.reddit.com/r/Gaza.rss",
-      "https://www.france24.com/en/tag/israel-hamas-war/rss",
-      "https://www.palestine-studies.org/en/rss.xml",
-      "https://mondoweiss.net/feed/",
-      "https://www.972mag.com/topic/gaza/feed/",
-      "https://wearenotnumbers.org/feed/",
-      "https://www.unrwa.org/rss.xml",
-      "https://www.watanserb.com/en/tag/gaza/feed/",
-      "https://www.alquds.com/en/rss",
-      "https://english.pnn.ps/feed",
-      "https://theintercept.com/feed/",
-      "https://www.newarab.com/rss",
-      "https://ultrapal.ultrasawt.com/rss.xml",
-      "https://feeds.alwatanvoice.com/ar/palestine.xml",
-      "https://shehabnews.com/rss/category/all"
     ]
   }
 }
