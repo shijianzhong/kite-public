@@ -1471,7 +1471,9 @@
       "https://www.yonhapnewstv.co.kr/category/news/local/feed/",
       "https://www.yonhapnewstv.co.kr/category/news/politics/feed/",
       "https://www.yonhapnewstv.co.kr/category/news/society/feed/",
-      "https://www.yonhapnewstv.co.kr/category/news/sports/feed/"
+      "https://www.yonhapnewstv.co.kr/category/news/sports/feed/",
+      "https://rss.etnews.com/Section901.xml",
+      "https://rss.etnews.com/Section902.xml"
     ]
   },
   "Spain": {
