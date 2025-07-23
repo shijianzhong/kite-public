@@ -4,6 +4,15 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.ts'
+      - '**.svelte'
+      - '**.css'
+      - '**.json'
+      - '**.yml'
+      - '**.yaml'
 
 jobs:
   format:
