@@ -1281,6 +1281,52 @@
       "https://www.sapo.pt/rss"
     ]
   },
+  "Russia": {
+    "category_type": "country", 
+    "source_language": "ru",
+    "display_names": {
+      "en": "Russia",
+      "de": "Russland",
+      "fr": "Russie", 
+      "es": "Rusia",
+      "pt": "Rússia",
+      "it": "Russia",
+      "nl": "Rusland",
+      "zh-Hans": "俄罗斯",
+      "zh-Hant": "俄羅斯", 
+      "ja": "ロシア",
+      "hi": "रूस",
+      "uk": "Росія",
+      "ru": "Россия"
+    },
+    "feeds": [
+      "https://meduza.io/rss/all",
+      "https://tvrain.tv/export/rss/all.xml", 
+      "https://novayagazeta.eu/feed/rss",
+      "https://novayagazeta.ru/feed/rss",
+      "https://feeds.bbci.co.uk/russian/rss.xml",
+      "https://rss.dw.com/rdf/rss-ru-all",
+      "https://www.svoboda.org/api/z-pqpil-vomx-tper-ipp",
+      "https://zona.media/rss",
+      "https://paperpaper.io/feed/",
+      "https://theins.ru/api/rss/ru/default",
+      "https://www.currenttime.tv/api/zgbip_l-vomx-tpe-v_py",
+      "https://habr.com/ru/rss/news/",
+      "https://vc.ru/rss",
+      "https://dtf.ru/rss",
+      "https://daily.afisha.ru/rss/",
+      "https://secretmag.ru/exports/rss.xml",
+      "https://www.sova-center.ru/search/?rss=1&lg=1",
+      "https://www.dekoder.org/rss_ru_all.xml",
+      "https://istories.media/rss/all.xml",
+      "https://semnasem.org/rss/default.xml",
+      "https://sota.vision/feed/",
+      "https://holod.media/feed",
+      "https://www.sibreal.org/api/",
+      "https://rtvi.com/rss",
+      "https://www.proekt.media/feed/"
+    ]
+  },
   "Romania": {
     "category_type": "country",
     "source_language": "ro",
