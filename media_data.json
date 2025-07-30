@@ -28,7 +28,7 @@
       "france24.com"
     ],
     "description": "France 24 is a French international news channel that broadcasts in English and French. It provides news coverage across various categories including politics, business, sports, and international affairs.",
-    "owner": "French Ministry of Europe and Foreign Affairs",
+    "owner": "France Medias Monde",
     "typology": "State Funded Media"
   },
   {
@@ -1595,13 +1595,18 @@
   },
   {
     "country": "France",
-    "organization": "Le Monde",
+    "organization": "Groupe Le Monde",
     "domains": [
-      "lemonde.fr"
+      "lemonde.fr",
+      "telerama.fr",
+      "lavie.fr",
+      "huffingtonpost.fr",
+      "nouvelobs.com",
+      "monde-diplomatique.fr"
     ],
     "description": "Le Monde is a French daily afternoon newspaper founded after WWII, known for its center-left editorial stance and comprehensive coverage of international, national, economic, and cultural news.",
-    "owner": "Le Nouveau Monde (Matthieu Pigasse and Daniel Kretinsky) (26.66%), NJJ Presse (Xavier Niel) (26.66%), Berlys Media (Madison Cox) (26.66%), Prisa (20%)",
-    "typology": "Private Media"
+    "owner": "Le Monde is a subsidiary of the Le Monde Group, which also publishes L'Obs, Télérama, Le Monde diplomatique, La Vie, and Courrier international. Le Monde Group is held by: the holding company Le Monde Libre up to 75%, 
+and by the Pôle d'Independance du Monde up to 25%. Le Monde Libre is owned by Le Nouveau Monde (Matthieu Pigasse and Daniel Kretinsky) (26.66%), NJJ Presse (Xavier Niel) (26.66%), Berlys Media (Madison Cox) (26.66%), Prisa (20%)","typology": "Private Media"
   },
   {
     "country": "United States",
@@ -3869,7 +3874,9 @@
   {
     "country": "Finland",
     "organization": "Yleisradio (YLE)",
-    "domains": ["yle.fi"],
+    "domains": [
+      "yle.fi"
+    ],
     "description": "Yleisradio Oy (YLE) is Finland's national public broadcasting company, providing television, radio, and digital content services. It is Finland's largest media company and is funded primarily through a broadcasting tax (YLE tax). YLE operates several television and radio channels in Finnish, Swedish, and Sami languages, serving Finland's multilingual population.",
     "owner": "Finnish Government",
     "typology": "State Funded Media"
@@ -3877,7 +3884,9 @@
   {
     "country": "Finland",
     "organization": "Helsingin Sanomat",
-    "domains": ["hs.fi"],
+    "domains": [
+      "hs.fi"
+    ],
     "description": "Helsingin Sanomat is Finland's largest subscription newspaper and the Nordic countries' largest daily newspaper. Founded in 1889, it is based in Helsinki and covers national and international news, politics, business, culture, and sports. The newspaper maintains Finland's highest circulation and is considered the country's newspaper of record.",
     "owner": "Sanoma Corporation",
     "typology": "Private Media"
@@ -3885,7 +3894,9 @@
   {
     "country": "Finland",
     "organization": "Ilta-Sanomat",
-    "domains": ["is.fi"],
+    "domains": [
+      "is.fi"
+    ],
     "description": "Ilta-Sanomat is Finland's largest tabloid newspaper, published by Sanoma. Founded in 1932, it is an afternoon and evening paper that covers general news, entertainment, sports, and celebrity content. Despite its tabloid format, it also provides substantial coverage of domestic and international news.",
     "owner": "Sanoma Corporation",
     "typology": "Private Media"
@@ -3893,7 +3904,9 @@
   {
     "country": "Finland",
     "organization": "Suomen Kuvalehti",
-    "domains": ["suomenkuvalehti.fi"],
+    "domains": [
+      "suomenkuvalehti.fi"
+    ],
     "description": "Suomen Kuvalehti is Finland's leading weekly news magazine, established in 1916. It provides in-depth analysis and coverage of politics, society, culture, and current affairs. The magazine is known for its investigative journalism and comprehensive feature articles about Finnish and international events.",
     "owner": "Otavamedia",
     "typology": "Private Media"
@@ -3901,7 +3914,9 @@
   {
     "country": "Finland",
     "organization": "MTV Uutiset",
-    "domains": ["mtvuutiset.fi"],
+    "domains": [
+      "mtvuutiset.fi"
+    ],
     "description": "MTV Uutiset is the news division of MTV (Mainos-TV), Finland's first commercial television channel. It provides 24-hour news coverage through its website and television broadcasts, covering domestic and international news, sports, weather, and current affairs. MTV Uutiset is one of Finland's major commercial news providers.",
     "owner": "MTV Oy (Telia Company)",
     "typology": "Private Media"
@@ -3909,9 +3924,272 @@
   {
     "country": "Finland",
     "organization": "Kauppalehti",
-    "domains": ["kauppalehti.fi"],
+    "domains": [
+      "kauppalehti.fi"
+    ],
     "description": "Kauppalehti is Finland's leading business and financial newspaper, established in 1898. It provides comprehensive coverage of business news, financial markets, economics, and corporate developments in Finland and internationally. The publication serves as the primary source of business news for Finnish professionals and investors.",
     "owner": "Alma Media Corporation",
     "typology": "Private Media"
-  }
+  },
+  {
+    "country": "France",
+    "organization": "RMC Media",
+    "domains": [
+      "bfmtv.com",
+      "bfm.com"
+    ],
+    "description": "RMC BFM, initially NextRadio, NextRadioTV, and then Altice Média, is a French media group, a subsidiary of the French shipping company CMA CGM through its subsidiary CMA Media.",
+    "owner": "CMA Media (CMA CGM)",
+    "typology": "Private Media"
+  },
+
+     {
+    "country": "France",
+    "organization": "CMA Media",
+    "domains": [
+      "laprovence.com",
+      "latribune.com",
+      "corsematin.com",
+      "brut.media"
+    ],
+    "description": "CMA Media est un groupe de médias français, filiale de l'armateur français CMA CGM.",
+    "owner": "CMA Media (CMA CGM)",
+    "typology": "Private Media"
+  },
+
+       {
+    "country": "France",
+    "organization": "Groupe Figaro",
+    "domains": [
+      "lefigaro.fr",
+      "meteoconsult.fr",
+      "journaldunet.com",
+      "linternaute.com",
+      "journaldesfemmes.fr",
+      "ariase.com",
+      "commentcamarche.com",
+      "phonandroid.com",
+      "commentcamarche.net",
+      "leparticulier.fr",
+      "gala.fr",
+      "tvmag.com"
+    ],
+    "description": "The Figaro Group, previously Dassault Media, is a French media company founded in 1826 that owns Le Figaro and operates in various sectors. Owned by the Dassault family,",
+    "owner": "Groupe Dassault",
+    "typology": "Private Media"
+  },
+
+  {
+    "country": "France",
+    "organization": "L'Express",
+    "domains": [
+      "lexpress.fr"
+    ],
+    "description": "L'Express is a well-established French newspaper with a centrist political leaning, known for its comprehensive coverage of European affairs, science, health, economics, and politics. It provides in-depth analysis and reliable information, earning a reputation for quality journalism among its influential readership.",
+    "owner": "Alain Weill",
+    "typology": "Private Media"
+  },
+
+ {
+    "country": "France",
+    "organization": "France Télévisions",
+    "domains": [
+      "france2.fr",
+      "france.tv",
+      "france3.fr",
+      "france4.fr",
+      "france5.fr",
+      "franceinfo.fr",
+      "francetvinfo.fr"
+
+    ],
+    "description": "France Télévisions is the French public television broadcaster. It operates several nationwide channels including France 2 (the primary channel), France 3 (focusing on regional content).",
+    "owner": "France Télévisions",
+    "typology": "State Funded Media"
+  },
+
+    {
+    "country": "France",
+    "organization": "Groupe Sud Ouest",
+    "domains": [
+      "sudouest.fr",
+      "charentelibre.fr",
+      "dordognelibre.fr",
+      "larepubliquedespyrenees.fr"
+    ],
+    "description": "The Sud Ouest Group (GSO) is a major regional press publisher based in Bordeaux, covering southwestern France with its flagship newspaper Sud Ouest.",
+    "owner": "Lemoîne family (80%), journalists and staff each own 10%.",
+    "typology": "Private Media"
+  },
+
+   {
+    "country": "France",
+    "organization": "Groupe Les Échos - Le Parisien",
+    "domains": [
+      "lesechos.fr",
+      "leparisien.fr",
+      "investir.fr",
+      "radioclassique.fr",
+      "lopinion.fr",
+      "investir.fr",
+      "historia.fr",
+      "boursier.com",
+      "connaissancedesarts.com",
+      "mezzo.tv"
+
+    ],
+    "description": "The Groupe Les Échos-Le Parisien is a French media conglomerate owned by LVMH, specializing in newspapers, magazines, radio, and digital platforms. It includes notable publications like Les Échos, Le Parisien, and Connaissance des Arts, along with radio stations and online portals.",
+    "owner": "Bernard Arnaud",
+    "typology": "Private Media"
+  },
+
+     {
+    "country": "France",
+    "organization": "Groupe Canal+",
+    "domains": [
+      "cnews.fr",
+      "canalplus.fr",
+      "canalplus.com"  ],
+    "description": "The Canal+ group is a French multinational company active in the media and telecommunications sector, founded in 1984 and controlled by the Bolloré group since 2012.",
+    "owner": "Vincent Bolloré via Vivendi",
+    "typology": "Private Media"
+  },
+
+       {
+    "country": "France",
+    "organization": "Prisma Media",
+    "domains": [
+      "voici.fr",
+      "capital.fr",
+      "femmeactuelle.fr",
+      "flowmagazine.fr",
+      "geo.fr",
+      "fourchette-et-bikini.fr",
+      "harpersbazaar.fr",
+      "hbrfrance.fr",
+      "ideat.fr",
+      "cotemaison.fr",
+      "meteocity.com",
+      "milkdecoration.com",
+      "nationalgeographic.fr",
+      "caminteresse.fr",
+      "croq-kilos.com",
+      "cuisineaz.com",
+      "cuisineactuelle.fr",
+      "deco.fr",
+      "passeportsante.net",
+      "programme.tv",
+      "thegoodlife.fr",
+      "turbo.fr",
+      "cesoirtv.com"
+    ],
+    "description": "Prisma Media is a French media group specializing in popular press, covering diverse fields such as news, fashion, lifestyle, and leisure. It owns several iconic brands, including Femme Actuelle, Voici, Capital, and Nationalgeopgraphic France.",
+    "owner": "Vincent Bolloré via Vivendi",
+    "typology": "Private Media"
+  },
+         {
+    "country": "France",
+    "organization": "Lagardère Live",
+    "domains": [
+      "europe1.fr",
+      "europe2.fr",
+      "lejdd.fr",
+      "rfm.fr",
+      "elle.fr",
+      "lejdnews.fr"
+    ],
+    "description": "The Canal+ group is a French multinational company active in the media and telecommunications sector, founded in 1984 and controlled by the Bolloré group since 2012.",
+    "owner": "Vincent Bolloré via Vivendi 63%, Arnaud Lagardère 11%",
+    "typology": "Private Media"
+  },
+
+       {
+    "country": "France",
+    "organization": "Artemis",
+    "domains": [
+      "lepoint.fr",
+      "pointdevue.fr"
+    ],
+    "description": "Le Point is a magazine focused on political, economic, and cultural news, known for its in-depth analyses and debates. It has a traditionally right-leaning editorial line, with a conservative and liberal approach to various societal and economic issues. Point de Vue is a people newspaper.",
+    "owner": "Famille Pinault via Arttemis",
+    "typology": "Private Media"
+  },
+
+         {
+    "country": "France",
+    "organization": "Groupe Telegramme",
+    "domains": [
+      "letelegramme.fr"
+    ],
+    "description": "Launched in 1944, Le Télégramme is, in 2023-2024, the fourth largest French regional daily",
+    "owner": "Famille Coudurier",
+    "typology": "Private Media"
+  },
+
+       {
+    "country": "France",
+    "organization": "Groupe Sipa Ouest France",
+    "domains": [
+      "ouest-france.fr",
+      "chasse-maree.com",
+      "francelive.fr",
+      "maville.com",
+      "actu.fr",
+      "publihebdos.com"],
+    "description": "Ouest-France is generally considered a regional daily with a centrist editorial line, rooted in the principles of humanism, Christian democracy, and social liberalism.",
+    "owner": "The group Ouest-France is the property of the Association pour le soutien des principes de la démocratie humaniste (ASPDH), which underscores its commitment to these values.",
+    "typology": "Private Media"
+  },
+
+       {
+    "country": "France",
+    "organization": "20 Minutes (France)",
+    "domains": [
+      "20minutes.fr"],
+    "description": "20 Minutes is a general news media outlet distributed in France, Spain, and Switzerland. The French website is published by the company 20 Minutes France.",
+    "owner": "20 Minutes is currently co-owned by the SIPA - Ouest-France group (50%, through its subsidiaries Spir Communication and Sofiouest, which each hold a quarter of the capital)[43] and by the Rossel Group (50%).",
+    "typology": "Private Media"
+  },
+
+  {
+    "country": "France",
+    "organization": "TV5 Monde",
+    "domains": [
+      "tv5monde.com"
+    ],
+    "description": "TV5 Monde, originally TV5, is an international French-language general-interest television channel created on January 2, 1984. Based in Paris, it is jointly owned by public broadcasting companies in France, Belgium, Switzerland, Canada, Quebec, and the Principality of Monaco.",
+    "owner": "France Télévisions 46,42 %, France Médias Monde 11,97 %, RTS (SRG SSR) 10,53 %, RTBF 10,53 %, Société Radio-Canada 6,32 %, TV Monaco 5,26 %, Télé-Québec 4,21 %, Arte France 3,12 %, INA 1,65 %",
+    "typology": "State Funded Media"
+  },
+
+  {
+    "country": "France",
+    "organization": "RFI",
+    "domains": [
+      "rfi.fr"
+    ],
+    "description": "Established on January 6, 1975, Radio France Internationale (RFI) is a French public international radio station that reaches over 150 countries across five continents and, with 59.5 million listeners in 2022, is one of the world's most listened-to international radio stations.",
+    "owner": "France Médias Monde",
+    "typology": "State Funded Media"
+  },
+
+  {
+    "country": "France",
+    "organization": "Radio France",
+    "domains": [
+    "radiofrance.fr",
+"franceinter.fr",
+"franceinfo.fr",
+"francebleu.fr",
+"franceculture.fr",
+"francemusique.fr",
+"fip.fr",
+"mouv.fr"
+    ],
+    "description": "Radio France is a French public radio group, wholly owned by the state, that operates numerous national and local stations, four musical ensembles, and a record label, and is committed to providing independent, pluralistic, and high-quality public service broadcasting.",
+    "owner": "Radio France",
+    "typology": "State Funded Media"
+  },
+
+
 ]
