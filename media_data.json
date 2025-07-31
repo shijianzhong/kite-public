@@ -1605,8 +1605,8 @@
       "monde-diplomatique.fr"
     ],
     "description": "Le Monde is a French daily afternoon newspaper founded after WWII, known for its center-left editorial stance and comprehensive coverage of international, national, economic, and cultural news.",
-    "owner": "Le Monde is a subsidiary of the Le Monde Group, which also publishes L'Obs, Télérama, Le Monde diplomatique, La Vie, and Courrier international. Le Monde Group is held by: the holding company Le Monde Libre up to 75%, 
-and by the Pôle d'Independance du Monde up to 25%. Le Monde Libre is owned by Le Nouveau Monde (Matthieu Pigasse and Daniel Kretinsky) (26.66%), NJJ Presse (Xavier Niel) (26.66%), Berlys Media (Madison Cox) (26.66%), Prisa (20%)","typology": "Private Media"
+    "owner": "Le Monde Group is held by: the holding company Le Monde Libre up to 75%, and by the Pôle d'Independance du Monde up to 25%. Le Monde Libre is owned by Le Nouveau Monde (Matthieu Pigasse and Daniel Kretinsky) (26.66%), NJJ Presse (Xavier Niel) (26.66%), Berlys Media (Madison Cox) (26.66%), Prisa (20%)",
+    "typology": "Private Media"
   },
   {
     "country": "United States",
@@ -4189,7 +4189,6 @@ and by the Pôle d'Independance du Monde up to 25%. Le Monde Libre is owned by L
     "description": "Radio France is a French public radio group, wholly owned by the state, that operates numerous national and local stations, four musical ensembles, and a record label, and is committed to providing independent, pluralistic, and high-quality public service broadcasting.",
     "owner": "Radio France",
     "typology": "State Funded Media"
-  },
-
+  }
 
 ]
