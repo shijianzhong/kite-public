@@ -3942,8 +3942,7 @@
     "owner": "CMA Media (CMA CGM)",
     "typology": "Private Media"
   },
-
-     {
+  {
     "country": "France",
     "organization": "CMA Media",
     "domains": [
@@ -3956,8 +3955,7 @@
     "owner": "CMA Media (CMA CGM)",
     "typology": "Private Media"
   },
-
-       {
+  {
     "country": "France",
     "organization": "Groupe Figaro",
     "domains": [
@@ -3978,7 +3976,6 @@
     "owner": "Groupe Dassault",
     "typology": "Private Media"
   },
-
   {
     "country": "France",
     "organization": "L'Express",
@@ -3989,8 +3986,7 @@
     "owner": "Alain Weill",
     "typology": "Private Media"
   },
-
- {
+  {
     "country": "France",
     "organization": "France Télévisions",
     "domains": [
@@ -4001,14 +3997,12 @@
       "france5.fr",
       "franceinfo.fr",
       "francetvinfo.fr"
-
     ],
     "description": "France Télévisions is the French public television broadcaster. It operates several nationwide channels including France 2 (the primary channel), France 3 (focusing on regional content).",
     "owner": "France Télévisions",
     "typology": "State Funded Media"
   },
-
-    {
+  {
     "country": "France",
     "organization": "Groupe Sud Ouest",
     "domains": [
@@ -4021,8 +4015,7 @@
     "owner": "Lemoîne family (80%), journalists and staff each own 10%.",
     "typology": "Private Media"
   },
-
-   {
+  {
     "country": "France",
     "organization": "Groupe Les Échos - Le Parisien",
     "domains": [
@@ -4036,26 +4029,24 @@
       "boursier.com",
       "connaissancedesarts.com",
       "mezzo.tv"
-
     ],
     "description": "The Groupe Les Échos-Le Parisien is a French media conglomerate owned by LVMH, specializing in newspapers, magazines, radio, and digital platforms. It includes notable publications like Les Échos, Le Parisien, and Connaissance des Arts, along with radio stations and online portals.",
     "owner": "Bernard Arnaud",
     "typology": "Private Media"
   },
-
-     {
+  {
     "country": "France",
     "organization": "Groupe Canal+",
     "domains": [
       "cnews.fr",
       "canalplus.fr",
-      "canalplus.com"  ],
+      "canalplus.com"
+    ],
     "description": "The Canal+ group is a French multinational company active in the media and telecommunications sector, founded in 1984 and controlled by the Bolloré group since 2012.",
     "owner": "Vincent Bolloré via Vivendi",
     "typology": "Private Media"
   },
-
-       {
+  {
     "country": "France",
     "organization": "Prisma Media",
     "domains": [
@@ -4087,7 +4078,7 @@
     "owner": "Vincent Bolloré via Vivendi",
     "typology": "Private Media"
   },
-         {
+  {
     "country": "France",
     "organization": "Lagardère Live",
     "domains": [
@@ -4102,8 +4093,7 @@
     "owner": "Vincent Bolloré via Vivendi 63%, Arnaud Lagardère 11%",
     "typology": "Private Media"
   },
-
-       {
+  {
     "country": "France",
     "organization": "Artemis",
     "domains": [
@@ -4114,8 +4104,7 @@
     "owner": "Famille Pinault via Arttemis",
     "typology": "Private Media"
   },
-
-         {
+  {
     "country": "France",
     "organization": "Groupe Telegramme",
     "domains": [
@@ -4125,8 +4114,7 @@
     "owner": "Famille Coudurier",
     "typology": "Private Media"
   },
-
-       {
+  {
     "country": "France",
     "organization": "Groupe Sipa Ouest France",
     "domains": [
@@ -4135,22 +4123,22 @@
       "francelive.fr",
       "maville.com",
       "actu.fr",
-      "publihebdos.com"],
+      "publihebdos.com"
+    ],
     "description": "Ouest-France is generally considered a regional daily with a centrist editorial line, rooted in the principles of humanism, Christian democracy, and social liberalism.",
     "owner": "The group Ouest-France is the property of the Association pour le soutien des principes de la démocratie humaniste (ASPDH), which underscores its commitment to these values.",
     "typology": "Private Media"
   },
-
-       {
+  {
     "country": "France",
     "organization": "20 Minutes (France)",
     "domains": [
-      "20minutes.fr"],
+      "20minutes.fr"
+    ],
     "description": "20 Minutes is a general news media outlet distributed in France, Spain, and Switzerland. The French website is published by the company 20 Minutes France.",
     "owner": "20 Minutes is currently co-owned by the SIPA - Ouest-France group (50%, through its subsidiaries Spir Communication and Sofiouest, which each hold a quarter of the capital)[43] and by the Rossel Group (50%).",
     "typology": "Private Media"
   },
-
   {
     "country": "France",
     "organization": "TV5 Monde",
@@ -4161,7 +4149,6 @@
     "owner": "France Télévisions 46,42 %, France Médias Monde 11,97 %, RTS (SRG SSR) 10,53 %, RTBF 10,53 %, Société Radio-Canada 6,32 %, TV Monaco 5,26 %, Télé-Québec 4,21 %, Arte France 3,12 %, INA 1,65 %",
     "typology": "State Funded Media"
   },
-
   {
     "country": "France",
     "organization": "RFI",
@@ -4172,23 +4159,21 @@
     "owner": "France Médias Monde",
     "typology": "State Funded Media"
   },
-
   {
     "country": "France",
     "organization": "Radio France",
     "domains": [
-    "radiofrance.fr",
-"franceinter.fr",
-"franceinfo.fr",
-"francebleu.fr",
-"franceculture.fr",
-"francemusique.fr",
-"fip.fr",
-"mouv.fr"
+      "radiofrance.fr",
+      "franceinter.fr",
+      "franceinfo.fr",
+      "francebleu.fr",
+      "franceculture.fr",
+      "francemusique.fr",
+      "fip.fr",
+      "mouv.fr"
     ],
     "description": "Radio France is a French public radio group, wholly owned by the state, that operates numerous national and local stations, four musical ensembles, and a record label, and is committed to providing independent, pluralistic, and high-quality public service broadcasting.",
     "owner": "Radio France",
     "typology": "State Funded Media"
   }
-
 ]
