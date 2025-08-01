@@ -1772,8 +1772,8 @@
       "https://watson.ch/api/2.0/rss/index.xml?tag=Schweiz"
     ]
   },
-  "Taiwan": {
-    "category_type": "country",
+  "China | Taiwan": {
+    "category_type": "region",
     "source_language": "zh-Hant",
     "display_names": {
       "en": "Taiwan",
