@@ -351,6 +351,38 @@
         "text": "विश्व",
         "translationContext": "Display name for the World news category"
     },
+    "category.bitcoin": {
+        "text": "बिटकॉइन",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
+    "category.china": {
+        "text": "चीन",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "ताइवान",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "कोलंबिया",
+        "translationContext": "Display name for the Colombia news category"
+    },
+    "category.czechRepublic": {
+        "text": "चेक गणराज्य",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.finland": {
+        "text": "फिनलैंड",
+        "translationContext": "Display name for the Finland news category"
+    },
+    "category.palestine": {
+        "text": "फिलिस्तीन",
+        "translationContext": "Display name for the Palestine news category"
+    },
+    "category.russia": {
+        "text": "रूस",
+        "translationContext": "Display name for the Russia news category"
+    },
     "citation.commonKnowledge.description": {
         "text": "यह जानकारी सामान्य ज्ञान है जो किसी विशिष्ट समाचार स्रोत से नहीं ली गई है, लेकिन कहानी के संदर्भ और पूर्णता के लिए शामिल की गई है।",
         "translationContext": "Description explaining what common knowledge citations are"
