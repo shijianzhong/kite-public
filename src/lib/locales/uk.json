@@ -351,38 +351,6 @@
         "text": "Світ",
         "translationContext": "Display name for the World news category"
     },
-    "category.bitcoin": {
-        "text": "Біткоїн",
-        "translationContext": "Display name for the Bitcoin news category"
-    },
-    "category.china": {
-        "text": "Китай",
-        "translationContext": "Display name for the China news category"
-    },
-    "category.chinaTaiwan": {
-        "text": "Тайвань",
-        "translationContext": "Display name for the Taiwan news category"
-    },
-    "category.colombia": {
-        "text": "Колумбія",
-        "translationContext": "Display name for the Colombia news category"
-    },
-    "category.czechRepublic": {
-        "text": "Чехія",
-        "translationContext": "Display name for the Czech Republic news category"
-    },
-    "category.finland": {
-        "text": "Фінляндія",
-        "translationContext": "Display name for the Finland news category"
-    },
-    "category.palestine": {
-        "text": "Палестина",
-        "translationContext": "Display name for the Palestine news category"
-    },
-    "category.russia": {
-        "text": "Росія",
-        "translationContext": "Display name for the Russia news category"
-    },
     "citation.commonKnowledge.description": {
         "text": "Ця інформація є загальновідомою, не взята з конкретного джерела новин, але включена для контексту та повноти розповіді.",
         "translationContext": "Description explaining what common knowledge citations are"

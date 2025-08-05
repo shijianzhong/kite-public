@@ -351,38 +351,6 @@
         "text": "Monde",
         "translationContext": "Display name for the World news category"
     },
-    "category.bitcoin": {
-        "text": "Bitcoin",
-        "translationContext": "Display name for the Bitcoin news category"
-    },
-    "category.china": {
-        "text": "Chine",
-        "translationContext": "Display name for the China news category"
-    },
-    "category.chinaTaiwan": {
-        "text": "Taïwan",
-        "translationContext": "Display name for the Taiwan news category"
-    },
-    "category.colombia": {
-        "text": "Colombie",
-        "translationContext": "Display name for the Colombia news category"
-    },
-    "category.czechRepublic": {
-        "text": "République tchèque",
-        "translationContext": "Display name for the Czech Republic news category"
-    },
-    "category.finland": {
-        "text": "Finlande",
-        "translationContext": "Display name for the Finland news category"
-    },
-    "category.palestine": {
-        "text": "Palestine",
-        "translationContext": "Display name for the Palestine news category"
-    },
-    "category.russia": {
-        "text": "Russie",
-        "translationContext": "Display name for the Russia news category"
-    },
     "citation.commonKnowledge.description": {
         "text": "Ces informations relèvent du savoir commun et ne proviennent pas d'une source d'information spécifique, mais sont incluses pour le contexte et l'exhaustivité de l'histoire.",
         "translationContext": "Description explaining what common knowledge citations are"

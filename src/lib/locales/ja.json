@@ -351,38 +351,6 @@
         "text": "世界",
         "translationContext": "Display name for the World news category"
     },
-    "category.bitcoin": {
-        "text": "ビットコイン",
-        "translationContext": "Display name for the Bitcoin news category"
-    },
-    "category.china": {
-        "text": "中国",
-        "translationContext": "Display name for the China news category"
-    },
-    "category.chinaTaiwan": {
-        "text": "台湾",
-        "translationContext": "Display name for the Taiwan news category"
-    },
-    "category.colombia": {
-        "text": "コロンビア",
-        "translationContext": "Display name for the Colombia news category"
-    },
-    "category.czechRepublic": {
-        "text": "チェコ共和国",
-        "translationContext": "Display name for the Czech Republic news category"
-    },
-    "category.finland": {
-        "text": "フィンランド",
-        "translationContext": "Display name for the Finland news category"
-    },
-    "category.palestine": {
-        "text": "パレスチナ",
-        "translationContext": "Display name for the Palestine news category"
-    },
-    "category.russia": {
-        "text": "ロシア",
-        "translationContext": "Display name for the Russia news category"
-    },
     "citation.commonKnowledge.description": {
         "text": "この情報は特定のニュースソースから引用したものではなく、一般的な知識として知られている内容です。物語の文脈と完全性を補うために記載されています。",
         "translationContext": "Description explaining what common knowledge citations are"

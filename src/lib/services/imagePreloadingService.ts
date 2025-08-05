@@ -9,6 +9,7 @@ import {
   clearImageCache,
   cancelAllDownloads,
 } from "$lib/utils/imagePreloader";
+import { isMobileDevice } from "$lib/utils/device";
 import { dataService } from "./dataService";
 
 /**
@@ -67,7 +68,7 @@ class ImagePreloadingService {
     }
 
     // Check mobile device
-    if (!this.config.enabledOnMobile && this.isMobileDevice()) {
+    if (!this.config.enabledOnMobile && isMobileDevice()) {
       this.log("info", "📱 Skipping preload: Mobile device detected");
       return false;
     }
@@ -127,7 +128,7 @@ class ImagePreloadingService {
       const startTime = performance.now();
 
       // Only apply timeout on desktop (not mobile)
-      if (!this.isMobileDevice() && this.config.preloadTimeout > 0) {
+      if (!isMobileDevice() && this.config.preloadTimeout > 0) {
         // Create a timeout promise
         const timeoutPromise = new Promise<void>((_, reject) => {
           setTimeout(() => {
@@ -268,23 +269,6 @@ class ImagePreloadingService {
     );
   }
 
-  /**
-   * Check if device is mobile
-   */
-  private isMobileDevice(): boolean {
-    if (!browser) return false;
-
-    const userAgent = navigator.userAgent.toLowerCase();
-    const isMobileUA =
-      /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
-        userAgent,
-      );
-    const isSmallScreen = window.innerWidth <= 768;
-    const isTouchDevice =
-      "ontouchstart" in window || navigator.maxTouchPoints > 0;
-
-    return isMobileUA || (isSmallScreen && isTouchDevice);
-  }
 
   /**
    * Logging utility

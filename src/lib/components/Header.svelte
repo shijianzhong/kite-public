@@ -8,7 +8,7 @@
   import { theme } from "$lib/stores/theme.svelte.js";
   import { timeTravel } from "$lib/stores/timeTravel.svelte.js";
   import ChaosIndex from "./ChaosIndex.svelte";
-  import { IconClock } from "@tabler/icons-svelte";
+  // import { IconClock } from "@tabler/icons-svelte"; // Unused - time travel hidden
 
   // Props
   interface Props {
@@ -272,6 +272,7 @@
         </div>
       {/if}
 
+      <!-- Time Travel button - hidden for now
       <button
         onclick={() => timeTravel.toggle()}
         title={s("header.timeTravel") || "Time Travel"}
@@ -281,6 +282,7 @@
       >
         <IconClock size={24} stroke={2} class="text-black dark:text-white" />
       </button>
+      -->
 
       <button
         onclick={toggleFontSize}

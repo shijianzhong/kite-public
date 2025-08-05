@@ -107,90 +107,6 @@
         "text": "國際",
         "translationContext": "Display name for the World news category"
     },
-    "category.chinaTaiwan": {
-        "text": "台灣",
-        "translationContext": "Display name for the Taiwan news category"
-    },
-    "category.bitcoin": {
-        "text": "比特幣",
-        "translationContext": "Display name for the Bitcoin news category"
-    },
-    "category.china": {
-        "text": "中國",
-        "translationContext": "Display name for the China news category"
-    },
-    "category.ai": {
-        "text": "人工智慧",
-        "translationContext": "Display name for the AI news category"
-    },
-    "category.apple": {
-        "text": "蘋果",
-        "translationContext": "Display name for the Apple news category"
-    },
-    "category.costaRica": {
-        "text": "哥斯大黎加",
-        "translationContext": "Display name for the Costa Rica news category"
-    },
-    "category.cybersecurity": {
-        "text": "網路安全",
-        "translationContext": "Display name for the Cybersecurity news category"
-    },
-    "category.economy": {
-        "text": "經濟",
-        "translationContext": "Display name for the Economy news category"
-    },
-    "category.india": {
-        "text": "印度",
-        "translationContext": "Display name for the India news category"
-    },
-    "category.pakistan": {
-        "text": "巴基斯坦",
-        "translationContext": "Display name for the Pakistan news category"
-    },
-    "category.southKorea": {
-        "text": "南韓",
-        "translationContext": "Display name for the South Korea news category"
-    },
-    "category.sweden": {
-        "text": "瑞典",
-        "translationContext": "Display name for the Sweden news category"
-    },
-    "category.switzerlandDe": {
-        "text": "瑞士（德語）",
-        "translationContext": "Display name for the Switzerland (DE) news category"
-    },
-    "category.theNetherlands": {
-        "text": "荷蘭",
-        "translationContext": "Display name for The Netherlands news category"
-    },
-    "category.usaVermont": {
-        "text": "美國 | 佛蒙特州",
-        "translationContext": "Display name for the USA Vermont regional news category"
-    },
-    "category.usaVirginia": {
-        "text": "美國 | 維吉尼亞州",
-        "translationContext": "Display name for the USA Virginia regional news category"
-    },
-    "category.colombia": {
-        "text": "哥倫比亞",
-        "translationContext": "Display name for the Colombia news category"
-    },
-    "category.czechRepublic": {
-        "text": "捷克共和國",
-        "translationContext": "Display name for the Czech Republic news category"
-    },
-    "category.finland": {
-        "text": "芬蘭",
-        "translationContext": "Display name for the Finland news category"
-    },
-    "category.palestine": {
-        "text": "巴勒斯坦",
-        "translationContext": "Display name for the Palestine news category"
-    },
-    "category.russia": {
-        "text": "俄羅斯",
-        "translationContext": "Display name for the Russia news category"
-    },
     "category.business": {
         "text": "商業",
         "translationContext": "Display name for the Business news category"
@@ -224,7 +140,7 @@
         "translationContext": "Display name for the USA news category"
     },
     "category.gaming": {
-        "text": "遊戲",
+        "text": "遊戲新聞",
         "translationContext": "Display name for the Gaming news category"
     },
     "category.bayArea": {
@@ -236,7 +152,7 @@
         "translationContext": "Display name for the Cryptocurrency news category"
     },
     "category.europe": {
-        "text": "歐洲",
+        "text": "歐洲新聞",
         "translationContext": "Display name for the Europe news category"
     },
     "category.uk": {
@@ -296,7 +212,7 @@
         "translationContext": "Display name for the France news category"
     },
     "category.poland": {
-        "text": "波蘭",
+        "text": "波蘭新聞",
         "translationContext": "Display name for the Poland news category"
     },
     "category.slovenia": {

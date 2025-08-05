@@ -9,6 +9,7 @@
   import { timeTravelBatch } from "$lib/stores/timeTravelBatch.svelte.js";
   import type { Category, Story } from "$lib/types";
   import { formatTimeAgo } from "$lib/utils/formatTimeAgo";
+  import { isMobileDevice } from "$lib/utils/device";
   import SplashScreen from "./SplashScreen.svelte";
   import { onMount } from "svelte";
 
@@ -210,8 +211,16 @@
         initialCategoryId || enabledCategories[0] || "World";
       currentCategory = targetCategory;
 
-      // Load stories for ALL enabled categories (plus any from URL)
-      const categoryPromises = categoriesToLoad.map(async (categoryId) => {
+      // On mobile, only load the first category to save bandwidth and improve performance
+      const isMobile = isMobileDevice();
+      const categoriesToActuallyLoad = isMobile ? [targetCategory] : categoriesToLoad;
+      
+      if (isMobile) {
+        console.log(`📱 Mobile device detected - loading only first category: ${targetCategory}`);
+      }
+
+      // Load stories for categories (only first on mobile, all on desktop)
+      const categoryPromises = categoriesToActuallyLoad.map(async (categoryId) => {
         try {
           const categoryUuid = categoryMap[categoryId];
           if (!categoryUuid) {
@@ -281,7 +290,7 @@
         `📦 Preloading images for first category: ${targetCategory} (${firstCategoryStories.length} stories)`,
       );
       console.log(
-        `📚 Total categories preloaded: ${enabledCategories.length} (${Object.values(allCategoryStories).flat().length} total stories)`,
+        `📚 Total categories loaded: ${Object.keys(allCategoryStories).length} (${Object.values(allCategoryStories).flat().length} total stories)`,
       );
 
       if (firstCategoryStories.length > 0) {
@@ -402,8 +411,16 @@
         initialCategoryId || enabledCategories[0] || "World";
       currentCategory = firstEnabledCategory;
 
-      // Load stories for ALL enabled categories (plus any from URL)
-      const categoryPromises = categoriesToLoad.map(async (categoryId) => {
+      // On mobile, only load the first category to save bandwidth and improve performance
+      const isMobile = isMobileDevice();
+      const categoriesToActuallyLoad = isMobile ? [firstEnabledCategory] : categoriesToLoad;
+      
+      if (isMobile) {
+        console.log(`📱 Mobile device detected during reload - loading only first category: ${firstEnabledCategory}`);
+      }
+
+      // Load stories for categories (only first on mobile, all on desktop)
+      const categoryPromises = categoriesToActuallyLoad.map(async (categoryId) => {
         try {
           const categoryUuid = categoryMap[categoryId];
           if (!categoryUuid) {
