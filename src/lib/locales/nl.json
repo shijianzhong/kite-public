@@ -351,6 +351,38 @@
         "text": "Wereld",
         "translationContext": "Display name for the World news category"
     },
+    "category.bitcoin": {
+        "text": "Bitcoin",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
+    "category.china": {
+        "text": "China",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "Taiwan",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "Colombia",
+        "translationContext": "Display name for the Colombia news category"
+    },
+    "category.czechRepublic": {
+        "text": "Tsjechië",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.finland": {
+        "text": "Finland",
+        "translationContext": "Display name for the Finland news category"
+    },
+    "category.palestine": {
+        "text": "Palestina",
+        "translationContext": "Display name for the Palestine news category"
+    },
+    "category.russia": {
+        "text": "Rusland",
+        "translationContext": "Display name for the Russia news category"
+    },
     "citation.commonKnowledge.description": {
         "text": "Deze informatie is algemene kennis, niet afkomstig van een specifieke nieuwsbron, maar is opgenomen ter context en volledigheid van het verhaal.",
         "translationContext": "Description explaining what common knowledge citations are"
