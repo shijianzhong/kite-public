@@ -32,7 +32,7 @@ export const dataLanguage = {
   set(language: SupportedLanguage) {
     dataLanguageState.current = language;
     saveDataLanguage(language);
-    
+
     // Dispatch data language change event
     if (browser) {
       window.dispatchEvent(

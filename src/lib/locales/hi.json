@@ -4,7 +4,7 @@
         "translationContext": "First paragraph of the approach section"
     },
     "about.approach.description2": {
-        "text": "हम संसाधनों की विविधता और पारदर्शिता के लिए प्रयास करते हैं और विचारों को व्यापक बनाने के लिए आपके <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">योगदान</a> का स्वागत करते हैं। यह बहु-स्रोत दृष्टिकोण किसी एक दृष्टिकोण से परे पूरी तस्वीर को प्रकट करने में मदद करता है।",
+        "text": "हम संसाधनों की विविधता और पारदर्शिता के लिए प्रयास करते हैं और विचारों को व्यापक बनाने के लिए आपके <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">योगदान</a> का स्वागत करते हैं। यह बहु-स्रोत दृष्टिकोण किसी एक दृष्टिकोण से परे पूरी तस्वीर को प्रकट करने में मदद करता है।",
         "translationContext": "Second paragraph of the approach section with GitHub link"
     },
     "about.approach.description3": {
@@ -24,7 +24,7 @@
         "translationContext": "Title of the contact section"
     },
     "about.customization.description": {
-        "text": "सेटिंग्स में श्रेणियों को पुनर्व्यवस्थित और टॉगल करके अपनी फ़ीड को वैयक्तिकृत करें। योगदान करना चाहते हैं? काइट का अधिकांश हिस्सा, हमारी वेब ऐप और समुदाय-क्यूरेटेड फ़ीड सहित, <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">ओपन सोर्स</a> है।",
+        "text": "सेटिंग्स में श्रेणियों को पुनर्व्यवस्थित और टॉगल करके अपनी फ़ीड को वैयक्तिकृत करें। योगदान करना चाहते हैं? काइट का अधिकांश हिस्सा, हमारी वेब ऐप और समुदाय-क्यूरेटेड फ़ीड सहित, <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">ओपन सोर्स</a> है।",
         "translationContext": "Description of customization options with GitHub link"
     },
     "about.customization.title": {
@@ -69,11 +69,11 @@
     },
     "about.why.description": {
         "text": "लगातार विज्ञापन के मुद्रीकरण से प्रेरित होकर, समाचार मानसिक जंक फ़ूड <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://gwern.net/doc/culture/2010-dobelli.pdf\">बन</a> गया है - क्लिकबेट की एक अंतहीन धारा जो हमारी गहराई से और स्पष्ट रूप से सोचने की क्षमता को नष्ट कर देती है। हम बेहतर कर सकते हैं, और वह बना सकते हैं जो समाचार को हमेशा से होना चाहिए था - शुद्ध,Bआवश्यक जानकारी जो आपकी बुद्धिमत्ता और समय का सम्मान करती है।",
-        "translationContext": "Description of why Kite exists, including HTML link"
+        "translationContext": "Description of why Kagi News exists, including HTML link"
     },
     "about.why.title": {
         "text": "क्यों काइट? क्योंकि खबरें टूटी-फूटी हैं।",
-        "translationContext": "Title of the Why Kite section"
+        "translationContext": "Title of the Why Kagi News section"
     },
     "app.beta": {
         "text": "बीटा",
@@ -85,19 +85,19 @@
     },
     "app.disclaimerVerify": {
         "text": "कृपया महत्वपूर्ण जानकारी सत्यापित करें।",
-        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kite can make mistakes.'"
+        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
     },
     "app.logo.alt": {
         "text": "काइट लोगो",
-        "translationContext": "Alt text for the Kite logo image, Kite should not be translated as it's a brand name"
+        "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.iconAlt": {
-        "text": "Kite आइकन",
-        "translationContext": "Alt text for the Kite icon image, Kite should not be translated as it's a brand name"
+        "text": "Kagi News आइकन",
+        "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.newsAlt": {
         "text": "काइट न्यूज़ लोगो",
-        "translationContext": "Alt text for the Kite News logo image in header, Kite should not be translated as it's a brand name"
+        "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
     },
     "app.migrationNotice": {
         "text": "हमारे हाल ही में Svelte 5 पर माइग्रेशन के कारण, कहानियाँ अस्थायी रूप से केवल डिफ़ॉल्ट भाषा में उपलब्ध हैं। पूर्ण बहुभाषी समर्थन 24 घंटे के भीतर बहाल कर दिया जाएगा। आपके धैर्य के लिए धन्यवाद!",
@@ -112,7 +112,7 @@
         "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
     },
     "app.title": {
-        "text": "Kite",
+        "text": "Kagi News",
         "translationContext": "Title of the app, should not be translated"
     },
     "article.closeStory": {
@@ -609,7 +609,7 @@
     },
     "settings.aboutKite.button": {
         "text": "काइट के बारे में",
-        "translationContext": "Text for the About Kite button"
+        "translationContext": "Text for the About Kagi News button"
     },
     "settings.categories.contribute": {
         "text": "+ श्रेणियाँ योगदान करें",
@@ -1088,7 +1088,7 @@
         "translationContext": "Label for the UI language setting"
     },
     "settings.uiLanguage.tooltip": {
-        "text": "बटन, मेनू और इंटरफ़ेस टेक्स्ट की भाषा नियंत्रित करता है। 'डिफ़ॉल्ट' आपके ब्राउज़र की भाषा का उपयोग करता है।",
+        "text": "बटनों, मेनू और इंटरफ़ेस टेक्स्ट की भाषा नियंत्रित करता है।",
         "translationContext": "Tooltip explaining how UI language works"
     },
     "source.contribute.button": {
@@ -1382,5 +1382,209 @@
     "worldTension.whatIsThis": {
         "text": "यह क्या है?",
         "translationContext": "Button text to show explanation of world tension"
+    },
+    "settings.contentFilter.preset.ai": {
+        "text": "एआई और टेक प्रचार",
+        "translationContext": "Name of AI preset filter"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "जलवायु चिंता",
+        "translationContext": "Name of climate preset filter"
+    },
+    "quote.format.full": {
+        "text": "{{attribution}} में, {{author}} ने कहा, \"{{quote}}\"",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "{{attribution}} में",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} ने कहा",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "ui.citations": {
+        "text": "संदर्भ",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "खोज साफ़ करें",
+        "translationContext": "Aria label for clear search button"
+    },
+    "ui.closeDialog": {
+        "text": "संवाद बंद करें",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "छवि अनुपलब्ध",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "अगली स्लाइड",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "पिछली स्लाइड",
+        "translationContext": "Aria label for previous slide button"
+    },
+    "onboarding.welcome.title": {
+        "text": "कागी न्यूज़ में आपका स्वागत है!",
+        "translationContext": "Title for onboarding step 1"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "आइए आपके समाचार अनुभव को निजीकृत करें। सबसे पहले, अपनी प्राथमिकताएं चुनें:",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.categories.title": {
+        "text": "विषय चुनें",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "कागी न्यूज़ दुनिया भर से समाचारों का अनुसरण करता है, जिसमें राष्ट्रीय, क्षेत्रीय और स्थानीय घटनाओं को शामिल किया जाता है। उन श्रेणियों का चयन करें जिनमें आपकी रुचि है:",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.sections.title": {
+        "text": "सामग्री प्राथमिकताएँ",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "कागी समाचार लेखों में सारांश, मुख्य बिंदु, समय-सीमा और विभिन्न दृष्टिकोण जैसे विभिन्न खंड शामिल हैं। आप इन खंडों को खींचकर पुनर्व्यवस्थित कर सकते हैं या अपनी पढ़ने की प्राथमिकताओं के आधार पर उन्हें पूरी तरह से अक्षम कर सकते हैं।",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.button.skip": {
+        "text": "छोड़ें",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.button.back": {
+        "text": "← वापस",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.next": {
+        "text": "आगे बढ़ें →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "शुरू करें",
+        "translationContext": "Get started button text"
+    },
+    "settings.sections.orderReset": {
+        "text": "क्रम रीसेट किया गया!",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
+    "stats.storyRead": {
+        "text": "आपने 1 कहानी पढ़ी है",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
+    "header.fontSize": {
+        "text": "फ़ॉन्ट आकार",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
+    },
+    "settings.categories.disable": {
+        "text": "अक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
+    "settings.categories.enable": {
+        "text": "सक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
+    },
+    "article.reportInaccuracy": {
+        "text": "गलत जानकारी की शिकायत करें",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.title": {
+        "text": "गलत जानकारी की शिकायत करें",
+        "translationContext": "Title of the report modal"
+    },
+    "article.reportModal.subtitle": {
+        "text": "इस कहानी के सारांश में किसी भी समस्या की रिपोर्ट करके हमें बेहतर बनाने में मदद करें",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "इसके साथ समस्या की रिपोर्ट करें:",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.issueType": {
+        "text": "क्या समस्या है?",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "तथ्यात्मक त्रुटि",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "भ्रामक सारांश",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "पुरानी जानकारी",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "अन्य समस्या",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.description": {
+        "text": "कृपया समस्या का वर्णन करें",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "बताएं कि इस सारांश के बारे में क्या गलत या समस्याग्रस्त है...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.source": {
+        "text": "स्रोत (वैकल्पिक)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "अपनी रिपोर्ट का समर्थन करने वाले विश्वसनीय स्रोतों के लिंक जोड़ें",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.addSource": {
+        "text": "एक और स्रोत जोड़ें",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} वर्ण",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.cancel": {
+        "text": "रद्द करें",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.submit": {
+        "text": "रिपोर्ट सबमिट करें",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "प्रस्तुत किया जा रहा है...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.success": {
+        "text": "आपके फ़ीडबैक के लिए धन्यवाद। आपकी रिपोर्ट सबमिट कर दी गई है।",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.error": {
+        "text": "रिपोर्ट सबमिट करने में विफल। कृपया पुन: प्रयास करें।",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "footer.aboutMobile": {
+        "text": "जानकारी",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
+    "footer.rssFeedMobile": {
+        "text": "आरएसएस",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "article.reportModal.reportId": {
+        "text": "रिपोर्ट आईडी: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "पारदर्शिता और विश्वसनीयता बनाए रखने के लिए स्रोत हमेशा दिखाए जाते हैं",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

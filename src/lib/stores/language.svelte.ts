@@ -49,13 +49,13 @@ function loadLanguage(): SupportedLanguage {
   if (!browser) return "en";
 
   const stored = localStorage.getItem("language") as SupportedLanguage;
-  
+
   // Migrate "default" to "en" for UI language
   if (stored === "default") {
     localStorage.setItem("language", "en");
     return "en";
   }
-  
+
   return stored || "en";
 }
 

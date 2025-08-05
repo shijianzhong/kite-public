@@ -12,7 +12,7 @@ class TimeTravelStore {
   private state = $state<TimeTravelState>({
     isOpen: false,
     selectedDate: null,
-    selectedBatchId: null
+    selectedBatchId: null,
   });
 
   get isOpen() {

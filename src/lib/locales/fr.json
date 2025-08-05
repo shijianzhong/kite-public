@@ -4,11 +4,11 @@
         "translationContext": "First paragraph of the approach section"
     },
     "about.approach.description2": {
-        "text": "Nous visons la diversité et la transparence des ressources et accueillons vos <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">contributions</a> pour élargir les perspectives. Cette approche multi-sources permet de révéler l'image complète au-delà de tout point de vue unique.",
+        "text": "Nous visons la diversité et la transparence des ressources et accueillons vos <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">contributions</a> pour élargir les perspectives. Cette approche multi-sources permet de révéler l'image complète au-delà de tout point de vue unique.",
         "translationContext": "Second paragraph of the approach section with GitHub link"
     },
     "about.approach.description3": {
-        "text": "Kite lit les flux RSS publics de milliers de sources d'information mondiales (sélectionnées par la communauté) et les distille en un briefing quotidien parfait. Vous obtenez toutes les perspectives et chronologies essentielles en seulement 5 minutes. C'est tout. Pas de défilement infini. Pas de détournement d'attention. Parce que nous méritons mieux.",
+        "text": "Kagi News lit les flux RSS publics de milliers de sources d'information mondiales (sélectionnées par la communauté) et les distille en un briefing quotidien parfait. Vous obtenez toutes les perspectives et chronologies essentielles en seulement 5 minutes. C'est tout. Pas de défilement infini. Pas de détournement d'attention. Parce que nous méritons mieux.",
         "translationContext": "Third paragraph of the approach section"
     },
     "about.approach.title": {
@@ -24,7 +24,7 @@
         "translationContext": "Title of the contact section"
     },
     "about.customization.description": {
-        "text": "Personnalisez votre fil d'actualité en réorganisant et en activant les catégories dans les paramètres. Vous voulez contribuer ? La majeure partie de Kite est <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">open source</a>, y compris notre application web et les flux sélectionnés par la communauté.",
+        "text": "Personnalisez votre fil d'actualité en réorganisant et en activant les catégories dans les paramètres. Vous voulez contribuer ? La majeure partie de Kagi News est <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">open source</a>, y compris notre application web et les flux sélectionnés par la communauté.",
         "translationContext": "Description of customization options with GitHub link"
     },
     "about.customization.title": {
@@ -69,11 +69,11 @@
     },
     "about.why.description": {
         "text": "Poussées par une monétisation publicitaire acharnée, les nouvelles sont <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://gwern.net/doc/culture/2010-dobelli.pdf\">devenues</a> de la malbouffe mentale – un flot incessant de putaclic qui détruit notre capacité à penser en profondeur et avec clarté. Nous pouvons faire mieux et créer ce que l'information aurait toujours dû être : une information pure et essentielle qui respecte votre intelligence et votre temps.",
-        "translationContext": "Description of why Kite exists, including HTML link"
+        "translationContext": "Description of why Kagi News exists, including HTML link"
     },
     "about.why.title": {
-        "text": "Pourquoi Kite ? Parce que l'actualité est cassée.",
-        "translationContext": "Title of the Why Kite section"
+        "text": "Pourquoi Kagi News ? Parce que l'actualité est cassée.",
+        "translationContext": "Title of the Why Kagi News section"
     },
     "app.beta": {
         "text": "BÊTA",
@@ -85,19 +85,19 @@
     },
     "app.disclaimerVerify": {
         "text": "Veuillez vérifier les informations importantes.",
-        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kite can make mistakes.'"
+        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
     },
     "app.logo.alt": {
-        "text": "Logo de Kite",
-        "translationContext": "Alt text for the Kite logo image, Kite should not be translated as it's a brand name"
+        "text": "Logo de Kagi News",
+        "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.iconAlt": {
-        "text": "Icône Kite",
-        "translationContext": "Alt text for the Kite icon image, Kite should not be translated as it's a brand name"
+        "text": "Icône Kagi News",
+        "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.newsAlt": {
-        "text": "Logo de Kite News",
-        "translationContext": "Alt text for the Kite News logo image in header, Kite should not be translated as it's a brand name"
+        "text": "Logo de Kagi News News",
+        "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
     },
     "app.migrationNotice": {
         "text": "En raison de notre migration récente vers Svelte 5, les histoires ne sont temporairement disponibles que dans la langue par défaut. Le support multilingue complet sera rétabli dans les 24 heures. Merci de votre patience !",
@@ -112,7 +112,7 @@
         "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
     },
     "app.title": {
-        "text": "Kite",
+        "text": "Kagi News",
         "translationContext": "Title of the app, should not be translated"
     },
     "article.closeStory": {
@@ -436,7 +436,7 @@
         "translationContext": "Format for displaying dates. {{weekday}} will be replaced with the day of the week, {{month}} with the month name, and {{day}} with the day number."
     },
     "footer.about": {
-        "text": "À propos de Kite",
+        "text": "À propos de Kagi News",
         "translationContext": "Link text for about page"
     },
     "footer.contribute": {
@@ -609,7 +609,7 @@
     },
     "settings.aboutKite.button": {
         "text": "À propos",
-        "translationContext": "Text for the About Kite button"
+        "translationContext": "Text for the About Kagi News button"
     },
     "settings.categories.contribute": {
         "text": "+ Contribuer aux catégories",
@@ -1024,7 +1024,7 @@
         "translationContext": "Button text to toggle all sections on/off at once"
     },
     "settings.shareLanguage.message": {
-        "text": "Découvrez Kite News en français – l'intro sera ignorée et le contenu se chargera directement dans votre langue !",
+        "text": "Découvrez Kagi News News en français – l'intro sera ignorée et le contenu se chargera directement dans votre langue !",
         "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
@@ -1096,7 +1096,7 @@
         "translationContext": "Label for the UI language setting"
     },
     "settings.uiLanguage.tooltip": {
-        "text": "Contrôle la langue des boutons, des menus et du texte de l'interface. « Par défaut » utilise la langue de votre navigateur.",
+        "text": "Contrôle la langue des boutons, des menus et du texte de l'interface.",
         "translationContext": "Tooltip explaining how UI language works"
     },
     "source.contribute.button": {
@@ -1390,5 +1390,201 @@
     "worldTension.whatIsThis": {
         "text": "Qu'est-ce que c'est?",
         "translationContext": "Button text to show explanation of world tension"
+    },
+    "quote.format.full": {
+        "text": "Dans {{attribution}}, {{author}} a dit « {{quote}} »",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "Dans {{attribution}}",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} a dit",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "ui.citations": {
+        "text": "Citations",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "Effacer la recherche",
+        "translationContext": "Aria label for clear search button"
+    },
+    "ui.closeDialog": {
+        "text": "Fermer la boîte de dialogue",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "Image indisponible",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "Diapositive suivante",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "Diapositive précédente",
+        "translationContext": "Aria label for previous slide button"
+    },
+    "onboarding.welcome.title": {
+        "text": "Bienvenue sur Kagi News !",
+        "translationContext": "Title for onboarding step 1"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "Personnalisons votre expérience d'actualités. D'abord, choisissez vos préférences :",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.categories.title": {
+        "text": "Choisissez vos sujets",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagi News suit l'actualité du monde entier, couvrant les événements nationaux, régionaux et locaux. Sélectionnez les catégories qui vous intéressent :",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.sections.title": {
+        "text": "Préférences de contenu",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "Les articles de Kagi News comprennent diverses sections telles que des résumés, des points clés, des chronologies et différentes perspectives. Vous pouvez réorganiser ces sections par glisser-déposer ou les désactiver entièrement selon vos préférences de lecture.",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.button.skip": {
+        "text": "Passer",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.button.back": {
+        "text": "← Retour",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.next": {
+        "text": "Suivant →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "Démarrer",
+        "translationContext": "Get started button text"
+    },
+    "settings.sections.orderReset": {
+        "text": "Ordre réinitialisé !",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
+    "stats.storyRead": {
+        "text": "Vous avez lu 1 histoire",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
+    "header.fontSize": {
+        "text": "Taille de police",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
+    },
+    "settings.categories.disable": {
+        "text": "Cliquer pour désactiver, glisser pour réorganiser",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
+    "settings.categories.enable": {
+        "text": "Cliquer pour activer, glisser pour réorganiser",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
+    },
+    "article.reportInaccuracy": {
+        "text": "Signaler une inexactitude",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.title": {
+        "text": "Signaler une inexactitude",
+        "translationContext": "Title of the report modal"
+    },
+    "article.reportModal.subtitle": {
+        "text": "Aidez-nous à nous améliorer en signalant tout problème avec le résumé de cette histoire.",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "Signaler un problème avec :",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.issueType": {
+        "text": "Qu'est-ce qui ne va pas?",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "Erreur factuelle",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "Résumé trompeur",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "Informations obsolètes",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "Autre problème",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.description": {
+        "text": "Veuillez décrire le problème",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "Expliquez ce qui est inexact ou problématique dans ce résumé...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.source": {
+        "text": "Sources (facultatif)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "Ajouter des liens vers des sources crédibles à l'appui de votre rapport",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.addSource": {
+        "text": "Ajouter une autre source",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} caractères",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.cancel": {
+        "text": "Annuler",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.submit": {
+        "text": "Envoyer le rapport",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "Envoi en cours...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.success": {
+        "text": "Merci pour votre retour. Votre signalement a été envoyé.",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.error": {
+        "text": "Échec de l'envoi du rapport. Veuillez réessayer.",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "footer.aboutMobile": {
+        "text": "À propos",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "article.reportModal.reportId": {
+        "text": "ID du rapport : {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "Les sources sont toujours affichées pour maintenir la transparence et la crédibilité",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

@@ -14,7 +14,7 @@ interface ShareableState {
  */
 export function generateShareUrl(
   baseUrl: string,
-  state: ShareableState
+  state: ShareableState,
 ): string {
   // Build URL from state components
   const parts = [];
@@ -23,13 +23,13 @@ export function generateShareUrl(
   if (state.storyIndex !== null && state.storyIndex !== undefined) {
     parts.push(state.storyIndex.toString());
   }
-  
-  let url = baseUrl + '/' + parts.join('/');
-  
+
+  let url = baseUrl + "/" + parts.join("/");
+
   // Add language as query parameter if not English
-  if (state.dataLang && state.dataLang !== 'en') {
+  if (state.dataLang && state.dataLang !== "en") {
     url += `?data_lang=${state.dataLang}`;
   }
-  
+
   return url;
 }

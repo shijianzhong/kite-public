@@ -1,7 +1,7 @@
 import { BACKEND_PROD_PATH } from "$lib/config";
 import type { KiteData } from "$lib/types";
-import { logDebug, logError } from "$lib/utils/logger";
 import { filenameToCategoryId } from "$lib/utils/categoryIdTransform";
+import { logDebug, logError } from "$lib/utils/logger";
 import { readFile } from "fs/promises";
 import { join } from "path";
 

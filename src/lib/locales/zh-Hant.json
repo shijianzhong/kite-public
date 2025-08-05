@@ -1,6 +1,6 @@
 {
     "app.title": {
-        "text": "Kite",
+        "text": "Kagi News",
         "translationContext": "Title of the app, should not be translated"
     },
     "app.motto": {
@@ -12,12 +12,12 @@
         "translationContext": "Kagi is a company, should not be translated"
     },
     "about.why.title": {
-        "text": "為何選擇 Kite？因為新聞已然崩壞。",
-        "translationContext": "Title of the Why Kite section"
+        "text": "為何選擇 Kagi News？因為新聞已然崩壞。",
+        "translationContext": "Title of the Why Kagi News section"
     },
     "about.why.description": {
         "text": "在無止盡的廣告變現驅動下，新聞<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://gwern.net/doc/culture/2010-dobelli.pdf\">已成為</a>心靈垃圾食物——無休無止的點擊誘餌，摧毀了我們深度清晰思考的能力。我們可以做得更好，創造新聞本應呈現的樣貌——純粹、必要的資訊，尊重您的智識與時間。",
-        "translationContext": "Description of why Kite exists, including HTML link"
+        "translationContext": "Description of why Kagi News exists, including HTML link"
     },
     "about.approach.title": {
         "text": "了解我們的方法",
@@ -28,11 +28,11 @@
         "translationContext": "First paragraph of the approach section"
     },
     "about.approach.description2": {
-        "text": "我們致力於資源的多樣性和透明度，歡迎您<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">做出貢獻</a>，以拓寬視野。這種多來源方法有助於呈現超越任何單一觀點的全貌。",
+        "text": "我們致力於資源的多樣性和透明度，歡迎您<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">做出貢獻</a>，以拓寬視野。這種多來源方法有助於呈現超越任何單一觀點的全貌。",
         "translationContext": "Second paragraph of the approach section with GitHub link"
     },
     "about.approach.description3": {
-        "text": "Kite 會閱讀數千個（由社群整理的）全球新聞來源的公共 RSS 訂閱，並將它們濃縮成一份完美的每日簡報。您只需 5 分鐘，即可獲得每個關鍵觀點和時間線。就是這樣。無需無止盡的捲動。無需注意力劫持。因為我們值得更好的。",
+        "text": "Kagi News 會閱讀數千個（由社群整理的）全球新聞來源的公共 RSS 訂閱，並將它們濃縮成一份完美的每日簡報。您只需 5 分鐘，即可獲得每個關鍵觀點和時間線。就是這樣。無需無止盡的捲動。無需注意力劫持。因為我們值得更好的。",
         "translationContext": "Third paragraph of the approach section"
     },
     "about.principles.title": {
@@ -68,7 +68,7 @@
         "translationContext": "Title of the customization section"
     },
     "about.customization.description": {
-        "text": "透過設定中的類別重新排序與開關，個人化你的資訊提供。想貢獻嗎？ Kite 的大部分內容是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">開源</a>的，包括我們的網路應用程式和社群策劃的資訊提供。",
+        "text": "透過設定中的類別重新排序與開關，個人化你的資訊提供。想貢獻嗎？ Kagi News 的大部分內容是<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">開源</a>的，包括我們的網路應用程式和社群策劃的資訊提供。",
         "translationContext": "Description of customization options with GitHub link"
     },
     "about.contact.title": {
@@ -93,7 +93,7 @@
     },
     "app.disclaimerVerify": {
         "text": "請核實重要資訊。",
-        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kite can make mistakes.'"
+        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
     },
     "app.temporaryCategoryNotice": {
         "text": "從分享連結暫時顯示此類別",
@@ -460,7 +460,7 @@
         "translationContext": "Tooltip explaining how data language translation works"
     },
     "settings.uiLanguage.tooltip": {
-        "text": "控制按鈕、選單和介面文字的語言。「預設」會使用您瀏覽器的語言。",
+        "text": "控制按鈕、選單和介面文字的語言。",
         "translationContext": "Tooltip explaining how UI language works"
     },
     "settings.fontSize.label": {
@@ -516,11 +516,11 @@
       "translationContext": "Option to disable bulk story expansion"
     },
     "settings.aboutKite.button": {
-        "text": "關於 Kite",
-        "translationContext": "Text for the About Kite button"
+        "text": "關於 Kagi News",
+        "translationContext": "Text for the About Kagi News button"
     },
     "settings.shareLanguage.message": {
-        "text": "查看 Kite News {language} 版——它會跳過介紹，直接載入您的語言版本！",
+        "text": "查看 Kagi News News {language} 版——它會跳過介紹，直接載入您的語言版本！",
         "translationContext": "Message to share with others, {language} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
@@ -744,7 +744,7 @@
         "translationContext": "Link text for RSS feed"
     },
     "footer.about": {
-        "text": "關於 Kite",
+        "text": "關於 Kagi News",
         "translationContext": "Link text for about page"
     },
     "time.updated.justNow": {
@@ -804,16 +804,16 @@
         "translationContext": "Title for the other details section in article settings"
     },
     "app.logo.alt": {
-        "text": "Kite 標誌",
-        "translationContext": "Alt text for the Kite logo image, Kite should not be translated as it's a brand name"
+        "text": "Kagi News 標誌",
+        "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.newsAlt": {
-        "text": "Kite 新聞標誌",
-        "translationContext": "Alt text for the Kite News logo image in header, Kite should not be translated as it's a brand name"
+        "text": "Kagi News 新聞標誌",
+        "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.iconAlt": {
-        "text": "Kite 圖示",
-        "translationContext": "Alt text for the Kite icon image, Kite should not be translated as it's a brand name"
+        "text": "Kagi News 圖示",
+        "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
     },
     "loading.initializing": {
         "text": "初始化中…",
@@ -1306,5 +1306,261 @@
     "citation.sources": {
         "text": "參考來源：",
         "translationContext": "Label shown before multiple citation sources"
+    },
+    "category.ai": {
+        "text": "人工智慧",
+        "translationContext": "Display name for the AI news category"
+    },
+    "category.apple": {
+        "text": "蘋果",
+        "translationContext": "Display name for the Apple news category"
+    },
+    "category.costaRica": {
+        "text": "哥斯大黎加新聞",
+        "translationContext": "Display name for the Costa Rica news category"
+    },
+    "category.cybersecurity": {
+        "text": "網路安全",
+        "translationContext": "Display name for the Cybersecurity news category"
+    },
+    "category.economy": {
+        "text": "財經",
+        "translationContext": "Display name for the Economy news category"
+    },
+    "category.india": {
+        "text": "印度",
+        "translationContext": "Display name for the India news category"
+    },
+    "category.pakistan": {
+        "text": "巴基斯坦",
+        "translationContext": "Display name for the Pakistan news category"
+    },
+    "category.southKorea": {
+        "text": "南韓",
+        "translationContext": "Display name for the South Korea news category"
+    },
+    "category.sweden": {
+        "text": "瑞典",
+        "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerlandDe": {
+        "text": "瑞士 (德)",
+        "translationContext": "Display name for the Switzerland (DE) news category"
+    },
+    "category.theNetherlands": {
+        "text": "荷蘭",
+        "translationContext": "Display name for the The Netherlands news category"
+    },
+    "category.usaVermont": {
+        "text": "美國佛蒙特州",
+        "translationContext": "Display name for the USA Vermont regional news category"
+    },
+    "category.usaVirginia": {
+        "text": "美國 | 維吉尼亞",
+        "translationContext": "Display name for the USA Virginia regional news category"
+    },
+    "settings.contentFilter.preset.ai": {
+        "text": "人工智慧與科技熱潮",
+        "translationContext": "Name of AI preset filter"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "氣候焦慮",
+        "translationContext": "Name of climate preset filter"
+    },
+    "quote.format.full": {
+        "text": "在{{attribution}}中，{{author}}說：「{{quote}}」",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "出自 {{attribution}}",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} 說",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "ui.citations": {
+        "text": "引用文獻",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "清除搜尋",
+        "translationContext": "Aria label for clear search button"
+    },
+    "ui.closeDialog": {
+        "text": "關閉對話框",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "圖片無法顯示",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "下一張投影片",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "上一張投影片",
+        "translationContext": "Aria label for previous slide button"
+    },
+    "onboarding.welcome.title": {
+        "text": "歡迎使用 Kagi 新聞！",
+        "translationContext": "Title for onboarding step 1"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "讓我們為您量身打造新聞體驗。首先，請選擇您的偏好：",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.categories.title": {
+        "text": "選擇主題",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagi 新聞報導全球各地的新聞，涵蓋國家、區域和當地事件。請選擇您感興趣的類別：",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.sections.title": {
+        "text": "內容偏好設定",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "調整閱讀方式",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.button.skip": {
+        "text": "略過",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.button.back": {
+        "text": "← 返回",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.next": {
+        "text": "下一個",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "開始使用",
+        "translationContext": "Get started button text"
+    },
+    "settings.sections.orderReset": {
+        "text": "順序已重設！",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
+    "stats.storyRead": {
+        "text": "您已閱讀 {{count}} 則故事",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
+    "header.fontSize": {
+        "text": "字體大小",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
+    },
+    "settings.categories.disable": {
+        "text": "點擊以停用，拖曳以重新排序",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
+    "settings.categories.enable": {
+        "text": "按一下以啟用，拖曳以重新排序",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
+    },
+    "article.reportInaccuracy": {
+        "text": "舉報錯誤",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.title": {
+        "text": "回報錯誤",
+        "translationContext": "Title of the report modal"
+    },
+    "article.reportModal.subtitle": {
+        "text": "回報問題，協助我們改善本故事摘要。",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "回報問題：",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.issueType": {
+        "text": "哪裡出錯了？",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "事實錯誤",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "誤導性摘要",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "資訊過時",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "其他問題",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.description": {
+        "text": "請描述問題",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "說明此摘要不準確或有問題之處...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.source": {
+        "text": "來源 (可選)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "新增連結至支援此報告的可靠來源",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.addSource": {
+        "text": "新增其他來源",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} 個字元",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.cancel": {
+        "text": "取消",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.submit": {
+        "text": "提交報告",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "正在提交...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.success": {
+        "text": "感謝您的意見回饋。您的檢舉已送出。",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.error": {
+        "text": "無法提交報告。請再試一次。",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "footer.aboutMobile": {
+        "text": "關於",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "article.reportModal.reportId": {
+        "text": "報告編號：{{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "為維持透明度和可信度，來源會一直顯示。",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

@@ -87,7 +87,7 @@ async function downloadImageAsDataURL(src: string): Promise<string> {
     } catch (error) {
       downloadPromises.delete(src);
       activeControllers.delete(src);
-      if (error instanceof Error && error.name === 'AbortError') {
+      if (error instanceof Error && error.name === "AbortError") {
         reject(new Error(`Image download cancelled: ${src}`));
       } else {
         reject(error);

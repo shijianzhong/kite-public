@@ -1,6 +1,6 @@
 import { browser } from "$app/environment";
-import type { Category } from "$lib/types";
 import { experimental } from "$lib/stores/experimental.svelte";
+import type { Category } from "$lib/types";
 
 interface TouchState {
   startX: number;
@@ -11,7 +11,7 @@ interface TouchState {
   lastX: number;
   lastY: number;
   consistentDirectionTime: number;
-  initialDirection: 'left' | 'right' | 'none';
+  initialDirection: "left" | "right" | "none";
 }
 
 export class CategorySwipeHandler {
@@ -24,7 +24,7 @@ export class CategorySwipeHandler {
     lastX: 0,
     lastY: 0,
     consistentDirectionTime: 0,
-    initialDirection: 'none',
+    initialDirection: "none",
   };
 
   private categories: Category[] = [];
@@ -84,24 +84,24 @@ export class CategorySwipeHandler {
   private isTouchOnInteractiveElement(target: Element): boolean {
     // Check if the touch is on or within interactive elements that should not trigger swipe
     const interactiveSelectors = [
-      '.citation-number',  // Citation numbers
-      '.citation-sources', // Citation source favicons
-      'button',           // Any button
-      'a',               // Any link
-      'input',           // Any input
-      'textarea',        // Any textarea
-      'select',          // Any select
+      ".citation-number", // Citation numbers
+      ".citation-sources", // Citation source favicons
+      "button", // Any button
+      "a", // Any link
+      "input", // Any input
+      "textarea", // Any textarea
+      "select", // Any select
       '[role="button"]', // Elements with button role
-      '[tabindex="0"]'   // Elements that are keyboard focusable (like citations)
+      '[tabindex="0"]', // Elements that are keyboard focusable (like citations)
     ];
-    
+
     // Check if target matches any interactive selector
     for (const selector of interactiveSelectors) {
       if (target.matches(selector) || target.closest(selector)) {
         return true;
       }
     }
-    
+
     return false;
   }
 
@@ -142,12 +142,11 @@ export class CategorySwipeHandler {
   }
 
   public handleTouchStart(event: TouchEvent): void {
-    
     // Check if swipe is disabled in experimental settings
     if (experimental.disableCategorySwipe) return;
 
     const target = event.target as Element;
-    
+
     // Don't track if touch started on an interactive element
     if (this.isTouchOnInteractiveElement(target)) {
       return;
@@ -161,68 +160,78 @@ export class CategorySwipeHandler {
     this.touchState.lastY = touch.screenY;
     this.touchState.isTracking = true;
     this.touchState.consistentDirectionTime = 0;
-    this.touchState.initialDirection = 'none';
+    this.touchState.initialDirection = "none";
 
     // Check if touch started on a scrollable element
     const scrollableParent = this.findScrollableParent(target);
     this.touchState.startedOnScrollable = scrollableParent !== null;
-
   }
 
   public handleTouchMove(event: TouchEvent): void {
     // Check if swipe is disabled in experimental settings
     if (experimental.disableCategorySwipe) return;
-    
+
     if (!this.touchState.isTracking) return;
 
     const touch = event.changedTouches[0];
     const currentX = touch.screenX;
     const currentY = touch.screenY;
-    
+
     // Calculate movement from start
     const deltaXFromStart = this.touchState.startX - currentX;
     const deltaYFromStart = this.touchState.startY - currentY;
-    
+
     // Calculate movement from last position
     const deltaXFromLast = this.touchState.lastX - currentX;
-    
+
     // Require very horizontal movement (angle must be within 20 degrees of horizontal)
-    const angle = Math.abs(Math.atan2(deltaYFromStart, deltaXFromStart) * 180 / Math.PI);
+    const angle = Math.abs(
+      (Math.atan2(deltaYFromStart, deltaXFromStart) * 180) / Math.PI,
+    );
     const isHorizontalEnough = angle < 20 || angle > 160;
-    
+
     if (!isHorizontalEnough) {
       // Not horizontal enough, stop tracking
       this.touchState.isTracking = false;
       return;
     }
-    
+
     // Determine current direction
-    let currentDirection: 'left' | 'right' | 'none' = 'none';
-    if (Math.abs(deltaXFromLast) > 2) { // Only count significant movement
-      currentDirection = deltaXFromLast > 0 ? 'right' : 'left';
+    let currentDirection: "left" | "right" | "none" = "none";
+    if (Math.abs(deltaXFromLast) > 2) {
+      // Only count significant movement
+      currentDirection = deltaXFromLast > 0 ? "right" : "left";
     }
-    
+
     // Set initial direction on first significant movement
-    if (this.touchState.initialDirection === 'none' && currentDirection !== 'none') {
+    if (
+      this.touchState.initialDirection === "none" &&
+      currentDirection !== "none"
+    ) {
       this.touchState.initialDirection = currentDirection;
       this.touchState.consistentDirectionTime = Date.now();
     }
-    
+
     // Check if direction is consistent with initial direction
-    if (currentDirection !== 'none' && currentDirection === this.touchState.initialDirection) {
+    if (
+      currentDirection !== "none" &&
+      currentDirection === this.touchState.initialDirection
+    ) {
       // Direction is consistent, continue tracking
-    } else if (currentDirection !== 'none' && currentDirection !== this.touchState.initialDirection) {
+    } else if (
+      currentDirection !== "none" &&
+      currentDirection !== this.touchState.initialDirection
+    ) {
       // Direction changed, stop tracking
       this.touchState.isTracking = false;
       return;
     }
-    
+
     this.touchState.lastX = currentX;
     this.touchState.lastY = currentY;
   }
 
   public handleTouchEnd(event: TouchEvent): void {
-    
     // Check if swipe is disabled in experimental settings
     if (experimental.disableCategorySwipe) return;
 
@@ -253,7 +262,8 @@ export class CategorySwipeHandler {
 
     const currentTime = Date.now();
     const swipeDuration = currentTime - this.touchState.startTime;
-    const directionConsistentDuration = currentTime - this.touchState.consistentDirectionTime;
+    const directionConsistentDuration =
+      currentTime - this.touchState.consistentDirectionTime;
 
     // Require minimum time in consistent direction (800ms)
     if (directionConsistentDuration < 800) {
@@ -274,10 +284,10 @@ export class CategorySwipeHandler {
     }
 
     // Trigger category change based on initial direction
-    if (this.touchState.initialDirection === 'right') {
+    if (this.touchState.initialDirection === "right") {
       // Swiped left, go to next category
       this.changeToCategory("next");
-    } else if (this.touchState.initialDirection === 'left') {
+    } else if (this.touchState.initialDirection === "left") {
       // Swiped right, go to previous category
       this.changeToCategory("previous");
     }

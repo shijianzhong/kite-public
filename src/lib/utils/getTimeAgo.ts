@@ -12,7 +12,7 @@ export function getTimeAgo(dateString: string): string {
     const diffMinutes = Math.floor(diffSeconds / 60);
     const diffHours = Math.floor(diffMinutes / 60);
     const diffDays = Math.floor(diffHours / 24);
-    
+
     if (diffDays > 0) {
       return `${diffDays}d`;
     } else if (diffHours > 0) {
@@ -20,11 +20,11 @@ export function getTimeAgo(dateString: string): string {
     } else if (diffMinutes > 0) {
       return `${diffMinutes}m`;
     } else {
-      return 'now';
+      return "now";
     }
   } catch (error) {
-    console.error('Error parsing date:', dateString, error);
-    return '';
+    console.error("Error parsing date:", dateString, error);
+    return "";
   }
 }
 
@@ -34,10 +34,13 @@ export function getTimeAgo(dateString: string): string {
  * @param domain - Domain name to filter by
  * @returns Most recent date string or null
  */
-export function getMostRecentArticleDate(articles: any[], domain: string): string | null {
-  const domainArticles = articles.filter(a => a.domain === domain);
+export function getMostRecentArticleDate(
+  articles: any[],
+  domain: string,
+): string | null {
+  const domainArticles = articles.filter((a) => a.domain === domain);
   if (domainArticles.length === 0) return null;
-  
+
   // Sort articles by date (most recent first)
   const sortedArticles = domainArticles.sort((a, b) => {
     try {
@@ -46,6 +49,6 @@ export function getMostRecentArticleDate(articles: any[], domain: string): strin
       return 0;
     }
   });
-  
+
   return sortedArticles[0]?.date || null;
 }

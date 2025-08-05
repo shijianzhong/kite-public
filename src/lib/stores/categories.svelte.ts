@@ -27,7 +27,10 @@ function isValidCategory(categoryId: string): boolean {
 }
 
 function normalizeToId(categoryIdOrName: string): string {
-  return centralizedNormalizeToId(categoryIdOrName, categoriesState.allCategories);
+  return centralizedNormalizeToId(
+    categoryIdOrName,
+    categoriesState.allCategories,
+  );
 }
 
 function loadFromStorage(key: string): any {
@@ -215,10 +218,10 @@ export const categories = {
     ) {
       // Ensure default categories come first in the order, maintaining their specified order
       const orderedCategories = defaultEnabledCategories.filter((categoryId) =>
-        allCategoryIds.includes(categoryId)
+        allCategoryIds.includes(categoryId),
       );
       const remainingCategories = allCategoryIds.filter(
-        (categoryId) => !defaultEnabledCategories.includes(categoryId)
+        (categoryId) => !defaultEnabledCategories.includes(categoryId),
       );
       categoriesState.order = [...orderedCategories, ...remainingCategories];
       // Only enable the default categories that exist in the API
@@ -251,18 +254,20 @@ export const categories = {
         (cat) =>
           !categoriesState.enabled.includes(cat) &&
           !categoriesState.disabled.includes(cat) &&
-          cat !== 'onthisday', // OnThisDay should be enabled by default
+          cat !== "onthisday", // OnThisDay should be enabled by default
       );
       categoriesState.disabled = [
         ...categoriesState.disabled,
         ...newDisabledCategories,
       ];
-      
+
       // Enable OnThisDay if it's new and available
-      if (allCategoryIds.includes('onthisday') && 
-          !categoriesState.enabled.includes('onthisday') && 
-          !categoriesState.disabled.includes('onthisday')) {
-        categoriesState.enabled.push('onthisday');
+      if (
+        allCategoryIds.includes("onthisday") &&
+        !categoriesState.enabled.includes("onthisday") &&
+        !categoriesState.disabled.includes("onthisday")
+      ) {
+        categoriesState.enabled.push("onthisday");
       }
     }
 
@@ -279,13 +284,13 @@ export const categories = {
   addTemporary(categoryId: string) {
     const normalizedId = normalizeToId(categoryId);
     if (!isValidCategory(normalizedId)) return;
-    
+
     // Don't add if already enabled
     if (categoriesState.enabled.includes(normalizedId)) return;
-    
-    console.log('Adding temporary category:', normalizedId);
+
+    console.log("Adding temporary category:", normalizedId);
     categoriesState.temporaryCategory = normalizedId;
-    
+
     // Add to enabled temporarily (don't save to storage)
     const orderIndex = categoriesState.order.indexOf(normalizedId);
     const insertIndex = categoriesState.enabled.findIndex(
@@ -305,14 +310,17 @@ export const categories = {
 
   removeTemporary() {
     if (!categoriesState.temporaryCategory) return;
-    
-    console.log('Removing temporary category:', categoriesState.temporaryCategory);
-    
+
+    console.log(
+      "Removing temporary category:",
+      categoriesState.temporaryCategory,
+    );
+
     // Remove from enabled
     categoriesState.enabled = categoriesState.enabled.filter(
       (cat) => cat !== categoriesState.temporaryCategory,
     );
-    
+
     categoriesState.temporaryCategory = null;
     // Don't save to storage - just restoring to saved state
   },

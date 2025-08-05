@@ -1,6 +1,6 @@
 export interface CategoryMetadata {
   categoryId: string;
-  categoryType: 'core' | 'country' | 'region' | 'city' | 'topic';
+  categoryType: "core" | "country" | "region" | "city" | "topic";
   displayName: string;
   displayNames?: Record<string, string>;
   sourceLanguage?: string;
@@ -37,16 +37,18 @@ class CategoryMetadataService {
     }
 
     try {
-      const response = await fetch('/api/categories/metadata');
+      const response = await fetch("/api/categories/metadata");
       if (!response.ok) {
-        throw new Error(`Failed to load category metadata: ${response.statusText}`);
+        throw new Error(
+          `Failed to load category metadata: ${response.statusText}`,
+        );
       }
-      
+
       const data: CategoriesMetadataResponse = await response.json();
       this.cache = data.categories;
       return this.cache;
     } catch (error) {
-      console.error('Error loading category metadata:', error);
+      console.error("Error loading category metadata:", error);
       return [];
     }
   }
@@ -56,11 +58,11 @@ class CategoryMetadataService {
    */
   groupCategories(categories: CategoryMetadata[]): GroupedCategories {
     return {
-      core: categories.filter(c => c.categoryType === 'core'),
-      countries: categories.filter(c => c.categoryType === 'country'),
-      regions: categories.filter(c => c.categoryType === 'region'),
-      cities: categories.filter(c => c.categoryType === 'city'),
-      topics: categories.filter(c => c.categoryType === 'topic')
+      core: categories.filter((c) => c.categoryType === "core"),
+      countries: categories.filter((c) => c.categoryType === "country"),
+      regions: categories.filter((c) => c.categoryType === "region"),
+      cities: categories.filter((c) => c.categoryType === "city"),
+      topics: categories.filter((c) => c.categoryType === "topic"),
     };
   }
 
@@ -69,48 +71,51 @@ class CategoryMetadataService {
    */
   getCategoryGroups(categories: CategoryMetadata[]): CategoryGroup[] {
     const grouped = this.groupCategories(categories);
-    
+
     const groups: CategoryGroup[] = [
       {
-        type: 'core',
-        title: 'Core News',
-        icon: '📋',
-        categories: grouped.core
+        type: "core",
+        title: "Core News",
+        icon: "📋",
+        categories: grouped.core,
       },
       {
-        type: 'countries', 
-        title: 'Countries',
-        icon: '🌍',
-        categories: grouped.countries
+        type: "countries",
+        title: "Countries",
+        icon: "🌍",
+        categories: grouped.countries,
       },
       {
-        type: 'regions',
-        title: 'Regions', 
-        icon: '🗺️',
-        categories: grouped.regions
+        type: "regions",
+        title: "Regions",
+        icon: "🗺️",
+        categories: grouped.regions,
       },
       {
-        type: 'cities',
-        title: 'Cities & States',
-        icon: '🏙️', 
-        categories: grouped.cities
+        type: "cities",
+        title: "Cities & States",
+        icon: "🏙️",
+        categories: grouped.cities,
       },
       {
-        type: 'topics',
-        title: 'Topics',
-        icon: '💡',
-        categories: grouped.topics
-      }
+        type: "topics",
+        title: "Topics",
+        icon: "💡",
+        categories: grouped.topics,
+      },
     ];
-    
-    return groups.filter(group => group.categories.length > 0); // Only show groups with categories
+
+    return groups.filter((group) => group.categories.length > 0); // Only show groups with categories
   }
 
   /**
    * Find category metadata by ID
    */
-  findCategoryById(categories: CategoryMetadata[], categoryId: string): CategoryMetadata | undefined {
-    return categories.find(c => c.categoryId === categoryId.toLowerCase());
+  findCategoryById(
+    categories: CategoryMetadata[],
+    categoryId: string,
+  ): CategoryMetadata | undefined {
+    return categories.find((c) => c.categoryId === categoryId.toLowerCase());
   }
 
   /**

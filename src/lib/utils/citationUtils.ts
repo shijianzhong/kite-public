@@ -11,7 +11,7 @@ export interface Citation {
 }
 
 export interface ParsedTextSegment {
-  type: 'text' | 'citation';
+  type: "text" | "citation";
   content: string;
   citation?: Citation;
 }
@@ -21,65 +21,65 @@ export interface ParsedTextSegment {
  */
 export function parseTextWithCitations(text: string): ParsedTextSegment[] {
   if (!text) return [];
-  
+
   // Pattern to match citations like [reuters#1], [nytimes#2], [common], etc.
   const citationPattern = /\[([^\]]+)\]/g;
-  
+
   const segments: ParsedTextSegment[] = [];
   let lastIndex = 0;
   let match;
-  
+
   while ((match = citationPattern.exec(text)) !== null) {
     // Add text before citation
     if (match.index > lastIndex) {
       segments.push({
-        type: 'text',
-        content: text.slice(lastIndex, match.index)
+        type: "text",
+        content: text.slice(lastIndex, match.index),
       });
     }
-    
+
     // Parse citation
     const fullText = match[0];
     const citationContent = match[1];
-    
+
     // Check if it's a domain#position format
     const domainMatch = citationContent.match(/^([^#]+)#(\d+)$/);
     if (domainMatch) {
       segments.push({
-        type: 'citation',
+        type: "citation",
         content: citationContent,
         citation: {
           id: citationContent,
           domain: domainMatch[1],
           articleId: domainMatch[2], // This is now the position within domain
-          fullText
-        }
+          fullText,
+        },
       });
     } else {
       // Handle special cases like [common]
       segments.push({
-        type: 'citation',
+        type: "citation",
         content: citationContent,
         citation: {
           id: citationContent,
           domain: citationContent,
-          articleId: '',
-          fullText
-        }
+          articleId: "",
+          fullText,
+        },
       });
     }
-    
+
     lastIndex = match.index + match[0].length;
   }
-  
+
   // Add remaining text
   if (lastIndex < text.length) {
     segments.push({
-      type: 'text',
-      content: text.slice(lastIndex)
+      type: "text",
+      content: text.slice(lastIndex),
     });
   }
-  
+
   return segments;
 }
 
@@ -92,27 +92,27 @@ export function formatCitationsAsNumbers(segments: ParsedTextSegment[]): {
 } {
   const citations: Citation[] = [];
   const citationMap = new Map<string, number>();
-  
-  const formattedSegments = segments.map(segment => {
-    if (segment.type === 'citation' && segment.citation) {
+
+  const formattedSegments = segments.map((segment) => {
+    if (segment.type === "citation" && segment.citation) {
       const citationId = segment.citation.id;
-      
+
       // Check if we've seen this citation before
       if (!citationMap.has(citationId)) {
         citations.push(segment.citation);
         citationMap.set(citationId, citations.length);
       }
-      
+
       const citationNumber = citationMap.get(citationId)!;
-      
+
       return {
         ...segment,
-        content: `[${citationNumber}]`
+        content: `[${citationNumber}]`,
       };
     }
     return segment;
   });
-  
+
   return { formattedSegments, citations };
 }
 
@@ -121,13 +121,13 @@ export function formatCitationsAsNumbers(segments: ParsedTextSegment[]): {
  */
 export function extractDomainsFromCitations(citations: Citation[]): string[] {
   const domains = new Set<string>();
-  
-  citations.forEach(citation => {
-    if (citation.domain && citation.domain !== 'common') {
+
+  citations.forEach((citation) => {
+    if (citation.domain && citation.domain !== "common") {
       domains.add(citation.domain);
     }
   });
-  
+
   return Array.from(domains);
 }
 
@@ -135,22 +135,24 @@ export function extractDomainsFromCitations(citations: Citation[]): string[] {
  * Get favicon URL for a domain
  */
 export function getFaviconUrl(domain: string): string {
-  return `https://www.google.com/s2/favicons?domain=${domain}`;
+  // Use favicone.com for high quality favicons (256x256)
+  // This provides much sharper icons when displayed at smaller sizes
+  return `https://favicone.com/${domain}?s=256`;
 }
 
 /**
  * Remove all citations from text
  */
 export function stripCitations(text: string): string {
-  if (!text || typeof text !== 'string') return '';
-  
+  if (!text || typeof text !== "string") return "";
+
   // Pattern to match citations like [domain#position], [common], [*], [1], [2], etc.
   const citationPattern = /\[([^\]]+)\]/g;
-  
+
   // Remove citations and clean up extra spaces
-  let cleaned = text.replace(citationPattern, '').trim();
-  cleaned = cleaned.replace(/\s+/g, ' '); // Replace multiple spaces with single space
-  cleaned = cleaned.replace(/\s+([.,;:!?])/g, '$1'); // Fix space before punctuation
-  
+  let cleaned = text.replace(citationPattern, "").trim();
+  cleaned = cleaned.replace(/\s+/g, " "); // Replace multiple spaces with single space
+  cleaned = cleaned.replace(/\s+([.,;:!?])/g, "$1"); // Fix space before punctuation
+
   return cleaned;
 }

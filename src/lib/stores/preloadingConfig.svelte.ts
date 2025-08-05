@@ -1,5 +1,8 @@
-import { browser } from '$app/environment';
-import { imagePreloadingService, type PreloadConfig } from '$lib/services/imagePreloadingService';
+import { browser } from "$app/environment";
+import {
+  imagePreloadingService,
+  type PreloadConfig,
+} from "$lib/services/imagePreloadingService";
 
 /**
  * Reactive store for image preloading configuration
@@ -10,9 +13,9 @@ class PreloadingConfigStore {
     enabledOnMobile: false,
     categoryPreloadDelay: 500,
     storyPreloadDelay: 0,
-    viewportMargin: '100px',
-    logLevel: 'info',
-    preloadTimeout: 2000
+    viewportMargin: "100px",
+    logLevel: "info",
+    preloadTimeout: 2000,
   });
 
   constructor() {
@@ -56,7 +59,7 @@ class PreloadingConfigStore {
   }
 
   get debugLogging(): boolean {
-    return this.config.logLevel === 'verbose';
+    return this.config.logLevel === "verbose";
   }
 
   /**
@@ -78,9 +81,9 @@ class PreloadingConfigStore {
       enabledOnMobile: false,
       categoryPreloadDelay: 500,
       storyPreloadDelay: 0,
-      viewportMargin: '100px',
-      logLevel: 'info',
-      preloadTimeout: 2000
+      viewportMargin: "100px",
+      logLevel: "info",
+      preloadTimeout: 2000,
     };
     this.saveToStorage();
     // Sync with the preloading service
@@ -91,7 +94,9 @@ class PreloadingConfigStore {
    * Toggle time travel mode preloading
    */
   toggleTimeTravelPreloading() {
-    this.update({ enabledInTimeTravelMode: !this.config.enabledInTimeTravelMode });
+    this.update({
+      enabledInTimeTravelMode: !this.config.enabledInTimeTravelMode,
+    });
   }
 
   /**
@@ -104,7 +109,7 @@ class PreloadingConfigStore {
   /**
    * Set log level
    */
-  setLogLevel(level: PreloadConfig['logLevel']) {
+  setLogLevel(level: PreloadConfig["logLevel"]) {
     this.update({ logLevel: level });
   }
 
@@ -134,7 +139,7 @@ class PreloadingConfigStore {
   }
 
   setDebugLogging(value: boolean) {
-    this.update({ logLevel: value ? 'verbose' : 'info' });
+    this.update({ logLevel: value ? "verbose" : "info" });
   }
 
   /**
@@ -142,7 +147,7 @@ class PreloadingConfigStore {
    */
   private loadFromStorage() {
     try {
-      const saved = localStorage.getItem('kite-preloading-config');
+      const saved = localStorage.getItem("kite-preloading-config");
       if (saved) {
         const parsed = JSON.parse(saved);
         this.config = { ...this.config, ...parsed };
@@ -150,7 +155,7 @@ class PreloadingConfigStore {
         imagePreloadingService.configure(this.config);
       }
     } catch (error) {
-      console.warn('Failed to load preloading config from storage:', error);
+      console.warn("Failed to load preloading config from storage:", error);
     }
   }
 
@@ -159,11 +164,14 @@ class PreloadingConfigStore {
    */
   private saveToStorage() {
     if (!browser) return;
-    
+
     try {
-      localStorage.setItem('kite-preloading-config', JSON.stringify(this.config));
+      localStorage.setItem(
+        "kite-preloading-config",
+        JSON.stringify(this.config),
+      );
     } catch (error) {
-      console.warn('Failed to save preloading config to storage:', error);
+      console.warn("Failed to save preloading config to storage:", error);
     }
   }
 }

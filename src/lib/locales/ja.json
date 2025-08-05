@@ -4,11 +4,11 @@
         "translationContext": "First paragraph of the approach section"
     },
     "about.approach.description2": {
-        "text": "私たちはリソースの多様性と透明性を追求し、<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">貢献</a>を通じて視野を広げることを歓迎します。この複数ソースを用いたアプローチにより、単一の視点に縛られない全体像が明らかになります。",
+        "text": "私たちはリソースの多様性と透明性を追求し、<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">貢献</a>を通じて視野を広げることを歓迎します。この複数ソースを用いたアプローチにより、単一の視点に縛られない全体像が明らかになります。",
         "translationContext": "Second paragraph of the approach section with GitHub link"
     },
     "about.approach.description3": {
-        "text": "Kiteは数千もの（コミュニティで選ばれた）世界中のニュースソースの公開RSSフィードを読み取り、それらを1つの完璧な日刊ブリーフィングにまとめます。5分で全ての重要な視点とタイムラインが把握できます。以上です。無限のスクロールもなければ、注意力を奪われることもありません。私たちはもっと良いものを手にすべきだからです。",
+        "text": "Kagi Newsは数千もの（コミュニティで選ばれた）世界中のニュースソースの公開RSSフィードを読み取り、それらを1つの完璧な日刊ブリーフィングにまとめます。5分で全ての重要な視点とタイムラインが把握できます。以上です。無限のスクロールもなければ、注意力を奪われることもありません。私たちはもっと良いものを手にすべきだからです。",
         "translationContext": "Third paragraph of the approach section"
     },
     "about.approach.title": {
@@ -24,7 +24,7 @@
         "translationContext": "Title of the contact section"
     },
     "about.customization.description": {
-        "text": "設定でカテゴリを並べ替えたり、表示・非表示を切り替えたりして、フィードをパーソナライズできます。貢献したい方へ：Kiteの多くは<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">オープンソース</a>で公開されており、ウェブアプリやコミュニティがキュレーションしたフィードも含まれています。",
+        "text": "設定でカテゴリを並べ替えたり、表示・非表示を切り替えたりして、フィードをパーソナライズできます。貢献したい方へ：Kagi Newsの多くは<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">オープンソース</a>で公開されており、ウェブアプリやコミュニティがキュレーションしたフィードも含まれています。",
         "translationContext": "Description of customization options with GitHub link"
     },
     "about.customization.title": {
@@ -69,11 +69,11 @@
     },
     "about.why.description": {
         "text": "広告収益化の追求により、ニュースは<a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://gwern.net/doc/culture/2010-dobelli.pdf\">精神的なジャンクフード</a>と化しました - 深く明確に考える能力を破壊するクリックベイトの延々と続く流れです。私たちはより良い方法を見つけ、ニュースが本来あるべき姿 - あなたの知性と時間を尊重する、純粋で本質的な情報 - を創造できます。",
-        "translationContext": "Description of why Kite exists, including HTML link"
+        "translationContext": "Description of why Kagi News exists, including HTML link"
     },
     "about.why.title": {
         "text": "なぜキートなのか？ニュースは壊れているから。",
-        "translationContext": "Title of the Why Kite section"
+        "translationContext": "Title of the Why Kagi News section"
     },
     "app.beta": {
         "text": "ベータ",
@@ -85,19 +85,19 @@
     },
     "app.disclaimerVerify": {
         "text": "重要情報をご確認ください。",
-        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kite can make mistakes.'"
+        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
     },
     "app.logo.alt": {
-        "text": "Kiteロゴ",
-        "translationContext": "Alt text for the Kite logo image, Kite should not be translated as it's a brand name"
+        "text": "Kagi Newsロゴ",
+        "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.iconAlt": {
-        "text": "Kiteアイコン",
-        "translationContext": "Alt text for the Kite icon image, Kite should not be translated as it's a brand name"
+        "text": "Kagi Newsアイコン",
+        "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.newsAlt": {
-        "text": "Kite News ロゴ",
-        "translationContext": "Alt text for the Kite News logo image in header, Kite should not be translated as it's a brand name"
+        "text": "Kagi News News ロゴ",
+        "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
     },
     "app.migrationNotice": {
         "text": "Svelte 5への移行に伴い、ストーリーは一時的にデフォルト言語でのみご利用いただけます。多言語対応は24時間以内に復旧する予定です。ご不便をおかけしますが、何卒ご理解いただきますようお願い申し上げます。",
@@ -112,7 +112,7 @@
         "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
     },
     "app.title": {
-        "text": "Kite",
+        "text": "Kagi News",
         "translationContext": "Title of the app, should not be translated"
     },
     "article.closeStory": {
@@ -608,8 +608,8 @@
         "translationContext": "Title for the user experience impact section"
     },
     "settings.aboutKite.button": {
-        "text": "Kiteについて",
-        "translationContext": "Text for the About Kite button"
+        "text": "Kagi Newsについて",
+        "translationContext": "Text for the About Kagi News button"
     },
     "settings.categories.contribute": {
         "text": "+ カテゴリーを追加",
@@ -1016,7 +1016,7 @@
         "translationContext": "Button text to toggle all sections on/off at once"
     },
     "settings.shareLanguage.message": {
-        "text": "{{language}}でKite Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
+        "text": "{{language}}でKagi News Newsをチェックしてください - イントロをスキップして、直接あなたの言語で読み込まれます！",
         "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
@@ -1088,7 +1088,7 @@
         "translationContext": "Label for the UI language setting"
     },
     "settings.uiLanguage.tooltip": {
-        "text": "ボタン、メニュー、インターフェーステキストの言語を制御します。「デフォルト」はブラウザの言語を使用します。",
+        "text": "ボタン、メニュー、インターフェースのテキストの言語を制御します。",
         "translationContext": "Tooltip explaining how UI language works"
     },
     "source.contribute.button": {
@@ -1382,5 +1382,209 @@
     "worldTension.whatIsThis": {
         "text": "これは何ですか？",
         "translationContext": "Button text to show explanation of world tension"
+    },
+    "settings.contentFilter.preset.ai": {
+        "text": "AI＆テックハイプ",
+        "translationContext": "Name of AI preset filter"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "気候不安",
+        "translationContext": "Name of climate preset filter"
+    },
+    "quote.format.full": {
+        "text": "{{attribution}}において、{{author}}は「{{quote}}」と述べました",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "{{attribution}}より",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}}の発言",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "ui.citations": {
+        "text": "引用文献",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "検索をクリア",
+        "translationContext": "Aria label for clear search button"
+    },
+    "ui.closeDialog": {
+        "text": "ダイアログを閉じる",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "画像が利用できません",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "次のスライド",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "前のスライド",
+        "translationContext": "Aria label for previous slide button"
+    },
+    "onboarding.welcome.title": {
+        "text": "Kagi Newsへようこそ！",
+        "translationContext": "Title for onboarding step 1"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "ニュース体験をカスタマイズしましょう。まずはご希望を選んでください：",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.categories.title": {
+        "text": "トピックを選ぶ",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagiニュースは世界各国のニュースを追い、国内外および地域の出来事をカバーしています。興味のあるカテゴリーを選択してください：",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.sections.title": {
+        "text": "コンテンツ設定",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "カギニュースの記事には、概要、重要ポイント、タイムライン、さまざまな視点などのセクションがあります。これらのセクションは、読みやすさに応じてドラッグで並べ替えたり、完全に無効にしたりできます。",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.button.skip": {
+        "text": "スキップ",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.button.back": {
+        "text": "← 戻る",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.next": {
+        "text": "次へ →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "はじめる",
+        "translationContext": "Get started button text"
+    },
+    "settings.sections.orderReset": {
+        "text": "順序をリセットしました！",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
+    "stats.storyRead": {
+        "text": "1つのストーリーを読みました",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
+    "header.fontSize": {
+        "text": "文字サイズ",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
+    },
+    "settings.categories.disable": {
+        "text": "クリックで無効化、ドラッグで並べ替え",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
+    "settings.categories.enable": {
+        "text": "クリックで有効化、ドラッグで並べ替え",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
+    },
+    "article.reportInaccuracy": {
+        "text": "不正確な情報を報告",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.title": {
+        "text": "不正確な情報を報告",
+        "translationContext": "Title of the report modal"
+    },
+    "article.reportModal.subtitle": {
+        "text": "このストーリーの要約に関する問題を報告して、改善にご協力ください。",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "報告対象の問題:",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.issueType": {
+        "text": "どうしましたか？",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "事実誤認",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "誤解を招く要約",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "情報が古いです",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "その他の問題",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.description": {
+        "text": "問題の内容を記入してください",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "この要約の不正確な点や問題点を説明してください...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.source": {
+        "text": "ソース (任意)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "報告を裏付ける信頼できる情報源へのリンクを追加してください。",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.addSource": {
+        "text": "別のソースを追加",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} 文字",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.cancel": {
+        "text": "キャンセル",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.submit": {
+        "text": "報告を送信",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "送信中…",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.success": {
+        "text": "ご意見ありがとうございます。報告は正常に送信されました。",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.error": {
+        "text": "レポートの送信に失敗しました。再度お試しください。",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "footer.aboutMobile": {
+        "text": "概要",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "article.reportModal.reportId": {
+        "text": "レポートID: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "透明性と信頼性を保つため、出典元は常に表示されます",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

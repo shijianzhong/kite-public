@@ -4,11 +4,11 @@
         "translationContext": "First paragraph of the approach section"
     },
     "about.approach.description2": {
-        "text": "Ми прагнемо до різноманітності та прозорості ресурсів і вітаємо ваші <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">внески</a> для розширення кругозору. Цей багатоджерельний підхід допомагає розкрити повну картину, що виходить за межі однієї точки зору.",
+        "text": "Ми прагнемо до різноманітності та прозорості ресурсів і вітаємо ваші <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">внески</a> для розширення кругозору. Цей багатоджерельний підхід допомагає розкрити повну картину, що виходить за межі однієї точки зору.",
         "translationContext": "Second paragraph of the approach section with GitHub link"
     },
     "about.approach.description3": {
-        "text": "Kite читає загальнодоступні RSS-стрічки тисяч (відібраних спільнотою) світових джерел новин і перетворює їх на один ідеальний щоденний дайджест. Ви отримуєте кожну важливу точку зору та хронологію всього за 5 хвилин. Ось і все. Жодного нескінченного скролінгу. Жодного викрадення уваги. Бо ми заслуговуємо на краще.",
+        "text": "Kagi News читає загальнодоступні RSS-стрічки тисяч (відібраних спільнотою) світових джерел новин і перетворює їх на один ідеальний щоденний дайджест. Ви отримуєте кожну важливу точку зору та хронологію всього за 5 хвилин. Ось і все. Жодного нескінченного скролінгу. Жодного викрадення уваги. Бо ми заслуговуємо на краще.",
         "translationContext": "Third paragraph of the approach section"
     },
     "about.approach.title": {
@@ -24,7 +24,7 @@
         "translationContext": "Title of the contact section"
     },
     "about.customization.description": {
-        "text": "Персоналізуйте свою стрічку, змінюючи порядок і перемикаючи категорії в налаштуваннях. Хочете зробити внесок? Більшість Kite є <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/kite-public\">відкритим вихідним кодом</a>, включаючи наш веб-додаток і стрічки, що куруються спільнотою.",
+        "text": "Персоналізуйте свою стрічку, змінюючи порядок і перемикаючи категорії в налаштуваннях. Хочете зробити внесок? Більшість Kagi News є <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://github.com/kagisearch/Kagi News-public\">відкритим вихідним кодом</a>, включаючи наш веб-додаток і стрічки, що куруються спільнотою.",
         "translationContext": "Description of customization options with GitHub link"
     },
     "about.customization.title": {
@@ -69,11 +69,11 @@
     },
     "about.why.description": {
         "text": "Керуючись безжальною монетизацією реклами, новини <a class=\"text-blue-600 hover:underline dark:text-blue-400\" href=\"https://gwern.net/doc/culture/2010-dobelli.pdf\">стали</a> розумовою шкідливою їжею — нескінченним потоком клікбейту, який руйнує нашу здатність глибоко та ясно мислити. Ми можемо зробити краще та створити те, чим новини мали бути завжди — чисту, важливу інформацію, яка поважає ваш інтелект та час.",
-        "translationContext": "Description of why Kite exists, including HTML link"
+        "translationContext": "Description of why Kagi News exists, including HTML link"
     },
     "about.why.title": {
-        "text": "Чому Kite? Тому що новини є викривленими.",
-        "translationContext": "Title of the Why Kite section"
+        "text": "Чому Kagi News? Тому що новини є викривленими.",
+        "translationContext": "Title of the Why Kagi News section"
     },
     "app.beta": {
         "text": "БЕТА",
@@ -85,19 +85,19 @@
     },
     "app.disclaimerVerify": {
         "text": "Будь ласка, перевіряйте важливу інформацію.",
-        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kite can make mistakes.'"
+        "translationContext": "Reminder to verify information, goes after 'Summaries are AI/LLM-generated and Kagi News can make mistakes.'"
     },
     "app.logo.alt": {
-        "text": "Логотип Kite",
-        "translationContext": "Alt text for the Kite logo image, Kite should not be translated as it's a brand name"
+        "text": "Логотип Kagi News",
+        "translationContext": "Alt text for the Kagi News logo image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.iconAlt": {
-        "text": "Значок Kite",
-        "translationContext": "Alt text for the Kite icon image, Kite should not be translated as it's a brand name"
+        "text": "Значок Kagi News",
+        "translationContext": "Alt text for the Kagi News icon image, Kagi News should not be translated as it's a brand name"
     },
     "app.logo.newsAlt": {
-        "text": "Логотип Kite News",
-        "translationContext": "Alt text for the Kite News logo image in header, Kite should not be translated as it's a brand name"
+        "text": "Логотип Kagi News News",
+        "translationContext": "Alt text for the Kagi News News logo image in header, Kagi News should not be translated as it's a brand name"
     },
     "app.migrationNotice": {
         "text": "Через нашу нещодавню міграцію на Svelte 5, історії тимчасово доступні лише стандартною мовою. Повна багатомовна підтримка буде відновлена протягом 24 годин. Дякуємо за ваше терпіння!",
@@ -112,7 +112,7 @@
         "translationContext": "Notice shown when a user accesses a shared link for a category they haven't enabled."
     },
     "app.title": {
-        "text": "Kite",
+        "text": "Kagi News",
         "translationContext": "Title of the app, should not be translated"
     },
     "article.closeStory": {
@@ -609,7 +609,7 @@
     },
     "settings.aboutKite.button": {
         "text": "Про Кайт",
-        "translationContext": "Text for the About Kite button"
+        "translationContext": "Text for the About Kagi News button"
     },
     "settings.categories.contribute": {
         "text": "+ Додати категорії",
@@ -1016,7 +1016,7 @@
         "translationContext": "Button text to toggle all sections on/off at once"
     },
     "settings.shareLanguage.message": {
-        "text": "Перегляньте Kite News українською – воно пропустить вступ і завантажиться безпосередньо вашою мовою!",
+        "text": "Перегляньте Kagi News News українською – воно пропустить вступ і завантажиться безпосередньо вашою мовою!",
         "translationContext": "Message to share with others, {{language}} will be replaced with the language name"
     },
     "settings.shareLanguage.success": {
@@ -1088,7 +1088,7 @@
         "translationContext": "Label for the UI language setting"
     },
     "settings.uiLanguage.tooltip": {
-        "text": "Керує мовою кнопок, меню та тексту інтерфейсу. «За замовчуванням» використовує мову вашого вебпереглядача.",
+        "text": "Керує мовою кнопок, меню та тексту інтерфейсу.",
         "translationContext": "Tooltip explaining how UI language works"
     },
     "source.contribute.button": {
@@ -1382,5 +1382,209 @@
     "worldTension.whatIsThis": {
         "text": "Що це таке?",
         "translationContext": "Button text to show explanation of world tension"
+    },
+    "settings.contentFilter.preset.ai": {
+        "text": "ШІ та технологічний ажіотаж",
+        "translationContext": "Name of AI preset filter"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "Кліматична тривога",
+        "translationContext": "Name of climate preset filter"
+    },
+    "quote.format.full": {
+        "text": "У {{attribution}} {{author}} сказав: «{{quote}}»",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "У {{attribution}}",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} сказав(ла)",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "ui.citations": {
+        "text": "Цитування",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "Очистити пошук",
+        "translationContext": "Aria label for clear search button"
+    },
+    "ui.closeDialog": {
+        "text": "Закрити вікно",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "Зображення недоступне",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "Наступний слайд",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "Попередній слайд",
+        "translationContext": "Aria label for previous slide button"
+    },
+    "onboarding.welcome.title": {
+        "text": "Ласкаво просимо до Kagi News!",
+        "translationContext": "Title for onboarding step 1"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "Налаштуйте стрічку новин. Спершу оберіть, що вас цікавить:",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.categories.title": {
+        "text": "Виберіть теми",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagi News відстежує новини з усього світу, висвітлюючи національні, регіональні та місцеві події. Оберіть категорії, які вас цікавлять:",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.sections.title": {
+        "text": "Налаштування контенту",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "Статті Kagi News містять різні розділи, як-от підсумки, ключові моменти, хронології та різні точки зору. Ви можете змінювати порядок цих розділів шляхом перетягування або повністю вимикати їх відповідно до своїх уподобань читання.",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.button.skip": {
+        "text": "Пропустити",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.button.back": {
+        "text": "← Назад",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.next": {
+        "text": "Далі →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "Почати",
+        "translationContext": "Get started button text"
+    },
+    "settings.sections.orderReset": {
+        "text": "Порядок скинуто!",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
+    "stats.storyRead": {
+        "text": "Ви прочитали {{count}} історію",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
+    "header.fontSize": {
+        "text": "Розмір шрифту",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
+    },
+    "settings.categories.disable": {
+        "text": "Натисніть, щоб вимкнути, перетягніть, щоб змінити порядок",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
+    "settings.categories.enable": {
+        "text": "Натисніть, щоб увімкнути, перетягніть, щоб змінити порядок",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
+    },
+    "article.reportInaccuracy": {
+        "text": "Повідомити про неточність",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.title": {
+        "text": "Повідомити про неточність",
+        "translationContext": "Title of the report modal"
+    },
+    "article.reportModal.subtitle": {
+        "text": "Допоможіть нам покращити, повідомляючи про будь-які проблеми з цим викладом історії",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "Повідомлення про проблему з:",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.issueType": {
+        "text": "Що не так?",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "Фактична помилка",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "Оманливе зведення",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "Застаріла інформація",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "Інша проблема",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.description": {
+        "text": "Будь ласка, опишіть проблему",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "Поясніть, що є неточним або проблематичним у цьому підсумку...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.source": {
+        "text": "Джерела (необов'язково)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "Додайте посилання на достовірні джерела, що підтверджують ваш звіт",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.addSource": {
+        "text": "Додати ще одне джерело",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} символів",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.cancel": {
+        "text": "Скасувати",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.submit": {
+        "text": "Надіслати звіт",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "Відправлення...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.success": {
+        "text": "Дякуємо за ваш відгук. Ваш звіт надіслано.",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.error": {
+        "text": "Не вдалося надіслати звіт. Спробуйте ще раз.",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "footer.aboutMobile": {
+        "text": "Про нас",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "article.reportModal.reportId": {
+        "text": "Ідентифікатор звіту: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "Джерела завжди відображаються для збереження прозорості та довіри.",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

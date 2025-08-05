@@ -45,6 +45,7 @@ export interface OnThisDayData {
 }
 
 export interface Story {
+  id?: string;
   cluster_number: number;
   unique_domains?: number;
   number_of_titles?: number;

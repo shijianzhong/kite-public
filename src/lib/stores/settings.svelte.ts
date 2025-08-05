@@ -143,7 +143,10 @@ export const settings = {
     settingsState.storyCount = Math.max(3, Math.min(12, storyCount));
     settingsState.categoryHeaderPosition = categoryHeaderPosition;
     settingsState.showIntro = !introShown;
-    settingsState.storyExpandMode = loadFromStorage("storyExpandMode", "doubleClick") as StoryExpandMode;
+    settingsState.storyExpandMode = loadFromStorage(
+      "storyExpandMode",
+      "doubleClick",
+    ) as StoryExpandMode;
 
     applyFontSize(fontSize);
   },
