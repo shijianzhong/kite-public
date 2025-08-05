@@ -7,6 +7,7 @@ import it from "./it.json";
 import ja from "./ja.json";
 import nl from "./nl.json";
 import pt from "./pt.json";
+import ru from "./ru.json";
 import uk from "./uk.json";
 import zhHans from "./zh-Hans.json";
 import zhHant from "./zh-Hant.json";
@@ -21,6 +22,7 @@ export default {
   ja,
   nl,
   pt,
+  ru,
   uk,
   "zh-Hans": zhHans,
   "zh-Hant": zhHant,
