@@ -1480,7 +1480,7 @@
         "translationContext": "Success message when link is copied"
     },
     "settings.storyCount.label": {
-        "text": "Number of stories shown:",
+        "text": "Number of stories shown",
         "translationContext": "Label for the story count setting"
     },
     "settings.storyExpandMode.always": {

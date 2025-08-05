@@ -1484,7 +1484,7 @@
         "translationContext": "Success message when link is copied"
     },
     "settings.storyCount.label": {
-        "text": "प्रदर्शित कहानियों की संख्या:",
+        "text": "प्रदर्शित कहानियों की संख्या",
         "translationContext": "Label for the story count setting"
     },
     "settings.storyExpandMode.always": {

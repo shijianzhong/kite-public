@@ -1484,7 +1484,7 @@
         "translationContext": "Success message when link is copied"
     },
     "settings.storyCount.label": {
-        "text": "表示するストーリー数:",
+        "text": "表示するストーリー数",
         "translationContext": "Label for the story count setting"
     },
     "settings.storyExpandMode.always": {
