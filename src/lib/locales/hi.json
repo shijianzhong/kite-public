@@ -135,6 +135,94 @@
         "text": "पढ़ने की स्थिति बदलने के लिए क्लिक करें",
         "translationContext": "Title/tooltip for the read status toggle button"
     },
+    "article.reportInaccuracy": {
+        "text": "गलत जानकारी की शिकायत करें",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.addSource": {
+        "text": "एक और स्रोत जोड़ें",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.cancel": {
+        "text": "रद्द करें",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} वर्ण",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.description": {
+        "text": "कृपया समस्या का वर्णन करें",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "बताएं कि इस सारांश के बारे में क्या गलत या समस्याग्रस्त है...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.error": {
+        "text": "रिपोर्ट सबमिट करने में विफल। कृपया पुन: प्रयास करें।",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "article.reportModal.issueType": {
+        "text": "क्या समस्या है?",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "तथ्यात्मक त्रुटि",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "भ्रामक सारांश",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "अन्य समस्या",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "पुरानी जानकारी",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.reportId": {
+        "text": "रिपोर्ट आईडी: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "इसके साथ समस्या की रिपोर्ट करें:",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.source": {
+        "text": "स्रोत (वैकल्पिक)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "अपनी रिपोर्ट का समर्थन करने वाले विश्वसनीय स्रोतों के लिंक जोड़ें",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.submit": {
+        "text": "रिपोर्ट सबमिट करें",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "प्रस्तुत किया जा रहा है...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.subtitle": {
+        "text": "इस कहानी के सारांश में किसी भी समस्या की रिपोर्ट करके हमें बेहतर बनाने में मदद करें",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.success": {
+        "text": "आपके फ़ीडबैक के लिए धन्यवाद। आपकी रिपोर्ट सबमिट कर दी गई है।",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.title": {
+        "text": "गलत जानकारी की शिकायत करें",
+        "translationContext": "Title of the report modal"
+    },
     "article.shareCopied": {
         "text": "कॉपी किया गया!",
         "translationContext": "Success message shown when URL is copied to clipboard"
@@ -163,6 +251,10 @@
         "text": "बेल्जियम",
         "translationContext": "Display name for the Belgium news category"
     },
+    "category.bitcoin": {
+        "text": "Bitcoin",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
     "category.brazil": {
         "text": "ब्राज़ील",
         "translationContext": "Display name for the Brazil news category"
@@ -174,6 +266,18 @@
     "category.canada": {
         "text": "कनाडा",
         "translationContext": "Display name for the Canada news category"
+    },
+    "category.china": {
+        "text": "China",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "Taiwan",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "Colombia",
+        "translationContext": "Display name for the Colombia news category"
     },
     "category.costaRica": {
         "text": "कोस्टा रिका",
@@ -187,9 +291,21 @@
         "text": "साइबर सिक्योरिटी",
         "translationContext": "Display name for the Cybersecurity news category"
     },
+    "category.czechRepublic": {
+        "text": "Czech Republic",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.denmark": {
+        "text": "Denmark",
+        "translationContext": "Display name for the Denmark news category"
+    },
     "category.economy": {
         "text": "अर्थव्यवस्था",
         "translationContext": "Display name for the Economy news category"
+    },
+    "category.egypt": {
+        "text": "Egypt",
+        "translationContext": "Display name for the Egypt news category"
     },
     "category.entertainment": {
         "text": "मनोरंजन",
@@ -202,6 +318,10 @@
     "category.europe": {
         "text": "यूरोप",
         "translationContext": "Display name for the Europe news category"
+    },
+    "category.finland": {
+        "text": "Finland",
+        "translationContext": "Display name for the Finland news category"
     },
     "category.france": {
         "text": "फ्रांस",
@@ -223,9 +343,17 @@
         "text": "स्वास्थ्य",
         "translationContext": "Display name for the Health news category"
     },
+    "category.hongKong": {
+        "text": "Hong Kong",
+        "translationContext": "Display name for the Hong Kong news category"
+    },
     "category.india": {
         "text": "भारत",
         "translationContext": "Display name for the India news category"
+    },
+    "category.indonesia": {
+        "text": "Indonesia",
+        "translationContext": "Display name for the Indonesia news category"
     },
     "category.ireland": {
         "text": "आयरलैंड",
@@ -243,13 +371,29 @@
         "text": "जापान",
         "translationContext": "Display name for the Japan news category"
     },
+    "category.kenya": {
+        "text": "Kenya",
+        "translationContext": "Display name for the Kenya news category"
+    },
+    "category.korea": {
+        "text": "Korea",
+        "translationContext": "Display name for the Korea news category"
+    },
     "category.linuxOss": {
         "text": "Linux & OSS",
         "translationContext": "Display name for the Linux & OSS news category"
     },
+    "category.malaysia": {
+        "text": "Malaysia",
+        "translationContext": "Display name for the Malaysia news category"
+    },
     "category.mexico": {
         "text": "मेक्सिको",
         "translationContext": "Display name for the Mexico news category"
+    },
+    "category.middleEast": {
+        "text": "Middle East",
+        "translationContext": "Display name for the Middle East news category"
     },
     "category.netherlands": {
         "text": "नीदरलैंड्स",
@@ -259,9 +403,21 @@
         "text": "न्यूजीलैंड",
         "translationContext": "Display name for the New Zealand news category"
     },
+    "category.nigeria": {
+        "text": "Nigeria",
+        "translationContext": "Display name for the Nigeria news category"
+    },
+    "category.norway": {
+        "text": "Norway",
+        "translationContext": "Display name for the Norway news category"
+    },
     "category.pakistan": {
         "text": "पाकिस्तान",
         "translationContext": "Display name for the Pakistan news category"
+    },
+    "category.philippines": {
+        "text": "Philippines",
+        "translationContext": "Display name for the Philippines news category"
     },
     "category.poland": {
         "text": "पोलैंड",
@@ -279,6 +435,10 @@
         "text": "रोमानिया",
         "translationContext": "Display name for the Romania news category"
     },
+    "category.russia": {
+        "text": "Russia",
+        "translationContext": "Display name for the Russia news category"
+    },
     "category.science": {
         "text": "विज्ञान",
         "translationContext": "Display name for the Science news category"
@@ -287,9 +447,17 @@
         "text": "सर्बिया",
         "translationContext": "Display name for the Serbia news category"
     },
+    "category.singapore": {
+        "text": "Singapore",
+        "translationContext": "Display name for the Singapore news category"
+    },
     "category.slovenia": {
         "text": "स्लोवेनिया",
         "translationContext": "Display name for the Slovenia news category"
+    },
+    "category.southAfrica": {
+        "text": "South Africa",
+        "translationContext": "Display name for the South Africa news category"
     },
     "category.southKorea": {
         "text": "दक्षिण कोरिया",
@@ -306,6 +474,10 @@
     "category.sweden": {
         "text": "स्वीडन",
         "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerland": {
+        "text": "Switzerland",
+        "translationContext": "Display name for the Switzerland news category"
     },
     "category.switzerlandDe": {
         "text": "स्विट्जरलैंड (DE)",
@@ -327,6 +499,10 @@
         "text": "आज का इतिहास",
         "translationContext": "Display name for the OnThisDay category"
     },
+    "category.turkey": {
+        "text": "Turkey",
+        "translationContext": "Display name for the Turkey news category"
+    },
     "category.uk": {
         "text": "यूके",
         "translationContext": "Display name for the UK news category"
@@ -339,6 +515,182 @@
         "text": "संयुक्त राज्य अमेरिका",
         "translationContext": "Display name for the USA news category"
     },
+    "category.usaAlabama": {
+        "text": "USA | Alabama",
+        "translationContext": "Display name for the USA Alabama news category"
+    },
+    "category.usaAlaska": {
+        "text": "USA | Alaska",
+        "translationContext": "Display name for the USA Alaska news category"
+    },
+    "category.usaArizona": {
+        "text": "USA | Arizona",
+        "translationContext": "Display name for the USA Arizona news category"
+    },
+    "category.usaArkansas": {
+        "text": "USA | Arkansas",
+        "translationContext": "Display name for the USA Arkansas news category"
+    },
+    "category.usaCalifornia": {
+        "text": "USA | California",
+        "translationContext": "Display name for the USA California news category"
+    },
+    "category.usaColorado": {
+        "text": "USA | Colorado",
+        "translationContext": "Display name for the USA Colorado news category"
+    },
+    "category.usaConnecticut": {
+        "text": "USA | Connecticut",
+        "translationContext": "Display name for the USA Connecticut news category"
+    },
+    "category.usaDelaware": {
+        "text": "USA | Delaware",
+        "translationContext": "Display name for the USA Delaware news category"
+    },
+    "category.usaFlorida": {
+        "text": "USA | Florida",
+        "translationContext": "Display name for the USA Florida news category"
+    },
+    "category.usaGeorgia": {
+        "text": "USA | Georgia",
+        "translationContext": "Display name for the USA Georgia news category"
+    },
+    "category.usaHawaii": {
+        "text": "USA | Hawaii",
+        "translationContext": "Display name for the USA Hawaii news category"
+    },
+    "category.usaIdaho": {
+        "text": "USA | Idaho",
+        "translationContext": "Display name for the USA Idaho news category"
+    },
+    "category.usaIllinois": {
+        "text": "USA | Illinois",
+        "translationContext": "Display name for the USA Illinois news category"
+    },
+    "category.usaIndiana": {
+        "text": "USA | Indiana",
+        "translationContext": "Display name for the USA Indiana news category"
+    },
+    "category.usaIowa": {
+        "text": "USA | Iowa",
+        "translationContext": "Display name for the USA Iowa news category"
+    },
+    "category.usaKansas": {
+        "text": "USA | Kansas",
+        "translationContext": "Display name for the USA Kansas news category"
+    },
+    "category.usaKentucky": {
+        "text": "USA | Kentucky",
+        "translationContext": "Display name for the USA Kentucky news category"
+    },
+    "category.usaLouisiana": {
+        "text": "USA | Louisiana",
+        "translationContext": "Display name for the USA Louisiana news category"
+    },
+    "category.usaMaine": {
+        "text": "USA | Maine",
+        "translationContext": "Display name for the USA Maine news category"
+    },
+    "category.usaMaryland": {
+        "text": "USA | Maryland",
+        "translationContext": "Display name for the USA Maryland news category"
+    },
+    "category.usaMassachusetts": {
+        "text": "USA | Massachusetts",
+        "translationContext": "Display name for the USA Massachusetts news category"
+    },
+    "category.usaMichigan": {
+        "text": "USA | Michigan",
+        "translationContext": "Display name for the USA Michigan news category"
+    },
+    "category.usaMinnesota": {
+        "text": "USA | Minnesota",
+        "translationContext": "Display name for the USA Minnesota news category"
+    },
+    "category.usaMississippi": {
+        "text": "USA | Mississippi",
+        "translationContext": "Display name for the USA Mississippi news category"
+    },
+    "category.usaMissouri": {
+        "text": "USA | Missouri",
+        "translationContext": "Display name for the USA Missouri news category"
+    },
+    "category.usaMontana": {
+        "text": "USA | Montana",
+        "translationContext": "Display name for the USA Montana news category"
+    },
+    "category.usaNebraska": {
+        "text": "USA | Nebraska",
+        "translationContext": "Display name for the USA Nebraska news category"
+    },
+    "category.usaNevada": {
+        "text": "USA | Nevada",
+        "translationContext": "Display name for the USA Nevada news category"
+    },
+    "category.usaNewHampshire": {
+        "text": "USA | New Hampshire",
+        "translationContext": "Display name for the USA New Hampshire news category"
+    },
+    "category.usaNewJersey": {
+        "text": "USA | New Jersey",
+        "translationContext": "Display name for the USA New Jersey news category"
+    },
+    "category.usaNewMexico": {
+        "text": "USA | New Mexico",
+        "translationContext": "Display name for the USA New Mexico news category"
+    },
+    "category.usaNewYork": {
+        "text": "USA | New York",
+        "translationContext": "Display name for the USA New York news category"
+    },
+    "category.usaNorthCarolina": {
+        "text": "USA | North Carolina",
+        "translationContext": "Display name for the USA North Carolina news category"
+    },
+    "category.usaNorthDakota": {
+        "text": "USA | North Dakota",
+        "translationContext": "Display name for the USA North Dakota news category"
+    },
+    "category.usaOhio": {
+        "text": "USA | Ohio",
+        "translationContext": "Display name for the USA Ohio news category"
+    },
+    "category.usaOklahoma": {
+        "text": "USA | Oklahoma",
+        "translationContext": "Display name for the USA Oklahoma news category"
+    },
+    "category.usaOregon": {
+        "text": "USA | Oregon",
+        "translationContext": "Display name for the USA Oregon news category"
+    },
+    "category.usaPennsylvania": {
+        "text": "USA | Pennsylvania",
+        "translationContext": "Display name for the USA Pennsylvania news category"
+    },
+    "category.usaRhodeIsland": {
+        "text": "USA | Rhode Island",
+        "translationContext": "Display name for the USA Rhode Island news category"
+    },
+    "category.usaSouthCarolina": {
+        "text": "USA | South Carolina",
+        "translationContext": "Display name for the USA South Carolina news category"
+    },
+    "category.usaSouthDakota": {
+        "text": "USA | South Dakota",
+        "translationContext": "Display name for the USA South Dakota news category"
+    },
+    "category.usaTennessee": {
+        "text": "USA | Tennessee",
+        "translationContext": "Display name for the USA Tennessee news category"
+    },
+    "category.usaTexas": {
+        "text": "USA | Texas",
+        "translationContext": "Display name for the USA Texas news category"
+    },
+    "category.usaUtah": {
+        "text": "USA | Utah",
+        "translationContext": "Display name for the USA Utah news category"
+    },
     "category.usaVermont": {
         "text": "यूएसए | वर्मोंट",
         "translationContext": "Display name for the USA | Vermont news category"
@@ -346,6 +698,26 @@
     "category.usaVirginia": {
         "text": "यूएसए | वर्जीनिया",
         "translationContext": "Display name for the USA | Virginia news category"
+    },
+    "category.usaWashington": {
+        "text": "USA | Washington",
+        "translationContext": "Display name for the USA Washington news category"
+    },
+    "category.usaWestVirginia": {
+        "text": "USA | West Virginia",
+        "translationContext": "Display name for the USA West Virginia news category"
+    },
+    "category.usaWisconsin": {
+        "text": "USA | Wisconsin",
+        "translationContext": "Display name for the USA Wisconsin news category"
+    },
+    "category.usaWyoming": {
+        "text": "USA | Wyoming",
+        "translationContext": "Display name for the USA Wyoming news category"
+    },
+    "category.vietnam": {
+        "text": "Vietnam",
+        "translationContext": "Display name for the Vietnam news category"
     },
     "category.world": {
         "text": "विश्व",
@@ -439,6 +811,10 @@
         "text": "काइट के बारे में",
         "translationContext": "Link text for about page"
     },
+    "footer.aboutMobile": {
+        "text": "जानकारी",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
     "footer.contribute": {
         "text": "योगदान करें",
         "translationContext": "Link text for contributing to the project"
@@ -446,6 +822,14 @@
     "footer.rssFeed": {
         "text": "आरएसएस फ़ीड",
         "translationContext": "Link text for RSS feed"
+    },
+    "footer.rssFeedMobile": {
+        "text": "आरएसएस",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "header.fontSize": {
+        "text": "फ़ॉन्ट आकार",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
     },
     "header.settings": {
         "text": "सेटिंग्स",
@@ -495,6 +879,46 @@
         "text": "कहानियां लोड हो रही हैं...",
         "translationContext": "Loading message shown when fetching news stories"
     },
+    "onboarding.button.back": {
+        "text": "← वापस",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "शुरू करें",
+        "translationContext": "Get started button text"
+    },
+    "onboarding.button.next": {
+        "text": "आगे बढ़ें →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.skip": {
+        "text": "छोड़ें",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "कागी न्यूज़ दुनिया भर से समाचारों का अनुसरण करता है, जिसमें राष्ट्रीय, क्षेत्रीय और स्थानीय घटनाओं को शामिल किया जाता है। उन श्रेणियों का चयन करें जिनमें आपकी रुचि है:",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.categories.title": {
+        "text": "विषय चुनें",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "कागी समाचार लेखों में सारांश, मुख्य बिंदु, समय-सीमा और विभिन्न दृष्टिकोण जैसे विभिन्न खंड शामिल हैं। आप इन खंडों को खींचकर पुनर्व्यवस्थित कर सकते हैं या अपनी पढ़ने की प्राथमिकताओं के आधार पर उन्हें पूरी तरह से अक्षम कर सकते हैं।",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.sections.title": {
+        "text": "सामग्री प्राथमिकताएँ",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "आइए आपके समाचार अनुभव को निजीकृत करें। सबसे पहले, अपनी प्राथमिकताएं चुनें:",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.welcome.title": {
+        "text": "कागी न्यूज़ में आपका स्वागत है!",
+        "translationContext": "Title for onboarding step 1"
+    },
     "onthisday.events": {
         "text": "घटनाएँ",
         "translationContext": "Title for the events section in Today in History"
@@ -502,6 +926,18 @@
     "onthisday.people": {
         "text": "लोग",
         "translationContext": "Title for the people section in Today in History"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} ने कहा",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "quote.format.full": {
+        "text": "{{attribution}} में, {{author}} ने कहा, \"{{quote}}\"",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "{{attribution}} में",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
     },
     "section.actionItems": {
         "text": "कार्य मद",
@@ -615,9 +1051,17 @@
         "text": "+ श्रेणियाँ योगदान करें",
         "translationContext": "Link text for contributing categories"
     },
+    "settings.categories.disable": {
+        "text": "अक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
     "settings.categories.disabled": {
         "text": "अक्षम श्रेणियाँ",
         "translationContext": "Title for the disabled (hidden) categories section"
+    },
+    "settings.categories.enable": {
+        "text": "सक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
     },
     "settings.categories.enabled": {
         "text": "सक्रिय श्रेणियाँ",
@@ -783,6 +1227,10 @@
         "text": "फ़िल्टर मोड",
         "translationContext": "Label for filter mode selection"
     },
+    "settings.contentFilter.preset.ai": {
+        "text": "एआई और टेक प्रचार",
+        "translationContext": "Name of AI preset filter"
+    },
     "settings.contentFilter.preset.ai.tooltip": {
         "text": "एआई की चर्चा, एलएलएम समाचार और तकनीकी सफलताओं की घोषणाओं को फ़िल्टर करता है",
         "translationContext": "Tooltip description for AI preset"
@@ -794,6 +1242,10 @@
     "settings.contentFilter.preset.celebrities.tooltip": {
         "text": "सेलिब्रिटी गॉसिप, मनोरंजन समाचार और टैब्लॉइड सामग्री को फ़िल्टर करता है",
         "translationContext": "Tooltip description for celebrities preset"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "जलवायु चिंता",
+        "translationContext": "Name of climate preset filter"
     },
     "settings.contentFilter.preset.climate.tooltip": {
         "text": "जलवायु परिवर्तन समाचार और पर्यावरणीय संकट कवरेज को फ़िल्टर करता है",
@@ -999,9 +1451,17 @@
         "text": "अनुभागों को फिर से व्यवस्थित करने के लिए खींचें। सक्षम/अक्षम करने के लिए स्विच का उपयोग करें।",
         "translationContext": "Instructions for managing article sections"
     },
+    "settings.sections.orderReset": {
+        "text": "क्रम रीसेट किया गया!",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
     "settings.sections.resetOrder": {
         "text": "डिफ़ॉल्ट क्रम पर रीसेट करें",
         "translationContext": "Button text to reset section order to defaults"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "पारदर्शिता और विश्वसनीयता बनाए रखने के लिए स्रोत हमेशा दिखाए जाते हैं",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     },
     "settings.sections.switch": {
         "text": "सक्षम/अक्षम करें",
@@ -1027,25 +1487,25 @@
         "text": "प्रदर्शित कहानियों की संख्या:",
         "translationContext": "Label for the story count setting"
     },
-    "settings.storyExpandMode.description": {
-      "text": "चुनें कि कैटेगरी देखते समय कहानियां कैसे विस्तृत होती हैं",
-      "translationContext": "Description for story expand mode setting"
-    },
-    "settings.storyExpandMode.label": {
-      "text": "कहानी विस्तार मोड",
-      "translationContext": "Label for story expand mode setting"
-    },
     "settings.storyExpandMode.always": {
-      "text": "हमेशा सभी को विस्तृत करें",
-      "translationContext": "Option to always expand all stories automatically"
+        "text": "हमेशा सभी को विस्तृत करें",
+        "translationContext": "Option to always expand all stories automatically"
+    },
+    "settings.storyExpandMode.description": {
+        "text": "चुनें कि कैटेगरी देखते समय कहानियां कैसे विस्तृत होती हैं",
+        "translationContext": "Description for story expand mode setting"
     },
     "settings.storyExpandMode.doubleClick": {
-      "text": "सभी को विस्तृत करने के लिए डबल-क्लिक करें",
-      "translationContext": "Option to expand all stories via double-click on category"
+        "text": "सभी को विस्तृत करने के लिए डबल-क्लिक करें",
+        "translationContext": "Option to expand all stories via double-click on category"
+    },
+    "settings.storyExpandMode.label": {
+        "text": "कहानी विस्तार मोड",
+        "translationContext": "Label for story expand mode setting"
     },
     "settings.storyExpandMode.never": {
-      "text": "कभी भी सभी को विस्तृत न करें",
-      "translationContext": "Option to disable bulk story expansion"
+        "text": "कभी भी सभी को विस्तृत न करें",
+        "translationContext": "Option to disable bulk story expansion"
     },
     "settings.tabs.categories": {
         "text": "श्रेणियाँ",
@@ -1155,6 +1615,10 @@
         "text": "आपने {{count}} कहानियाँ पढ़ी हैं",
         "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
+    "stats.storyRead": {
+        "text": "आपने 1 कहानी पढ़ी है",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
     "stats.weekDay": {
         "text": "सप्ताह {{{week}}}, दिन {{{day}}}",
         "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
@@ -1243,9 +1707,33 @@
         "text": "विक्षोभ मीटर",
         "translationContext": "Tooltip text for the turbulence meter button"
     },
+    "ui.citations": {
+        "text": "संदर्भ",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "खोज साफ़ करें",
+        "translationContext": "Aria label for clear search button"
+    },
     "ui.close": {
         "text": "बंद करें",
         "translationContext": "Text for close buttons"
+    },
+    "ui.closeDialog": {
+        "text": "संवाद बंद करें",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "छवि अनुपलब्ध",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "अगली स्लाइड",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "पिछली स्लाइड",
+        "translationContext": "Aria label for previous slide button"
     },
     "view.list": {
         "text": "सूची दृश्य",
@@ -1382,209 +1870,5 @@
     "worldTension.whatIsThis": {
         "text": "यह क्या है?",
         "translationContext": "Button text to show explanation of world tension"
-    },
-    "settings.contentFilter.preset.ai": {
-        "text": "एआई और टेक प्रचार",
-        "translationContext": "Name of AI preset filter"
-    },
-    "settings.contentFilter.preset.climate": {
-        "text": "जलवायु चिंता",
-        "translationContext": "Name of climate preset filter"
-    },
-    "quote.format.full": {
-        "text": "{{attribution}} में, {{author}} ने कहा, \"{{quote}}\"",
-        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
-    },
-    "quote.format.inAttribution": {
-        "text": "{{attribution}} में",
-        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
-    },
-    "quote.format.authorSaid": {
-        "text": "{{author}} ने कहा",
-        "translationContext": "Quote author prefix. {author} is the person who said the quote"
-    },
-    "ui.citations": {
-        "text": "संदर्भ",
-        "translationContext": "Title for citations section"
-    },
-    "ui.clearSearch": {
-        "text": "खोज साफ़ करें",
-        "translationContext": "Aria label for clear search button"
-    },
-    "ui.closeDialog": {
-        "text": "संवाद बंद करें",
-        "translationContext": "Aria label for close dialog button"
-    },
-    "ui.imageUnavailable": {
-        "text": "छवि अनुपलब्ध",
-        "translationContext": "Text shown when an image cannot be loaded"
-    },
-    "ui.nextSlide": {
-        "text": "अगली स्लाइड",
-        "translationContext": "Aria label for next slide button"
-    },
-    "ui.previousSlide": {
-        "text": "पिछली स्लाइड",
-        "translationContext": "Aria label for previous slide button"
-    },
-    "onboarding.welcome.title": {
-        "text": "कागी न्यूज़ में आपका स्वागत है!",
-        "translationContext": "Title for onboarding step 1"
-    },
-    "onboarding.welcome.subtitle": {
-        "text": "आइए आपके समाचार अनुभव को निजीकृत करें। सबसे पहले, अपनी प्राथमिकताएं चुनें:",
-        "translationContext": "Subtitle for onboarding step 1"
-    },
-    "onboarding.categories.title": {
-        "text": "विषय चुनें",
-        "translationContext": "Title for onboarding step 2"
-    },
-    "onboarding.categories.subtitle": {
-        "text": "कागी न्यूज़ दुनिया भर से समाचारों का अनुसरण करता है, जिसमें राष्ट्रीय, क्षेत्रीय और स्थानीय घटनाओं को शामिल किया जाता है। उन श्रेणियों का चयन करें जिनमें आपकी रुचि है:",
-        "translationContext": "Subtitle for onboarding step 2"
-    },
-    "onboarding.sections.title": {
-        "text": "सामग्री प्राथमिकताएँ",
-        "translationContext": "Title for onboarding step 3"
-    },
-    "onboarding.sections.subtitle": {
-        "text": "कागी समाचार लेखों में सारांश, मुख्य बिंदु, समय-सीमा और विभिन्न दृष्टिकोण जैसे विभिन्न खंड शामिल हैं। आप इन खंडों को खींचकर पुनर्व्यवस्थित कर सकते हैं या अपनी पढ़ने की प्राथमिकताओं के आधार पर उन्हें पूरी तरह से अक्षम कर सकते हैं।",
-        "translationContext": "Subtitle for onboarding step 3"
-    },
-    "onboarding.button.skip": {
-        "text": "छोड़ें",
-        "translationContext": "Skip button text"
-    },
-    "onboarding.button.back": {
-        "text": "← वापस",
-        "translationContext": "Back button text"
-    },
-    "onboarding.button.next": {
-        "text": "आगे बढ़ें →",
-        "translationContext": "Next button text"
-    },
-    "onboarding.button.getStarted": {
-        "text": "शुरू करें",
-        "translationContext": "Get started button text"
-    },
-    "settings.sections.orderReset": {
-        "text": "क्रम रीसेट किया गया!",
-        "translationContext": "Confirmation message shown after resetting section order"
-    },
-    "stats.storyRead": {
-        "text": "आपने 1 कहानी पढ़ी है",
-        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
-    },
-    "header.fontSize": {
-        "text": "फ़ॉन्ट आकार",
-        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
-    },
-    "settings.categories.disable": {
-        "text": "अक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
-        "translationContext": "Tooltip for enabled category items that can be disabled"
-    },
-    "settings.categories.enable": {
-        "text": "सक्षम करने के लिए क्लिक करें, पुनः व्यवस्थित करने के लिए खींचें",
-        "translationContext": "Tooltip for disabled category items that can be enabled"
-    },
-    "article.reportInaccuracy": {
-        "text": "गलत जानकारी की शिकायत करें",
-        "translationContext": "Tooltip text for the report button"
-    },
-    "article.reportModal.title": {
-        "text": "गलत जानकारी की शिकायत करें",
-        "translationContext": "Title of the report modal"
-    },
-    "article.reportModal.subtitle": {
-        "text": "इस कहानी के सारांश में किसी भी समस्या की रिपोर्ट करके हमें बेहतर बनाने में मदद करें",
-        "translationContext": "Subtitle explaining the purpose of the report modal"
-    },
-    "article.reportModal.reportingFor": {
-        "text": "इसके साथ समस्या की रिपोर्ट करें:",
-        "translationContext": "Label showing which story is being reported"
-    },
-    "article.reportModal.issueType": {
-        "text": "क्या समस्या है?",
-        "translationContext": "Label for the issue type selection"
-    },
-    "article.reportModal.issueType.factualError": {
-        "text": "तथ्यात्मक त्रुटि",
-        "translationContext": "Option for reporting factual errors"
-    },
-    "article.reportModal.issueType.misleading": {
-        "text": "भ्रामक सारांश",
-        "translationContext": "Option for reporting misleading summaries"
-    },
-    "article.reportModal.issueType.outdated": {
-        "text": "पुरानी जानकारी",
-        "translationContext": "Option for reporting outdated content"
-    },
-    "article.reportModal.issueType.other": {
-        "text": "अन्य समस्या",
-        "translationContext": "Option for reporting other types of issues"
-    },
-    "article.reportModal.description": {
-        "text": "कृपया समस्या का वर्णन करें",
-        "translationContext": "Label for the description field"
-    },
-    "article.reportModal.descriptionPlaceholder": {
-        "text": "बताएं कि इस सारांश के बारे में क्या गलत या समस्याग्रस्त है...",
-        "translationContext": "Placeholder text for the description field"
-    },
-    "article.reportModal.source": {
-        "text": "स्रोत (वैकल्पिक)",
-        "translationContext": "Label for the source URL field"
-    },
-    "article.reportModal.sourceHelper": {
-        "text": "अपनी रिपोर्ट का समर्थन करने वाले विश्वसनीय स्रोतों के लिंक जोड़ें",
-        "translationContext": "Helper text explaining the purpose of source URLs"
-    },
-    "article.reportModal.sourcePlaceholder": {
-        "text": "https://example.com/article",
-        "translationContext": "Placeholder text for the source URL field"
-    },
-    "article.reportModal.addSource": {
-        "text": "एक और स्रोत जोड़ें",
-        "translationContext": "Button text to add another source URL field"
-    },
-    "article.reportModal.characterCount": {
-        "text": "{{count}} / {{max}} वर्ण",
-        "translationContext": "Character count display with placeholders for current count and maximum"
-    },
-    "article.reportModal.cancel": {
-        "text": "रद्द करें",
-        "translationContext": "Cancel button text"
-    },
-    "article.reportModal.submit": {
-        "text": "रिपोर्ट सबमिट करें",
-        "translationContext": "Submit button text"
-    },
-    "article.reportModal.submitting": {
-        "text": "प्रस्तुत किया जा रहा है...",
-        "translationContext": "Button text while report is being submitted"
-    },
-    "article.reportModal.success": {
-        "text": "आपके फ़ीडबैक के लिए धन्यवाद। आपकी रिपोर्ट सबमिट कर दी गई है।",
-        "translationContext": "Success message after report submission"
-    },
-    "article.reportModal.error": {
-        "text": "रिपोर्ट सबमिट करने में विफल। कृपया पुन: प्रयास करें।",
-        "translationContext": "Generic error message for report submission failure"
-    },
-    "footer.aboutMobile": {
-        "text": "जानकारी",
-        "translationContext": "Shorter link text for about page on mobile devices"
-    },
-    "footer.rssFeedMobile": {
-        "text": "आरएसएस",
-        "translationContext": "Shorter link text for RSS feed on mobile devices"
-    },
-    "article.reportModal.reportId": {
-        "text": "रिपोर्ट आईडी: {{id}}",
-        "translationContext": "Display of the report ID after successful submission"
-    },
-    "settings.sections.sourcesRequired": {
-        "text": "पारदर्शिता और विश्वसनीयता बनाए रखने के लिए स्रोत हमेशा दिखाए जाते हैं",
-        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

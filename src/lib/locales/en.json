@@ -1,8 +1,4 @@
 {
-    "header.fontSize": {
-        "text": "Font Size",
-        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
-    },
     "about.approach.description1": {
         "text": "World doesn't live in echo chambers. The reality emerges from the collision of different viewpoints and perspectives - that's how we separate signal from noise.",
         "translationContext": "First paragraph of the approach section"
@@ -66,46 +62,6 @@
     "about.subtitle": {
         "text": "News app by Kagi",
         "translationContext": "Kagi is a company, should not be translated"
-    },
-    "onboarding.welcome.title": {
-        "text": "Welcome to Kagi News!",
-        "translationContext": "Title for onboarding step 1"
-    },
-    "onboarding.welcome.subtitle": {
-        "text": "Let's personalize your news experience. First, choose your preferences:",
-        "translationContext": "Subtitle for onboarding step 1"
-    },
-    "onboarding.categories.title": {
-        "text": "Choose Your Topics",
-        "translationContext": "Title for onboarding step 2"
-    },
-    "onboarding.categories.subtitle": {
-        "text": "Kagi News follows news from around the world, covering national, regional, and local events. Select the categories you're interested in:",
-        "translationContext": "Subtitle for onboarding step 2"
-    },
-    "onboarding.sections.title": {
-        "text": "Content Preferences",
-        "translationContext": "Title for onboarding step 3"
-    },
-    "onboarding.sections.subtitle": {
-        "text": "Kagi News articles include various sections like summaries, key points, timelines, and different perspectives. You can reorder these sections by dragging or disable them entirely based on your reading preferences.",
-        "translationContext": "Subtitle for onboarding step 3"
-    },
-    "onboarding.button.skip": {
-        "text": "Skip",
-        "translationContext": "Skip button text"
-    },
-    "onboarding.button.back": {
-        "text": "← Back",
-        "translationContext": "Back button text"
-    },
-    "onboarding.button.next": {
-        "text": "Next →",
-        "translationContext": "Next button text"
-    },
-    "onboarding.button.getStarted": {
-        "text": "Get Started",
-        "translationContext": "Get started button text"
     },
     "about.understand.button": {
         "text": "I understand",
@@ -175,29 +131,33 @@
         "text": "Click to toggle read status",
         "translationContext": "Title/tooltip for the read status toggle button"
     },
-    "article.shareCopied": {
-        "text": "Copied!",
-        "translationContext": "Success message shown when URL is copied to clipboard"
-    },
-    "article.shareStory": {
-        "text": "Share story",
-        "translationContext": "Tooltip text for the share button"
-    },
     "article.reportInaccuracy": {
         "text": "Report inaccuracy",
         "translationContext": "Tooltip text for the report button"
     },
-    "article.reportModal.title": {
-        "text": "Report Inaccuracy",
-        "translationContext": "Title of the report modal"
+    "article.reportModal.addSource": {
+        "text": "Add another source",
+        "translationContext": "Button text to add another source URL field"
     },
-    "article.reportModal.subtitle": {
-        "text": "Help us improve by reporting any issues with this story's summary",
-        "translationContext": "Subtitle explaining the purpose of the report modal"
+    "article.reportModal.cancel": {
+        "text": "Cancel",
+        "translationContext": "Cancel button text"
     },
-    "article.reportModal.reportingFor": {
-        "text": "Reporting issue with:",
-        "translationContext": "Label showing which story is being reported"
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} characters",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.description": {
+        "text": "Please describe the issue",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "Explain what's inaccurate or problematic about this summary...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.error": {
+        "text": "Failed to submit report. Please try again.",
+        "translationContext": "Generic error message for report submission failure"
     },
     "article.reportModal.issueType": {
         "text": "What's wrong?",
@@ -211,21 +171,21 @@
         "text": "Misleading summary",
         "translationContext": "Option for reporting misleading summaries"
     },
-    "article.reportModal.issueType.outdated": {
-        "text": "Outdated information",
-        "translationContext": "Option for reporting outdated content"
-    },
     "article.reportModal.issueType.other": {
         "text": "Other issue",
         "translationContext": "Option for reporting other types of issues"
     },
-    "article.reportModal.description": {
-        "text": "Please describe the issue",
-        "translationContext": "Label for the description field"
+    "article.reportModal.issueType.outdated": {
+        "text": "Outdated information",
+        "translationContext": "Option for reporting outdated content"
     },
-    "article.reportModal.descriptionPlaceholder": {
-        "text": "Explain what's inaccurate or problematic about this summary...",
-        "translationContext": "Placeholder text for the description field"
+    "article.reportModal.reportId": {
+        "text": "Report ID: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "Reporting issue with:",
+        "translationContext": "Label showing which story is being reported"
     },
     "article.reportModal.source": {
         "text": "Sources (optional)",
@@ -239,18 +199,6 @@
         "text": "https://example.com/article",
         "translationContext": "Placeholder text for the source URL field"
     },
-    "article.reportModal.addSource": {
-        "text": "Add another source",
-        "translationContext": "Button text to add another source URL field"
-    },
-    "article.reportModal.characterCount": {
-        "text": "{{count}} / {{max}} characters",
-        "translationContext": "Character count display with placeholders for current count and maximum"
-    },
-    "article.reportModal.cancel": {
-        "text": "Cancel",
-        "translationContext": "Cancel button text"
-    },
     "article.reportModal.submit": {
         "text": "Submit Report",
         "translationContext": "Submit button text"
@@ -259,17 +207,25 @@
         "text": "Submitting...",
         "translationContext": "Button text while report is being submitted"
     },
+    "article.reportModal.subtitle": {
+        "text": "Help us improve by reporting any issues with this story's summary",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
     "article.reportModal.success": {
         "text": "Thank you for your feedback. Your report has been submitted.",
         "translationContext": "Success message after report submission"
     },
-    "article.reportModal.reportId": {
-        "text": "Report ID: {{id}}",
-        "translationContext": "Display of the report ID after successful submission"
+    "article.reportModal.title": {
+        "text": "Report Inaccuracy",
+        "translationContext": "Title of the report modal"
     },
-    "article.reportModal.error": {
-        "text": "Failed to submit report. Please try again.",
-        "translationContext": "Generic error message for report submission failure"
+    "article.shareCopied": {
+        "text": "Copied!",
+        "translationContext": "Success message shown when URL is copied to clipboard"
+    },
+    "article.shareStory": {
+        "text": "Share story",
+        "translationContext": "Tooltip text for the share button"
     },
     "category.ai": {
         "text": "AI",
@@ -291,6 +247,10 @@
         "text": "Belgium",
         "translationContext": "Display name for the Belgium news category"
     },
+    "category.bitcoin": {
+        "text": "Bitcoin",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
     "category.brazil": {
         "text": "Brazil",
         "translationContext": "Display name for the Brazil news category"
@@ -302,6 +262,18 @@
     "category.canada": {
         "text": "Canada",
         "translationContext": "Display name for the Canada news category"
+    },
+    "category.china": {
+        "text": "China",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "Taiwan",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "Colombia",
+        "translationContext": "Display name for the Colombia news category"
     },
     "category.costaRica": {
         "text": "Costa Rica",
@@ -315,9 +287,21 @@
         "text": "Cybersecurity",
         "translationContext": "Display name for the Cybersecurity news category"
     },
+    "category.czechRepublic": {
+        "text": "Czech Republic",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.denmark": {
+        "text": "Denmark",
+        "translationContext": "Display name for the Denmark news category"
+    },
     "category.economy": {
         "text": "Economy",
         "translationContext": "Display name for the Economy news category"
+    },
+    "category.egypt": {
+        "text": "Egypt",
+        "translationContext": "Display name for the Egypt news category"
     },
     "category.entertainment": {
         "text": "Entertainment",
@@ -330,6 +314,10 @@
     "category.europe": {
         "text": "Europe",
         "translationContext": "Display name for the Europe news category"
+    },
+    "category.finland": {
+        "text": "Finland",
+        "translationContext": "Display name for the Finland news category"
     },
     "category.france": {
         "text": "France",
@@ -351,9 +339,17 @@
         "text": "Health",
         "translationContext": "Display name for the Health news category"
     },
+    "category.hongKong": {
+        "text": "Hong Kong",
+        "translationContext": "Display name for the Hong Kong news category"
+    },
     "category.india": {
         "text": "India",
         "translationContext": "Display name for the India news category"
+    },
+    "category.indonesia": {
+        "text": "Indonesia",
+        "translationContext": "Display name for the Indonesia news category"
     },
     "category.ireland": {
         "text": "Ireland",
@@ -371,13 +367,29 @@
         "text": "Japan",
         "translationContext": "Display name for the Japan news category"
     },
+    "category.kenya": {
+        "text": "Kenya",
+        "translationContext": "Display name for the Kenya news category"
+    },
+    "category.korea": {
+        "text": "Korea",
+        "translationContext": "Display name for the Korea news category"
+    },
     "category.linuxOss": {
         "text": "Linux & OSS",
         "translationContext": "Display name for the Linux and Open Source Software news category"
     },
+    "category.malaysia": {
+        "text": "Malaysia",
+        "translationContext": "Display name for the Malaysia news category"
+    },
     "category.mexico": {
         "text": "Mexico",
         "translationContext": "Display name for the Mexico news category"
+    },
+    "category.middleEast": {
+        "text": "Middle East",
+        "translationContext": "Display name for the Middle East news category"
     },
     "category.netherlands": {
         "text": "The Netherlands",
@@ -387,9 +399,21 @@
         "text": "New Zealand",
         "translationContext": "Display name for the New Zealand news category"
     },
+    "category.nigeria": {
+        "text": "Nigeria",
+        "translationContext": "Display name for the Nigeria news category"
+    },
+    "category.norway": {
+        "text": "Norway",
+        "translationContext": "Display name for the Norway news category"
+    },
     "category.pakistan": {
         "text": "Pakistan",
         "translationContext": "Display name for the Pakistan news category"
+    },
+    "category.philippines": {
+        "text": "Philippines",
+        "translationContext": "Display name for the Philippines news category"
     },
     "category.poland": {
         "text": "Poland",
@@ -407,6 +431,10 @@
         "text": "Romania",
         "translationContext": "Display name for the Romania news category"
     },
+    "category.russia": {
+        "text": "Russia",
+        "translationContext": "Display name for the Russia news category"
+    },
     "category.science": {
         "text": "Science",
         "translationContext": "Display name for the Science news category"
@@ -415,9 +443,17 @@
         "text": "Serbia",
         "translationContext": "Display name for the Serbia news category"
     },
+    "category.singapore": {
+        "text": "Singapore",
+        "translationContext": "Display name for the Singapore news category"
+    },
     "category.slovenia": {
         "text": "Slovenia",
         "translationContext": "Display name for the Slovenia news category"
+    },
+    "category.southAfrica": {
+        "text": "South Africa",
+        "translationContext": "Display name for the South Africa news category"
     },
     "category.southKorea": {
         "text": "South Korea",
@@ -434,6 +470,10 @@
     "category.sweden": {
         "text": "Sweden",
         "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerland": {
+        "text": "Switzerland",
+        "translationContext": "Display name for the Switzerland news category"
     },
     "category.switzerlandDe": {
         "text": "Switzerland (DE)",
@@ -455,6 +495,10 @@
         "text": "Today in History",
         "translationContext": "Display name for the OnThisDay category"
     },
+    "category.turkey": {
+        "text": "Turkey",
+        "translationContext": "Display name for the Turkey news category"
+    },
     "category.uk": {
         "text": "UK",
         "translationContext": "Display name for the United Kingdom news category"
@@ -467,6 +511,182 @@
         "text": "USA",
         "translationContext": "Display name for the USA news category"
     },
+    "category.usaAlabama": {
+        "text": "USA | Alabama",
+        "translationContext": "Display name for the USA Alabama news category"
+    },
+    "category.usaAlaska": {
+        "text": "USA | Alaska",
+        "translationContext": "Display name for the USA Alaska news category"
+    },
+    "category.usaArizona": {
+        "text": "USA | Arizona",
+        "translationContext": "Display name for the USA Arizona news category"
+    },
+    "category.usaArkansas": {
+        "text": "USA | Arkansas",
+        "translationContext": "Display name for the USA Arkansas news category"
+    },
+    "category.usaCalifornia": {
+        "text": "USA | California",
+        "translationContext": "Display name for the USA California news category"
+    },
+    "category.usaColorado": {
+        "text": "USA | Colorado",
+        "translationContext": "Display name for the USA Colorado news category"
+    },
+    "category.usaConnecticut": {
+        "text": "USA | Connecticut",
+        "translationContext": "Display name for the USA Connecticut news category"
+    },
+    "category.usaDelaware": {
+        "text": "USA | Delaware",
+        "translationContext": "Display name for the USA Delaware news category"
+    },
+    "category.usaFlorida": {
+        "text": "USA | Florida",
+        "translationContext": "Display name for the USA Florida news category"
+    },
+    "category.usaGeorgia": {
+        "text": "USA | Georgia",
+        "translationContext": "Display name for the USA Georgia news category"
+    },
+    "category.usaHawaii": {
+        "text": "USA | Hawaii",
+        "translationContext": "Display name for the USA Hawaii news category"
+    },
+    "category.usaIdaho": {
+        "text": "USA | Idaho",
+        "translationContext": "Display name for the USA Idaho news category"
+    },
+    "category.usaIllinois": {
+        "text": "USA | Illinois",
+        "translationContext": "Display name for the USA Illinois news category"
+    },
+    "category.usaIndiana": {
+        "text": "USA | Indiana",
+        "translationContext": "Display name for the USA Indiana news category"
+    },
+    "category.usaIowa": {
+        "text": "USA | Iowa",
+        "translationContext": "Display name for the USA Iowa news category"
+    },
+    "category.usaKansas": {
+        "text": "USA | Kansas",
+        "translationContext": "Display name for the USA Kansas news category"
+    },
+    "category.usaKentucky": {
+        "text": "USA | Kentucky",
+        "translationContext": "Display name for the USA Kentucky news category"
+    },
+    "category.usaLouisiana": {
+        "text": "USA | Louisiana",
+        "translationContext": "Display name for the USA Louisiana news category"
+    },
+    "category.usaMaine": {
+        "text": "USA | Maine",
+        "translationContext": "Display name for the USA Maine news category"
+    },
+    "category.usaMaryland": {
+        "text": "USA | Maryland",
+        "translationContext": "Display name for the USA Maryland news category"
+    },
+    "category.usaMassachusetts": {
+        "text": "USA | Massachusetts",
+        "translationContext": "Display name for the USA Massachusetts news category"
+    },
+    "category.usaMichigan": {
+        "text": "USA | Michigan",
+        "translationContext": "Display name for the USA Michigan news category"
+    },
+    "category.usaMinnesota": {
+        "text": "USA | Minnesota",
+        "translationContext": "Display name for the USA Minnesota news category"
+    },
+    "category.usaMississippi": {
+        "text": "USA | Mississippi",
+        "translationContext": "Display name for the USA Mississippi news category"
+    },
+    "category.usaMissouri": {
+        "text": "USA | Missouri",
+        "translationContext": "Display name for the USA Missouri news category"
+    },
+    "category.usaMontana": {
+        "text": "USA | Montana",
+        "translationContext": "Display name for the USA Montana news category"
+    },
+    "category.usaNebraska": {
+        "text": "USA | Nebraska",
+        "translationContext": "Display name for the USA Nebraska news category"
+    },
+    "category.usaNevada": {
+        "text": "USA | Nevada",
+        "translationContext": "Display name for the USA Nevada news category"
+    },
+    "category.usaNewHampshire": {
+        "text": "USA | New Hampshire",
+        "translationContext": "Display name for the USA New Hampshire news category"
+    },
+    "category.usaNewJersey": {
+        "text": "USA | New Jersey",
+        "translationContext": "Display name for the USA New Jersey news category"
+    },
+    "category.usaNewMexico": {
+        "text": "USA | New Mexico",
+        "translationContext": "Display name for the USA New Mexico news category"
+    },
+    "category.usaNewYork": {
+        "text": "USA | New York",
+        "translationContext": "Display name for the USA New York news category"
+    },
+    "category.usaNorthCarolina": {
+        "text": "USA | North Carolina",
+        "translationContext": "Display name for the USA North Carolina news category"
+    },
+    "category.usaNorthDakota": {
+        "text": "USA | North Dakota",
+        "translationContext": "Display name for the USA North Dakota news category"
+    },
+    "category.usaOhio": {
+        "text": "USA | Ohio",
+        "translationContext": "Display name for the USA Ohio news category"
+    },
+    "category.usaOklahoma": {
+        "text": "USA | Oklahoma",
+        "translationContext": "Display name for the USA Oklahoma news category"
+    },
+    "category.usaOregon": {
+        "text": "USA | Oregon",
+        "translationContext": "Display name for the USA Oregon news category"
+    },
+    "category.usaPennsylvania": {
+        "text": "USA | Pennsylvania",
+        "translationContext": "Display name for the USA Pennsylvania news category"
+    },
+    "category.usaRhodeIsland": {
+        "text": "USA | Rhode Island",
+        "translationContext": "Display name for the USA Rhode Island news category"
+    },
+    "category.usaSouthCarolina": {
+        "text": "USA | South Carolina",
+        "translationContext": "Display name for the USA South Carolina news category"
+    },
+    "category.usaSouthDakota": {
+        "text": "USA | South Dakota",
+        "translationContext": "Display name for the USA South Dakota news category"
+    },
+    "category.usaTennessee": {
+        "text": "USA | Tennessee",
+        "translationContext": "Display name for the USA Tennessee news category"
+    },
+    "category.usaTexas": {
+        "text": "USA | Texas",
+        "translationContext": "Display name for the USA Texas news category"
+    },
+    "category.usaUtah": {
+        "text": "USA | Utah",
+        "translationContext": "Display name for the USA Utah news category"
+    },
     "category.usaVermont": {
         "text": "USA | Vermont",
         "translationContext": "Display name for the USA Vermont regional news category"
@@ -474,6 +694,26 @@
     "category.usaVirginia": {
         "text": "USA | Virginia",
         "translationContext": "Display name for the USA Virginia regional news category"
+    },
+    "category.usaWashington": {
+        "text": "USA | Washington",
+        "translationContext": "Display name for the USA Washington news category"
+    },
+    "category.usaWestVirginia": {
+        "text": "USA | West Virginia",
+        "translationContext": "Display name for the USA West Virginia news category"
+    },
+    "category.usaWisconsin": {
+        "text": "USA | Wisconsin",
+        "translationContext": "Display name for the USA Wisconsin news category"
+    },
+    "category.usaWyoming": {
+        "text": "USA | Wyoming",
+        "translationContext": "Display name for the USA Wyoming news category"
+    },
+    "category.vietnam": {
+        "text": "Vietnam",
+        "translationContext": "Display name for the Vietnam news category"
     },
     "category.world": {
         "text": "World",
@@ -567,6 +807,10 @@
         "text": "About Kagi News",
         "translationContext": "Link text for about page"
     },
+    "footer.aboutMobile": {
+        "text": "About",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
     "footer.contribute": {
         "text": "Contribute",
         "translationContext": "Link text for contributing to the project"
@@ -575,13 +819,13 @@
         "text": "RSS Feed",
         "translationContext": "Link text for RSS feed"
     },
-    "footer.aboutMobile": {
-        "text": "About",
-        "translationContext": "Shorter link text for about page on mobile devices"
-    },
     "footer.rssFeedMobile": {
         "text": "RSS",
         "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "header.fontSize": {
+        "text": "Font Size",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
     },
     "header.settings": {
         "text": "Settings",
@@ -631,6 +875,46 @@
         "text": "Loading stories...",
         "translationContext": "Loading message shown when fetching news stories"
     },
+    "onboarding.button.back": {
+        "text": "← Back",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "Get Started",
+        "translationContext": "Get started button text"
+    },
+    "onboarding.button.next": {
+        "text": "Next →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.skip": {
+        "text": "Skip",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagi News follows news from around the world, covering national, regional, and local events. Select the categories you're interested in:",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.categories.title": {
+        "text": "Choose Your Topics",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "Kagi News articles include various sections like summaries, key points, timelines, and different perspectives. You can reorder these sections by dragging or disable them entirely based on your reading preferences.",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.sections.title": {
+        "text": "Content Preferences",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "Let's personalize your news experience. First, choose your preferences:",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.welcome.title": {
+        "text": "Welcome to Kagi News!",
+        "translationContext": "Title for onboarding step 1"
+    },
     "onthisday.events": {
         "text": "Events",
         "translationContext": "Title for the events section in Today in History"
@@ -638,6 +922,18 @@
     "onthisday.people": {
         "text": "People",
         "translationContext": "Title for the people section in Today in History"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} said",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "quote.format.full": {
+        "text": "In {{attribution}}, {{author}} said \"{{quote}\"",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "In {{attribution}}",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
     },
     "section.actionItems": {
         "text": "Action items",
@@ -755,13 +1051,13 @@
         "text": "Click to disable, drag to reorder",
         "translationContext": "Tooltip for enabled category items that can be disabled"
     },
-    "settings.categories.enable": {
-        "text": "Click to enable, drag to reorder",
-        "translationContext": "Tooltip for disabled category items that can be enabled"
-    },
     "settings.categories.disabled": {
         "text": "Disabled Categories",
         "translationContext": "Title for the disabled (hidden) categories section"
+    },
+    "settings.categories.enable": {
+        "text": "Click to enable, drag to reorder",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
     },
     "settings.categories.enabled": {
         "text": "Enabled Categories",
@@ -1151,13 +1447,17 @@
         "text": "Drag to reorder sections. Use the switch to enable/disable.",
         "translationContext": "Instructions for managing article sections"
     },
+    "settings.sections.orderReset": {
+        "text": "Order reset!",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
     "settings.sections.resetOrder": {
         "text": "Reset to Default Order",
         "translationContext": "Button text to reset section order to defaults"
     },
-    "settings.sections.orderReset": {
-        "text": "Order reset!",
-        "translationContext": "Confirmation message shown after resetting section order"
+    "settings.sections.sourcesRequired": {
+        "text": "Sources are always shown to maintain transparency and credibility",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     },
     "settings.sections.switch": {
         "text": "Enable/disable",
@@ -1171,10 +1471,6 @@
         "text": "Toggle All",
         "translationContext": "Button text to toggle all sections on/off at once"
     },
-    "settings.sections.sourcesRequired": {
-        "text": "Sources are always shown to maintain transparency and credibility",
-        "translationContext": "Tooltip explaining why sources section cannot be disabled"
-    },
     "settings.shareLanguage.message": {
         "text": "Check out Kagi News News in {language} - it will skip the intro and load directly in your language!",
         "translationContext": "Message to share with others, {language} will be replaced with the language name"
@@ -1187,25 +1483,25 @@
         "text": "Number of stories shown:",
         "translationContext": "Label for the story count setting"
     },
-    "settings.storyExpandMode.description": {
-      "text": "Choose how stories expand when viewing a category",
-      "translationContext": "Description for story expand mode setting"
-    },
-    "settings.storyExpandMode.label": {
-      "text": "Story Expand Mode",
-      "translationContext": "Label for story expand mode setting"
-    },
     "settings.storyExpandMode.always": {
-      "text": "Always expand all",
-      "translationContext": "Option to always expand all stories automatically"
+        "text": "Always expand all",
+        "translationContext": "Option to always expand all stories automatically"
+    },
+    "settings.storyExpandMode.description": {
+        "text": "Choose how stories expand when viewing a category",
+        "translationContext": "Description for story expand mode setting"
     },
     "settings.storyExpandMode.doubleClick": {
-      "text": "Double-click to expand all",
-      "translationContext": "Option to expand all stories via double-click on category"
+        "text": "Double-click to expand all",
+        "translationContext": "Option to expand all stories via double-click on category"
+    },
+    "settings.storyExpandMode.label": {
+        "text": "Story Expand Mode",
+        "translationContext": "Label for story expand mode setting"
     },
     "settings.storyExpandMode.never": {
-      "text": "Never expand all",
-      "translationContext": "Option to disable bulk story expansion"
+        "text": "Never expand all",
+        "translationContext": "Option to disable bulk story expansion"
     },
     "settings.tabs.categories": {
         "text": "Categories",
@@ -1294,18 +1590,6 @@
     "source.info.title": {
         "text": "Source information",
         "translationContext": "Title for source information section"
-    },
-    "quote.format.full": {
-        "text": "In {{attribution}}, {{author}} said \"{{quote}\"",
-        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
-    },
-    "quote.format.inAttribution": {
-        "text": "In {{attribution}}",
-        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
-    },
-    "quote.format.authorSaid": {
-        "text": "{{author}} said",
-        "translationContext": "Quote author prefix. {author} is the person who said the quote"
     },
     "sources.article": {
         "text": "{{count}} article",

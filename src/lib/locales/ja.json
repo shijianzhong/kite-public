@@ -135,6 +135,94 @@
         "text": "クリックして既読状態を切り替えます",
         "translationContext": "Title/tooltip for the read status toggle button"
     },
+    "article.reportInaccuracy": {
+        "text": "不正確な情報を報告",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.addSource": {
+        "text": "別のソースを追加",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.cancel": {
+        "text": "キャンセル",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} 文字",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.description": {
+        "text": "問題の内容を記入してください",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "この要約の不正確な点や問題点を説明してください...",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.error": {
+        "text": "レポートの送信に失敗しました。再度お試しください。",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "article.reportModal.issueType": {
+        "text": "どうしましたか？",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "事実誤認",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "誤解を招く要約",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "その他の問題",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "情報が古いです",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.reportId": {
+        "text": "レポートID: {{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "報告対象の問題:",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.source": {
+        "text": "ソース (任意)",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "報告を裏付ける信頼できる情報源へのリンクを追加してください。",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.submit": {
+        "text": "報告を送信",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "送信中…",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.subtitle": {
+        "text": "このストーリーの要約に関する問題を報告して、改善にご協力ください。",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.success": {
+        "text": "ご意見ありがとうございます。報告は正常に送信されました。",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.title": {
+        "text": "不正確な情報を報告",
+        "translationContext": "Title of the report modal"
+    },
     "article.shareCopied": {
         "text": "コピーしました！",
         "translationContext": "Success message shown when URL is copied to clipboard"
@@ -163,6 +251,10 @@
         "text": "ベルギー",
         "translationContext": "Display name for the Belgium news category"
     },
+    "category.bitcoin": {
+        "text": "Bitcoin",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
     "category.brazil": {
         "text": "ブラジル",
         "translationContext": "Display name for the Brazil news category"
@@ -174,6 +266,18 @@
     "category.canada": {
         "text": "カナダ",
         "translationContext": "Display name for the Canada news category"
+    },
+    "category.china": {
+        "text": "China",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "Taiwan",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "Colombia",
+        "translationContext": "Display name for the Colombia news category"
     },
     "category.costaRica": {
         "text": "コスタリカ",
@@ -187,9 +291,21 @@
         "text": "サイバーセキュリティ",
         "translationContext": "Display name for the Cybersecurity news category"
     },
+    "category.czechRepublic": {
+        "text": "Czech Republic",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.denmark": {
+        "text": "Denmark",
+        "translationContext": "Display name for the Denmark news category"
+    },
     "category.economy": {
         "text": "経済",
         "translationContext": "Display name for the Economy news category"
+    },
+    "category.egypt": {
+        "text": "Egypt",
+        "translationContext": "Display name for the Egypt news category"
     },
     "category.entertainment": {
         "text": "エンターテインメント",
@@ -202,6 +318,10 @@
     "category.europe": {
         "text": "ヨーロッパ",
         "translationContext": "Display name for the Europe news category"
+    },
+    "category.finland": {
+        "text": "Finland",
+        "translationContext": "Display name for the Finland news category"
     },
     "category.france": {
         "text": "フランス",
@@ -223,9 +343,17 @@
         "text": "健康",
         "translationContext": "Display name for the Health news category"
     },
+    "category.hongKong": {
+        "text": "Hong Kong",
+        "translationContext": "Display name for the Hong Kong news category"
+    },
     "category.india": {
         "text": "インド",
         "translationContext": "Display name for the India news category"
+    },
+    "category.indonesia": {
+        "text": "Indonesia",
+        "translationContext": "Display name for the Indonesia news category"
     },
     "category.ireland": {
         "text": "アイルランド",
@@ -243,13 +371,29 @@
         "text": "日本",
         "translationContext": "Display name for the Japan news category"
     },
+    "category.kenya": {
+        "text": "Kenya",
+        "translationContext": "Display name for the Kenya news category"
+    },
+    "category.korea": {
+        "text": "Korea",
+        "translationContext": "Display name for the Korea news category"
+    },
     "category.linuxOss": {
         "text": "Linux & OSS",
         "translationContext": "Display name for the Linux & OSS news category"
     },
+    "category.malaysia": {
+        "text": "Malaysia",
+        "translationContext": "Display name for the Malaysia news category"
+    },
     "category.mexico": {
         "text": "メキシコ",
         "translationContext": "Display name for the Mexico news category"
+    },
+    "category.middleEast": {
+        "text": "Middle East",
+        "translationContext": "Display name for the Middle East news category"
     },
     "category.netherlands": {
         "text": "オランダ",
@@ -259,9 +403,21 @@
         "text": "ニュージーランド",
         "translationContext": "Display name for the New Zealand news category"
     },
+    "category.nigeria": {
+        "text": "Nigeria",
+        "translationContext": "Display name for the Nigeria news category"
+    },
+    "category.norway": {
+        "text": "Norway",
+        "translationContext": "Display name for the Norway news category"
+    },
     "category.pakistan": {
         "text": "パキスタン",
         "translationContext": "Display name for the Pakistan news category"
+    },
+    "category.philippines": {
+        "text": "Philippines",
+        "translationContext": "Display name for the Philippines news category"
     },
     "category.poland": {
         "text": "ポーランド",
@@ -279,6 +435,10 @@
         "text": "ルーマニア",
         "translationContext": "Display name for the Romania news category"
     },
+    "category.russia": {
+        "text": "Russia",
+        "translationContext": "Display name for the Russia news category"
+    },
     "category.science": {
         "text": "科学",
         "translationContext": "Display name for the Science news category"
@@ -287,9 +447,17 @@
         "text": "セルビア",
         "translationContext": "Display name for the Serbia news category"
     },
+    "category.singapore": {
+        "text": "Singapore",
+        "translationContext": "Display name for the Singapore news category"
+    },
     "category.slovenia": {
         "text": "スロベニア",
         "translationContext": "Display name for the Slovenia news category"
+    },
+    "category.southAfrica": {
+        "text": "South Africa",
+        "translationContext": "Display name for the South Africa news category"
     },
     "category.southKorea": {
         "text": "韓国",
@@ -306,6 +474,10 @@
     "category.sweden": {
         "text": "スウェーデン",
         "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerland": {
+        "text": "Switzerland",
+        "translationContext": "Display name for the Switzerland news category"
     },
     "category.switzerlandDe": {
         "text": "スイス（ドイツ語圏）",
@@ -327,6 +499,10 @@
         "text": "今日の歴史",
         "translationContext": "Display name for the OnThisDay category"
     },
+    "category.turkey": {
+        "text": "Turkey",
+        "translationContext": "Display name for the Turkey news category"
+    },
     "category.uk": {
         "text": "イギリス",
         "translationContext": "Display name for the United Kingdom news category"
@@ -339,6 +515,182 @@
         "text": "アメリカ",
         "translationContext": "Display name for the USA news category"
     },
+    "category.usaAlabama": {
+        "text": "USA | Alabama",
+        "translationContext": "Display name for the USA Alabama news category"
+    },
+    "category.usaAlaska": {
+        "text": "USA | Alaska",
+        "translationContext": "Display name for the USA Alaska news category"
+    },
+    "category.usaArizona": {
+        "text": "USA | Arizona",
+        "translationContext": "Display name for the USA Arizona news category"
+    },
+    "category.usaArkansas": {
+        "text": "USA | Arkansas",
+        "translationContext": "Display name for the USA Arkansas news category"
+    },
+    "category.usaCalifornia": {
+        "text": "USA | California",
+        "translationContext": "Display name for the USA California news category"
+    },
+    "category.usaColorado": {
+        "text": "USA | Colorado",
+        "translationContext": "Display name for the USA Colorado news category"
+    },
+    "category.usaConnecticut": {
+        "text": "USA | Connecticut",
+        "translationContext": "Display name for the USA Connecticut news category"
+    },
+    "category.usaDelaware": {
+        "text": "USA | Delaware",
+        "translationContext": "Display name for the USA Delaware news category"
+    },
+    "category.usaFlorida": {
+        "text": "USA | Florida",
+        "translationContext": "Display name for the USA Florida news category"
+    },
+    "category.usaGeorgia": {
+        "text": "USA | Georgia",
+        "translationContext": "Display name for the USA Georgia news category"
+    },
+    "category.usaHawaii": {
+        "text": "USA | Hawaii",
+        "translationContext": "Display name for the USA Hawaii news category"
+    },
+    "category.usaIdaho": {
+        "text": "USA | Idaho",
+        "translationContext": "Display name for the USA Idaho news category"
+    },
+    "category.usaIllinois": {
+        "text": "USA | Illinois",
+        "translationContext": "Display name for the USA Illinois news category"
+    },
+    "category.usaIndiana": {
+        "text": "USA | Indiana",
+        "translationContext": "Display name for the USA Indiana news category"
+    },
+    "category.usaIowa": {
+        "text": "USA | Iowa",
+        "translationContext": "Display name for the USA Iowa news category"
+    },
+    "category.usaKansas": {
+        "text": "USA | Kansas",
+        "translationContext": "Display name for the USA Kansas news category"
+    },
+    "category.usaKentucky": {
+        "text": "USA | Kentucky",
+        "translationContext": "Display name for the USA Kentucky news category"
+    },
+    "category.usaLouisiana": {
+        "text": "USA | Louisiana",
+        "translationContext": "Display name for the USA Louisiana news category"
+    },
+    "category.usaMaine": {
+        "text": "USA | Maine",
+        "translationContext": "Display name for the USA Maine news category"
+    },
+    "category.usaMaryland": {
+        "text": "USA | Maryland",
+        "translationContext": "Display name for the USA Maryland news category"
+    },
+    "category.usaMassachusetts": {
+        "text": "USA | Massachusetts",
+        "translationContext": "Display name for the USA Massachusetts news category"
+    },
+    "category.usaMichigan": {
+        "text": "USA | Michigan",
+        "translationContext": "Display name for the USA Michigan news category"
+    },
+    "category.usaMinnesota": {
+        "text": "USA | Minnesota",
+        "translationContext": "Display name for the USA Minnesota news category"
+    },
+    "category.usaMississippi": {
+        "text": "USA | Mississippi",
+        "translationContext": "Display name for the USA Mississippi news category"
+    },
+    "category.usaMissouri": {
+        "text": "USA | Missouri",
+        "translationContext": "Display name for the USA Missouri news category"
+    },
+    "category.usaMontana": {
+        "text": "USA | Montana",
+        "translationContext": "Display name for the USA Montana news category"
+    },
+    "category.usaNebraska": {
+        "text": "USA | Nebraska",
+        "translationContext": "Display name for the USA Nebraska news category"
+    },
+    "category.usaNevada": {
+        "text": "USA | Nevada",
+        "translationContext": "Display name for the USA Nevada news category"
+    },
+    "category.usaNewHampshire": {
+        "text": "USA | New Hampshire",
+        "translationContext": "Display name for the USA New Hampshire news category"
+    },
+    "category.usaNewJersey": {
+        "text": "USA | New Jersey",
+        "translationContext": "Display name for the USA New Jersey news category"
+    },
+    "category.usaNewMexico": {
+        "text": "USA | New Mexico",
+        "translationContext": "Display name for the USA New Mexico news category"
+    },
+    "category.usaNewYork": {
+        "text": "USA | New York",
+        "translationContext": "Display name for the USA New York news category"
+    },
+    "category.usaNorthCarolina": {
+        "text": "USA | North Carolina",
+        "translationContext": "Display name for the USA North Carolina news category"
+    },
+    "category.usaNorthDakota": {
+        "text": "USA | North Dakota",
+        "translationContext": "Display name for the USA North Dakota news category"
+    },
+    "category.usaOhio": {
+        "text": "USA | Ohio",
+        "translationContext": "Display name for the USA Ohio news category"
+    },
+    "category.usaOklahoma": {
+        "text": "USA | Oklahoma",
+        "translationContext": "Display name for the USA Oklahoma news category"
+    },
+    "category.usaOregon": {
+        "text": "USA | Oregon",
+        "translationContext": "Display name for the USA Oregon news category"
+    },
+    "category.usaPennsylvania": {
+        "text": "USA | Pennsylvania",
+        "translationContext": "Display name for the USA Pennsylvania news category"
+    },
+    "category.usaRhodeIsland": {
+        "text": "USA | Rhode Island",
+        "translationContext": "Display name for the USA Rhode Island news category"
+    },
+    "category.usaSouthCarolina": {
+        "text": "USA | South Carolina",
+        "translationContext": "Display name for the USA South Carolina news category"
+    },
+    "category.usaSouthDakota": {
+        "text": "USA | South Dakota",
+        "translationContext": "Display name for the USA South Dakota news category"
+    },
+    "category.usaTennessee": {
+        "text": "USA | Tennessee",
+        "translationContext": "Display name for the USA Tennessee news category"
+    },
+    "category.usaTexas": {
+        "text": "USA | Texas",
+        "translationContext": "Display name for the USA Texas news category"
+    },
+    "category.usaUtah": {
+        "text": "USA | Utah",
+        "translationContext": "Display name for the USA Utah news category"
+    },
     "category.usaVermont": {
         "text": "アメリカ | バーモント州",
         "translationContext": "Display name for the USA | Vermont news category"
@@ -346,6 +698,26 @@
     "category.usaVirginia": {
         "text": "アメリカ | バージニア州",
         "translationContext": "Display name for the USA | Virginia news category"
+    },
+    "category.usaWashington": {
+        "text": "USA | Washington",
+        "translationContext": "Display name for the USA Washington news category"
+    },
+    "category.usaWestVirginia": {
+        "text": "USA | West Virginia",
+        "translationContext": "Display name for the USA West Virginia news category"
+    },
+    "category.usaWisconsin": {
+        "text": "USA | Wisconsin",
+        "translationContext": "Display name for the USA Wisconsin news category"
+    },
+    "category.usaWyoming": {
+        "text": "USA | Wyoming",
+        "translationContext": "Display name for the USA Wyoming news category"
+    },
+    "category.vietnam": {
+        "text": "Vietnam",
+        "translationContext": "Display name for the Vietnam news category"
     },
     "category.world": {
         "text": "世界",
@@ -439,6 +811,10 @@
         "text": "カイトについて",
         "translationContext": "Link text for about page"
     },
+    "footer.aboutMobile": {
+        "text": "概要",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
     "footer.contribute": {
         "text": "貢献する",
         "translationContext": "Link text for contributing to the project"
@@ -446,6 +822,14 @@
     "footer.rssFeed": {
         "text": "RSSフィード",
         "translationContext": "Link text for RSS feed"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "header.fontSize": {
+        "text": "文字サイズ",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
     },
     "header.settings": {
         "text": "設定",
@@ -495,6 +879,46 @@
         "text": "記事を読み込んでいます…",
         "translationContext": "Loading message shown when fetching news stories"
     },
+    "onboarding.button.back": {
+        "text": "← 戻る",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "はじめる",
+        "translationContext": "Get started button text"
+    },
+    "onboarding.button.next": {
+        "text": "次へ →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.skip": {
+        "text": "スキップ",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagiニュースは世界各国のニュースを追い、国内外および地域の出来事をカバーしています。興味のあるカテゴリーを選択してください：",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.categories.title": {
+        "text": "トピックを選ぶ",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "カギニュースの記事には、概要、重要ポイント、タイムライン、さまざまな視点などのセクションがあります。これらのセクションは、読みやすさに応じてドラッグで並べ替えたり、完全に無効にしたりできます。",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.sections.title": {
+        "text": "コンテンツ設定",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "ニュース体験をカスタマイズしましょう。まずはご希望を選んでください：",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.welcome.title": {
+        "text": "Kagi Newsへようこそ！",
+        "translationContext": "Title for onboarding step 1"
+    },
     "onthisday.events": {
         "text": "出来事",
         "translationContext": "Title for the events section in Today in History"
@@ -502,6 +926,18 @@
     "onthisday.people": {
         "text": "人物",
         "translationContext": "Title for the people section in Today in History"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}}の発言",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "quote.format.full": {
+        "text": "{{attribution}}において、{{author}}は「{{quote}}」と述べました",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "{{attribution}}より",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
     },
     "section.actionItems": {
         "text": "アクション項目",
@@ -615,9 +1051,17 @@
         "text": "+ カテゴリーを追加",
         "translationContext": "Link text for contributing categories"
     },
+    "settings.categories.disable": {
+        "text": "クリックで無効化、ドラッグで並べ替え",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
     "settings.categories.disabled": {
         "text": "無効なカテゴリー",
         "translationContext": "Title for the disabled (hidden) categories section"
+    },
+    "settings.categories.enable": {
+        "text": "クリックで有効化、ドラッグで並べ替え",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
     },
     "settings.categories.enabled": {
         "text": "有効なカテゴリ",
@@ -783,6 +1227,10 @@
         "text": "フィルターモード",
         "translationContext": "Label for filter mode selection"
     },
+    "settings.contentFilter.preset.ai": {
+        "text": "AI＆テックハイプ",
+        "translationContext": "Name of AI preset filter"
+    },
     "settings.contentFilter.preset.ai.tooltip": {
         "text": "AIの誇大広告、LLMニュース、技術的ブレークスルー発表をフィルタリング",
         "translationContext": "Tooltip description for AI preset"
@@ -794,6 +1242,10 @@
     "settings.contentFilter.preset.celebrities.tooltip": {
         "text": "有名人のゴシップ、エンタメニュース、タブロイド記事を除外します",
         "translationContext": "Tooltip description for celebrities preset"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "気候不安",
+        "translationContext": "Name of climate preset filter"
     },
     "settings.contentFilter.preset.climate.tooltip": {
         "text": "気候変動のニュースと環境危機の報道をフィルターします",
@@ -999,9 +1451,17 @@
         "text": "ドラッグしてセクションの順番を変更できます。スイッチで有効・無効を切り替えてください。",
         "translationContext": "Instructions for managing article sections"
     },
+    "settings.sections.orderReset": {
+        "text": "順序をリセットしました！",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
     "settings.sections.resetOrder": {
         "text": "デフォルトの順序にリセット",
         "translationContext": "Button text to reset section order to defaults"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "透明性と信頼性を保つため、出典元は常に表示されます",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     },
     "settings.sections.switch": {
         "text": "有効化/無効化",
@@ -1027,25 +1487,25 @@
         "text": "表示するストーリー数:",
         "translationContext": "Label for the story count setting"
     },
-    "settings.storyExpandMode.description": {
-      "text": "カテゴリを表示する際のストーリーの展開方法を選択してください",
-      "translationContext": "Description for story expand mode setting"
-    },
-    "settings.storyExpandMode.label": {
-      "text": "ストーリー展開モード",
-      "translationContext": "Label for story expand mode setting"
-    },
     "settings.storyExpandMode.always": {
-      "text": "常にすべて展開",
-      "translationContext": "Option to always expand all stories automatically"
+        "text": "常にすべて展開",
+        "translationContext": "Option to always expand all stories automatically"
+    },
+    "settings.storyExpandMode.description": {
+        "text": "カテゴリを表示する際のストーリーの展開方法を選択してください",
+        "translationContext": "Description for story expand mode setting"
     },
     "settings.storyExpandMode.doubleClick": {
-      "text": "ダブルクリックですべて展開",
-      "translationContext": "Option to expand all stories via double-click on category"
+        "text": "ダブルクリックですべて展開",
+        "translationContext": "Option to expand all stories via double-click on category"
+    },
+    "settings.storyExpandMode.label": {
+        "text": "ストーリー展開モード",
+        "translationContext": "Label for story expand mode setting"
     },
     "settings.storyExpandMode.never": {
-      "text": "すべて展開しない",
-      "translationContext": "Option to disable bulk story expansion"
+        "text": "すべて展開しない",
+        "translationContext": "Option to disable bulk story expansion"
     },
     "settings.tabs.categories": {
         "text": "カテゴリー",
@@ -1155,6 +1615,10 @@
         "text": "{{count}}話を読みました",
         "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
+    "stats.storyRead": {
+        "text": "1つのストーリーを読みました",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
     "stats.weekDay": {
         "text": "第{{{week}}}週・{{{day}}}日目",
         "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
@@ -1243,9 +1707,33 @@
         "text": "乱流計",
         "translationContext": "Tooltip text for the turbulence meter button"
     },
+    "ui.citations": {
+        "text": "引用文献",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "検索をクリア",
+        "translationContext": "Aria label for clear search button"
+    },
     "ui.close": {
         "text": "閉じる",
         "translationContext": "Text for close buttons"
+    },
+    "ui.closeDialog": {
+        "text": "ダイアログを閉じる",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "画像が利用できません",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "次のスライド",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "前のスライド",
+        "translationContext": "Aria label for previous slide button"
     },
     "view.list": {
         "text": "リスト表示",
@@ -1382,209 +1870,5 @@
     "worldTension.whatIsThis": {
         "text": "これは何ですか？",
         "translationContext": "Button text to show explanation of world tension"
-    },
-    "settings.contentFilter.preset.ai": {
-        "text": "AI＆テックハイプ",
-        "translationContext": "Name of AI preset filter"
-    },
-    "settings.contentFilter.preset.climate": {
-        "text": "気候不安",
-        "translationContext": "Name of climate preset filter"
-    },
-    "quote.format.full": {
-        "text": "{{attribution}}において、{{author}}は「{{quote}}」と述べました",
-        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
-    },
-    "quote.format.inAttribution": {
-        "text": "{{attribution}}より",
-        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
-    },
-    "quote.format.authorSaid": {
-        "text": "{{author}}の発言",
-        "translationContext": "Quote author prefix. {author} is the person who said the quote"
-    },
-    "ui.citations": {
-        "text": "引用文献",
-        "translationContext": "Title for citations section"
-    },
-    "ui.clearSearch": {
-        "text": "検索をクリア",
-        "translationContext": "Aria label for clear search button"
-    },
-    "ui.closeDialog": {
-        "text": "ダイアログを閉じる",
-        "translationContext": "Aria label for close dialog button"
-    },
-    "ui.imageUnavailable": {
-        "text": "画像が利用できません",
-        "translationContext": "Text shown when an image cannot be loaded"
-    },
-    "ui.nextSlide": {
-        "text": "次のスライド",
-        "translationContext": "Aria label for next slide button"
-    },
-    "ui.previousSlide": {
-        "text": "前のスライド",
-        "translationContext": "Aria label for previous slide button"
-    },
-    "onboarding.welcome.title": {
-        "text": "Kagi Newsへようこそ！",
-        "translationContext": "Title for onboarding step 1"
-    },
-    "onboarding.welcome.subtitle": {
-        "text": "ニュース体験をカスタマイズしましょう。まずはご希望を選んでください：",
-        "translationContext": "Subtitle for onboarding step 1"
-    },
-    "onboarding.categories.title": {
-        "text": "トピックを選ぶ",
-        "translationContext": "Title for onboarding step 2"
-    },
-    "onboarding.categories.subtitle": {
-        "text": "Kagiニュースは世界各国のニュースを追い、国内外および地域の出来事をカバーしています。興味のあるカテゴリーを選択してください：",
-        "translationContext": "Subtitle for onboarding step 2"
-    },
-    "onboarding.sections.title": {
-        "text": "コンテンツ設定",
-        "translationContext": "Title for onboarding step 3"
-    },
-    "onboarding.sections.subtitle": {
-        "text": "カギニュースの記事には、概要、重要ポイント、タイムライン、さまざまな視点などのセクションがあります。これらのセクションは、読みやすさに応じてドラッグで並べ替えたり、完全に無効にしたりできます。",
-        "translationContext": "Subtitle for onboarding step 3"
-    },
-    "onboarding.button.skip": {
-        "text": "スキップ",
-        "translationContext": "Skip button text"
-    },
-    "onboarding.button.back": {
-        "text": "← 戻る",
-        "translationContext": "Back button text"
-    },
-    "onboarding.button.next": {
-        "text": "次へ →",
-        "translationContext": "Next button text"
-    },
-    "onboarding.button.getStarted": {
-        "text": "はじめる",
-        "translationContext": "Get started button text"
-    },
-    "settings.sections.orderReset": {
-        "text": "順序をリセットしました！",
-        "translationContext": "Confirmation message shown after resetting section order"
-    },
-    "stats.storyRead": {
-        "text": "1つのストーリーを読みました",
-        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
-    },
-    "header.fontSize": {
-        "text": "文字サイズ",
-        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
-    },
-    "settings.categories.disable": {
-        "text": "クリックで無効化、ドラッグで並べ替え",
-        "translationContext": "Tooltip for enabled category items that can be disabled"
-    },
-    "settings.categories.enable": {
-        "text": "クリックで有効化、ドラッグで並べ替え",
-        "translationContext": "Tooltip for disabled category items that can be enabled"
-    },
-    "article.reportInaccuracy": {
-        "text": "不正確な情報を報告",
-        "translationContext": "Tooltip text for the report button"
-    },
-    "article.reportModal.title": {
-        "text": "不正確な情報を報告",
-        "translationContext": "Title of the report modal"
-    },
-    "article.reportModal.subtitle": {
-        "text": "このストーリーの要約に関する問題を報告して、改善にご協力ください。",
-        "translationContext": "Subtitle explaining the purpose of the report modal"
-    },
-    "article.reportModal.reportingFor": {
-        "text": "報告対象の問題:",
-        "translationContext": "Label showing which story is being reported"
-    },
-    "article.reportModal.issueType": {
-        "text": "どうしましたか？",
-        "translationContext": "Label for the issue type selection"
-    },
-    "article.reportModal.issueType.factualError": {
-        "text": "事実誤認",
-        "translationContext": "Option for reporting factual errors"
-    },
-    "article.reportModal.issueType.misleading": {
-        "text": "誤解を招く要約",
-        "translationContext": "Option for reporting misleading summaries"
-    },
-    "article.reportModal.issueType.outdated": {
-        "text": "情報が古いです",
-        "translationContext": "Option for reporting outdated content"
-    },
-    "article.reportModal.issueType.other": {
-        "text": "その他の問題",
-        "translationContext": "Option for reporting other types of issues"
-    },
-    "article.reportModal.description": {
-        "text": "問題の内容を記入してください",
-        "translationContext": "Label for the description field"
-    },
-    "article.reportModal.descriptionPlaceholder": {
-        "text": "この要約の不正確な点や問題点を説明してください...",
-        "translationContext": "Placeholder text for the description field"
-    },
-    "article.reportModal.source": {
-        "text": "ソース (任意)",
-        "translationContext": "Label for the source URL field"
-    },
-    "article.reportModal.sourceHelper": {
-        "text": "報告を裏付ける信頼できる情報源へのリンクを追加してください。",
-        "translationContext": "Helper text explaining the purpose of source URLs"
-    },
-    "article.reportModal.sourcePlaceholder": {
-        "text": "https://example.com/article",
-        "translationContext": "Placeholder text for the source URL field"
-    },
-    "article.reportModal.addSource": {
-        "text": "別のソースを追加",
-        "translationContext": "Button text to add another source URL field"
-    },
-    "article.reportModal.characterCount": {
-        "text": "{{count}} / {{max}} 文字",
-        "translationContext": "Character count display with placeholders for current count and maximum"
-    },
-    "article.reportModal.cancel": {
-        "text": "キャンセル",
-        "translationContext": "Cancel button text"
-    },
-    "article.reportModal.submit": {
-        "text": "報告を送信",
-        "translationContext": "Submit button text"
-    },
-    "article.reportModal.submitting": {
-        "text": "送信中…",
-        "translationContext": "Button text while report is being submitted"
-    },
-    "article.reportModal.success": {
-        "text": "ご意見ありがとうございます。報告は正常に送信されました。",
-        "translationContext": "Success message after report submission"
-    },
-    "article.reportModal.error": {
-        "text": "レポートの送信に失敗しました。再度お試しください。",
-        "translationContext": "Generic error message for report submission failure"
-    },
-    "footer.aboutMobile": {
-        "text": "概要",
-        "translationContext": "Shorter link text for about page on mobile devices"
-    },
-    "footer.rssFeedMobile": {
-        "text": "RSS",
-        "translationContext": "Shorter link text for RSS feed on mobile devices"
-    },
-    "article.reportModal.reportId": {
-        "text": "レポートID: {{id}}",
-        "translationContext": "Display of the report ID after successful submission"
-    },
-    "settings.sections.sourcesRequired": {
-        "text": "透明性と信頼性を保つため、出典元は常に表示されます",
-        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }

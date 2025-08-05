@@ -135,6 +135,94 @@
         "text": "点击切换已读状态",
         "translationContext": "Title/tooltip for the read status toggle button"
     },
+    "article.reportInaccuracy": {
+        "text": "报告不准确之处",
+        "translationContext": "Tooltip text for the report button"
+    },
+    "article.reportModal.addSource": {
+        "text": "添加其他来源",
+        "translationContext": "Button text to add another source URL field"
+    },
+    "article.reportModal.cancel": {
+        "text": "取消",
+        "translationContext": "Cancel button text"
+    },
+    "article.reportModal.characterCount": {
+        "text": "{{count}} / {{max}} 字符",
+        "translationContext": "Character count display with placeholders for current count and maximum"
+    },
+    "article.reportModal.description": {
+        "text": "请描述问题",
+        "translationContext": "Label for the description field"
+    },
+    "article.reportModal.descriptionPlaceholder": {
+        "text": "解释此摘要不准确或有问题之处……",
+        "translationContext": "Placeholder text for the description field"
+    },
+    "article.reportModal.error": {
+        "text": "报告提交失败，请重试。",
+        "translationContext": "Generic error message for report submission failure"
+    },
+    "article.reportModal.issueType": {
+        "text": "有什么问题？",
+        "translationContext": "Label for the issue type selection"
+    },
+    "article.reportModal.issueType.factualError": {
+        "text": "事实错误",
+        "translationContext": "Option for reporting factual errors"
+    },
+    "article.reportModal.issueType.misleading": {
+        "text": "误导性摘要",
+        "translationContext": "Option for reporting misleading summaries"
+    },
+    "article.reportModal.issueType.other": {
+        "text": "其他问题",
+        "translationContext": "Option for reporting other types of issues"
+    },
+    "article.reportModal.issueType.outdated": {
+        "text": "过时内容",
+        "translationContext": "Option for reporting outdated content"
+    },
+    "article.reportModal.reportId": {
+        "text": "报告 ID：{{id}}",
+        "translationContext": "Display of the report ID after successful submission"
+    },
+    "article.reportModal.reportingFor": {
+        "text": "报告问题：",
+        "translationContext": "Label showing which story is being reported"
+    },
+    "article.reportModal.source": {
+        "text": "来源（可选）",
+        "translationContext": "Label for the source URL field"
+    },
+    "article.reportModal.sourceHelper": {
+        "text": "添加链接以引用报告中可信的来源",
+        "translationContext": "Helper text explaining the purpose of source URLs"
+    },
+    "article.reportModal.sourcePlaceholder": {
+        "text": "https://example.com/article",
+        "translationContext": "Placeholder text for the source URL field"
+    },
+    "article.reportModal.submit": {
+        "text": "提交报告",
+        "translationContext": "Submit button text"
+    },
+    "article.reportModal.submitting": {
+        "text": "正在提交...",
+        "translationContext": "Button text while report is being submitted"
+    },
+    "article.reportModal.subtitle": {
+        "text": "报告本故事摘要的任何问题，帮助我们改进",
+        "translationContext": "Subtitle explaining the purpose of the report modal"
+    },
+    "article.reportModal.success": {
+        "text": "感谢您的反馈。您的报告已提交。",
+        "translationContext": "Success message after report submission"
+    },
+    "article.reportModal.title": {
+        "text": "报告不准确",
+        "translationContext": "Title of the report modal"
+    },
     "article.shareCopied": {
         "text": "已复制！",
         "translationContext": "Success message shown when URL is copied to clipboard"
@@ -163,6 +251,10 @@
         "text": "比利時",
         "translationContext": "Display name for the Belgium news category"
     },
+    "category.bitcoin": {
+        "text": "Bitcoin",
+        "translationContext": "Display name for the Bitcoin news category"
+    },
     "category.brazil": {
         "text": "巴西",
         "translationContext": "Display name for the Brazil news category"
@@ -174,6 +266,18 @@
     "category.canada": {
         "text": "加拿大",
         "translationContext": "Display name for the Canada news category"
+    },
+    "category.china": {
+        "text": "China",
+        "translationContext": "Display name for the China news category"
+    },
+    "category.chinaTaiwan": {
+        "text": "Taiwan",
+        "translationContext": "Display name for the Taiwan news category"
+    },
+    "category.colombia": {
+        "text": "Colombia",
+        "translationContext": "Display name for the Colombia news category"
     },
     "category.costaRica": {
         "text": "哥斯達黎加",
@@ -187,9 +291,21 @@
         "text": "網絡安全",
         "translationContext": "Display name for the Cybersecurity news category"
     },
+    "category.czechRepublic": {
+        "text": "Czech Republic",
+        "translationContext": "Display name for the Czech Republic news category"
+    },
+    "category.denmark": {
+        "text": "Denmark",
+        "translationContext": "Display name for the Denmark news category"
+    },
     "category.economy": {
         "text": "經濟",
         "translationContext": "Display name for the Economy news category"
+    },
+    "category.egypt": {
+        "text": "Egypt",
+        "translationContext": "Display name for the Egypt news category"
     },
     "category.entertainment": {
         "text": "娱乐",
@@ -202,6 +318,10 @@
     "category.europe": {
         "text": "歐洲",
         "translationContext": "Display name for the Europe news category"
+    },
+    "category.finland": {
+        "text": "Finland",
+        "translationContext": "Display name for the Finland news category"
     },
     "category.france": {
         "text": "法國",
@@ -223,9 +343,17 @@
         "text": "健康",
         "translationContext": "Display name for the Health news category"
     },
+    "category.hongKong": {
+        "text": "Hong Kong",
+        "translationContext": "Display name for the Hong Kong news category"
+    },
     "category.india": {
         "text": "印度",
         "translationContext": "Display name for the India news category"
+    },
+    "category.indonesia": {
+        "text": "Indonesia",
+        "translationContext": "Display name for the Indonesia news category"
     },
     "category.ireland": {
         "text": "愛爾蘭",
@@ -243,13 +371,29 @@
         "text": "日本",
         "translationContext": "Display name for the Japan news category"
     },
+    "category.kenya": {
+        "text": "Kenya",
+        "translationContext": "Display name for the Kenya news category"
+    },
+    "category.korea": {
+        "text": "Korea",
+        "translationContext": "Display name for the Korea news category"
+    },
     "category.linuxOss": {
         "text": "Linux與開源",
         "translationContext": "Display name for the Linux & OSS news category"
     },
+    "category.malaysia": {
+        "text": "Malaysia",
+        "translationContext": "Display name for the Malaysia news category"
+    },
     "category.mexico": {
         "text": "墨西哥",
         "translationContext": "Display name for the Mexico news category"
+    },
+    "category.middleEast": {
+        "text": "Middle East",
+        "translationContext": "Display name for the Middle East news category"
     },
     "category.netherlands": {
         "text": "荷兰",
@@ -259,9 +403,21 @@
         "text": "紐西蘭",
         "translationContext": "Display name for the New Zealand news category"
     },
+    "category.nigeria": {
+        "text": "Nigeria",
+        "translationContext": "Display name for the Nigeria news category"
+    },
+    "category.norway": {
+        "text": "Norway",
+        "translationContext": "Display name for the Norway news category"
+    },
     "category.pakistan": {
         "text": "巴基斯坦",
         "translationContext": "Display name for the Pakistan news category"
+    },
+    "category.philippines": {
+        "text": "Philippines",
+        "translationContext": "Display name for the Philippines news category"
     },
     "category.poland": {
         "text": "波蘭",
@@ -279,6 +435,10 @@
         "text": "羅馬尼亞",
         "translationContext": "Display name for the Romania news category"
     },
+    "category.russia": {
+        "text": "Russia",
+        "translationContext": "Display name for the Russia news category"
+    },
     "category.science": {
         "text": "科学",
         "translationContext": "Display name for the Science news category"
@@ -287,9 +447,17 @@
         "text": "塞爾維亞",
         "translationContext": "Display name for the Serbia news category"
     },
+    "category.singapore": {
+        "text": "Singapore",
+        "translationContext": "Display name for the Singapore news category"
+    },
     "category.slovenia": {
         "text": "斯洛維尼亞",
         "translationContext": "Display name for the Slovenia news category"
+    },
+    "category.southAfrica": {
+        "text": "South Africa",
+        "translationContext": "Display name for the South Africa news category"
     },
     "category.southKorea": {
         "text": "韓國",
@@ -306,6 +474,10 @@
     "category.sweden": {
         "text": "瑞典",
         "translationContext": "Display name for the Sweden news category"
+    },
+    "category.switzerland": {
+        "text": "Switzerland",
+        "translationContext": "Display name for the Switzerland news category"
     },
     "category.switzerlandDe": {
         "text": "瑞士（德語）",
@@ -327,6 +499,10 @@
         "text": "历史上的今天",
         "translationContext": "Display name for the OnThisDay category"
     },
+    "category.turkey": {
+        "text": "Turkey",
+        "translationContext": "Display name for the Turkey news category"
+    },
     "category.uk": {
         "text": "英國",
         "translationContext": "Display name for the UK news category"
@@ -339,6 +515,182 @@
         "text": "美国",
         "translationContext": "Display name for the USA news category"
     },
+    "category.usaAlabama": {
+        "text": "USA | Alabama",
+        "translationContext": "Display name for the USA Alabama news category"
+    },
+    "category.usaAlaska": {
+        "text": "USA | Alaska",
+        "translationContext": "Display name for the USA Alaska news category"
+    },
+    "category.usaArizona": {
+        "text": "USA | Arizona",
+        "translationContext": "Display name for the USA Arizona news category"
+    },
+    "category.usaArkansas": {
+        "text": "USA | Arkansas",
+        "translationContext": "Display name for the USA Arkansas news category"
+    },
+    "category.usaCalifornia": {
+        "text": "USA | California",
+        "translationContext": "Display name for the USA California news category"
+    },
+    "category.usaColorado": {
+        "text": "USA | Colorado",
+        "translationContext": "Display name for the USA Colorado news category"
+    },
+    "category.usaConnecticut": {
+        "text": "USA | Connecticut",
+        "translationContext": "Display name for the USA Connecticut news category"
+    },
+    "category.usaDelaware": {
+        "text": "USA | Delaware",
+        "translationContext": "Display name for the USA Delaware news category"
+    },
+    "category.usaFlorida": {
+        "text": "USA | Florida",
+        "translationContext": "Display name for the USA Florida news category"
+    },
+    "category.usaGeorgia": {
+        "text": "USA | Georgia",
+        "translationContext": "Display name for the USA Georgia news category"
+    },
+    "category.usaHawaii": {
+        "text": "USA | Hawaii",
+        "translationContext": "Display name for the USA Hawaii news category"
+    },
+    "category.usaIdaho": {
+        "text": "USA | Idaho",
+        "translationContext": "Display name for the USA Idaho news category"
+    },
+    "category.usaIllinois": {
+        "text": "USA | Illinois",
+        "translationContext": "Display name for the USA Illinois news category"
+    },
+    "category.usaIndiana": {
+        "text": "USA | Indiana",
+        "translationContext": "Display name for the USA Indiana news category"
+    },
+    "category.usaIowa": {
+        "text": "USA | Iowa",
+        "translationContext": "Display name for the USA Iowa news category"
+    },
+    "category.usaKansas": {
+        "text": "USA | Kansas",
+        "translationContext": "Display name for the USA Kansas news category"
+    },
+    "category.usaKentucky": {
+        "text": "USA | Kentucky",
+        "translationContext": "Display name for the USA Kentucky news category"
+    },
+    "category.usaLouisiana": {
+        "text": "USA | Louisiana",
+        "translationContext": "Display name for the USA Louisiana news category"
+    },
+    "category.usaMaine": {
+        "text": "USA | Maine",
+        "translationContext": "Display name for the USA Maine news category"
+    },
+    "category.usaMaryland": {
+        "text": "USA | Maryland",
+        "translationContext": "Display name for the USA Maryland news category"
+    },
+    "category.usaMassachusetts": {
+        "text": "USA | Massachusetts",
+        "translationContext": "Display name for the USA Massachusetts news category"
+    },
+    "category.usaMichigan": {
+        "text": "USA | Michigan",
+        "translationContext": "Display name for the USA Michigan news category"
+    },
+    "category.usaMinnesota": {
+        "text": "USA | Minnesota",
+        "translationContext": "Display name for the USA Minnesota news category"
+    },
+    "category.usaMississippi": {
+        "text": "USA | Mississippi",
+        "translationContext": "Display name for the USA Mississippi news category"
+    },
+    "category.usaMissouri": {
+        "text": "USA | Missouri",
+        "translationContext": "Display name for the USA Missouri news category"
+    },
+    "category.usaMontana": {
+        "text": "USA | Montana",
+        "translationContext": "Display name for the USA Montana news category"
+    },
+    "category.usaNebraska": {
+        "text": "USA | Nebraska",
+        "translationContext": "Display name for the USA Nebraska news category"
+    },
+    "category.usaNevada": {
+        "text": "USA | Nevada",
+        "translationContext": "Display name for the USA Nevada news category"
+    },
+    "category.usaNewHampshire": {
+        "text": "USA | New Hampshire",
+        "translationContext": "Display name for the USA New Hampshire news category"
+    },
+    "category.usaNewJersey": {
+        "text": "USA | New Jersey",
+        "translationContext": "Display name for the USA New Jersey news category"
+    },
+    "category.usaNewMexico": {
+        "text": "USA | New Mexico",
+        "translationContext": "Display name for the USA New Mexico news category"
+    },
+    "category.usaNewYork": {
+        "text": "USA | New York",
+        "translationContext": "Display name for the USA New York news category"
+    },
+    "category.usaNorthCarolina": {
+        "text": "USA | North Carolina",
+        "translationContext": "Display name for the USA North Carolina news category"
+    },
+    "category.usaNorthDakota": {
+        "text": "USA | North Dakota",
+        "translationContext": "Display name for the USA North Dakota news category"
+    },
+    "category.usaOhio": {
+        "text": "USA | Ohio",
+        "translationContext": "Display name for the USA Ohio news category"
+    },
+    "category.usaOklahoma": {
+        "text": "USA | Oklahoma",
+        "translationContext": "Display name for the USA Oklahoma news category"
+    },
+    "category.usaOregon": {
+        "text": "USA | Oregon",
+        "translationContext": "Display name for the USA Oregon news category"
+    },
+    "category.usaPennsylvania": {
+        "text": "USA | Pennsylvania",
+        "translationContext": "Display name for the USA Pennsylvania news category"
+    },
+    "category.usaRhodeIsland": {
+        "text": "USA | Rhode Island",
+        "translationContext": "Display name for the USA Rhode Island news category"
+    },
+    "category.usaSouthCarolina": {
+        "text": "USA | South Carolina",
+        "translationContext": "Display name for the USA South Carolina news category"
+    },
+    "category.usaSouthDakota": {
+        "text": "USA | South Dakota",
+        "translationContext": "Display name for the USA South Dakota news category"
+    },
+    "category.usaTennessee": {
+        "text": "USA | Tennessee",
+        "translationContext": "Display name for the USA Tennessee news category"
+    },
+    "category.usaTexas": {
+        "text": "USA | Texas",
+        "translationContext": "Display name for the USA Texas news category"
+    },
+    "category.usaUtah": {
+        "text": "USA | Utah",
+        "translationContext": "Display name for the USA Utah news category"
+    },
     "category.usaVermont": {
         "text": "美國 | 佛蒙特州",
         "translationContext": "Display name for the USA | Vermont news category"
@@ -346,6 +698,26 @@
     "category.usaVirginia": {
         "text": "美國 | 弗吉尼亞州",
         "translationContext": "Display name for the USA | Virginia news category"
+    },
+    "category.usaWashington": {
+        "text": "USA | Washington",
+        "translationContext": "Display name for the USA Washington news category"
+    },
+    "category.usaWestVirginia": {
+        "text": "USA | West Virginia",
+        "translationContext": "Display name for the USA West Virginia news category"
+    },
+    "category.usaWisconsin": {
+        "text": "USA | Wisconsin",
+        "translationContext": "Display name for the USA Wisconsin news category"
+    },
+    "category.usaWyoming": {
+        "text": "USA | Wyoming",
+        "translationContext": "Display name for the USA Wyoming news category"
+    },
+    "category.vietnam": {
+        "text": "Vietnam",
+        "translationContext": "Display name for the Vietnam news category"
     },
     "category.world": {
         "text": "世界",
@@ -439,6 +811,10 @@
         "text": "关于Kagi News",
         "translationContext": "Link text for about page"
     },
+    "footer.aboutMobile": {
+        "text": "关于",
+        "translationContext": "Shorter link text for about page on mobile devices"
+    },
     "footer.contribute": {
         "text": "贡献",
         "translationContext": "Link text for contributing to the project"
@@ -446,6 +822,14 @@
     "footer.rssFeed": {
         "text": "RSS订阅",
         "translationContext": "Link text for RSS feed"
+    },
+    "footer.rssFeedMobile": {
+        "text": "RSS",
+        "translationContext": "Shorter link text for RSS feed on mobile devices"
+    },
+    "header.fontSize": {
+        "text": "字号",
+        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
     },
     "header.settings": {
         "text": "设置",
@@ -495,6 +879,46 @@
         "text": "正在加载新闻...",
         "translationContext": "Loading message shown when fetching news stories"
     },
+    "onboarding.button.back": {
+        "text": "← 返回",
+        "translationContext": "Back button text"
+    },
+    "onboarding.button.getStarted": {
+        "text": "开始",
+        "translationContext": "Get started button text"
+    },
+    "onboarding.button.next": {
+        "text": "下一步 →",
+        "translationContext": "Next button text"
+    },
+    "onboarding.button.skip": {
+        "text": "跳过",
+        "translationContext": "Skip button text"
+    },
+    "onboarding.categories.subtitle": {
+        "text": "Kagi 新闻跟踪来自世界各地的新闻，涵盖国家、区域和本地事件。选择您感兴趣的类别：",
+        "translationContext": "Subtitle for onboarding step 2"
+    },
+    "onboarding.categories.title": {
+        "text": "选择您感兴趣的话题",
+        "translationContext": "Title for onboarding step 2"
+    },
+    "onboarding.sections.subtitle": {
+        "text": "Kagi News 文章包含摘要、要点、时间线和不同观点等多个部分。您可以根据自己的阅读偏好拖动重新排序这些部分，或完全禁用它们。",
+        "translationContext": "Subtitle for onboarding step 3"
+    },
+    "onboarding.sections.title": {
+        "text": "内容偏好",
+        "translationContext": "Title for onboarding step 3"
+    },
+    "onboarding.welcome.subtitle": {
+        "text": "我们将为您定制新闻体验。首先，请选择您的偏好：",
+        "translationContext": "Subtitle for onboarding step 1"
+    },
+    "onboarding.welcome.title": {
+        "text": "欢迎使用 Kagi News！",
+        "translationContext": "Title for onboarding step 1"
+    },
     "onthisday.events": {
         "text": "大事记",
         "translationContext": "Title for the events section in Today in History"
@@ -502,6 +926,18 @@
     "onthisday.people": {
         "text": "人物",
         "translationContext": "Title for the people section in Today in History"
+    },
+    "quote.format.authorSaid": {
+        "text": "{{author}} 说",
+        "translationContext": "Quote author prefix. {author} is the person who said the quote"
+    },
+    "quote.format.full": {
+        "text": "在{{attribution}}中，{{author}}曾说：“{{quote}}”",
+        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
+    },
+    "quote.format.inAttribution": {
+        "text": "出自{{attribution}}",
+        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
     },
     "section.actionItems": {
         "text": "行动事项",
@@ -615,9 +1051,17 @@
         "text": "+ 贡献分类",
         "translationContext": "Link text for contributing categories"
     },
+    "settings.categories.disable": {
+        "text": "点击停用，拖动以重新排序",
+        "translationContext": "Tooltip for enabled category items that can be disabled"
+    },
     "settings.categories.disabled": {
         "text": "已禁用分类",
         "translationContext": "Title for the disabled (hidden) categories section"
+    },
+    "settings.categories.enable": {
+        "text": "点击启用，拖动以重新排序",
+        "translationContext": "Tooltip for disabled category items that can be enabled"
     },
     "settings.categories.enabled": {
         "text": "已启用的类别",
@@ -783,6 +1227,10 @@
         "text": "过滤模式",
         "translationContext": "Label for filter mode selection"
     },
+    "settings.contentFilter.preset.ai": {
+        "text": "AI与科技热潮",
+        "translationContext": "Name of AI preset filter"
+    },
     "settings.contentFilter.preset.ai.tooltip": {
         "text": "过滤人工智能炒作、大语言模型新闻和科技突破公告",
         "translationContext": "Tooltip description for AI preset"
@@ -794,6 +1242,10 @@
     "settings.contentFilter.preset.celebrities.tooltip": {
         "text": "过滤明星八卦、娱乐新闻和小报内容",
         "translationContext": "Tooltip description for celebrities preset"
+    },
+    "settings.contentFilter.preset.climate": {
+        "text": "气候焦虑",
+        "translationContext": "Name of climate preset filter"
     },
     "settings.contentFilter.preset.climate.tooltip": {
         "text": "过滤气候变化新闻和环境危机报道",
@@ -999,9 +1451,17 @@
         "text": "拖动以重新排序部分。使用开关启用/禁用。",
         "translationContext": "Instructions for managing article sections"
     },
+    "settings.sections.orderReset": {
+        "text": "顺序已重置！",
+        "translationContext": "Confirmation message shown after resetting section order"
+    },
     "settings.sections.resetOrder": {
         "text": "恢复默认顺序",
         "translationContext": "Button text to reset section order to defaults"
+    },
+    "settings.sections.sourcesRequired": {
+        "text": "为保持透明度和可信度，来源始终显示",
+        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     },
     "settings.sections.switch": {
         "text": "启用/禁用",
@@ -1027,25 +1487,25 @@
         "text": "显示的故事数量：",
         "translationContext": "Label for the story count setting"
     },
-    "settings.storyExpandMode.description": {
-      "text": "选择查看类别时故事的展开方式",
-      "translationContext": "Description for story expand mode setting"
-    },
-    "settings.storyExpandMode.label": {
-      "text": "故事展开模式",
-      "translationContext": "Label for story expand mode setting"
-    },
     "settings.storyExpandMode.always": {
-      "text": "始终展开全部",
-      "translationContext": "Option to always expand all stories automatically"
+        "text": "始终展开全部",
+        "translationContext": "Option to always expand all stories automatically"
+    },
+    "settings.storyExpandMode.description": {
+        "text": "选择查看类别时故事的展开方式",
+        "translationContext": "Description for story expand mode setting"
     },
     "settings.storyExpandMode.doubleClick": {
-      "text": "双击展开全部",
-      "translationContext": "Option to expand all stories via double-click on category"
+        "text": "双击展开全部",
+        "translationContext": "Option to expand all stories via double-click on category"
+    },
+    "settings.storyExpandMode.label": {
+        "text": "故事展开模式",
+        "translationContext": "Label for story expand mode setting"
     },
     "settings.storyExpandMode.never": {
-      "text": "从不展开全部",
-      "translationContext": "Option to disable bulk story expansion"
+        "text": "从不展开全部",
+        "translationContext": "Option to disable bulk story expansion"
     },
     "settings.tabs.categories": {
         "text": "分类",
@@ -1155,6 +1615,10 @@
         "text": "你已阅读了{{count}}个故事",
         "translationContext": "Shows how many stories the user has read, {{count}} will be replaced with a number"
     },
+    "stats.storyRead": {
+        "text": "您已阅读{{count}}个故事",
+        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
+    },
     "stats.weekDay": {
         "text": "第{{{week}}}周，第{{{day}}}天",
         "translationContext": "Shows the current week and day of the year, {{week}} and {{day}} will be replaced with numbers"
@@ -1243,9 +1707,33 @@
         "text": "湍流计",
         "translationContext": "Tooltip text for the turbulence meter button"
     },
+    "ui.citations": {
+        "text": "引用",
+        "translationContext": "Title for citations section"
+    },
+    "ui.clearSearch": {
+        "text": "清除搜索",
+        "translationContext": "Aria label for clear search button"
+    },
     "ui.close": {
         "text": "关闭",
         "translationContext": "Text for close buttons"
+    },
+    "ui.closeDialog": {
+        "text": "关闭对话框",
+        "translationContext": "Aria label for close dialog button"
+    },
+    "ui.imageUnavailable": {
+        "text": "图片不可用",
+        "translationContext": "Text shown when an image cannot be loaded"
+    },
+    "ui.nextSlide": {
+        "text": "下一张",
+        "translationContext": "Aria label for next slide button"
+    },
+    "ui.previousSlide": {
+        "text": "上一张幻灯片",
+        "translationContext": "Aria label for previous slide button"
     },
     "view.list": {
         "text": "列表视图",
@@ -1382,209 +1870,5 @@
     "worldTension.whatIsThis": {
         "text": "这是什么？",
         "translationContext": "Button text to show explanation of world tension"
-    },
-    "settings.contentFilter.preset.ai": {
-        "text": "AI与科技热潮",
-        "translationContext": "Name of AI preset filter"
-    },
-    "settings.contentFilter.preset.climate": {
-        "text": "气候焦虑",
-        "translationContext": "Name of climate preset filter"
-    },
-    "quote.format.full": {
-        "text": "在{{attribution}}中，{{author}}曾说：“{{quote}}”",
-        "translationContext": "Full quote format with attribution and author. {attribution} is the source/publication, {author} is the person, {quote} is the actual quote"
-    },
-    "quote.format.inAttribution": {
-        "text": "出自{{attribution}}",
-        "translationContext": "Quote attribution prefix for the source/publication only. {attribution} is the source/publication"
-    },
-    "quote.format.authorSaid": {
-        "text": "{{author}} 说",
-        "translationContext": "Quote author prefix. {author} is the person who said the quote"
-    },
-    "ui.citations": {
-        "text": "引用",
-        "translationContext": "Title for citations section"
-    },
-    "ui.clearSearch": {
-        "text": "清除搜索",
-        "translationContext": "Aria label for clear search button"
-    },
-    "ui.closeDialog": {
-        "text": "关闭对话框",
-        "translationContext": "Aria label for close dialog button"
-    },
-    "ui.imageUnavailable": {
-        "text": "图片不可用",
-        "translationContext": "Text shown when an image cannot be loaded"
-    },
-    "ui.nextSlide": {
-        "text": "下一张",
-        "translationContext": "Aria label for next slide button"
-    },
-    "ui.previousSlide": {
-        "text": "上一张幻灯片",
-        "translationContext": "Aria label for previous slide button"
-    },
-    "onboarding.welcome.title": {
-        "text": "欢迎使用 Kagi News！",
-        "translationContext": "Title for onboarding step 1"
-    },
-    "onboarding.welcome.subtitle": {
-        "text": "我们将为您定制新闻体验。首先，请选择您的偏好：",
-        "translationContext": "Subtitle for onboarding step 1"
-    },
-    "onboarding.categories.title": {
-        "text": "选择您感兴趣的话题",
-        "translationContext": "Title for onboarding step 2"
-    },
-    "onboarding.categories.subtitle": {
-        "text": "Kagi 新闻跟踪来自世界各地的新闻，涵盖国家、区域和本地事件。选择您感兴趣的类别：",
-        "translationContext": "Subtitle for onboarding step 2"
-    },
-    "onboarding.sections.title": {
-        "text": "内容偏好",
-        "translationContext": "Title for onboarding step 3"
-    },
-    "onboarding.sections.subtitle": {
-        "text": "Kagi News 文章包含摘要、要点、时间线和不同观点等多个部分。您可以根据自己的阅读偏好拖动重新排序这些部分，或完全禁用它们。",
-        "translationContext": "Subtitle for onboarding step 3"
-    },
-    "onboarding.button.skip": {
-        "text": "跳过",
-        "translationContext": "Skip button text"
-    },
-    "onboarding.button.back": {
-        "text": "← 返回",
-        "translationContext": "Back button text"
-    },
-    "onboarding.button.next": {
-        "text": "下一步 →",
-        "translationContext": "Next button text"
-    },
-    "onboarding.button.getStarted": {
-        "text": "开始",
-        "translationContext": "Get started button text"
-    },
-    "settings.sections.orderReset": {
-        "text": "顺序已重置！",
-        "translationContext": "Confirmation message shown after resetting section order"
-    },
-    "stats.storyRead": {
-        "text": "您已阅读{{count}}个故事",
-        "translationContext": "Shows when the user has read exactly 1 story, {count} will be replaced with 1"
-    },
-    "header.fontSize": {
-        "text": "字号",
-        "translationContext": "Tooltip and aria-label for the font size adjustment button in the header"
-    },
-    "settings.categories.disable": {
-        "text": "点击停用，拖动以重新排序",
-        "translationContext": "Tooltip for enabled category items that can be disabled"
-    },
-    "settings.categories.enable": {
-        "text": "点击启用，拖动以重新排序",
-        "translationContext": "Tooltip for disabled category items that can be enabled"
-    },
-    "article.reportInaccuracy": {
-        "text": "报告不准确之处",
-        "translationContext": "Tooltip text for the report button"
-    },
-    "article.reportModal.title": {
-        "text": "报告不准确",
-        "translationContext": "Title of the report modal"
-    },
-    "article.reportModal.subtitle": {
-        "text": "报告本故事摘要的任何问题，帮助我们改进",
-        "translationContext": "Subtitle explaining the purpose of the report modal"
-    },
-    "article.reportModal.reportingFor": {
-        "text": "报告问题：",
-        "translationContext": "Label showing which story is being reported"
-    },
-    "article.reportModal.issueType": {
-        "text": "有什么问题？",
-        "translationContext": "Label for the issue type selection"
-    },
-    "article.reportModal.issueType.factualError": {
-        "text": "事实错误",
-        "translationContext": "Option for reporting factual errors"
-    },
-    "article.reportModal.issueType.misleading": {
-        "text": "误导性摘要",
-        "translationContext": "Option for reporting misleading summaries"
-    },
-    "article.reportModal.issueType.outdated": {
-        "text": "过时内容",
-        "translationContext": "Option for reporting outdated content"
-    },
-    "article.reportModal.issueType.other": {
-        "text": "其他问题",
-        "translationContext": "Option for reporting other types of issues"
-    },
-    "article.reportModal.description": {
-        "text": "请描述问题",
-        "translationContext": "Label for the description field"
-    },
-    "article.reportModal.descriptionPlaceholder": {
-        "text": "解释此摘要不准确或有问题之处……",
-        "translationContext": "Placeholder text for the description field"
-    },
-    "article.reportModal.source": {
-        "text": "来源（可选）",
-        "translationContext": "Label for the source URL field"
-    },
-    "article.reportModal.sourceHelper": {
-        "text": "添加链接以引用报告中可信的来源",
-        "translationContext": "Helper text explaining the purpose of source URLs"
-    },
-    "article.reportModal.sourcePlaceholder": {
-        "text": "https://example.com/article",
-        "translationContext": "Placeholder text for the source URL field"
-    },
-    "article.reportModal.addSource": {
-        "text": "添加其他来源",
-        "translationContext": "Button text to add another source URL field"
-    },
-    "article.reportModal.characterCount": {
-        "text": "{{count}} / {{max}} 字符",
-        "translationContext": "Character count display with placeholders for current count and maximum"
-    },
-    "article.reportModal.cancel": {
-        "text": "取消",
-        "translationContext": "Cancel button text"
-    },
-    "article.reportModal.submit": {
-        "text": "提交报告",
-        "translationContext": "Submit button text"
-    },
-    "article.reportModal.submitting": {
-        "text": "正在提交...",
-        "translationContext": "Button text while report is being submitted"
-    },
-    "article.reportModal.success": {
-        "text": "感谢您的反馈。您的报告已提交。",
-        "translationContext": "Success message after report submission"
-    },
-    "article.reportModal.error": {
-        "text": "报告提交失败，请重试。",
-        "translationContext": "Generic error message for report submission failure"
-    },
-    "footer.aboutMobile": {
-        "text": "关于",
-        "translationContext": "Shorter link text for about page on mobile devices"
-    },
-    "footer.rssFeedMobile": {
-        "text": "RSS",
-        "translationContext": "Shorter link text for RSS feed on mobile devices"
-    },
-    "article.reportModal.reportId": {
-        "text": "报告 ID：{{id}}",
-        "translationContext": "Display of the report ID after successful submission"
-    },
-    "settings.sections.sourcesRequired": {
-        "text": "为保持透明度和可信度，来源始终显示",
-        "translationContext": "Tooltip explaining why sources section cannot be disabled"
     }
 }
