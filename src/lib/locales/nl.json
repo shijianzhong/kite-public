@@ -1484,7 +1484,7 @@
         "translationContext": "Success message when link is copied"
     },
     "settings.storyCount.label": {
-        "text": "Aantal getoonde verhalen:",
+        "text": "Aantal getoonde verhalen",
         "translationContext": "Label for the story count setting"
     },
     "settings.storyExpandMode.always": {
