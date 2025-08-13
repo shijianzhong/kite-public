@@ -1231,17 +1231,17 @@
       "uk": "Філіппіни"
     },
     "feeds": [
-      "https://news.google.com/atom/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFYyT0dNU0JXVnVMVWRDS0FBUAE?hl=en-PH&gl=PH&ceid=PH:en",
-      "https://www.philstar.com/rss/headlines",
-      "https://rappler.com/feed/?rss",
-      "https://www.inquirer.net/fullfeed",
-      "https://www.abs-cbn.com/feed",
-      "https://www.manilatimes.net/news/feed/",
-      "https://www.bworldonline.com/feed/",
-      "https://www.sunstar.com.ph/api/v1/collections/home.rss",
       "https://cebudailynews.inquirer.net/feed",
+      "https://interaksyon.philstar.com/feed/",
       "https://mindanaotimes.com.ph/feed/",
-      "https://interaksyon.philstar.com/feed/"
+      "https://news.google.com/atom/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRFYyT0dNU0JXVnVMVWRDS0FBUAE?hl=en-PH&gl=PH&ceid=PH:en",
+      "https://rappler.com/feed/?rss",
+      "https://www.abs-cbn.com/feed",
+      "https://www.bworldonline.com/feed/",
+      "https://www.inquirer.net/fullfeed",
+      "https://www.manilatimes.net/news/feed/",
+      "https://www.philstar.com/rss/headlines",
+      "https://www.sunstar.com.ph/api/v1/collections/home.rss"
     ]
   },
   "Poland": {
