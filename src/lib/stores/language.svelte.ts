@@ -34,9 +34,9 @@ interface LanguageState {
 
 // Initialize language state
 const languageState = $state<LanguageState>({
-  current: "en",
+  current: "zh-Hans",
   currentStrings: {},
-  currentLocale: "en",
+  currentLocale: "zh-Hans",
 });
 
 // Helper functions
@@ -46,17 +46,17 @@ function saveLanguage(language: SupportedLanguage) {
 }
 
 function loadLanguage(): SupportedLanguage {
-  if (!browser) return "en";
+  if (!browser) return "zh-Hans";
 
   const stored = localStorage.getItem("language") as SupportedLanguage;
 
-  // Migrate "default" to "en" for UI language
+  // Migrate "default" to "zh-Hans" for UI language
   if (stored === "default") {
-    localStorage.setItem("language", "en");
-    return "en";
+    localStorage.setItem("language", "zh-Hans");
+    return "zh-Hans";
   }
 
-  return stored || "en";
+  return stored || "zh-Hans";
 }
 
 // Load locale data from API
@@ -82,9 +82,8 @@ function applyLanguage(language: SupportedLanguage) {
   if (language !== "default") {
     document.documentElement.lang = language;
   } else {
-    // Use browser default
-    const browserLang = navigator.language.split("-")[0];
-    document.documentElement.lang = browserLang;
+    // Use simplified Chinese as default instead of browser default
+    document.documentElement.lang = "zh-Hans";
   }
 
   // Dispatch language change event

@@ -7,7 +7,7 @@ interface DataLanguageState {
 
 // Initialize data language state
 const dataLanguageState = $state<DataLanguageState>({
-  current: "default",
+  current: "zh-Hans",
 });
 
 // Helper functions
@@ -17,10 +17,10 @@ function saveDataLanguage(language: SupportedLanguage) {
 }
 
 function loadDataLanguage(): SupportedLanguage {
-  if (!browser) return "default";
+  if (!browser) return "zh-Hans";
 
   const stored = localStorage.getItem("dataLanguage") as SupportedLanguage;
-  return stored || "default";
+  return stored || "zh-Hans";
 }
 
 // Data language store API
